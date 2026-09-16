@@ -1,0 +1,5252 @@
+{
+  "t0.08_s300": {
+    "histories": 24,
+    "selected": {
+      "best_constant": 1,
+      "best_time": 6,
+      "best_progress": 1,
+      "best_nonfeedback": 6
+    },
+    "selected_names": {
+      "best_constant": "fixed_1",
+      "best_time": "time_0_4_0.3",
+      "best_progress": "fixed_1",
+      "best_nonfeedback": "time_0_4_0.3"
+    },
+    "methods": {
+      "best_constant": {
+        "reach": {
+          "mean": 0.9583333333333334,
+          "ci95": [
+            0.875,
+            1.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.4131128231162673,
+          "ci95": [
+            0.2625922724127963,
+            0.5975999038418481
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.008817739966932846,
+          "ci95": [
+            0.005316940864440107,
+            0.01262841416705076
+          ],
+          "histories": 23
+        },
+        "mean_steps": 37.333333333333336,
+        "mean_work": 12881.193236714973
+      },
+      "best_time": {
+        "reach": {
+          "mean": 0.9583333333333334,
+          "ci95": [
+            0.875,
+            1.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.38642390559069634,
+          "ci95": [
+            0.24012878137609575,
+            0.5683352095318173
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.007778411056252493,
+          "ci95": [
+            0.004474124954203549,
+            0.011548758639306152
+          ],
+          "histories": 23
+        },
+        "mean_steps": 42.479166666666664,
+        "mean_work": 14599.821256038646
+      },
+      "best_progress": {
+        "reach": {
+          "mean": 0.9583333333333334,
+          "ci95": [
+            0.875,
+            1.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.4131128231162673,
+          "ci95": [
+            0.2625922724127963,
+            0.5975999038418481
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.008817739966932846,
+          "ci95": [
+            0.005316940864440107,
+            0.01262841416705076
+          ],
+          "histories": 23
+        },
+        "mean_steps": 37.333333333333336,
+        "mean_work": 12881.193236714973
+      },
+      "best_nonfeedback": {
+        "reach": {
+          "mean": 0.9583333333333334,
+          "ci95": [
+            0.875,
+            1.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.38642390559069634,
+          "ci95": [
+            0.24012878137609575,
+            0.5683352095318173
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.007778411056252493,
+          "ci95": [
+            0.004474124954203549,
+            0.011548758639306152
+          ],
+          "histories": 23
+        },
+        "mean_steps": 42.479166666666664,
+        "mean_work": 14599.821256038646
+      }
+    },
+    "all_constant_methods": {
+      "fixed_0": {
+        "reach": {
+          "mean": 0.9166666666666666,
+          "ci95": [
+            0.7916666666666666,
+            1.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.46386564050361784,
+          "ci95": [
+            0.27554394177267044,
+            0.6892711637144517
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.008042360458410147,
+          "ci95": [
+            0.004559166479333671,
+            0.01203647210072218
+          ],
+          "histories": 22
+        },
+        "mean_steps": 51.041666666666664,
+        "mean_work": 17460.246376811592
+      },
+      "fixed_1": {
+        "reach": {
+          "mean": 0.9583333333333334,
+          "ci95": [
+            0.875,
+            1.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.4131128231162673,
+          "ci95": [
+            0.2625922724127963,
+            0.5975999038418481
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.008817739966932846,
+          "ci95": [
+            0.005316940864440107,
+            0.01262841416705076
+          ],
+          "histories": 23
+        },
+        "mean_steps": 37.333333333333336,
+        "mean_work": 12881.193236714973
+      },
+      "fixed_2": {
+        "reach": {
+          "mean": 0.9583333333333334,
+          "ci95": [
+            0.875,
+            1.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.45823781619692605,
+          "ci95": [
+            0.3073022979496376,
+            0.6381352529327031
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.010690473870414757,
+          "ci95": [
+            0.00679842609864916,
+            0.014662973414701611
+          ],
+          "histories": 23
+        },
+        "mean_steps": 37.0,
+        "mean_work": 12768.673007246374
+      },
+      "fixed_3": {
+        "reach": {
+          "mean": 0.9583333333333334,
+          "ci95": [
+            0.875,
+            1.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.494234295169383,
+          "ci95": [
+            0.3420336142572824,
+            0.6705616089118607
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.012430976860333178,
+          "ci95": [
+            0.008351821154086055,
+            0.0165709154970566
+          ],
+          "histories": 23
+        },
+        "mean_steps": 37.041666666666664,
+        "mean_work": 12783.454106280193
+      },
+      "fixed_4": {
+        "reach": {
+          "mean": 0.9583333333333334,
+          "ci95": [
+            0.875,
+            1.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.5192526685588846,
+          "ci95": [
+            0.36375595790496273,
+            0.6951537481499996
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.014147701335773952,
+          "ci95": [
+            0.009708123908891086,
+            0.018647170885115107
+          ],
+          "histories": 23
+        },
+        "mean_steps": 37.333333333333336,
+        "mean_work": 12881.193236714973
+      }
+    },
+    "paired": {
+      "best_time_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": -0.026688917525570996,
+          "ci95": [
+            -0.05949159311521897,
+            0.0028572307823875494
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.001039328910680353,
+          "ci95": [
+            -0.0022650849033633005,
+            9.041148916129799e-05
+          ],
+          "histories": 23
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.0012953764412040802,
+          "ci95": [
+            -0.002924331614071978,
+            0.0003060563892016511
+          ],
+          "histories": 17
+        },
+        "work_difference": {
+          "mean": 1718.6280193236707,
+          "ci95": [
+            18.531400966183572,
+            4275.476328502414
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 46
+      },
+      "best_progress_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 23
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 17
+        },
+        "work_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 46
+      },
+      "best_nonfeedback_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": -0.026688917525570996,
+          "ci95": [
+            -0.05949159311521897,
+            0.0028572307823875494
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.001039328910680353,
+          "ci95": [
+            -0.0022650849033633005,
+            9.041148916129799e-05
+          ],
+          "histories": 23
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.0012953764412040802,
+          "ci95": [
+            -0.002924331614071978,
+            0.0003060563892016511
+          ],
+          "histories": 17
+        },
+        "work_difference": {
+          "mean": 1718.6280193236707,
+          "ci95": [
+            18.531400966183572,
+            4275.476328502414
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 46
+      }
+    },
+    "cross_future": {
+      "constant_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": -0.021175894265451894,
+          "ci95": [
+            -0.04600405323063762,
+            -0.0016091585139771359
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.0005754289905662122,
+          "ci95": [
+            -0.0016655569592409808,
+            0.00037032456906593343
+          ],
+          "histories": 23
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.0006500248564407229,
+          "ci95": [
+            -0.00213506068685092,
+            0.0007225404347991569
+          ],
+          "histories": 16
+        },
+        "work_difference": {
+          "mean": 768.5797101449274,
+          "ci95": [
+            16.270531400966167,
+            1994.7826086956513
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 23
+      },
+      "plan_oracle_vs_nonfeedback": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": 0.004279746763157187,
+          "ci95": [
+            -0.028419113569961286,
+            0.03244849783522041
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": 0.0006467117725507072,
+          "ci95": [
+            -0.0003650928523553454,
+            0.002013871527236441
+          ],
+          "histories": 23
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": 0.0011461369693279266,
+          "ci95": [
+            -0.00026286989450454714,
+            0.0031173845132191976
+          ],
+          "histories": 15
+        },
+        "work_difference": {
+          "mean": -1097.3913043478258,
+          "ci95": [
+            -3265.5072463768106,
+            13.333333333333334
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 23
+      },
+      "plan_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": -0.017317773932831626,
+          "ci95": [
+            -0.04388145439164832,
+            0.004657642495339046
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.0003472016719372376,
+          "ci95": [
+            -0.0015226490795612335,
+            0.0007550882438764617
+          ],
+          "histories": 23
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.000321948085911572,
+          "ci95": [
+            -0.001979219069471583,
+            0.001255683277850039
+          ],
+          "histories": 16
+        },
+        "work_difference": {
+          "mean": 768.5797101449274,
+          "ci95": [
+            16.270531400966167,
+            1994.7826086956513
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 23
+      },
+      "all_feasible_constant_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 22
+        },
+        "cost_difference": {
+          "mean": -0.023100975562311155,
+          "ci95": [
+            -0.050264860016771475,
+            -0.0015666740267133831
+          ],
+          "histories": 22
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.0006015848537737673,
+          "ci95": [
+            -0.0017407096626067702,
+            0.0004132977877320212
+          ],
+          "histories": 22
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.0006933598468701045,
+          "ci95": [
+            -0.002263512931143244,
+            0.0007681211642920966
+          ],
+          "histories": 15
+        },
+        "work_difference": {
+          "mean": 838.4505928853753,
+          "ci95": [
+            17.74967061923582,
+            2165.068774703552
+          ],
+          "histories": 22
+        },
+        "joint_success_pairs": 22
+      },
+      "all_feasible_active_constant_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 13
+        },
+        "cost_difference": {
+          "mean": -0.039093958643911186,
+          "ci95": [
+            -0.08154694485836875,
+            -0.004142891143426108
+          ],
+          "histories": 13
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.0010180666756171447,
+          "ci95": [
+            -0.00283566600499818,
+            0.000720720294003303
+          ],
+          "histories": 13
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.0008666998085876306,
+          "ci95": [
+            -0.0028295406994099416,
+            0.0009898566602108377
+          ],
+          "histories": 12
+        },
+        "work_difference": {
+          "mean": 1418.916387959866,
+          "ci95": [
+            49.23076923076923,
+            3603.40691192865
+          ],
+          "histories": 13
+        },
+        "joint_success_pairs": 13
+      },
+      "all_feasible_plan_oracle_vs_nonfeedback": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 22
+        },
+        "cost_difference": {
+          "mean": 0.017523211204342814,
+          "ci95": [
+            0.0,
+            0.03967218366268716
+          ],
+          "histories": 22
+        },
+        "joint_forgetting_difference": {
+          "mean": 0.0008553372357379307,
+          "ci95": [
+            -0.00010106856511397795,
+            0.002236025661907413
+          ],
+          "histories": 22
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": 0.001509650211249079,
+          "ci95": [
+            5.439828549112592e-05,
+            0.0035945020083870205
+          ],
+          "histories": 14
+        },
+        "work_difference": {
+          "mean": -29.09090909090909,
+          "ci95": [
+            -101.81818181818181,
+            29.09090909090909
+          ],
+          "histories": 22
+        },
+        "joint_success_pairs": 22
+      },
+      "active_plan_oracle_vs_nonfeedback": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 15
+        },
+        "cost_difference": {
+          "mean": 0.006847594821051499,
+          "ci95": [
+            -0.046055417940905424,
+            0.050985031636696744
+          ],
+          "histories": 15
+        },
+        "joint_forgetting_difference": {
+          "mean": 0.0010624550549047334,
+          "ci95": [
+            -0.0006083915276186806,
+            0.0033128556928464343
+          ],
+          "histories": 14
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": 0.0014326712116599083,
+          "ci95": [
+            -0.0005306394537910815,
+            0.0038916527604063353
+          ],
+          "histories": 12
+        },
+        "work_difference": {
+          "mean": -1755.826086956521,
+          "ci95": [
+            -5224.811594202897,
+            21.333333333333332
+          ],
+          "histories": 15
+        },
+        "joint_success_pairs": 14
+      }
+    },
+    "diagnostics": {
+      "initially_done": 6,
+      "active_protected": 15,
+      "all_constants_feasible_selection_stream": 22,
+      "all_feasible_active_protected": 13,
+      "low_fails_high_succeeds_selection_stream": 1,
+      "constant_oracle_counts": [
+        19,
+        3,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plan_oracle_counts": [
+        18,
+        3,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    "oracle_selection": [
+      {
+        "root": 510000,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510001,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510002,
+        "constant": 1,
+        "plan": 1
+      },
+      {
+        "root": 510003,
+        "constant": 1,
+        "plan": 1
+      },
+      {
+        "root": 510004,
+        "constant": 4,
+        "plan": 4
+      },
+      {
+        "root": 510005,
+        "constant": 0,
+        "plan": 14
+      },
+      {
+        "root": 510006,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510007,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510008,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510009,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510010,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510011,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510012,
+        "constant": 4,
+        "plan": 11
+      },
+      {
+        "root": 510013,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510014,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510015,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510016,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510017,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510018,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510019,
+        "constant": 1,
+        "plan": 1
+      },
+      {
+        "root": 510020,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510021,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510022,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510023,
+        "constant": 0,
+        "plan": 0
+      }
+    ],
+    "selection_stream_reach": 0.9583333333333334,
+    "selection_stream_oracle_reach": 0.9583333333333334,
+    "selection_stream_active_fraction": 0.75
+  },
+  "t0.08_s100": {
+    "histories": 24,
+    "selected": {
+      "best_constant": 1,
+      "best_time": 7,
+      "best_progress": 1,
+      "best_nonfeedback": 7
+    },
+    "selected_names": {
+      "best_constant": "fixed_1",
+      "best_time": "time_0_4_0.6",
+      "best_progress": "fixed_1",
+      "best_nonfeedback": "time_0_4_0.6"
+    },
+    "methods": {
+      "best_constant": {
+        "reach": {
+          "mean": 0.9375,
+          "ci95": [
+            0.8333333333333334,
+            1.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.4401834091611058,
+          "ci95": [
+            0.27421275697871356,
+            0.635809864799005
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.00866768948490853,
+          "ci95": [
+            0.005238499115153715,
+            0.01239278319163545
+          ],
+          "histories": 23
+        },
+        "mean_steps": 28.791666666666668,
+        "mean_work": 10025.96618357488
+      },
+      "best_time": {
+        "reach": {
+          "mean": 0.9375,
+          "ci95": [
+            0.8333333333333334,
+            1.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.4304011517580834,
+          "ci95": [
+            0.2709811219473435,
+            0.6201184592401635
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.00790303394846294,
+          "ci95": [
+            0.004750180440833387,
+            0.011562969710718352
+          ],
+          "histories": 23
+        },
+        "mean_steps": 32.791666666666664,
+        "mean_work": 11360.304347826086
+      },
+      "best_progress": {
+        "reach": {
+          "mean": 0.9375,
+          "ci95": [
+            0.8333333333333334,
+            1.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.4401834091611058,
+          "ci95": [
+            0.27421275697871356,
+            0.635809864799005
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.00866768948490853,
+          "ci95": [
+            0.005238499115153715,
+            0.01239278319163545
+          ],
+          "histories": 23
+        },
+        "mean_steps": 28.791666666666668,
+        "mean_work": 10025.96618357488
+      },
+      "best_nonfeedback": {
+        "reach": {
+          "mean": 0.9375,
+          "ci95": [
+            0.8333333333333334,
+            1.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.4304011517580834,
+          "ci95": [
+            0.2709811219473435,
+            0.6201184592401635
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.00790303394846294,
+          "ci95": [
+            0.004750180440833387,
+            0.011562969710718352
+          ],
+          "histories": 23
+        },
+        "mean_steps": 32.791666666666664,
+        "mean_work": 11360.304347826086
+      }
+    },
+    "all_constant_methods": {
+      "fixed_0": {
+        "reach": {
+          "mean": 0.8958333333333334,
+          "ci95": [
+            0.7708333333333334,
+            1.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.4909362265484563,
+          "ci95": [
+            0.29154479297140634,
+            0.7268707687278962
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.007885489499930178,
+          "ci95": [
+            0.004481937300597289,
+            0.011801270069907221
+          ],
+          "histories": 22
+        },
+        "mean_steps": 34.208333333333336,
+        "mean_work": 11834.198067632848
+      },
+      "fixed_1": {
+        "reach": {
+          "mean": 0.9375,
+          "ci95": [
+            0.8333333333333334,
+            1.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.4401834091611058,
+          "ci95": [
+            0.27421275697871356,
+            0.635809864799005
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.00866768948490853,
+          "ci95": [
+            0.005238499115153715,
+            0.01239278319163545
+          ],
+          "histories": 23
+        },
+        "mean_steps": 28.791666666666668,
+        "mean_work": 10025.96618357488
+      },
+      "fixed_2": {
+        "reach": {
+          "mean": 0.9375,
+          "ci95": [
+            0.8333333333333334,
+            1.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.48530840224176464,
+          "ci95": [
+            0.3200664291674376,
+            0.6758946465883696
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.010540423388390438,
+          "ci95": [
+            0.006708645106603702,
+            0.014505809073781835
+          ],
+          "histories": 23
+        },
+        "mean_steps": 28.458333333333332,
+        "mean_work": 9913.445954106279
+      },
+      "fixed_3": {
+        "reach": {
+          "mean": 0.9375,
+          "ci95": [
+            0.8333333333333334,
+            1.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.5213048812142215,
+          "ci95": [
+            0.35687550048339367,
+            0.7074814156116916
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.012280926378308861,
+          "ci95": [
+            0.008249621486048336,
+            0.01638146679430012
+          ],
+          "histories": 23
+        },
+        "mean_steps": 28.5,
+        "mean_work": 9928.227053140095
+      },
+      "fixed_4": {
+        "reach": {
+          "mean": 0.9375,
+          "ci95": [
+            0.8333333333333334,
+            1.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.5463232546037232,
+          "ci95": [
+            0.38015087782458773,
+            0.7303362714422172
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.013997650853749636,
+          "ci95": [
+            0.009571504377611522,
+            0.018476545908218386
+          ],
+          "histories": 23
+        },
+        "mean_steps": 28.791666666666668,
+        "mean_work": 10025.966183574878
+      }
+    },
+    "paired": {
+      "best_time_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": -0.009782257403022432,
+          "ci95": [
+            -0.055039476744137866,
+            0.0422979914096715
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.0007646555364455866,
+          "ci95": [
+            -0.0021891314578512543,
+            0.0006496101663366923
+          ],
+          "histories": 23
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.0009237595231217496,
+          "ci95": [
+            -0.002844341399659421,
+            0.0010322855018517528
+          ],
+          "histories": 17
+        },
+        "work_difference": {
+          "mean": 1334.338164251207,
+          "ci95": [
+            -9.603864734299501,
+            3528.3285024154575
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 45
+      },
+      "best_progress_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 23
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 17
+        },
+        "work_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 45
+      },
+      "best_nonfeedback_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": -0.009782257403022432,
+          "ci95": [
+            -0.055039476744137866,
+            0.0422979914096715
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.0007646555364455866,
+          "ci95": [
+            -0.0021891314578512543,
+            0.0006496101663366923
+          ],
+          "histories": 23
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.0009237595231217496,
+          "ci95": [
+            -0.002844341399659421,
+            0.0010322855018517528
+          ],
+          "histories": 17
+        },
+        "work_difference": {
+          "mean": 1334.338164251207,
+          "ci95": [
+            -9.603864734299501,
+            3528.3285024154575
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 45
+      }
+    },
+    "cross_future": {
+      "constant_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": -0.021175894265451894,
+          "ci95": [
+            -0.04600405323063762,
+            -0.0016091585139771359
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.0006015848537737673,
+          "ci95": [
+            -0.0017230147263035177,
+            0.0004148824013430958
+          ],
+          "histories": 22
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.0006933598468701045,
+          "ci95": [
+            -0.0022828484047204252,
+            0.0007978139910846948
+          ],
+          "histories": 15
+        },
+        "work_difference": {
+          "mean": 768.5797101449274,
+          "ci95": [
+            16.270531400966167,
+            1994.7826086956513
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 22
+      },
+      "plan_oracle_vs_nonfeedback": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": -0.011034809037081768,
+          "ci95": [
+            -0.05662981431074935,
+            0.021542507730910664
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.00012278125028718603,
+          "ci95": [
+            -0.0011061406271024184,
+            0.0007097401063550602
+          ],
+          "histories": 22
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -2.739312393324716e-05,
+          "ci95": [
+            -0.0015081106019871576,
+            0.0011686217039823532
+          ],
+          "histories": 14
+        },
+        "work_difference": {
+          "mean": -733.1014492753621,
+          "ci95": [
+            -2705.739130434782,
+            533.1014492753621
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 22
+      },
+      "plan_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": -0.019910335709044987,
+          "ci95": [
+            -0.045255016688107025,
+            0.0011870054894464416
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.0006857484748417681,
+          "ci95": [
+            -0.0017568251562558794,
+            0.00026974529874595695
+          ],
+          "histories": 22
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.0008167998244365056,
+          "ci95": [
+            -0.0023348066428055367,
+            0.0005324709446479866
+          ],
+          "histories": 15
+        },
+        "work_difference": {
+          "mean": 768.5797101449274,
+          "ci95": [
+            16.270531400966167,
+            1994.7826086956513
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 22
+      },
+      "all_feasible_constant_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 22
+        },
+        "cost_difference": {
+          "mean": -0.023100975562311155,
+          "ci95": [
+            -0.050264860016771475,
+            -0.0015666740267133831
+          ],
+          "histories": 22
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.0006302317515725182,
+          "ci95": [
+            -0.0017747338062950543,
+            0.00041792336851358326
+          ],
+          "histories": 21
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.000742885550217969,
+          "ci95": [
+            -0.0024293672692562852,
+            0.0008482134701418021
+          ],
+          "histories": 14
+        },
+        "work_difference": {
+          "mean": 838.4505928853753,
+          "ci95": [
+            17.74967061923582,
+            2165.068774703552
+          ],
+          "histories": 22
+        },
+        "joint_success_pairs": 21
+      },
+      "all_feasible_active_constant_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 13
+        },
+        "cost_difference": {
+          "mean": -0.039093958643911186,
+          "ci95": [
+            -0.08154694485836875,
+            -0.004142891143426108
+          ],
+          "histories": 13
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.0010180666756171447,
+          "ci95": [
+            -0.00283566600499818,
+            0.000720720294003303
+          ],
+          "histories": 13
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.0008666998085876306,
+          "ci95": [
+            -0.0028295406994099416,
+            0.0009898566602108377
+          ],
+          "histories": 12
+        },
+        "work_difference": {
+          "mean": 1418.916387959866,
+          "ci95": [
+            49.23076923076923,
+            3603.40691192865
+          ],
+          "histories": 13
+        },
+        "joint_success_pairs": 13
+      },
+      "all_feasible_plan_oracle_vs_nonfeedback": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 22
+        },
+        "cost_difference": {
+          "mean": 0.008149757049906552,
+          "ci95": [
+            -0.007097981747703385,
+            0.028193908071704996
+          ],
+          "histories": 22
+        },
+        "joint_forgetting_difference": {
+          "mean": 0.000251839646980876,
+          "ci95": [
+            -0.00025079771876335144,
+            0.0008559509934414001
+          ],
+          "histories": 21
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": 0.0005851012582962329,
+          "ci95": [
+            -8.554269488041218e-05,
+            0.0015095926892871967
+          ],
+          "histories": 13
+        },
+        "work_difference": {
+          "mean": 169.61264822134382,
+          "ci95": [
+            -101.81818181818181,
+            639.7470355731224
+          ],
+          "histories": 22
+        },
+        "joint_success_pairs": 21
+      },
+      "active_plan_oracle_vs_nonfeedback": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 15
+        },
+        "cost_difference": {
+          "mean": -0.01765569445933083,
+          "ci95": [
+            -0.09060770289719897,
+            0.03435238381467145
+          ],
+          "histories": 15
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.00019294196473700658,
+          "ci95": [
+            -0.001712109155154654,
+            0.0011127333023718425
+          ],
+          "histories": 14
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -3.195864458878835e-05,
+          "ci95": [
+            -0.001728992909193039,
+            0.0013586584090565642
+          ],
+          "histories": 12
+        },
+        "work_difference": {
+          "mean": -1172.9623188405794,
+          "ci95": [
+            -4329.182608695652,
+            852.9623188405795
+          ],
+          "histories": 15
+        },
+        "joint_success_pairs": 14
+      }
+    },
+    "diagnostics": {
+      "initially_done": 6,
+      "active_protected": 15,
+      "all_constants_feasible_selection_stream": 22,
+      "all_feasible_active_protected": 13,
+      "low_fails_high_succeeds_selection_stream": 1,
+      "constant_oracle_counts": [
+        19,
+        3,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plan_oracle_counts": [
+        17,
+        3,
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    "oracle_selection": [
+      {
+        "root": 510000,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510001,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510002,
+        "constant": 1,
+        "plan": 1
+      },
+      {
+        "root": 510003,
+        "constant": 1,
+        "plan": 1
+      },
+      {
+        "root": 510004,
+        "constant": 4,
+        "plan": 4
+      },
+      {
+        "root": 510005,
+        "constant": 0,
+        "plan": 14
+      },
+      {
+        "root": 510006,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510007,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510008,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510009,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510010,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510011,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510012,
+        "constant": 4,
+        "plan": 7
+      },
+      {
+        "root": 510013,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510014,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510015,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510016,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510017,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510018,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510019,
+        "constant": 1,
+        "plan": 1
+      },
+      {
+        "root": 510020,
+        "constant": 0,
+        "plan": 7
+      },
+      {
+        "root": 510021,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510022,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510023,
+        "constant": 0,
+        "plan": 0
+      }
+    ],
+    "selection_stream_reach": 0.9583333333333334,
+    "selection_stream_oracle_reach": 0.9583333333333334,
+    "selection_stream_active_fraction": 0.75
+  },
+  "t0.04_s300": {
+    "histories": 24,
+    "selected": {
+      "best_constant": 1,
+      "best_time": 1,
+      "best_progress": 1,
+      "best_nonfeedback": 1
+    },
+    "selected_names": {
+      "best_constant": "fixed_1",
+      "best_time": "fixed_1",
+      "best_progress": "fixed_1",
+      "best_nonfeedback": "fixed_1"
+    },
+    "methods": {
+      "best_constant": {
+        "reach": {
+          "mean": 0.7708333333333334,
+          "ci95": [
+            0.6041666666666666,
+            0.9166666666666666
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.7702768472252536,
+          "ci95": [
+            0.5236089529941487,
+            1.040298130865529
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.009855091680462162,
+          "ci95": [
+            0.0066492540882124255,
+            0.013419573647746196
+          ],
+          "histories": 20
+        },
+        "mean_steps": 164.1875,
+        "mean_work": 55258.48822463769
+      },
+      "best_time": {
+        "reach": {
+          "mean": 0.7708333333333334,
+          "ci95": [
+            0.6041666666666666,
+            0.9166666666666666
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.7702768472252536,
+          "ci95": [
+            0.5236089529941487,
+            1.040298130865529
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.009855091680462162,
+          "ci95": [
+            0.0066492540882124255,
+            0.013419573647746196
+          ],
+          "histories": 20
+        },
+        "mean_steps": 164.1875,
+        "mean_work": 55258.48822463769
+      },
+      "best_progress": {
+        "reach": {
+          "mean": 0.7708333333333334,
+          "ci95": [
+            0.6041666666666666,
+            0.9166666666666666
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.7702768472252536,
+          "ci95": [
+            0.5236089529941487,
+            1.040298130865529
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.009855091680462162,
+          "ci95": [
+            0.0066492540882124255,
+            0.013419573647746196
+          ],
+          "histories": 20
+        },
+        "mean_steps": 164.1875,
+        "mean_work": 55258.48822463769
+      },
+      "best_nonfeedback": {
+        "reach": {
+          "mean": 0.7708333333333334,
+          "ci95": [
+            0.6041666666666666,
+            0.9166666666666666
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.7702768472252536,
+          "ci95": [
+            0.5236089529941487,
+            1.040298130865529
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.009855091680462162,
+          "ci95": [
+            0.0066492540882124255,
+            0.013419573647746196
+          ],
+          "histories": 20
+        },
+        "mean_steps": 164.1875,
+        "mean_work": 55258.48822463769
+      }
+    },
+    "all_constant_methods": {
+      "fixed_0": {
+        "reach": {
+          "mean": 0.6041666666666666,
+          "ci95": [
+            0.4166666666666667,
+            0.7708333333333334
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 1.028213033410128,
+          "ci95": [
+            0.7498001646918533,
+            1.3254833248694615
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.009271410631709824,
+          "ci95": [
+            0.00579636078875731,
+            0.013332321351923632
+          ],
+          "histories": 17
+        },
+        "mean_steps": 199.58333333333334,
+        "mean_work": 67082.0827294686
+      },
+      "fixed_1": {
+        "reach": {
+          "mean": 0.7708333333333334,
+          "ci95": [
+            0.6041666666666666,
+            0.9166666666666666
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.7702768472252536,
+          "ci95": [
+            0.5236089529941487,
+            1.040298130865529
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.009855091680462162,
+          "ci95": [
+            0.0066492540882124255,
+            0.013419573647746196
+          ],
+          "histories": 20
+        },
+        "mean_steps": 164.1875,
+        "mean_work": 55258.48822463769
+      },
+      "fixed_2": {
+        "reach": {
+          "mean": 0.7708333333333334,
+          "ci95": [
+            0.6041666666666666,
+            0.9166666666666666
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.8084396768464899,
+          "ci95": [
+            0.5733493399002113,
+            1.0676520312590971
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.0113243866013363,
+          "ci95": [
+            0.00819175571765906,
+            0.014715439356514252
+          ],
+          "histories": 20
+        },
+        "mean_steps": 161.375,
+        "mean_work": 54318.815217391304
+      },
+      "fixed_3": {
+        "reach": {
+          "mean": 0.7708333333333334,
+          "ci95": [
+            0.6041666666666666,
+            0.9166666666666666
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.8369797208749716,
+          "ci95": [
+            0.6073443442199582,
+            1.088950462758605
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.012520737092321118,
+          "ci95": [
+            0.009500499860926843,
+            0.015748217611884077
+          ],
+          "histories": 20
+        },
+        "mean_steps": 160.27083333333334,
+        "mean_work": 53947.90036231885
+      },
+      "fixed_4": {
+        "reach": {
+          "mean": 0.7708333333333334,
+          "ci95": [
+            0.6041666666666666,
+            0.9166666666666666
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 0.8592913266838833,
+          "ci95": [
+            0.6371694213911047,
+            1.1058172643220108
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.01364774173125625,
+          "ci95": [
+            0.010718818594468757,
+            0.016736319151241328
+          ],
+          "histories": 20
+        },
+        "mean_steps": 160.41666666666666,
+        "mean_work": 53997.420893719805
+      }
+    },
+    "paired": {
+      "best_time_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 20
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 20
+        },
+        "work_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 37
+      },
+      "best_progress_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 20
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 20
+        },
+        "work_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 37
+      },
+      "best_nonfeedback_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 20
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 20
+        },
+        "work_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 37
+      }
+    },
+    "cross_future": {
+      "constant_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": 0.041666666666666664,
+          "ci95": [
+            0.0,
+            0.125
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": -0.0824829504349926,
+          "ci95": [
+            -0.21378084328685423,
+            0.006422529736650457
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.0015160391074523591,
+          "ci95": [
+            -0.0033180855851816502,
+            7.926164881179173e-05
+          ],
+          "histories": 19
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.0015160391074523591,
+          "ci95": [
+            -0.0033180855851816502,
+            7.926164881179173e-05
+          ],
+          "histories": 19
+        },
+        "work_difference": {
+          "mean": -324.0815217391282,
+          "ci95": [
+            -2014.5904589371933,
+            927.9974184782625
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 19
+      },
+      "plan_oracle_vs_nonfeedback": {
+        "reach_difference": {
+          "mean": 0.041666666666666664,
+          "ci95": [
+            0.0,
+            0.125
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": -0.07897752716232194,
+          "ci95": [
+            -0.21731274222085156,
+            0.02424929630626578
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.0011773710057400822,
+          "ci95": [
+            -0.0034558093232478493,
+            0.0010414621359750363
+          ],
+          "histories": 19
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.0011773710057400822,
+          "ci95": [
+            -0.0034558093232478493,
+            0.0010414621359750363
+          ],
+          "histories": 19
+        },
+        "work_difference": {
+          "mean": -141.93659420289774,
+          "ci95": [
+            -2175.681702898546,
+            1945.9762228260852
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 19
+      },
+      "plan_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": 0.041666666666666664,
+          "ci95": [
+            0.0,
+            0.125
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": -0.07897752716232194,
+          "ci95": [
+            -0.21731274222085156,
+            0.02424929630626578
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.0011773710057400822,
+          "ci95": [
+            -0.0034558093232478493,
+            0.0010414621359750363
+          ],
+          "histories": 19
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.0011773710057400822,
+          "ci95": [
+            -0.0034558093232478493,
+            0.0010414621359750363
+          ],
+          "histories": 19
+        },
+        "work_difference": {
+          "mean": -141.93659420289774,
+          "ci95": [
+            -2175.681702898546,
+            1945.9762228260852
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 19
+      },
+      "all_feasible_constant_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 13
+        },
+        "cost_difference": {
+          "mean": -0.04684608676265164,
+          "ci95": [
+            -0.09846648028370099,
+            -0.0019617462753479913
+          ],
+          "histories": 13
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.0016377446138196522,
+          "ci95": [
+            -0.0038336688368063834,
+            -4.8406332886468076e-05
+          ],
+          "histories": 12
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.0016377446138196522,
+          "ci95": [
+            -0.0038336688368063834,
+            -4.8406332886468076e-05
+          ],
+          "histories": 12
+        },
+        "work_difference": {
+          "mean": 814.4202898550734,
+          "ci95": [
+            24.615384615384617,
+            2112.5696767001145
+          ],
+          "histories": 13
+        },
+        "joint_success_pairs": 12
+      },
+      "all_feasible_active_constant_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 11
+        },
+        "cost_difference": {
+          "mean": -0.05536355708313376,
+          "ci95": [
+            -0.1152133783193012,
+            -0.0020059857697632597
+          ],
+          "histories": 11
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.001786630487803257,
+          "ci95": [
+            -0.004197849317764243,
+            -5.092973623311894e-05
+          ],
+          "histories": 11
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.001786630487803257,
+          "ci95": [
+            -0.004197849317764243,
+            -5.092973623311894e-05
+          ],
+          "histories": 11
+        },
+        "work_difference": {
+          "mean": 962.4967061923595,
+          "ci95": [
+            39.22924901185781,
+            2496.6732542819536
+          ],
+          "histories": 11
+        },
+        "joint_success_pairs": 11
+      },
+      "all_feasible_plan_oracle_vs_nonfeedback": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 13
+        },
+        "cost_difference": {
+          "mean": -0.050214994642081234,
+          "ci95": [
+            -0.1125253211705469,
+            0.0024451660521483502
+          ],
+          "histories": 13
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.0017343385972910458,
+          "ci95": [
+            -0.0042808263588489754,
+            6.525637581944428e-05
+          ],
+          "histories": 12
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.0017343385972910458,
+          "ci95": [
+            -0.0042808263588489754,
+            6.525637581944428e-05
+          ],
+          "histories": 12
+        },
+        "work_difference": {
+          "mean": -30.422519509474885,
+          "ci95": [
+            -1621.1850613154957,
+            1669.2677536231904
+          ],
+          "histories": 13
+        },
+        "joint_success_pairs": 12
+      },
+      "active_plan_oracle_vs_nonfeedback": {
+        "reach_difference": {
+          "mean": 0.047619047619047616,
+          "ci95": [
+            0.0,
+            0.14285714285714285
+          ],
+          "histories": 21
+        },
+        "cost_difference": {
+          "mean": -0.09026003104265364,
+          "ci95": [
+            -0.24517780027439967,
+            0.026398869203688485
+          ],
+          "histories": 21
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.0012427805060589757,
+          "ci95": [
+            -0.0036209236330318226,
+            0.0010998791695951853
+          ],
+          "histories": 18
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.0012427805060589757,
+          "ci95": [
+            -0.0036209236330318226,
+            0.0010998791695951853
+          ],
+          "histories": 18
+        },
+        "work_difference": {
+          "mean": -162.21325051759743,
+          "ci95": [
+            -2456.1564699792907,
+            2134.683712905447
+          ],
+          "histories": 21
+        },
+        "joint_success_pairs": 18
+      }
+    },
+    "diagnostics": {
+      "initially_done": 0,
+      "active_protected": 21,
+      "all_constants_feasible_selection_stream": 13,
+      "all_feasible_active_protected": 11,
+      "low_fails_high_succeeds_selection_stream": 5,
+      "constant_oracle_counts": [
+        16,
+        6,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plan_oracle_counts": [
+        15,
+        3,
+        0,
+        1,
+        0,
+        1,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "oracle_selection": [
+      {
+        "root": 510000,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510001,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510002,
+        "constant": 1,
+        "plan": 1
+      },
+      {
+        "root": 510003,
+        "constant": 1,
+        "plan": 16
+      },
+      {
+        "root": 510004,
+        "constant": 2,
+        "plan": 5
+      },
+      {
+        "root": 510005,
+        "constant": 1,
+        "plan": 6
+      },
+      {
+        "root": 510006,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510007,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510008,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510009,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510010,
+        "constant": 1,
+        "plan": 1
+      },
+      {
+        "root": 510011,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510012,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510013,
+        "constant": 3,
+        "plan": 3
+      },
+      {
+        "root": 510014,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510015,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510016,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510017,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510018,
+        "constant": 1,
+        "plan": 6
+      },
+      {
+        "root": 510019,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510020,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510021,
+        "constant": 0,
+        "plan": 7
+      },
+      {
+        "root": 510022,
+        "constant": 1,
+        "plan": 1
+      },
+      {
+        "root": 510023,
+        "constant": 0,
+        "plan": 0
+      }
+    ],
+    "selection_stream_reach": 0.75,
+    "selection_stream_oracle_reach": 0.75,
+    "selection_stream_active_fraction": 1.0
+  },
+  "t0.04_s100": {
+    "histories": 24,
+    "selected": {
+      "best_constant": 4,
+      "best_time": 4,
+      "best_progress": 4,
+      "best_nonfeedback": 4
+    },
+    "selected_names": {
+      "best_constant": "fixed_4",
+      "best_time": "fixed_4",
+      "best_progress": "fixed_4",
+      "best_nonfeedback": "fixed_4"
+    },
+    "methods": {
+      "best_constant": {
+        "reach": {
+          "mean": 0.375,
+          "ci95": [
+            0.20833333333333334,
+            0.5833333333333334
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 1.4332950791773735,
+          "ci95": [
+            1.1231218960075775,
+            1.709309653326442
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.0111208101734519,
+          "ci95": [
+            0.00819438371669363,
+            0.014049272946323507
+          ],
+          "histories": 9
+        },
+        "mean_steps": 79.66666666666667,
+        "mean_work": 27014.48671497584
+      },
+      "best_time": {
+        "reach": {
+          "mean": 0.375,
+          "ci95": [
+            0.20833333333333334,
+            0.5833333333333334
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 1.4332950791773735,
+          "ci95": [
+            1.1231218960075775,
+            1.709309653326442
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.0111208101734519,
+          "ci95": [
+            0.00819438371669363,
+            0.014049272946323507
+          ],
+          "histories": 9
+        },
+        "mean_steps": 79.66666666666667,
+        "mean_work": 27014.48671497584
+      },
+      "best_progress": {
+        "reach": {
+          "mean": 0.375,
+          "ci95": [
+            0.20833333333333334,
+            0.5833333333333334
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 1.4332950791773735,
+          "ci95": [
+            1.1231218960075775,
+            1.709309653326442
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.0111208101734519,
+          "ci95": [
+            0.00819438371669363,
+            0.014049272946323507
+          ],
+          "histories": 9
+        },
+        "mean_steps": 79.66666666666667,
+        "mean_work": 27014.48671497584
+      },
+      "best_nonfeedback": {
+        "reach": {
+          "mean": 0.375,
+          "ci95": [
+            0.20833333333333334,
+            0.5833333333333334
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 1.4332950791773735,
+          "ci95": [
+            1.1231218960075775,
+            1.709309653326442
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.0111208101734519,
+          "ci95": [
+            0.00819438371669363,
+            0.014049272946323507
+          ],
+          "histories": 9
+        },
+        "mean_steps": 79.66666666666667,
+        "mean_work": 27014.48671497584
+      }
+    },
+    "all_constant_methods": {
+      "fixed_0": {
+        "reach": {
+          "mean": 0.22916666666666666,
+          "ci95": [
+            0.08333333333333333,
+            0.3958333333333333
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 1.6096546579792228,
+          "ci95": [
+            1.3100348150012495,
+            1.867747441188876
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.005549681502290898,
+          "ci95": [
+            0.0024225981647355687,
+            0.009566460218694475
+          ],
+          "histories": 6
+        },
+        "mean_steps": 86.52083333333333,
+        "mean_work": 29302.758152173905
+      },
+      "fixed_1": {
+        "reach": {
+          "mean": 0.3125,
+          "ci95": [
+            0.14583333333333334,
+            0.5
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 1.4816025008180764,
+          "ci95": [
+            1.1677212616520636,
+            1.7691611781504115
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.005938879097811878,
+          "ci95": [
+            0.0033176285855006427,
+            0.009109213546616956
+          ],
+          "histories": 8
+        },
+        "mean_steps": 81.5625,
+        "mean_work": 27647.483997584535
+      },
+      "fixed_2": {
+        "reach": {
+          "mean": 0.3333333333333333,
+          "ci95": [
+            0.16666666666666666,
+            0.5416666666666666
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 1.4693011176974793,
+          "ci95": [
+            1.1478574026506245,
+            1.7461183844529915
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.007959644019138068,
+          "ci95": [
+            0.005585595441516489,
+            0.010760063072666526
+          ],
+          "histories": 8
+        },
+        "mean_steps": 80.3125,
+        "mean_work": 27231.391908212554
+      },
+      "fixed_3": {
+        "reach": {
+          "mean": 0.3541666666666667,
+          "ci95": [
+            0.16666666666666666,
+            0.5416666666666666
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 1.4524742722379018,
+          "ci95": [
+            1.1502480459871571,
+            1.734966163912505
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.009652214435239634,
+          "ci95": [
+            0.007253167736861441,
+            0.012123963364434463
+          ],
+          "histories": 9
+        },
+        "mean_steps": 79.95833333333333,
+        "mean_work": 27112.225845410623
+      },
+      "fixed_4": {
+        "reach": {
+          "mean": 0.375,
+          "ci95": [
+            0.20833333333333334,
+            0.5833333333333334
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 1.4332950791773735,
+          "ci95": [
+            1.1231218960075775,
+            1.709309653326442
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.0111208101734519,
+          "ci95": [
+            0.00819438371669363,
+            0.014049272946323507
+          ],
+          "histories": 9
+        },
+        "mean_steps": 79.66666666666667,
+        "mean_work": 27014.48671497584
+      }
+    },
+    "paired": {
+      "best_time_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 9
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 9
+        },
+        "work_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 18
+      },
+      "best_progress_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 9
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 9
+        },
+        "work_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 18
+      },
+      "best_nonfeedback_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 9
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 9
+        },
+        "work_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 18
+      }
+    },
+    "cross_future": {
+      "constant_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": 0.041666666666666664,
+          "ci95": [
+            0.0,
+            0.125
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": -0.1336155957712795,
+          "ci95": [
+            -0.28677929195070156,
+            -0.029818589652008676
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.006047442175999836,
+          "ci95": [
+            -0.010985525807848682,
+            -0.002200830667452128
+          ],
+          "histories": 9
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.00536052001795421,
+          "ci95": [
+            -0.010754132476480056,
+            -0.0016974976228084425
+          ],
+          "histories": 8
+        },
+        "work_difference": {
+          "mean": 433.76871980676316,
+          "ci95": [
+            -19.12439613526567,
+            1095.3963768115932
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 9
+      },
+      "plan_oracle_vs_nonfeedback": {
+        "reach_difference": {
+          "mean": 0.041666666666666664,
+          "ci95": [
+            0.0,
+            0.125
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": -0.1336155957712795,
+          "ci95": [
+            -0.28677929195070156,
+            -0.029818589652008676
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.006047442175999836,
+          "ci95": [
+            -0.010985525807848682,
+            -0.002200830667452128
+          ],
+          "histories": 9
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.00536052001795421,
+          "ci95": [
+            -0.010754132476480056,
+            -0.0016974976228084425
+          ],
+          "histories": 8
+        },
+        "work_difference": {
+          "mean": 433.76871980676316,
+          "ci95": [
+            -19.12439613526567,
+            1095.3963768115932
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 9
+      },
+      "plan_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": 0.041666666666666664,
+          "ci95": [
+            0.0,
+            0.125
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": -0.1336155957712795,
+          "ci95": [
+            -0.28677929195070156,
+            -0.029818589652008676
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.006047442175999836,
+          "ci95": [
+            -0.010985525807848682,
+            -0.002200830667452128
+          ],
+          "histories": 9
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.00536052001795421,
+          "ci95": [
+            -0.010754132476480056,
+            -0.0016974976228084425
+          ],
+          "histories": 8
+        },
+        "work_difference": {
+          "mean": 433.76871980676316,
+          "ci95": [
+            -19.12439613526567,
+            1095.3963768115932
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 9
+      },
+      "all_feasible_constant_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 5
+        },
+        "cost_difference": {
+          "mean": -0.23300297183262111,
+          "ci95": [
+            -0.38754406853794465,
+            -0.09151770236189778
+          ],
+          "histories": 5
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.007936968592305978,
+          "ci95": [
+            -0.015497882105410098,
+            -0.00273776575922966
+          ],
+          "histories": 5
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.007936968592305978,
+          "ci95": [
+            -0.015497882105410098,
+            -0.00273776575922966
+          ],
+          "histories": 5
+        },
+        "work_difference": {
+          "mean": 731.7971014492753,
+          "ci95": [
+            -155.7971014492752,
+            1619.3913043478256
+          ],
+          "histories": 5
+        },
+        "joint_success_pairs": 5
+      },
+      "all_feasible_active_constant_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 5
+        },
+        "cost_difference": {
+          "mean": -0.23300297183262111,
+          "ci95": [
+            -0.38754406853794465,
+            -0.09151770236189778
+          ],
+          "histories": 5
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.007936968592305978,
+          "ci95": [
+            -0.015497882105410098,
+            -0.00273776575922966
+          ],
+          "histories": 5
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.007936968592305978,
+          "ci95": [
+            -0.015497882105410098,
+            -0.00273776575922966
+          ],
+          "histories": 5
+        },
+        "work_difference": {
+          "mean": 731.7971014492753,
+          "ci95": [
+            -155.7971014492752,
+            1619.3913043478256
+          ],
+          "histories": 5
+        },
+        "joint_success_pairs": 5
+      },
+      "all_feasible_plan_oracle_vs_nonfeedback": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 5
+        },
+        "cost_difference": {
+          "mean": -0.23300297183262111,
+          "ci95": [
+            -0.38754406853794465,
+            -0.09151770236189778
+          ],
+          "histories": 5
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.007936968592305978,
+          "ci95": [
+            -0.015497882105410098,
+            -0.00273776575922966
+          ],
+          "histories": 5
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.007936968592305978,
+          "ci95": [
+            -0.015497882105410098,
+            -0.00273776575922966
+          ],
+          "histories": 5
+        },
+        "work_difference": {
+          "mean": 731.7971014492753,
+          "ci95": [
+            -155.7971014492752,
+            1619.3913043478256
+          ],
+          "histories": 5
+        },
+        "joint_success_pairs": 5
+      },
+      "active_plan_oracle_vs_nonfeedback": {
+        "reach_difference": {
+          "mean": 0.047619047619047616,
+          "ci95": [
+            0.0,
+            0.14285714285714285
+          ],
+          "histories": 21
+        },
+        "cost_difference": {
+          "mean": -0.15270353802431944,
+          "ci95": [
+            -0.32667093584309104,
+            -0.03560829927663623
+          ],
+          "histories": 21
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.006047442175999836,
+          "ci95": [
+            -0.010985525807848682,
+            -0.002200830667452128
+          ],
+          "histories": 9
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.00536052001795421,
+          "ci95": [
+            -0.010754132476480056,
+            -0.0016974976228084425
+          ],
+          "histories": 8
+        },
+        "work_difference": {
+          "mean": 495.7356797791579,
+          "ci95": [
+            -15.238095238095237,
+            1248.7080745341611
+          ],
+          "histories": 21
+        },
+        "joint_success_pairs": 9
+      }
+    },
+    "diagnostics": {
+      "initially_done": 0,
+      "active_protected": 21,
+      "all_constants_feasible_selection_stream": 5,
+      "all_feasible_active_protected": 5,
+      "low_fails_high_succeeds_selection_stream": 4,
+      "constant_oracle_counts": [
+        20,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plan_oracle_counts": [
+        20,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "oracle_selection": [
+      {
+        "root": 510000,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510001,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510002,
+        "constant": 1,
+        "plan": 1
+      },
+      {
+        "root": 510003,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510004,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510005,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510006,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510007,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510008,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510009,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510010,
+        "constant": 1,
+        "plan": 1
+      },
+      {
+        "root": 510011,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510012,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510013,
+        "constant": 3,
+        "plan": 3
+      },
+      {
+        "root": 510014,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510015,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510016,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510017,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510018,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510019,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510020,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510021,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510022,
+        "constant": 4,
+        "plan": 4
+      },
+      {
+        "root": 510023,
+        "constant": 0,
+        "plan": 0
+      }
+    ],
+    "selection_stream_reach": 0.375,
+    "selection_stream_oracle_reach": 0.375,
+    "selection_stream_active_fraction": 1.0
+  },
+  "t0.02_s300": {
+    "histories": 24,
+    "selected": {
+      "best_constant": 1,
+      "best_time": 6,
+      "best_progress": 13,
+      "best_nonfeedback": 6
+    },
+    "selected_names": {
+      "best_constant": "fixed_1",
+      "best_time": "time_0_4_0.3",
+      "best_progress": "progress_0_4_0.75",
+      "best_nonfeedback": "time_0_4_0.3"
+    },
+    "methods": {
+      "best_constant": {
+        "reach": {
+          "mean": 0.0625,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 1.8973566681264817,
+          "ci95": [
+            1.7211103153748801,
+            2.0
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.009223726578056812,
+          "ci95": [
+            0.003062549978494644,
+            0.01538490317761898
+          ],
+          "histories": 2
+        },
+        "mean_steps": 292.5625,
+        "mean_work": 98137.6147342995
+      },
+      "best_time": {
+        "reach": {
+          "mean": 0.0625,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 1.8978222378571517,
+          "ci95": [
+            1.7202190656288054,
+            2.0
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.013955844876666864,
+          "ci95": [
+            0.0027144141495227814,
+            0.025197275603810947
+          ],
+          "histories": 2
+        },
+        "mean_steps": 293.0,
+        "mean_work": 98283.40579710144
+      },
+      "best_progress": {
+        "reach": {
+          "mean": 0.0625,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 1.8956904227146862,
+          "ci95": [
+            1.7138236202014088,
+            2.0
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.013463718506197136,
+          "ci95": [
+            0.0017301614085833232,
+            0.025197275603810947
+          ],
+          "histories": 2
+        },
+        "mean_steps": 293.0,
+        "mean_work": 98283.40579710144
+      },
+      "best_nonfeedback": {
+        "reach": {
+          "mean": 0.0625,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 1.8978222378571517,
+          "ci95": [
+            1.7202190656288054,
+            2.0
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.013955844876666864,
+          "ci95": [
+            0.0027144141495227814,
+            0.025197275603810947
+          ],
+          "histories": 2
+        },
+        "mean_steps": 293.0,
+        "mean_work": 98283.40579710144
+      }
+    },
+    "all_constant_methods": {
+      "fixed_0": {
+        "reach": {
+          "mean": 0.020833333333333332,
+          "ci95": [
+            0.0,
+            0.0625
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 1.9712649480224587,
+          "ci95": [
+            1.9137948440673762,
+            2.0
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.016365572189291317,
+          "ci95": [
+            0.016365572189291317,
+            0.016365572189291317
+          ],
+          "histories": 1
+        },
+        "mean_steps": 297.4791666666667,
+        "mean_work": 99778.99305555555
+      },
+      "fixed_1": {
+        "reach": {
+          "mean": 0.0625,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 1.8973566681264817,
+          "ci95": [
+            1.7211103153748801,
+            2.0
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.009223726578056812,
+          "ci95": [
+            0.003062549978494644,
+            0.01538490317761898
+          ],
+          "histories": 2
+        },
+        "mean_steps": 292.5625,
+        "mean_work": 98137.6147342995
+      },
+      "fixed_2": {
+        "reach": {
+          "mean": 0.041666666666666664,
+          "ci95": [
+            0.0,
+            0.125
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 1.9259442246634402,
+          "ci95": [
+            1.7778326739903203,
+            2.0
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.0028714047123988467,
+          "ci95": [
+            0.0028714047123988467,
+            0.0028714047123988467
+          ],
+          "histories": 1
+        },
+        "mean_steps": 291.4375,
+        "mean_work": 97761.68931159418
+      },
+      "fixed_3": {
+        "reach": {
+          "mean": 0.041666666666666664,
+          "ci95": [
+            0.0,
+            0.125
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 1.930733279373187,
+          "ci95": [
+            1.7921998381195616,
+            2.0
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.005236015344659488,
+          "ci95": [
+            0.005236015344659488,
+            0.005236015344659488
+          ],
+          "histories": 1
+        },
+        "mean_steps": 291.4166666666667,
+        "mean_work": 97755.0226449275
+      },
+      "fixed_4": {
+        "reach": {
+          "mean": 0.041666666666666664,
+          "ci95": [
+            0.0,
+            0.125
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 1.9358912188508797,
+          "ci95": [
+            1.8076736565526386,
+            2.0
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": 0.008670606339971224,
+          "ci95": [
+            0.008670606339971224,
+            0.008670606339971224
+          ],
+          "histories": 1
+        },
+        "mean_steps": 291.1666666666667,
+        "mean_work": 97672.12711352656
+      }
+    },
+    "paired": {
+      "best_time_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": 0.0004655697306701195,
+          "ci95": [
+            -0.005467167622244622,
+            0.006863876814254981
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": 0.004732118298610052,
+          "ci95": [
+            -0.0003481358289718628,
+            0.009812372426191967
+          ],
+          "histories": 2
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": 0.004732118298610052,
+          "ci95": [
+            -0.0003481358289718628,
+            0.009812372426191967
+          ],
+          "histories": 2
+        },
+        "work_difference": {
+          "mean": 145.79106280193187,
+          "ci95": [
+            -273.0298913043471,
+            710.4030797101427
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 3
+      },
+      "best_progress_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": -0.0016662454117955302,
+          "ci95": [
+            -0.011862613049641571,
+            0.006863876814254981
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": 0.004239991928140323,
+          "ci95": [
+            -0.001332388569911321,
+            0.009812372426191967
+          ],
+          "histories": 2
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": 0.004239991928140323,
+          "ci95": [
+            -0.001332388569911321,
+            0.009812372426191967
+          ],
+          "histories": 2
+        },
+        "work_difference": {
+          "mean": 145.79106280193187,
+          "ci95": [
+            -273.0298913043471,
+            710.4030797101427
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 3
+      },
+      "best_nonfeedback_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": 0.0004655697306701195,
+          "ci95": [
+            -0.005467167622244622,
+            0.006863876814254981
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": 0.004732118298610052,
+          "ci95": [
+            -0.0003481358289718628,
+            0.009812372426191967
+          ],
+          "histories": 2
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": 0.004732118298610052,
+          "ci95": [
+            -0.0003481358289718628,
+            0.009812372426191967
+          ],
+          "histories": 2
+        },
+        "work_difference": {
+          "mean": 145.79106280193187,
+          "ci95": [
+            -273.0298913043471,
+            710.4030797101427
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 3
+      }
+    },
+    "cross_future": {
+      "constant_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": 0.0006105180357875347,
+          "ci95": [
+            0.0,
+            0.001831554107362604
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": 0.0004903345058361683,
+          "ci95": [
+            0.0,
+            0.0009806690116723367
+          ],
+          "histories": 2
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": 0.0004903345058361683,
+          "ci95": [
+            0.0,
+            0.0009806690116723367
+          ],
+          "histories": 2
+        },
+        "work_difference": {
+          "mean": -251.58212560386406,
+          "ci95": [
+            -754.7463768115922,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 2
+      },
+      "plan_oracle_vs_nonfeedback": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": -0.0039653998403824525,
+          "ci95": [
+            -0.011896199521147358,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.004415851707259815,
+          "ci95": [
+            -0.00883170341451963,
+            0.0
+          ],
+          "histories": 2
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.004415851707259815,
+          "ci95": [
+            -0.00883170341451963,
+            0.0
+          ],
+          "histories": 2
+        },
+        "work_difference": {
+          "mean": -69.56219806763268,
+          "ci95": [
+            -208.68659420289805,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 2
+      },
+      "plan_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": 0.0034524769240536026,
+          "ci95": [
+            0.0,
+            0.009746912736373273
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": 0.0011766528089841202,
+          "ci95": [
+            0.0009806690116723367,
+            0.0013726366062959037
+          ],
+          "histories": 2
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": 0.0011766528089841202,
+          "ci95": [
+            0.0009806690116723367,
+            0.0013726366062959037
+          ],
+          "histories": 2
+        },
+        "work_difference": {
+          "mean": 460.26871980676304,
+          "ci95": [
+            -754.7463768115922,
+            2135.5525362318813
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 2
+      },
+      "all_feasible_constant_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "cost_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "joint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "work_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "joint_success_pairs": 0
+      },
+      "all_feasible_active_constant_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "cost_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "joint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "work_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "joint_success_pairs": 0
+      },
+      "all_feasible_plan_oracle_vs_nonfeedback": {
+        "reach_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "cost_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "joint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "work_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "joint_success_pairs": 0
+      },
+      "active_plan_oracle_vs_nonfeedback": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 21
+        },
+        "cost_difference": {
+          "mean": -0.00453188553186566,
+          "ci95": [
+            -0.01359565659559698,
+            0.0
+          ],
+          "histories": 21
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.004415851707259815,
+          "ci95": [
+            -0.00883170341451963,
+            0.0
+          ],
+          "histories": 2
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": -0.004415851707259815,
+          "ci95": [
+            -0.00883170341451963,
+            0.0
+          ],
+          "histories": 2
+        },
+        "work_difference": {
+          "mean": -79.49965493443736,
+          "ci95": [
+            -238.49896480331205,
+            0.0
+          ],
+          "histories": 21
+        },
+        "joint_success_pairs": 2
+      }
+    },
+    "diagnostics": {
+      "initially_done": 0,
+      "active_protected": 21,
+      "all_constants_feasible_selection_stream": 0,
+      "all_feasible_active_protected": 0,
+      "low_fails_high_succeeds_selection_stream": 1,
+      "constant_oracle_counts": [
+        23,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plan_oracle_counts": [
+        23,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "oracle_selection": [
+      {
+        "root": 510000,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510001,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510002,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510003,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510004,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510005,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510006,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510007,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510008,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510009,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510010,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510011,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510012,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510013,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510014,
+        "constant": 1,
+        "plan": 6
+      },
+      {
+        "root": 510015,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510016,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510017,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510018,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510019,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510020,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510021,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510022,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510023,
+        "constant": 0,
+        "plan": 0
+      }
+    ],
+    "selection_stream_reach": 0.041666666666666664,
+    "selection_stream_oracle_reach": 0.041666666666666664,
+    "selection_stream_active_fraction": 1.0
+  },
+  "t0.02_s100": {
+    "histories": 24,
+    "selected": {
+      "best_constant": 0,
+      "best_time": 0,
+      "best_progress": 0,
+      "best_nonfeedback": 0
+    },
+    "selected_names": {
+      "best_constant": "fixed_0",
+      "best_time": "fixed_0",
+      "best_progress": "fixed_0",
+      "best_nonfeedback": "fixed_0"
+    },
+    "methods": {
+      "best_constant": {
+        "reach": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 2.0,
+          "ci95": [
+            2.0,
+            2.0
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "mean_steps": 99.0,
+        "mean_work": 33466.521739130425
+      },
+      "best_time": {
+        "reach": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 2.0,
+          "ci95": [
+            2.0,
+            2.0
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "mean_steps": 99.0,
+        "mean_work": 33466.521739130425
+      },
+      "best_progress": {
+        "reach": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 2.0,
+          "ci95": [
+            2.0,
+            2.0
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "mean_steps": 99.0,
+        "mean_work": 33466.521739130425
+      },
+      "best_nonfeedback": {
+        "reach": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 2.0,
+          "ci95": [
+            2.0,
+            2.0
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "mean_steps": 99.0,
+        "mean_work": 33466.521739130425
+      }
+    },
+    "all_constant_methods": {
+      "fixed_0": {
+        "reach": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 2.0,
+          "ci95": [
+            2.0,
+            2.0
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "mean_steps": 99.0,
+        "mean_work": 33466.521739130425
+      },
+      "fixed_1": {
+        "reach": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 2.0,
+          "ci95": [
+            2.0,
+            2.0
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "mean_steps": 99.0,
+        "mean_work": 33466.521739130425
+      },
+      "fixed_2": {
+        "reach": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 2.0,
+          "ci95": [
+            2.0,
+            2.0
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "mean_steps": 99.0,
+        "mean_work": 33466.521739130425
+      },
+      "fixed_3": {
+        "reach": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 2.0,
+          "ci95": [
+            2.0,
+            2.0
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "mean_steps": 99.0,
+        "mean_work": 33466.521739130425
+      },
+      "fixed_4": {
+        "reach": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost": {
+          "mean": 2.0,
+          "ci95": [
+            2.0,
+            2.0
+          ],
+          "histories": 24
+        },
+        "successful_forgetting": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "mean_steps": 99.0,
+        "mean_work": 33466.521739130425
+      }
+    },
+    "paired": {
+      "best_time_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "work_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 0
+      },
+      "best_progress_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "work_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 0
+      },
+      "best_nonfeedback_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "work_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 0
+      }
+    },
+    "cross_future": {
+      "constant_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "work_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 0
+      },
+      "plan_oracle_vs_nonfeedback": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "work_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 0
+      },
+      "plan_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "cost_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "work_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 24
+        },
+        "joint_success_pairs": 0
+      },
+      "all_feasible_constant_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "cost_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "joint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "work_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "joint_success_pairs": 0
+      },
+      "all_feasible_active_constant_oracle_vs_constant": {
+        "reach_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "cost_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "joint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "work_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "joint_success_pairs": 0
+      },
+      "all_feasible_plan_oracle_vs_nonfeedback": {
+        "reach_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "cost_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "joint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "work_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "joint_success_pairs": 0
+      },
+      "active_plan_oracle_vs_nonfeedback": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 21
+        },
+        "cost_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 21
+        },
+        "joint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "tight_endpoint_forgetting_difference": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "histories": 0
+        },
+        "work_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 21
+        },
+        "joint_success_pairs": 0
+      }
+    },
+    "diagnostics": {
+      "initially_done": 0,
+      "active_protected": 21,
+      "all_constants_feasible_selection_stream": 0,
+      "all_feasible_active_protected": 0,
+      "low_fails_high_succeeds_selection_stream": 0,
+      "constant_oracle_counts": [
+        24,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "plan_oracle_counts": [
+        24,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "oracle_selection": [
+      {
+        "root": 510000,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510001,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510002,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510003,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510004,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510005,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510006,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510007,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510008,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510009,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510010,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510011,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510012,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510013,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510014,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510015,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510016,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510017,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510018,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510019,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510020,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510021,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510022,
+        "constant": 0,
+        "plan": 0
+      },
+      {
+        "root": 510023,
+        "constant": 0,
+        "plan": 0
+      }
+    ],
+    "selection_stream_reach": 0.0,
+    "selection_stream_oracle_reach": 0.0,
+    "selection_stream_active_fraction": 1.0
+  }
+}

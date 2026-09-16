@@ -1,0 +1,8 @@
+{
+  "python": "3.9.6",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "torch": "2.8.0",
+  "numpy": "2.0.2",
+  "device": "cpu",
+  "threads": 1
+}

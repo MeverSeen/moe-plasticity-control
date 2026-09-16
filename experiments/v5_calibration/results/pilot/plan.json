@@ -1,0 +1,189 @@
+{
+  "config": {
+    "experts": 6,
+    "dim": 10,
+    "hidden": 12,
+    "tasks": 5,
+    "top_k": 2,
+    "train_n": 384,
+    "monitor_n": 128,
+    "test_n": 512,
+    "replay_memory": 64,
+    "monitor_memory": 64,
+    "batch": 32,
+    "old_batch": 32,
+    "lr": 0.015,
+    "replay_weight": 0.1,
+    "max_steps": 300,
+    "interval": 5,
+    "base_steps": 250,
+    "target": 0.08,
+    "levels": [
+      0.08
+    ],
+    "lambda_max": 0.15,
+    "noise": 0.05,
+    "mask_old_threshold": 0.3333333333333333,
+    "mask_new_threshold": 0.05,
+    "reward_scale": 0.01,
+    "failure_penalty": 10.0,
+    "forgetting_cap": 5.0
+  },
+  "settings": [
+    {
+      "name": "t0.08_s300",
+      "target": 0.08,
+      "max_steps": 300
+    },
+    {
+      "name": "t0.08_s100",
+      "target": 0.08,
+      "max_steps": 100
+    }
+  ],
+  "candidates": [
+    {
+      "name": "fixed_0",
+      "kind": "fixed",
+      "action": 0
+    },
+    {
+      "name": "fixed_1",
+      "kind": "fixed",
+      "action": 1
+    },
+    {
+      "name": "fixed_2",
+      "kind": "fixed",
+      "action": 2
+    },
+    {
+      "name": "fixed_3",
+      "kind": "fixed",
+      "action": 3
+    },
+    {
+      "name": "fixed_4",
+      "kind": "fixed",
+      "action": 4
+    },
+    {
+      "name": "time_0_4_0.1",
+      "kind": "time",
+      "early": 0,
+      "late": 4,
+      "threshold": 0.1
+    },
+    {
+      "name": "time_0_4_0.3",
+      "kind": "time",
+      "early": 0,
+      "late": 4,
+      "threshold": 0.3
+    },
+    {
+      "name": "time_0_4_0.6",
+      "kind": "time",
+      "early": 0,
+      "late": 4,
+      "threshold": 0.6
+    },
+    {
+      "name": "time_4_0_0.1",
+      "kind": "time",
+      "early": 4,
+      "late": 0,
+      "threshold": 0.1
+    },
+    {
+      "name": "time_4_0_0.3",
+      "kind": "time",
+      "early": 4,
+      "late": 0,
+      "threshold": 0.3
+    },
+    {
+      "name": "time_4_0_0.6",
+      "kind": "time",
+      "early": 4,
+      "late": 0,
+      "threshold": 0.6
+    },
+    {
+      "name": "progress_0_4_0.25",
+      "kind": "progress",
+      "early": 0,
+      "late": 4,
+      "threshold": 0.25
+    },
+    {
+      "name": "progress_0_4_0.5",
+      "kind": "progress",
+      "early": 0,
+      "late": 4,
+      "threshold": 0.5
+    },
+    {
+      "name": "progress_0_4_0.75",
+      "kind": "progress",
+      "early": 0,
+      "late": 4,
+      "threshold": 0.75
+    },
+    {
+      "name": "progress_4_0_0.25",
+      "kind": "progress",
+      "early": 4,
+      "late": 0,
+      "threshold": 0.25
+    },
+    {
+      "name": "progress_4_0_0.5",
+      "kind": "progress",
+      "early": 4,
+      "late": 0,
+      "threshold": 0.5
+    },
+    {
+      "name": "progress_4_0_0.75",
+      "kind": "progress",
+      "early": 4,
+      "late": 0,
+      "threshold": 0.75
+    }
+  ],
+  "splits": {
+    "calibration": [
+      540000,
+      540001,
+      540002,
+      540003
+    ],
+    "confirmation": [
+      540100,
+      540101,
+      540102,
+      540103,
+      540104,
+      540105
+    ]
+  },
+  "pilot": true,
+  "futures": 2,
+  "selection_future": 0,
+  "diagnostic_evaluation_future": 1,
+  "scope": "Calibration of repeatable state-conditioned/temporal decision value; low-action failure is not required.",
+  "selection": "Choose baselines with future 0 on calibration roots: reachability, then successful raw forgetting, then work. Eligible settings have >=80% finite-plan oracle reach and >=50% initially active roots; no universal static feasibility required. Select maximum cross-future plan-oracle J gain over the best nonfeedback plan; if none eligible confirm reference configuration without claiming it qualifies.",
+  "confirmation": "Freeze one setting and four global baselines before creating any confirmation world. Confirmation cannot alter choices.",
+  "oracle": "For each history, use full future-0 evaluator outcomes to choose one finite plan; evaluate on independent future 1. Privileged diagnostic, not an executable feedback controller or global optimum.",
+  "objective": "Report reach first and paired raw forgetting at common target, including work tie-breaks. J=2(1-hit)+hit*F/(F+.01) is only a bounded diagnostic/setting-selection proxy.",
+  "all_feasible": "Cohort defined by all five constant plans succeeding in selection stream 0, then evaluated unfiltered on stream 1.",
+  "fixed_controls": "Same model capacity, memory, router, grouping, optimizer and exogenous minibatches within each setting. Target and budget vary across settings only.",
+  "teacher": "One consistent nonlinear teacher across tasks; no new conflicting-label task generator.",
+  "limitations": [
+    "Finite 17-plan class cannot establish the best possible dynamic policy.",
+    "Per-history privileged plan choice need not require feedback during training.",
+    "Two futures and finite histories limit uncertainty estimates.",
+    "No learned controller, new state representation, router dynamics or RL in this calibration."
+  ]
+}

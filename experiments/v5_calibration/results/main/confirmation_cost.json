@@ -1,0 +1,7 @@
+{
+  "seconds": 34.181326150894165,
+  "model_updates": 60067,
+  "charged_work": 20952157.623188533,
+  "rollouts": 2176,
+  "note": "All candidate rollouts are offline calibration/diagnostic computation. Work excludes shared old-task pretraining; wall time includes it."
+}

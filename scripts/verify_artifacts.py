@@ -8,10 +8,11 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def main():
     files = json.loads((ROOT / "docs" / "import_manifest.json").read_text())["files"]
-    v4 = ROOT / "experiments" / "v4_state_aggregation"
-    for line in (v4 / "manifest.sha256").read_text().splitlines():
-        expected, relative = line.split("  ", 1)
-        files[(v4 / relative).relative_to(ROOT).as_posix()] = expected
+    for version in ("v4_state_aggregation", "v5_calibration"):
+        folder = ROOT / "experiments" / version
+        for line in (folder / "manifest.sha256").read_text().splitlines():
+            expected, relative = line.split("  ", 1)
+            files[(folder / relative).relative_to(ROOT).as_posix()] = expected
     errors = []
     for relative, expected in files.items():
         path = ROOT / relative

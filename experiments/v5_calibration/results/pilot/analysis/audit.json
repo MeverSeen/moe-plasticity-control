@@ -1,0 +1,15 @@
+{
+  "source_hashes_match": true,
+  "disjoint_roots": true,
+  "online_budgets_valid": true,
+  "endpoint_thresholds_valid": true,
+  "complete_paired_plan_future_grid": true,
+  "root_labels_valid": true,
+  "selection_reproduces": true,
+  "baseline_selection_reproduces": true,
+  "rollout_counts": {
+    "calibration_t0.08_s100.jsonl": 136,
+    "calibration_t0.08_s300.jsonl": 136,
+    "confirmation_t0.08_s300.jsonl": 204
+  }
+}
