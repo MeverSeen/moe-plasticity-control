@@ -1,0 +1,7 @@
+Protocol invariant tests: 6/6 passed.
+Packaged Python sources: syntax checked.
+Sealed experiment source SHA-256: matched.
+Selected policy SHA-256: matched.
+Endpoint records: 1600 unique.
+Sequence-end records: 100.
+Plot: visually inspected.

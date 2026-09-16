@@ -1,0 +1,173 @@
+{
+  "note": "Post-hoc DEVELOPMENT diagnostic using terminal outcomes; not an executable policy or a bound on dynamic policies. No test tuning.",
+  "rows": [
+    {
+      "seed": 240000,
+      "action": 1,
+      "success": true,
+      "oracle_forgetting": 0.0,
+      "fixed_zero_forgetting": 0.0020227469503879547
+    },
+    {
+      "seed": 240001,
+      "action": 0,
+      "success": true,
+      "oracle_forgetting": 0.00028024613857269287,
+      "fixed_zero_forgetting": 0.00028024613857269287
+    },
+    {
+      "seed": 240002,
+      "action": 0,
+      "success": true,
+      "oracle_forgetting": 0.0,
+      "fixed_zero_forgetting": 0.0
+    },
+    {
+      "seed": 240003,
+      "action": 0,
+      "success": true,
+      "oracle_forgetting": 0.0,
+      "fixed_zero_forgetting": 0.0
+    },
+    {
+      "seed": 240004,
+      "action": 0,
+      "success": true,
+      "oracle_forgetting": 0.011372921988368034,
+      "fixed_zero_forgetting": 0.011372921988368034
+    },
+    {
+      "seed": 240005,
+      "action": 0,
+      "success": true,
+      "oracle_forgetting": 0.013337446376681328,
+      "fixed_zero_forgetting": 0.013337446376681328
+    },
+    {
+      "seed": 240006,
+      "action": 1,
+      "success": true,
+      "oracle_forgetting": 0.006137453019618988,
+      "fixed_zero_forgetting": 0.007826767861843109
+    },
+    {
+      "seed": 240007,
+      "action": 0,
+      "success": true,
+      "oracle_forgetting": 0.005909491330385208,
+      "fixed_zero_forgetting": 0.005909491330385208
+    },
+    {
+      "seed": 240008,
+      "action": 0,
+      "success": true,
+      "oracle_forgetting": 0.0,
+      "fixed_zero_forgetting": 0.0
+    },
+    {
+      "seed": 240009,
+      "action": 2,
+      "success": true,
+      "oracle_forgetting": 0.0,
+      "fixed_zero_forgetting": 0.0023411251604557037
+    },
+    {
+      "seed": 240010,
+      "action": 0,
+      "success": true,
+      "oracle_forgetting": 0.0,
+      "fixed_zero_forgetting": 0.0
+    },
+    {
+      "seed": 240011,
+      "action": 0,
+      "success": true,
+      "oracle_forgetting": 0.009427515168984732,
+      "fixed_zero_forgetting": 0.009427515168984732
+    },
+    {
+      "seed": 240012,
+      "action": 0,
+      "success": true,
+      "oracle_forgetting": 0.0004997327923774719,
+      "fixed_zero_forgetting": 0.0004997327923774719
+    },
+    {
+      "seed": 240013,
+      "action": 1,
+      "success": true,
+      "oracle_forgetting": 0.026023684069514275,
+      "fixed_zero_forgetting": 0.02631889469921589
+    },
+    {
+      "seed": 240014,
+      "action": 0,
+      "success": true,
+      "oracle_forgetting": 0.0,
+      "fixed_zero_forgetting": 0.0
+    },
+    {
+      "seed": 240015,
+      "action": 0,
+      "success": true,
+      "oracle_forgetting": 0.0,
+      "fixed_zero_forgetting": 0.0
+    },
+    {
+      "seed": 240016,
+      "action": 0,
+      "success": true,
+      "oracle_forgetting": 0.0,
+      "fixed_zero_forgetting": 0.0
+    },
+    {
+      "seed": 240017,
+      "action": 0,
+      "success": true,
+      "oracle_forgetting": 0.0,
+      "fixed_zero_forgetting": 0.0
+    },
+    {
+      "seed": 240018,
+      "action": 1,
+      "success": true,
+      "oracle_forgetting": 0.0,
+      "fixed_zero_forgetting": 0.0
+    },
+    {
+      "seed": 240019,
+      "action": 0,
+      "success": true,
+      "oracle_forgetting": 0.0,
+      "fixed_zero_forgetting": 0.0
+    },
+    {
+      "seed": 240020,
+      "action": 1,
+      "success": true,
+      "oracle_forgetting": 0.013772480189800262,
+      "fixed_zero_forgetting": 0.01571352904041608
+    },
+    {
+      "seed": 240021,
+      "action": 0,
+      "success": true,
+      "oracle_forgetting": 0.07903507351875305,
+      "fixed_zero_forgetting": 0.07903507351875305
+    },
+    {
+      "seed": 240022,
+      "action": 0,
+      "success": true,
+      "oracle_forgetting": 0.0,
+      "fixed_zero_forgetting": 0.0
+    },
+    {
+      "seed": 240023,
+      "action": 0,
+      "success": true,
+      "oracle_forgetting": 0.0,
+      "fixed_zero_forgetting": 0.0
+    }
+  ]
+}

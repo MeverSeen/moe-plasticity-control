@@ -1,0 +1,8 @@
+{
+  "seconds": 8.464570760726929,
+  "model_work": 7199795.637681138,
+  "episodes": 720,
+  "transitions": 3732,
+  "iterations": 60,
+  "policy_parameters": 1734
+}

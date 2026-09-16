@@ -1,0 +1,8 @@
+{
+  "seconds": 33.753148317337036,
+  "iterations": 40,
+  "episodes_per_iteration": 8,
+  "training_worlds": 32,
+  "validation_worlds": 8,
+  "policy_parameters": 5029
+}

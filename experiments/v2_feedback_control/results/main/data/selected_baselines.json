@@ -1,0 +1,15 @@
+{
+  "fixed": {
+    "action": 0
+  },
+  "schedule": {
+    "early": 0,
+    "late": 0,
+    "switch": 0.33
+  },
+  "rule": {
+    "protected_action": 1,
+    "tolerance": 0.001,
+    "release_budget": 0
+  }
+}

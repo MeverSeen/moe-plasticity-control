@@ -1,0 +1,1032 @@
+{
+  "0.08": {
+    "summary": {
+      "reached": 12,
+      "total": 12,
+      "forgetting_success": 0.014305553321416179,
+      "mean_steps": 58.833333333333336,
+      "mean_work": 19980.666666666668
+    },
+    "rows": [
+      {
+        "seed": 220000,
+        "old_tasks": 2,
+        "success": true,
+        "steps": 0,
+        "work": 384.0,
+        "budget": 100224.0,
+        "decisions": 0,
+        "new_monitor_loss": 0.0472976416349411,
+        "initial_new_loss": 0.0472976416349411,
+        "monitor_forgetting": 0.0,
+        "terminal_reward": -0.0,
+        "reason": "target",
+        "protected_mass": 0.9775955080986023,
+        "mask": [
+          false,
+          false,
+          true,
+          true,
+          true,
+          true
+        ],
+        "initial_old_usage": [
+          0.03125,
+          0.109375,
+          0.453125,
+          0.5,
+          0.515625,
+          0.390625
+        ],
+        "initial_new_usage": [
+          0.0234375,
+          0.0234375,
+          0.28125,
+          0.8828125,
+          0.6953125,
+          0.09375
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.004691124999999907
+      },
+      {
+        "seed": 220001,
+        "old_tasks": 3,
+        "success": true,
+        "steps": 10,
+        "work": 3708.0,
+        "budget": 100224.0,
+        "decisions": 2,
+        "new_monitor_loss": 0.07738566398620605,
+        "initial_new_loss": 0.12848474085330963,
+        "monitor_forgetting": 0.02998168021440506,
+        "terminal_reward": -2.998168021440506,
+        "reason": "target",
+        "protected_mass": 0.3893245458602905,
+        "mask": [
+          false,
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "initial_old_usage": [
+          0.1428571492433548,
+          0.3650793731212616,
+          0.5396825671195984,
+          0.3968254029750824,
+          0.3174603283405304,
+          0.2380952388048172
+        ],
+        "initial_new_usage": [
+          0.8984375,
+          0.7421875,
+          0.0703125,
+          0.0078125,
+          0.03125,
+          0.25
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.005043625000000329
+      },
+      {
+        "seed": 220002,
+        "old_tasks": 1,
+        "success": true,
+        "steps": 60,
+        "work": 20352.0,
+        "budget": 100224.0,
+        "decisions": 12,
+        "new_monitor_loss": 0.07998791337013245,
+        "initial_new_loss": 0.5650299787521362,
+        "monitor_forgetting": 0.0,
+        "terminal_reward": -0.0,
+        "reason": "target",
+        "protected_mass": 0.13626731932163239,
+        "mask": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "initial_old_usage": [
+          0.109375,
+          0.0,
+          0.0,
+          0.234375,
+          0.890625,
+          0.765625
+        ],
+        "initial_new_usage": [
+          0.9296875,
+          0.65625,
+          0.0625,
+          0.0,
+          0.0078125,
+          0.34375
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.022915250000000054
+      },
+      {
+        "seed": 220003,
+        "old_tasks": 2,
+        "success": true,
+        "steps": 17,
+        "work": 6080.0,
+        "budget": 100224.0,
+        "decisions": 4,
+        "new_monitor_loss": 0.07664216309785843,
+        "initial_new_loss": 0.08530766516923904,
+        "monitor_forgetting": 0.009898298420011997,
+        "terminal_reward": -0.9898298420011997,
+        "reason": "target",
+        "protected_mass": 0.40535902976989746,
+        "mask": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "initial_old_usage": [
+          0.53125,
+          0.28125,
+          0.03125,
+          0.15625,
+          0.4375,
+          0.5625
+        ],
+        "initial_new_usage": [
+          0.015625,
+          0.03125,
+          0.234375,
+          0.8125,
+          0.75,
+          0.15625
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.007044250000000307
+      },
+      {
+        "seed": 220004,
+        "old_tasks": 3,
+        "success": true,
+        "steps": 11,
+        "work": 4091.0,
+        "budget": 100224.0,
+        "decisions": 3,
+        "new_monitor_loss": 0.07999563217163086,
+        "initial_new_loss": 0.14008578658103943,
+        "monitor_forgetting": 0.00626449038585027,
+        "terminal_reward": -0.626449038585027,
+        "reason": "target",
+        "protected_mass": 0.38047701120376587,
+        "mask": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "initial_old_usage": [
+          0.5873016119003296,
+          0.2380952388048172,
+          0.01587301678955555,
+          0.1587301641702652,
+          0.3968254029750824,
+          0.60317462682724
+        ],
+        "initial_new_usage": [
+          0.0,
+          0.015625,
+          0.25,
+          0.890625,
+          0.75,
+          0.09375
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.0048015420000000475
+      },
+      {
+        "seed": 220005,
+        "old_tasks": 1,
+        "success": true,
+        "steps": 21,
+        "work": 7424.0,
+        "budget": 100224.0,
+        "decisions": 5,
+        "new_monitor_loss": 0.07852038741111755,
+        "initial_new_loss": 0.1077658087015152,
+        "monitor_forgetting": 0.010449070483446121,
+        "terminal_reward": -1.0449070483446121,
+        "reason": "target",
+        "protected_mass": 0.632792592048645,
+        "mask": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false
+        ],
+        "initial_old_usage": [
+          0.0,
+          0.0,
+          0.1875,
+          0.9375,
+          0.8125,
+          0.0625
+        ],
+        "initial_new_usage": [
+          0.0703125,
+          0.0078125,
+          0.0234375,
+          0.2578125,
+          0.90625,
+          0.734375
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.00825254200000014
+      },
+      {
+        "seed": 220006,
+        "old_tasks": 2,
+        "success": true,
+        "steps": 9,
+        "work": 3392.0,
+        "budget": 100224.0,
+        "decisions": 2,
+        "new_monitor_loss": 0.07973930239677429,
+        "initial_new_loss": 0.12203511595726013,
+        "monitor_forgetting": 0.02459198795258999,
+        "terminal_reward": -2.459198795258999,
+        "reason": "target",
+        "protected_mass": 0.12525364756584167,
+        "mask": [
+          false,
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "initial_old_usage": [
+          0.203125,
+          0.453125,
+          0.328125,
+          0.25,
+          0.46875,
+          0.296875
+        ],
+        "initial_new_usage": [
+          0.6953125,
+          0.0546875,
+          0.0078125,
+          0.0234375,
+          0.296875,
+          0.921875
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.003958292000000085
+      },
+      {
+        "seed": 220007,
+        "old_tasks": 3,
+        "success": true,
+        "steps": 35,
+        "work": 12023.0,
+        "budget": 100224.0,
+        "decisions": 7,
+        "new_monitor_loss": 0.07777852565050125,
+        "initial_new_loss": 0.1385369449853897,
+        "monitor_forgetting": 0.006441807995239894,
+        "terminal_reward": -0.6441807995239893,
+        "reason": "target",
+        "protected_mass": 0.3515590727329254,
+        "mask": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "initial_old_usage": [
+          0.5714285969734192,
+          0.4920634925365448,
+          0.3650793731212616,
+          0.1428571492433548,
+          0.0634920671582222,
+          0.3650793731212616
+        ],
+        "initial_new_usage": [
+          0.0703125,
+          0.0078125,
+          0.015625,
+          0.2890625,
+          0.9140625,
+          0.703125
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.013988333999999991
+      },
+      {
+        "seed": 220008,
+        "old_tasks": 1,
+        "success": true,
+        "steps": 274,
+        "work": 91584.0,
+        "budget": 100224.0,
+        "decisions": 55,
+        "new_monitor_loss": 0.07995235919952393,
+        "initial_new_loss": 0.46062609553337097,
+        "monitor_forgetting": 0.02127067744731903,
+        "terminal_reward": -2.127067744731903,
+        "reason": "target",
+        "protected_mass": 0.12134008854627609,
+        "mask": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "initial_old_usage": [
+          0.6875,
+          0.046875,
+          0.0,
+          0.03125,
+          0.3125,
+          0.921875
+        ],
+        "initial_new_usage": [
+          0.3046875,
+          0.8984375,
+          0.6796875,
+          0.0859375,
+          0.015625,
+          0.015625
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.10278495900000006
+      },
+      {
+        "seed": 220009,
+        "old_tasks": 2,
+        "success": true,
+        "steps": 0,
+        "work": 384.0,
+        "budget": 100224.0,
+        "decisions": 0,
+        "new_monitor_loss": 0.07171811163425446,
+        "initial_new_loss": 0.07171811163425446,
+        "monitor_forgetting": 0.0,
+        "terminal_reward": -0.0,
+        "reason": "target",
+        "protected_mass": 0.9864040017127991,
+        "mask": [
+          true,
+          true,
+          false,
+          false,
+          true,
+          true
+        ],
+        "initial_old_usage": [
+          0.484375,
+          0.390625,
+          0.046875,
+          0.109375,
+          0.46875,
+          0.5
+        ],
+        "initial_new_usage": [
+          0.65625,
+          0.0859375,
+          0.0,
+          0.03125,
+          0.34375,
+          0.8828125
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.00034720800000043184
+      },
+      {
+        "seed": 220010,
+        "old_tasks": 3,
+        "success": true,
+        "steps": 97,
+        "work": 32682.0,
+        "budget": 100224.0,
+        "decisions": 20,
+        "new_monitor_loss": 0.07948333024978638,
+        "initial_new_loss": 0.1445806622505188,
+        "monitor_forgetting": 0.025161121040582657,
+        "terminal_reward": -2.5161121040582657,
+        "reason": "target",
+        "protected_mass": 0.04094900190830231,
+        "mask": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "initial_old_usage": [
+          0.380952388048172,
+          0.6190476417541504,
+          0.523809552192688,
+          0.2698412835597992,
+          0.095238097012043,
+          0.1111111119389534
+        ],
+        "initial_new_usage": [
+          0.109375,
+          0.0,
+          0.015625,
+          0.2265625,
+          0.875,
+          0.7734375
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.03804966700000012
+      },
+      {
+        "seed": 220011,
+        "old_tasks": 1,
+        "success": true,
+        "steps": 172,
+        "work": 57664.0,
+        "budget": 100224.0,
+        "decisions": 35,
+        "new_monitor_loss": 0.07863987237215042,
+        "initial_new_loss": 0.5204361081123352,
+        "monitor_forgetting": 0.03760750591754913,
+        "terminal_reward": -3.7607505917549133,
+        "reason": "target",
+        "protected_mass": 0.0,
+        "mask": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "initial_old_usage": [
+          0.0,
+          0.234375,
+          0.953125,
+          0.765625,
+          0.046875,
+          0.0
+        ],
+        "initial_new_usage": [
+          0.671875,
+          0.0625,
+          0.0078125,
+          0.015625,
+          0.3203125,
+          0.921875
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.06527100000000008
+      }
+    ]
+  },
+  "0.1": {
+    "summary": {
+      "reached": 12,
+      "total": 12,
+      "forgetting_success": 0.012508310015416808,
+      "mean_steps": 29.333333333333332,
+      "mean_work": 10157.916666666666
+    },
+    "rows": [
+      {
+        "seed": 220000,
+        "old_tasks": 2,
+        "success": true,
+        "steps": 0,
+        "work": 384.0,
+        "budget": 100224.0,
+        "decisions": 0,
+        "new_monitor_loss": 0.0472976416349411,
+        "initial_new_loss": 0.0472976416349411,
+        "monitor_forgetting": 0.0,
+        "terminal_reward": -0.0,
+        "reason": "target",
+        "protected_mass": 0.9775955080986023,
+        "mask": [
+          false,
+          false,
+          true,
+          true,
+          true,
+          true
+        ],
+        "initial_old_usage": [
+          0.03125,
+          0.109375,
+          0.453125,
+          0.5,
+          0.515625,
+          0.390625
+        ],
+        "initial_new_usage": [
+          0.0234375,
+          0.0234375,
+          0.28125,
+          0.8828125,
+          0.6953125,
+          0.09375
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.000388666000000093
+      },
+      {
+        "seed": 220001,
+        "old_tasks": 3,
+        "success": true,
+        "steps": 5,
+        "work": 2045.0,
+        "budget": 100224.0,
+        "decisions": 1,
+        "new_monitor_loss": 0.0996679961681366,
+        "initial_new_loss": 0.12848474085330963,
+        "monitor_forgetting": 0.020498886704444885,
+        "terminal_reward": -2.0498886704444885,
+        "reason": "target",
+        "protected_mass": 0.3893245458602905,
+        "mask": [
+          false,
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "initial_old_usage": [
+          0.1428571492433548,
+          0.3650793731212616,
+          0.5396825671195984,
+          0.3968254029750824,
+          0.3174603283405304,
+          0.2380952388048172
+        ],
+        "initial_new_usage": [
+          0.8984375,
+          0.7421875,
+          0.0703125,
+          0.0078125,
+          0.03125,
+          0.25
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.0023580000000000823
+      },
+      {
+        "seed": 220002,
+        "old_tasks": 1,
+        "success": true,
+        "steps": 50,
+        "work": 17024.0,
+        "budget": 100224.0,
+        "decisions": 10,
+        "new_monitor_loss": 0.09944380819797516,
+        "initial_new_loss": 0.5650299787521362,
+        "monitor_forgetting": 0.0,
+        "terminal_reward": -0.0,
+        "reason": "target",
+        "protected_mass": 0.13626731932163239,
+        "mask": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "initial_old_usage": [
+          0.109375,
+          0.0,
+          0.0,
+          0.234375,
+          0.890625,
+          0.765625
+        ],
+        "initial_new_usage": [
+          0.9296875,
+          0.65625,
+          0.0625,
+          0.0,
+          0.0078125,
+          0.34375
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.019009416999999917
+      },
+      {
+        "seed": 220003,
+        "old_tasks": 2,
+        "success": true,
+        "steps": 0,
+        "work": 384.0,
+        "budget": 100224.0,
+        "decisions": 0,
+        "new_monitor_loss": 0.08530766516923904,
+        "initial_new_loss": 0.08530766516923904,
+        "monitor_forgetting": 0.0,
+        "terminal_reward": -0.0,
+        "reason": "target",
+        "protected_mass": 0.40535902976989746,
+        "mask": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "initial_old_usage": [
+          0.53125,
+          0.28125,
+          0.03125,
+          0.15625,
+          0.4375,
+          0.5625
+        ],
+        "initial_new_usage": [
+          0.015625,
+          0.03125,
+          0.234375,
+          0.8125,
+          0.75,
+          0.15625
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.00037620899999968316
+      },
+      {
+        "seed": 220004,
+        "old_tasks": 3,
+        "success": true,
+        "steps": 5,
+        "work": 2045.0,
+        "budget": 100224.0,
+        "decisions": 1,
+        "new_monitor_loss": 0.09921934455633163,
+        "initial_new_loss": 0.14008578658103943,
+        "monitor_forgetting": 0.014139406383037567,
+        "terminal_reward": -1.4139406383037567,
+        "reason": "target",
+        "protected_mass": 0.38047701120376587,
+        "mask": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "initial_old_usage": [
+          0.5873016119003296,
+          0.2380952388048172,
+          0.01587301678955555,
+          0.1587301641702652,
+          0.3968254029750824,
+          0.60317462682724
+        ],
+        "initial_new_usage": [
+          0.0,
+          0.015625,
+          0.25,
+          0.890625,
+          0.75,
+          0.09375
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.002302417000000112
+      },
+      {
+        "seed": 220005,
+        "old_tasks": 1,
+        "success": true,
+        "steps": 3,
+        "work": 1408.0,
+        "budget": 100224.0,
+        "decisions": 1,
+        "new_monitor_loss": 0.0955488309264183,
+        "initial_new_loss": 0.1077658087015152,
+        "monitor_forgetting": 0.0,
+        "terminal_reward": -0.0,
+        "reason": "target",
+        "protected_mass": 0.632792592048645,
+        "mask": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false
+        ],
+        "initial_old_usage": [
+          0.0,
+          0.0,
+          0.1875,
+          0.9375,
+          0.8125,
+          0.0625
+        ],
+        "initial_new_usage": [
+          0.0703125,
+          0.0078125,
+          0.0234375,
+          0.2578125,
+          0.90625,
+          0.734375
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.0014336660000000556
+      },
+      {
+        "seed": 220006,
+        "old_tasks": 2,
+        "success": true,
+        "steps": 4,
+        "work": 1728.0,
+        "budget": 100224.0,
+        "decisions": 1,
+        "new_monitor_loss": 0.09517906606197357,
+        "initial_new_loss": 0.12203511595726013,
+        "monitor_forgetting": 0.027949249371886253,
+        "terminal_reward": -2.7949249371886253,
+        "reason": "target",
+        "protected_mass": 0.12525364756584167,
+        "mask": [
+          false,
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "initial_old_usage": [
+          0.203125,
+          0.453125,
+          0.328125,
+          0.25,
+          0.46875,
+          0.296875
+        ],
+        "initial_new_usage": [
+          0.6953125,
+          0.0546875,
+          0.0078125,
+          0.0234375,
+          0.296875,
+          0.921875
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.001849292000000169
+      },
+      {
+        "seed": 220007,
+        "old_tasks": 3,
+        "success": true,
+        "steps": 12,
+        "work": 4411.0,
+        "budget": 100224.0,
+        "decisions": 3,
+        "new_monitor_loss": 0.09839681535959244,
+        "initial_new_loss": 0.1385369449853897,
+        "monitor_forgetting": 0.02303628499309222,
+        "terminal_reward": -2.3036284993092218,
+        "reason": "target",
+        "protected_mass": 0.3515590727329254,
+        "mask": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "initial_old_usage": [
+          0.5714285969734192,
+          0.4920634925365448,
+          0.3650793731212616,
+          0.1428571492433548,
+          0.0634920671582222,
+          0.3650793731212616
+        ],
+        "initial_new_usage": [
+          0.0703125,
+          0.0078125,
+          0.015625,
+          0.2890625,
+          0.9140625,
+          0.703125
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.005090333000000058
+      },
+      {
+        "seed": 220008,
+        "old_tasks": 1,
+        "success": true,
+        "steps": 148,
+        "work": 49664.0,
+        "budget": 100224.0,
+        "decisions": 30,
+        "new_monitor_loss": 0.09965360909700394,
+        "initial_new_loss": 0.46062609553337097,
+        "monitor_forgetting": 0.024353884160518646,
+        "terminal_reward": -2.4353884160518646,
+        "reason": "target",
+        "protected_mass": 0.12134008854627609,
+        "mask": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "initial_old_usage": [
+          0.6875,
+          0.046875,
+          0.0,
+          0.03125,
+          0.3125,
+          0.921875
+        ],
+        "initial_new_usage": [
+          0.3046875,
+          0.8984375,
+          0.6796875,
+          0.0859375,
+          0.015625,
+          0.015625
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.055647333000000465
+      },
+      {
+        "seed": 220009,
+        "old_tasks": 2,
+        "success": true,
+        "steps": 0,
+        "work": 384.0,
+        "budget": 100224.0,
+        "decisions": 0,
+        "new_monitor_loss": 0.07171811163425446,
+        "initial_new_loss": 0.07171811163425446,
+        "monitor_forgetting": 0.0,
+        "terminal_reward": -0.0,
+        "reason": "target",
+        "protected_mass": 0.9864040017127991,
+        "mask": [
+          true,
+          true,
+          false,
+          false,
+          true,
+          true
+        ],
+        "initial_old_usage": [
+          0.484375,
+          0.390625,
+          0.046875,
+          0.109375,
+          0.46875,
+          0.5
+        ],
+        "initial_new_usage": [
+          0.65625,
+          0.0859375,
+          0.0,
+          0.03125,
+          0.34375,
+          0.8828125
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.0003349579999998298
+      },
+      {
+        "seed": 220010,
+        "old_tasks": 3,
+        "success": true,
+        "steps": 58,
+        "work": 19698.0,
+        "budget": 100224.0,
+        "decisions": 12,
+        "new_monitor_loss": 0.09996416419744492,
+        "initial_new_loss": 0.1445806622505188,
+        "monitor_forgetting": 0.014802223692337671,
+        "terminal_reward": -1.480222369233767,
+        "reason": "target",
+        "protected_mass": 0.04094900190830231,
+        "mask": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "initial_old_usage": [
+          0.380952388048172,
+          0.6190476417541504,
+          0.523809552192688,
+          0.2698412835597992,
+          0.095238097012043,
+          0.1111111119389534
+        ],
+        "initial_new_usage": [
+          0.109375,
+          0.0,
+          0.015625,
+          0.2265625,
+          0.875,
+          0.7734375
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.02284812500000033
+      },
+      {
+        "seed": 220011,
+        "old_tasks": 1,
+        "success": true,
+        "steps": 67,
+        "work": 22720.0,
+        "budget": 100224.0,
+        "decisions": 14,
+        "new_monitor_loss": 0.09721173346042633,
+        "initial_new_loss": 0.5204361081123352,
+        "monitor_forgetting": 0.025319784879684448,
+        "terminal_reward": -2.531978487968445,
+        "reason": "target",
+        "protected_mass": 0.0,
+        "mask": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "initial_old_usage": [
+          0.0,
+          0.234375,
+          0.953125,
+          0.765625,
+          0.046875,
+          0.0
+        ],
+        "initial_new_usage": [
+          0.671875,
+          0.0625,
+          0.0078125,
+          0.015625,
+          0.3203125,
+          0.921875
+        ],
+        "mean_multiplier": 1.0,
+        "action_changes": 0,
+        "seconds": 0.02573391700000016
+      }
+    ]
+  }
+}

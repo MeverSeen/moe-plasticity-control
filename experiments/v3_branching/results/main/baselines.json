@@ -1,0 +1,10 @@
+{
+  "static": {
+    "action": 0
+  },
+  "hand": {
+    "action": 3,
+    "tolerance": 0.01,
+    "release": 0.0
+  }
+}

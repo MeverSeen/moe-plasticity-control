@@ -1,0 +1,75 @@
+{
+  "seconds": 4.271592855453491,
+  "states": 17,
+  "histories": 4,
+  "future_replicates": 2,
+  "branch_updates": 9411,
+  "branch_work": 3149544.8115942045,
+  "roots": [
+    {
+      "root": 350200,
+      "states": 5,
+      "initially_done": false,
+      "initial_new_loss": 0.10290637612342834,
+      "protected_mass": 0.3769078254699707,
+      "mask": [
+        false,
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 350201,
+      "states": 0,
+      "initially_done": true,
+      "initial_new_loss": 0.04901530221104622,
+      "protected_mass": 0.9746806025505066,
+      "mask": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 350202,
+      "states": 7,
+      "initially_done": false,
+      "initial_new_loss": 0.6365129947662354,
+      "protected_mass": 0.02453962340950966,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 350203,
+      "states": 5,
+      "initially_done": false,
+      "initial_new_loss": 0.22604231536388397,
+      "protected_mass": 0.035435669124126434,
+      "mask": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 2
+    }
+  ],
+  "note": "Offline branching work excludes common old-task pretraining and state-generation work."
+}

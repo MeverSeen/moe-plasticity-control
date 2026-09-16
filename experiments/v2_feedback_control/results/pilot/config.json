@@ -1,0 +1,30 @@
+{
+  "experts": 6,
+  "dim": 10,
+  "hidden": 12,
+  "tasks": 5,
+  "top_k": 2,
+  "train_n": 384,
+  "monitor_n": 128,
+  "test_n": 512,
+  "replay_memory": 64,
+  "monitor_memory": 64,
+  "batch": 32,
+  "old_batch": 32,
+  "lr": 0.015,
+  "replay_weight": 0.1,
+  "max_steps": 300,
+  "interval": 5,
+  "base_steps": 250,
+  "target": 0.06,
+  "levels": [
+    0.06
+  ],
+  "lambda_max": 0.15,
+  "noise": 0.05,
+  "mask_old_threshold": 0.3333333333333333,
+  "mask_new_threshold": 0.05,
+  "reward_scale": 0.01,
+  "failure_penalty": 10.0,
+  "forgetting_cap": 5.0
+}

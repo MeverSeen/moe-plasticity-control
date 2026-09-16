@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "source_hashes_verified": 4,
+  "policy_hashes_verified": 6,
+  "counts": {
+    "train": {
+      "states": 207,
+      "branches": 2070,
+      "roots": 57
+    },
+    "dev": {
+      "states": 77,
+      "branches": 770,
+      "roots": 19
+    },
+    "test": {
+      "states": 169,
+      "branches": 1690,
+      "roots": 45
+    }
+  },
+  "online_episodes": 576,
+  "independent_online_forgetting_difference": 6.197024615378012e-05
+}

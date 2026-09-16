@@ -1,0 +1,1311 @@
+{
+  "thresholds": {
+    "0.16": {
+      "uniform": {
+        "reached": 80,
+        "total": 80,
+        "reach_rate": 1.0,
+        "forgetting_conditional": 0.008779268154952054,
+        "old_loss_conditional": 0.058623715416373054,
+        "new_test_loss_conditional": 0.10432596243917942,
+        "new_monitor_loss_conditional": 0.10203437465243041,
+        "overshoot_conditional": 0.05796562534756959,
+        "mean_steps_including_failures": 3.5,
+        "zero_update_endpoints": 54
+      },
+      "activation": {
+        "reached": 80,
+        "total": 80,
+        "reach_rate": 1.0,
+        "forgetting_conditional": 0.0025095094480396558,
+        "old_loss_conditional": 0.0517528235912323,
+        "new_test_loss_conditional": 0.10204767361283303,
+        "new_monitor_loss_conditional": 0.09953976701945066,
+        "overshoot_conditional": 0.060460232980549346,
+        "mean_steps_including_failures": 3.4125,
+        "zero_update_endpoints": 57
+      },
+      "importance": {
+        "reached": 80,
+        "total": 80,
+        "reach_rate": 1.0,
+        "forgetting_conditional": 0.0017360958833402642,
+        "old_loss_conditional": 0.04995096208488879,
+        "new_test_loss_conditional": 0.10227835746482014,
+        "new_monitor_loss_conditional": 0.0996700911782682,
+        "overshoot_conditional": 0.060329908821731816,
+        "mean_steps_including_failures": 3.35,
+        "zero_update_endpoints": 56
+      },
+      "learned": {
+        "reached": 80,
+        "total": 80,
+        "reach_rate": 1.0,
+        "forgetting_conditional": 0.003406958685566981,
+        "old_loss_conditional": 0.0523165973155604,
+        "new_test_loss_conditional": 0.1020625323522836,
+        "new_monitor_loss_conditional": 0.10116866137832403,
+        "overshoot_conditional": 0.05883133862167598,
+        "mean_steps_including_failures": 3.95,
+        "zero_update_endpoints": 56
+      },
+      "untrained": {
+        "reached": 80,
+        "total": 80,
+        "reach_rate": 1.0,
+        "forgetting_conditional": 0.004377025773283094,
+        "old_loss_conditional": 0.053118684084620324,
+        "new_test_loss_conditional": 0.10301546528935432,
+        "new_monitor_loss_conditional": 0.10142950676381587,
+        "overshoot_conditional": 0.05857049323618413,
+        "mean_steps_including_failures": 3.9375,
+        "zero_update_endpoints": 57
+      }
+    },
+    "0.1": {
+      "uniform": {
+        "reached": 80,
+        "total": 80,
+        "reach_rate": 1.0,
+        "forgetting_conditional": 0.006267286024133986,
+        "old_loss_conditional": 0.05644438432063907,
+        "new_test_loss_conditional": 0.07912073573097586,
+        "new_monitor_loss_conditional": 0.07935936045832932,
+        "overshoot_conditional": 0.020640639541670683,
+        "mean_steps_including_failures": 10.9625,
+        "zero_update_endpoints": 43
+      },
+      "activation": {
+        "reached": 80,
+        "total": 80,
+        "reach_rate": 1.0,
+        "forgetting_conditional": 0.002278961208260929,
+        "old_loss_conditional": 0.05130929642667372,
+        "new_test_loss_conditional": 0.07971307337284088,
+        "new_monitor_loss_conditional": 0.0790945751592517,
+        "overshoot_conditional": 0.020905424840748314,
+        "mean_steps_including_failures": 11.45,
+        "zero_update_endpoints": 45
+      },
+      "importance": {
+        "reached": 80,
+        "total": 80,
+        "reach_rate": 1.0,
+        "forgetting_conditional": 0.0018701392710984994,
+        "old_loss_conditional": 0.049802609740678835,
+        "new_test_loss_conditional": 0.07860926948487759,
+        "new_monitor_loss_conditional": 0.07832755940034986,
+        "overshoot_conditional": 0.021672440599650147,
+        "mean_steps_including_failures": 10.8125,
+        "zero_update_endpoints": 44
+      },
+      "learned": {
+        "reached": 80,
+        "total": 80,
+        "reach_rate": 1.0,
+        "forgetting_conditional": 0.0028962383628822865,
+        "old_loss_conditional": 0.0519088598608505,
+        "new_test_loss_conditional": 0.07864166530780495,
+        "new_monitor_loss_conditional": 0.07913966933265329,
+        "overshoot_conditional": 0.02086033066734672,
+        "mean_steps_including_failures": 12.8375,
+        "zero_update_endpoints": 44
+      },
+      "untrained": {
+        "reached": 80,
+        "total": 80,
+        "reach_rate": 1.0,
+        "forgetting_conditional": 0.004062938519443075,
+        "old_loss_conditional": 0.053050060418900105,
+        "new_test_loss_conditional": 0.07880807742476463,
+        "new_monitor_loss_conditional": 0.07900313511490822,
+        "overshoot_conditional": 0.020996864885091785,
+        "mean_steps_including_failures": 12.7125,
+        "zero_update_endpoints": 42
+      }
+    },
+    "0.06": {
+      "uniform": {
+        "reached": 76,
+        "total": 80,
+        "reach_rate": 0.95,
+        "forgetting_conditional": 0.007413772665977216,
+        "old_loss_conditional": 0.05583308934716082,
+        "new_test_loss_conditional": 0.05734934672517212,
+        "new_monitor_loss_conditional": 0.05500902196294383,
+        "overshoot_conditional": 0.004990978037056168,
+        "mean_steps_including_failures": 47.6625,
+        "zero_update_endpoints": 17
+      },
+      "activation": {
+        "reached": 77,
+        "total": 80,
+        "reach_rate": 0.9625,
+        "forgetting_conditional": 0.0023121551804050995,
+        "old_loss_conditional": 0.049028040288878985,
+        "new_test_loss_conditional": 0.05888430179133044,
+        "new_monitor_loss_conditional": 0.055248159915208817,
+        "overshoot_conditional": 0.004751840084791181,
+        "mean_steps_including_failures": 48.0875,
+        "zero_update_endpoints": 21
+      },
+      "importance": {
+        "reached": 77,
+        "total": 80,
+        "reach_rate": 0.9625,
+        "forgetting_conditional": 0.0014244220985575415,
+        "old_loss_conditional": 0.04679546971277241,
+        "new_test_loss_conditional": 0.05757701774309208,
+        "new_monitor_loss_conditional": 0.05518077057483908,
+        "overshoot_conditional": 0.004819229425160914,
+        "mean_steps_including_failures": 45.025,
+        "zero_update_endpoints": 21
+      },
+      "learned": {
+        "reached": 76,
+        "total": 80,
+        "reach_rate": 0.95,
+        "forgetting_conditional": 0.0028671126387882647,
+        "old_loss_conditional": 0.0493833176044159,
+        "new_test_loss_conditional": 0.0571974515914917,
+        "new_monitor_loss_conditional": 0.05550588128205977,
+        "overshoot_conditional": 0.004494118717940228,
+        "mean_steps_including_failures": 52.1125,
+        "zero_update_endpoints": 19
+      },
+      "untrained": {
+        "reached": 76,
+        "total": 80,
+        "reach_rate": 0.95,
+        "forgetting_conditional": 0.004443443907228739,
+        "old_loss_conditional": 0.051129814854153154,
+        "new_test_loss_conditional": 0.0569427026141631,
+        "new_monitor_loss_conditional": 0.05542631427708425,
+        "overshoot_conditional": 0.004573685722915747,
+        "mean_steps_including_failures": 50.975,
+        "zero_update_endpoints": 19
+      }
+    },
+    "0.04": {
+      "uniform": {
+        "reached": 63,
+        "total": 80,
+        "reach_rate": 0.7875,
+        "forgetting_conditional": 0.004364172568318074,
+        "old_loss_conditional": 0.049267616640362465,
+        "new_test_loss_conditional": 0.042279019863122984,
+        "new_monitor_loss_conditional": 0.038724865350458354,
+        "overshoot_conditional": 0.0012751346495416445,
+        "mean_steps_including_failures": 117.7375,
+        "zero_update_endpoints": 2
+      },
+      "activation": {
+        "reached": 56,
+        "total": 80,
+        "reach_rate": 0.7,
+        "forgetting_conditional": 0.001849895697974023,
+        "old_loss_conditional": 0.04343808859786285,
+        "new_test_loss_conditional": 0.04311786199520741,
+        "new_monitor_loss_conditional": 0.03881086262741259,
+        "overshoot_conditional": 0.0011891373725874091,
+        "mean_steps_including_failures": 124.3,
+        "zero_update_endpoints": 7
+      },
+      "importance": {
+        "reached": 59,
+        "total": 80,
+        "reach_rate": 0.7375,
+        "forgetting_conditional": 0.0010388650257919132,
+        "old_loss_conditional": 0.04301814811230547,
+        "new_test_loss_conditional": 0.042732285746073316,
+        "new_monitor_loss_conditional": 0.03898069818141097,
+        "overshoot_conditional": 0.0010193018185890336,
+        "mean_steps_including_failures": 128.1,
+        "zero_update_endpoints": 3
+      },
+      "learned": {
+        "reached": 55,
+        "total": 80,
+        "reach_rate": 0.6875,
+        "forgetting_conditional": 0.0019246224370418172,
+        "old_loss_conditional": 0.044249024575181074,
+        "new_test_loss_conditional": 0.04330407516522841,
+        "new_monitor_loss_conditional": 0.03884226388551972,
+        "overshoot_conditional": 0.0011577361144802793,
+        "mean_steps_including_failures": 130.4,
+        "zero_update_endpoints": 4
+      },
+      "untrained": {
+        "reached": 57,
+        "total": 80,
+        "reach_rate": 0.7125,
+        "forgetting_conditional": 0.003209870820592719,
+        "old_loss_conditional": 0.04546303098084546,
+        "new_test_loss_conditional": 0.042526301584745706,
+        "new_monitor_loss_conditional": 0.03894458756896488,
+        "overshoot_conditional": 0.0010554124310351264,
+        "mean_steps_including_failures": 129.4375,
+        "zero_update_endpoints": 2
+      }
+    }
+  },
+  "primary_threshold": 0.04,
+  "paired_comparisons": {
+    "0.16": {
+      "uniform": {
+        "forgetting": {
+          "mean": -0.005372309469385072,
+          "ci95": [
+            -0.006889389967012296,
+            -0.0039717697501570615
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "tight_loss_sensitivity": {
+          "mean": -0.011233276139725657,
+          "ci95": [
+            -0.014213157488408972,
+            -0.007586020951372727
+          ],
+          "pairs": 17,
+          "sequences": 15
+        },
+        "nonzero_update_sensitivity": {
+          "mean": -0.013349918221744398,
+          "ci95": [
+            -0.016415884545831767,
+            -0.01023403778233771
+          ],
+          "pairs": 24,
+          "sequences": 20
+        },
+        "reach_rate_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "old_absolute_loss_difference": {
+          "mean": -0.006307118100812659,
+          "ci95": [
+            -0.008109408660820917,
+            -0.004694010976381832
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "new_test_loss_difference": {
+          "mean": -0.0022634300868958233,
+          "ci95": [
+            -0.004462155029177666,
+            -3.319195355288719e-05
+          ],
+          "pairs": 80,
+          "sequences": 20
+        }
+      },
+      "activation": {
+        "forgetting": {
+          "mean": 0.000897449237527326,
+          "ci95": [
+            -0.00024654584446883143,
+            0.0023569717862604498
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "tight_loss_sensitivity": {
+          "mean": 0.0046978146554185795,
+          "ci95": [
+            -0.001520852471003309,
+            0.011763781210271796
+          ],
+          "pairs": 13,
+          "sequences": 12
+        },
+        "nonzero_update_sensitivity": {
+          "mean": 0.003283942563702231,
+          "ci95": [
+            -0.00046013631508685644,
+            0.00792979067385507
+          ],
+          "pairs": 23,
+          "sequences": 20
+        },
+        "reach_rate_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "old_absolute_loss_difference": {
+          "mean": 0.0005637737243281057,
+          "ci95": [
+            -0.000881660907907644,
+            0.0020432974542200096
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "new_test_loss_difference": {
+          "mean": 1.4858739450573922e-05,
+          "ci95": [
+            -0.003925354823004454,
+            0.003914904275443404
+          ],
+          "pairs": 80,
+          "sequences": 20
+        }
+      },
+      "importance": {
+        "forgetting": {
+          "mean": 0.001670862802226717,
+          "ci95": [
+            0.0007122194366335559,
+            0.0029745243142921623
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "tight_loss_sensitivity": {
+          "mean": 0.004475293556849161,
+          "ci95": [
+            -0.00026004786070968426,
+            0.009941056096816761
+          ],
+          "pairs": 15,
+          "sequences": 14
+        },
+        "nonzero_update_sensitivity": {
+          "mean": 0.004627176034061805,
+          "ci95": [
+            0.0012470033842247802,
+            0.008542172169277013
+          ],
+          "pairs": 23,
+          "sequences": 20
+        },
+        "reach_rate_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "old_absolute_loss_difference": {
+          "mean": 0.0023656352306716147,
+          "ci95": [
+            0.0012273540590346482,
+            0.003714008902121955
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "new_test_loss_difference": {
+          "mean": -0.00021582511253654958,
+          "ci95": [
+            -0.0028333966701757163,
+            0.002485631837043909
+          ],
+          "pairs": 80,
+          "sequences": 20
+        }
+      },
+      "untrained": {
+        "forgetting": {
+          "mean": -0.0009700670877161125,
+          "ci95": [
+            -0.0012562362388901722,
+            -0.00069811507370711
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "tight_loss_sensitivity": {
+          "mean": -0.001772215124219656,
+          "ci95": [
+            -0.0022653018163206677,
+            -0.0013256308571598903
+          ],
+          "pairs": 18,
+          "sequences": 16
+        },
+        "nonzero_update_sensitivity": {
+          "mean": -0.0018433580660949583,
+          "ci95": [
+            -0.0024550915747152072,
+            -0.0012907117397686395
+          ],
+          "pairs": 23,
+          "sequences": 20
+        },
+        "reach_rate_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "old_absolute_loss_difference": {
+          "mean": -0.0008020867690599212,
+          "ci95": [
+            -0.0012920483828444658,
+            -0.0003219853223708923
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "new_test_loss_difference": {
+          "mean": -0.0009529329370707273,
+          "ci95": [
+            -0.0020624019752722234,
+            3.600027412172012e-07
+          ],
+          "pairs": 80,
+          "sequences": 20
+        }
+      }
+    },
+    "0.1": {
+      "uniform": {
+        "forgetting": {
+          "mean": -0.0033710476612516986,
+          "ci95": [
+            -0.004712745299232968,
+            -0.0020686061390248747
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "tight_loss_sensitivity": {
+          "mean": -0.004506839155826879,
+          "ci95": [
+            -0.006960333201762599,
+            -0.001950054364365146
+          ],
+          "pairs": 23,
+          "sequences": 17
+        },
+        "nonzero_update_sensitivity": {
+          "mean": -0.0064710329070386255,
+          "ci95": [
+            -0.008257849621849457,
+            -0.004735031632921829
+          ],
+          "pairs": 33,
+          "sequences": 20
+        },
+        "reach_rate_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "old_absolute_loss_difference": {
+          "mean": -0.004535524459788576,
+          "ci95": [
+            -0.006107259072014132,
+            -0.003065541014802878
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "new_test_loss_difference": {
+          "mean": -0.0004790704231709242,
+          "ci95": [
+            -0.002114415825344622,
+            0.001141310181701554
+          ],
+          "pairs": 80,
+          "sequences": 20
+        }
+      },
+      "activation": {
+        "forgetting": {
+          "mean": 0.0006172771546213579,
+          "ci95": [
+            -7.871965737043252e-05,
+            0.0012958385150704996
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "tight_loss_sensitivity": {
+          "mean": 0.001223593470499371,
+          "ci95": [
+            -0.0005662870192886859,
+            0.002948597415594295
+          ],
+          "pairs": 22,
+          "sequences": 17
+        },
+        "nonzero_update_sensitivity": {
+          "mean": 0.0011218204357040427,
+          "ci95": [
+            -0.00023093901421894795,
+            0.0023955709317314048
+          ],
+          "pairs": 32,
+          "sequences": 20
+        },
+        "reach_rate_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "old_absolute_loss_difference": {
+          "mean": 0.0005995634341767677,
+          "ci95": [
+            -0.0009777542207060229,
+            0.0020045388000532196
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "new_test_loss_difference": {
+          "mean": -0.0010714080650359391,
+          "ci95": [
+            -0.0032392371690366413,
+            0.0008783354237675667
+          ],
+          "pairs": 80,
+          "sequences": 20
+        }
+      },
+      "importance": {
+        "forgetting": {
+          "mean": 0.0010260990917837867,
+          "ci95": [
+            0.0003074279243689186,
+            0.0016205130155625127
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "tight_loss_sensitivity": {
+          "mean": 0.00025318005484425364,
+          "ci95": [
+            -0.0014860211006950258,
+            0.0019340617307191845
+          ],
+          "pairs": 24,
+          "sequences": 18
+        },
+        "nonzero_update_sensitivity": {
+          "mean": 0.0013181322856861003,
+          "ci95": [
+            -0.0001986560706252826,
+            0.0026145454863321844
+          ],
+          "pairs": 34,
+          "sequences": 20
+        },
+        "reach_rate_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "old_absolute_loss_difference": {
+          "mean": 0.0021062501201716565,
+          "ci95": [
+            0.001208012667193543,
+            0.002992201669258065
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "new_test_loss_difference": {
+          "mean": 3.2395822927355766e-05,
+          "ci95": [
+            -0.0015238492004573346,
+            0.0015467100206296887
+          ],
+          "pairs": 80,
+          "sequences": 20
+        }
+      },
+      "untrained": {
+        "forgetting": {
+          "mean": -0.0011667001565607885,
+          "ci95": [
+            -0.00170343928776371,
+            -0.000726809818588663
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "tight_loss_sensitivity": {
+          "mean": -0.0012512871852287878,
+          "ci95": [
+            -0.0019842450011429594,
+            -0.0006055097547532231
+          ],
+          "pairs": 26,
+          "sequences": 18
+        },
+        "nonzero_update_sensitivity": {
+          "mean": -0.0014276383617134003,
+          "ci95": [
+            -0.0021767964540481935,
+            -0.0007785793966519636
+          ],
+          "pairs": 36,
+          "sequences": 20
+        },
+        "reach_rate_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "old_absolute_loss_difference": {
+          "mean": -0.0011412005580496046,
+          "ci95": [
+            -0.0019013425960535337,
+            -0.0005421212220971947
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "new_test_loss_difference": {
+          "mean": -0.00016641211695969104,
+          "ci95": [
+            -0.001177562774391845,
+            0.000993781866272911
+          ],
+          "pairs": 80,
+          "sequences": 20
+        }
+      }
+    },
+    "0.06": {
+      "uniform": {
+        "forgetting": {
+          "mean": -0.004546660027188952,
+          "ci95": [
+            -0.005825350958733433,
+            -0.0034016345576427885
+          ],
+          "pairs": 76,
+          "sequences": 20
+        },
+        "tight_loss_sensitivity": {
+          "mean": -0.004541292165716489,
+          "ci95": [
+            -0.006749692186346144,
+            -0.002567218674923338
+          ],
+          "pairs": 36,
+          "sequences": 20
+        },
+        "nonzero_update_sensitivity": {
+          "mean": -0.0053824784939713564,
+          "ci95": [
+            -0.007076349022633726,
+            -0.003916961454652447
+          ],
+          "pairs": 55,
+          "sequences": 20
+        },
+        "reach_rate_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "old_absolute_loss_difference": {
+          "mean": -0.006449771742744926,
+          "ci95": [
+            -0.00782427638146689,
+            -0.005010765562529523
+          ],
+          "pairs": 76,
+          "sequences": 20
+        },
+        "new_test_loss_difference": {
+          "mean": -0.00015189513368041893,
+          "ci95": [
+            -0.0012548622140810207,
+            0.0009683778565376989
+          ],
+          "pairs": 76,
+          "sequences": 20
+        }
+      },
+      "activation": {
+        "forgetting": {
+          "mean": 0.0005245343639041508,
+          "ci95": [
+            -0.0002664580035747754,
+            0.001329259756468133
+          ],
+          "pairs": 76,
+          "sequences": 20
+        },
+        "tight_loss_sensitivity": {
+          "mean": 0.000502183645342787,
+          "ci95": [
+            -0.0004511356136595781,
+            0.0015579272843515117
+          ],
+          "pairs": 40,
+          "sequences": 19
+        },
+        "nonzero_update_sensitivity": {
+          "mean": 0.0007133450215825668,
+          "ci95": [
+            -0.0001123275626934011,
+            0.0016123452348876053
+          ],
+          "pairs": 52,
+          "sequences": 20
+        },
+        "reach_rate_difference": {
+          "mean": -0.0125,
+          "ci95": [
+            -0.0375,
+            0.0
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "old_absolute_loss_difference": {
+          "mean": 0.00028475446487662566,
+          "ci95": [
+            -0.0015436923132892096,
+            0.0019494606083279096
+          ],
+          "pairs": 76,
+          "sequences": 20
+        },
+        "new_test_loss_difference": {
+          "mean": -0.0018053511157631874,
+          "ci95": [
+            -0.00294107109243674,
+            -0.0007193551006677907
+          ],
+          "pairs": 76,
+          "sequences": 20
+        }
+      },
+      "importance": {
+        "forgetting": {
+          "mean": 0.0014239481441970718,
+          "ci95": [
+            0.0006739883590902237,
+            0.0021672608017477848
+          ],
+          "pairs": 76,
+          "sequences": 20
+        },
+        "tight_loss_sensitivity": {
+          "mean": 0.0006881196953592792,
+          "ci95": [
+            -0.00022274459368504937,
+            0.00180103565954339
+          ],
+          "pairs": 42,
+          "sequences": 20
+        },
+        "nonzero_update_sensitivity": {
+          "mean": 0.001364685571606054,
+          "ci95": [
+            0.00048649604223435826,
+            0.0023309646982598835
+          ],
+          "pairs": 53,
+          "sequences": 20
+        },
+        "reach_rate_difference": {
+          "mean": -0.0125,
+          "ci95": [
+            -0.0375,
+            0.0
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "old_absolute_loss_difference": {
+          "mean": 0.002580571112941885,
+          "ci95": [
+            0.0014466752269400264,
+            0.0036931921502432147
+          ],
+          "pairs": 76,
+          "sequences": 20
+        },
+        "new_test_loss_difference": {
+          "mean": -0.00024331233611232355,
+          "ci95": [
+            -0.0015820802413870263,
+            0.0011716073804668016
+          ],
+          "pairs": 76,
+          "sequences": 20
+        }
+      },
+      "untrained": {
+        "forgetting": {
+          "mean": -0.0015763312684404745,
+          "ci95": [
+            -0.002219511321571566,
+            -0.001001827256805126
+          ],
+          "pairs": 76,
+          "sequences": 20
+        },
+        "tight_loss_sensitivity": {
+          "mean": -0.0015536966612157614,
+          "ci95": [
+            -0.0023716568130243945,
+            -0.0008733424932171525
+          ],
+          "pairs": 46,
+          "sequences": 20
+        },
+        "nonzero_update_sensitivity": {
+          "mean": -0.0018228090283545577,
+          "ci95": [
+            -0.0025902519250533317,
+            -0.0011573238912344738
+          ],
+          "pairs": 55,
+          "sequences": 20
+        },
+        "reach_rate_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "old_absolute_loss_difference": {
+          "mean": -0.0017464972497372518,
+          "ci95": [
+            -0.002314299187619347,
+            -0.0011250068172641897
+          ],
+          "pairs": 76,
+          "sequences": 20
+        },
+        "new_test_loss_difference": {
+          "mean": 0.00025474897732860163,
+          "ci95": [
+            -0.00020595344126616655,
+            0.0007618333403972578
+          ],
+          "pairs": 76,
+          "sequences": 20
+        }
+      }
+    },
+    "0.04": {
+      "uniform": {
+        "forgetting": {
+          "mean": -0.002883194449047248,
+          "ci95": [
+            -0.0045235436486941605,
+            -0.0012659425138874714
+          ],
+          "pairs": 55,
+          "sequences": 18
+        },
+        "tight_loss_sensitivity": {
+          "mean": -0.0023251360260127555,
+          "ci95": [
+            -0.0036787963028022093,
+            -0.001024008727791669
+          ],
+          "pairs": 42,
+          "sequences": 18
+        },
+        "nonzero_update_sensitivity": {
+          "mean": -0.002360399322450356,
+          "ci95": [
+            -0.0037687467043871696,
+            -0.0009859886374613705
+          ],
+          "pairs": 51,
+          "sequences": 18
+        },
+        "reach_rate_difference": {
+          "mean": -0.1,
+          "ci95": [
+            -0.1625,
+            -0.0375
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "old_absolute_loss_difference": {
+          "mean": -0.004139486886560917,
+          "ci95": [
+            -0.005665856937811563,
+            -0.002463696915686566
+          ],
+          "pairs": 55,
+          "sequences": 18
+        },
+        "new_test_loss_difference": {
+          "mean": 0.0007900908928025852,
+          "ci95": [
+            -0.0005701636893985173,
+            0.0023179122582868725
+          ],
+          "pairs": 55,
+          "sequences": 18
+        }
+      },
+      "activation": {
+        "forgetting": {
+          "mean": -1.0439774618958527e-06,
+          "ci95": [
+            -0.0009762805862289362,
+            0.0008745976991180202
+          ],
+          "pairs": 53,
+          "sequences": 17
+        },
+        "tight_loss_sensitivity": {
+          "mean": 0.00017266738443420487,
+          "ci95": [
+            -0.0008902968258116778,
+            0.0011148699008393752
+          ],
+          "pairs": 39,
+          "sequences": 17
+        },
+        "nonzero_update_sensitivity": {
+          "mean": 3.770314570930269e-06,
+          "ci95": [
+            -0.0009488991216861622,
+            0.0008839532225489015
+          ],
+          "pairs": 45,
+          "sequences": 17
+        },
+        "reach_rate_difference": {
+          "mean": -0.0125,
+          "ci95": [
+            -0.0625,
+            0.0375
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "old_absolute_loss_difference": {
+          "mean": 0.00047044647541248533,
+          "ci95": [
+            -0.0011999516228000484,
+            0.002000659977866694
+          ],
+          "pairs": 53,
+          "sequences": 17
+        },
+        "new_test_loss_difference": {
+          "mean": 0.00013985449694237619,
+          "ci95": [
+            -0.001544280599375089,
+            0.00188410959182013
+          ],
+          "pairs": 53,
+          "sequences": 17
+        }
+      },
+      "importance": {
+        "forgetting": {
+          "mean": 0.0008804411713585809,
+          "ci95": [
+            0.00039519295549958575,
+            0.0014104512346998247
+          ],
+          "pairs": 54,
+          "sequences": 18
+        },
+        "tight_loss_sensitivity": {
+          "mean": 0.0006514598693077762,
+          "ci95": [
+            0.00028354257547727094,
+            0.001054510705655242
+          ],
+          "pairs": 40,
+          "sequences": 18
+        },
+        "nonzero_update_sensitivity": {
+          "mean": 0.00089723601937294,
+          "ci95": [
+            0.0004230310058640588,
+            0.0014317700410720518
+          ],
+          "pairs": 50,
+          "sequences": 18
+        },
+        "reach_rate_difference": {
+          "mean": -0.05,
+          "ci95": [
+            -0.125,
+            0.0125
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "old_absolute_loss_difference": {
+          "mean": 0.0019795753717146538,
+          "ci95": [
+            0.0009822528534729417,
+            0.003048736626515631
+          ],
+          "pairs": 54,
+          "sequences": 18
+        },
+        "new_test_loss_difference": {
+          "mean": 0.0008041303328893802,
+          "ci95": [
+            -0.0007190281035163597,
+            0.0025705966818412498
+          ],
+          "pairs": 54,
+          "sequences": 18
+        }
+      },
+      "untrained": {
+        "forgetting": {
+          "mean": -0.0013503333779447005,
+          "ci95": [
+            -0.002011289176472647,
+            -0.0006969816195002448
+          ],
+          "pairs": 55,
+          "sequences": 18
+        },
+        "tight_loss_sensitivity": {
+          "mean": -0.0010119710886289201,
+          "ci95": [
+            -0.0016880826520057457,
+            -0.00038920508534467046
+          ],
+          "pairs": 42,
+          "sequences": 18
+        },
+        "nonzero_update_sensitivity": {
+          "mean": -0.0011247993672108337,
+          "ci95": [
+            -0.0016976998735030756,
+            -0.0005688682140663585
+          ],
+          "pairs": 51,
+          "sequences": 18
+        },
+        "reach_rate_difference": {
+          "mean": -0.025,
+          "ci95": [
+            -0.0625,
+            0.0
+          ],
+          "pairs": 80,
+          "sequences": 20
+        },
+        "old_absolute_loss_difference": {
+          "mean": -0.0014391440926401907,
+          "ci95": [
+            -0.0023679047221296726,
+            -0.0003660210851427122
+          ],
+          "pairs": 55,
+          "sequences": 18
+        },
+        "new_test_loss_difference": {
+          "mean": 0.0005955098704858259,
+          "ci95": [
+            1.7894425079434744e-05,
+            0.0012329354469097198
+          ],
+          "pairs": 55,
+          "sequences": 18
+        }
+      }
+    }
+  },
+  "cost": {
+    "uniform": {
+      "total_online_seconds": 4.810564041137695,
+      "total_optimizer_steps": 9419
+    },
+    "activation": {
+      "total_online_seconds": 5.067715644836426,
+      "total_optimizer_steps": 9944
+    },
+    "importance": {
+      "total_online_seconds": 5.132921457290649,
+      "total_optimizer_steps": 10248
+    },
+    "learned": {
+      "total_online_seconds": 5.453742504119873,
+      "total_optimizer_steps": 10432
+    },
+    "untrained": {
+      "total_online_seconds": 5.294785261154175,
+      "total_optimizer_steps": 10355
+    },
+    "training_cost": {
+      "seconds": 33.753148317337036,
+      "iterations": 40,
+      "episodes_per_iteration": 8,
+      "training_worlds": 32,
+      "validation_worlds": 8,
+      "policy_parameters": 5029
+    },
+    "tuning_cost": {
+      "seconds": 21.61304783821106,
+      "candidates_per_method": 18,
+      "validation_worlds": 8
+    }
+  },
+  "final_all_task_loss": {
+    "uniform": {
+      "mean": 0.048827860802412026,
+      "ci95": [
+        0.0460619866088964,
+        0.05191919410647824
+      ],
+      "pairs": 20,
+      "sequences": 20
+    },
+    "activation": {
+      "mean": 0.04656639091670513,
+      "ci95": [
+        0.04337066030781716,
+        0.050321054979227474
+      ],
+      "pairs": 20,
+      "sequences": 20
+    },
+    "importance": {
+      "mean": 0.04402300290763378,
+      "ci95": [
+        0.04163225688552484,
+        0.04672245455347
+      ],
+      "pairs": 20,
+      "sequences": 20
+    },
+    "learned": {
+      "mean": 0.045469000563025476,
+      "ci95": [
+        0.043013230994809415,
+        0.048291213428601626
+      ],
+      "pairs": 20,
+      "sequences": 20
+    },
+    "untrained": {
+      "mean": 0.04580677760764957,
+      "ci95": [
+        0.04357119708135724,
+        0.048431462923064814
+      ],
+      "pairs": 20,
+      "sequences": 20
+    }
+  },
+  "action_diagnostics": {
+    "uniform": {
+      "mean_alpha": 1.5,
+      "mean_protection": 0.009999999776482582,
+      "mean_within_decision_expert_alpha_std": 0.0,
+      "mean_within_decision_expert_protection_std": 0.0
+    },
+    "activation": {
+      "mean_alpha": 1.3579233624969618,
+      "mean_protection": 0.029999998706592715,
+      "mean_within_decision_expert_alpha_std": 0.5137970080551597,
+      "mean_within_decision_expert_protection_std": 0.021564473457479933
+    },
+    "importance": {
+      "mean_alpha": 0.9994617254513761,
+      "mean_protection": 0.02999999935851155,
+      "mean_within_decision_expert_alpha_std": 0.515756389119601,
+      "mean_within_decision_expert_protection_std": 0.03015952751000622
+    },
+    "learned": {
+      "mean_alpha": 0.9937130755270005,
+      "mean_protection": 0.0249445195426362,
+      "mean_within_decision_expert_alpha_std": 0.0015609134478486895,
+      "mean_within_decision_expert_protection_std": 0.00023853358949328616
+    },
+    "untrained": {
+      "mean_alpha": 1.024999976158142,
+      "mean_protection": 0.017880437895655632,
+      "mean_within_decision_expert_alpha_std": 0.0,
+      "mean_within_decision_expert_protection_std": 0.0
+    }
+  },
+  "final_loss_paired_differences": {
+    "uniform": {
+      "mean": -0.0033588602393865583,
+      "ci95": [
+        -0.006001619819551705,
+        -0.0007382056885398922
+      ],
+      "pairs": 20,
+      "sequences": 20
+    },
+    "activation": {
+      "mean": -0.0010973903536796565,
+      "ci95": [
+        -0.00329578586295247,
+        0.0011117991898208848
+      ],
+      "pairs": 20,
+      "sequences": 20
+    },
+    "importance": {
+      "mean": 0.0014459976553916937,
+      "ci95": [
+        -3.748848102986368e-06,
+        0.002915238006040453
+      ],
+      "pairs": 20,
+      "sequences": 20
+    },
+    "untrained": {
+      "mean": -0.000337777044624089,
+      "ci95": [
+        -0.0011789405825547855,
+        0.000562763237860055
+      ],
+      "pairs": 20,
+      "sequences": 20
+    }
+  }
+}

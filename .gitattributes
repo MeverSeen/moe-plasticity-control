@@ -1,0 +1,5 @@
+# Keep frozen artifacts byte-identical, including CSV line endings.
+experiments/** -text
+*.pt binary
+*.png binary
+*.pdf binary

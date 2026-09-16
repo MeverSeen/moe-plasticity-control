@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.cache/
+.matplotlib/
+.pytest_cache/
+.env
+.env.*
+!.env.example
+/runs/
+/dist/
+*.egg-info/
