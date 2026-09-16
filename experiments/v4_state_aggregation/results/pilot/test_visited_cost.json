@@ -1,0 +1,13 @@
+{
+  "costs": {
+    "branch_updates": 6427,
+    "branch_work": 2174548.3623188417,
+    "path_updates": 4627,
+    "path_work": 1585210.0289855076
+  },
+  "states": 54,
+  "diagnostic_states": 7,
+  "adaptive_policy": "aggregate_r2_feedback_381",
+  "seconds": 5.854630947113037,
+  "note": "Privileged offline test diagnostics; no teacher decisions enter deployable rollouts."
+}

@@ -1,0 +1,106 @@
+[
+  {
+    "epoch": 0,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.41031724214553833,
+      "endpoint_forgetting": 0.012383941560983658
+    }
+  },
+  {
+    "epoch": 25,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3840911388397217,
+      "endpoint_forgetting": 0.011034171096980572
+    }
+  },
+  {
+    "epoch": 50,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.37416863441467285,
+      "endpoint_forgetting": 0.01056597474962473
+    }
+  },
+  {
+    "epoch": 75,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.37416863441467285,
+      "endpoint_forgetting": 0.01056597474962473
+    }
+  },
+  {
+    "epoch": 100,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.37326979637145996,
+      "endpoint_forgetting": 0.010450025089085102
+    }
+  },
+  {
+    "epoch": 125,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.37326979637145996,
+      "endpoint_forgetting": 0.010450025089085102
+    }
+  },
+  {
+    "epoch": 150,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.37324124574661255,
+      "endpoint_forgetting": 0.010443935170769691
+    }
+  },
+  {
+    "epoch": 175,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.37324124574661255,
+      "endpoint_forgetting": 0.010443935170769691
+    }
+  },
+  {
+    "epoch": 200,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.37324124574661255,
+      "endpoint_forgetting": 0.010443935170769691
+    }
+  },
+  {
+    "epoch": 225,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.37324124574661255,
+      "endpoint_forgetting": 0.010443935170769691
+    }
+  },
+  {
+    "epoch": 250,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.37324124574661255,
+      "endpoint_forgetting": 0.010443935170769691
+    }
+  },
+  {
+    "epoch": 275,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.37324124574661255,
+      "endpoint_forgetting": 0.010443935170769691
+    }
+  },
+  {
+    "epoch": 300,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.37324124574661255,
+      "endpoint_forgetting": 0.010443935170769691
+    }
+  }
+]

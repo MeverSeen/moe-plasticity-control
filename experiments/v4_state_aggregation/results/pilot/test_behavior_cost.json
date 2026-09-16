@@ -1,0 +1,139 @@
+{
+  "seconds": 7.991135120391846,
+  "states": 33,
+  "histories": 8,
+  "future_replicates": 2,
+  "branch_updates": 17371,
+  "branch_work": 5813177.333333316,
+  "roots": [
+    {
+      "root": 450300,
+      "states": 5,
+      "initially_done": false,
+      "initial_new_loss": 0.4045940637588501,
+      "protected_mass": 0.03044911101460457,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 450301,
+      "states": 7,
+      "initially_done": false,
+      "initial_new_loss": 0.2800745368003845,
+      "protected_mass": 0.09390025585889816,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 450302,
+      "states": 0,
+      "initially_done": true,
+      "initial_new_loss": 0.0646154135465622,
+      "protected_mass": 0.11506618559360504,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 450303,
+      "states": 5,
+      "initially_done": false,
+      "initial_new_loss": 0.4468626379966736,
+      "protected_mass": 0.0,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 450304,
+      "states": 5,
+      "initially_done": false,
+      "initial_new_loss": 0.24736109375953674,
+      "protected_mass": 0.11021865904331207,
+      "mask": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 450305,
+      "states": 3,
+      "initially_done": false,
+      "initial_new_loss": 0.11997576057910919,
+      "protected_mass": 0.11372802406549454,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 450306,
+      "states": 7,
+      "initially_done": false,
+      "initial_new_loss": 0.663016676902771,
+      "protected_mass": 0.0,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 450307,
+      "states": 1,
+      "initially_done": false,
+      "initial_new_loss": 0.25265538692474365,
+      "protected_mass": 0.680874228477478,
+      "mask": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        false
+      ],
+      "old_tasks": 2
+    }
+  ],
+  "note": "Offline branching work excludes common old-task pretraining and state-generation work."
+}

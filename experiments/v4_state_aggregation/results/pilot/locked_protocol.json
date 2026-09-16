@@ -1,0 +1,211 @@
+{
+  "config": {
+    "experts": 6,
+    "dim": 10,
+    "hidden": 12,
+    "tasks": 5,
+    "top_k": 2,
+    "train_n": 384,
+    "monitor_n": 128,
+    "test_n": 512,
+    "replay_memory": 64,
+    "monitor_memory": 64,
+    "batch": 32,
+    "old_batch": 32,
+    "lr": 0.015,
+    "replay_weight": 0.1,
+    "max_steps": 300,
+    "interval": 5,
+    "base_steps": 250,
+    "target": 0.08,
+    "levels": [
+      0.08
+    ],
+    "lambda_max": 0.15,
+    "noise": 0.05,
+    "mask_old_threshold": 0.3333333333333333,
+    "mask_new_threshold": 0.05,
+    "reward_scale": 0.01,
+    "failure_penalty": 10.0,
+    "forgetting_cap": 5.0
+  },
+  "splits": {
+    "calibration": [
+      450000,
+      450001,
+      450002,
+      450003
+    ],
+    "train": [
+      450100,
+      450101,
+      450102,
+      450103,
+      450104,
+      450105,
+      450106,
+      450107
+    ],
+    "dev": [
+      450200,
+      450201,
+      450202,
+      450203,
+      450204,
+      450205
+    ],
+    "test": [
+      450300,
+      450301,
+      450302,
+      450303,
+      450304,
+      450305,
+      450306,
+      450307
+    ]
+  },
+  "pilot": true,
+  "rounds": 2,
+  "epochs": 100,
+  "replicates": 2,
+  "policy_seeds": [
+    381,
+    382,
+    383
+  ],
+  "actions": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "features": [
+    "initial_protected_B_gate_mass",
+    "initial_old_usage_protected",
+    "initial_old_usage_other",
+    "initial_protected_fraction",
+    "initial_B_usage_entropy",
+    "initial_old_log_loss",
+    "initial_new_log_gap",
+    "new_log_gap",
+    "recent_new_log_improvement",
+    "remaining_work_fraction",
+    "step_fraction",
+    "previous_multiplier",
+    "current_monitor_forgetting_scaled",
+    "recent_old_loss_change_scaled"
+  ],
+  "feedback_indices": [
+    12,
+    13
+  ],
+  "primary": "Final-round aggregate feedback vs progress on all held-out histories, reach first then paired forgetting.",
+  "secondary": [
+    "Aggregate vs BC within each observation mode",
+    "Aggregate vs query-count-matched nonlearned collection",
+    "Decision cost on behavior and learner-visited test states",
+    "Continuation mismatch under paired independent futures"
+  ],
+  "aggregation": "Union of all progress/feedback replicas; same training states for both inputs; 3 time-spread snapshots per rollout, deduplicate complete states within root and round.",
+  "teacher": "5 current actions for H=5 then one calibrated constant continuation; unchanged across aggregation rounds.",
+  "matched": "Same label-query counts per root and round, sampled from 5 fixed and 3 random behavior paths. Not equal branch FLOPs.",
+  "selection": "Unchanged v3 branch-dev checkpoint/slack selection; final round predeclared, no test selection.",
+  "labels": "Independent evaluator samples supply train/dev offline supervision; test labels only score frozen policies and privileged diagnostics.",
+  "endpoint": "First new-monitor MSE <= 0.08 or common work/300-step budget.",
+  "correction": "v3 actual config target=.08; parts of its prose incorrectly said .06. v4 retains .08 explicitly.",
+  "continuation_diagnostic": "One outcome-independent visited state/history; Qconstant, H+fixed, H+frozen adaptive. Choose with future 0, evaluate with future 1 under the same adaptive continuation.",
+  "adaptive_policy": "aggregate_r2_feedback_381",
+  "limitations": [
+    "Synthetic fixed router, not learned router or a language model.",
+    "No claim of globally optimal teacher or RL necessity.",
+    "Three fitted seeds do not fully characterize training uncertainty.",
+    "Online workload proxy is not actual FLOPs; offline search cost separate."
+  ],
+  "registry": {
+    "bc_progress_381": "bc/progress_381.pt",
+    "bc_feedback_381": "bc/feedback_381.pt",
+    "bc_progress_382": "bc/progress_382.pt",
+    "bc_feedback_382": "bc/feedback_382.pt",
+    "bc_progress_383": "bc/progress_383.pt",
+    "bc_feedback_383": "bc/feedback_383.pt",
+    "aggregate_r1_progress_381": "aggregate_r1/progress_381.pt",
+    "aggregate_r1_feedback_381": "aggregate_r1/feedback_381.pt",
+    "aggregate_r1_progress_382": "aggregate_r1/progress_382.pt",
+    "aggregate_r1_feedback_382": "aggregate_r1/feedback_382.pt",
+    "aggregate_r1_progress_383": "aggregate_r1/progress_383.pt",
+    "aggregate_r1_feedback_383": "aggregate_r1/feedback_383.pt",
+    "matched_r1_progress_381": "matched_r1/progress_381.pt",
+    "matched_r1_feedback_381": "matched_r1/feedback_381.pt",
+    "matched_r1_progress_382": "matched_r1/progress_382.pt",
+    "matched_r1_feedback_382": "matched_r1/feedback_382.pt",
+    "matched_r1_progress_383": "matched_r1/progress_383.pt",
+    "matched_r1_feedback_383": "matched_r1/feedback_383.pt",
+    "aggregate_r2_progress_381": "aggregate_r2/progress_381.pt",
+    "aggregate_r2_feedback_381": "aggregate_r2/feedback_381.pt",
+    "aggregate_r2_progress_382": "aggregate_r2/progress_382.pt",
+    "aggregate_r2_feedback_382": "aggregate_r2/feedback_382.pt",
+    "aggregate_r2_progress_383": "aggregate_r2/progress_383.pt",
+    "aggregate_r2_feedback_383": "aggregate_r2/feedback_383.pt",
+    "matched_r2_progress_381": "matched_r2/progress_381.pt",
+    "matched_r2_feedback_381": "matched_r2/feedback_381.pt",
+    "matched_r2_progress_382": "matched_r2/progress_382.pt",
+    "matched_r2_feedback_382": "matched_r2/feedback_382.pt",
+    "matched_r2_progress_383": "matched_r2/progress_383.pt",
+    "matched_r2_feedback_383": "matched_r2/feedback_383.pt"
+  },
+  "continuation_action": 1,
+  "baselines": {
+    "static": {
+      "action": 0
+    },
+    "hand": {
+      "action": 1,
+      "tolerance": 0.001,
+      "release": 0.0
+    }
+  },
+  "static_branch_action": 0,
+  "source_hashes": {
+    "model_core.py": "5ca0a78687cb37237832f09dc136b1b176601a1049c9a92301786bff24d94b8f",
+    "dagger.py": "215d9df8f91dc0127d11683ce1af8de7a00dd4f78be08882d4eb48f7a646b8c3",
+    "test_aggregation.py": "6713ac4b5c4ed269ed4ec2fcfe8c242479f112a64acacdf7717b2fe84521cff7",
+    "test_branching.py": "35e0f85cf18ea0159b5bbf1a5e9cb4f21dee8c9f832411971cdec184eb9b1466",
+    "base_env.py": "bfca41057ea2f8e25d37a12f7be5b6b30a2d6792a48a2b55e306b1b16da2dcdc",
+    "branching.py": "a614551e8be4e407950c8d7c2e65c5de6ececf82682974bc84619b0b8c7cdf19",
+    "analyze.py": "cdbf6624fab96529f8526ef47f6ea063d9fb5bb87b8769a93ad6abc30cbc29ac"
+  },
+  "policy_hashes": {
+    "bc/progress_381.pt": "79062d97393baea6899ab27f800639f850959b54ba7fe80fbb9fbacde64cd2bf",
+    "bc/feedback_381.pt": "8d6c2299a1d38e458c0217529bf6f4cff8becc5cce1f7fc45c41a4418cc6c9e3",
+    "bc/progress_382.pt": "e06190f0c70a37f03037447f42e8a455f33bf0c3543b384042937459989f9280",
+    "bc/feedback_382.pt": "573bfb2e254581f2678f07466718c77d7f97b4dabbbdbc45d4fd00149e891551",
+    "bc/progress_383.pt": "1b74d714d1f83cce0ddd90791ff0dadacc066f08e6e84573ce59bd56c41ec925",
+    "bc/feedback_383.pt": "df175c32ea59e30db7b1ec74423b9371e185df74ed790d70f284c7ed08aa6705",
+    "aggregate_r1/progress_381.pt": "8346a6506c7cab0ee2c098c70860842ccd526cc0cedf7e66dff6402fa429e04b",
+    "aggregate_r1/feedback_381.pt": "c070d4d3c3f911c443723a5318233825e6f46d686c99feae32bc233ee10fe810",
+    "aggregate_r1/progress_382.pt": "a86fe233c1860c1296ab7e0ee02f34f528a54c581065bdc30f67554e28ab7837",
+    "aggregate_r1/feedback_382.pt": "8fd3194144acc006375b1e4ac944237f78cc4f00ef763d71343b9d45879d16f2",
+    "aggregate_r1/progress_383.pt": "b08c490572cb901b1ad29b584fc1893c8905ab1c9a85f86ee9c87ef2b6268ee8",
+    "aggregate_r1/feedback_383.pt": "06449128479d11b09f2a7d1d3c2f2b95bd0c5f6419baf3b20a528d1000a16f41",
+    "matched_r1/progress_381.pt": "21e7ac1a76593ee3753a7876848cccd22beaea8083422aa3ed2025212b0868b3",
+    "matched_r1/feedback_381.pt": "48a05c7971ff4de5cd4ec6c5036c325e8b237f06c82e054cd4051fb3b569e802",
+    "matched_r1/progress_382.pt": "165fd38a50c46a0e4b11a53c72dcdfa47751b3318477ff3d1807c28d8a587c53",
+    "matched_r1/feedback_382.pt": "6d7ced5be31eda4a5d419728202160a80047578f4ff0712b70449c597bc9a88f",
+    "matched_r1/progress_383.pt": "40f21d9b978c035d2923224d839be5c074839b5f8e4843918725f4247ab6d16c",
+    "matched_r1/feedback_383.pt": "00bbbf497c950f76e5f23989d5a1491a6a66643b1fe257e25a8baf2c5ccb0114",
+    "aggregate_r2/progress_381.pt": "4f5c451da357cf85b933c33b1e605d90630e39e54bdc7120eda5210e30ab31b7",
+    "aggregate_r2/feedback_381.pt": "3af23ceded4e001e58ef78097d0ae9a7f12235083562ad261b7aab72473850aa",
+    "aggregate_r2/progress_382.pt": "14d5b673a26a562fe48e401bd6106059f918d697ce3d404b8eb22b217700ff73",
+    "aggregate_r2/feedback_382.pt": "2982c1e76841c0b51aee4f1af0e65dd5460881cf4ba79fe969f4bd50f6ef248c",
+    "aggregate_r2/progress_383.pt": "4216bf5f6f8e17e72f70e14ae4c616c1ed8b3da84d9f55becce1fbbd368c0b95",
+    "aggregate_r2/feedback_383.pt": "c0ca4769030adc35faa96b57756dddd6d7e2ced7c9c0be2ae2b108b6eff997d2",
+    "matched_r2/progress_381.pt": "37f3f24eb2d813a9c4427c7a8d087ad0fb0f35a655b5dd29680017b601f0d842",
+    "matched_r2/feedback_381.pt": "d6f6109363cdc9f980621be87eadaf9823cb102872950019ba464464bbdc202d",
+    "matched_r2/progress_382.pt": "825520726fc38208581dcbb4131249ab82de9d8c8c6ad675f0b028c83f1bff48",
+    "matched_r2/feedback_382.pt": "2f10036ce92a7ca102b1cb794ac36fb007a89a75a564a6babbbf759307a59411",
+    "matched_r2/progress_383.pt": "36b8e6bc4194a9c045354a921723cfeb7cfda43218935a9fd70c89a9002d3047",
+    "matched_r2/feedback_383.pt": "b6844571b4f6c44fa8a391ea325e4f67ad79d6252b070b32609f19b18f37ac83"
+  }
+}

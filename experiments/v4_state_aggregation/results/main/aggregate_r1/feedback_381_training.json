@@ -1,0 +1,106 @@
+[
+  {
+    "epoch": 0,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.39541640877723694,
+      "endpoint_forgetting": 0.010890699923038483
+    }
+  },
+  {
+    "epoch": 25,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3742521405220032,
+      "endpoint_forgetting": 0.010690589435398579
+    }
+  },
+  {
+    "epoch": 50,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3686969578266144,
+      "endpoint_forgetting": 0.010098248720169067
+    }
+  },
+  {
+    "epoch": 75,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3686969578266144,
+      "endpoint_forgetting": 0.010098248720169067
+    }
+  },
+  {
+    "epoch": 100,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3686969578266144,
+      "endpoint_forgetting": 0.010098248720169067
+    }
+  },
+  {
+    "epoch": 125,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3686969578266144,
+      "endpoint_forgetting": 0.010098248720169067
+    }
+  },
+  {
+    "epoch": 150,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3686969578266144,
+      "endpoint_forgetting": 0.010098248720169067
+    }
+  },
+  {
+    "epoch": 175,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3686969578266144,
+      "endpoint_forgetting": 0.010098248720169067
+    }
+  },
+  {
+    "epoch": 200,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3686969578266144,
+      "endpoint_forgetting": 0.010098248720169067
+    }
+  },
+  {
+    "epoch": 225,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3686969578266144,
+      "endpoint_forgetting": 0.010098248720169067
+    }
+  },
+  {
+    "epoch": 250,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3686969578266144,
+      "endpoint_forgetting": 0.010098248720169067
+    }
+  },
+  {
+    "epoch": 275,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3686969578266144,
+      "endpoint_forgetting": 0.010098248720169067
+    }
+  },
+  {
+    "epoch": 300,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3686969578266144,
+      "endpoint_forgetting": 0.010098248720169067
+    }
+  }
+]

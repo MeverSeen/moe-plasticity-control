@@ -1,0 +1,106 @@
+[
+  {
+    "epoch": 0,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.39541640877723694,
+      "endpoint_forgetting": 0.010890699923038483
+    }
+  },
+  {
+    "epoch": 25,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3764909505844116,
+      "endpoint_forgetting": 0.010908994823694229
+    }
+  },
+  {
+    "epoch": 50,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.37118852138519287,
+      "endpoint_forgetting": 0.01032169908285141
+    }
+  },
+  {
+    "epoch": 75,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3707541227340698,
+      "endpoint_forgetting": 0.01030675694346428
+    }
+  },
+  {
+    "epoch": 100,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3706929385662079,
+      "endpoint_forgetting": 0.01026867050677538
+    }
+  },
+  {
+    "epoch": 125,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3706929385662079,
+      "endpoint_forgetting": 0.01026867050677538
+    }
+  },
+  {
+    "epoch": 150,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3706929385662079,
+      "endpoint_forgetting": 0.01026867050677538
+    }
+  },
+  {
+    "epoch": 175,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3706929385662079,
+      "endpoint_forgetting": 0.01026867050677538
+    }
+  },
+  {
+    "epoch": 200,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3706929385662079,
+      "endpoint_forgetting": 0.01026867050677538
+    }
+  },
+  {
+    "epoch": 225,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3706929385662079,
+      "endpoint_forgetting": 0.01026867050677538
+    }
+  },
+  {
+    "epoch": 250,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3706929385662079,
+      "endpoint_forgetting": 0.01026867050677538
+    }
+  },
+  {
+    "epoch": 275,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3706929385662079,
+      "endpoint_forgetting": 0.01026867050677538
+    }
+  },
+  {
+    "epoch": 300,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.3706929385662079,
+      "endpoint_forgetting": 0.01026867050677538
+    }
+  }
+]

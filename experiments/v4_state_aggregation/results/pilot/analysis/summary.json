@@ -1,0 +1,3059 @@
+{
+  "online": {
+    "methods": {
+      "bc_progress": {
+        "reach": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "histories": 8
+        },
+        "cost": {
+          "mean": 0.5355711209479408,
+          "ci95": [
+            0.34165495308917515,
+            0.7014162590072068
+          ],
+          "histories": 8
+        },
+        "successful_forgetting": {
+          "mean": 0.018866275010320045,
+          "ci95": [
+            0.009773755795322359,
+            0.02830304407204191
+          ],
+          "histories": 8
+        },
+        "all_endpoint_forgetting": {
+          "mean": 0.018866275010320045,
+          "ci95": [
+            0.009773755795322359,
+            0.02830304407204191
+          ],
+          "histories": 8
+        },
+        "mean_steps": 48.208333333333336,
+        "mean_work": 16514.46920289855,
+        "mean_multiplier": 0.2018276862026862
+      },
+      "bc_feedback": {
+        "reach": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "histories": 8
+        },
+        "cost": {
+          "mean": 0.4972104707515179,
+          "ci95": [
+            0.29613462778964544,
+            0.6813376464544719
+          ],
+          "histories": 8
+        },
+        "successful_forgetting": {
+          "mean": 0.017537322477437556,
+          "ci95": [
+            0.00789607773088695,
+            0.027781468505660697
+          ],
+          "histories": 8
+        },
+        "all_endpoint_forgetting": {
+          "mean": 0.017537322477437556,
+          "ci95": [
+            0.00789607773088695,
+            0.027781468505660697
+          ],
+          "histories": 8
+        },
+        "mean_steps": 48.833333333333336,
+        "mean_work": 16726.21799516908,
+        "mean_multiplier": 0.1741071428571429
+      },
+      "aggregate_r1_progress": {
+        "reach": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "histories": 8
+        },
+        "cost": {
+          "mean": 0.5227325707199338,
+          "ci95": [
+            0.32869106123481256,
+            0.6923758376796659
+          ],
+          "histories": 8
+        },
+        "successful_forgetting": {
+          "mean": 0.018680589312377073,
+          "ci95": [
+            0.009361469799963136,
+            0.028476186887322296
+          ],
+          "histories": 8
+        },
+        "all_endpoint_forgetting": {
+          "mean": 0.018680589312377073,
+          "ci95": [
+            0.009361469799963136,
+            0.028476186887322296
+          ],
+          "histories": 8
+        },
+        "mean_steps": 48.75,
+        "mean_work": 16699.551328502417,
+        "mean_multiplier": 0.1720734126984127
+      },
+      "aggregate_r1_feedback": {
+        "reach": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "histories": 8
+        },
+        "cost": {
+          "mean": 0.5294526833361112,
+          "ci95": [
+            0.33367762459976497,
+            0.7007916856002608
+          ],
+          "histories": 8
+        },
+        "successful_forgetting": {
+          "mean": 0.019518412352125678,
+          "ci95": [
+            0.009569955745246262,
+            0.030042338728283845
+          ],
+          "histories": 8
+        },
+        "all_endpoint_forgetting": {
+          "mean": 0.019518412352125678,
+          "ci95": [
+            0.009569955745246262,
+            0.030042338728283845
+          ],
+          "histories": 8
+        },
+        "mean_steps": 48.125,
+        "mean_work": 16487.802536231884,
+        "mean_multiplier": 0.33569302721088434
+      },
+      "matched_r1_progress": {
+        "reach": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "histories": 8
+        },
+        "cost": {
+          "mean": 0.5226906276930711,
+          "ci95": [
+            0.32900225005955175,
+            0.6918887096934339
+          ],
+          "histories": 8
+        },
+        "successful_forgetting": {
+          "mean": 0.018341460899035964,
+          "ci95": [
+            0.009117208848086497,
+            0.02803920768201351
+          ],
+          "histories": 8
+        },
+        "all_endpoint_forgetting": {
+          "mean": 0.018341460899035964,
+          "ci95": [
+            0.009117208848086497,
+            0.02803920768201351
+          ],
+          "histories": 8
+        },
+        "mean_steps": 48.25,
+        "mean_work": 16533.676932367147,
+        "mean_multiplier": 0.20302579365079365
+      },
+      "matched_r1_feedback": {
+        "reach": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "histories": 8
+        },
+        "cost": {
+          "mean": 0.5267271169757344,
+          "ci95": [
+            0.32896689303400756,
+            0.6997544605571473
+          ],
+          "histories": 8
+        },
+        "successful_forgetting": {
+          "mean": 0.01932614732585433,
+          "ci95": [
+            0.00921688867286624,
+            0.030020963801588446
+          ],
+          "histories": 8
+        },
+        "all_endpoint_forgetting": {
+          "mean": 0.01932614732585433,
+          "ci95": [
+            0.00921688867286624,
+            0.030020963801588446
+          ],
+          "histories": 8
+        },
+        "mean_steps": 48.708333333333336,
+        "mean_work": 16683.280797101448,
+        "mean_multiplier": 0.2689484126984127
+      },
+      "aggregate_r2_progress": {
+        "reach": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "histories": 8
+        },
+        "cost": {
+          "mean": 0.5308150741012564,
+          "ci95": [
+            0.3398289766368019,
+            0.6927864855417992
+          ],
+          "histories": 8
+        },
+        "successful_forgetting": {
+          "mean": 0.017875523526324995,
+          "ci95": [
+            0.009256254731573993,
+            0.02677037632868936
+          ],
+          "histories": 8
+        },
+        "all_endpoint_forgetting": {
+          "mean": 0.017875523526324995,
+          "ci95": [
+            0.009256254731573993,
+            0.02677037632868936
+          ],
+          "histories": 8
+        },
+        "mean_steps": 48.125,
+        "mean_work": 16487.802536231884,
+        "mean_multiplier": 0.18436736874236873
+      },
+      "aggregate_r2_feedback": {
+        "reach": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "histories": 8
+        },
+        "cost": {
+          "mean": 0.5502672340533221,
+          "ci95": [
+            0.35343047119263166,
+            0.7144073209827536
+          ],
+          "histories": 8
+        },
+        "successful_forgetting": {
+          "mean": 0.02030628258621113,
+          "ci95": [
+            0.010509003333087703,
+            0.030506579518421627
+          ],
+          "histories": 8
+        },
+        "all_endpoint_forgetting": {
+          "mean": 0.02030628258621113,
+          "ci95": [
+            0.010509003333087703,
+            0.030506579518421627
+          ],
+          "histories": 8
+        },
+        "mean_steps": 47.625,
+        "mean_work": 16321.92814009662,
+        "mean_multiplier": 0.45203373015873016
+      },
+      "matched_r2_progress": {
+        "reach": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "histories": 8
+        },
+        "cost": {
+          "mean": 0.5262870221349987,
+          "ci95": [
+            0.3328705544880092,
+            0.6941531566600363
+          ],
+          "histories": 8
+        },
+        "successful_forgetting": {
+          "mean": 0.01871664813047068,
+          "ci95": [
+            0.009356600051331852,
+            0.028548378398409107
+          ],
+          "histories": 8
+        },
+        "all_endpoint_forgetting": {
+          "mean": 0.01871664813047068,
+          "ci95": [
+            0.009356600051331852,
+            0.028548378398409107
+          ],
+          "histories": 8
+        },
+        "mean_steps": 48.708333333333336,
+        "mean_work": 16686.21799516908,
+        "mean_multiplier": 0.1998015873015873
+      },
+      "matched_r2_feedback": {
+        "reach": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "histories": 8
+        },
+        "cost": {
+          "mean": 0.5354305431257306,
+          "ci95": [
+            0.34096857060436514,
+            0.7024687180049765
+          ],
+          "histories": 8
+        },
+        "successful_forgetting": {
+          "mean": 0.019035127026856773,
+          "ci95": [
+            0.009520609578531649,
+            0.02902970623431934
+          ],
+          "histories": 8
+        },
+        "all_endpoint_forgetting": {
+          "mean": 0.019035127026856773,
+          "ci95": [
+            0.009520609578531649,
+            0.02902970623431934
+          ],
+          "histories": 8
+        },
+        "mean_steps": 48.875,
+        "mean_work": 16739.551328502417,
+        "mean_multiplier": 0.43313492063492065
+      },
+      "best_static": {
+        "reach": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "histories": 8
+        },
+        "cost": {
+          "mean": 0.4758785673289857,
+          "ci95": [
+            0.28116094172462563,
+            0.6544556232889709
+          ],
+          "histories": 8
+        },
+        "successful_forgetting": {
+          "mean": 0.015563739424881836,
+          "ci95": [
+            0.006771059823222458,
+            0.025225698792686064
+          ],
+          "histories": 8
+        },
+        "all_endpoint_forgetting": {
+          "mean": 0.015563739424881836,
+          "ci95": [
+            0.006771059823222458,
+            0.025225698792686064
+          ],
+          "histories": 8
+        },
+        "mean_steps": 49.375,
+        "mean_work": 16914.237318840576,
+        "mean_multiplier": 0.0
+      },
+      "hand_feedback": {
+        "reach": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "histories": 8
+        },
+        "cost": {
+          "mean": 0.5486818699092965,
+          "ci95": [
+            0.3576767860095139,
+            0.7044461289652262
+          ],
+          "histories": 8
+        },
+        "successful_forgetting": {
+          "mean": 0.018560907531840108,
+          "ci95": [
+            0.010049781606843075,
+            0.027238054103994106
+          ],
+          "histories": 8
+        },
+        "all_endpoint_forgetting": {
+          "mean": 0.018560907531840108,
+          "ci95": [
+            0.010049781606843075,
+            0.027238054103994106
+          ],
+          "histories": 8
+        },
+        "mean_steps": 47.375,
+        "mean_work": 16238.990942028984,
+        "mean_multiplier": 0.35000000000000003
+      },
+      "full_update": {
+        "reach": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "histories": 8
+        },
+        "cost": {
+          "mean": 0.6025399440870561,
+          "ci95": [
+            0.4133194416239603,
+            0.7447258713829722
+          ],
+          "histories": 8
+        },
+        "successful_forgetting": {
+          "mean": 0.023156731040216982,
+          "ci95": [
+            0.01320922642480582,
+            0.03315311239566654
+          ],
+          "histories": 8
+        },
+        "all_endpoint_forgetting": {
+          "mean": 0.023156731040216982,
+          "ci95": [
+            0.01320922642480582,
+            0.03315311239566654
+          ],
+          "histories": 8
+        },
+        "mean_steps": 47.5,
+        "mean_work": 16278.990942028984,
+        "mean_multiplier": 1.0
+      }
+    },
+    "paired": {
+      "bc_feedback_vs_bc_progress": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 8
+        },
+        "cost_difference": {
+          "mean": -0.038360650196422985,
+          "ci95": [
+            -0.11074738033565859,
+            5.9832230625072675e-05
+          ],
+          "histories": 8
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.0013289525328824918,
+          "ci95": [
+            -0.003793940103302399,
+            1.0190174604455435e-05
+          ],
+          "histories": 8
+        },
+        "all_forgetting_difference": {
+          "mean": -0.0013289525328824918,
+          "ci95": [
+            -0.003793940103302399,
+            1.0190174604455435e-05
+          ],
+          "histories": 8
+        },
+        "joint_success_pairs": 24
+      },
+      "aggregate_r1_feedback_vs_aggregate_r1_progress": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 8
+        },
+        "cost_difference": {
+          "mean": 0.006720112616177388,
+          "ci95": [
+            -0.0011577286254264804,
+            0.01726289788243729
+          ],
+          "histories": 8
+        },
+        "joint_forgetting_difference": {
+          "mean": 0.0008378230397486023,
+          "ci95": [
+            -6.749837969740229e-06,
+            0.002405383675876591
+          ],
+          "histories": 8
+        },
+        "all_forgetting_difference": {
+          "mean": 0.0008378230397486023,
+          "ci95": [
+            -6.749837969740229e-06,
+            0.002405383675876591
+          ],
+          "histories": 8
+        },
+        "joint_success_pairs": 24
+      },
+      "matched_r1_feedback_vs_matched_r1_progress": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 8
+        },
+        "cost_difference": {
+          "mean": 0.004036489282663332,
+          "ci95": [
+            -0.017314281772738728,
+            0.02215508444327234
+          ],
+          "histories": 8
+        },
+        "joint_forgetting_difference": {
+          "mean": 0.0009846864268183708,
+          "ci95": [
+            -0.0006898478604853153,
+            0.0032797705692549544
+          ],
+          "histories": 8
+        },
+        "all_forgetting_difference": {
+          "mean": 0.0009846864268183708,
+          "ci95": [
+            -0.0006898478604853153,
+            0.0032797705692549544
+          ],
+          "histories": 8
+        },
+        "joint_success_pairs": 24
+      },
+      "aggregate_r2_feedback_vs_aggregate_r2_progress": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 8
+        },
+        "cost_difference": {
+          "mean": 0.019452159952065805,
+          "ci95": [
+            -0.009506433215134606,
+            0.05138621225501276
+          ],
+          "histories": 8
+        },
+        "joint_forgetting_difference": {
+          "mean": 0.0024307590598861375,
+          "ci95": [
+            -0.00038866776352127386,
+            0.0067838539835065595
+          ],
+          "histories": 8
+        },
+        "all_forgetting_difference": {
+          "mean": 0.0024307590598861375,
+          "ci95": [
+            -0.00038866776352127386,
+            0.0067838539835065595
+          ],
+          "histories": 8
+        },
+        "joint_success_pairs": 24,
+        "active_histories": {
+          "reach_difference": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "histories": 7
+          },
+          "cost_difference": {
+            "mean": 0.02223103994521806,
+            "ci95": [
+              -0.010172638454745657,
+              0.05749830990329863
+            ],
+            "histories": 7
+          },
+          "joint_forgetting_difference": {
+            "mean": 0.002778010354155585,
+            "ci95": [
+              -0.0004441917297385987,
+              0.007654646234143349
+            ],
+            "histories": 7
+          },
+          "all_forgetting_difference": {
+            "mean": 0.002778010354155585,
+            "ci95": [
+              -0.0004441917297385987,
+              0.007654646234143349
+            ],
+            "histories": 7
+          },
+          "joint_success_pairs": 21
+        },
+        "tight_endpoint_forgetting": {
+          "mean": 0.002778010354155585,
+          "ci95": [
+            -0.0004441917297385987,
+            0.007654646234143349
+          ],
+          "histories": 7
+        },
+        "per_policy_seed": {
+          "381": {
+            "reach_difference": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "histories": 8
+            },
+            "cost_difference": {
+              "mean": 0.016346737064391513,
+              "ci95": [
+                -0.00484541748144135,
+                0.04192166438922685
+              ],
+              "histories": 8
+            },
+            "joint_forgetting_difference": {
+              "mean": 0.0020171685609966516,
+              "ci95": [
+                -0.00029686628840863694,
+                0.005918868584558368
+              ],
+              "histories": 8
+            },
+            "all_forgetting_difference": {
+              "mean": 0.0020171685609966516,
+              "ci95": [
+                -0.00029686628840863694,
+                0.005918868584558368
+              ],
+              "histories": 8
+            },
+            "joint_success_pairs": 8
+          },
+          "382": {
+            "reach_difference": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "histories": 8
+            },
+            "cost_difference": {
+              "mean": 0.006524685391538481,
+              "ci95": [
+                -0.019036926815882788,
+                0.03346864755098332
+              ],
+              "histories": 8
+            },
+            "joint_forgetting_difference": {
+              "mean": 0.0014668965401748817,
+              "ci95": [
+                -0.0009363033653547366,
+                0.004818906309083104
+              ],
+              "histories": 8
+            },
+            "all_forgetting_difference": {
+              "mean": 0.0014668965401748817,
+              "ci95": [
+                -0.0009363033653547366,
+                0.004818906309083104
+              ],
+              "histories": 8
+            },
+            "joint_success_pairs": 8
+          },
+          "383": {
+            "reach_difference": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "histories": 8
+            },
+            "cost_difference": {
+              "mean": 0.03548505740026742,
+              "ci95": [
+                -0.019879803497702818,
+                0.0872996459873014
+              ],
+              "histories": 8
+            },
+            "joint_forgetting_difference": {
+              "mean": 0.0038082120784868794,
+              "ci95": [
+                -0.0005077184177935125,
+                0.009898125659674406
+              ],
+              "histories": 8
+            },
+            "all_forgetting_difference": {
+              "mean": 0.0038082120784868794,
+              "ci95": [
+                -0.0005077184177935125,
+                0.009898125659674406
+              ],
+              "histories": 8
+            },
+            "joint_success_pairs": 8
+          }
+        }
+      },
+      "matched_r2_feedback_vs_matched_r2_progress": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 8
+        },
+        "cost_difference": {
+          "mean": 0.009143520990731919,
+          "ci95": [
+            0.0030901755580109423,
+            0.015489248793005532
+          ],
+          "histories": 8
+        },
+        "joint_forgetting_difference": {
+          "mean": 0.0003184788963860936,
+          "ci95": [
+            -0.00027695039494170085,
+            0.0008599256268805928
+          ],
+          "histories": 8
+        },
+        "all_forgetting_difference": {
+          "mean": 0.0003184788963860936,
+          "ci95": [
+            -0.00027695039494170085,
+            0.0008599256268805928
+          ],
+          "histories": 8
+        },
+        "joint_success_pairs": 24
+      },
+      "aggregate_r2_progress_vs_bc_progress": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 8
+        },
+        "cost_difference": {
+          "mean": -0.0047560468466845435,
+          "ci95": [
+            -0.0243721994055796,
+            0.014820188037508017
+          ],
+          "histories": 8
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.0009907514839950535,
+          "ci95": [
+            -0.0032869934673524564,
+            0.0005222630635317828
+          ],
+          "histories": 8
+        },
+        "all_forgetting_difference": {
+          "mean": -0.0009907514839950535,
+          "ci95": [
+            -0.0032869934673524564,
+            0.0005222630635317828
+          ],
+          "histories": 8
+        },
+        "joint_success_pairs": 24
+      },
+      "aggregate_r2_progress_vs_matched_r2_progress": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 8
+        },
+        "cost_difference": {
+          "mean": 0.004528051966257652,
+          "ci95": [
+            -0.025144819268250518,
+            0.04549183973148005
+          ],
+          "histories": 8
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.0008411246041456857,
+          "ci95": [
+            -0.003936467537035544,
+            0.0016535249383499183
+          ],
+          "histories": 8
+        },
+        "all_forgetting_difference": {
+          "mean": -0.0008411246041456857,
+          "ci95": [
+            -0.003936467537035544,
+            0.0016535249383499183
+          ],
+          "histories": 8
+        },
+        "joint_success_pairs": 24
+      },
+      "aggregate_r2_feedback_vs_bc_feedback": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 8
+        },
+        "cost_difference": {
+          "mean": 0.05305676330180425,
+          "ci95": [
+            0.010252712394050734,
+            0.12141708851558235
+          ],
+          "histories": 8
+        },
+        "joint_forgetting_difference": {
+          "mean": 0.002768960108773576,
+          "ci95": [
+            0.0005044265805433193,
+            0.005514288729237805
+          ],
+          "histories": 8
+        },
+        "all_forgetting_difference": {
+          "mean": 0.002768960108773576,
+          "ci95": [
+            0.0005044265805433193,
+            0.005514288729237805
+          ],
+          "histories": 8
+        },
+        "joint_success_pairs": 24
+      },
+      "aggregate_r2_feedback_vs_matched_r2_feedback": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 8
+        },
+        "cost_difference": {
+          "mean": 0.014836690927591538,
+          "ci95": [
+            -0.0016700272765338658,
+            0.03478901615464211
+          ],
+          "histories": 8
+        },
+        "joint_forgetting_difference": {
+          "mean": 0.0012711555593543583,
+          "ci95": [
+            -4.194314695067064e-07,
+            0.0028046829781184597
+          ],
+          "histories": 8
+        },
+        "all_forgetting_difference": {
+          "mean": 0.0012711555593543583,
+          "ci95": [
+            -4.194314695067064e-07,
+            0.0028046829781184597
+          ],
+          "histories": 8
+        },
+        "joint_success_pairs": 24
+      },
+      "feedback_gain_change_after_aggregation": {
+        "cost_difference_in_differences": {
+          "mean": 0.05781281014848879,
+          "ci95": [
+            0.015250904037342824,
+            0.11446854085055178
+          ],
+          "histories": 8
+        },
+        "note": "Negative means aggregation improves the feedback-minus-progress cost gap."
+      }
+    },
+    "initial_already_success": 1,
+    "histories": 8
+  },
+  "offline": {
+    "behavior": {
+      "states": 33,
+      "histories": 7,
+      "methods": {
+        "bc_progress": {
+          "reach": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "histories": 7
+          },
+          "cost": {
+            "mean": 0.5561795468841281,
+            "ci95": [
+              0.40236321304525646,
+              0.7027897856065202
+            ],
+            "histories": 7
+          },
+          "successful_forgetting": {
+            "mean": 0.01913002599030733,
+            "ci95": [
+              0.009508171744112458,
+              0.029479453726006407
+            ],
+            "histories": 7
+          },
+          "all_endpoint_forgetting": {
+            "mean": 0.01913002599030733,
+            "ci95": [
+              0.009508171744112458,
+              0.029479453726006407
+            ],
+            "histories": 7
+          },
+          "action_mae_to_in_sample_oracle": {
+            "mean": 0.29002267573696144,
+            "ci95": [
+              0.18832199546485265,
+              0.41224489795918373
+            ],
+            "histories": 7
+          },
+          "in_sample_cost_regret": {
+            "mean": 0.01736940685701224,
+            "ci95": [
+              0.0038572018176117645,
+              0.03641422425529787
+            ],
+            "histories": 7
+          }
+        },
+        "bc_feedback": {
+          "reach": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "histories": 7
+          },
+          "cost": {
+            "mean": 0.5525786706379482,
+            "ci95": [
+              0.3956532284617424,
+              0.701125202115093
+            ],
+            "histories": 7
+          },
+          "successful_forgetting": {
+            "mean": 0.019006310030817986,
+            "ci95": [
+              0.009365099748330457,
+              0.029378447468791685
+            ],
+            "histories": 7
+          },
+          "all_endpoint_forgetting": {
+            "mean": 0.019006310030817986,
+            "ci95": [
+              0.009365099748330457,
+              0.029378447468791685
+            ],
+            "histories": 7
+          },
+          "action_mae_to_in_sample_oracle": {
+            "mean": 0.2833333333333333,
+            "ci95": [
+              0.1619047619047619,
+              0.41805272108843505
+            ],
+            "histories": 7
+          },
+          "in_sample_cost_regret": {
+            "mean": 0.013768518077475684,
+            "ci95": [
+              0.003966309130191803,
+              0.0246757519032274
+            ],
+            "histories": 7
+          }
+        },
+        "aggregate_r1_progress": {
+          "reach": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "histories": 7
+          },
+          "cost": {
+            "mean": 0.5521188931805747,
+            "ci95": [
+              0.3933429419994354,
+              0.701064292873655
+            ],
+            "histories": 7
+          },
+          "successful_forgetting": {
+            "mean": 0.01905284046993724,
+            "ci95": [
+              0.009397735397630771,
+              0.029457603448203633
+            ],
+            "histories": 7
+          },
+          "all_endpoint_forgetting": {
+            "mean": 0.01905284046993724,
+            "ci95": [
+              0.009397735397630771,
+              0.029457603448203633
+            ],
+            "histories": 7
+          },
+          "action_mae_to_in_sample_oracle": {
+            "mean": 0.23027210884353738,
+            "ci95": [
+              0.1129251700680272,
+              0.3663350340136053
+            ],
+            "histories": 7
+          },
+          "in_sample_cost_regret": {
+            "mean": 0.01330875143841175,
+            "ci95": [
+              0.004202307684213987,
+              0.023667189425655773
+            ],
+            "histories": 7
+          }
+        },
+        "aggregate_r1_feedback": {
+          "reach": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "histories": 7
+          },
+          "cost": {
+            "mean": 0.5528038995606559,
+            "ci95": [
+              0.3941640853881836,
+              0.7012352262224469
+            ],
+            "histories": 7
+          },
+          "successful_forgetting": {
+            "mean": 0.019128332945651243,
+            "ci95": [
+              0.009410620769319525,
+              0.029479991644620895
+            ],
+            "histories": 7
+          },
+          "all_endpoint_forgetting": {
+            "mean": 0.019128332945651243,
+            "ci95": [
+              0.009410620769319525,
+              0.029479991644620895
+            ],
+            "histories": 7
+          },
+          "action_mae_to_in_sample_oracle": {
+            "mean": 0.2982993197278912,
+            "ci95": [
+              0.20238095238095236,
+              0.40680272108843535
+            ],
+            "histories": 7
+          },
+          "in_sample_cost_regret": {
+            "mean": 0.01399374520406127,
+            "ci95": [
+              0.00442094262689352,
+              0.02416034521801131
+            ],
+            "histories": 7
+          }
+        },
+        "matched_r1_progress": {
+          "reach": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "histories": 7
+          },
+          "cost": {
+            "mean": 0.5619211835520608,
+            "ci95": [
+              0.4119248517921993,
+              0.7021393361900529
+            ],
+            "histories": 7
+          },
+          "successful_forgetting": {
+            "mean": 0.01920406729914248,
+            "ci95": [
+              0.00981119231936256,
+              0.029397987267501383
+            ],
+            "histories": 7
+          },
+          "all_endpoint_forgetting": {
+            "mean": 0.01920406729914248,
+            "ci95": [
+              0.00981119231936256,
+              0.029397987267501383
+            ],
+            "histories": 7
+          },
+          "action_mae_to_in_sample_oracle": {
+            "mean": 0.2683673469387755,
+            "ci95": [
+              0.16904761904761909,
+              0.3846938775510204
+            ],
+            "histories": 7
+          },
+          "in_sample_cost_regret": {
+            "mean": 0.023111046607872204,
+            "ci95": [
+              0.0035560421612379806,
+              0.054073884284922054
+            ],
+            "histories": 7
+          }
+        },
+        "matched_r1_feedback": {
+          "reach": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "histories": 7
+          },
+          "cost": {
+            "mean": 0.5637289136648178,
+            "ci95": [
+              0.41188909113407135,
+              0.7068347835647203
+            ],
+            "histories": 7
+          },
+          "successful_forgetting": {
+            "mean": 0.01956192703385438,
+            "ci95": [
+              0.009903959929943085,
+              0.02988014536510621
+            ],
+            "histories": 7
+          },
+          "all_endpoint_forgetting": {
+            "mean": 0.01956192703385438,
+            "ci95": [
+              0.009903959929943085,
+              0.02988014536510621
+            ],
+            "histories": 7
+          },
+          "action_mae_to_in_sample_oracle": {
+            "mean": 0.3468253968253968,
+            "ci95": [
+              0.2633673469387755,
+              0.44410430839002263
+            ],
+            "histories": 7
+          },
+          "in_sample_cost_regret": {
+            "mean": 0.02491877563962979,
+            "ci95": [
+              0.004775447571384055,
+              0.05466313686754022
+            ],
+            "histories": 7
+          }
+        },
+        "aggregate_r2_progress": {
+          "reach": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "histories": 7
+          },
+          "cost": {
+            "mean": 0.5622009379523141,
+            "ci95": [
+              0.4122046061924526,
+              0.703186551375048
+            ],
+            "histories": 7
+          },
+          "successful_forgetting": {
+            "mean": 0.019224671214552864,
+            "ci95": [
+              0.009802789644371453,
+              0.02944140668426241
+            ],
+            "histories": 7
+          },
+          "all_endpoint_forgetting": {
+            "mean": 0.019224671214552864,
+            "ci95": [
+              0.009802789644371453,
+              0.02944140668426241
+            ],
+            "histories": 7
+          },
+          "action_mae_to_in_sample_oracle": {
+            "mean": 0.28129251700680274,
+            "ci95": [
+              0.19285714285714287,
+              0.3945578231292517
+            ],
+            "histories": 7
+          },
+          "in_sample_cost_regret": {
+            "mean": 0.02339079686082966,
+            "ci95": [
+              0.0037932377578856957,
+              0.05422057158180645
+            ],
+            "histories": 7
+          }
+        },
+        "aggregate_r2_feedback": {
+          "reach": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "histories": 7
+          },
+          "cost": {
+            "mean": 0.5633731952735356,
+            "ci95": [
+              0.412466572863715,
+              0.7060910207884652
+            ],
+            "histories": 7
+          },
+          "successful_forgetting": {
+            "mean": 0.01946486539340445,
+            "ci95": [
+              0.009837061100240265,
+              0.029758210493517772
+            ],
+            "histories": 7
+          },
+          "all_endpoint_forgetting": {
+            "mean": 0.01946486539340445,
+            "ci95": [
+              0.009837061100240265,
+              0.029758210493517772
+            ],
+            "histories": 7
+          },
+          "action_mae_to_in_sample_oracle": {
+            "mean": 0.40272108843537413,
+            "ci95": [
+              0.31054421768707485,
+              0.5027210884353741
+            ],
+            "histories": 7
+          },
+          "in_sample_cost_regret": {
+            "mean": 0.024563044908323457,
+            "ci95": [
+              0.004558693684105363,
+              0.05415694994319763
+            ],
+            "histories": 7
+          }
+        },
+        "matched_r2_progress": {
+          "reach": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "histories": 7
+          },
+          "cost": {
+            "mean": 0.5581703909805843,
+            "ci95": [
+              0.4069605512278421,
+              0.702329124723162
+            ],
+            "histories": 7
+          },
+          "successful_forgetting": {
+            "mean": 0.01905272588399904,
+            "ci95": [
+              0.009539329247283084,
+              0.02933456495936428
+            ],
+            "histories": 7
+          },
+          "all_endpoint_forgetting": {
+            "mean": 0.01905272588399904,
+            "ci95": [
+              0.009539329247283084,
+              0.02933456495936428
+            ],
+            "histories": 7
+          },
+          "action_mae_to_in_sample_oracle": {
+            "mean": 0.24160997732426306,
+            "ci95": [
+              0.1378684807256236,
+              0.3667800453514739
+            ],
+            "histories": 7
+          },
+          "in_sample_cost_regret": {
+            "mean": 0.01936023755531226,
+            "ci95": [
+              0.0034581594435232027,
+              0.03910654039521298
+            ],
+            "histories": 7
+          }
+        },
+        "matched_r2_feedback": {
+          "reach": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "histories": 7
+          },
+          "cost": {
+            "mean": 0.5646904387644359,
+            "ci95": [
+              0.4143079753432955,
+              0.7067023825964748
+            ],
+            "histories": 7
+          },
+          "successful_forgetting": {
+            "mean": 0.019602720459390963,
+            "ci95": [
+              0.00993235020100006,
+              0.029951470737744654
+            ],
+            "histories": 7
+          },
+          "all_endpoint_forgetting": {
+            "mean": 0.019602720459390963,
+            "ci95": [
+              0.00993235020100006,
+              0.029951470737744654
+            ],
+            "histories": 7
+          },
+          "action_mae_to_in_sample_oracle": {
+            "mean": 0.4014739229024943,
+            "ci95": [
+              0.30317460317460315,
+              0.4935374149659864
+            ],
+            "histories": 7
+          },
+          "in_sample_cost_regret": {
+            "mean": 0.025880276558122466,
+            "ci95": [
+              0.005033109470137528,
+              0.055627153664162106
+            ],
+            "histories": 7
+          }
+        }
+      },
+      "paired": {
+        "bc_feedback_vs_bc_progress": {
+          "reach_difference": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "histories": 7
+          },
+          "cost_difference": {
+            "mean": -0.003600887779612094,
+            "ci95": [
+              -0.015015797248841929,
+              0.004816066648345441
+            ],
+            "histories": 7
+          },
+          "joint_forgetting_difference": {
+            "mean": -0.00012371570846880786,
+            "ci95": [
+              -0.00034594461353013424,
+              4.7489728915804464e-05
+            ],
+            "histories": 7
+          },
+          "all_forgetting_difference": {
+            "mean": -0.00012371570846880786,
+            "ci95": [
+              -0.00034594461353013424,
+              4.7489728915804464e-05
+            ],
+            "histories": 7
+          },
+          "joint_success_pairs": 198
+        },
+        "aggregate_r1_feedback_vs_aggregate_r1_progress": {
+          "reach_difference": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "histories": 7
+          },
+          "cost_difference": {
+            "mean": 0.0006849943851453385,
+            "ci95": [
+              6.161011905143303e-05,
+              0.0017131274092077678
+            ],
+            "histories": 7
+          },
+          "joint_forgetting_difference": {
+            "mean": 7.549280625036252e-05,
+            "ci95": [
+              -7.895246069113324e-06,
+              0.00023066638641466852
+            ],
+            "histories": 7
+          },
+          "all_forgetting_difference": {
+            "mean": 7.549280625036252e-05,
+            "ci95": [
+              -7.895246069113324e-06,
+              0.00023066638641466852
+            ],
+            "histories": 7
+          },
+          "joint_success_pairs": 198
+        },
+        "matched_r1_feedback_vs_matched_r1_progress": {
+          "reach_difference": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "histories": 7
+          },
+          "cost_difference": {
+            "mean": 0.0018077265537743057,
+            "ci95": [
+              -0.0024192338210663627,
+              0.007569758853475962
+            ],
+            "histories": 7
+          },
+          "joint_forgetting_difference": {
+            "mean": 0.00035786004770800773,
+            "ci95": [
+              -4.671622887794261e-05,
+              0.0011126680053296565
+            ],
+            "histories": 7
+          },
+          "all_forgetting_difference": {
+            "mean": 0.00035786004770800773,
+            "ci95": [
+              -4.671622887794261e-05,
+              0.0011126680053296565
+            ],
+            "histories": 7
+          },
+          "joint_success_pairs": 198
+        },
+        "aggregate_r2_feedback_vs_aggregate_r2_progress": {
+          "reach_difference": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "histories": 7
+          },
+          "cost_difference": {
+            "mean": 0.0011722486565953919,
+            "ci95": [
+              -0.0013846992847642728,
+              0.004676004738679954
+            ],
+            "histories": 7
+          },
+          "joint_forgetting_difference": {
+            "mean": 0.00024019454057062312,
+            "ci95": [
+              -4.003775497299752e-05,
+              0.0007478777375321702
+            ],
+            "histories": 7
+          },
+          "all_forgetting_difference": {
+            "mean": 0.00024019454057062312,
+            "ci95": [
+              -4.003775497299752e-05,
+              0.0007478777375321702
+            ],
+            "histories": 7
+          },
+          "joint_success_pairs": 198
+        },
+        "matched_r2_feedback_vs_matched_r2_progress": {
+          "reach_difference": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "histories": 7
+          },
+          "cost_difference": {
+            "mean": 0.006520036755578725,
+            "ci95": [
+              -0.004376165150980731,
+              0.020093342569972656
+            ],
+            "histories": 7
+          },
+          "joint_forgetting_difference": {
+            "mean": 0.0005499952078805238,
+            "ci95": [
+              -8.548406913178042e-05,
+              0.0014700521553874882
+            ],
+            "histories": 7
+          },
+          "all_forgetting_difference": {
+            "mean": 0.0005499952078805238,
+            "ci95": [
+              -8.548406913178042e-05,
+              0.0014700521553874882
+            ],
+            "histories": 7
+          },
+          "joint_success_pairs": 198
+        },
+        "aggregate_r2_progress_vs_bc_progress": {
+          "reach_difference": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "histories": 7
+          },
+          "cost_difference": {
+            "mean": 0.006021388706618122,
+            "ci95": [
+              -0.0010062800387718848,
+              0.01780557176763458
+            ],
+            "histories": 7
+          },
+          "joint_forgetting_difference": {
+            "mean": 9.464490826108627e-05,
+            "ci95": [
+              -0.00018627493409439921,
+              0.0004558664181136659
+            ],
+            "histories": 7
+          },
+          "all_forgetting_difference": {
+            "mean": 9.464490826108627e-05,
+            "ci95": [
+              -0.00018627493409439921,
+              0.0004558664181136659
+            ],
+            "histories": 7
+          },
+          "joint_success_pairs": 198
+        },
+        "aggregate_r2_progress_vs_matched_r2_progress": {
+          "reach_difference": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "histories": 7
+          },
+          "cost_difference": {
+            "mean": 0.004030557049970541,
+            "ci95": [
+              -0.005632795925651278,
+              0.01718146194304739
+            ],
+            "histories": 7
+          },
+          "joint_forgetting_difference": {
+            "mean": 0.00017194568200855947,
+            "ci95": [
+              -7.150155449510618e-05,
+              0.0005063725116737519
+            ],
+            "histories": 7
+          },
+          "all_forgetting_difference": {
+            "mean": 0.00017194568200855947,
+            "ci95": [
+              -7.150155449510618e-05,
+              0.0005063725116737519
+            ],
+            "histories": 7
+          },
+          "joint_success_pairs": 198
+        },
+        "aggregate_r2_feedback_vs_bc_feedback": {
+          "reach_difference": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "histories": 7
+          },
+          "cost_difference": {
+            "mean": 0.01079452526755631,
+            "ci95": [
+              -0.0028100975656083654,
+              0.03307231183030775
+            ],
+            "histories": 7
+          },
+          "joint_forgetting_difference": {
+            "mean": 0.0004585551640567636,
+            "ci95": [
+              -4.013498151575082e-05,
+              0.0010264569095202855
+            ],
+            "histories": 7
+          },
+          "all_forgetting_difference": {
+            "mean": 0.0004585551640567636,
+            "ci95": [
+              -4.013498151575082e-05,
+              0.0010264569095202855
+            ],
+            "histories": 7
+          },
+          "joint_success_pairs": 198
+        },
+        "aggregate_r2_feedback_vs_matched_r2_feedback": {
+          "reach_difference": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "histories": 7
+          },
+          "cost_difference": {
+            "mean": -0.0013172309014147946,
+            "ci95": [
+              -0.003234052548318037,
+              -3.206493732120309e-05
+            ],
+            "histories": 7
+          },
+          "joint_forgetting_difference": {
+            "mean": -0.00013785498322249623,
+            "ci95": [
+              -0.00041248267669808617,
+              7.864194360861023e-06
+            ],
+            "histories": 7
+          },
+          "all_forgetting_difference": {
+            "mean": -0.00013785498322249623,
+            "ci95": [
+              -0.00041248267669808617,
+              7.864194360861023e-06
+            ],
+            "histories": 7
+          },
+          "joint_success_pairs": 198
+        },
+        "feedback_gain_change_after_aggregation": {
+          "cost_difference_in_differences": {
+            "mean": 0.004773136444522866,
+            "ci95": [
+              -0.00461182977804648,
+              0.016580446656527265
+            ],
+            "histories": 7
+          },
+          "note": "Negative means aggregation improves the feedback-minus-progress cost gap."
+        }
+      },
+      "cross_future_oracle_vs_static": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 7
+        },
+        "cost_difference": {
+          "mean": -0.003125525557801926,
+          "ci95": [
+            -0.007490936745723177,
+            4.3300221607621226e-05
+          ],
+          "histories": 7
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.00022988134631824714,
+          "ci95": [
+            -0.0005618385455038931,
+            1.7468417874105008e-06
+          ],
+          "histories": 7
+        },
+        "all_forgetting_difference": {
+          "mean": -0.00022988134631824714,
+          "ci95": [
+            -0.0005618385455038931,
+            1.7468417874105008e-06
+          ],
+          "histories": 7
+        },
+        "joint_success_pairs": 33
+      },
+      "note": "In-sample oracle regret is optimistic; cross-future oracle is privileged diagnostic only."
+    },
+    "visited": {
+      "states": 54,
+      "histories": 7,
+      "methods": {
+        "bc_progress": {
+          "reach": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "histories": 7
+          },
+          "cost": {
+            "mean": 0.601182222366333,
+            "ci95": [
+              0.47461353881018503,
+              0.7202708125114441
+            ],
+            "histories": 7
+          },
+          "successful_forgetting": {
+            "mean": 0.02070701933865036,
+            "ci95": [
+              0.01173006437186684,
+              0.030116446475897514
+            ],
+            "histories": 7
+          },
+          "all_endpoint_forgetting": {
+            "mean": 0.02070701933865036,
+            "ci95": [
+              0.01173006437186684,
+              0.030116446475897514
+            ],
+            "histories": 7
+          },
+          "action_mae_to_in_sample_oracle": {
+            "mean": 0.31982964125821267,
+            "ci95": [
+              0.2270408163265306,
+              0.3956043956043956
+            ],
+            "histories": 7
+          },
+          "in_sample_cost_regret": {
+            "mean": 0.009249263014810691,
+            "ci95": [
+              0.0016104803237664913,
+              0.02127611151497279
+            ],
+            "histories": 7
+          }
+        },
+        "bc_feedback": {
+          "reach": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "histories": 7
+          },
+          "cost": {
+            "mean": 0.5987383595534733,
+            "ci95": [
+              0.47076529317668503,
+              0.7179642873150962
+            ],
+            "histories": 7
+          },
+          "successful_forgetting": {
+            "mean": 0.02069510892033577,
+            "ci95": [
+              0.011611802561674267,
+              0.03018956897514207
+            ],
+            "histories": 7
+          },
+          "all_endpoint_forgetting": {
+            "mean": 0.02069510892033577,
+            "ci95": [
+              0.011611802561674267,
+              0.03018956897514207
+            ],
+            "histories": 7
+          },
+          "action_mae_to_in_sample_oracle": {
+            "mean": 0.30534914820629105,
+            "ci95": [
+              0.1655891330891331,
+              0.43562125704982846
+            ],
+            "histories": 7
+          },
+          "in_sample_cost_regret": {
+            "mean": 0.006805390651736941,
+            "ci95": [
+              0.00227804748075349,
+              0.012187774426170759
+            ],
+            "histories": 7
+          }
+        },
+        "aggregate_r1_progress": {
+          "reach": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "histories": 7
+          },
+          "cost": {
+            "mean": 0.5996730327606201,
+            "ci95": [
+              0.47220014567886076,
+              0.7189941831997463
+            ],
+            "histories": 7
+          },
+          "successful_forgetting": {
+            "mean": 0.02070095469909055,
+            "ci95": [
+              0.01168470483805452,
+              0.03015536761709622
+            ],
+            "histories": 7
+          },
+          "all_endpoint_forgetting": {
+            "mean": 0.02070095469909055,
+            "ci95": [
+              0.01168470483805452,
+              0.03015536761709622
+            ],
+            "histories": 7
+          },
+          "action_mae_to_in_sample_oracle": {
+            "mean": 0.2680228501657073,
+            "ci95": [
+              0.1491496598639456,
+              0.37209445316588174
+            ],
+            "histories": 7
+          },
+          "in_sample_cost_regret": {
+            "mean": 0.007740049556429897,
+            "ci95": [
+              0.001769202229167734,
+              0.016250666896147386
+            ],
+            "histories": 7
+          }
+        },
+        "aggregate_r1_feedback": {
+          "reach": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "histories": 7
+          },
+          "cost": {
+            "mean": 0.6007234539304461,
+            "ci95": [
+              0.47426351053374155,
+              0.7194431977612632
+            ],
+            "histories": 7
+          },
+          "successful_forgetting": {
+            "mean": 0.020755572178001915,
+            "ci95": [
+              0.01173284026195428,
+              0.030158723438424722
+            ],
+            "histories": 7
+          },
+          "all_endpoint_forgetting": {
+            "mean": 0.020755572178001915,
+            "ci95": [
+              0.01173284026195428,
+              0.030158723438424722
+            ],
+            "histories": 7
+          },
+          "action_mae_to_in_sample_oracle": {
+            "mean": 0.40370515727658596,
+            "ci95": [
+              0.34435141577998724,
+              0.48439298796441654
+            ],
+            "histories": 7
+          },
+          "in_sample_cost_regret": {
+            "mean": 0.008790477777698211,
+            "ci95": [
+              0.0026770508848130703,
+              0.017337496525474956
+            ],
+            "histories": 7
+          }
+        },
+        "matched_r1_progress": {
+          "reach": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "histories": 7
+          },
+          "cost": {
+            "mean": 0.6016214575086322,
+            "ci95": [
+              0.4744925584111895,
+              0.7205237575939724
+            ],
+            "histories": 7
+          },
+          "successful_forgetting": {
+            "mean": 0.020757058103169714,
+            "ci95": [
+              0.011721560598484107,
+              0.030171893537044525
+            ],
+            "histories": 7
+          },
+          "all_endpoint_forgetting": {
+            "mean": 0.020757058103169714,
+            "ci95": [
+              0.011721560598484107,
+              0.030171893537044525
+            ],
+            "histories": 7
+          },
+          "action_mae_to_in_sample_oracle": {
+            "mean": 0.30469940112797256,
+            "ci95": [
+              0.19695176681783824,
+              0.39958791208791206
+            ],
+            "histories": 7
+          },
+          "in_sample_cost_regret": {
+            "mean": 0.009688498755817168,
+            "ci95": [
+              0.0015097238605708949,
+              0.022089694626629353
+            ],
+            "histories": 7
+          }
+        },
+        "matched_r1_feedback": {
+          "reach": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "histories": 7
+          },
+          "cost": {
+            "mean": 0.5994972586631775,
+            "ci95": [
+              0.47132464817592074,
+              0.7186032789094108
+            ],
+            "histories": 7
+          },
+          "successful_forgetting": {
+            "mean": 0.0206891070785267,
+            "ci95": [
+              0.011623925522768072,
+              0.030158447833465676
+            ],
+            "histories": 7
+          },
+          "all_endpoint_forgetting": {
+            "mean": 0.0206891070785267,
+            "ci95": [
+              0.011623925522768072,
+              0.030158447833465676
+            ],
+            "histories": 7
+          },
+          "action_mae_to_in_sample_oracle": {
+            "mean": 0.3540939880225594,
+            "ci95": [
+              0.2962708587708588,
+              0.40338827838827834
+            ],
+            "histories": 7
+          },
+          "in_sample_cost_regret": {
+            "mean": 0.007564272033050656,
+            "ci95": [
+              0.0022329589767780714,
+              0.014936791566599692
+            ],
+            "histories": 7
+          }
+        },
+        "aggregate_r2_progress": {
+          "reach": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "histories": 7
+          },
+          "cost": {
+            "mean": 0.6016708995614733,
+            "ci95": [
+              0.47560024229543546,
+              0.7199974911553519
+            ],
+            "histories": 7
+          },
+          "successful_forgetting": {
+            "mean": 0.02066387016592281,
+            "ci95": [
+              0.011732152729694332,
+              0.029973847126322135
+            ],
+            "histories": 7
+          },
+          "all_endpoint_forgetting": {
+            "mean": 0.02066387016592281,
+            "ci95": [
+              0.011732152729694332,
+              0.029973847126322135
+            ],
+            "histories": 7
+          },
+          "action_mae_to_in_sample_oracle": {
+            "mean": 0.27463587999302286,
+            "ci95": [
+              0.17229199372056514,
+              0.37069160997732425
+            ],
+            "histories": 7
+          },
+          "in_sample_cost_regret": {
+            "mean": 0.00973793278431653,
+            "ci95": [
+              0.0013739036845176347,
+              0.023263905056020513
+            ],
+            "histories": 7
+          }
+        },
+        "aggregate_r2_feedback": {
+          "reach": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "histories": 7
+          },
+          "cost": {
+            "mean": 0.6042294417108808,
+            "ci95": [
+              0.4804770861353193,
+              0.7204870411327907
+            ],
+            "histories": 7
+          },
+          "successful_forgetting": {
+            "mean": 0.020840831100940704,
+            "ci95": [
+              0.011909784286815142,
+              0.030164145482038815
+            ],
+            "histories": 7
+          },
+          "all_endpoint_forgetting": {
+            "mean": 0.020840831100940704,
+            "ci95": [
+              0.011909784286815142,
+              0.030164145482038815
+            ],
+            "histories": 7
+          },
+          "action_mae_to_in_sample_oracle": {
+            "mean": 0.4348283330426188,
+            "ci95": [
+              0.37638380138380134,
+              0.4976779173207745
+            ],
+            "histories": 7
+          },
+          "in_sample_cost_regret": {
+            "mean": 0.012296460369335753,
+            "ci95": [
+              0.0030612931586802006,
+              0.025808442317481552
+            ],
+            "histories": 7
+          }
+        },
+        "matched_r2_progress": {
+          "reach": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "histories": 7
+          },
+          "cost": {
+            "mean": 0.601912762437548,
+            "ci95": [
+              0.476364152772086,
+              0.7203471745763507
+            ],
+            "histories": 7
+          },
+          "successful_forgetting": {
+            "mean": 0.020710393520338193,
+            "ci95": [
+              0.01171335790838514,
+              0.03013484286410468
+            ],
+            "histories": 7
+          },
+          "all_endpoint_forgetting": {
+            "mean": 0.020710393520338193,
+            "ci95": [
+              0.01171335790838514,
+              0.03013484286410468
+            ],
+            "histories": 7
+          },
+          "action_mae_to_in_sample_oracle": {
+            "mean": 0.3121620443049014,
+            "ci95": [
+              0.2086167800453515,
+              0.4035736089307518
+            ],
+            "histories": 7
+          },
+          "in_sample_cost_regret": {
+            "mean": 0.009979795997164078,
+            "ci95": [
+              0.0027112290263175964,
+              0.021085524133273532
+            ],
+            "histories": 7
+          }
+        },
+        "matched_r2_feedback": {
+          "reach": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "histories": 7
+          },
+          "cost": {
+            "mean": 0.6020952378000531,
+            "ci95": [
+              0.4759983377797263,
+              0.7202748273100171
+            ],
+            "histories": 7
+          },
+          "successful_forgetting": {
+            "mean": 0.02076698886230588,
+            "ci95": [
+              0.011753751962844814,
+              0.030176220860864435
+            ],
+            "histories": 7
+          },
+          "all_endpoint_forgetting": {
+            "mean": 0.02076698886230588,
+            "ci95": [
+              0.011753751962844814,
+              0.030176220860864435
+            ],
+            "histories": 7
+          },
+          "action_mae_to_in_sample_oracle": {
+            "mean": 0.452720361648933,
+            "ci95": [
+              0.37889121460550035,
+              0.5429421768707482
+            ],
+            "histories": 7
+          },
+          "in_sample_cost_regret": {
+            "mean": 0.010162263210596783,
+            "ci95": [
+              0.0029307296832225154,
+              0.020194210537842285
+            ],
+            "histories": 7
+          }
+        }
+      },
+      "paired": {
+        "bc_feedback_vs_bc_progress": {
+          "reach_difference": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "histories": 7
+          },
+          "cost_difference": {
+            "mean": -0.0024438728755090517,
+            "ci95": [
+              -0.009442983228447182,
+              0.0019415659064959203
+            ],
+            "histories": 7
+          },
+          "joint_forgetting_difference": {
+            "mean": -1.1910231023648521e-05,
+            "ci95": [
+              -0.0002744121811701916,
+              0.00024095827049157897
+            ],
+            "histories": 7
+          },
+          "all_forgetting_difference": {
+            "mean": -1.1910231023648521e-05,
+            "ci95": [
+              -0.0002744121811701916,
+              0.00024095827049157897
+            ],
+            "histories": 7
+          },
+          "joint_success_pairs": 324
+        },
+        "aggregate_r1_feedback_vs_aggregate_r1_progress": {
+          "reach_difference": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "histories": 7
+          },
+          "cost_difference": {
+            "mean": 0.0010504285039912378,
+            "ci95": [
+              -0.0004052091306740684,
+              0.0031087721132540217
+            ],
+            "histories": 7
+          },
+          "joint_forgetting_difference": {
+            "mean": 5.461696751548776e-05,
+            "ci95": [
+              -2.6144876236295594e-05,
+              0.00014064926446215914
+            ],
+            "histories": 7
+          },
+          "all_forgetting_difference": {
+            "mean": 5.461696751548776e-05,
+            "ci95": [
+              -2.6144876236295594e-05,
+              0.00014064926446215914
+            ],
+            "histories": 7
+          },
+          "joint_success_pairs": 324
+        },
+        "matched_r1_feedback_vs_matched_r1_progress": {
+          "reach_difference": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "histories": 7
+          },
+          "cost_difference": {
+            "mean": -0.0021242271785532857,
+            "ci95": [
+              -0.007511033645901729,
+              0.001234337851201417
+            ],
+            "histories": 7
+          },
+          "joint_forgetting_difference": {
+            "mean": -6.795051220771191e-05,
+            "ci95": [
+              -0.00024680895460603224,
+              4.548464078522686e-05
+            ],
+            "histories": 7
+          },
+          "all_forgetting_difference": {
+            "mean": -6.795051220771191e-05,
+            "ci95": [
+              -0.00024680895460603224,
+              4.548464078522686e-05
+            ],
+            "histories": 7
+          },
+          "joint_success_pairs": 324
+        },
+        "aggregate_r2_feedback_vs_aggregate_r2_progress": {
+          "reach_difference": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "histories": 7
+          },
+          "cost_difference": {
+            "mean": 0.002558527231615569,
+            "ci95": [
+              -0.0002069899014064244,
+              0.006663930768679295
+            ],
+            "histories": 7
+          },
+          "joint_forgetting_difference": {
+            "mean": 0.00017696087067114213,
+            "ci95": [
+              -1.9555046329904663e-05,
+              0.00043830722279381007
+            ],
+            "histories": 7
+          },
+          "all_forgetting_difference": {
+            "mean": 0.00017696087067114213,
+            "ci95": [
+              -1.9555046329904663e-05,
+              0.00043830722279381007
+            ],
+            "histories": 7
+          },
+          "joint_success_pairs": 324
+        },
+        "matched_r2_feedback_vs_matched_r2_progress": {
+          "reach_difference": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "histories": 7
+          },
+          "cost_difference": {
+            "mean": 0.0001824678121400731,
+            "ci95": [
+              -0.001620783271001918,
+              0.002021821814456156
+            ],
+            "histories": 7
+          },
+          "joint_forgetting_difference": {
+            "mean": 5.659532845519217e-05,
+            "ci95": [
+              -7.895222786048959e-05,
+              0.00020117111655833597
+            ],
+            "histories": 7
+          },
+          "all_forgetting_difference": {
+            "mean": 5.659532845519217e-05,
+            "ci95": [
+              -7.895222786048959e-05,
+              0.00020117111655833597
+            ],
+            "histories": 7
+          },
+          "joint_success_pairs": 324
+        },
+        "aggregate_r2_progress_vs_bc_progress": {
+          "reach_difference": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "histories": 7
+          },
+          "cost_difference": {
+            "mean": 0.0004886696465941245,
+            "ci95": [
+              -0.000615410969268331,
+              0.002208646988687438
+            ],
+            "histories": 7
+          },
+          "joint_forgetting_difference": {
+            "mean": -4.314910375212223e-05,
+            "ci95": [
+              -0.00016928347120678415,
+              4.133655468478986e-05
+            ],
+            "histories": 7
+          },
+          "all_forgetting_difference": {
+            "mean": -4.314910375212223e-05,
+            "ci95": [
+              -0.00016928347120678415,
+              4.133655468478986e-05
+            ],
+            "histories": 7
+          },
+          "joint_success_pairs": 324
+        },
+        "aggregate_r2_progress_vs_matched_r2_progress": {
+          "reach_difference": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "histories": 7
+          },
+          "cost_difference": {
+            "mean": -0.00024186293324289312,
+            "ci95": [
+              -0.0031386163318529725,
+              0.0030144574536409762
+            ],
+            "histories": 7
+          },
+          "joint_forgetting_difference": {
+            "mean": -4.652331738595551e-05,
+            "ci95": [
+              -0.00023522988015299364,
+              0.000116438285684645
+            ],
+            "histories": 7
+          },
+          "all_forgetting_difference": {
+            "mean": -4.652331738595551e-05,
+            "ci95": [
+              -0.00023522988015299364,
+              0.000116438285684645
+            ],
+            "histories": 7
+          },
+          "joint_success_pairs": 324
+        },
+        "aggregate_r2_feedback_vs_bc_feedback": {
+          "reach_difference": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "histories": 7
+          },
+          "cost_difference": {
+            "mean": 0.005491070083475539,
+            "ci95": [
+              -0.00042768637649714947,
+              0.013880471898508924
+            ],
+            "histories": 7
+          },
+          "joint_forgetting_difference": {
+            "mean": 0.00014572201221848706,
+            "ci95": [
+              -4.130399195543889e-05,
+              0.0003856367797457746
+            ],
+            "histories": 7
+          },
+          "all_forgetting_difference": {
+            "mean": 0.00014572201221848706,
+            "ci95": [
+              -4.130399195543889e-05,
+              0.0003856367797457746
+            ],
+            "histories": 7
+          },
+          "joint_success_pairs": 324
+        },
+        "aggregate_r2_feedback_vs_matched_r2_feedback": {
+          "reach_difference": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "histories": 7
+          },
+          "cost_difference": {
+            "mean": 0.002134196558992179,
+            "ci95": [
+              -0.0005850996832512985,
+              0.005893709424916389
+            ],
+            "histories": 7
+          },
+          "joint_forgetting_difference": {
+            "mean": 7.384222551211548e-05,
+            "ci95": [
+              -2.9093498596921563e-05,
+              0.000227014218190951
+            ],
+            "histories": 7
+          },
+          "all_forgetting_difference": {
+            "mean": 7.384222551211548e-05,
+            "ci95": [
+              -2.9093498596921563e-05,
+              0.000227014218190951
+            ],
+            "histories": 7
+          },
+          "joint_success_pairs": 324
+        },
+        "feedback_gain_change_after_aggregation": {
+          "cost_difference_in_differences": {
+            "mean": 0.005002400131031338,
+            "ci95": [
+              3.0158827680030038e-05,
+              0.011780722066967909
+            ],
+            "histories": 7
+          },
+          "note": "Negative means aggregation improves the feedback-minus-progress cost gap."
+        }
+      },
+      "cross_future_oracle_vs_static": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 7
+        },
+        "cost_difference": {
+          "mean": -0.0011705451511910983,
+          "ci95": [
+            -0.002575162855750282,
+            7.107914591740285e-05
+          ],
+          "histories": 7
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.0001074756990939412,
+          "ci95": [
+            -0.00027486908423790215,
+            1.3060124339452678e-05
+          ],
+          "histories": 7
+        },
+        "all_forgetting_difference": {
+          "mean": -0.0001074756990939412,
+          "ci95": [
+            -0.00027486908423790215,
+            1.3060124339452678e-05
+          ],
+          "histories": 7
+        },
+        "joint_success_pairs": 54
+      },
+      "note": "In-sample oracle regret is optimistic; cross-future oracle is privileged diagnostic only."
+    }
+  },
+  "continuation": {
+    "states": 7,
+    "same_adaptive_future_methods": {
+      "constant": {
+        "reach": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "histories": 7
+        },
+        "cost": {
+          "mean": 0.5952947437763214,
+          "ci95": [
+            0.45793366006442476,
+            0.7194891476205414
+          ],
+          "histories": 7
+        },
+        "successful_forgetting": {
+          "mean": 0.020050929659711465,
+          "ci95": [
+            0.01071846711316279,
+            0.030178494307412096
+          ],
+          "histories": 7
+        },
+        "all_endpoint_forgetting": {
+          "mean": 0.020050929659711465,
+          "ci95": [
+            0.01071846711316279,
+            0.030178494307412096
+          ],
+          "histories": 7
+        }
+      },
+      "fixed": {
+        "reach": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "histories": 7
+        },
+        "cost": {
+          "mean": 0.5809326427323478,
+          "ci95": [
+            0.43514463156461713,
+            0.71729747738157
+          ],
+          "histories": 7
+        },
+        "successful_forgetting": {
+          "mean": 0.019670149644038508,
+          "ci95": [
+            0.009956907081816877,
+            0.03014749927180154
+          ],
+          "histories": 7
+        },
+        "all_endpoint_forgetting": {
+          "mean": 0.019670149644038508,
+          "ci95": [
+            0.009956907081816877,
+            0.03014749927180154
+          ],
+          "histories": 7
+        }
+      },
+      "adaptive": {
+        "reach": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "histories": 7
+        },
+        "cost": {
+          "mean": 0.581140181847981,
+          "ci95": [
+            0.4357568719557353,
+            0.71729747738157
+          ],
+          "histories": 7
+        },
+        "successful_forgetting": {
+          "mean": 0.019674192648380995,
+          "ci95": [
+            0.009964993090501853,
+            0.03014749927180154
+          ],
+          "histories": 7
+        },
+        "all_endpoint_forgetting": {
+          "mean": 0.019674192648380995,
+          "ci95": [
+            0.009964993090501853,
+            0.03014749927180154
+          ],
+          "histories": 7
+        }
+      }
+    },
+    "paired": {
+      "adaptive_vs_constant": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 7
+        },
+        "cost_difference": {
+          "mean": -0.014154561928340368,
+          "ci95": [
+            -0.04308630313192095,
+            0.00062261734689985
+          ],
+          "histories": 7
+        },
+        "joint_forgetting_difference": {
+          "mean": -0.00037673701133046834,
+          "ci95": [
+            -0.0011423400470188686,
+            1.212901302746364e-05
+          ],
+          "histories": 7
+        },
+        "all_forgetting_difference": {
+          "mean": -0.00037673701133046834,
+          "ci95": [
+            -0.0011423400470188686,
+            1.212901302746364e-05
+          ],
+          "histories": 7
+        },
+        "joint_success_pairs": 7
+      },
+      "adaptive_vs_fixed": {
+        "reach_difference": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "histories": 7
+        },
+        "cost_difference": {
+          "mean": 0.00020753911563328335,
+          "ci95": [
+            0.0,
+            0.00062261734689985
+          ],
+          "histories": 7
+        },
+        "joint_forgetting_difference": {
+          "mean": 4.04300434248788e-06,
+          "ci95": [
+            0.0,
+            1.212901302746364e-05
+          ],
+          "histories": 7
+        },
+        "all_forgetting_difference": {
+          "mean": 4.04300434248788e-06,
+          "ci95": [
+            0.0,
+            1.212901302746364e-05
+          ],
+          "histories": 7
+        },
+        "joint_success_pairs": 7
+      }
+    },
+    "disagreements": {
+      "constant": {
+        "argmin_disagreement": 0.2857142857142857,
+        "disjoint_best_action_sets": 0.2857142857142857
+      },
+      "fixed": {
+        "argmin_disagreement": 0.14285714285714285,
+        "disjoint_best_action_sets": 0.14285714285714285
+      }
+    },
+    "note": "Select first action with privileged future-0 branch labels, score on independent future 1 under one identical frozen adaptive continuation. Not global optimal planning or a deployed controller."
+  },
+  "audit": {
+    "source_hashes_match": true,
+    "policy_hashes_match": true,
+    "disjoint_root_splits": true,
+    "matched_queries_per_root_round": true,
+    "training_label_roots_valid": true,
+    "online_budgets_valid": true,
+    "recorded_thresholds_valid": true,
+    "matched_duplicate_queries": 0,
+    "collection_costs": [
+      {
+        "costs": {
+          "aggregate": {
+            "branch_updates": 12806,
+            "branch_work": 4287956.463768116,
+            "path_updates": 1813,
+            "path_work": 625196.2608695653,
+            "queries": 31,
+            "duplicate_queries": 0
+          },
+          "matched": {
+            "branch_updates": 19156,
+            "branch_work": 6409905.217391301,
+            "path_updates": 2502,
+            "path_work": 852561.739130435,
+            "queries": 31,
+            "duplicate_queries": 0
+          }
+        },
+        "roots": [
+          {
+            "root": 450100,
+            "aggregate": 3,
+            "matched": 3,
+            "matched_duplicate_queries": 0
+          },
+          {
+            "root": 450101,
+            "aggregate": 1,
+            "matched": 1,
+            "matched_duplicate_queries": 0
+          },
+          {
+            "root": 450102,
+            "aggregate": 13,
+            "matched": 13,
+            "matched_duplicate_queries": 0
+          },
+          {
+            "root": 450103,
+            "aggregate": 0,
+            "matched": 0,
+            "matched_duplicate_queries": 0
+          },
+          {
+            "root": 450104,
+            "aggregate": 0,
+            "matched": 0,
+            "matched_duplicate_queries": 0
+          },
+          {
+            "root": 450105,
+            "aggregate": 11,
+            "matched": 11,
+            "matched_duplicate_queries": 0
+          },
+          {
+            "root": 450106,
+            "aggregate": 3,
+            "matched": 3,
+            "matched_duplicate_queries": 0
+          },
+          {
+            "root": 450107,
+            "aggregate": 0,
+            "matched": 0,
+            "matched_duplicate_queries": 0
+          }
+        ],
+        "seconds": 15.272586822509766,
+        "note": "Query counts matched per history, not FLOPs; pretraining excluded from work counters."
+      },
+      {
+        "costs": {
+          "aggregate": {
+            "branch_updates": 11359,
+            "branch_work": 3803839.130434783,
+            "path_updates": 1860,
+            "path_work": 640941.1884057972,
+            "queries": 30,
+            "duplicate_queries": 0
+          },
+          "matched": {
+            "branch_updates": 18337,
+            "branch_work": 6134784.057971009,
+            "path_updates": 2544,
+            "path_work": 866636.1739130437,
+            "queries": 30,
+            "duplicate_queries": 0
+          }
+        },
+        "roots": [
+          {
+            "root": 450100,
+            "aggregate": 3,
+            "matched": 3,
+            "matched_duplicate_queries": 0
+          },
+          {
+            "root": 450101,
+            "aggregate": 1,
+            "matched": 1,
+            "matched_duplicate_queries": 0
+          },
+          {
+            "root": 450102,
+            "aggregate": 13,
+            "matched": 13,
+            "matched_duplicate_queries": 0
+          },
+          {
+            "root": 450103,
+            "aggregate": 0,
+            "matched": 0,
+            "matched_duplicate_queries": 0
+          },
+          {
+            "root": 450104,
+            "aggregate": 0,
+            "matched": 0,
+            "matched_duplicate_queries": 0
+          },
+          {
+            "root": 450105,
+            "aggregate": 11,
+            "matched": 11,
+            "matched_duplicate_queries": 0
+          },
+          {
+            "root": 450106,
+            "aggregate": 2,
+            "matched": 2,
+            "matched_duplicate_queries": 0
+          },
+          {
+            "root": 450107,
+            "aggregate": 0,
+            "matched": 0,
+            "matched_duplicate_queries": 0
+          }
+        ],
+        "seconds": 14.415210962295532,
+        "note": "Query counts matched per history, not FLOPs; pretraining excluded from work counters."
+      }
+    ]
+  },
+  "total_cost": {
+    "seconds": 66.68384408950806,
+    "note": "End-to-end time includes old-task pretraining, querying, fitting, tuning and evaluation."
+  }
+}

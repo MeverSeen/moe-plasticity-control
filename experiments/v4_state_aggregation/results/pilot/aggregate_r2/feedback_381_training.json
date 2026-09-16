@@ -1,0 +1,42 @@
+[
+  {
+    "epoch": 0,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.4089694917201996,
+      "endpoint_forgetting": 0.00881235208362341
+    }
+  },
+  {
+    "epoch": 25,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.4089694917201996,
+      "endpoint_forgetting": 0.00881235208362341
+    }
+  },
+  {
+    "epoch": 50,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.4089694917201996,
+      "endpoint_forgetting": 0.00881235208362341
+    }
+  },
+  {
+    "epoch": 75,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.4089694917201996,
+      "endpoint_forgetting": 0.00881235208362341
+    }
+  },
+  {
+    "epoch": 100,
+    "best_dev": {
+      "reach": 1.0,
+      "cost": 0.4089694917201996,
+      "endpoint_forgetting": 0.00881235208362341
+    }
+  }
+]

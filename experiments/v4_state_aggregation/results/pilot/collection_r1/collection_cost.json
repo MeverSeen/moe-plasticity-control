@@ -1,0 +1,72 @@
+{
+  "costs": {
+    "aggregate": {
+      "branch_updates": 12806,
+      "branch_work": 4287956.463768116,
+      "path_updates": 1813,
+      "path_work": 625196.2608695653,
+      "queries": 31,
+      "duplicate_queries": 0
+    },
+    "matched": {
+      "branch_updates": 19156,
+      "branch_work": 6409905.217391301,
+      "path_updates": 2502,
+      "path_work": 852561.739130435,
+      "queries": 31,
+      "duplicate_queries": 0
+    }
+  },
+  "roots": [
+    {
+      "root": 450100,
+      "aggregate": 3,
+      "matched": 3,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 450101,
+      "aggregate": 1,
+      "matched": 1,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 450102,
+      "aggregate": 13,
+      "matched": 13,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 450103,
+      "aggregate": 0,
+      "matched": 0,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 450104,
+      "aggregate": 0,
+      "matched": 0,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 450105,
+      "aggregate": 11,
+      "matched": 11,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 450106,
+      "aggregate": 3,
+      "matched": 3,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 450107,
+      "aggregate": 0,
+      "matched": 0,
+      "matched_duplicate_queries": 0
+    }
+  ],
+  "seconds": 15.272586822509766,
+  "note": "Query counts matched per history, not FLOPs; pretraining excluded from work counters."
+}

@@ -1,0 +1,68 @@
+{
+  "progress_381": {
+    "feedback": false,
+    "slack": 0.1,
+    "seed": 381,
+    "epoch": 75,
+    "dev": {
+      "reach": 1.0,
+      "cost": 0.3716747760772705,
+      "endpoint_forgetting": 0.010324198752641678
+    }
+  },
+  "feedback_381": {
+    "feedback": true,
+    "slack": 0.1,
+    "seed": 381,
+    "epoch": 75,
+    "dev": {
+      "reach": 1.0,
+      "cost": 0.36812520027160645,
+      "endpoint_forgetting": 0.009996062144637108
+    }
+  },
+  "progress_382": {
+    "feedback": false,
+    "slack": 0.1,
+    "seed": 382,
+    "epoch": 50,
+    "dev": {
+      "reach": 1.0,
+      "cost": 0.3735943138599396,
+      "endpoint_forgetting": 0.010339572094380856
+    }
+  },
+  "feedback_382": {
+    "feedback": true,
+    "slack": 0.1,
+    "seed": 382,
+    "epoch": 100,
+    "dev": {
+      "reach": 1.0,
+      "cost": 0.3696501553058624,
+      "endpoint_forgetting": 0.010072851553559303
+    }
+  },
+  "progress_383": {
+    "feedback": false,
+    "slack": 0.02,
+    "seed": 383,
+    "epoch": 75,
+    "dev": {
+      "reach": 1.0,
+      "cost": 0.3708914816379547,
+      "endpoint_forgetting": 0.010264798998832703
+    }
+  },
+  "feedback_383": {
+    "feedback": true,
+    "slack": 0.02,
+    "seed": 383,
+    "epoch": 75,
+    "dev": {
+      "reach": 1.0,
+      "cost": 0.37301111221313477,
+      "endpoint_forgetting": 0.010210213251411915
+    }
+  }
+}

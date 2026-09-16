@@ -1,0 +1,408 @@
+{
+  "costs": {
+    "aggregate": {
+      "branch_updates": 98132,
+      "branch_work": 32894207.130434714,
+      "path_updates": 13044,
+      "path_work": 4514067.623188407,
+      "queries": 357,
+      "duplicate_queries": 0
+    },
+    "matched": {
+      "branch_updates": 128560,
+      "branch_work": 43053991.00000007,
+      "path_updates": 16635,
+      "path_work": 5716659.115942027,
+      "queries": 357,
+      "duplicate_queries": 0
+    }
+  },
+  "roots": [
+    {
+      "root": 420000,
+      "aggregate": 12,
+      "matched": 12,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420001,
+      "aggregate": 7,
+      "matched": 7,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420002,
+      "aggregate": 13,
+      "matched": 13,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420003,
+      "aggregate": 10,
+      "matched": 10,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420004,
+      "aggregate": 0,
+      "matched": 0,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420005,
+      "aggregate": 12,
+      "matched": 12,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420006,
+      "aggregate": 13,
+      "matched": 13,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420007,
+      "aggregate": 9,
+      "matched": 9,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420008,
+      "aggregate": 0,
+      "matched": 0,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420009,
+      "aggregate": 1,
+      "matched": 1,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420010,
+      "aggregate": 13,
+      "matched": 13,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420011,
+      "aggregate": 2,
+      "matched": 2,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420012,
+      "aggregate": 7,
+      "matched": 7,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420013,
+      "aggregate": 2,
+      "matched": 2,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420014,
+      "aggregate": 13,
+      "matched": 13,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420015,
+      "aggregate": 9,
+      "matched": 9,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420016,
+      "aggregate": 5,
+      "matched": 5,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420017,
+      "aggregate": 0,
+      "matched": 0,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420018,
+      "aggregate": 9,
+      "matched": 9,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420019,
+      "aggregate": 13,
+      "matched": 13,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420020,
+      "aggregate": 12,
+      "matched": 12,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420021,
+      "aggregate": 9,
+      "matched": 9,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420022,
+      "aggregate": 1,
+      "matched": 1,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420023,
+      "aggregate": 1,
+      "matched": 1,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420024,
+      "aggregate": 10,
+      "matched": 10,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420025,
+      "aggregate": 1,
+      "matched": 1,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420026,
+      "aggregate": 0,
+      "matched": 0,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420027,
+      "aggregate": 2,
+      "matched": 2,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420028,
+      "aggregate": 5,
+      "matched": 5,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420029,
+      "aggregate": 0,
+      "matched": 0,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420030,
+      "aggregate": 12,
+      "matched": 12,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420031,
+      "aggregate": 1,
+      "matched": 1,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420032,
+      "aggregate": 0,
+      "matched": 0,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420033,
+      "aggregate": 13,
+      "matched": 13,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420034,
+      "aggregate": 0,
+      "matched": 0,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420035,
+      "aggregate": 1,
+      "matched": 1,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420036,
+      "aggregate": 13,
+      "matched": 13,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420037,
+      "aggregate": 9,
+      "matched": 9,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420038,
+      "aggregate": 10,
+      "matched": 10,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420039,
+      "aggregate": 13,
+      "matched": 13,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420040,
+      "aggregate": 1,
+      "matched": 1,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420041,
+      "aggregate": 0,
+      "matched": 0,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420042,
+      "aggregate": 11,
+      "matched": 11,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420043,
+      "aggregate": 3,
+      "matched": 3,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420044,
+      "aggregate": 0,
+      "matched": 0,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420045,
+      "aggregate": 1,
+      "matched": 1,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420046,
+      "aggregate": 8,
+      "matched": 8,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420047,
+      "aggregate": 3,
+      "matched": 3,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420048,
+      "aggregate": 4,
+      "matched": 4,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420049,
+      "aggregate": 6,
+      "matched": 6,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420050,
+      "aggregate": 0,
+      "matched": 0,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420051,
+      "aggregate": 9,
+      "matched": 9,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420052,
+      "aggregate": 0,
+      "matched": 0,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420053,
+      "aggregate": 0,
+      "matched": 0,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420054,
+      "aggregate": 8,
+      "matched": 8,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420055,
+      "aggregate": 7,
+      "matched": 7,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420056,
+      "aggregate": 0,
+      "matched": 0,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420057,
+      "aggregate": 13,
+      "matched": 13,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420058,
+      "aggregate": 0,
+      "matched": 0,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420059,
+      "aggregate": 0,
+      "matched": 0,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420060,
+      "aggregate": 7,
+      "matched": 7,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420061,
+      "aggregate": 5,
+      "matched": 5,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420062,
+      "aggregate": 0,
+      "matched": 0,
+      "matched_duplicate_queries": 0
+    },
+    {
+      "root": 420063,
+      "aggregate": 8,
+      "matched": 8,
+      "matched_duplicate_queries": 0
+    }
+  ],
+  "seconds": 112.1980447769165,
+  "note": "Query counts matched per history, not FLOPs; pretraining excluded from work counters."
+}

@@ -9,6 +9,7 @@ SUITES = (
     ("v1_expert_control", "test_moe_control.py"),
     ("v2_feedback_control", "test_experiment.py"),
     ("v3_branching", "test_branching.py"),
+    ("v4_state_aggregation", "test_*.py"),
 )
 
 

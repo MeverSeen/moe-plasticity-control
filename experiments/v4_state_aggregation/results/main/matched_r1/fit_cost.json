@@ -1,0 +1,8 @@
+{
+  "seconds": 0.8740088939666748,
+  "states": 532,
+  "histories": 48,
+  "epochs_per_model": 300,
+  "models": 6,
+  "note": "Same final fitting algorithm, epochs, architecture and matched initializations."
+}

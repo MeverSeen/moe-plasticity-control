@@ -7,17 +7,18 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSIONS = {"v1": "v1_expert_control", "v2": "v2_feedback_control", "v3": "v3_branching"}
+VERSIONS = {"v1": "v1_expert_control", "v2": "v2_feedback_control", "v3": "v3_branching",
+            "v4": "v4_state_aggregation"}
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("version", choices=VERSIONS)
     parser.add_argument("--out", type=Path)
-    parser.add_argument("--pilot", action="store_true", help="Small v3 preflight (100 epochs).")
+    parser.add_argument("--pilot", action="store_true", help="Small v3/v4 preflight (100 epochs).")
     args = parser.parse_args()
-    if args.pilot and args.version != "v3":
-        parser.error("--pilot is available only for v3")
+    if args.pilot and args.version not in {"v3", "v4"}:
+        parser.error("--pilot is available only for v3/v4")
     output = (args.out or ROOT / "runs" / f"{args.version}-{datetime.now():%Y%m%d-%H%M%S}").resolve()
     if output.exists():
         parser.error(f"Choose a new output directory: {output}")
@@ -27,8 +28,9 @@ def main():
     env = dict(os.environ)
     env.setdefault("MPLCONFIGDIR", str(ROOT / ".cache" / "matplotlib"))
     env.setdefault("XDG_CACHE_HOME", str(ROOT / ".cache"))
-    if args.version == "v3":
-        commands = [["branching.py", "--out", str(output)]]
+    if args.version in {"v3", "v4"}:
+        entry = "dagger.py" if args.version == "v4" else "branching.py"
+        commands = [[entry, "--out", str(output)]]
         if args.pilot:
             commands[0] += ["--pilot", "--epochs", "100"]
         commands.append(["analyze.py", "--run", str(output), "--out", str(output / "analysis")])

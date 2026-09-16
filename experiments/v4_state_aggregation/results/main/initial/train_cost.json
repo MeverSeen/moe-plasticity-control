@@ -1,0 +1,1035 @@
+{
+  "seconds": 50.59747290611267,
+  "states": 192,
+  "histories": 64,
+  "future_replicates": 2,
+  "branch_updates": 105814,
+  "branch_work": 35404205.695652425,
+  "roots": [
+    {
+      "root": 420000,
+      "states": 5,
+      "initially_done": false,
+      "initial_new_loss": 0.2935938239097595,
+      "protected_mass": 0.12074359506368637,
+      "mask": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 420001,
+      "states": 2,
+      "initially_done": false,
+      "initial_new_loss": 0.4361836314201355,
+      "protected_mass": 0.030625656247138977,
+      "mask": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 420002,
+      "states": 7,
+      "initially_done": false,
+      "initial_new_loss": 0.25923869013786316,
+      "protected_mass": 0.0299683790653944,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 420003,
+      "states": 5,
+      "initially_done": false,
+      "initial_new_loss": 0.4196150600910187,
+      "protected_mass": 0.034904997795820236,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 420004,
+      "states": 0,
+      "initially_done": true,
+      "initial_new_loss": 0.05735469609498978,
+      "protected_mass": 0.4752565920352936,
+      "mask": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 420005,
+      "states": 7,
+      "initially_done": false,
+      "initial_new_loss": 0.15086816251277924,
+      "protected_mass": 0.3340679109096527,
+      "mask": [
+        false,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 420006,
+      "states": 5,
+      "initially_done": false,
+      "initial_new_loss": 0.41727811098098755,
+      "protected_mass": 0.03652527928352356,
+      "mask": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 420007,
+      "states": 3,
+      "initially_done": false,
+      "initial_new_loss": 0.12862402200698853,
+      "protected_mass": 0.33734673261642456,
+      "mask": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 420008,
+      "states": 0,
+      "initially_done": true,
+      "initial_new_loss": 0.04068140685558319,
+      "protected_mass": 0.9851399064064026,
+      "mask": [
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 420009,
+      "states": 2,
+      "initially_done": false,
+      "initial_new_loss": 0.12822887301445007,
+      "protected_mass": 0.6001189351081848,
+      "mask": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 420010,
+      "states": 5,
+      "initially_done": false,
+      "initial_new_loss": 0.21469752490520477,
+      "protected_mass": 0.10632160305976868,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 420011,
+      "states": 1,
+      "initially_done": false,
+      "initial_new_loss": 0.10670094192028046,
+      "protected_mass": 0.046817291527986526,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 420012,
+      "states": 7,
+      "initially_done": false,
+      "initial_new_loss": 0.6764435768127441,
+      "protected_mass": 0.0,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 420013,
+      "states": 1,
+      "initially_done": false,
+      "initial_new_loss": 0.11402425915002823,
+      "protected_mass": 0.37215450406074524,
+      "mask": [
+        false,
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 420014,
+      "states": 7,
+      "initially_done": false,
+      "initial_new_loss": 0.29725897312164307,
+      "protected_mass": 0.0946953296661377,
+      "mask": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 420015,
+      "states": 5,
+      "initially_done": false,
+      "initial_new_loss": 0.897961437702179,
+      "protected_mass": 0.09820930659770966,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 420016,
+      "states": 3,
+      "initially_done": false,
+      "initial_new_loss": 0.312344491481781,
+      "protected_mass": 0.3376833200454712,
+      "mask": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 420017,
+      "states": 0,
+      "initially_done": true,
+      "initial_new_loss": 0.03256785497069359,
+      "protected_mass": 0.1279975175857544,
+      "mask": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 420018,
+      "states": 3,
+      "initially_done": false,
+      "initial_new_loss": 0.18492192029953003,
+      "protected_mass": 0.1146547868847847,
+      "mask": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 420019,
+      "states": 7,
+      "initially_done": false,
+      "initial_new_loss": 0.6025272011756897,
+      "protected_mass": 0.14651918411254883,
+      "mask": [
+        false,
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 420020,
+      "states": 7,
+      "initially_done": false,
+      "initial_new_loss": 0.1731395423412323,
+      "protected_mass": 0.050943925976753235,
+      "mask": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 420021,
+      "states": 5,
+      "initially_done": false,
+      "initial_new_loss": 0.6507333517074585,
+      "protected_mass": 0.07234169542789459,
+      "mask": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 420022,
+      "states": 1,
+      "initially_done": false,
+      "initial_new_loss": 0.08857867866754532,
+      "protected_mass": 0.6031481623649597,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 420023,
+      "states": 1,
+      "initially_done": false,
+      "initial_new_loss": 0.08784930408000946,
+      "protected_mass": 0.017731428146362305,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 420024,
+      "states": 7,
+      "initially_done": false,
+      "initial_new_loss": 0.4448387622833252,
+      "protected_mass": 0.10367697477340698,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 420025,
+      "states": 1,
+      "initially_done": false,
+      "initial_new_loss": 0.11528057605028152,
+      "protected_mass": 0.12905840575695038,
+      "mask": [
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 420026,
+      "states": 0,
+      "initially_done": true,
+      "initial_new_loss": 0.02552197314798832,
+      "protected_mass": 0.1278858184814453,
+      "mask": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 420027,
+      "states": 1,
+      "initially_done": false,
+      "initial_new_loss": 0.10653579235076904,
+      "protected_mass": 0.6072192192077637,
+      "mask": [
+        false,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 420028,
+      "states": 3,
+      "initially_done": false,
+      "initial_new_loss": 0.13758668303489685,
+      "protected_mass": 0.6054768562316895,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 420029,
+      "states": 0,
+      "initially_done": true,
+      "initial_new_loss": 0.03695828467607498,
+      "protected_mass": 0.46787697076797485,
+      "mask": [
+        true,
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 420030,
+      "states": 5,
+      "initially_done": false,
+      "initial_new_loss": 0.623286247253418,
+      "protected_mass": 0.12717053294181824,
+      "mask": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 420031,
+      "states": 1,
+      "initially_done": false,
+      "initial_new_loss": 0.08628517389297485,
+      "protected_mass": 0.09841417521238327,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 420032,
+      "states": 0,
+      "initially_done": true,
+      "initial_new_loss": 0.04029808193445206,
+      "protected_mass": 0.11168597638607025,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 420033,
+      "states": 7,
+      "initially_done": false,
+      "initial_new_loss": 0.5507131218910217,
+      "protected_mass": 0.08640243113040924,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 420034,
+      "states": 0,
+      "initially_done": true,
+      "initial_new_loss": 0.07276192307472229,
+      "protected_mass": 0.08279280364513397,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 420035,
+      "states": 1,
+      "initially_done": false,
+      "initial_new_loss": 0.10589401423931122,
+      "protected_mass": 0.09070385247468948,
+      "mask": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 420036,
+      "states": 7,
+      "initially_done": false,
+      "initial_new_loss": 1.392019271850586,
+      "protected_mass": 0.03756057843565941,
+      "mask": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 420037,
+      "states": 3,
+      "initially_done": false,
+      "initial_new_loss": 0.42271095514297485,
+      "protected_mass": 0.15303950011730194,
+      "mask": [
+        false,
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 420038,
+      "states": 5,
+      "initially_done": false,
+      "initial_new_loss": 0.2635839581489563,
+      "protected_mass": 0.3413788676261902,
+      "mask": [
+        false,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 420039,
+      "states": 7,
+      "initially_done": false,
+      "initial_new_loss": 0.5567744374275208,
+      "protected_mass": 0.10480301082134247,
+      "mask": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 420040,
+      "states": 1,
+      "initially_done": false,
+      "initial_new_loss": 0.0816020518541336,
+      "protected_mass": 0.6574608087539673,
+      "mask": [
+        false,
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 420041,
+      "states": 0,
+      "initially_done": true,
+      "initial_new_loss": 0.033716458827257156,
+      "protected_mass": 0.9227105975151062,
+      "mask": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 420042,
+      "states": 7,
+      "initially_done": false,
+      "initial_new_loss": 0.656786322593689,
+      "protected_mass": 0.13932354748249054,
+      "mask": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 420043,
+      "states": 1,
+      "initially_done": false,
+      "initial_new_loss": 0.1041039526462555,
+      "protected_mass": 0.3567768931388855,
+      "mask": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        false
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 420044,
+      "states": 0,
+      "initially_done": true,
+      "initial_new_loss": 0.0488048680126667,
+      "protected_mass": 0.962833821773529,
+      "mask": [
+        true,
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 420045,
+      "states": 1,
+      "initially_done": false,
+      "initial_new_loss": 0.08740252256393433,
+      "protected_mass": 0.39607495069503784,
+      "mask": [
+        false,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 420046,
+      "states": 7,
+      "initially_done": false,
+      "initial_new_loss": 0.9004178643226624,
+      "protected_mass": 0.0,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 420047,
+      "states": 1,
+      "initially_done": false,
+      "initial_new_loss": 0.1557246446609497,
+      "protected_mass": 0.1358756572008133,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 420048,
+      "states": 3,
+      "initially_done": false,
+      "initial_new_loss": 0.45993849635124207,
+      "protected_mass": 0.021685484796762466,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 420049,
+      "states": 3,
+      "initially_done": false,
+      "initial_new_loss": 0.08537494391202927,
+      "protected_mass": 0.13187165558338165,
+      "mask": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 420050,
+      "states": 0,
+      "initially_done": true,
+      "initial_new_loss": 0.06176866590976715,
+      "protected_mass": 0.12389613687992096,
+      "mask": [
+        false,
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 420051,
+      "states": 5,
+      "initially_done": false,
+      "initial_new_loss": 0.21773415803909302,
+      "protected_mass": 0.04986729845404625,
+      "mask": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 420052,
+      "states": 0,
+      "initially_done": true,
+      "initial_new_loss": 0.032319530844688416,
+      "protected_mass": 0.9230702519416809,
+      "mask": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 420053,
+      "states": 0,
+      "initially_done": true,
+      "initial_new_loss": 0.055953383445739746,
+      "protected_mass": 0.8740999102592468,
+      "mask": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 420054,
+      "states": 5,
+      "initially_done": false,
+      "initial_new_loss": 0.30901238322257996,
+      "protected_mass": 0.09768369793891907,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 420055,
+      "states": 3,
+      "initially_done": false,
+      "initial_new_loss": 0.15165266394615173,
+      "protected_mass": 0.3529423177242279,
+      "mask": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 420056,
+      "states": 0,
+      "initially_done": true,
+      "initial_new_loss": 0.06501185894012451,
+      "protected_mass": 0.3457629084587097,
+      "mask": [
+        false,
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 420057,
+      "states": 7,
+      "initially_done": false,
+      "initial_new_loss": 0.3301401138305664,
+      "protected_mass": 0.3665729761123657,
+      "mask": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 420058,
+      "states": 0,
+      "initially_done": true,
+      "initial_new_loss": 0.07186435908079147,
+      "protected_mass": 0.6772942543029785,
+      "mask": [
+        false,
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 420059,
+      "states": 0,
+      "initially_done": true,
+      "initial_new_loss": 0.06580767780542374,
+      "protected_mass": 0.02592301554977894,
+      "mask": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 420060,
+      "states": 3,
+      "initially_done": false,
+      "initial_new_loss": 0.2476521134376526,
+      "protected_mass": 0.027726231142878532,
+      "mask": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 420061,
+      "states": 3,
+      "initially_done": false,
+      "initial_new_loss": 0.0986117422580719,
+      "protected_mass": 0.6230268478393555,
+      "mask": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        false
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 420062,
+      "states": 0,
+      "initially_done": true,
+      "initial_new_loss": 0.020912863314151764,
+      "protected_mass": 0.9071924686431885,
+      "mask": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 420063,
+      "states": 5,
+      "initially_done": false,
+      "initial_new_loss": 0.827648401260376,
+      "protected_mass": 0.04727385193109512,
+      "mask": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "old_tasks": 1
+    }
+  ],
+  "note": "Offline branching work excludes common old-task pretraining and state-generation work."
+}

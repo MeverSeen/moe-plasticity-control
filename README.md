@@ -2,7 +2,7 @@
 
 研究持续学习中的专家更新控制：在固定 MoE 容量、记忆与在线计算预算下，利用路由共享结构和学习反馈分配更新强度，降低达到同一新任务目标时的旧知识退化。
 
-**当前状态：已完成三轮合成实验，尚未验证学习型反馈控制器稳定优于充分调优的进度策略或规则基线。** 本仓库保留负结果、原始数据与冻结协议，不代表真实 learned-router MoE 或语言模型上的验证。
+**当前状态：已完成四轮合成实验，尚未验证学习型反馈控制器稳定优于充分调优的进度策略或规则基线。** v4 完成两轮学习器状态聚合、等查询数对照和后续策略诊断，主要配对区间仍跨零。本仓库保留负结果、原始数据与冻结协议，不代表真实 learned-router MoE 或语言模型上的验证。
 
 ## 快速开始
 
@@ -16,7 +16,7 @@ python scripts/verify_artifacts.py
 python scripts/test_all.py
 ```
 
-共 23 项实验机制检查，各版本在独立进程中测试，避免同名模块串用。已有记录在 `experiments/*/results/`，首次查看结果无需重新训练。
+共 44 项实验机制与统计检查，各版本在独立进程中测试，避免同名模块串用。已有记录在 `experiments/*/results/`，首次查看结果无需重新训练。
 
 ## 实验索引
 
@@ -25,14 +25,17 @@ python scripts/test_all.py
 | [v1](experiments/v1_expert_control/) | PPO 控制专家更新与保护强度 | 未超过重要性规则基线 | [报告](experiments/v1_expert_control/实验报告.md) |
 | [v2](experiments/v2_feedback_control/) | 固定保护组后，旧任务反馈是否改善标量 PPO 控制 | progress/feedback 最终都选中未训练的初始策略，未验证反馈增益 | [报告](experiments/v2_feedback_control/实验报告.md) |
 | [v3](experiments/v3_branching/) | 配对分支动作价值与监督评分器能否提取反馈增益 | 一次干预和闭环主要比较的区间均跨零 | [报告](experiments/v3_branching/results/main/analysis/实验报告.md) |
+| [v4](experiments/v4_state_aggregation/) | 学习器状态聚合能否把反馈信息转化为闭环收益 | 聚合未优于进度策略或等查询数对照；固定冻结保护组已全部达标 | [报告](experiments/v4_state_aggregation/results/main/analysis/实验报告.md) |
 
-三轮实验源码与记录完整保留，版本之间有意保留冻结的模型副本。`docs/import_manifest.json` 校验导入文件；原有 `locked_protocol.json` 和各版本校验清单也保留。
+四轮实验源码与记录完整保留，版本之间有意保留冻结的模型副本。`docs/import_manifest.json` 校验前三轮导入文件；原有 `locked_protocol.json` 和各版本校验清单也保留。v3 阈值文字错误见 [勘误](docs/v3-erratum.md)，v4 的机制解释见 [结果解读](experiments/v4_state_aggregation/结果解读.md)。
 
 ## 复现入口
 
 从仓库根目录运行；每次使用新的输出目录，已有结果不会被覆盖：
 
 ```bash
+python scripts/run_experiment.py v4 --out runs/v4-reproduction
+python scripts/run_experiment.py v4 --pilot --out runs/v4-pilot
 python scripts/run_experiment.py v3 --out runs/v3-reproduction
 python scripts/run_experiment.py v3 --pilot --out runs/v3-pilot
 python scripts/run_experiment.py v2 --out runs/v2-reproduction
