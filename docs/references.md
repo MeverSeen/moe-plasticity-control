@@ -13,6 +13,7 @@
 | MoE 持续学习 | [CP-MoE](#cp-moe)、[SETA](#seta)、[Agentic MoE 摘要](#agentic-moe) | 专家保护/结构动作、强方法基线与失败边界 |
 | 策略学习 | [PPO](#ppo)、[GRPO](#grpo)、[经典控制 GRPO 研究](#grpo-classical)、[DAgger](#dagger) | 训练算法、采样与分布偏移 |
 | 路由基础 | [Switch Transformer](#switch) | 区分冻结 router、冻结输入表示和真正不变的路由 |
+| 规模、数据与平台 | [DeepSeek-V4.1-Flash](#deepseek-v41)、[Super-NaturalInstructions](#superni)、[OLMoE](#olmoe) | 大规模动机、语言任务划分、原生 MoE 验证候选 |
 
 ## 持续学习的外层控制
 
@@ -71,11 +72,12 @@
 ### R06 — La-MAML: Look-ahead Meta Learning for Continual Learning
 
 - Gunshi Gupta、Karmesh Yadav、Liam Paull；NeurIPS 2020。
-- 来源：[论文](https://arxiv.org/abs/2007.13904)。
-- 核实：原始摘要与方法说明。
+- 来源：[论文条目](https://arxiv.org/abs/2007.13904)、[全文 §5.2 与附录 G](https://arxiv.org/pdf/2007.13904)。
+- 核实：方法说明及视觉任务/模型/记忆相关配置。
 - 使用元学习与逐参数学习率调节处理持续学习中的干扰，并结合记忆。
-- 启发：更新幅度学习有直接前史；短可微展开下的元梯度是有意义的非 RL 对照。
-- 边界：不能把“直接学习更新强度”当作我们的独有创新，也不能从其结果推断逐 expert GRPO 有效。
+- CIFAR-100 为 20×5 类任务、TinyImageNet 为 40×5 类，回放上限分别为 200/400；多遍设置最多 10 epochs/任务，任务增量多头分类。
+- 启发：更新幅度学习有直接前史；可借任务协议，以元梯度作非 RL 参照。
+- 边界：更换为 MoE 并采用 loss 达标停止后属于协议适配，不是原模型复现；不能据此宣称逐 expert GRPO 有效。
 
 <a id="attention-meta-optimizer"></a>
 ### R07 — Learning to learn without forgetting using attention
@@ -85,7 +87,7 @@
 - 核实：元优化器输入、预测权重更新、support/query 与任务设置。
 - 用任务材料表示、权重及梯度相关重要性信号产生参数更新，利用注意力建模关系。
 - 启发：这是学习更新控制的直接相关方法；可借鉴材料响应编码与内外层数据分离。
-- 边界：其 N-way 适应/分类头协议及被控制参数范围，与固定容量原生 MoE、固定旧记忆、等新任务 loss 的目标不同。应比较或解释差异，不能简单等同复现。
+- 边界：其 N-way 适应/分类头协议及被控制参数范围，与固定容量原生 MoE、固定旧记忆、等新任务 loss 的目标不同。原文测试时包含额外适应；本项目先测不重新训练的保留能力，另列重新学习实验，不能混比。
 
 <a id="velo"></a>
 ### R08 — VeLO: Training Versatile Learned Optimizers by Scaling Up
@@ -113,11 +115,12 @@
 ### R10 — CP-MoE: Consistency-Preserving Mixture-of-Experts for Continual Learning
 
 - Yang Liu、Toan Nguyen、Flora D. Salim；所读 arXiv v2，2026，官方条目标注 CoLLAs 2026 接收。
-- 来源：[官方摘要](https://arxiv.org/abs/2605.20247)。
-- 核实：原始摘要；尚未完成同预算实现核对。
+- 来源：[官方摘要](https://arxiv.org/abs/2605.20247)、[全文 §4 与附录 B](https://arxiv.org/html/2605.20247v2)。
+- 核实：机制及语言实验相关配置；尚未完成代码复现和同预算实现核对。
 - 临时专家承接新任务更新，指导稳定专家的路由与整合，并通过正则保护历史参数。
-- 启发：真实 MoE 的更新保护与路由机制是直接相关方向。
-- 边界：有临时专家、整合和路由偏置，不是我们冻结 router 的倍率接口。完整复现与借用机制的适配基线必须分别命名并计费。
+- 语言设置以冻结 Llama-2-7B 加 LoRA experts；每适配模块 8 experts、rank 4，覆盖 q/k/v/o 与 gate/up/down。SuperNI 连续 8 任务与另外 7 个零样本任务分开评价。
+- 启发：语言阶段的模型和任务底座，详细起步配置见 [总体方案](mainline-plan.md)。
+- 边界：适配 experts 不等于原生预训练 MoE experts；原方法的临时专家、预热、整合和路由偏置不属于我们的单纯倍率接口。完整复现与机制适配必须分别命名并计费。
 
 <a id="seta"></a>
 ### R11 — Sparse Subspace-to-Expert Sharing for Task-Agnostic Continual Learning（SETA）
@@ -190,9 +193,39 @@
 - 启发：路由由 router 与其输入表示共同决定。冻结 router 参数不保证上游训练后路由不变；固定 router 且固定输入表示时才可把其样本级分配视为固定。
 - 边界：usage/门控权重不等同于重要性、实际损伤或充分状态；更不证明本项目反馈控制有效。
 
+## 规模、数据与平台
+
+<a id="deepseek-v41"></a>
+### R18 — DeepSeek-V4.1-Flash 官方模型配置与实现
+
+- 来源：[官方配置](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/config.json)、[官方推理实现](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/inference/model.py)。
+- 核实：主干层数、每层 routed/shared experts、top-k 及 Block 的 MoE 构造；未进行训练复现。
+- 主干 40 层、每层 384 个路由专家和 1 个共享专家，每 token 选择 6 个路由专家；主干共 15,360 个路由专家、15,400 个专家模块，不含附加推测解码等模块。
+- 启发：共享分层控制和结构化探索的规模动机；逐 token 稀疏激活不代表整个训练 batch 只覆盖少量 experts。
+- 边界：专家数量不是独立技能数量，也不证明规则失效。不是本项目当前实施平台；如将来选用，需锁定实际配置/代码 revision。
+
+<a id="superni"></a>
+### R19 — Super-NaturalInstructions: Generalization via Declarative Instructions on 1600+ NLP Tasks
+
+- Yizhong Wang 等；2022。
+- 来源：[原始论文](https://arxiv.org/abs/2204.07705)。
+- 核实：数据集原始说明，1,616 个任务、76 种任务类型。
+- 启发：从语言任务族产生元训练历史，按任务身份/来源隔离训练与最终测试；可借 CP-MoE 的指定任务清单作可比序列。
+- 边界：换顺序不等于未见任务；不同任务 ID 也可能共享来源和近重复样本。具体数据版本、任务 ID、许可与拆分在实际采用时核对锁定。
+
+<a id="olmoe"></a>
+### R20 — OLMoE-1B-7B-0924 官方模型与配置
+
+- Allen Institute for AI，2024。
+- 来源：[官方模型卡](https://huggingface.co/allenai/OLMoE-1B-7B-0924)、[配置](https://huggingface.co/allenai/OLMoE-1B-7B-0924/blob/main/config.json)。
+- 核实：公开模型卡与配置；未在本项目下载训练。
+- 配置为 16 层、每层 64 experts、每 token 激活 8 个，共 1,024 个 expert 位置。
+- 启发：区别于稠密基座上的 LoRA experts，可作为原生 MoE 验证平台候选。
+- 边界：模型名称中的激活参数规模不等于训练总显存；实际优化器状态、可训练层、复制和观测开销需测量。控制原生 expert 权重与控制新增 adapter 的结论不同。
+
 ## 阅读与引用约定
 
 1. 可行性动机、方法借鉴、直接基线、局限证据分别使用，不让一个来源承担它未验证的结论。
-2. 本工程提出的 GRPO 环境映射、动作集合、奖励和实验矩阵见 [设计文档](controller-design.md)，不能写成文献已给出的原方案。
+2. 本工程提出的 GRPO 环境映射、动作集合、奖励和实验矩阵见 [设计文档](controller-design.md)，分层实验与数据预算见 [总体方案](mainline-plan.md)，不能写成文献已给出的原方案。
 3. 新增论文先补原始来源及核实等级；尤其核对在线发表年与卷期年、预印本与会议版本。
 4. 后续正式论文写作前补全作者/出版信息及准确 BibTeX，逐项复查方法对齐；本表是注释式研究书目，不是假定已完成全部基线复现。

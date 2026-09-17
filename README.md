@@ -1,22 +1,23 @@
 # MoE Plasticity Control
 
-研究持续学习中的专家更新控制：在固定 MoE 容量、记忆与在线计算预算下，利用路由共享结构和学习反馈分配更新强度，降低达到同一新任务目标时的旧知识退化。
+研究持续学习中的专家更新控制：在固定 MoE 容量、有限旧记忆与可核算的计算成本下，用共享控制器协调逐 expert 的实际更新，降低达到同一新任务目标时的累计旧知识退化。
 
 **当前状态：已完成七轮合成实验，v7 连续三段学习出现段内旧知识反馈的初步正信号，但尚未完成同等可行性下的稳定验证。** v6 定位到模型筛选瓶颈；v7 保留参数和 Adam 状态连续学习三个新输入域。段内 Feedback 在共同达标历史上的 A 遗忘降低约 13.8%，但平均达标率略低，多重比较敏感性区间跨零。段间 Feedback 则提高达标率、同时增加遗忘。本仓库保留正负结果、原始数据与冻结协议，不代表真实 learned-router MoE 或语言模型上的验证。
 
 ## 研究设计与讨论记录
 
-2026-09-17 更新：总体方向扩展为共享控制器对专家更新的结构化分配。单标量是最简特例；两组 15 动作、逐 expert 联合控制与 GRPO 的设计状态见下列文档，不能视为新增已完成实验。
+2026-09-17 更新：主线明确为小型多层 MoE 上的共享逐 expert 控制，采用层/全局协调和结构化探索，比较 GRPO、PPO 与强协调规则。后续按成本推进语言 LoRA expert 和原生 MoE 两层验证。目标 loss、累计遗忘、有限记忆与泛化协议先在开发阶段锁定；以下方案不代表新增已完成实验。
 
+- [总体方案与实施主线](docs/mainline-plan.md)：研究主题、三层证据路线、评价/数据协议和 pilot 成本。
 - [研究范围与已有证据](docs/research.md)：核心问题、v1–v7 结论与边界。
 - [控制器设计](docs/controller-design.md)：目标、输入/动作、共享架构、GRPO 适配、训练数据与实验对照。
 - [讨论决策与来源边界](docs/discussion-decisions-2026-09-17.md)：已确定原则、外部意见的采纳/修正、用户报告但未在仓库复现的早期结果。
-- [带注释的参考文献](docs/references.md)：17 条研究线索、原始链接、用途与核实状态。
+- [带注释的参考文献](docs/references.md)：20 条文献与平台线索、原始链接、用途与核实状态。
 - [真实 MoE 路由待办](docs/future-real-moe-routing.md)：当前路由与历史依赖的后续改进。
 
 ## 快速开始
 
-推荐 Python 3.11；原始运行使用 Python 3.9.6、CPU 单线程。无需外部数据集或 GPU。
+以下为已归档合成实验的复现入口。推荐 Python 3.11；原始运行使用 Python 3.9.6、CPU 单线程，这部分无需外部数据集或 GPU。新主线的真实数据与硬件需求另见总体方案。
 
 ```bash
 python3 -m venv .venv
@@ -40,7 +41,7 @@ python scripts/test_all.py
 | [v6](experiments/v6_learning_diagnostics/) | 负结果是否来自学习能力、监督目标或模型筛选问题 | 基本学习检查通过；闭环筛选改善结果，但尚未验证实时反馈增益 | [报告](experiments/v6_learning_diagnostics/results/main/analysis/实验报告.md)、[解读](experiments/v6_learning_diagnostics/结果解读.md) |
 | [v7](experiments/v7_sequence_feedback/) | 连续多段学习是否让段间或段内旧知识反馈更有价值 | 段内遗忘约 −13.8%，但可行性略低、校正敏感性跨零；段间呈达标/遗忘取舍 | [报告](experiments/v7_sequence_feedback/results/main/analysis/实验报告.md)、[解读](experiments/v7_sequence_feedback/结果解读.md) |
 
-七轮实验源码与记录完整保留，版本之间有意保留冻结的模型副本。`docs/import_manifest.json` 校验前三轮导入文件；原有 `locked_protocol.json` 和各版本校验清单也保留。v3 阈值文字错误见 [勘误](docs/v3-erratum.md)，v4 的机制解释见 [结果解读](experiments/v4_state_aggregation/结果解读.md)。真实 MoE 当前路由反馈暂缓，见 [后续待办](docs/future-real-moe-routing.md)。
+七轮实验源码与记录完整保留，版本之间有意保留冻结的模型副本。`docs/import_manifest.json` 校验前三轮导入文件；原有 `locked_protocol.json` 和各版本校验清单也保留。v3 阈值文字错误见 [勘误](docs/v3-erratum.md)，v4 的机制解释见 [结果解读](experiments/v4_state_aggregation/结果解读.md)。新多层环境的当前路由要求见 [后续待办](docs/future-real-moe-routing.md)，不改动归档实验。
 
 ## 复现入口
 
@@ -66,7 +67,7 @@ python scripts/run_experiment.py v1 --out runs/v1-reproduction
 ## 评价约定
 
 - 首先报告新任务达标率，再在共同达标历史上作配对遗忘比较；失败不丢弃。
-- 当前遗忘指标是独立旧任务评估 MSE 的正增量，不是百分比遗忘率。
+- 已归档合成实验的遗忘指标是独立旧任务评估 MSE 的正增量，不是百分比遗忘率；新主线的全部历史评价见总体方案。
 - v7 三个 B 分别达标不等于最后仍全部保留；A 记忆固定，B 最终保留另报。
 - 达到统一 loss 阈值不等于端点 loss 数字严格相同，具体报告保留敏感性分析。
 - v2–v7 动作作用于 Adam 的实际参数位移；路由和初始保护组固定。
