@@ -1,0 +1,16 @@
+{
+  "branch_F": {
+    "seed": 681,
+    "epoch": 100,
+    "feedback": true,
+    "slack": 0.02,
+    "loss_kind": "raw_mse",
+    "selector": "branch_F",
+    "dev": {
+      "reach": 1.0,
+      "raw_forgetting": 0.0020158483530394733,
+      "cost": 0.16722620092332363,
+      "work": 1.0
+    }
+  }
+}

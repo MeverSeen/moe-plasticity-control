@@ -1,0 +1,202 @@
+[
+  {
+    "epoch": 0,
+    "slack": 0.0,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.003432664852880407,
+      "cost": 0.24456143751740456,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 0,
+    "slack": 0.02,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.0034420398515067063,
+      "cost": 0.24609876982867718,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 0,
+    "slack": 0.1,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.0038045398687245324,
+      "cost": 0.26405973359942436,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 0,
+    "slack": 1.0,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.003804539897828363,
+      "cost": 0.26451899902895093,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 50,
+    "slack": 0.0,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.004988914886780549,
+      "cost": 0.31167522445321083,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 50,
+    "slack": 0.02,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.00287641491740942,
+      "cost": 0.21132618049159646,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 50,
+    "slack": 0.1,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.002057664933090564,
+      "cost": 0.1702482202090323,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 50,
+    "slack": 1.0,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.002057664933090564,
+      "cost": 0.1702482202090323,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 150,
+    "slack": 0.0,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.004995164927095175,
+      "cost": 0.30888345651328564,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 150,
+    "slack": 0.02,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.0020014149267808534,
+      "cost": 0.16650068014860153,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 150,
+    "slack": 0.1,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.0020014149267808534,
+      "cost": 0.16650068014860153,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 150,
+    "slack": 1.0,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.0020014149267808534,
+      "cost": 0.16650068014860153,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 300,
+    "slack": 0.0,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.004995164927095175,
+      "cost": 0.30888345651328564,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 300,
+    "slack": 0.02,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.0019982899248134345,
+      "cost": 0.16630519926548004,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 300,
+    "slack": 0.1,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.0019982899248134345,
+      "cost": 0.16630519926548004,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 300,
+    "slack": 1.0,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.0019982899248134345,
+      "cost": 0.16630519926548004,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 600,
+    "slack": 0.0,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.005357664980692789,
+      "cost": 0.3305218266323209,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 600,
+    "slack": 0.02,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.0019951649228460155,
+      "cost": 0.16610198328271508,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 600,
+    "slack": 0.1,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.0019951649228460155,
+      "cost": 0.16610198328271508,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 600,
+    "slack": 1.0,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.0019951649228460155,
+      "cost": 0.16610198328271508,
+      "work": 1.0
+    }
+  }
+]

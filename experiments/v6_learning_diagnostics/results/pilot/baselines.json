@@ -1,0 +1,22 @@
+{
+  "best_fixed": {
+    "name": "fixed_0",
+    "kind": "fixed",
+    "action": 0
+  },
+  "best_time": {
+    "name": "fixed_0",
+    "kind": "fixed",
+    "action": 0
+  },
+  "best_progress": {
+    "name": "fixed_0",
+    "kind": "fixed",
+    "action": 0
+  },
+  "best_hand": {
+    "name": "fixed_0",
+    "kind": "fixed",
+    "action": 0
+  }
+}

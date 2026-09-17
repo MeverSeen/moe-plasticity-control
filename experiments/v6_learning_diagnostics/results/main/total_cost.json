@@ -1,0 +1,4 @@
+{
+  "seconds": 733.6835000514984,
+  "note": "Includes pretraining, branch collection, fitting, all development candidate rollouts, and final evaluation. Work is a proxy; candidate selection costs are separate in models/*/cost.json."
+}

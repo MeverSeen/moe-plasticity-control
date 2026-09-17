@@ -1,0 +1,182 @@
+{
+  "legacy_progress_681": {
+    "accuracy": 0.2,
+    "raw_regret": 0.0010039062472060323,
+    "central_baseline_regret": 0.0009999999310821295,
+    "relative_regret": 1.0039063692092896,
+    "actions": [
+      0,
+      0,
+      635,
+      5,
+      0
+    ],
+    "feedback": false,
+    "passed": null
+  },
+  "legacy_progress_682": {
+    "accuracy": 0.2,
+    "raw_regret": 0.0009999999310821295,
+    "central_baseline_regret": 0.0009999999310821295,
+    "relative_regret": 1.0,
+    "actions": [
+      0,
+      0,
+      640,
+      0,
+      0
+    ],
+    "feedback": false,
+    "passed": null
+  },
+  "legacy_progress_683": {
+    "accuracy": 0.2,
+    "raw_regret": 0.0009999999310821295,
+    "central_baseline_regret": 0.0009999999310821295,
+    "relative_regret": 1.0,
+    "actions": [
+      0,
+      0,
+      640,
+      0,
+      0
+    ],
+    "feedback": false,
+    "passed": null
+  },
+  "legacy_feedback_681": {
+    "accuracy": 1.0,
+    "raw_regret": 0.0,
+    "central_baseline_regret": 0.0009999999310821295,
+    "relative_regret": 0.0,
+    "actions": [
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "feedback": true,
+    "passed": true
+  },
+  "legacy_feedback_682": {
+    "accuracy": 1.0,
+    "raw_regret": 0.0,
+    "central_baseline_regret": 0.0009999999310821295,
+    "relative_regret": 0.0,
+    "actions": [
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "feedback": true,
+    "passed": true
+  },
+  "legacy_feedback_683": {
+    "accuracy": 0.9953125,
+    "raw_regret": 2.343750338695827e-06,
+    "central_baseline_regret": 0.0009999999310821295,
+    "relative_regret": 0.0023437505587935448,
+    "actions": [
+      126,
+      130,
+      128,
+      129,
+      127
+    ],
+    "feedback": true,
+    "passed": true
+  },
+  "raw_mse_progress_681": {
+    "accuracy": 0.2,
+    "raw_regret": 0.0009999999310821295,
+    "central_baseline_regret": 0.0009999999310821295,
+    "relative_regret": 1.0,
+    "actions": [
+      0,
+      0,
+      640,
+      0,
+      0
+    ],
+    "feedback": false,
+    "passed": null
+  },
+  "raw_mse_progress_682": {
+    "accuracy": 0.2,
+    "raw_regret": 0.0009999999310821295,
+    "central_baseline_regret": 0.0009999999310821295,
+    "relative_regret": 1.0,
+    "actions": [
+      0,
+      0,
+      640,
+      0,
+      0
+    ],
+    "feedback": false,
+    "passed": null
+  },
+  "raw_mse_progress_683": {
+    "accuracy": 0.2,
+    "raw_regret": 0.001015624962747097,
+    "central_baseline_regret": 0.0009999999310821295,
+    "relative_regret": 1.015625,
+    "actions": [
+      5,
+      0,
+      635,
+      0,
+      0
+    ],
+    "feedback": false,
+    "passed": null
+  },
+  "raw_mse_feedback_681": {
+    "accuracy": 1.0,
+    "raw_regret": 0.0,
+    "central_baseline_regret": 0.0009999999310821295,
+    "relative_regret": 0.0,
+    "actions": [
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "feedback": true,
+    "passed": true
+  },
+  "raw_mse_feedback_682": {
+    "accuracy": 1.0,
+    "raw_regret": 0.0,
+    "central_baseline_regret": 0.0009999999310821295,
+    "relative_regret": 0.0,
+    "actions": [
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "feedback": true,
+    "passed": true
+  },
+  "raw_mse_feedback_683": {
+    "accuracy": 1.0,
+    "raw_regret": 0.0,
+    "central_baseline_regret": 0.0009999999310821295,
+    "relative_regret": 0.0,
+    "actions": [
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "feedback": true,
+    "passed": true
+  }
+}

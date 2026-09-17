@@ -1,0 +1,62 @@
+{
+  "legacy_progress_681": {
+    "accuracy": 0.2,
+    "raw_regret": 0.001020833384245634,
+    "central_baseline_regret": 0.0010000000474974513,
+    "relative_regret": 1.0208333730697632,
+    "actions": [
+      0,
+      0,
+      115,
+      5,
+      0
+    ],
+    "feedback": false,
+    "passed": null
+  },
+  "legacy_feedback_681": {
+    "accuracy": 0.9166666666666666,
+    "raw_regret": 4.166666622040793e-05,
+    "central_baseline_regret": 0.0010000000474974513,
+    "relative_regret": 0.0416666641831398,
+    "actions": [
+      20,
+      28,
+      24,
+      30,
+      18
+    ],
+    "feedback": true,
+    "passed": true
+  },
+  "raw_mse_progress_681": {
+    "accuracy": 0.2,
+    "raw_regret": 0.0010000000474974513,
+    "central_baseline_regret": 0.0010000000474974513,
+    "relative_regret": 1.0,
+    "actions": [
+      0,
+      0,
+      120,
+      0,
+      0
+    ],
+    "feedback": false,
+    "passed": null
+  },
+  "raw_mse_feedback_681": {
+    "accuracy": 0.9666666666666667,
+    "raw_regret": 1.666666503297165e-05,
+    "central_baseline_regret": 0.0010000000474974513,
+    "relative_regret": 0.01666666381061077,
+    "actions": [
+      21,
+      27,
+      24,
+      23,
+      25
+    ],
+    "feedback": true,
+    "passed": true
+  }
+}

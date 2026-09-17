@@ -1,0 +1,203 @@
+{
+  "seconds": 14.969472885131836,
+  "states": 44,
+  "histories": 12,
+  "future_replicates": 2,
+  "branch_updates": 32816,
+  "branch_work": 10975329.115942022,
+  "roots": [
+    {
+      "root": 650000,
+      "states": 0,
+      "initially_done": true,
+      "initial_new_loss": 0.0663774386048317,
+      "protected_mass": 0.11928655207157135,
+      "mask": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 650001,
+      "states": 2,
+      "initially_done": false,
+      "initial_new_loss": 0.1031845435500145,
+      "protected_mass": 0.6150244474411011,
+      "mask": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 650002,
+      "states": 7,
+      "initially_done": false,
+      "initial_new_loss": 0.4709821939468384,
+      "protected_mass": 0.0,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 650003,
+      "states": 3,
+      "initially_done": false,
+      "initial_new_loss": 0.1047561913728714,
+      "protected_mass": 0.8801473379135132,
+      "mask": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 650004,
+      "states": 5,
+      "initially_done": false,
+      "initial_new_loss": 0.11928991228342056,
+      "protected_mass": 0.5906586647033691,
+      "mask": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 650005,
+      "states": 7,
+      "initially_done": false,
+      "initial_new_loss": 1.019225835800171,
+      "protected_mass": 0.027932515367865562,
+      "mask": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 650006,
+      "states": 3,
+      "initially_done": false,
+      "initial_new_loss": 0.1498354971408844,
+      "protected_mass": 0.0,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 650007,
+      "states": 7,
+      "initially_done": false,
+      "initial_new_loss": 0.57499098777771,
+      "protected_mass": 0.0,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 650008,
+      "states": 0,
+      "initially_done": true,
+      "initial_new_loss": 0.05121321231126785,
+      "protected_mass": 0.4207964539527893,
+      "mask": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "old_tasks": 2
+    },
+    {
+      "root": 650009,
+      "states": 0,
+      "initially_done": true,
+      "initial_new_loss": 0.03750404343008995,
+      "protected_mass": 0.8818960189819336,
+      "mask": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "old_tasks": 3
+    },
+    {
+      "root": 650010,
+      "states": 7,
+      "initially_done": false,
+      "initial_new_loss": 0.7179945111274719,
+      "protected_mass": 0.049924347549676895,
+      "mask": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "old_tasks": 1
+    },
+    {
+      "root": 650011,
+      "states": 3,
+      "initially_done": false,
+      "initial_new_loss": 0.3331144452095032,
+      "protected_mass": 0.027783803641796112,
+      "mask": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "old_tasks": 2
+    }
+  ],
+  "note": "Offline branching work excludes common old-task pretraining and state-generation work."
+}

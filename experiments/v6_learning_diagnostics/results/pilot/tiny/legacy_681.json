@@ -1,0 +1,101 @@
+{
+  "kind": "legacy",
+  "seed": 681,
+  "states": [
+    "650001:constant_half:0",
+    "650004:constant_half:0",
+    "650005:constant_half:0",
+    "650010:constant_half:0",
+    "650011:constant_half:0"
+  ],
+  "records": [
+    {
+      "epoch": 0,
+      "loss": 0.8230053186416626,
+      "metrics": {
+        "reach": 1.0,
+        "raw_forgetting": 0.0036610129289329054,
+        "cost": 0.19585964335128664,
+        "work": 22860.8,
+        "actions": [
+          3,
+          0,
+          1,
+          0,
+          1
+        ],
+        "all_feasible_raw_regret": 0.0008953782729804516,
+        "informative_action_accuracy": 0.6,
+        "in_sample_J_regret": 0.0465254339389503,
+        "oracle_actions": [
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hit_brier": 0.255663126707077,
+        "all_feasible_states": 5
+      }
+    },
+    {
+      "epoch": 100,
+      "loss": 0.01596745476126671,
+      "metrics": {
+        "reach": 1.0,
+        "raw_forgetting": 0.0027656346559524537,
+        "cost": 0.14933420941233636,
+        "work": 22821.75072463768,
+        "actions": [
+          4,
+          1,
+          0,
+          0,
+          0
+        ],
+        "all_feasible_raw_regret": 0.0,
+        "informative_action_accuracy": 1.0,
+        "in_sample_J_regret": 0.0,
+        "oracle_actions": [
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hit_brier": 0.0002507653262000531,
+        "all_feasible_states": 5
+      }
+    },
+    {
+      "epoch": 400,
+      "loss": 0.0015007879119366407,
+      "metrics": {
+        "reach": 1.0,
+        "raw_forgetting": 0.0027656346559524537,
+        "cost": 0.14933420941233636,
+        "work": 22821.75072463768,
+        "actions": [
+          4,
+          1,
+          0,
+          0,
+          0
+        ],
+        "all_feasible_raw_regret": 0.0,
+        "informative_action_accuracy": 1.0,
+        "in_sample_J_regret": 0.0,
+        "oracle_actions": [
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hit_brier": 2.286333483425551e-06,
+        "all_feasible_states": 5
+      }
+    }
+  ],
+  "interpretation": "Training-set memorization only; full original feature set, architecture, optimizer and weight decay retained. Longer training does not establish generalization."
+}

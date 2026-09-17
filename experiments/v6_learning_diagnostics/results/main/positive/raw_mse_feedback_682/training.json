@@ -1,0 +1,147 @@
+[
+  {
+    "epoch": 0,
+    "loss": 1.0001444816589355,
+    "diagnostics": {
+      "reach": 1.0,
+      "raw_forgetting": 0.0038785453889431665,
+      "cost": 0.26730326644610614,
+      "work": 1.0,
+      "actions": [
+        0,
+        218,
+        93,
+        259,
+        70
+      ],
+      "all_feasible_raw_regret": 0.0018929687389572791,
+      "informative_action_accuracy": 0.171875,
+      "in_sample_J_regret": 0.10191124412813224,
+      "oracle_actions": [
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "hit_brier": 0.25160643458366394,
+      "all_feasible_states": 640
+    }
+  },
+  {
+    "epoch": 50,
+    "loss": 0.18833744525909424,
+    "diagnostics": {
+      "reach": 1.0,
+      "raw_forgetting": 0.002037139155618206,
+      "cost": 0.16882333031389862,
+      "work": 1.0,
+      "actions": [
+        102,
+        151,
+        142,
+        123,
+        122
+      ],
+      "all_feasible_raw_regret": 5.156249943638613e-05,
+      "informative_action_accuracy": 0.896875,
+      "in_sample_J_regret": 0.0034313095893594436,
+      "oracle_actions": [
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "hit_brier": 0.0271798986941576,
+      "all_feasible_states": 640
+    }
+  },
+  {
+    "epoch": 150,
+    "loss": 0.01397746056318283,
+    "diagnostics": {
+      "reach": 1.0,
+      "raw_forgetting": 0.001985576646802656,
+      "cost": 0.1653920210665092,
+      "work": 1.0,
+      "actions": [
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "all_feasible_raw_regret": 0.0,
+      "informative_action_accuracy": 1.0,
+      "in_sample_J_regret": 0.0,
+      "oracle_actions": [
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "hit_brier": 5.742189023294486e-05,
+      "all_feasible_states": 640
+    }
+  },
+  {
+    "epoch": 300,
+    "loss": 0.004028126131743193,
+    "diagnostics": {
+      "reach": 1.0,
+      "raw_forgetting": 0.001985576646802656,
+      "cost": 0.1653920210665092,
+      "work": 1.0,
+      "actions": [
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "all_feasible_raw_regret": 0.0,
+      "informative_action_accuracy": 1.0,
+      "in_sample_J_regret": 0.0,
+      "oracle_actions": [
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "hit_brier": 6.42714076093398e-06,
+      "all_feasible_states": 640
+    }
+  },
+  {
+    "epoch": 600,
+    "loss": 0.0009882173035293818,
+    "diagnostics": {
+      "reach": 1.0,
+      "raw_forgetting": 0.001985576646802656,
+      "cost": 0.1653920210665092,
+      "work": 1.0,
+      "actions": [
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "all_feasible_raw_regret": 0.0,
+      "informative_action_accuracy": 1.0,
+      "in_sample_J_regret": 0.0,
+      "oracle_actions": [
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "hit_brier": 8.333291816597921e-07,
+      "all_feasible_states": 640
+    }
+  }
+]

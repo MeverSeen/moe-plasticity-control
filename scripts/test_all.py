@@ -11,6 +11,7 @@ SUITES = (
     ("v3_branching", "test_branching.py"),
     ("v4_state_aggregation", "test_*.py"),
     ("v5_calibration", "test_*.py"),
+    ("v6_learning_diagnostics", "test_*.py"),
 )
 
 

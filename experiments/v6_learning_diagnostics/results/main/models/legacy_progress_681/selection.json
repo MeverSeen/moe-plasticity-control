@@ -1,0 +1,44 @@
+{
+  "branch_J": {
+    "seed": 681,
+    "epoch": 150,
+    "feedback": false,
+    "slack": 0.0,
+    "loss_kind": "legacy",
+    "selector": "branch_J",
+    "dev": {
+      "reach": 0.899935651469875,
+      "raw_forgetting": 0.014964431003318169,
+      "cost": 0.6104695150578344,
+      "work": 25919.46149208214
+    }
+  },
+  "branch_F": {
+    "seed": 681,
+    "epoch": 150,
+    "feedback": false,
+    "slack": 0.0,
+    "loss_kind": "legacy",
+    "selector": "branch_F",
+    "dev": {
+      "reach": 0.899935651469875,
+      "raw_forgetting": 0.014964431003318169,
+      "cost": 0.6104695150578344,
+      "work": 25919.46149208214
+    }
+  },
+  "closed_F": {
+    "seed": 681,
+    "epoch": 600,
+    "feedback": false,
+    "slack": 0.1,
+    "loss_kind": "legacy",
+    "selector": "closed_F",
+    "dev": {
+      "reach": 1.0,
+      "raw_forgetting": 0.011487144006726643,
+      "cost": 0.3288030800205146,
+      "work": 16344.26177536232
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "kind": "legacy",
+  "seed": 682,
+  "states": [
+    "610001:constant_half:0",
+    "610003:constant_half:0",
+    "610005:constant_half:0",
+    "610007:constant_half:0",
+    "610008:constant_half:0",
+    "610010:constant_half:0",
+    "610011:constant_half:10",
+    "610012:constant_half:0",
+    "610014:constant_half:0",
+    "610015:constant_half:0",
+    "610017:constant_half:0",
+    "610020:constant_half:0",
+    "610023:constant_half:0",
+    "610026:constant_half:0",
+    "610029:constant_half:0",
+    "610030:constant_half:0",
+    "610031:constant_half:0",
+    "610032:constant_half:0",
+    "610033:constant_half:0",
+    "610035:constant_half:0",
+    "610036:constant_half:0",
+    "610038:constant_half:0",
+    "610039:constant_half:0",
+    "610041:constant_half:0",
+    "610042:constant_half:0",
+    "610044:constant_half:0",
+    "610045:constant_half:0",
+    "610047:constant_half:0",
+    "610048:constant_half:0",
+    "610050:constant_half:0",
+    "610051:constant_half:0",
+    "610053:constant_half:10"
+  ],
+  "records": [
+    {
+      "epoch": 0,
+      "loss": 0.9874653816223145,
+      "metrics": {
+        "reach": 1.0,
+        "raw_forgetting": 0.009164619710645638,
+        "cost": 0.3895156979560852,
+        "work": 13299.296535326088,
+        "actions": [
+          0,
+          9,
+          6,
+          13,
+          4
+        ],
+        "all_feasible_raw_regret": 0.0028452268452383578,
+        "informative_action_accuracy": 0.125,
+        "in_sample_J_regret": 0.10102563968393952,
+        "oracle_actions": [
+          22,
+          5,
+          3,
+          1,
+          1
+        ],
+        "hit_brier": 0.25031381845474243,
+        "all_feasible_states": 32
+      }
+    },
+    {
+      "epoch": 600,
+      "loss": 0.004102614242583513,
+      "metrics": {
+        "reach": 1.0,
+        "raw_forgetting": 0.006446683604735881,
+        "cost": 0.2915884068934247,
+        "work": 14226.753623188408,
+        "actions": [
+          21,
+          7,
+          3,
+          1,
+          0
+        ],
+        "all_feasible_raw_regret": 0.00012729073932860047,
+        "informative_action_accuracy": 0.71875,
+        "in_sample_J_regret": 0.0030983486212790012,
+        "oracle_actions": [
+          22,
+          5,
+          3,
+          1,
+          1
+        ],
+        "hit_brier": 1.5541263564955443e-06,
+        "all_feasible_states": 32
+      }
+    },
+    {
+      "epoch": 3000,
+      "loss": 0.0003694512997753918,
+      "metrics": {
+        "reach": 1.0,
+        "raw_forgetting": 0.0063544507283950225,
+        "cost": 0.2896638395031914,
+        "work": 13874.934782608698,
+        "actions": [
+          20,
+          8,
+          2,
+          2,
+          0
+        ],
+        "all_feasible_raw_regret": 3.505786298774183e-05,
+        "informative_action_accuracy": 0.875,
+        "in_sample_J_regret": 0.001173781231045723,
+        "oracle_actions": [
+          22,
+          5,
+          3,
+          1,
+          1
+        ],
+        "hit_brier": 6.925019135906041e-08,
+        "all_feasible_states": 32
+      }
+    }
+  ],
+  "interpretation": "Training-set memorization only; full original feature set, architecture, optimizer and weight decay retained. Longer training does not establish generalization."
+}

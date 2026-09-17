@@ -1,0 +1,122 @@
+[
+  {
+    "epoch": 0,
+    "slack": 0.0,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.0037908483936917037,
+      "cost": 0.25946093164384365,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 0,
+    "slack": 0.02,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.0037908484518993646,
+      "cost": 0.2600890379399061,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 0,
+    "slack": 0.1,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.004540848458418623,
+      "cost": 0.2897115387022495,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 0,
+    "slack": 1.0,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.004728348489152268,
+      "cost": 0.29756947979331017,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 50,
+    "slack": 0.0,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.0031033483683131635,
+      "cost": 0.23128331825137138,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 50,
+    "slack": 0.02,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.003103348397416994,
+      "cost": 0.23118534684181213,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 50,
+    "slack": 0.1,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.0031658483494538814,
+      "cost": 0.2339268196374178,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 50,
+    "slack": 1.0,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.0031658483494538814,
+      "cost": 0.2339268196374178,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 100,
+    "slack": 0.0,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.002978348347824067,
+      "cost": 0.22594831883907318,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 100,
+    "slack": 0.02,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.002978348347824067,
+      "cost": 0.22594831883907318,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 100,
+    "slack": 0.1,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.002978348347824067,
+      "cost": 0.22594831883907318,
+      "work": 1.0
+    }
+  },
+  {
+    "epoch": 100,
+    "slack": 1.0,
+    "branch": {
+      "reach": 1.0,
+      "raw_forgetting": 0.002978348347824067,
+      "cost": 0.22594831883907318,
+      "work": 1.0
+    }
+  }
+]

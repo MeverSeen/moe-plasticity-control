@@ -1,0 +1,147 @@
+[
+  {
+    "epoch": 0,
+    "loss": 2.8915934562683105,
+    "diagnostics": {
+      "reach": 0.9793906808700613,
+      "raw_forgetting": 0.012157348131069974,
+      "cost": 0.4969781106037478,
+      "work": 13629.588434181527,
+      "actions": [
+        118,
+        16,
+        35,
+        33,
+        103
+      ],
+      "all_feasible_raw_regret": 0.002924898058923785,
+      "informative_action_accuracy": 0.32644628099173556,
+      "in_sample_J_regret": 0.09390187823972214,
+      "oracle_actions": [
+        187,
+        44,
+        33,
+        17,
+        24
+      ],
+      "hit_brier": 0.25348660349845886,
+      "all_feasible_states": 290
+    }
+  },
+  {
+    "epoch": 50,
+    "loss": 0.7437883019447327,
+    "diagnostics": {
+      "reach": 0.9823348695232023,
+      "raw_forgetting": 0.00989519973314913,
+      "cost": 0.42027759007228316,
+      "work": 13371.811775826118,
+      "actions": [
+        173,
+        26,
+        38,
+        68,
+        0
+      ],
+      "all_feasible_raw_regret": 0.0006205197761908614,
+      "informative_action_accuracy": 0.4793388429752066,
+      "in_sample_J_regret": 0.01720136182848364,
+      "oracle_actions": [
+        187,
+        44,
+        33,
+        17,
+        24
+      ],
+      "hit_brier": 0.06699205935001373,
+      "all_feasible_states": 290
+    }
+  },
+  {
+    "epoch": 150,
+    "loss": 0.4351685047149658,
+    "diagnostics": {
+      "reach": 0.9827188940778855,
+      "raw_forgetting": 0.009743507188383078,
+      "cost": 0.4149692470348009,
+      "work": 13339.48843306841,
+      "actions": [
+        138,
+        84,
+        38,
+        17,
+        28
+      ],
+      "all_feasible_raw_regret": 0.00046181100783092456,
+      "informative_action_accuracy": 0.4793388429752066,
+      "in_sample_J_regret": 0.011893018925254564,
+      "oracle_actions": [
+        187,
+        44,
+        33,
+        17,
+        24
+      ],
+      "hit_brier": 0.02412407472729683,
+      "all_feasible_states": 290
+    }
+  },
+  {
+    "epoch": 300,
+    "loss": 0.24102133512496948,
+    "diagnostics": {
+      "reach": 0.9838709677419355,
+      "raw_forgetting": 0.009633333214917921,
+      "cost": 0.4120939978828994,
+      "work": 13312.53434107319,
+      "actions": [
+        128,
+        99,
+        35,
+        16,
+        27
+      ],
+      "all_feasible_raw_regret": 0.0003467680466860906,
+      "informative_action_accuracy": 0.5165289256198347,
+      "in_sample_J_regret": 0.009017768437706275,
+      "oracle_actions": [
+        187,
+        44,
+        33,
+        17,
+        24
+      ],
+      "hit_brier": 0.005385423079133034,
+      "all_feasible_states": 290
+    }
+  },
+  {
+    "epoch": 600,
+    "loss": 0.0745479166507721,
+    "diagnostics": {
+      "reach": 0.9842549922966188,
+      "raw_forgetting": 0.009538571510973426,
+      "cost": 0.40966549075098446,
+      "work": 13278.287055588951,
+      "actions": [
+        137,
+        72,
+        33,
+        20,
+        43
+      ],
+      "all_feasible_raw_regret": 0.0002552063650420258,
+      "informative_action_accuracy": 0.5537190082644629,
+      "in_sample_J_regret": 0.006589263389531713,
+      "oracle_actions": [
+        187,
+        44,
+        33,
+        17,
+        24
+      ],
+      "hit_brier": 0.0010954535100609064,
+      "all_feasible_states": 290
+    }
+  }
+]

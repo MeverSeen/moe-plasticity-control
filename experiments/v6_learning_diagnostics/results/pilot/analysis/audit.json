@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "source_hashes_match": true,
+    "source_unchanged_during_run": true,
+    "policy_hashes_match": true,
+    "splits_disjoint": true,
+    "branch_labels_valid": true,
+    "online_budgets_endpoints_and_roots_valid": true,
+    "all_selections_reproduce": true
+  },
+  "counts": {
+    "train": {
+      "states": 44,
+      "effective_roots": 9,
+      "planned_roots": 12
+    },
+    "dev": {
+      "states": 18,
+      "effective_roots": 6,
+      "planned_roots": 6
+    },
+    "test": {
+      "states": 34,
+      "effective_roots": 6,
+      "planned_roots": 8
+    }
+  }
+}
