@@ -1,0 +1,50 @@
+{
+  "block_best_fixed": {
+    "frequency": "block",
+    "plan": {
+      "name": "fixed_0",
+      "kind": "fixed",
+      "action": 0
+    }
+  },
+  "block_best_schedule": {
+    "frequency": "block",
+    "plan": {
+      "name": "fixed_0",
+      "kind": "fixed",
+      "action": 0
+    }
+  },
+  "block_best_hand": {
+    "frequency": "block",
+    "plan": {
+      "name": "fixed_0",
+      "kind": "fixed",
+      "action": 0
+    }
+  },
+  "within_best_fixed": {
+    "frequency": "within",
+    "plan": {
+      "name": "fixed_0",
+      "kind": "fixed",
+      "action": 0
+    }
+  },
+  "within_best_schedule": {
+    "frequency": "within",
+    "plan": {
+      "name": "fixed_0",
+      "kind": "fixed",
+      "action": 0
+    }
+  },
+  "within_best_hand": {
+    "frequency": "within",
+    "plan": {
+      "name": "fixed_0",
+      "kind": "fixed",
+      "action": 0
+    }
+  }
+}

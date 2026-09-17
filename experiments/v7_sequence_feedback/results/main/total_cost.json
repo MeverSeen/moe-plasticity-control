@@ -1,0 +1,4 @@
+{
+  "seconds": 381.07043409347534,
+  "note": "Includes pretraining, branching, candidate tuning, training and evaluation. Work proxy does not equal FLOPs."
+}

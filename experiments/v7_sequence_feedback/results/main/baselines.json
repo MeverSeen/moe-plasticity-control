@@ -1,0 +1,54 @@
+{
+  "block_best_fixed": {
+    "frequency": "block",
+    "plan": {
+      "name": "fixed_4",
+      "kind": "fixed",
+      "action": 4
+    }
+  },
+  "block_best_schedule": {
+    "frequency": "block",
+    "plan": {
+      "name": "block_0_4_1",
+      "kind": "block",
+      "early": 0,
+      "late": 4,
+      "threshold": 1
+    }
+  },
+  "block_best_hand": {
+    "frequency": "block",
+    "plan": {
+      "name": "fixed_4",
+      "kind": "fixed",
+      "action": 4
+    }
+  },
+  "within_best_fixed": {
+    "frequency": "within",
+    "plan": {
+      "name": "fixed_4",
+      "kind": "fixed",
+      "action": 4
+    }
+  },
+  "within_best_schedule": {
+    "frequency": "within",
+    "plan": {
+      "name": "block_0_4_1",
+      "kind": "block",
+      "early": 0,
+      "late": 4,
+      "threshold": 1
+    }
+  },
+  "within_best_hand": {
+    "frequency": "within",
+    "plan": {
+      "name": "fixed_4",
+      "kind": "fixed",
+      "action": 4
+    }
+  }
+}

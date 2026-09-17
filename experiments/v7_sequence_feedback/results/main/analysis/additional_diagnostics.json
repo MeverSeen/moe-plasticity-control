@@ -1,0 +1,65 @@
+{
+  "comparisons": {
+    "block": {
+      "common_n": 52,
+      "progress_F": 0.0026806869452548586,
+      "feedback_F": 0.0050613583925251775,
+      "relative_reduction": -0.8880826056486739,
+      "nominal_97_5_interval": [
+        0.0008957879150158956,
+        0.00447339127586486
+      ],
+      "per_seed": [
+        {
+          "seed": 781,
+          "common_n": 52,
+          "difference": 0.0001244970764487217,
+          "reach_difference": 0.015625
+        },
+        {
+          "seed": 782,
+          "common_n": 52,
+          "difference": 0.003967417798076685,
+          "reach_difference": 0.078125
+        },
+        {
+          "seed": 783,
+          "common_n": 52,
+          "difference": 0.0030500994672855507,
+          "reach_difference": 0.078125
+        }
+      ]
+    },
+    "within": {
+      "common_n": 56,
+      "progress_F": 0.007194544297702138,
+      "feedback_F": 0.006204753018368685,
+      "relative_reduction": 0.13757525680251648,
+      "nominal_97_5_interval": [
+        -0.002124992187577485,
+        6.54977001850356e-05
+      ],
+      "per_seed": [
+        {
+          "seed": 781,
+          "common_n": 57,
+          "difference": -0.00044628721798023967,
+          "reach_difference": 0.0
+        },
+        {
+          "seed": 782,
+          "common_n": 57,
+          "difference": -0.0012052751565624397,
+          "reach_difference": 0.015625
+        },
+        {
+          "seed": 783,
+          "common_n": 56,
+          "difference": -0.0011990383721976763,
+          "reach_difference": -0.03125
+        }
+      ]
+    }
+  },
+  "note": "Post-run descriptive checks, no model retuning. 97.5% per-comparison intervals are a Bonferroni sensitivity for the two primary comparisons; only root sampling, not population training-seed uncertainty."
+}

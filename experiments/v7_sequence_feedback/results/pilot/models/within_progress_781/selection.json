@@ -1,0 +1,13 @@
+{
+  "feedback": false,
+  "seed": 781,
+  "epoch": 100,
+  "frequency": "within",
+  "slack": 0.0,
+  "dev": {
+    "reach": 0.75,
+    "forgetting": 0.005354891220728557,
+    "work": 20662.456521739135,
+    "steps": 59.0
+  }
+}

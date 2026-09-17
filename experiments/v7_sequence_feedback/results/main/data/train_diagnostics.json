@@ -1,0 +1,58 @@
+{
+  "block": {
+    "states": 289,
+    "active_roots": 63,
+    "all_actions_feasible": 196,
+    "no_action_ever_feasible": 35,
+    "teacher_best_action_counts": [
+      180,
+      78,
+      17,
+      7,
+      7
+    ],
+    "stages": {
+      "0": {
+        "states": 102,
+        "nonzero_A_feedback": 0
+      },
+      "1": {
+        "states": 106,
+        "nonzero_A_feedback": 86
+      },
+      "2": {
+        "states": 81,
+        "nonzero_A_feedback": 77
+      }
+    },
+    "note": "Descriptive training-data diagnostics; not an additional model selection criterion. Conditional mean forgetting breaks ties after branch reach."
+  },
+  "within": {
+    "states": 561,
+    "active_roots": 63,
+    "all_actions_feasible": 370,
+    "no_action_ever_feasible": 102,
+    "teacher_best_action_counts": [
+      358,
+      84,
+      66,
+      22,
+      31
+    ],
+    "stages": {
+      "0": {
+        "states": 202,
+        "nonzero_A_feedback": 100
+      },
+      "1": {
+        "states": 212,
+        "nonzero_A_feedback": 192
+      },
+      "2": {
+        "states": 147,
+        "nonzero_A_feedback": 143
+      }
+    },
+    "note": "Descriptive training-data diagnostics; not an additional model selection criterion. Conditional mean forgetting breaks ties after branch reach."
+  }
+}

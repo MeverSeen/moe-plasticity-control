@@ -1,0 +1,190 @@
+{
+  "config": {
+    "experts": 6,
+    "dim": 10,
+    "hidden": 12,
+    "tasks": 6,
+    "top_k": 2,
+    "train_n": 384,
+    "monitor_n": 128,
+    "test_n": 512,
+    "replay_memory": 64,
+    "monitor_memory": 64,
+    "batch": 32,
+    "old_batch": 32,
+    "lr": 0.015,
+    "replay_weight": 0.1,
+    "max_steps": 300,
+    "interval": 5,
+    "base_steps": 250,
+    "target": 0.08,
+    "levels": [
+      0.16,
+      0.1,
+      0.06,
+      0.04
+    ],
+    "lambda_max": 0.15,
+    "noise": 0.05,
+    "segments": 3,
+    "segment_steps": 100,
+    "mask_old_threshold": 0.3333333333333333
+  },
+  "splits": {
+    "train": [
+      750000,
+      750001,
+      750002,
+      750003,
+      750004,
+      750005,
+      750006,
+      750007
+    ],
+    "dev": [
+      760000,
+      760001,
+      760002,
+      760003
+    ],
+    "test": [
+      770000,
+      770001,
+      770002,
+      770003,
+      770004,
+      770005,
+      770006,
+      770007
+    ]
+  },
+  "seeds": [
+    781
+  ],
+  "checkpoints": [
+    0,
+    50,
+    100
+  ],
+  "slacks": [
+    0.0,
+    0.1,
+    1.0
+  ],
+  "replicates": 1,
+  "pilot": true,
+  "source_hashes_at_start": {
+    "test_sequence.py": "b7380d7319838243811a07bd79adb69548aa8ee338f9010d31bf395498000c27",
+    "model_core.py": "5ca0a78687cb37237832f09dc136b1b176601a1049c9a92301786bff24d94b8f",
+    "control.py": "870a19d9d7ee43feb4e4d731efc18a10dda8ce719827a6933f2ddc8f6be3214f",
+    "run_sequence.py": "af0f56b71b1449f898bef60f2c8ad11178b42d695cb7840b4010b28dbb9f7b3a",
+    "sequence_env.py": "917368a941113b05d0f06620e3a4dce7e57b0e6ecb9947d463932f57748582fe",
+    "analyze.py": "ed7c3f5cd94693bfee24908be415bfa97c553f8549c1410c1b6b0dcb6162a6a6"
+  },
+  "primary": [
+    "block_feedback minus block_progress",
+    "within_feedback minus within_progress"
+  ],
+  "features": [
+    "protected_B_gate_mass",
+    "old_usage_protected",
+    "old_usage_other",
+    "protected_fraction",
+    "B_route_entropy",
+    "global_initial_A_loss",
+    "segment_initial_B_loss",
+    "current_B_loss",
+    "recent_B_progress",
+    "remaining_segment_steps",
+    "segment_progress",
+    "last_multiplier",
+    "segment_index",
+    "global_updates",
+    "previous_segment_B_loss",
+    "previous_segment_hit",
+    "cumulative_A_forgetting",
+    "recent_A_loss_change"
+  ],
+  "observation": "Progress masks only the final two old-knowledge feedback entries AFTER standardization. Global initial A reference is never refreshed. Both see B loss/change, previous B endpoint/hit, block index, budget and prior action.",
+  "environment": "Three distinct new input domains from the existing consistent nonlinear teacher, fixed geometric router, original A count 1-3. Preserve weights, Adam first/second moments and global bias-correction step across B boundaries. Fresh Adam only once at B1 start.",
+  "memory": "Original A only: at most 64 replay and 64 monitor samples, held fixed. No B replay or online B retention measurement after its block. All past-B retention is separately reported by final evaluator.",
+  "mask": "Original-A usage >= 1/3 fixed for all B blocks. Current B initial gate-mass summary available on arrival; no future B lookahead, learned router or parameter-conditioned router.",
+  "budget": "100 parameter updates per B block, total <=300; unused quota expires at boundary. Same per-5-update observation/controller work charged to all arms, even held block decisions. All models stop each block at B-monitor <=.08 or cap, then continue, including after a failure.",
+  "success": "Primary reach means EVERY B reached .08 when encountered; not simultaneous final retention. A forgetting is positive per-A eval loss increase relative to before B1, averaged across original A tasks. Final B monitor/test retention reported separately.",
+  "teacher": "Action through current block (block) or next <=5 updates (within), then m=0 through remaining sequence. Two paired future minibatch streams per state. Offline evaluator targets on training roots; this is not an optimal planning oracle.",
+  "data": "Two behavior paths per train root: m=.5 and seeded random action at the allowed decision frequency. Sample active block starts plus local steps 10/30 for within. Same branches and initialization within each information comparison.",
+  "selection": "Raw-forgetting MSE plus centered MSE and reach BCE, 18-32-32 scorer. Epoch/slack selected exclusively by dev CLOSED LOOP: reach first, successful A forgetting second, work third. Extra offline selection/search work recorded separately.",
+  "statistics": "Average three matched model initializations within root; nominal 95% paired root bootstrap. Report reach and common-success forgetting, all-root forgetting descriptively, and endpoint-loss sensitivity. Two primary comparisons, unadjusted CIs; secondary comparisons exploratory.",
+  "limitation": "This tests repeated adaptation, not a causal dose comparison against K=1 and not complete retention of every learned task. Frequency comparisons change action duration and teacher; old-feedback comparisons within a frequency are matched.",
+  "final_test": "Sources, models and baselines locked before any final-test world is generated. Pilot checks mechanics/runtime; no tuning against final pilot or main outcomes.",
+  "registry": {
+    "block_progress_781": "models/block_progress_781/selected.pt",
+    "block_feedback_781": "models/block_feedback_781/selected.pt",
+    "within_progress_781": "models/within_progress_781/selected.pt",
+    "within_feedback_781": "models/within_feedback_781/selected.pt"
+  },
+  "baselines": {
+    "block_best_fixed": {
+      "frequency": "block",
+      "plan": {
+        "name": "fixed_0",
+        "kind": "fixed",
+        "action": 0
+      }
+    },
+    "block_best_schedule": {
+      "frequency": "block",
+      "plan": {
+        "name": "fixed_0",
+        "kind": "fixed",
+        "action": 0
+      }
+    },
+    "block_best_hand": {
+      "frequency": "block",
+      "plan": {
+        "name": "fixed_0",
+        "kind": "fixed",
+        "action": 0
+      }
+    },
+    "within_best_fixed": {
+      "frequency": "within",
+      "plan": {
+        "name": "fixed_0",
+        "kind": "fixed",
+        "action": 0
+      }
+    },
+    "within_best_schedule": {
+      "frequency": "within",
+      "plan": {
+        "name": "fixed_0",
+        "kind": "fixed",
+        "action": 0
+      }
+    },
+    "within_best_hand": {
+      "frequency": "within",
+      "plan": {
+        "name": "fixed_0",
+        "kind": "fixed",
+        "action": 0
+      }
+    }
+  },
+  "source_hashes": {
+    "test_sequence.py": "b7380d7319838243811a07bd79adb69548aa8ee338f9010d31bf395498000c27",
+    "model_core.py": "5ca0a78687cb37237832f09dc136b1b176601a1049c9a92301786bff24d94b8f",
+    "control.py": "870a19d9d7ee43feb4e4d731efc18a10dda8ce719827a6933f2ddc8f6be3214f",
+    "run_sequence.py": "af0f56b71b1449f898bef60f2c8ad11178b42d695cb7840b4010b28dbb9f7b3a",
+    "sequence_env.py": "917368a941113b05d0f06620e3a4dce7e57b0e6ecb9947d463932f57748582fe",
+    "analyze.py": "ed7c3f5cd94693bfee24908be415bfa97c553f8549c1410c1b6b0dcb6162a6a6"
+  },
+  "policy_hashes": {
+    "models/block_progress_781/selected.pt": "deac472f835f37a6c15cb345e47f63dee43026719e4d29a9383a5209c7de927a",
+    "models/block_feedback_781/selected.pt": "65a529b2d51f24d26a9d0229586e9bd9b21db4d62ef72bcc904d96ae88b3a4f6",
+    "models/within_progress_781/selected.pt": "10790eb2c3295e78becf4ac98f60549e3782a702b6b9f8353d5cd0e7da407020",
+    "models/within_feedback_781/selected.pt": "c2317649c94802d771d0a0b353ff40c3db3ca63bd2c10b8ac8dc017e1c91c0c7"
+  }
+}

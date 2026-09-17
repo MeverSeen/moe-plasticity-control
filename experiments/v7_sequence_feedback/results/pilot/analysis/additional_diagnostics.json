@@ -1,0 +1,41 @@
+{
+  "comparisons": {
+    "block": {
+      "common_n": 5,
+      "progress_F": 0.007512162749965985,
+      "feedback_F": 0.006925932317972182,
+      "relative_reduction": 0.07803750417900068,
+      "nominal_97_5_interval": [
+        -0.0013724517077207568,
+        0.0
+      ],
+      "per_seed": [
+        {
+          "seed": 781,
+          "common_n": 5,
+          "difference": -0.0005862304319938025,
+          "reach_difference": -0.125
+        }
+      ]
+    },
+    "within": {
+      "common_n": 6,
+      "progress_F": 0.01606968397067653,
+      "feedback_F": 0.014844133829077085,
+      "relative_reduction": 0.07626473201562589,
+      "nominal_97_5_interval": [
+        -0.004657023068931368,
+        0.0021570405612389245
+      ],
+      "per_seed": [
+        {
+          "seed": 781,
+          "common_n": 6,
+          "difference": -0.0012255501415994435,
+          "reach_difference": -0.125
+        }
+      ]
+    }
+  },
+  "note": "Post-run descriptive checks, no model retuning. 97.5% per-comparison intervals are a Bonferroni sensitivity for the two primary comparisons; only root sampling, not population training-seed uncertainty."
+}

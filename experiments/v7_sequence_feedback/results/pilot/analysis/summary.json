@@ -1,0 +1,722 @@
+{
+  "groups": {
+    "block_progress": {
+      "roots": 8,
+      "replicas": 1,
+      "reach": 0.75,
+      "per_replica_hits": [
+        6
+      ],
+      "forgetting_successful": 0.00748512376513746,
+      "forgetting_all": 0.0070704094444712,
+      "steps": 68.125,
+      "work": 23705.005434782615,
+      "segment_reach": [
+        0.875,
+        0.875,
+        1.0
+      ],
+      "final_B_test_MSE": [
+        0.06986306607723236,
+        0.08736563380807638,
+        0.07520388904958963
+      ],
+      "final_all_B_monitor_reach": 0.75,
+      "initially_solved_segments": 0.875,
+      "mean_terminal_B_MSE": [
+        0.07613159762695432,
+        0.07740498147904873,
+        0.0689128884114325
+      ]
+    },
+    "block_feedback": {
+      "roots": 8,
+      "replicas": 1,
+      "reach": 0.625,
+      "per_replica_hits": [
+        5
+      ],
+      "forgetting_successful": 0.006925932317972182,
+      "forgetting_all": 0.008445167215541005,
+      "steps": 75.375,
+      "work": 26113.826086956524,
+      "segment_reach": [
+        0.875,
+        0.75,
+        1.0
+      ],
+      "final_B_test_MSE": [
+        0.06764165032655,
+        0.08783728443086147,
+        0.07500247238203883
+      ],
+      "final_all_B_monitor_reach": 0.625,
+      "initially_solved_segments": 0.875,
+      "mean_terminal_B_MSE": [
+        0.07613159762695432,
+        0.07817324157804251,
+        0.06901185540482402
+      ]
+    },
+    "within_progress": {
+      "roots": 8,
+      "replicas": 1,
+      "reach": 0.875,
+      "per_replica_hits": [
+        7
+      ],
+      "forgetting_successful": 0.014611505326770602,
+      "forgetting_all": 0.014535624145840606,
+      "steps": 66.25,
+      "work": 23069.527173913048,
+      "segment_reach": [
+        0.875,
+        1.0,
+        1.0
+      ],
+      "final_B_test_MSE": [
+        0.074169319588691,
+        0.08324907161295414,
+        0.07859590463340282
+      ],
+      "final_all_B_monitor_reach": 0.625,
+      "initially_solved_segments": 1.0,
+      "mean_terminal_B_MSE": [
+        0.07597279781475663,
+        0.07428173627704382,
+        0.07215066254138947
+      ]
+    },
+    "within_feedback": {
+      "roots": 8,
+      "replicas": 1,
+      "reach": 0.75,
+      "per_replica_hits": [
+        6
+      ],
+      "forgetting_successful": 0.014844133829077085,
+      "forgetting_all": 0.013723296578973532,
+      "steps": 64.875,
+      "work": 22620.657608695656,
+      "segment_reach": [
+        0.875,
+        0.875,
+        1.0
+      ],
+      "final_B_test_MSE": [
+        0.06996468408033252,
+        0.08049933519214392,
+        0.07951734773814678
+      ],
+      "final_all_B_monitor_reach": 0.625,
+      "initially_solved_segments": 1.0,
+      "mean_terminal_B_MSE": [
+        0.0757832801900804,
+        0.07453830866143107,
+        0.07339026220142841
+      ]
+    },
+    "block_best_fixed": {
+      "roots": 8,
+      "replicas": 1,
+      "reach": 0.625,
+      "per_replica_hits": [
+        5
+      ],
+      "forgetting_successful": 0.0009263172745704651,
+      "forgetting_all": 0.0007832706905901432,
+      "steps": 86.875,
+      "work": 29971.092391304348,
+      "segment_reach": [
+        0.75,
+        0.875,
+        1.0
+      ],
+      "final_B_test_MSE": [
+        0.07125087594613433,
+        0.08899454213678837,
+        0.07375625660642982
+      ],
+      "final_all_B_monitor_reach": 0.625,
+      "initially_solved_segments": 1.0,
+      "mean_terminal_B_MSE": [
+        0.0780196045525372,
+        0.0784312216565013,
+        0.07079113321378827
+      ]
+    },
+    "block_best_schedule": {
+      "roots": 8,
+      "replicas": 1,
+      "reach": 0.625,
+      "per_replica_hits": [
+        5
+      ],
+      "forgetting_successful": 0.0009263172745704651,
+      "forgetting_all": 0.0007832706905901432,
+      "steps": 86.875,
+      "work": 29971.092391304348,
+      "segment_reach": [
+        0.75,
+        0.875,
+        1.0
+      ],
+      "final_B_test_MSE": [
+        0.07125087594613433,
+        0.08899454213678837,
+        0.07375625660642982
+      ],
+      "final_all_B_monitor_reach": 0.625,
+      "initially_solved_segments": 1.0,
+      "mean_terminal_B_MSE": [
+        0.0780196045525372,
+        0.0784312216565013,
+        0.07079113321378827
+      ]
+    },
+    "block_best_hand": {
+      "roots": 8,
+      "replicas": 1,
+      "reach": 0.625,
+      "per_replica_hits": [
+        5
+      ],
+      "forgetting_successful": 0.0009263172745704651,
+      "forgetting_all": 0.0007832706905901432,
+      "steps": 86.875,
+      "work": 29971.092391304348,
+      "segment_reach": [
+        0.75,
+        0.875,
+        1.0
+      ],
+      "final_B_test_MSE": [
+        0.07125087594613433,
+        0.08899454213678837,
+        0.07375625660642982
+      ],
+      "final_all_B_monitor_reach": 0.625,
+      "initially_solved_segments": 1.0,
+      "mean_terminal_B_MSE": [
+        0.0780196045525372,
+        0.0784312216565013,
+        0.07079113321378827
+      ]
+    },
+    "within_best_fixed": {
+      "roots": 8,
+      "replicas": 1,
+      "reach": 0.625,
+      "per_replica_hits": [
+        5
+      ],
+      "forgetting_successful": 0.0009263172745704651,
+      "forgetting_all": 0.0007832706905901432,
+      "steps": 86.875,
+      "work": 29971.092391304348,
+      "segment_reach": [
+        0.75,
+        0.875,
+        1.0
+      ],
+      "final_B_test_MSE": [
+        0.07125087594613433,
+        0.08899454213678837,
+        0.07375625660642982
+      ],
+      "final_all_B_monitor_reach": 0.625,
+      "initially_solved_segments": 1.0,
+      "mean_terminal_B_MSE": [
+        0.0780196045525372,
+        0.0784312216565013,
+        0.07079113321378827
+      ]
+    },
+    "within_best_schedule": {
+      "roots": 8,
+      "replicas": 1,
+      "reach": 0.625,
+      "per_replica_hits": [
+        5
+      ],
+      "forgetting_successful": 0.0009263172745704651,
+      "forgetting_all": 0.0007832706905901432,
+      "steps": 86.875,
+      "work": 29971.092391304348,
+      "segment_reach": [
+        0.75,
+        0.875,
+        1.0
+      ],
+      "final_B_test_MSE": [
+        0.07125087594613433,
+        0.08899454213678837,
+        0.07375625660642982
+      ],
+      "final_all_B_monitor_reach": 0.625,
+      "initially_solved_segments": 1.0,
+      "mean_terminal_B_MSE": [
+        0.0780196045525372,
+        0.0784312216565013,
+        0.07079113321378827
+      ]
+    },
+    "within_best_hand": {
+      "roots": 8,
+      "replicas": 1,
+      "reach": 0.625,
+      "per_replica_hits": [
+        5
+      ],
+      "forgetting_successful": 0.0009263172745704651,
+      "forgetting_all": 0.0007832706905901432,
+      "steps": 86.875,
+      "work": 29971.092391304348,
+      "segment_reach": [
+        0.75,
+        0.875,
+        1.0
+      ],
+      "final_B_test_MSE": [
+        0.07125087594613433,
+        0.08899454213678837,
+        0.07375625660642982
+      ],
+      "final_all_B_monitor_reach": 0.625,
+      "initially_solved_segments": 1.0,
+      "mean_terminal_B_MSE": [
+        0.0780196045525372,
+        0.0784312216565013,
+        0.07079113321378827
+      ]
+    },
+    "fixed_zero": {
+      "roots": 8,
+      "replicas": 1,
+      "reach": 0.625,
+      "per_replica_hits": [
+        5
+      ],
+      "forgetting_successful": 0.0009263172745704651,
+      "forgetting_all": 0.0007832706905901432,
+      "steps": 86.875,
+      "work": 29971.092391304348,
+      "segment_reach": [
+        0.75,
+        0.875,
+        1.0
+      ],
+      "final_B_test_MSE": [
+        0.07125087594613433,
+        0.08899454213678837,
+        0.07375625660642982
+      ],
+      "final_all_B_monitor_reach": 0.625,
+      "initially_solved_segments": 1.0,
+      "mean_terminal_B_MSE": [
+        0.0780196045525372,
+        0.0784312216565013,
+        0.07079113321378827
+      ]
+    },
+    "full_update": {
+      "roots": 8,
+      "replicas": 1,
+      "reach": 0.875,
+      "per_replica_hits": [
+        7
+      ],
+      "forgetting_successful": 0.01722321872200285,
+      "forgetting_all": 0.01681805239059031,
+      "steps": 65.0,
+      "work": 22660.782608695656,
+      "segment_reach": [
+        0.875,
+        1.0,
+        1.0
+      ],
+      "final_B_test_MSE": [
+        0.07066512200981379,
+        0.0791615229099989,
+        0.07842159457504749
+      ],
+      "final_all_B_monitor_reach": 0.625,
+      "initially_solved_segments": 1.0,
+      "mean_terminal_B_MSE": [
+        0.07605138188228011,
+        0.07422334793955088,
+        0.07214881293475628
+      ]
+    }
+  },
+  "comparisons": {
+    "block_feedback_minus_block_progress": {
+      "reach_difference": {
+        "n": 8,
+        "mean": -0.125,
+        "ci95": [
+          -0.375,
+          0.0
+        ]
+      },
+      "common_success_forgetting": {
+        "n": 5,
+        "mean": -0.0005862304319938025,
+        "ci95": [
+          -0.0013724517077207568,
+          0.0
+        ]
+      },
+      "all_root_forgetting": {
+        "n": 8,
+        "mean": 0.0013747577710698047,
+        "ci95": [
+          -0.0006120881686607997,
+          0.004233085550367832
+        ]
+      },
+      "tight_B_endpoint_sensitivity": {
+        "n": 5,
+        "mean": -0.0005862304319938025,
+        "ci95": [
+          -0.0013724517077207568,
+          0.0
+        ]
+      },
+      "steps_difference": {
+        "n": 8,
+        "mean": 7.25,
+        "ci95": [
+          -0.375,
+          22.125
+        ]
+      },
+      "final_all_B_retention_difference": {
+        "n": 8,
+        "mean": -0.125,
+        "ci95": [
+          -0.375,
+          0.0
+        ]
+      }
+    },
+    "within_feedback_minus_within_progress": {
+      "reach_difference": {
+        "n": 8,
+        "mean": -0.125,
+        "ci95": [
+          -0.375,
+          0.0
+        ]
+      },
+      "common_success_forgetting": {
+        "n": 6,
+        "mean": -0.0012255501415994435,
+        "ci95": [
+          -0.0043049390531248516,
+          0.001744748610589239
+        ]
+      },
+      "all_root_forgetting": {
+        "n": 8,
+        "mean": -0.0008123275668670735,
+        "ci95": [
+          -0.003273908980190754,
+          0.0015057571387539306
+        ]
+      },
+      "tight_B_endpoint_sensitivity": {
+        "n": 6,
+        "mean": -0.0012255501415994435,
+        "ci95": [
+          -0.0043049390531248516,
+          0.001744748610589239
+        ]
+      },
+      "steps_difference": {
+        "n": 8,
+        "mean": -1.375,
+        "ci95": [
+          -2.875,
+          0.0
+        ]
+      },
+      "final_all_B_retention_difference": {
+        "n": 8,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "within_feedback_minus_block_feedback": {
+      "reach_difference": {
+        "n": 8,
+        "mean": 0.125,
+        "ci95": [
+          0.0,
+          0.375
+        ]
+      },
+      "common_success_forgetting": {
+        "n": 5,
+        "mean": 0.00854034945368767,
+        "ci95": [
+          0.000502153237660726,
+          0.01657854566971461
+        ]
+      },
+      "all_root_forgetting": {
+        "n": 8,
+        "mean": 0.0052781293634325275,
+        "ci95": [
+          -0.0018980565170447028,
+          0.012491980257133644
+        ]
+      },
+      "tight_B_endpoint_sensitivity": {
+        "n": 3,
+        "mean": 0.008613839745521545,
+        "ci95": [
+          0.00018288567662239075,
+          0.01928332820534706
+        ]
+      },
+      "steps_difference": {
+        "n": 8,
+        "mean": -10.5,
+        "ci95": [
+          -28.5,
+          0.75
+        ]
+      },
+      "final_all_B_retention_difference": {
+        "n": 8,
+        "mean": 0.0,
+        "ci95": [
+          -0.375,
+          0.375
+        ]
+      }
+    },
+    "within_progress_minus_block_progress": {
+      "reach_difference": {
+        "n": 8,
+        "mean": 0.125,
+        "ci95": [
+          0.0,
+          0.375
+        ]
+      },
+      "common_success_forgetting": {
+        "n": 6,
+        "mean": 0.008584560205539068,
+        "ci95": [
+          0.0006949654262926845,
+          0.01751708445242702
+        ]
+      },
+      "all_root_forgetting": {
+        "n": 8,
+        "mean": 0.007465214701369406,
+        "ci95": [
+          0.0009180800213168065,
+          0.014995754347182809
+        ]
+      },
+      "tight_B_endpoint_sensitivity": {
+        "n": 5,
+        "mean": 0.006404755885402362,
+        "ci95": [
+          -4.2734543482462506e-05,
+          0.016961323842406274
+        ]
+      },
+      "steps_difference": {
+        "n": 8,
+        "mean": -1.875,
+        "ci95": [
+          -6.75,
+          2.25
+        ]
+      },
+      "final_all_B_retention_difference": {
+        "n": 8,
+        "mean": -0.125,
+        "ci95": [
+          -0.375,
+          0.0
+        ]
+      }
+    },
+    "block_feedback_minus_block_best_schedule": {
+      "reach_difference": {
+        "n": 8,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "common_success_forgetting": {
+        "n": 5,
+        "mean": 0.005999615043401718,
+        "ci95": [
+          -7.262403766314192e-05,
+          0.017325603465239207
+        ]
+      },
+      "all_root_forgetting": {
+        "n": 8,
+        "mean": 0.007661896524950862,
+        "ci95": [
+          0.00128565674337248,
+          0.01551657940144645
+        ]
+      },
+      "tight_B_endpoint_sensitivity": {
+        "n": 5,
+        "mean": 0.005999615043401718,
+        "ci95": [
+          -7.262403766314192e-05,
+          0.017325603465239207
+        ]
+      },
+      "steps_difference": {
+        "n": 8,
+        "mean": -11.5,
+        "ci95": [
+          -26.253124999999997,
+          -0.25
+        ]
+      },
+      "final_all_B_retention_difference": {
+        "n": 8,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "within_feedback_minus_within_best_schedule": {
+      "reach_difference": {
+        "n": 8,
+        "mean": 0.125,
+        "ci95": [
+          0.0,
+          0.375
+        ]
+      },
+      "common_success_forgetting": {
+        "n": 5,
+        "mean": 0.014539964497089386,
+        "ci95": [
+          0.0028999768197536468,
+          0.026068264991044997
+        ]
+      },
+      "all_root_forgetting": {
+        "n": 8,
+        "mean": 0.012940025888383389,
+        "ci95": [
+          0.005483468063175678,
+          0.021147105377167463
+        ]
+      },
+      "tight_B_endpoint_sensitivity": {
+        "n": 4,
+        "mean": 0.012965606525540352,
+        "ci95": [
+          -0.001056252047419548,
+          0.026987465098500252
+        ]
+      },
+      "steps_difference": {
+        "n": 8,
+        "mean": -22.0,
+        "ci95": [
+          -48.5,
+          -1.625
+        ]
+      },
+      "final_all_B_retention_difference": {
+        "n": 8,
+        "mean": 0.0,
+        "ci95": [
+          -0.375,
+          0.375
+        ]
+      }
+    }
+  },
+  "frequency_by_feedback_interaction": {
+    "n": 5,
+    "mean": -0.0008844297379255297,
+    "ci95": [
+      -0.004579696431756019,
+      0.0025866590440273285
+    ]
+  },
+  "selections": {
+    "block_progress_781": {
+      "feedback": false,
+      "seed": 781,
+      "epoch": 100,
+      "frequency": "block",
+      "slack": 0.1,
+      "dev": {
+        "reach": 0.75,
+        "forgetting": 0.005860453471541405,
+        "work": 21240.195652173916,
+        "steps": 60.75
+      }
+    },
+    "block_feedback_781": {
+      "feedback": true,
+      "seed": 781,
+      "epoch": 100,
+      "frequency": "block",
+      "slack": 0.1,
+      "dev": {
+        "reach": 0.75,
+        "forgetting": 0.005835810676217079,
+        "work": 21240.195652173916,
+        "steps": 60.75
+      }
+    },
+    "within_progress_781": {
+      "feedback": false,
+      "seed": 781,
+      "epoch": 100,
+      "frequency": "within",
+      "slack": 0.0,
+      "dev": {
+        "reach": 0.75,
+        "forgetting": 0.005354891220728557,
+        "work": 20662.456521739135,
+        "steps": 59.0
+      }
+    },
+    "within_feedback_781": {
+      "feedback": true,
+      "seed": 781,
+      "epoch": 100,
+      "frequency": "within",
+      "slack": 0.0,
+      "dev": {
+        "reach": 0.75,
+        "forgetting": 0.008233708329498768,
+        "work": 20564.71739130435,
+        "steps": 58.75
+      }
+    }
+  },
+  "offline_selection": {
+    "rollouts": 144,
+    "updates": 8490,
+    "work": 2972480.347826088
+  },
+  "statistics": "Nominal unadjusted 95% root-paired bootstrap; replicas averaged inside root. Common-success set requires all replicas of both methods. Tight endpoint maximum per-block B-loss gap <=.008. Reach failures always reported."
+}

@@ -12,6 +12,7 @@ SUITES = (
     ("v4_state_aggregation", "test_*.py"),
     ("v5_calibration", "test_*.py"),
     ("v6_learning_diagnostics", "test_*.py"),
+    ("v7_sequence_feedback", "test_*.py"),
 )
 
 

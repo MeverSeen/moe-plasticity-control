@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def main():
     files = json.loads((ROOT / "docs" / "import_manifest.json").read_text())["files"]
-    for version in ("v4_state_aggregation", "v5_calibration", "v6_learning_diagnostics"):
+    for version in ("v4_state_aggregation", "v5_calibration", "v6_learning_diagnostics", "v7_sequence_feedback"):
         folder = ROOT / "experiments" / version
         for line in (folder / "manifest.sha256").read_text().splitlines():
             expected, relative = line.split("  ", 1)
