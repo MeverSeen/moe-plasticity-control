@@ -1,0 +1,170 @@
+[
+  {
+    "batch": 1,
+    "lagrange": 1.075,
+    "failure": 0.25,
+    "loss": 2.114135980606079,
+    "actor_parameter_delta": 0.015216464176774025
+  },
+  {
+    "batch": 2,
+    "lagrange": 1.15,
+    "failure": 0.25,
+    "loss": 1.287935495376587,
+    "actor_parameter_delta": 0.010985747911036015
+  },
+  {
+    "batch": 3,
+    "lagrange": 1.1624999999999999,
+    "failure": 0.125,
+    "loss": 0.7614574432373047,
+    "actor_parameter_delta": 0.00992201454937458
+  },
+  {
+    "batch": 4,
+    "lagrange": 1.2374999999999998,
+    "failure": 0.25,
+    "loss": 1.951826572418213,
+    "actor_parameter_delta": 0.009027117863297462
+  },
+  {
+    "batch": 5,
+    "lagrange": 1.3124999999999998,
+    "failure": 0.25,
+    "loss": 0.8823612332344055,
+    "actor_parameter_delta": 0.009300884790718555
+  },
+  {
+    "batch": 6,
+    "lagrange": 1.4499999999999997,
+    "failure": 0.375,
+    "loss": 1.2710150480270386,
+    "actor_parameter_delta": 0.00967828743159771
+  },
+  {
+    "batch": 7,
+    "lagrange": 1.3999999999999997,
+    "failure": 0.0,
+    "loss": 2.053468942642212,
+    "actor_parameter_delta": 0.007584224920719862
+  },
+  {
+    "batch": 8,
+    "lagrange": 1.4124999999999996,
+    "failure": 0.125,
+    "loss": 1.2412440776824951,
+    "actor_parameter_delta": 0.00788515992462635
+  },
+  {
+    "batch": 9,
+    "lagrange": 1.4249999999999996,
+    "failure": 0.125,
+    "loss": 1.9118584394454956,
+    "actor_parameter_delta": 0.008573835715651512
+  },
+  {
+    "batch": 10,
+    "lagrange": 1.3749999999999996,
+    "failure": 0.0,
+    "loss": 2.820518970489502,
+    "actor_parameter_delta": 0.00879676453769207
+  },
+  {
+    "batch": 11,
+    "lagrange": 1.3874999999999995,
+    "failure": 0.125,
+    "loss": 1.4491517543792725,
+    "actor_parameter_delta": 0.007987282238900661
+  },
+  {
+    "batch": 12,
+    "lagrange": 1.3999999999999995,
+    "failure": 0.125,
+    "loss": 1.533008337020874,
+    "actor_parameter_delta": 0.008819248527288437
+  },
+  {
+    "batch": 13,
+    "lagrange": 1.3499999999999994,
+    "failure": 0.0,
+    "loss": 0.4694632887840271,
+    "actor_parameter_delta": 0.009013469330966473
+  },
+  {
+    "batch": 14,
+    "lagrange": 1.4249999999999994,
+    "failure": 0.25,
+    "loss": 0.876971960067749,
+    "actor_parameter_delta": 0.006631758995354176
+  },
+  {
+    "batch": 15,
+    "lagrange": 1.4374999999999993,
+    "failure": 0.125,
+    "loss": 0.678851306438446,
+    "actor_parameter_delta": 0.005543165374547243
+  },
+  {
+    "batch": 16,
+    "lagrange": 1.3874999999999993,
+    "failure": 0.0,
+    "loss": 0.6214126944541931,
+    "actor_parameter_delta": 0.006529800593852997
+  },
+  {
+    "batch": 17,
+    "lagrange": 1.3374999999999992,
+    "failure": 0.0,
+    "loss": 1.2866393327713013,
+    "actor_parameter_delta": 0.0072174821980297565
+  },
+  {
+    "batch": 18,
+    "lagrange": 1.4124999999999992,
+    "failure": 0.25,
+    "loss": 1.7224154472351074,
+    "actor_parameter_delta": 0.006836066488176584
+  },
+  {
+    "batch": 19,
+    "lagrange": 1.3624999999999992,
+    "failure": 0.0,
+    "loss": 1.2760459184646606,
+    "actor_parameter_delta": 0.006234709173440933
+  },
+  {
+    "batch": 20,
+    "lagrange": 1.3124999999999991,
+    "failure": 0.0,
+    "loss": 0.811367928981781,
+    "actor_parameter_delta": 0.010107822716236115
+  },
+  {
+    "batch": 21,
+    "lagrange": 1.387499999999999,
+    "failure": 0.25,
+    "loss": 1.4046543836593628,
+    "actor_parameter_delta": 0.009075555019080639
+  },
+  {
+    "batch": 22,
+    "lagrange": 1.399999999999999,
+    "failure": 0.125,
+    "loss": 1.2026199102401733,
+    "actor_parameter_delta": 0.00731686083599925
+  },
+  {
+    "batch": 23,
+    "lagrange": 1.412499999999999,
+    "failure": 0.125,
+    "loss": 1.1420574188232422,
+    "actor_parameter_delta": 0.007838593795895576
+  },
+  {
+    "batch": 24,
+    "lagrange": 1.487499999999999,
+    "failure": 0.25,
+    "loss": 1.3363897800445557,
+    "actor_parameter_delta": 0.007043279241770506
+  }
+]

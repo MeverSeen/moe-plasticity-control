@@ -1,0 +1,8 @@
+{
+  "seconds": 899.8992531299591,
+  "test_rollouts": 4800,
+  "test_updates": 323555,
+  "test_work": 112892912.28985444,
+  "offline_branch_cost_5_equivalent_fraction": 0.3333333333333333,
+  "offline_extra_15_action_fraction": 0.6666666666666666
+}

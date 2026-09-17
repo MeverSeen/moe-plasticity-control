@@ -1,0 +1,907 @@
+{
+  "exploratory": true,
+  "comparisons": [
+    {
+      "left": "sup_a5_progress",
+      "right": "fixed",
+      "common_roots": 52,
+      "reach": {
+        "mean": -0.005208333333333334,
+        "ci95": [
+          -0.0625,
+          0.05208333333333333
+        ]
+      },
+      "forgetting": {
+        "mean": 0.0015415904315140764,
+        "ci95": [
+          -0.0005088649570253384,
+          0.003520052417173471
+        ]
+      },
+      "left_forgetting": 0.006864418711465521,
+      "right_forgetting": 0.005322828279951444
+    },
+    {
+      "left": "sup_a5_progress",
+      "right": "global_lr",
+      "common_roots": 53,
+      "reach": {
+        "mean": -0.020833333333333336,
+        "ci95": [
+          -0.078125,
+          0.020833333333333332
+        ]
+      },
+      "forgetting": {
+        "mean": -0.01547272289581831,
+        "ci95": [
+          -0.019816470619211015,
+          -0.011593571564951909
+        ]
+      },
+      "left_forgetting": 0.006942007872246721,
+      "right_forgetting": 0.02241473076806503
+    },
+    {
+      "left": "sup_a5_progress",
+      "right": "schedule",
+      "common_roots": 52,
+      "reach": {
+        "mean": -0.005208333333333334,
+        "ci95": [
+          -0.0625,
+          0.05208333333333333
+        ]
+      },
+      "forgetting": {
+        "mean": 0.0015415904315140764,
+        "ci95": [
+          -0.0004721982138923921,
+          0.0035435042518159195
+        ]
+      },
+      "left_forgetting": 0.006864418711465521,
+      "right_forgetting": 0.005322828279951444
+    },
+    {
+      "left": "ppo_a5_progress",
+      "right": "fixed",
+      "common_roots": 52,
+      "reach": {
+        "mean": -0.005208333333333334,
+        "ci95": [
+          -0.0625,
+          0.05208333333333333
+        ]
+      },
+      "forgetting": {
+        "mean": 0.0014525340973503059,
+        "ci95": [
+          -0.0005489715482963999,
+          0.0034194182540871142
+        ]
+      },
+      "left_forgetting": 0.006775362377301751,
+      "right_forgetting": 0.005322828279951444
+    },
+    {
+      "left": "ppo_a5_progress",
+      "right": "global_lr",
+      "common_roots": 53,
+      "reach": {
+        "mean": -0.020833333333333336,
+        "ci95": [
+          -0.078125,
+          0.020833333333333332
+        ]
+      },
+      "forgetting": {
+        "mean": -0.015541882802824055,
+        "ci95": [
+          -0.01988543295731038,
+          -0.011632930868758237
+        ]
+      },
+      "left_forgetting": 0.006872847965240978,
+      "right_forgetting": 0.02241473076806503
+    },
+    {
+      "left": "ppo_a5_progress",
+      "right": "schedule",
+      "common_roots": 52,
+      "reach": {
+        "mean": -0.005208333333333334,
+        "ci95": [
+          -0.0625,
+          0.05208333333333333
+        ]
+      },
+      "forgetting": {
+        "mean": 0.0014525340973503059,
+        "ci95": [
+          -0.0005947204051503484,
+          0.0034497514376058587
+        ]
+      },
+      "left_forgetting": 0.006775362377301751,
+      "right_forgetting": 0.005322828279951444
+    },
+    {
+      "left": "sup_a5_feedback",
+      "right": "fixed",
+      "common_roots": 51,
+      "reach": {
+        "mean": -0.020833333333333336,
+        "ci95": [
+          -0.078125,
+          0.026041666666666664
+        ]
+      },
+      "forgetting": {
+        "mean": 0.001955914266472419,
+        "ci95": [
+          0.0002387055177099534,
+          0.0036463226980990313
+        ]
+      },
+      "left_forgetting": 0.007383111728383697,
+      "right_forgetting": 0.0054271974619112765
+    },
+    {
+      "left": "sup_a5_feedback",
+      "right": "global_lr",
+      "common_roots": 51,
+      "reach": {
+        "mean": -0.036458333333333336,
+        "ci95": [
+          -0.08854166666666667,
+          0.005208333333333331
+        ]
+      },
+      "forgetting": {
+        "mean": -0.014500475326281098,
+        "ci95": [
+          -0.018494237206920918,
+          -0.010973801153147906
+        ]
+      },
+      "left_forgetting": 0.007383111728383697,
+      "right_forgetting": 0.021883587054664793
+    },
+    {
+      "left": "sup_a5_feedback",
+      "right": "schedule",
+      "common_roots": 51,
+      "reach": {
+        "mean": -0.020833333333333336,
+        "ci95": [
+          -0.07291666666666667,
+          0.026041666666666664
+        ]
+      },
+      "forgetting": {
+        "mean": 0.001955914266472419,
+        "ci95": [
+          0.00026092496167965767,
+          0.003661934489867202
+        ]
+      },
+      "left_forgetting": 0.007383111728383697,
+      "right_forgetting": 0.0054271974619112765
+    },
+    {
+      "left": "ppo_a5_feedback",
+      "right": "fixed",
+      "common_roots": 52,
+      "reach": {
+        "mean": -0.010416666666666668,
+        "ci95": [
+          -0.0625,
+          0.041666666666666664
+        ]
+      },
+      "forgetting": {
+        "mean": 0.0019138227794000988,
+        "ci95": [
+          0.00011546073051599373,
+          0.0037835167948769514
+        ]
+      },
+      "left_forgetting": 0.007236651059351543,
+      "right_forgetting": 0.005322828279951444
+    },
+    {
+      "left": "ppo_a5_feedback",
+      "right": "global_lr",
+      "common_roots": 53,
+      "reach": {
+        "mean": -0.026041666666666668,
+        "ci95": [
+          -0.078125,
+          0.010416666666666666
+        ]
+      },
+      "forgetting": {
+        "mean": -0.015160278682704368,
+        "ci95": [
+          -0.019098858655024267,
+          -0.011614150553502423
+        ]
+      },
+      "left_forgetting": 0.007254452085360666,
+      "right_forgetting": 0.02241473076806503
+    },
+    {
+      "left": "ppo_a5_feedback",
+      "right": "schedule",
+      "common_roots": 52,
+      "reach": {
+        "mean": -0.010416666666666668,
+        "ci95": [
+          -0.0625,
+          0.041666666666666664
+        ]
+      },
+      "forgetting": {
+        "mean": 0.0019138227794000988,
+        "ci95": [
+          0.00016200603831670855,
+          0.003823172994421668
+        ]
+      },
+      "left_forgetting": 0.007236651059351543,
+      "right_forgetting": 0.005322828279951444
+    },
+    {
+      "left": "sup_a15_progress",
+      "right": "fixed",
+      "common_roots": 52,
+      "reach": {
+        "mean": 0.010416666666666664,
+        "ci95": [
+          -0.026041666666666675,
+          0.05729166666666666
+        ]
+      },
+      "forgetting": {
+        "mean": 0.005011436537417591,
+        "ci95": [
+          0.0023039263460196105,
+          0.007447499649014132
+        ]
+      },
+      "left_forgetting": 0.010334264817369035,
+      "right_forgetting": 0.005322828279951444
+    },
+    {
+      "left": "sup_a15_progress",
+      "right": "global_lr",
+      "common_roots": 53,
+      "reach": {
+        "mean": -0.005208333333333334,
+        "ci95": [
+          -0.036458333333333336,
+          0.020833333333333332
+        ]
+      },
+      "forgetting": {
+        "mean": -0.012015799298663811,
+        "ci95": [
+          -0.016399775747408935,
+          -0.008353331223114607
+        ]
+      },
+      "left_forgetting": 0.010398931469401223,
+      "right_forgetting": 0.02241473076806503
+    },
+    {
+      "left": "sup_a15_progress",
+      "right": "schedule",
+      "common_roots": 52,
+      "reach": {
+        "mean": 0.010416666666666664,
+        "ci95": [
+          -0.02604166666666667,
+          0.052083333333333336
+        ]
+      },
+      "forgetting": {
+        "mean": 0.005011436537417591,
+        "ci95": [
+          0.002369661467711035,
+          0.007413409775298119
+        ]
+      },
+      "left_forgetting": 0.010334264817369035,
+      "right_forgetting": 0.005322828279951444
+    },
+    {
+      "left": "ppo_a15_progress",
+      "right": "fixed",
+      "common_roots": 51,
+      "reach": {
+        "mean": 0.010416666666666664,
+        "ci95": [
+          -0.020833333333333336,
+          0.05208333333333333
+        ]
+      },
+      "forgetting": {
+        "mean": 0.0045717797020941265,
+        "ci95": [
+          0.002554404932279181,
+          0.006828152308390681
+        ]
+      },
+      "left_forgetting": 0.009998977164005404,
+      "right_forgetting": 0.0054271974619112765
+    },
+    {
+      "left": "ppo_a15_progress",
+      "right": "global_lr",
+      "common_roots": 52,
+      "reach": {
+        "mean": -0.005208333333333336,
+        "ci95": [
+          -0.04166666666666667,
+          0.026041666666666664
+        ]
+      },
+      "forgetting": {
+        "mean": -0.012792377322753016,
+        "ci95": [
+          -0.016536080846702286,
+          -0.009442716503901901
+        ]
+      },
+      "left_forgetting": 0.010034314062223475,
+      "right_forgetting": 0.022826691384976488
+    },
+    {
+      "left": "ppo_a15_progress",
+      "right": "schedule",
+      "common_roots": 51,
+      "reach": {
+        "mean": 0.010416666666666664,
+        "ci95": [
+          -0.02083333333333334,
+          0.05208333333333333
+        ]
+      },
+      "forgetting": {
+        "mean": 0.0045717797020941265,
+        "ci95": [
+          0.002518850238790861,
+          0.006775590899443021
+        ]
+      },
+      "left_forgetting": 0.009998977164005404,
+      "right_forgetting": 0.0054271974619112765
+    },
+    {
+      "left": "sup_a15_feedback",
+      "right": "fixed",
+      "common_roots": 51,
+      "reach": {
+        "mean": -0.015625,
+        "ci95": [
+          -0.0625,
+          0.026041666666666664
+        ]
+      },
+      "forgetting": {
+        "mean": 0.005406572298838681,
+        "ci95": [
+          0.003877365712303676,
+          0.007078009672678015
+        ]
+      },
+      "left_forgetting": 0.01067028934042698,
+      "right_forgetting": 0.005263717041588297
+    },
+    {
+      "left": "sup_a15_feedback",
+      "right": "global_lr",
+      "common_roots": 51,
+      "reach": {
+        "mean": -0.03125000000000001,
+        "ci95": [
+          -0.08333333333333334,
+          0.010416666666666666
+        ]
+      },
+      "forgetting": {
+        "mean": -0.011151913476373376,
+        "ci95": [
+          -0.014098495076976572,
+          -0.00841343454927336
+        ]
+      },
+      "left_forgetting": 0.01067028934042698,
+      "right_forgetting": 0.021822202816800352
+    },
+    {
+      "left": "sup_a15_feedback",
+      "right": "schedule",
+      "common_roots": 51,
+      "reach": {
+        "mean": -0.015625,
+        "ci95": [
+          -0.0625,
+          0.026041666666666664
+        ]
+      },
+      "forgetting": {
+        "mean": 0.005406572298838681,
+        "ci95": [
+          0.0039042825317558115,
+          0.007052293822396554
+        ]
+      },
+      "left_forgetting": 0.01067028934042698,
+      "right_forgetting": 0.005263717041588297
+    },
+    {
+      "left": "ppo_a15_feedback",
+      "right": "fixed",
+      "common_roots": 50,
+      "reach": {
+        "mean": -0.026041666666666668,
+        "ci95": [
+          -0.0625,
+          0.005208333333333332
+        ]
+      },
+      "forgetting": {
+        "mean": 0.006997894586788284,
+        "ci95": [
+          0.00489324768870655,
+          0.009365493442138864
+        ]
+      },
+      "left_forgetting": 0.01252788165377246,
+      "right_forgetting": 0.005529987066984178
+    },
+    {
+      "left": "ppo_a15_feedback",
+      "right": "global_lr",
+      "common_roots": 50,
+      "reach": {
+        "mean": -0.04166666666666667,
+        "ci95": [
+          -0.08854166666666669,
+          -3.469446951953614e-18
+        ]
+      },
+      "forgetting": {
+        "mean": -0.010553402263257239,
+        "ci95": [
+          -0.01365385655282686,
+          -0.007580635321016113
+        ]
+      },
+      "left_forgetting": 0.01252788165377246,
+      "right_forgetting": 0.023081283917029696
+    },
+    {
+      "left": "ppo_a15_feedback",
+      "right": "schedule",
+      "common_roots": 50,
+      "reach": {
+        "mean": -0.026041666666666668,
+        "ci95": [
+          -0.0625,
+          0.005208333333333331
+        ]
+      },
+      "forgetting": {
+        "mean": 0.006997894586788284,
+        "ci95": [
+          0.0048590212417766445,
+          0.009359996756538745
+        ]
+      },
+      "left_forgetting": 0.01252788165377246,
+      "right_forgetting": 0.005529987066984178
+    }
+  ],
+  "action_usage": {
+    "sup_a5_progress": {
+      "counts": {
+        "0": 815,
+        "1": 555,
+        "2": 347,
+        "4": 508,
+        "3": 461
+      },
+      "decisions": 2686,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "sup0_a5_progress": {
+      "counts": {
+        "0": 915,
+        "2": 653,
+        "4": 718,
+        "1": 165,
+        "3": 293
+      },
+      "decisions": 2744,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "ppo_a5_progress": {
+      "counts": {
+        "0": 878,
+        "1": 482,
+        "4": 448,
+        "2": 389,
+        "3": 501
+      },
+      "decisions": 2698,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "warm_a5_progress": {
+      "counts": {
+        "0": 833,
+        "1": 518,
+        "4": 472,
+        "2": 442,
+        "3": 435
+      },
+      "decisions": 2700,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "random_a5_progress": {
+      "counts": {
+        "2": 953,
+        "0": 806,
+        "3": 38,
+        "4": 447,
+        "1": 495
+      },
+      "decisions": 2739,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "last_a5_progress": {
+      "counts": {
+        "0": 860,
+        "1": 499,
+        "2": 367,
+        "4": 400,
+        "3": 568
+      },
+      "decisions": 2694,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "sup_a5_feedback": {
+      "counts": {
+        "2": 1044,
+        "0": 849,
+        "3": 369,
+        "4": 182,
+        "1": 276
+      },
+      "decisions": 2720,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "sup0_a5_feedback": {
+      "counts": {
+        "0": 1143,
+        "4": 585,
+        "2": 614,
+        "3": 282,
+        "1": 158
+      },
+      "decisions": 2782,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "ppo_a5_feedback": {
+      "counts": {
+        "2": 985,
+        "0": 834,
+        "3": 451,
+        "1": 308,
+        "4": 126
+      },
+      "decisions": 2704,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "warm_a5_feedback": {
+      "counts": {
+        "2": 1005,
+        "0": 840,
+        "3": 437,
+        "1": 274,
+        "4": 142
+      },
+      "decisions": 2698,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "random_a5_feedback": {
+      "counts": {
+        "2": 928,
+        "0": 776,
+        "3": 43,
+        "4": 430,
+        "1": 559
+      },
+      "decisions": 2736,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "last_a5_feedback": {
+      "counts": {
+        "2": 982,
+        "0": 837,
+        "3": 477,
+        "4": 119,
+        "1": 296
+      },
+      "decisions": 2711,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "sup_a15_progress": {
+      "counts": {
+        "12": 753,
+        "4": 203,
+        "11": 143,
+        "2": 91,
+        "8": 147,
+        "9": 395,
+        "10": 210,
+        "7": 52,
+        "14": 201,
+        "6": 44,
+        "0": 112,
+        "5": 108,
+        "1": 300,
+        "3": 65
+      },
+      "decisions": 2824,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "sup0_a15_progress": {
+      "counts": {
+        "11": 218,
+        "3": 689,
+        "8": 358,
+        "6": 122,
+        "2": 59,
+        "14": 40,
+        "4": 461,
+        "12": 57,
+        "7": 25,
+        "10": 434,
+        "0": 47,
+        "13": 77,
+        "1": 38,
+        "5": 54,
+        "9": 121
+      },
+      "decisions": 2800,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "ppo_a15_progress": {
+      "counts": {
+        "12": 967,
+        "8": 236,
+        "7": 84,
+        "9": 233,
+        "14": 296,
+        "0": 35,
+        "5": 114,
+        "1": 366,
+        "10": 278,
+        "4": 74,
+        "6": 41,
+        "11": 28,
+        "3": 43
+      },
+      "decisions": 2795,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "warm_a15_progress": {
+      "counts": {
+        "12": 823,
+        "8": 285,
+        "14": 342,
+        "7": 105,
+        "9": 238,
+        "0": 38,
+        "5": 110,
+        "1": 368,
+        "10": 289,
+        "4": 100,
+        "6": 51,
+        "11": 16,
+        "2": 2,
+        "3": 43
+      },
+      "decisions": 2810,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "random_a15_progress": {
+      "counts": {
+        "12": 929,
+        "4": 143,
+        "11": 98,
+        "2": 36,
+        "8": 201,
+        "9": 365,
+        "10": 18,
+        "7": 32,
+        "14": 5,
+        "6": 117,
+        "0": 219,
+        "3": 100,
+        "1": 325,
+        "5": 442
+      },
+      "decisions": 3030,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "last_a15_progress": {
+      "counts": {
+        "12": 988,
+        "8": 194,
+        "7": 81,
+        "9": 299,
+        "14": 281,
+        "0": 35,
+        "5": 116,
+        "1": 331,
+        "10": 272,
+        "4": 86,
+        "6": 45,
+        "11": 23,
+        "3": 58
+      },
+      "decisions": 2809,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "sup_a15_feedback": {
+      "counts": {
+        "12": 280,
+        "11": 207,
+        "2": 90,
+        "3": 460,
+        "9": 97,
+        "4": 273,
+        "7": 191,
+        "5": 28,
+        "14": 31,
+        "8": 305,
+        "10": 439,
+        "13": 126,
+        "0": 76,
+        "1": 134,
+        "6": 1
+      },
+      "decisions": 2738,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "sup0_a15_feedback": {
+      "counts": {
+        "11": 216,
+        "3": 613,
+        "2": 87,
+        "4": 444,
+        "8": 441,
+        "14": 44,
+        "7": 29,
+        "10": 471,
+        "12": 76,
+        "6": 124,
+        "0": 38,
+        "9": 136,
+        "13": 33,
+        "1": 46,
+        "5": 57
+      },
+      "decisions": 2855,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "ppo_a15_feedback": {
+      "counts": {
+        "12": 202,
+        "11": 279,
+        "4": 308,
+        "9": 123,
+        "5": 40,
+        "8": 254,
+        "7": 115,
+        "3": 430,
+        "14": 108,
+        "2": 79,
+        "0": 62,
+        "10": 492,
+        "1": 137,
+        "13": 192
+      },
+      "decisions": 2821,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "warm_a15_feedback": {
+      "counts": {
+        "12": 184,
+        "11": 257,
+        "4": 319,
+        "7": 116,
+        "9": 117,
+        "5": 46,
+        "8": 276,
+        "3": 440,
+        "14": 121,
+        "13": 195,
+        "0": 49,
+        "2": 80,
+        "10": 492,
+        "1": 129
+      },
+      "decisions": 2821,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "random_a15_feedback": {
+      "counts": {
+        "12": 916,
+        "4": 128,
+        "0": 239,
+        "11": 157,
+        "9": 291,
+        "2": 19,
+        "8": 178,
+        "10": 39,
+        "7": 28,
+        "14": 4,
+        "6": 123,
+        "3": 97,
+        "5": 355,
+        "1": 339,
+        "13": 2
+      },
+      "decisions": 2915,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "last_a15_feedback": {
+      "counts": {
+        "12": 195,
+        "11": 280,
+        "4": 285,
+        "9": 123,
+        "5": 40,
+        "8": 294,
+        "7": 115,
+        "3": 500,
+        "14": 80,
+        "2": 67,
+        "0": 58,
+        "10": 404,
+        "1": 137,
+        "13": 202
+      },
+      "decisions": 2780,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "fixed": {
+      "counts": {
+        "11": 855
+      },
+      "decisions": 855,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "global_lr": {
+      "counts": {
+        "4": 859
+      },
+      "decisions": 859,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    },
+    "schedule": {
+      "counts": {
+        "11": 855
+      },
+      "decisions": 855,
+      "note": "Descriptive decisions, not independent samples; histories with more updates contribute more decisions."
+    }
+  },
+  "note": "Supplementary paired comparisons on already locked data; nominal 95% intervals, not adjusted for these 24 exploratory comparisons. No model or test selection."
+}

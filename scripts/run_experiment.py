@@ -8,17 +8,17 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 VERSIONS = {"v1": "v1_expert_control", "v2": "v2_feedback_control", "v3": "v3_branching",
-            "v4": "v4_state_aggregation", "v5": "v5_calibration", "v6": "v6_learning_diagnostics", "v7": "v7_sequence_feedback"}
+            "v4": "v4_state_aggregation", "v5": "v5_calibration", "v6": "v6_learning_diagnostics", "v7": "v7_sequence_feedback", "v8": "v8_allocation_ppo"}
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("version", choices=VERSIONS)
     parser.add_argument("--out", type=Path)
-    parser.add_argument("--pilot", action="store_true", help="Small v3–v7 preflight.")
+    parser.add_argument("--pilot", action="store_true", help="Small v3–v8 preflight.")
     args = parser.parse_args()
-    if args.pilot and args.version not in {"v3", "v4", "v5", "v6", "v7"}:
-        parser.error("--pilot is available only for v3–v7")
+    if args.pilot and args.version not in {"v3", "v4", "v5", "v6", "v7", "v8"}:
+        parser.error("--pilot is available only for v3–v8")
     output = (args.out or ROOT / "runs" / f"{args.version}-{datetime.now():%Y%m%d-%H%M%S}").resolve()
     if output.exists():
         parser.error(f"Choose a new output directory: {output}")
@@ -28,8 +28,8 @@ def main():
     env = dict(os.environ)
     env.setdefault("MPLCONFIGDIR", str(ROOT / ".cache" / "matplotlib"))
     env.setdefault("XDG_CACHE_HOME", str(ROOT / ".cache"))
-    if args.version in {"v3", "v4", "v5", "v6", "v7"}:
-        entry = {"v3": "branching.py", "v4": "dagger.py", "v5": "calibrate.py", "v6": "diagnose.py", "v7": "run_sequence.py"}[args.version]
+    if args.version in {"v3", "v4", "v5", "v6", "v7", "v8"}:
+        entry = {"v3": "branching.py", "v4": "dagger.py", "v5": "calibrate.py", "v6": "diagnose.py", "v7": "run_sequence.py", "v8": "run_allocation.py"}[args.version]
         commands = [[entry, "--out", str(output)]]
         if args.pilot:
             commands[0] += ["--pilot"]
@@ -38,6 +38,12 @@ def main():
         commands.append(["analyze.py", "--run", str(output), "--out", str(output / "analysis")])
         if args.version == "v7":
             commands.append([str(ROOT / "scripts" / "analyze_sequence_diagnostics.py"), "--run", str(output)])
+        if args.version == "v8":
+            commands.append([str(ROOT / "scripts" / "audit_v8.py"), "--run", str(output)])
+            commands.append([str(ROOT / "scripts" / "audit_v8_collection.py"), "--run", str(output)])
+            commands.append([str(ROOT / "scripts" / "summarize_v8_training.py"), "--run", str(output)])
+            commands.append([str(ROOT / "scripts" / "plot_v8_comparisons.py"), "--run", str(output)])
+            commands.append([str(ROOT / "scripts" / "supplement_v8.py"), "--run", str(output)])
     else:
         commands = [["run_all.py", "--out", str(output)]]
     for command in commands:

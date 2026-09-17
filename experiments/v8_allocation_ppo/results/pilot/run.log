@@ -1,0 +1,43 @@
+{"stage": "collect", "frequency": "within", "roots": 4, "states": 33}
+{"stage": "collect", "frequency": "within", "roots": 8, "states": 75}
+baseline 0/202
+baseline 20/202
+baseline 40/202
+baseline 60/202
+baseline 80/202
+baseline 100/202
+baseline 120/202
+baseline 140/202
+baseline 160/202
+baseline 180/202
+baseline 200/202
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 881, "epoch": 0, "loss": 3.0303328037261963}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 881, "epoch": 50, "loss": 0.8372392058372498}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 881, "epoch": 100, "loss": 0.5072112083435059}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 1, "lagrange": 1.075, "failure": 0.25, "loss": 2.014338493347168, "actor_parameter_delta": 0.01537174079567194}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 2, "lagrange": 1.15, "failure": 0.25, "loss": 2.3802504539489746, "actor_parameter_delta": 0.012416284531354904}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 3, "lagrange": 1.2249999999999999, "failure": 0.25, "loss": 1.3005578517913818, "actor_parameter_delta": 0.01141816284507513}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 881, "epoch": 0, "loss": 3.0421366691589355}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 881, "epoch": 50, "loss": 0.7635473608970642}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 881, "epoch": 100, "loss": 0.43900954723358154}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 1, "lagrange": 1.075, "failure": 0.25, "loss": 1.6025954484939575, "actor_parameter_delta": 0.01534641906619072}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 2, "lagrange": 1.15, "failure": 0.25, "loss": 1.0408998727798462, "actor_parameter_delta": 0.009501749649643898}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 3, "lagrange": 1.2249999999999999, "failure": 0.25, "loss": 1.127946376800537, "actor_parameter_delta": 0.0077578164637088776}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 881, "epoch": 0, "loss": 3.2870657444000244}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 881, "epoch": 50, "loss": 0.8683923482894897}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 881, "epoch": 100, "loss": 0.5492638349533081}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 1, "lagrange": 1.075, "failure": 0.25, "loss": 0.9857738614082336, "actor_parameter_delta": 0.026671474799513817}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 2, "lagrange": 1.15, "failure": 0.25, "loss": 1.3221962451934814, "actor_parameter_delta": 0.019109036773443222}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 3, "lagrange": 1.2249999999999999, "failure": 0.25, "loss": 1.3874996900558472, "actor_parameter_delta": 0.016485627740621567}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 881, "epoch": 0, "loss": 3.2690463066101074}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 881, "epoch": 50, "loss": 0.7684007883071899}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 881, "epoch": 100, "loss": 0.47190171480178833}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 1, "lagrange": 1.075, "failure": 0.25, "loss": 0.8233099579811096, "actor_parameter_delta": 0.026629401370882988}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 2, "lagrange": 1.15, "failure": 0.25, "loss": 0.9621034264564514, "actor_parameter_delta": 0.019801268354058266}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 3, "lagrange": 1.1624999999999999, "failure": 0.125, "loss": 0.955905556678772, "actor_parameter_delta": 0.017167387530207634}
+LOCKED: creating final test worlds now
+test 4/8
+test 8/8
+Complete 62.8s
+Matplotlib is building the font cache; this may take a moment.
+Results: /Users/jianyuan/.codex/worktrees/11c2/moe-plasticity-control/runs/v8-pilot-final

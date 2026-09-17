@@ -1,0 +1,170 @@
+[
+  {
+    "batch": 1,
+    "lagrange": 0.95,
+    "failure": 0.0,
+    "loss": 0.29520219564437866,
+    "actor_parameter_delta": 0.026607312262058258
+  },
+  {
+    "batch": 2,
+    "lagrange": 0.9624999999999999,
+    "failure": 0.125,
+    "loss": 1.792749047279358,
+    "actor_parameter_delta": 0.01968948356807232
+  },
+  {
+    "batch": 3,
+    "lagrange": 0.9124999999999999,
+    "failure": 0.0,
+    "loss": 0.5054721236228943,
+    "actor_parameter_delta": 0.016323531046509743
+  },
+  {
+    "batch": 4,
+    "lagrange": 0.9249999999999998,
+    "failure": 0.125,
+    "loss": 0.6920121908187866,
+    "actor_parameter_delta": 0.01399222668260336
+  },
+  {
+    "batch": 5,
+    "lagrange": 0.9374999999999998,
+    "failure": 0.125,
+    "loss": 1.8054757118225098,
+    "actor_parameter_delta": 0.010028354823589325
+  },
+  {
+    "batch": 6,
+    "lagrange": 0.9499999999999997,
+    "failure": 0.125,
+    "loss": 0.6141920685768127,
+    "actor_parameter_delta": 0.008907006122171879
+  },
+  {
+    "batch": 7,
+    "lagrange": 0.9624999999999997,
+    "failure": 0.125,
+    "loss": 1.4048380851745605,
+    "actor_parameter_delta": 0.008313926868140697
+  },
+  {
+    "batch": 8,
+    "lagrange": 0.9124999999999996,
+    "failure": 0.0,
+    "loss": 0.739116907119751,
+    "actor_parameter_delta": 0.009569232352077961
+  },
+  {
+    "batch": 9,
+    "lagrange": 0.9249999999999996,
+    "failure": 0.125,
+    "loss": 1.06105375289917,
+    "actor_parameter_delta": 0.009413203224539757
+  },
+  {
+    "batch": 10,
+    "lagrange": 0.9999999999999996,
+    "failure": 0.25,
+    "loss": 2.887981653213501,
+    "actor_parameter_delta": 0.008599472232162952
+  },
+  {
+    "batch": 11,
+    "lagrange": 0.9499999999999995,
+    "failure": 0.0,
+    "loss": 0.39103519916534424,
+    "actor_parameter_delta": 0.010481661185622215
+  },
+  {
+    "batch": 12,
+    "lagrange": 0.9624999999999995,
+    "failure": 0.125,
+    "loss": 1.2892179489135742,
+    "actor_parameter_delta": 0.010686218738555908
+  },
+  {
+    "batch": 13,
+    "lagrange": 0.9749999999999994,
+    "failure": 0.125,
+    "loss": 1.2189327478408813,
+    "actor_parameter_delta": 0.007977891713380814
+  },
+  {
+    "batch": 14,
+    "lagrange": 0.9874999999999994,
+    "failure": 0.125,
+    "loss": 0.8048707842826843,
+    "actor_parameter_delta": 0.009192358702421188
+  },
+  {
+    "batch": 15,
+    "lagrange": 0.9999999999999993,
+    "failure": 0.125,
+    "loss": 1.4118123054504395,
+    "actor_parameter_delta": 0.012685447931289673
+  },
+  {
+    "batch": 16,
+    "lagrange": 1.0124999999999993,
+    "failure": 0.125,
+    "loss": 1.2202869653701782,
+    "actor_parameter_delta": 0.011539495550096035
+  },
+  {
+    "batch": 17,
+    "lagrange": 1.0249999999999992,
+    "failure": 0.125,
+    "loss": 0.9729135036468506,
+    "actor_parameter_delta": 0.009798871353268623
+  },
+  {
+    "batch": 18,
+    "lagrange": 1.0374999999999992,
+    "failure": 0.125,
+    "loss": 1.2697442770004272,
+    "actor_parameter_delta": 0.009520568884909153
+  },
+  {
+    "batch": 19,
+    "lagrange": 0.9874999999999992,
+    "failure": 0.0,
+    "loss": 0.29674217104911804,
+    "actor_parameter_delta": 0.010731199756264687
+  },
+  {
+    "batch": 20,
+    "lagrange": 0.9999999999999991,
+    "failure": 0.125,
+    "loss": 1.7628273963928223,
+    "actor_parameter_delta": 0.011961846612393856
+  },
+  {
+    "batch": 21,
+    "lagrange": 0.9499999999999991,
+    "failure": 0.0,
+    "loss": 0.21643447875976562,
+    "actor_parameter_delta": 0.013257251121103764
+  },
+  {
+    "batch": 22,
+    "lagrange": 0.899999999999999,
+    "failure": 0.0,
+    "loss": 0.8561766743659973,
+    "actor_parameter_delta": 0.013534232042729855
+  },
+  {
+    "batch": 23,
+    "lagrange": 0.974999999999999,
+    "failure": 0.25,
+    "loss": 0.5795155763626099,
+    "actor_parameter_delta": 0.013541084714233875
+  },
+  {
+    "batch": 24,
+    "lagrange": 1.112499999999999,
+    "failure": 0.375,
+    "loss": 1.9013328552246094,
+    "actor_parameter_delta": 0.011667762883007526
+  }
+]

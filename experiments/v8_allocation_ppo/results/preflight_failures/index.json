@@ -1,0 +1,34 @@
+{
+  "serialization": {
+    "costs": {
+      "data/within_cost.json": {
+        "branches": 1125,
+        "future_updates": 67873,
+        "future_work": 23079375.927536078
+      }
+    },
+    "test_worlds_generated": false,
+    "reason": "Output-only preflight error; source hashes retained in plan; partial files retained without interpreting incomplete diagnosis as a result."
+  },
+  "logging": {
+    "costs": {
+      "baseline_cost.json": {
+        "rollouts": 808,
+        "updates": 36134,
+        "work": 12853539.159420287
+      },
+      "models/sup_a5_progress_881/cost.json": {
+        "dev_rollouts": 36,
+        "work": 547573.8695652174,
+        "updates": 1535
+      },
+      "data/within_cost.json": {
+        "branches": 1125,
+        "future_updates": 67873,
+        "future_work": 23079375.927536078
+      }
+    },
+    "test_worlds_generated": false,
+    "reason": "Output-only preflight error; source hashes retained in plan; partial files retained without interpreting incomplete diagnosis as a result."
+  }
+}

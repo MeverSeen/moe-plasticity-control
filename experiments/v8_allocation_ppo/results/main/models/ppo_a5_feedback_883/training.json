@@ -1,0 +1,170 @@
+[
+  {
+    "batch": 1,
+    "lagrange": 1.075,
+    "failure": 0.25,
+    "loss": 2.5234830379486084,
+    "actor_parameter_delta": 0.01526596024632454
+  },
+  {
+    "batch": 2,
+    "lagrange": 1.15,
+    "failure": 0.25,
+    "loss": 1.678851842880249,
+    "actor_parameter_delta": 0.010989684611558914
+  },
+  {
+    "batch": 3,
+    "lagrange": 1.1624999999999999,
+    "failure": 0.125,
+    "loss": 0.9333627820014954,
+    "actor_parameter_delta": 0.010917083360254765
+  },
+  {
+    "batch": 4,
+    "lagrange": 1.2374999999999998,
+    "failure": 0.25,
+    "loss": 1.8709970712661743,
+    "actor_parameter_delta": 0.009382596239447594
+  },
+  {
+    "batch": 5,
+    "lagrange": 1.3124999999999998,
+    "failure": 0.25,
+    "loss": 1.3381129503250122,
+    "actor_parameter_delta": 0.0073200068436563015
+  },
+  {
+    "batch": 6,
+    "lagrange": 1.4499999999999997,
+    "failure": 0.375,
+    "loss": 3.5484349727630615,
+    "actor_parameter_delta": 0.006717854645103216
+  },
+  {
+    "batch": 7,
+    "lagrange": 1.3999999999999997,
+    "failure": 0.0,
+    "loss": 0.8985369801521301,
+    "actor_parameter_delta": 0.006341893691569567
+  },
+  {
+    "batch": 8,
+    "lagrange": 1.4124999999999996,
+    "failure": 0.125,
+    "loss": 1.203985571861267,
+    "actor_parameter_delta": 0.0072350697591900826
+  },
+  {
+    "batch": 9,
+    "lagrange": 1.4249999999999996,
+    "failure": 0.125,
+    "loss": 1.6934776306152344,
+    "actor_parameter_delta": 0.005819806829094887
+  },
+  {
+    "batch": 10,
+    "lagrange": 1.3749999999999996,
+    "failure": 0.0,
+    "loss": 1.542615294456482,
+    "actor_parameter_delta": 0.005768917966634035
+  },
+  {
+    "batch": 11,
+    "lagrange": 1.3874999999999995,
+    "failure": 0.125,
+    "loss": 2.8460865020751953,
+    "actor_parameter_delta": 0.006327416747808456
+  },
+  {
+    "batch": 12,
+    "lagrange": 1.3999999999999995,
+    "failure": 0.125,
+    "loss": 1.340074896812439,
+    "actor_parameter_delta": 0.006776765920221806
+  },
+  {
+    "batch": 13,
+    "lagrange": 1.3499999999999994,
+    "failure": 0.0,
+    "loss": 0.7556806206703186,
+    "actor_parameter_delta": 0.006827928591519594
+  },
+  {
+    "batch": 14,
+    "lagrange": 1.4249999999999994,
+    "failure": 0.25,
+    "loss": 0.9117000699043274,
+    "actor_parameter_delta": 0.007349393796175718
+  },
+  {
+    "batch": 15,
+    "lagrange": 1.4374999999999993,
+    "failure": 0.125,
+    "loss": 0.8790736794471741,
+    "actor_parameter_delta": 0.007359576411545277
+  },
+  {
+    "batch": 16,
+    "lagrange": 1.3874999999999993,
+    "failure": 0.0,
+    "loss": 0.7261908650398254,
+    "actor_parameter_delta": 0.00904839951545
+  },
+  {
+    "batch": 17,
+    "lagrange": 1.3374999999999992,
+    "failure": 0.0,
+    "loss": 0.4503658413887024,
+    "actor_parameter_delta": 0.00900553073734045
+  },
+  {
+    "batch": 18,
+    "lagrange": 1.4124999999999992,
+    "failure": 0.25,
+    "loss": 1.845613956451416,
+    "actor_parameter_delta": 0.007996805012226105
+  },
+  {
+    "batch": 19,
+    "lagrange": 1.3624999999999992,
+    "failure": 0.0,
+    "loss": 0.9208048582077026,
+    "actor_parameter_delta": 0.008049152791500092
+  },
+  {
+    "batch": 20,
+    "lagrange": 1.3124999999999991,
+    "failure": 0.0,
+    "loss": 0.4301539659500122,
+    "actor_parameter_delta": 0.010054369457066059
+  },
+  {
+    "batch": 21,
+    "lagrange": 1.387499999999999,
+    "failure": 0.25,
+    "loss": 1.464916467666626,
+    "actor_parameter_delta": 0.01019616425037384
+  },
+  {
+    "batch": 22,
+    "lagrange": 1.399999999999999,
+    "failure": 0.125,
+    "loss": 0.7873449921607971,
+    "actor_parameter_delta": 0.009723570197820663
+  },
+  {
+    "batch": 23,
+    "lagrange": 1.412499999999999,
+    "failure": 0.125,
+    "loss": 0.9725847244262695,
+    "actor_parameter_delta": 0.010057450272142887
+  },
+  {
+    "batch": 24,
+    "lagrange": 1.487499999999999,
+    "failure": 0.25,
+    "loss": 1.0019495487213135,
+    "actor_parameter_delta": 0.007544885389506817
+  }
+]

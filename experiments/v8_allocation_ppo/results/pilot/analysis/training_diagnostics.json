@@ -1,0 +1,396 @@
+{
+  "selections": {
+    "ppo_a15_feedback_881": {
+      "selected": {
+        "feedback": true,
+        "seed": 881,
+        "actions": 15,
+        "checkpoint": "warm0",
+        "dev": {
+          "reach": 1.0,
+          "forgetting": 0.006386128099014362,
+          "work": 14753.47826086956,
+          "steps": 41.25
+        }
+      },
+      "dev_candidates": 5,
+      "dev_feasible_candidates": 5,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "batch": 1,
+          "lagrange": 1.075,
+          "failure": 0.25,
+          "loss": 0.8233099579811096,
+          "actor_parameter_delta": 0.026629401370882988
+        },
+        {
+          "batch": 2,
+          "lagrange": 1.15,
+          "failure": 0.25,
+          "loss": 0.9621034264564514,
+          "actor_parameter_delta": 0.019801268354058266
+        },
+        {
+          "batch": 3,
+          "lagrange": 1.1624999999999999,
+          "failure": 0.125,
+          "loss": 0.955905556678772,
+          "actor_parameter_delta": 0.017167387530207634
+        }
+      ]
+    },
+    "ppo_a15_progress_881": {
+      "selected": {
+        "feedback": false,
+        "seed": 881,
+        "actions": 15,
+        "checkpoint": "warm0",
+        "dev": {
+          "reach": 1.0,
+          "forgetting": 0.004672241862863302,
+          "work": 17823.64130434782,
+          "steps": 50.5
+        }
+      },
+      "dev_candidates": 5,
+      "dev_feasible_candidates": 5,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "batch": 1,
+          "lagrange": 1.075,
+          "failure": 0.25,
+          "loss": 0.9857738614082336,
+          "actor_parameter_delta": 0.026671474799513817
+        },
+        {
+          "batch": 2,
+          "lagrange": 1.15,
+          "failure": 0.25,
+          "loss": 1.3221962451934814,
+          "actor_parameter_delta": 0.019109036773443222
+        },
+        {
+          "batch": 3,
+          "lagrange": 1.2249999999999999,
+          "failure": 0.25,
+          "loss": 1.3874996900558472,
+          "actor_parameter_delta": 0.016485627740621567
+        }
+      ]
+    },
+    "ppo_a5_feedback_881": {
+      "selected": {
+        "feedback": true,
+        "seed": 881,
+        "actions": 5,
+        "checkpoint": "warm0",
+        "dev": {
+          "reach": 1.0,
+          "forgetting": 0.00727573207889994,
+          "work": 15750.365942028984,
+          "steps": 44.25
+        }
+      },
+      "dev_candidates": 5,
+      "dev_feasible_candidates": 5,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "batch": 1,
+          "lagrange": 1.075,
+          "failure": 0.25,
+          "loss": 1.6025954484939575,
+          "actor_parameter_delta": 0.01534641906619072
+        },
+        {
+          "batch": 2,
+          "lagrange": 1.15,
+          "failure": 0.25,
+          "loss": 1.0408998727798462,
+          "actor_parameter_delta": 0.009501749649643898
+        },
+        {
+          "batch": 3,
+          "lagrange": 1.2249999999999999,
+          "failure": 0.25,
+          "loss": 1.127946376800537,
+          "actor_parameter_delta": 0.0077578164637088776
+        }
+      ]
+    },
+    "ppo_a5_progress_881": {
+      "selected": {
+        "feedback": false,
+        "seed": 881,
+        "actions": 5,
+        "checkpoint": "warm0",
+        "dev": {
+          "reach": 1.0,
+          "forgetting": 0.009771405253559351,
+          "work": 14753.728260869564,
+          "steps": 41.25
+        }
+      },
+      "dev_candidates": 5,
+      "dev_feasible_candidates": 5,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "batch": 1,
+          "lagrange": 1.075,
+          "failure": 0.25,
+          "loss": 2.014338493347168,
+          "actor_parameter_delta": 0.01537174079567194
+        },
+        {
+          "batch": 2,
+          "lagrange": 1.15,
+          "failure": 0.25,
+          "loss": 2.3802504539489746,
+          "actor_parameter_delta": 0.012416284531354904
+        },
+        {
+          "batch": 3,
+          "lagrange": 1.2249999999999999,
+          "failure": 0.25,
+          "loss": 1.3005578517913818,
+          "actor_parameter_delta": 0.01141816284507513
+        }
+      ]
+    },
+    "sup_a15_feedback_881": {
+      "selected": {
+        "feedback": true,
+        "seed": 881,
+        "epoch": 100,
+        "frequency": "within",
+        "actions": 15,
+        "slack": 0.0,
+        "dev": {
+          "reach": 1.0,
+          "forgetting": 0.004895010497421026,
+          "work": 13320.452898550724,
+          "steps": 37.0
+        }
+      },
+      "dev_candidates": 9,
+      "dev_feasible_candidates": 7,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "epoch": 0,
+          "training_loss": 3.2690463066101074
+        },
+        {
+          "epoch": 50,
+          "training_loss": 0.7684007883071899
+        },
+        {
+          "epoch": 100,
+          "training_loss": 0.47190171480178833
+        }
+      ]
+    },
+    "sup_a15_progress_881": {
+      "selected": {
+        "feedback": false,
+        "seed": 881,
+        "epoch": 50,
+        "frequency": "within",
+        "actions": 15,
+        "slack": 0.1,
+        "dev": {
+          "reach": 1.0,
+          "forgetting": 0.006164396336923043,
+          "work": 16426.7536231884,
+          "steps": 46.25
+        }
+      },
+      "dev_candidates": 9,
+      "dev_feasible_candidates": 8,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "epoch": 0,
+          "training_loss": 3.2870657444000244
+        },
+        {
+          "epoch": 50,
+          "training_loss": 0.8683923482894897
+        },
+        {
+          "epoch": 100,
+          "training_loss": 0.5492638349533081
+        }
+      ]
+    },
+    "sup_a5_feedback_881": {
+      "selected": {
+        "feedback": true,
+        "seed": 881,
+        "epoch": 0,
+        "frequency": "within",
+        "actions": 5,
+        "slack": 0.0,
+        "dev": {
+          "reach": 1.0,
+          "forgetting": 0.007440062084545692,
+          "work": 15750.365942028984,
+          "steps": 44.25
+        }
+      },
+      "dev_candidates": 9,
+      "dev_feasible_candidates": 9,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "epoch": 0,
+          "training_loss": 3.0421366691589355
+        },
+        {
+          "epoch": 50,
+          "training_loss": 0.7635473608970642
+        },
+        {
+          "epoch": 100,
+          "training_loss": 0.43900954723358154
+        }
+      ]
+    },
+    "sup_a5_progress_881": {
+      "selected": {
+        "feedback": false,
+        "seed": 881,
+        "epoch": 50,
+        "frequency": "within",
+        "actions": 5,
+        "slack": 1.0,
+        "dev": {
+          "reach": 1.0,
+          "forgetting": 0.007724369410425425,
+          "work": 15590.365942028984,
+          "steps": 43.75
+        }
+      },
+      "dev_candidates": 9,
+      "dev_feasible_candidates": 9,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "epoch": 0,
+          "training_loss": 3.0303328037261963
+        },
+        {
+          "epoch": 50,
+          "training_loss": 0.8372392058372498
+        },
+        {
+          "epoch": 100,
+          "training_loss": 0.5072112083435059
+        }
+      ]
+    }
+  },
+  "offline_cost": {
+    "branch_queries": 1125,
+    "branch_updates": 67873,
+    "branch_work": 23079375.927536078,
+    "dev_rollouts": 224,
+    "dev_updates": 9868,
+    "dev_work": 3513113.666666666,
+    "ppo_episodes": 96,
+    "ppo_updates": 6719,
+    "ppo_work": 2340860.1449275366,
+    "scorer_optimizer_steps": 400,
+    "distillation_optimizer_steps": 200,
+    "ppo_optimizer_steps": 48,
+    "extra_action_queries": 750,
+    "old5_equivalent_queries": 375,
+    "baseline_dev_rollouts": 808,
+    "baseline_dev_updates": 36134,
+    "baseline_dev_work": 12853539.159420287,
+    "old5_branch_updates": 22642,
+    "extra10_branch_updates": 45231,
+    "shared_pretraining_updates": 10250,
+    "collection_behavior_updates": 1125,
+    "collection_behavior_work": 391930.36231884063,
+    "additional_collection_audit_updates": 5375
+  },
+  "action_diagnosis_by_stage": {
+    "0": {
+      "states": 26,
+      "new_action_improvements": 8,
+      "best_action_counts": [
+        17,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        3,
+        0,
+        0,
+        1
+      ],
+      "all_actions_fail": 10,
+      "best_fixed_matches_improved_state_best": 3,
+      "reach_improvements": 0
+    },
+    "1": {
+      "states": 29,
+      "new_action_improvements": 18,
+      "best_action_counts": [
+        10,
+        0,
+        0,
+        1,
+        0,
+        6,
+        3,
+        1,
+        1,
+        3,
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      "all_actions_fail": 10,
+      "best_fixed_matches_improved_state_best": 3,
+      "reach_improvements": 0
+    },
+    "2": {
+      "states": 20,
+      "new_action_improvements": 11,
+      "best_action_counts": [
+        8,
+        0,
+        1,
+        0,
+        0,
+        2,
+        3,
+        2,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "all_actions_fail": 8,
+      "best_fixed_matches_improved_state_best": 0,
+      "reach_improvements": 0
+    }
+  },
+  "interpretation": "Descriptive only; p_min=.9 is development point feasibility, not a certified population probability. Branch labels condition on fixed continuation; best-action counts are not online gains."
+}

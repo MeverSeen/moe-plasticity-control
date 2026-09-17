@@ -1,0 +1,170 @@
+[
+  {
+    "batch": 1,
+    "lagrange": 0.95,
+    "failure": 0.0,
+    "loss": 0.0829450860619545,
+    "actor_parameter_delta": 0.015363666228950024
+  },
+  {
+    "batch": 2,
+    "lagrange": 0.9624999999999999,
+    "failure": 0.125,
+    "loss": 3.411851167678833,
+    "actor_parameter_delta": 0.012793819420039654
+  },
+  {
+    "batch": 3,
+    "lagrange": 0.9124999999999999,
+    "failure": 0.0,
+    "loss": 0.2546917498111725,
+    "actor_parameter_delta": 0.008743278682231903
+  },
+  {
+    "batch": 4,
+    "lagrange": 0.9249999999999998,
+    "failure": 0.125,
+    "loss": 0.47210147976875305,
+    "actor_parameter_delta": 0.008026699535548687
+  },
+  {
+    "batch": 5,
+    "lagrange": 0.9374999999999998,
+    "failure": 0.125,
+    "loss": 1.2147836685180664,
+    "actor_parameter_delta": 0.007556450087577105
+  },
+  {
+    "batch": 6,
+    "lagrange": 0.9499999999999997,
+    "failure": 0.125,
+    "loss": 0.4753039479255676,
+    "actor_parameter_delta": 0.007019697222858667
+  },
+  {
+    "batch": 7,
+    "lagrange": 0.9624999999999997,
+    "failure": 0.125,
+    "loss": 3.0152242183685303,
+    "actor_parameter_delta": 0.008001575246453285
+  },
+  {
+    "batch": 8,
+    "lagrange": 0.9124999999999996,
+    "failure": 0.0,
+    "loss": 0.3923843801021576,
+    "actor_parameter_delta": 0.007743269670754671
+  },
+  {
+    "batch": 9,
+    "lagrange": 0.9249999999999996,
+    "failure": 0.125,
+    "loss": 0.5656235218048096,
+    "actor_parameter_delta": 0.007542862091213465
+  },
+  {
+    "batch": 10,
+    "lagrange": 0.9999999999999996,
+    "failure": 0.25,
+    "loss": 0.7512152791023254,
+    "actor_parameter_delta": 0.006485413294285536
+  },
+  {
+    "batch": 11,
+    "lagrange": 0.9499999999999995,
+    "failure": 0.0,
+    "loss": 0.5015894174575806,
+    "actor_parameter_delta": 0.009227581322193146
+  },
+  {
+    "batch": 12,
+    "lagrange": 0.9624999999999995,
+    "failure": 0.125,
+    "loss": 0.676325261592865,
+    "actor_parameter_delta": 0.008443912491202354
+  },
+  {
+    "batch": 13,
+    "lagrange": 0.9749999999999994,
+    "failure": 0.125,
+    "loss": 2.7780699729919434,
+    "actor_parameter_delta": 0.005813357885926962
+  },
+  {
+    "batch": 14,
+    "lagrange": 0.9874999999999994,
+    "failure": 0.125,
+    "loss": 0.435984343290329,
+    "actor_parameter_delta": 0.004618505947291851
+  },
+  {
+    "batch": 15,
+    "lagrange": 0.9999999999999993,
+    "failure": 0.125,
+    "loss": 2.3636348247528076,
+    "actor_parameter_delta": 0.005535508506000042
+  },
+  {
+    "batch": 16,
+    "lagrange": 1.0124999999999993,
+    "failure": 0.125,
+    "loss": 3.857654333114624,
+    "actor_parameter_delta": 0.005470657721161842
+  },
+  {
+    "batch": 17,
+    "lagrange": 1.0249999999999992,
+    "failure": 0.125,
+    "loss": 2.9067625999450684,
+    "actor_parameter_delta": 0.005119822919368744
+  },
+  {
+    "batch": 18,
+    "lagrange": 1.0374999999999992,
+    "failure": 0.125,
+    "loss": 2.5388543605804443,
+    "actor_parameter_delta": 0.0043406616896390915
+  },
+  {
+    "batch": 19,
+    "lagrange": 0.9874999999999992,
+    "failure": 0.0,
+    "loss": 0.2620041072368622,
+    "actor_parameter_delta": 0.007888175547122955
+  },
+  {
+    "batch": 20,
+    "lagrange": 0.9999999999999991,
+    "failure": 0.125,
+    "loss": 0.5759601593017578,
+    "actor_parameter_delta": 0.007936517708003521
+  },
+  {
+    "batch": 21,
+    "lagrange": 0.9499999999999991,
+    "failure": 0.0,
+    "loss": 0.14027146995067596,
+    "actor_parameter_delta": 0.00705913919955492
+  },
+  {
+    "batch": 22,
+    "lagrange": 0.899999999999999,
+    "failure": 0.0,
+    "loss": 0.27236270904541016,
+    "actor_parameter_delta": 0.007818793877959251
+  },
+  {
+    "batch": 23,
+    "lagrange": 0.974999999999999,
+    "failure": 0.25,
+    "loss": 0.8164989352226257,
+    "actor_parameter_delta": 0.006601148284971714
+  },
+  {
+    "batch": 24,
+    "lagrange": 1.112499999999999,
+    "failure": 0.375,
+    "loss": 3.225531816482544,
+    "actor_parameter_delta": 0.00520566338673234
+  }
+]

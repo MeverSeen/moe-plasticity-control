@@ -1,0 +1,32 @@
+{"stage": "collect", "frequency": "within", "roots": 4, "states": 33}
+{"stage": "collect", "frequency": "within", "roots": 8, "states": 75}
+baseline 0/202
+baseline 20/202
+baseline 40/202
+baseline 60/202
+baseline 80/202
+baseline 100/202
+baseline 120/202
+baseline 140/202
+baseline 160/202
+baseline 180/202
+baseline 200/202
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 881, "epoch": 0, "loss": 3.0303328037261963}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 881, "epoch": 50, "loss": 0.8372392058372498}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 881, "epoch": 100, "loss": 0.5072112083435059}
+Traceback (most recent call last):
+  File "/Users/jianyuan/.codex/worktrees/11c2/moe-plasticity-control/experiments/v8_allocation_ppo/run_allocation.py", line 123, in <module>
+    if __name__=='__main__': main()
+  File "/Users/jianyuan/.codex/worktrees/11c2/moe-plasticity-control/experiments/v8_allocation_ppo/run_allocation.py", line 103, in main
+    ppo.fit(pfolder,folder/'selected.pt',subset,train,dev,config,seed,protocol['ppo_batches'],args.pilot)
+  File "/Users/jianyuan/.codex/worktrees/11c2/moe-plasticity-control/experiments/v8_allocation_ppo/ppo.py", line 108, in fit
+    print(json.dumps(dict(stage='ppo',seed=seed,batch=batch,actions=ckpt['actions'],feedback=ckpt['feedback'],**curve[-1])),flush=True)
+TypeError: dict() got multiple values for keyword argument 'batch'
+Traceback (most recent call last):
+  File "/Users/jianyuan/.codex/worktrees/11c2/moe-plasticity-control/scripts/run_experiment.py", line 49, in <module>
+    main()
+  File "/Users/jianyuan/.codex/worktrees/11c2/moe-plasticity-control/scripts/run_experiment.py", line 44, in main
+    subprocess.run([sys.executable, *command], cwd=folder, env=env, check=True)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Library/Developer/CommandLineTools/usr/bin/python3', 'run_allocation.py', '--out', '/Users/jianyuan/.codex/worktrees/11c2/moe-plasticity-control/runs/v8-pilot-checked', '--pilot']' returned non-zero exit status 1.

@@ -1,0 +1,162 @@
+{
+  "states": 534,
+  "new_actions_strictly_improve": 227,
+  "best_action_counts": [
+    276,
+    20,
+    6,
+    3,
+    2,
+    68,
+    30,
+    18,
+    10,
+    12,
+    33,
+    19,
+    16,
+    11,
+    10
+  ],
+  "mean_equal_reach_forgetting_gain": 0.0003887830947639135,
+  "fixed_action_values": [
+    {
+      "action": 0,
+      "metrics": {
+        "reach": 0.6704119850187266,
+        "forgetting": 0.007245547044935533,
+        "work": 35995.42269174401,
+        "steps": 104.67322097378278
+      }
+    },
+    {
+      "action": 1,
+      "metrics": {
+        "reach": 0.6750936329588015,
+        "forgetting": 0.0071361869413421155,
+        "work": 35509.29955761819,
+        "steps": 103.21722846441948
+      }
+    },
+    {
+      "action": 2,
+      "metrics": {
+        "reach": 0.6732209737827716,
+        "forgetting": 0.008334376440350247,
+        "work": 35684.95926287793,
+        "steps": 103.74250936329588
+      }
+    },
+    {
+      "action": 3,
+      "metrics": {
+        "reach": 0.6704119850187266,
+        "forgetting": 0.010349943485541106,
+        "work": 36081.97883080931,
+        "steps": 104.9250936329588
+      }
+    },
+    {
+      "action": 4,
+      "metrics": {
+        "reach": 0.6629213483146067,
+        "forgetting": 0.012989746230845593,
+        "work": 36706.19623568365,
+        "steps": 106.7940074906367
+      }
+    },
+    {
+      "action": 5,
+      "metrics": {
+        "reach": 0.6657303370786517,
+        "forgetting": 0.007054589163517231,
+        "work": 36635.98144981816,
+        "steps": 106.58426966292134
+      }
+    },
+    {
+      "action": 6,
+      "metrics": {
+        "reach": 0.6676029962546817,
+        "forgetting": 0.007013488468609998,
+        "work": 36068.16617814687,
+        "steps": 104.88951310861424
+      }
+    },
+    {
+      "action": 7,
+      "metrics": {
+        "reach": 0.6685393258426966,
+        "forgetting": 0.008226083918978102,
+        "work": 36277.448461162676,
+        "steps": 105.5121722846442
+      }
+    },
+    {
+      "action": 8,
+      "metrics": {
+        "reach": 0.6676029962546817,
+        "forgetting": 0.010383296899006376,
+        "work": 36624.90742550073,
+        "steps": 106.55430711610487
+      }
+    },
+    {
+      "action": 9,
+      "metrics": {
+        "reach": 0.6573033707865169,
+        "forgetting": 0.013160016195333836,
+        "work": 37297.064525321606,
+        "steps": 108.56179775280899
+      }
+    },
+    {
+      "action": 10,
+      "metrics": {
+        "reach": 0.6722846441947565,
+        "forgetting": 0.007521897846678949,
+        "work": 35703.44741627313,
+        "steps": 103.80149812734082
+      }
+    },
+    {
+      "action": 11,
+      "metrics": {
+        "reach": 0.6788389513108615,
+        "forgetting": 0.007358592969162025,
+        "work": 35266.22569614069,
+        "steps": 102.49250936329588
+      }
+    },
+    {
+      "action": 12,
+      "metrics": {
+        "reach": 0.6760299625468165,
+        "forgetting": 0.008470742119646468,
+        "work": 35470.84512565814,
+        "steps": 103.10205992509363
+      }
+    },
+    {
+      "action": 13,
+      "metrics": {
+        "reach": 0.6750936329588015,
+        "forgetting": 0.010373903129299757,
+        "work": 35769.16403408782,
+        "steps": 103.9934456928839
+      }
+    },
+    {
+      "action": 14,
+      "metrics": {
+        "reach": 0.6666666666666666,
+        "forgetting": 0.012939443004279214,
+        "work": 36428.379227053134,
+        "steps": 105.96441947565543
+      }
+    }
+  ],
+  "best_single_action": 11,
+  "best_single_action_matches_state_best": 250,
+  "interpretation": "Empirical training-state value under common (0,1) continuation; descriptive, not global oracle. Fixed action here is first intervention only; full-trajectory fixed baselines are separately tuned."
+}

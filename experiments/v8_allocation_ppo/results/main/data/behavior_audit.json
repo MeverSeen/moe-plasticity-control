@@ -1,0 +1,777 @@
+{
+  "verified_states": 534,
+  "rollouts": 128,
+  "updates": 7309,
+  "work": 2569291.898550727,
+  "rows": [
+    {
+      "root": 810000,
+      "behavior": "middle",
+      "steps": 134,
+      "work": 45900.98550724637
+    },
+    {
+      "root": 810000,
+      "behavior": "random",
+      "steps": 137,
+      "work": 46860.98550724636
+    },
+    {
+      "root": 810001,
+      "behavior": "middle",
+      "steps": 7,
+      "work": 3355.8260869565215
+    },
+    {
+      "root": 810001,
+      "behavior": "random",
+      "steps": 7,
+      "work": 3355.8260869565215
+    },
+    {
+      "root": 810002,
+      "behavior": "middle",
+      "steps": 0,
+      "work": 894.0
+    },
+    {
+      "root": 810002,
+      "behavior": "random",
+      "steps": 0,
+      "work": 894.0
+    },
+    {
+      "root": 810003,
+      "behavior": "middle",
+      "steps": 79,
+      "work": 27494.956521739125
+    },
+    {
+      "root": 810003,
+      "behavior": "random",
+      "steps": 91,
+      "work": 31481.507246376805
+    },
+    {
+      "root": 810004,
+      "behavior": "middle",
+      "steps": 78,
+      "work": 27028.405797101444
+    },
+    {
+      "root": 810004,
+      "behavior": "random",
+      "steps": 76,
+      "work": 26388.405797101444
+    },
+    {
+      "root": 810005,
+      "behavior": "middle",
+      "steps": 0,
+      "work": 894.0
+    },
+    {
+      "root": 810005,
+      "behavior": "random",
+      "steps": 0,
+      "work": 894.0
+    },
+    {
+      "root": 810006,
+      "behavior": "middle",
+      "steps": 80,
+      "work": 27814.956521739125
+    },
+    {
+      "root": 810006,
+      "behavior": "random",
+      "steps": 81,
+      "work": 28134.956521739125
+    },
+    {
+      "root": 810007,
+      "behavior": "middle",
+      "steps": 8,
+      "work": 3675.8260869565215
+    },
+    {
+      "root": 810007,
+      "behavior": "random",
+      "steps": 7,
+      "work": 3355.8260869565215
+    },
+    {
+      "root": 810008,
+      "behavior": "middle",
+      "steps": 31,
+      "work": 11319.927536231884
+    },
+    {
+      "root": 810008,
+      "behavior": "random",
+      "steps": 31,
+      "work": 11392.202898550724
+    },
+    {
+      "root": 810009,
+      "behavior": "middle",
+      "steps": 37,
+      "work": 13322.202898550724
+    },
+    {
+      "root": 810009,
+      "behavior": "random",
+      "steps": 37,
+      "work": 13322.202898550724
+    },
+    {
+      "root": 810010,
+      "behavior": "middle",
+      "steps": 142,
+      "work": 48460.98550724636
+    },
+    {
+      "root": 810010,
+      "behavior": "random",
+      "steps": 142,
+      "work": 48460.98550724636
+    },
+    {
+      "root": 810011,
+      "behavior": "middle",
+      "steps": 1,
+      "work": 1286.2753623188405
+    },
+    {
+      "root": 810011,
+      "behavior": "random",
+      "steps": 1,
+      "work": 1286.2753623188405
+    },
+    {
+      "root": 810012,
+      "behavior": "middle",
+      "steps": 107,
+      "work": 36821.33333333333
+    },
+    {
+      "root": 810012,
+      "behavior": "random",
+      "steps": 112,
+      "work": 38421.33333333332
+    },
+    {
+      "root": 810013,
+      "behavior": "middle",
+      "steps": 0,
+      "work": 896.0
+    },
+    {
+      "root": 810013,
+      "behavior": "random",
+      "steps": 0,
+      "work": 896.0
+    },
+    {
+      "root": 810014,
+      "behavior": "middle",
+      "steps": 1,
+      "work": 1286.2753623188405
+    },
+    {
+      "root": 810014,
+      "behavior": "random",
+      "steps": 1,
+      "work": 1286.2753623188405
+    },
+    {
+      "root": 810015,
+      "behavior": "middle",
+      "steps": 51,
+      "work": 18022.028985507244
+    },
+    {
+      "root": 810015,
+      "behavior": "random",
+      "steps": 52,
+      "work": 18342.028985507244
+    },
+    {
+      "root": 810016,
+      "behavior": "middle",
+      "steps": 2,
+      "work": 1609.2753623188405
+    },
+    {
+      "root": 810016,
+      "behavior": "random",
+      "steps": 2,
+      "work": 1609.2753623188405
+    },
+    {
+      "root": 810017,
+      "behavior": "middle",
+      "steps": 10,
+      "work": 4238.550724637681
+    },
+    {
+      "root": 810017,
+      "behavior": "random",
+      "steps": 10,
+      "work": 4238.550724637681
+    },
+    {
+      "root": 810018,
+      "behavior": "middle",
+      "steps": 60,
+      "work": 21121.855072463764
+    },
+    {
+      "root": 810018,
+      "behavior": "random",
+      "steps": 62,
+      "work": 21761.855072463764
+    },
+    {
+      "root": 810019,
+      "behavior": "middle",
+      "steps": 26,
+      "work": 9655.652173913044
+    },
+    {
+      "root": 810019,
+      "behavior": "random",
+      "steps": 27,
+      "work": 10048.927536231884
+    },
+    {
+      "root": 810020,
+      "behavior": "middle",
+      "steps": 8,
+      "work": 3598.550724637681
+    },
+    {
+      "root": 810020,
+      "behavior": "random",
+      "steps": 8,
+      "work": 3598.550724637681
+    },
+    {
+      "root": 810021,
+      "behavior": "middle",
+      "steps": 191,
+      "work": 64873.73913043476
+    },
+    {
+      "root": 810021,
+      "behavior": "random",
+      "steps": 191,
+      "work": 64873.73913043476
+    },
+    {
+      "root": 810022,
+      "behavior": "middle",
+      "steps": 80,
+      "work": 27741.681159420285
+    },
+    {
+      "root": 810022,
+      "behavior": "random",
+      "steps": 102,
+      "work": 35074.78260869564
+    },
+    {
+      "root": 810023,
+      "behavior": "middle",
+      "steps": 3,
+      "work": 1926.2753623188405
+    },
+    {
+      "root": 810023,
+      "behavior": "random",
+      "steps": 3,
+      "work": 1926.2753623188405
+    },
+    {
+      "root": 810024,
+      "behavior": "middle",
+      "steps": 90,
+      "work": 31161.507246376805
+    },
+    {
+      "root": 810024,
+      "behavior": "random",
+      "steps": 96,
+      "work": 33081.5072463768
+    },
+    {
+      "root": 810025,
+      "behavior": "middle",
+      "steps": 27,
+      "work": 9975.652173913044
+    },
+    {
+      "root": 810025,
+      "behavior": "random",
+      "steps": 27,
+      "work": 9975.652173913044
+    },
+    {
+      "root": 810026,
+      "behavior": "middle",
+      "steps": 13,
+      "work": 5343.101449275363
+    },
+    {
+      "root": 810026,
+      "behavior": "random",
+      "steps": 12,
+      "work": 5023.101449275363
+    },
+    {
+      "root": 810027,
+      "behavior": "middle",
+      "steps": 113,
+      "work": 38814.60869565216
+    },
+    {
+      "root": 810027,
+      "behavior": "random",
+      "steps": 111,
+      "work": 38174.60869565216
+    },
+    {
+      "root": 810028,
+      "behavior": "middle",
+      "steps": 7,
+      "work": 3282.550724637681
+    },
+    {
+      "root": 810028,
+      "behavior": "random",
+      "steps": 7,
+      "work": 3282.550724637681
+    },
+    {
+      "root": 810029,
+      "behavior": "middle",
+      "steps": 25,
+      "work": 9327.652173913044
+    },
+    {
+      "root": 810029,
+      "behavior": "random",
+      "steps": 28,
+      "work": 10359.927536231884
+    },
+    {
+      "root": 810030,
+      "behavior": "middle",
+      "steps": 54,
+      "work": 19055.304347826084
+    },
+    {
+      "root": 810030,
+      "behavior": "random",
+      "steps": 53,
+      "work": 18735.304347826084
+    },
+    {
+      "root": 810031,
+      "behavior": "middle",
+      "steps": 29,
+      "work": 10688.927536231884
+    },
+    {
+      "root": 810031,
+      "behavior": "random",
+      "steps": 30,
+      "work": 11082.202898550724
+    },
+    {
+      "root": 810032,
+      "behavior": "middle",
+      "steps": 0,
+      "work": 894.0
+    },
+    {
+      "root": 810032,
+      "behavior": "random",
+      "steps": 0,
+      "work": 894.0
+    },
+    {
+      "root": 810033,
+      "behavior": "middle",
+      "steps": 77,
+      "work": 26781.681159420285
+    },
+    {
+      "root": 810033,
+      "behavior": "random",
+      "steps": 75,
+      "work": 26141.681159420285
+    },
+    {
+      "root": 810034,
+      "behavior": "middle",
+      "steps": 42,
+      "work": 15068.753623188404
+    },
+    {
+      "root": 810034,
+      "behavior": "random",
+      "steps": 41,
+      "work": 14748.753623188404
+    },
+    {
+      "root": 810035,
+      "behavior": "middle",
+      "steps": 0,
+      "work": 894.0
+    },
+    {
+      "root": 810035,
+      "behavior": "random",
+      "steps": 0,
+      "work": 894.0
+    },
+    {
+      "root": 810036,
+      "behavior": "middle",
+      "steps": 196,
+      "work": 66547.0144927536
+    },
+    {
+      "root": 810036,
+      "behavior": "random",
+      "steps": 213,
+      "work": 72206.84057971014
+    },
+    {
+      "root": 810037,
+      "behavior": "middle",
+      "steps": 66,
+      "work": 23041.855072463764
+    },
+    {
+      "root": 810037,
+      "behavior": "random",
+      "steps": 71,
+      "work": 24788.405797101444
+    },
+    {
+      "root": 810038,
+      "behavior": "middle",
+      "steps": 1,
+      "work": 1286.2753623188405
+    },
+    {
+      "root": 810038,
+      "behavior": "random",
+      "steps": 1,
+      "work": 1286.2753623188405
+    },
+    {
+      "root": 810039,
+      "behavior": "middle",
+      "steps": 125,
+      "work": 42801.15942028984
+    },
+    {
+      "root": 810039,
+      "behavior": "random",
+      "steps": 138,
+      "work": 47107.71014492752
+    },
+    {
+      "root": 810040,
+      "behavior": "middle",
+      "steps": 214,
+      "work": 72526.84057971014
+    },
+    {
+      "root": 810040,
+      "behavior": "random",
+      "steps": 212,
+      "work": 71886.84057971014
+    },
+    {
+      "root": 810041,
+      "behavior": "middle",
+      "steps": 25,
+      "work": 9327.652173913044
+    },
+    {
+      "root": 810041,
+      "behavior": "random",
+      "steps": 27,
+      "work": 9967.652173913044
+    },
+    {
+      "root": 810042,
+      "behavior": "middle",
+      "steps": 25,
+      "work": 9335.652173913044
+    },
+    {
+      "root": 810042,
+      "behavior": "random",
+      "steps": 26,
+      "work": 9655.652173913044
+    },
+    {
+      "root": 810043,
+      "behavior": "middle",
+      "steps": 95,
+      "work": 32761.507246376805
+    },
+    {
+      "root": 810043,
+      "behavior": "random",
+      "steps": 105,
+      "work": 36108.05797101448
+    },
+    {
+      "root": 810044,
+      "behavior": "middle",
+      "steps": 0,
+      "work": 894.0
+    },
+    {
+      "root": 810044,
+      "behavior": "random",
+      "steps": 0,
+      "work": 894.0
+    },
+    {
+      "root": 810045,
+      "behavior": "middle",
+      "steps": 170,
+      "work": 57860.6376811594
+    },
+    {
+      "root": 810045,
+      "behavior": "random",
+      "steps": 173,
+      "work": 58820.6376811594
+    },
+    {
+      "root": 810046,
+      "behavior": "middle",
+      "steps": 31,
+      "work": 11328.927536231884
+    },
+    {
+      "root": 810046,
+      "behavior": "random",
+      "steps": 31,
+      "work": 11328.927536231884
+    },
+    {
+      "root": 810047,
+      "behavior": "middle",
+      "steps": 63,
+      "work": 21993.579710144924
+    },
+    {
+      "root": 810047,
+      "behavior": "random",
+      "steps": 65,
+      "work": 22705.855072463764
+    },
+    {
+      "root": 810048,
+      "behavior": "middle",
+      "steps": 78,
+      "work": 27101.681159420285
+    },
+    {
+      "root": 810048,
+      "behavior": "random",
+      "steps": 78,
+      "work": 27101.681159420285
+    },
+    {
+      "root": 810049,
+      "behavior": "middle",
+      "steps": 104,
+      "work": 35788.05797101448
+    },
+    {
+      "root": 810049,
+      "behavior": "random",
+      "steps": 110,
+      "work": 37781.33333333333
+    },
+    {
+      "root": 810050,
+      "behavior": "middle",
+      "steps": 0,
+      "work": 894.0
+    },
+    {
+      "root": 810050,
+      "behavior": "random",
+      "steps": 0,
+      "work": 894.0
+    },
+    {
+      "root": 810051,
+      "behavior": "middle",
+      "steps": 82,
+      "work": 28454.956521739125
+    },
+    {
+      "root": 810051,
+      "behavior": "random",
+      "steps": 82,
+      "work": 28454.956521739125
+    },
+    {
+      "root": 810052,
+      "behavior": "middle",
+      "steps": 35,
+      "work": 12755.478260869564
+    },
+    {
+      "root": 810052,
+      "behavior": "random",
+      "steps": 39,
+      "work": 14035.478260869564
+    },
+    {
+      "root": 810053,
+      "behavior": "middle",
+      "steps": 43,
+      "work": 15304.478260869564
+    },
+    {
+      "root": 810053,
+      "behavior": "random",
+      "steps": 43,
+      "work": 15376.753623188404
+    },
+    {
+      "root": 810054,
+      "behavior": "middle",
+      "steps": 21,
+      "work": 7982.376811594204
+    },
+    {
+      "root": 810054,
+      "behavior": "random",
+      "steps": 22,
+      "work": 8302.376811594204
+    },
+    {
+      "root": 810055,
+      "behavior": "middle",
+      "steps": 0,
+      "work": 896.0
+    },
+    {
+      "root": 810055,
+      "behavior": "random",
+      "steps": 0,
+      "work": 896.0
+    },
+    {
+      "root": 810056,
+      "behavior": "middle",
+      "steps": 72,
+      "work": 25090.405797101444
+    },
+    {
+      "root": 810056,
+      "behavior": "random",
+      "steps": 73,
+      "work": 25482.681159420285
+    },
+    {
+      "root": 810057,
+      "behavior": "middle",
+      "steps": 114,
+      "work": 39061.33333333332
+    },
+    {
+      "root": 810057,
+      "behavior": "random",
+      "steps": 114,
+      "work": 39061.33333333332
+    },
+    {
+      "root": 810058,
+      "behavior": "middle",
+      "steps": 50,
+      "work": 17702.028985507244
+    },
+    {
+      "root": 810058,
+      "behavior": "random",
+      "steps": 52,
+      "work": 18415.304347826084
+    },
+    {
+      "root": 810059,
+      "behavior": "middle",
+      "steps": 95,
+      "work": 32739.507246376805
+    },
+    {
+      "root": 810059,
+      "behavior": "random",
+      "steps": 104,
+      "work": 35764.05797101449
+    },
+    {
+      "root": 810060,
+      "behavior": "middle",
+      "steps": 118,
+      "work": 40561.15942028984
+    },
+    {
+      "root": 810060,
+      "behavior": "random",
+      "steps": 124,
+      "work": 42554.43478260868
+    },
+    {
+      "root": 810061,
+      "behavior": "middle",
+      "steps": 48,
+      "work": 17062.028985507244
+    },
+    {
+      "root": 810061,
+      "behavior": "random",
+      "steps": 48,
+      "work": 16988.753623188404
+    },
+    {
+      "root": 810062,
+      "behavior": "middle",
+      "steps": 1,
+      "work": 1286.2753623188405
+    },
+    {
+      "root": 810062,
+      "behavior": "random",
+      "steps": 1,
+      "work": 1286.2753623188405
+    },
+    {
+      "root": 810063,
+      "behavior": "middle",
+      "steps": 107,
+      "work": 36821.33333333332
+    },
+    {
+      "root": 810063,
+      "behavior": "random",
+      "steps": 105,
+      "work": 36108.05797101448
+    }
+  ],
+  "note": "Exact deterministic reconstruction of original collection behaviors, without counterfactual branches. Audit re-execution adds this same behavior work plus repeated train-root pretraining; reported separately from main runtime."
+}

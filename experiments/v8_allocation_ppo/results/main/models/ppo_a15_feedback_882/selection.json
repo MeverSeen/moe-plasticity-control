@@ -1,0 +1,12 @@
+{
+  "feedback": true,
+  "seed": 882,
+  "actions": 15,
+  "checkpoint": "warm0",
+  "dev": {
+    "reach": 0.9166666666666666,
+    "forgetting": 0.012376665617480421,
+    "work": 18318.51026570048,
+    "steps": 51.916666666666664
+  }
+}

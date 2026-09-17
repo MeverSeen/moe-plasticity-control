@@ -1,0 +1,170 @@
+[
+  {
+    "batch": 1,
+    "lagrange": 1.0125,
+    "failure": 0.125,
+    "loss": 0.9461826682090759,
+    "actor_parameter_delta": 0.02665437012910843
+  },
+  {
+    "batch": 2,
+    "lagrange": 0.9624999999999999,
+    "failure": 0.0,
+    "loss": 0.5485517978668213,
+    "actor_parameter_delta": 0.01927107386291027
+  },
+  {
+    "batch": 3,
+    "lagrange": 1.0374999999999999,
+    "failure": 0.25,
+    "loss": 0.9491878151893616,
+    "actor_parameter_delta": 0.016542108729481697
+  },
+  {
+    "batch": 4,
+    "lagrange": 1.1124999999999998,
+    "failure": 0.25,
+    "loss": 1.1160671710968018,
+    "actor_parameter_delta": 0.015494738705456257
+  },
+  {
+    "batch": 5,
+    "lagrange": 1.1874999999999998,
+    "failure": 0.25,
+    "loss": 1.372377872467041,
+    "actor_parameter_delta": 0.014259414747357368
+  },
+  {
+    "batch": 6,
+    "lagrange": 1.1999999999999997,
+    "failure": 0.125,
+    "loss": 3.404813766479492,
+    "actor_parameter_delta": 0.010779300704598427
+  },
+  {
+    "batch": 7,
+    "lagrange": 1.2749999999999997,
+    "failure": 0.25,
+    "loss": 1.8881844282150269,
+    "actor_parameter_delta": 0.010419536381959915
+  },
+  {
+    "batch": 8,
+    "lagrange": 1.2249999999999996,
+    "failure": 0.0,
+    "loss": 0.7551203370094299,
+    "actor_parameter_delta": 0.010337818413972855
+  },
+  {
+    "batch": 9,
+    "lagrange": 1.2374999999999996,
+    "failure": 0.125,
+    "loss": 0.5081877708435059,
+    "actor_parameter_delta": 0.01146657019853592
+  },
+  {
+    "batch": 10,
+    "lagrange": 1.1874999999999996,
+    "failure": 0.0,
+    "loss": 1.5242081880569458,
+    "actor_parameter_delta": 0.011454811319708824
+  },
+  {
+    "batch": 11,
+    "lagrange": 1.1999999999999995,
+    "failure": 0.125,
+    "loss": 1.8997472524642944,
+    "actor_parameter_delta": 0.009518247097730637
+  },
+  {
+    "batch": 12,
+    "lagrange": 1.1499999999999995,
+    "failure": 0.0,
+    "loss": 0.6246526837348938,
+    "actor_parameter_delta": 0.011444758623838425
+  },
+  {
+    "batch": 13,
+    "lagrange": 1.0999999999999994,
+    "failure": 0.0,
+    "loss": 1.6326014995574951,
+    "actor_parameter_delta": 0.01318549457937479
+  },
+  {
+    "batch": 14,
+    "lagrange": 1.0499999999999994,
+    "failure": 0.0,
+    "loss": 1.5419741868972778,
+    "actor_parameter_delta": 0.010863673873245716
+  },
+  {
+    "batch": 15,
+    "lagrange": 0.9999999999999993,
+    "failure": 0.0,
+    "loss": 0.4423331022262573,
+    "actor_parameter_delta": 0.010612252168357372
+  },
+  {
+    "batch": 16,
+    "lagrange": 1.0124999999999993,
+    "failure": 0.125,
+    "loss": 3.7759461402893066,
+    "actor_parameter_delta": 0.010788852348923683
+  },
+  {
+    "batch": 17,
+    "lagrange": 1.0249999999999992,
+    "failure": 0.125,
+    "loss": 0.610913097858429,
+    "actor_parameter_delta": 0.010417066514492035
+  },
+  {
+    "batch": 18,
+    "lagrange": 1.0374999999999992,
+    "failure": 0.125,
+    "loss": 0.5779086351394653,
+    "actor_parameter_delta": 0.01161972340196371
+  },
+  {
+    "batch": 19,
+    "lagrange": 1.1124999999999992,
+    "failure": 0.25,
+    "loss": 2.8945508003234863,
+    "actor_parameter_delta": 0.012625214643776417
+  },
+  {
+    "batch": 20,
+    "lagrange": 1.1249999999999991,
+    "failure": 0.125,
+    "loss": 0.8541115522384644,
+    "actor_parameter_delta": 0.010726184584200382
+  },
+  {
+    "batch": 21,
+    "lagrange": 1.262499999999999,
+    "failure": 0.375,
+    "loss": 1.852952480316162,
+    "actor_parameter_delta": 0.010292348451912403
+  },
+  {
+    "batch": 22,
+    "lagrange": 1.274999999999999,
+    "failure": 0.125,
+    "loss": 1.2073198556900024,
+    "actor_parameter_delta": 0.012247534468770027
+  },
+  {
+    "batch": 23,
+    "lagrange": 1.349999999999999,
+    "failure": 0.25,
+    "loss": 1.0698857307434082,
+    "actor_parameter_delta": 0.012815949507057667
+  },
+  {
+    "batch": 24,
+    "lagrange": 1.299999999999999,
+    "failure": 0.0,
+    "loss": 1.512300968170166,
+    "actor_parameter_delta": 0.012566410936415195
+  }
+]

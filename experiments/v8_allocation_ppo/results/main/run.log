@@ -1,0 +1,396 @@
+{"stage": "collect", "frequency": "within", "roots": 4, "states": 38}
+{"stage": "collect", "frequency": "within", "roots": 8, "states": 66}
+{"stage": "collect", "frequency": "within", "roots": 12, "states": 98}
+{"stage": "collect", "frequency": "within", "roots": 16, "states": 124}
+{"stage": "collect", "frequency": "within", "roots": 20, "states": 149}
+{"stage": "collect", "frequency": "within", "roots": 24, "states": 181}
+{"stage": "collect", "frequency": "within", "roots": 28, "states": 218}
+{"stage": "collect", "frequency": "within", "roots": 32, "states": 246}
+{"stage": "collect", "frequency": "within", "roots": 36, "states": 268}
+{"stage": "collect", "frequency": "within", "roots": 40, "states": 311}
+{"stage": "collect", "frequency": "within", "roots": 44, "states": 354}
+{"stage": "collect", "frequency": "within", "roots": 48, "states": 387}
+{"stage": "collect", "frequency": "within", "roots": 52, "states": 423}
+{"stage": "collect", "frequency": "within", "roots": 56, "states": 447}
+{"stage": "collect", "frequency": "within", "roots": 60, "states": 496}
+{"stage": "collect", "frequency": "within", "roots": 64, "states": 534}
+baseline 0/202
+baseline 20/202
+baseline 40/202
+baseline 60/202
+baseline 80/202
+baseline 100/202
+baseline 120/202
+baseline 140/202
+baseline 160/202
+baseline 180/202
+baseline 200/202
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 881, "epoch": 0, "loss": 1.9817763566970825}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 881, "epoch": 150, "loss": 0.674531102180481}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 881, "epoch": 450, "loss": 0.19513104856014252}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 1, "lagrange": 1.0125, "failure": 0.125, "loss": 0.5364601016044617, "actor_parameter_delta": 0.01537839975208044}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 2, "lagrange": 0.9624999999999999, "failure": 0.0, "loss": 0.33451783657073975, "actor_parameter_delta": 0.009563599713146687}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 3, "lagrange": 0.9749999999999999, "failure": 0.125, "loss": 0.8421801328659058, "actor_parameter_delta": 0.006506143603473902}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 4, "lagrange": 0.9874999999999998, "failure": 0.125, "loss": 0.7453786134719849, "actor_parameter_delta": 0.0068621085956692696}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 5, "lagrange": 1.0624999999999998, "failure": 0.25, "loss": 0.611721932888031, "actor_parameter_delta": 0.006841986905783415}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 6, "lagrange": 1.1374999999999997, "failure": 0.25, "loss": 1.2914947271347046, "actor_parameter_delta": 0.006503731943666935}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 7, "lagrange": 1.1499999999999997, "failure": 0.125, "loss": 0.653246283531189, "actor_parameter_delta": 0.0068527450785040855}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 8, "lagrange": 1.0999999999999996, "failure": 0.0, "loss": 0.24849213659763336, "actor_parameter_delta": 0.006738812662661076}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 9, "lagrange": 1.0499999999999996, "failure": 0.0, "loss": 0.1946835070848465, "actor_parameter_delta": 0.008948616683483124}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 10, "lagrange": 0.9999999999999996, "failure": 0.0, "loss": 0.2316320538520813, "actor_parameter_delta": 0.008879098109900951}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 11, "lagrange": 1.0749999999999995, "failure": 0.25, "loss": 0.8538277745246887, "actor_parameter_delta": 0.007083647884428501}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 12, "lagrange": 1.0249999999999995, "failure": 0.0, "loss": 0.14618323743343353, "actor_parameter_delta": 0.007414913736283779}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 13, "lagrange": 0.9749999999999994, "failure": 0.0, "loss": 0.35165169835090637, "actor_parameter_delta": 0.0069819604977965355}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 14, "lagrange": 0.9249999999999994, "failure": 0.0, "loss": 0.5989753603935242, "actor_parameter_delta": 0.006394832395017147}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 15, "lagrange": 0.8749999999999993, "failure": 0.0, "loss": 0.18382734060287476, "actor_parameter_delta": 0.007888363674283028}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 16, "lagrange": 0.8874999999999993, "failure": 0.125, "loss": 0.8504951596260071, "actor_parameter_delta": 0.007922178134322166}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 17, "lagrange": 0.8374999999999992, "failure": 0.0, "loss": 0.21330277621746063, "actor_parameter_delta": 0.007162746973335743}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 18, "lagrange": 0.8499999999999992, "failure": 0.125, "loss": 0.7670022249221802, "actor_parameter_delta": 0.006545979529619217}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 19, "lagrange": 0.9249999999999992, "failure": 0.25, "loss": 1.2209008932113647, "actor_parameter_delta": 0.0048751854337751865}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 20, "lagrange": 0.8749999999999991, "failure": 0.0, "loss": 0.057087719440460205, "actor_parameter_delta": 0.005541753955185413}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 21, "lagrange": 0.9499999999999991, "failure": 0.25, "loss": 0.7359758615493774, "actor_parameter_delta": 0.00547832390293479}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 22, "lagrange": 0.962499999999999, "failure": 0.125, "loss": 1.7239516973495483, "actor_parameter_delta": 0.004127399064600468}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 23, "lagrange": 0.974999999999999, "failure": 0.125, "loss": 0.8699254393577576, "actor_parameter_delta": 0.003137331921607256}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": false, "batch": 24, "lagrange": 0.9249999999999989, "failure": 0.0, "loss": 0.6003901958465576, "actor_parameter_delta": 0.005454033613204956}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 882, "epoch": 0, "loss": 1.8981177806854248}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 882, "epoch": 150, "loss": 0.6634994745254517}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 882, "epoch": 450, "loss": 0.17792648077011108}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 1, "lagrange": 0.95, "failure": 0.0, "loss": 0.09746720641851425, "actor_parameter_delta": 0.01534359436482191}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 2, "lagrange": 0.9624999999999999, "failure": 0.125, "loss": 3.2111291885375977, "actor_parameter_delta": 0.010475513525307178}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 3, "lagrange": 0.9124999999999999, "failure": 0.0, "loss": 0.24941211938858032, "actor_parameter_delta": 0.007834672927856445}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 4, "lagrange": 0.9249999999999998, "failure": 0.125, "loss": 0.47695469856262207, "actor_parameter_delta": 0.008117848075926304}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 5, "lagrange": 0.9374999999999998, "failure": 0.125, "loss": 1.1772615909576416, "actor_parameter_delta": 0.00816082488745451}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 6, "lagrange": 0.9499999999999997, "failure": 0.125, "loss": 0.46994656324386597, "actor_parameter_delta": 0.0070817917585372925}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 7, "lagrange": 0.9624999999999997, "failure": 0.125, "loss": 5.651945114135742, "actor_parameter_delta": 0.006212894339114428}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 8, "lagrange": 0.9124999999999996, "failure": 0.0, "loss": 0.47933435440063477, "actor_parameter_delta": 0.00549666304141283}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 9, "lagrange": 0.9249999999999996, "failure": 0.125, "loss": 0.45070943236351013, "actor_parameter_delta": 0.004635450895875692}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 10, "lagrange": 0.9999999999999996, "failure": 0.25, "loss": 1.0246702432632446, "actor_parameter_delta": 0.0040739066898822784}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 11, "lagrange": 0.9499999999999995, "failure": 0.0, "loss": 0.285452663898468, "actor_parameter_delta": 0.006200443021953106}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 12, "lagrange": 0.9624999999999995, "failure": 0.125, "loss": 1.0102475881576538, "actor_parameter_delta": 0.007500816136598587}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 13, "lagrange": 0.9749999999999994, "failure": 0.125, "loss": 3.96561861038208, "actor_parameter_delta": 0.006336381193250418}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 14, "lagrange": 0.9874999999999994, "failure": 0.125, "loss": 0.4368979036808014, "actor_parameter_delta": 0.005570085719227791}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 15, "lagrange": 0.9999999999999993, "failure": 0.125, "loss": 2.30265474319458, "actor_parameter_delta": 0.004816742613911629}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 16, "lagrange": 1.0124999999999993, "failure": 0.125, "loss": 3.9799673557281494, "actor_parameter_delta": 0.0030975474510341883}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 17, "lagrange": 1.0249999999999992, "failure": 0.125, "loss": 2.2469065189361572, "actor_parameter_delta": 0.0040352120995521545}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 18, "lagrange": 1.0374999999999992, "failure": 0.125, "loss": 2.900074005126953, "actor_parameter_delta": 0.006795723922550678}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 19, "lagrange": 0.9874999999999992, "failure": 0.0, "loss": 0.21378588676452637, "actor_parameter_delta": 0.006418202072381973}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 20, "lagrange": 0.9999999999999991, "failure": 0.125, "loss": 0.32507187128067017, "actor_parameter_delta": 0.005932030733674765}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 21, "lagrange": 0.9499999999999991, "failure": 0.0, "loss": 0.15843337774276733, "actor_parameter_delta": 0.004547016229480505}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 22, "lagrange": 0.899999999999999, "failure": 0.0, "loss": 0.17401935160160065, "actor_parameter_delta": 0.005353621207177639}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 23, "lagrange": 0.974999999999999, "failure": 0.25, "loss": 0.5936147570610046, "actor_parameter_delta": 0.007752322591841221}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": false, "batch": 24, "lagrange": 1.112499999999999, "failure": 0.375, "loss": 2.7095000743865967, "actor_parameter_delta": 0.006398343946784735}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 883, "epoch": 0, "loss": 2.1478805541992188}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 883, "epoch": 150, "loss": 0.6778193116188049}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 883, "epoch": 450, "loss": 0.2234123945236206}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 1, "lagrange": 1.075, "failure": 0.25, "loss": 2.114135980606079, "actor_parameter_delta": 0.015216464176774025}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 2, "lagrange": 1.15, "failure": 0.25, "loss": 1.287935495376587, "actor_parameter_delta": 0.010985747911036015}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 3, "lagrange": 1.1624999999999999, "failure": 0.125, "loss": 0.7614574432373047, "actor_parameter_delta": 0.00992201454937458}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 4, "lagrange": 1.2374999999999998, "failure": 0.25, "loss": 1.951826572418213, "actor_parameter_delta": 0.009027117863297462}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 5, "lagrange": 1.3124999999999998, "failure": 0.25, "loss": 0.8823612332344055, "actor_parameter_delta": 0.009300884790718555}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 6, "lagrange": 1.4499999999999997, "failure": 0.375, "loss": 1.2710150480270386, "actor_parameter_delta": 0.00967828743159771}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 7, "lagrange": 1.3999999999999997, "failure": 0.0, "loss": 2.053468942642212, "actor_parameter_delta": 0.007584224920719862}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 8, "lagrange": 1.4124999999999996, "failure": 0.125, "loss": 1.2412440776824951, "actor_parameter_delta": 0.00788515992462635}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 9, "lagrange": 1.4249999999999996, "failure": 0.125, "loss": 1.9118584394454956, "actor_parameter_delta": 0.008573835715651512}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 10, "lagrange": 1.3749999999999996, "failure": 0.0, "loss": 2.820518970489502, "actor_parameter_delta": 0.00879676453769207}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 11, "lagrange": 1.3874999999999995, "failure": 0.125, "loss": 1.4491517543792725, "actor_parameter_delta": 0.007987282238900661}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 12, "lagrange": 1.3999999999999995, "failure": 0.125, "loss": 1.533008337020874, "actor_parameter_delta": 0.008819248527288437}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 13, "lagrange": 1.3499999999999994, "failure": 0.0, "loss": 0.4694632887840271, "actor_parameter_delta": 0.009013469330966473}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 14, "lagrange": 1.4249999999999994, "failure": 0.25, "loss": 0.876971960067749, "actor_parameter_delta": 0.006631758995354176}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 15, "lagrange": 1.4374999999999993, "failure": 0.125, "loss": 0.678851306438446, "actor_parameter_delta": 0.005543165374547243}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 16, "lagrange": 1.3874999999999993, "failure": 0.0, "loss": 0.6214126944541931, "actor_parameter_delta": 0.006529800593852997}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 17, "lagrange": 1.3374999999999992, "failure": 0.0, "loss": 1.2866393327713013, "actor_parameter_delta": 0.0072174821980297565}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 18, "lagrange": 1.4124999999999992, "failure": 0.25, "loss": 1.7224154472351074, "actor_parameter_delta": 0.006836066488176584}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 19, "lagrange": 1.3624999999999992, "failure": 0.0, "loss": 1.2760459184646606, "actor_parameter_delta": 0.006234709173440933}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 20, "lagrange": 1.3124999999999991, "failure": 0.0, "loss": 0.811367928981781, "actor_parameter_delta": 0.010107822716236115}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 21, "lagrange": 1.387499999999999, "failure": 0.25, "loss": 1.4046543836593628, "actor_parameter_delta": 0.009075555019080639}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 22, "lagrange": 1.399999999999999, "failure": 0.125, "loss": 1.2026199102401733, "actor_parameter_delta": 0.00731686083599925}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 23, "lagrange": 1.412499999999999, "failure": 0.125, "loss": 1.1420574188232422, "actor_parameter_delta": 0.007838593795895576}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": false, "batch": 24, "lagrange": 1.487499999999999, "failure": 0.25, "loss": 1.3363897800445557, "actor_parameter_delta": 0.007043279241770506}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 881, "epoch": 0, "loss": 1.9823085069656372}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 881, "epoch": 150, "loss": 0.5659830570220947}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 881, "epoch": 450, "loss": 0.18589277565479279}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 1, "lagrange": 1.0125, "failure": 0.125, "loss": 0.38445207476615906, "actor_parameter_delta": 0.015432446263730526}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 2, "lagrange": 0.9624999999999999, "failure": 0.0, "loss": 0.3798104226589203, "actor_parameter_delta": 0.013567150570452213}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 3, "lagrange": 0.9749999999999999, "failure": 0.125, "loss": 0.46654370427131653, "actor_parameter_delta": 0.012103459797799587}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 4, "lagrange": 0.9874999999999998, "failure": 0.125, "loss": 0.5796031951904297, "actor_parameter_delta": 0.009464574046432972}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 5, "lagrange": 1.0624999999999998, "failure": 0.25, "loss": 0.4447426497936249, "actor_parameter_delta": 0.00808663573116064}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 6, "lagrange": 1.1374999999999997, "failure": 0.25, "loss": 1.8630690574645996, "actor_parameter_delta": 0.0073878285475075245}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 7, "lagrange": 1.1499999999999997, "failure": 0.125, "loss": 0.7899748086929321, "actor_parameter_delta": 0.0064180269837379456}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 8, "lagrange": 1.0999999999999996, "failure": 0.0, "loss": 0.4308885335922241, "actor_parameter_delta": 0.006530412007123232}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 9, "lagrange": 1.0499999999999996, "failure": 0.0, "loss": 0.27015504240989685, "actor_parameter_delta": 0.006625564768910408}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 10, "lagrange": 0.9999999999999996, "failure": 0.0, "loss": 0.23226451873779297, "actor_parameter_delta": 0.005943995900452137}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 11, "lagrange": 1.0749999999999995, "failure": 0.25, "loss": 1.4002976417541504, "actor_parameter_delta": 0.006254894193261862}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 12, "lagrange": 1.0249999999999995, "failure": 0.0, "loss": 0.35096076130867004, "actor_parameter_delta": 0.007678013760596514}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 13, "lagrange": 0.9749999999999994, "failure": 0.0, "loss": 0.34657981991767883, "actor_parameter_delta": 0.007828544825315475}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 14, "lagrange": 0.9249999999999994, "failure": 0.0, "loss": 0.8160756230354309, "actor_parameter_delta": 0.00761483795940876}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 15, "lagrange": 0.8749999999999993, "failure": 0.0, "loss": 0.18880903720855713, "actor_parameter_delta": 0.0066149793565273285}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 16, "lagrange": 0.8874999999999993, "failure": 0.125, "loss": 1.3593231439590454, "actor_parameter_delta": 0.005643340293318033}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 17, "lagrange": 0.8374999999999992, "failure": 0.0, "loss": 0.13582468032836914, "actor_parameter_delta": 0.009090171195566654}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 18, "lagrange": 0.8499999999999992, "failure": 0.125, "loss": 0.36345145106315613, "actor_parameter_delta": 0.008303423412144184}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 19, "lagrange": 0.9249999999999992, "failure": 0.25, "loss": 1.759670615196228, "actor_parameter_delta": 0.0059446003288030624}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 20, "lagrange": 0.8749999999999991, "failure": 0.0, "loss": 0.13875988125801086, "actor_parameter_delta": 0.005707149859517813}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 21, "lagrange": 0.9499999999999991, "failure": 0.25, "loss": 0.7708211541175842, "actor_parameter_delta": 0.005485943052917719}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 22, "lagrange": 0.962499999999999, "failure": 0.125, "loss": 1.0067166090011597, "actor_parameter_delta": 0.006870699115097523}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 23, "lagrange": 0.974999999999999, "failure": 0.125, "loss": 1.5071182250976562, "actor_parameter_delta": 0.00951186753809452}
+{"stage": "ppo", "seed": 881, "actions": 5, "feedback": true, "batch": 24, "lagrange": 0.9249999999999989, "failure": 0.0, "loss": 0.9608606100082397, "actor_parameter_delta": 0.009675526060163975}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 882, "epoch": 0, "loss": 1.8943828344345093}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 882, "epoch": 150, "loss": 0.5502780675888062}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 882, "epoch": 450, "loss": 0.1465739905834198}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 1, "lagrange": 0.95, "failure": 0.0, "loss": 0.0829450860619545, "actor_parameter_delta": 0.015363666228950024}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 2, "lagrange": 0.9624999999999999, "failure": 0.125, "loss": 3.411851167678833, "actor_parameter_delta": 0.012793819420039654}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 3, "lagrange": 0.9124999999999999, "failure": 0.0, "loss": 0.2546917498111725, "actor_parameter_delta": 0.008743278682231903}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 4, "lagrange": 0.9249999999999998, "failure": 0.125, "loss": 0.47210147976875305, "actor_parameter_delta": 0.008026699535548687}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 5, "lagrange": 0.9374999999999998, "failure": 0.125, "loss": 1.2147836685180664, "actor_parameter_delta": 0.007556450087577105}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 6, "lagrange": 0.9499999999999997, "failure": 0.125, "loss": 0.4753039479255676, "actor_parameter_delta": 0.007019697222858667}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 7, "lagrange": 0.9624999999999997, "failure": 0.125, "loss": 3.0152242183685303, "actor_parameter_delta": 0.008001575246453285}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 8, "lagrange": 0.9124999999999996, "failure": 0.0, "loss": 0.3923843801021576, "actor_parameter_delta": 0.007743269670754671}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 9, "lagrange": 0.9249999999999996, "failure": 0.125, "loss": 0.5656235218048096, "actor_parameter_delta": 0.007542862091213465}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 10, "lagrange": 0.9999999999999996, "failure": 0.25, "loss": 0.7512152791023254, "actor_parameter_delta": 0.006485413294285536}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 11, "lagrange": 0.9499999999999995, "failure": 0.0, "loss": 0.5015894174575806, "actor_parameter_delta": 0.009227581322193146}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 12, "lagrange": 0.9624999999999995, "failure": 0.125, "loss": 0.676325261592865, "actor_parameter_delta": 0.008443912491202354}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 13, "lagrange": 0.9749999999999994, "failure": 0.125, "loss": 2.7780699729919434, "actor_parameter_delta": 0.005813357885926962}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 14, "lagrange": 0.9874999999999994, "failure": 0.125, "loss": 0.435984343290329, "actor_parameter_delta": 0.004618505947291851}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 15, "lagrange": 0.9999999999999993, "failure": 0.125, "loss": 2.3636348247528076, "actor_parameter_delta": 0.005535508506000042}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 16, "lagrange": 1.0124999999999993, "failure": 0.125, "loss": 3.857654333114624, "actor_parameter_delta": 0.005470657721161842}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 17, "lagrange": 1.0249999999999992, "failure": 0.125, "loss": 2.9067625999450684, "actor_parameter_delta": 0.005119822919368744}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 18, "lagrange": 1.0374999999999992, "failure": 0.125, "loss": 2.5388543605804443, "actor_parameter_delta": 0.0043406616896390915}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 19, "lagrange": 0.9874999999999992, "failure": 0.0, "loss": 0.2620041072368622, "actor_parameter_delta": 0.007888175547122955}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 20, "lagrange": 0.9999999999999991, "failure": 0.125, "loss": 0.5759601593017578, "actor_parameter_delta": 0.007936517708003521}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 21, "lagrange": 0.9499999999999991, "failure": 0.0, "loss": 0.14027146995067596, "actor_parameter_delta": 0.00705913919955492}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 22, "lagrange": 0.899999999999999, "failure": 0.0, "loss": 0.27236270904541016, "actor_parameter_delta": 0.007818793877959251}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 23, "lagrange": 0.974999999999999, "failure": 0.25, "loss": 0.8164989352226257, "actor_parameter_delta": 0.006601148284971714}
+{"stage": "ppo", "seed": 882, "actions": 5, "feedback": true, "batch": 24, "lagrange": 1.112499999999999, "failure": 0.375, "loss": 3.225531816482544, "actor_parameter_delta": 0.00520566338673234}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 883, "epoch": 0, "loss": 2.1559436321258545}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 883, "epoch": 150, "loss": 0.5720279216766357}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 883, "epoch": 450, "loss": 0.18386249244213104}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 1, "lagrange": 1.075, "failure": 0.25, "loss": 2.5234830379486084, "actor_parameter_delta": 0.01526596024632454}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 2, "lagrange": 1.15, "failure": 0.25, "loss": 1.678851842880249, "actor_parameter_delta": 0.010989684611558914}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 3, "lagrange": 1.1624999999999999, "failure": 0.125, "loss": 0.9333627820014954, "actor_parameter_delta": 0.010917083360254765}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 4, "lagrange": 1.2374999999999998, "failure": 0.25, "loss": 1.8709970712661743, "actor_parameter_delta": 0.009382596239447594}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 5, "lagrange": 1.3124999999999998, "failure": 0.25, "loss": 1.3381129503250122, "actor_parameter_delta": 0.0073200068436563015}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 6, "lagrange": 1.4499999999999997, "failure": 0.375, "loss": 3.5484349727630615, "actor_parameter_delta": 0.006717854645103216}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 7, "lagrange": 1.3999999999999997, "failure": 0.0, "loss": 0.8985369801521301, "actor_parameter_delta": 0.006341893691569567}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 8, "lagrange": 1.4124999999999996, "failure": 0.125, "loss": 1.203985571861267, "actor_parameter_delta": 0.0072350697591900826}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 9, "lagrange": 1.4249999999999996, "failure": 0.125, "loss": 1.6934776306152344, "actor_parameter_delta": 0.005819806829094887}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 10, "lagrange": 1.3749999999999996, "failure": 0.0, "loss": 1.542615294456482, "actor_parameter_delta": 0.005768917966634035}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 11, "lagrange": 1.3874999999999995, "failure": 0.125, "loss": 2.8460865020751953, "actor_parameter_delta": 0.006327416747808456}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 12, "lagrange": 1.3999999999999995, "failure": 0.125, "loss": 1.340074896812439, "actor_parameter_delta": 0.006776765920221806}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 13, "lagrange": 1.3499999999999994, "failure": 0.0, "loss": 0.7556806206703186, "actor_parameter_delta": 0.006827928591519594}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 14, "lagrange": 1.4249999999999994, "failure": 0.25, "loss": 0.9117000699043274, "actor_parameter_delta": 0.007349393796175718}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 15, "lagrange": 1.4374999999999993, "failure": 0.125, "loss": 0.8790736794471741, "actor_parameter_delta": 0.007359576411545277}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 16, "lagrange": 1.3874999999999993, "failure": 0.0, "loss": 0.7261908650398254, "actor_parameter_delta": 0.00904839951545}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 17, "lagrange": 1.3374999999999992, "failure": 0.0, "loss": 0.4503658413887024, "actor_parameter_delta": 0.00900553073734045}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 18, "lagrange": 1.4124999999999992, "failure": 0.25, "loss": 1.845613956451416, "actor_parameter_delta": 0.007996805012226105}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 19, "lagrange": 1.3624999999999992, "failure": 0.0, "loss": 0.9208048582077026, "actor_parameter_delta": 0.008049152791500092}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 20, "lagrange": 1.3124999999999991, "failure": 0.0, "loss": 0.4301539659500122, "actor_parameter_delta": 0.010054369457066059}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 21, "lagrange": 1.387499999999999, "failure": 0.25, "loss": 1.464916467666626, "actor_parameter_delta": 0.01019616425037384}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 22, "lagrange": 1.399999999999999, "failure": 0.125, "loss": 0.7873449921607971, "actor_parameter_delta": 0.009723570197820663}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 23, "lagrange": 1.412499999999999, "failure": 0.125, "loss": 0.9725847244262695, "actor_parameter_delta": 0.010057450272142887}
+{"stage": "ppo", "seed": 883, "actions": 5, "feedback": true, "batch": 24, "lagrange": 1.487499999999999, "failure": 0.25, "loss": 1.0019495487213135, "actor_parameter_delta": 0.007544885389506817}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 881, "epoch": 0, "loss": 2.1558148860931396}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 881, "epoch": 150, "loss": 0.70975661277771}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 881, "epoch": 450, "loss": 0.20753245055675507}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 1, "lagrange": 1.0125, "failure": 0.125, "loss": 0.9461826682090759, "actor_parameter_delta": 0.02665437012910843}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 2, "lagrange": 0.9624999999999999, "failure": 0.0, "loss": 0.5485517978668213, "actor_parameter_delta": 0.01927107386291027}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 3, "lagrange": 1.0374999999999999, "failure": 0.25, "loss": 0.9491878151893616, "actor_parameter_delta": 0.016542108729481697}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 4, "lagrange": 1.1124999999999998, "failure": 0.25, "loss": 1.1160671710968018, "actor_parameter_delta": 0.015494738705456257}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 5, "lagrange": 1.1874999999999998, "failure": 0.25, "loss": 1.372377872467041, "actor_parameter_delta": 0.014259414747357368}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 6, "lagrange": 1.1999999999999997, "failure": 0.125, "loss": 3.404813766479492, "actor_parameter_delta": 0.010779300704598427}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 7, "lagrange": 1.2749999999999997, "failure": 0.25, "loss": 1.8881844282150269, "actor_parameter_delta": 0.010419536381959915}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 8, "lagrange": 1.2249999999999996, "failure": 0.0, "loss": 0.7551203370094299, "actor_parameter_delta": 0.010337818413972855}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 9, "lagrange": 1.2374999999999996, "failure": 0.125, "loss": 0.5081877708435059, "actor_parameter_delta": 0.01146657019853592}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 10, "lagrange": 1.1874999999999996, "failure": 0.0, "loss": 1.5242081880569458, "actor_parameter_delta": 0.011454811319708824}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 11, "lagrange": 1.1999999999999995, "failure": 0.125, "loss": 1.8997472524642944, "actor_parameter_delta": 0.009518247097730637}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 12, "lagrange": 1.1499999999999995, "failure": 0.0, "loss": 0.6246526837348938, "actor_parameter_delta": 0.011444758623838425}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 13, "lagrange": 1.0999999999999994, "failure": 0.0, "loss": 1.6326014995574951, "actor_parameter_delta": 0.01318549457937479}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 14, "lagrange": 1.0499999999999994, "failure": 0.0, "loss": 1.5419741868972778, "actor_parameter_delta": 0.010863673873245716}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 15, "lagrange": 0.9999999999999993, "failure": 0.0, "loss": 0.4423331022262573, "actor_parameter_delta": 0.010612252168357372}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 16, "lagrange": 1.0124999999999993, "failure": 0.125, "loss": 3.7759461402893066, "actor_parameter_delta": 0.010788852348923683}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 17, "lagrange": 1.0249999999999992, "failure": 0.125, "loss": 0.610913097858429, "actor_parameter_delta": 0.010417066514492035}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 18, "lagrange": 1.0374999999999992, "failure": 0.125, "loss": 0.5779086351394653, "actor_parameter_delta": 0.01161972340196371}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 19, "lagrange": 1.1124999999999992, "failure": 0.25, "loss": 2.8945508003234863, "actor_parameter_delta": 0.012625214643776417}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 20, "lagrange": 1.1249999999999991, "failure": 0.125, "loss": 0.8541115522384644, "actor_parameter_delta": 0.010726184584200382}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 21, "lagrange": 1.262499999999999, "failure": 0.375, "loss": 1.852952480316162, "actor_parameter_delta": 0.010292348451912403}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 22, "lagrange": 1.274999999999999, "failure": 0.125, "loss": 1.2073198556900024, "actor_parameter_delta": 0.012247534468770027}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 23, "lagrange": 1.349999999999999, "failure": 0.25, "loss": 1.0698857307434082, "actor_parameter_delta": 0.012815949507057667}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": false, "batch": 24, "lagrange": 1.299999999999999, "failure": 0.0, "loss": 1.512300968170166, "actor_parameter_delta": 0.012566410936415195}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 882, "epoch": 0, "loss": 2.0349230766296387}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 882, "epoch": 150, "loss": 0.7108054757118225}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 882, "epoch": 450, "loss": 0.20302638411521912}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 1, "lagrange": 0.95, "failure": 0.0, "loss": 0.29520219564437866, "actor_parameter_delta": 0.026607312262058258}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 2, "lagrange": 0.9624999999999999, "failure": 0.125, "loss": 1.792749047279358, "actor_parameter_delta": 0.01968948356807232}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 3, "lagrange": 0.9124999999999999, "failure": 0.0, "loss": 0.5054721236228943, "actor_parameter_delta": 0.016323531046509743}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 4, "lagrange": 0.9249999999999998, "failure": 0.125, "loss": 0.6920121908187866, "actor_parameter_delta": 0.01399222668260336}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 5, "lagrange": 0.9374999999999998, "failure": 0.125, "loss": 1.8054757118225098, "actor_parameter_delta": 0.010028354823589325}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 6, "lagrange": 0.9499999999999997, "failure": 0.125, "loss": 0.6141920685768127, "actor_parameter_delta": 0.008907006122171879}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 7, "lagrange": 0.9624999999999997, "failure": 0.125, "loss": 1.4048380851745605, "actor_parameter_delta": 0.008313926868140697}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 8, "lagrange": 0.9124999999999996, "failure": 0.0, "loss": 0.739116907119751, "actor_parameter_delta": 0.009569232352077961}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 9, "lagrange": 0.9249999999999996, "failure": 0.125, "loss": 1.06105375289917, "actor_parameter_delta": 0.009413203224539757}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 10, "lagrange": 0.9999999999999996, "failure": 0.25, "loss": 2.887981653213501, "actor_parameter_delta": 0.008599472232162952}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 11, "lagrange": 0.9499999999999995, "failure": 0.0, "loss": 0.39103519916534424, "actor_parameter_delta": 0.010481661185622215}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 12, "lagrange": 0.9624999999999995, "failure": 0.125, "loss": 1.2892179489135742, "actor_parameter_delta": 0.010686218738555908}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 13, "lagrange": 0.9749999999999994, "failure": 0.125, "loss": 1.2189327478408813, "actor_parameter_delta": 0.007977891713380814}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 14, "lagrange": 0.9874999999999994, "failure": 0.125, "loss": 0.8048707842826843, "actor_parameter_delta": 0.009192358702421188}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 15, "lagrange": 0.9999999999999993, "failure": 0.125, "loss": 1.4118123054504395, "actor_parameter_delta": 0.012685447931289673}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 16, "lagrange": 1.0124999999999993, "failure": 0.125, "loss": 1.2202869653701782, "actor_parameter_delta": 0.011539495550096035}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 17, "lagrange": 1.0249999999999992, "failure": 0.125, "loss": 0.9729135036468506, "actor_parameter_delta": 0.009798871353268623}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 18, "lagrange": 1.0374999999999992, "failure": 0.125, "loss": 1.2697442770004272, "actor_parameter_delta": 0.009520568884909153}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 19, "lagrange": 0.9874999999999992, "failure": 0.0, "loss": 0.29674217104911804, "actor_parameter_delta": 0.010731199756264687}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 20, "lagrange": 0.9999999999999991, "failure": 0.125, "loss": 1.7628273963928223, "actor_parameter_delta": 0.011961846612393856}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 21, "lagrange": 0.9499999999999991, "failure": 0.0, "loss": 0.21643447875976562, "actor_parameter_delta": 0.013257251121103764}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 22, "lagrange": 0.899999999999999, "failure": 0.0, "loss": 0.8561766743659973, "actor_parameter_delta": 0.013534232042729855}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 23, "lagrange": 0.974999999999999, "failure": 0.25, "loss": 0.5795155763626099, "actor_parameter_delta": 0.013541084714233875}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": false, "batch": 24, "lagrange": 1.112499999999999, "failure": 0.375, "loss": 1.9013328552246094, "actor_parameter_delta": 0.011667762883007526}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 883, "epoch": 0, "loss": 2.0264430046081543}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 883, "epoch": 150, "loss": 0.709428608417511}
+{"stage": "fit", "frequency": "within", "feedback": false, "seed": 883, "epoch": 450, "loss": 0.205478698015213}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 1, "lagrange": 1.075, "failure": 0.25, "loss": 1.698936939239502, "actor_parameter_delta": 0.026644377037882805}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 2, "lagrange": 1.15, "failure": 0.25, "loss": 1.2147605419158936, "actor_parameter_delta": 0.018643571063876152}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 3, "lagrange": 1.1624999999999999, "failure": 0.125, "loss": 0.48557373881340027, "actor_parameter_delta": 0.017685819417238235}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 4, "lagrange": 1.2374999999999998, "failure": 0.25, "loss": 1.942936897277832, "actor_parameter_delta": 0.014776084572076797}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 5, "lagrange": 1.3124999999999998, "failure": 0.25, "loss": 0.6499808430671692, "actor_parameter_delta": 0.012934811413288116}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 6, "lagrange": 1.4499999999999997, "failure": 0.375, "loss": 2.5446929931640625, "actor_parameter_delta": 0.011844509281218052}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 7, "lagrange": 1.4624999999999997, "failure": 0.125, "loss": 0.3882512152194977, "actor_parameter_delta": 0.013176224194467068}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 8, "lagrange": 1.5374999999999996, "failure": 0.25, "loss": 1.1032648086547852, "actor_parameter_delta": 0.013848771341145039}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 9, "lagrange": 1.5499999999999996, "failure": 0.125, "loss": 1.8183140754699707, "actor_parameter_delta": 0.011985610239207745}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 10, "lagrange": 1.4999999999999996, "failure": 0.0, "loss": 4.561460494995117, "actor_parameter_delta": 0.009270363487303257}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 11, "lagrange": 1.5124999999999995, "failure": 0.125, "loss": 1.380280613899231, "actor_parameter_delta": 0.008703242987394333}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 12, "lagrange": 1.5874999999999995, "failure": 0.25, "loss": 1.4792121648788452, "actor_parameter_delta": 0.01167247537523508}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 13, "lagrange": 1.5374999999999994, "failure": 0.0, "loss": 0.928058385848999, "actor_parameter_delta": 0.015315038152039051}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 14, "lagrange": 1.6124999999999994, "failure": 0.25, "loss": 0.8661388158798218, "actor_parameter_delta": 0.017483308911323547}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 15, "lagrange": 1.6249999999999993, "failure": 0.125, "loss": 0.8869892358779907, "actor_parameter_delta": 0.016804371029138565}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 16, "lagrange": 1.5749999999999993, "failure": 0.0, "loss": 0.4696924090385437, "actor_parameter_delta": 0.017259109765291214}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 17, "lagrange": 1.5249999999999992, "failure": 0.0, "loss": 0.7392125725746155, "actor_parameter_delta": 0.0161900594830513}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 18, "lagrange": 1.6624999999999992, "failure": 0.375, "loss": 1.291939377784729, "actor_parameter_delta": 0.014314242638647556}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 19, "lagrange": 1.6124999999999992, "failure": 0.0, "loss": 1.3643064498901367, "actor_parameter_delta": 0.011565005406737328}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 20, "lagrange": 1.5624999999999991, "failure": 0.0, "loss": 0.7853237986564636, "actor_parameter_delta": 0.01224168948829174}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 21, "lagrange": 1.637499999999999, "failure": 0.25, "loss": 1.3766576051712036, "actor_parameter_delta": 0.012265842407941818}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 22, "lagrange": 1.649999999999999, "failure": 0.125, "loss": 1.3131500482559204, "actor_parameter_delta": 0.015399586409330368}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 23, "lagrange": 1.662499999999999, "failure": 0.125, "loss": 1.0095971822738647, "actor_parameter_delta": 0.016875913366675377}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": false, "batch": 24, "lagrange": 1.799999999999999, "failure": 0.375, "loss": 1.3378517627716064, "actor_parameter_delta": 0.014231594279408455}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 881, "epoch": 0, "loss": 2.1523244380950928}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 881, "epoch": 150, "loss": 0.5909597873687744}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 881, "epoch": 450, "loss": 0.19571368396282196}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 1, "lagrange": 1.0125, "failure": 0.125, "loss": 0.77845299243927, "actor_parameter_delta": 0.026530390605330467}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 2, "lagrange": 0.9624999999999999, "failure": 0.0, "loss": 0.7017085552215576, "actor_parameter_delta": 0.02085016667842865}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 3, "lagrange": 0.9749999999999999, "failure": 0.125, "loss": 0.9117250442504883, "actor_parameter_delta": 0.018080024048686028}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 4, "lagrange": 0.9874999999999998, "failure": 0.125, "loss": 1.9016342163085938, "actor_parameter_delta": 0.014796548523008823}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 5, "lagrange": 1.0624999999999998, "failure": 0.25, "loss": 0.9037666916847229, "actor_parameter_delta": 0.014033093117177486}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 6, "lagrange": 1.1374999999999997, "failure": 0.25, "loss": 1.8683758974075317, "actor_parameter_delta": 0.014583942480385303}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 7, "lagrange": 1.1499999999999997, "failure": 0.125, "loss": 1.4207546710968018, "actor_parameter_delta": 0.013167528435587883}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 8, "lagrange": 1.0999999999999996, "failure": 0.0, "loss": 0.18363815546035767, "actor_parameter_delta": 0.013983480632305145}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 9, "lagrange": 1.0499999999999996, "failure": 0.0, "loss": 0.9495508670806885, "actor_parameter_delta": 0.014348740689456463}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 10, "lagrange": 0.9999999999999996, "failure": 0.0, "loss": 0.7894670963287354, "actor_parameter_delta": 0.013351541943848133}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 11, "lagrange": 1.0749999999999995, "failure": 0.25, "loss": 1.9770846366882324, "actor_parameter_delta": 0.012030977755784988}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 12, "lagrange": 1.0249999999999995, "failure": 0.0, "loss": 0.7208400964736938, "actor_parameter_delta": 0.012135431170463562}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 13, "lagrange": 0.9749999999999994, "failure": 0.0, "loss": 0.7251918315887451, "actor_parameter_delta": 0.01375114731490612}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 14, "lagrange": 0.9249999999999994, "failure": 0.0, "loss": 2.0565185546875, "actor_parameter_delta": 0.012675073929131031}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 15, "lagrange": 0.8749999999999993, "failure": 0.0, "loss": 0.16558779776096344, "actor_parameter_delta": 0.015228907577693462}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 16, "lagrange": 0.8874999999999993, "failure": 0.125, "loss": 4.4972052574157715, "actor_parameter_delta": 0.01593783311545849}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 17, "lagrange": 0.8374999999999992, "failure": 0.0, "loss": 0.2273675501346588, "actor_parameter_delta": 0.013776380568742752}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 18, "lagrange": 0.8499999999999992, "failure": 0.125, "loss": 0.6751517057418823, "actor_parameter_delta": 0.01295682042837143}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 19, "lagrange": 0.9249999999999992, "failure": 0.25, "loss": 1.648297667503357, "actor_parameter_delta": 0.01125066913664341}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 20, "lagrange": 0.8749999999999991, "failure": 0.0, "loss": 0.814994215965271, "actor_parameter_delta": 0.012254282832145691}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 21, "lagrange": 0.9499999999999991, "failure": 0.25, "loss": 2.738497734069824, "actor_parameter_delta": 0.011600472033023834}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 22, "lagrange": 0.962499999999999, "failure": 0.125, "loss": 1.6523098945617676, "actor_parameter_delta": 0.009643605910241604}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 23, "lagrange": 0.974999999999999, "failure": 0.125, "loss": 1.3779633045196533, "actor_parameter_delta": 0.009331990033388138}
+{"stage": "ppo", "seed": 881, "actions": 15, "feedback": true, "batch": 24, "lagrange": 0.9249999999999989, "failure": 0.0, "loss": 1.2839964628219604, "actor_parameter_delta": 0.010226650163531303}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 882, "epoch": 0, "loss": 2.0346555709838867}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 882, "epoch": 150, "loss": 0.598417341709137}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 882, "epoch": 450, "loss": 0.17329072952270508}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 1, "lagrange": 0.95, "failure": 0.0, "loss": 1.0388764142990112, "actor_parameter_delta": 0.02658548392355442}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 2, "lagrange": 0.9624999999999999, "failure": 0.125, "loss": 9.35440444946289, "actor_parameter_delta": 0.020047683268785477}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 3, "lagrange": 0.9124999999999999, "failure": 0.0, "loss": 1.9795705080032349, "actor_parameter_delta": 0.017373546957969666}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 4, "lagrange": 0.9249999999999998, "failure": 0.125, "loss": 1.655013918876648, "actor_parameter_delta": 0.016245583072304726}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 5, "lagrange": 0.9374999999999998, "failure": 0.125, "loss": 3.336738109588623, "actor_parameter_delta": 0.013445314019918442}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 6, "lagrange": 0.9499999999999997, "failure": 0.125, "loss": 1.6339844465255737, "actor_parameter_delta": 0.013577387668192387}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 7, "lagrange": 0.9624999999999997, "failure": 0.125, "loss": 2.0948596000671387, "actor_parameter_delta": 0.011856761761009693}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 8, "lagrange": 0.9124999999999996, "failure": 0.0, "loss": 1.150854229927063, "actor_parameter_delta": 0.01203529816120863}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 9, "lagrange": 0.9249999999999996, "failure": 0.125, "loss": 1.4639033079147339, "actor_parameter_delta": 0.012842845171689987}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 10, "lagrange": 0.9999999999999996, "failure": 0.25, "loss": 1.874730110168457, "actor_parameter_delta": 0.014106683433055878}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 11, "lagrange": 0.9499999999999995, "failure": 0.0, "loss": 0.8685228228569031, "actor_parameter_delta": 0.012682678177952766}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 12, "lagrange": 0.9624999999999995, "failure": 0.125, "loss": 1.6879745721817017, "actor_parameter_delta": 0.012397119775414467}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 13, "lagrange": 1.0374999999999994, "failure": 0.25, "loss": 2.545398473739624, "actor_parameter_delta": 0.010669662617146969}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 14, "lagrange": 1.0499999999999994, "failure": 0.125, "loss": 1.642632246017456, "actor_parameter_delta": 0.010676806792616844}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 15, "lagrange": 1.0624999999999993, "failure": 0.125, "loss": 2.867859125137329, "actor_parameter_delta": 0.011602431535720825}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 16, "lagrange": 1.0749999999999993, "failure": 0.125, "loss": 4.970376014709473, "actor_parameter_delta": 0.01189042441546917}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 17, "lagrange": 1.0874999999999992, "failure": 0.125, "loss": 11.040176391601562, "actor_parameter_delta": 0.011094680987298489}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 18, "lagrange": 1.1624999999999992, "failure": 0.25, "loss": 3.816702127456665, "actor_parameter_delta": 0.010309486649930477}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 19, "lagrange": 1.1124999999999992, "failure": 0.0, "loss": 0.7089097499847412, "actor_parameter_delta": 0.013979390263557434}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 20, "lagrange": 1.1249999999999991, "failure": 0.125, "loss": 0.871982753276825, "actor_parameter_delta": 0.015115376561880112}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 21, "lagrange": 1.074999999999999, "failure": 0.0, "loss": 0.5694708228111267, "actor_parameter_delta": 0.014447633177042007}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 22, "lagrange": 1.087499999999999, "failure": 0.125, "loss": 3.8253564834594727, "actor_parameter_delta": 0.014067452400922775}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 23, "lagrange": 1.099999999999999, "failure": 0.125, "loss": 0.9543391466140747, "actor_parameter_delta": 0.011362209916114807}
+{"stage": "ppo", "seed": 882, "actions": 15, "feedback": true, "batch": 24, "lagrange": 1.237499999999999, "failure": 0.375, "loss": 8.992677688598633, "actor_parameter_delta": 0.009089288301765919}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 883, "epoch": 0, "loss": 2.0366883277893066}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 883, "epoch": 150, "loss": 0.6063695549964905}
+{"stage": "fit", "frequency": "within", "feedback": true, "seed": 883, "epoch": 450, "loss": 0.19201573729515076}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 1, "lagrange": 1.075, "failure": 0.25, "loss": 1.3975515365600586, "actor_parameter_delta": 0.026668382808566093}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 2, "lagrange": 1.15, "failure": 0.25, "loss": 1.0621644258499146, "actor_parameter_delta": 0.020061513409018517}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 3, "lagrange": 1.1624999999999999, "failure": 0.125, "loss": 1.0435270071029663, "actor_parameter_delta": 0.018158433958888054}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 4, "lagrange": 1.2374999999999998, "failure": 0.25, "loss": 1.0461369752883911, "actor_parameter_delta": 0.015516395680606365}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 5, "lagrange": 1.3124999999999998, "failure": 0.25, "loss": 0.9939329028129578, "actor_parameter_delta": 0.013334928080439568}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 6, "lagrange": 1.4499999999999997, "failure": 0.375, "loss": 1.66395103931427, "actor_parameter_delta": 0.012228770181536674}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 7, "lagrange": 1.3999999999999997, "failure": 0.0, "loss": 0.5053118467330933, "actor_parameter_delta": 0.012000925838947296}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 8, "lagrange": 1.4124999999999996, "failure": 0.125, "loss": 1.0461560487747192, "actor_parameter_delta": 0.013618668541312218}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 9, "lagrange": 1.4249999999999996, "failure": 0.125, "loss": 1.9912126064300537, "actor_parameter_delta": 0.013879382982850075}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 10, "lagrange": 1.3749999999999996, "failure": 0.0, "loss": 1.863004207611084, "actor_parameter_delta": 0.012652980163693428}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 11, "lagrange": 1.3874999999999995, "failure": 0.125, "loss": 2.2216832637786865, "actor_parameter_delta": 0.011354915797710419}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 12, "lagrange": 1.3999999999999995, "failure": 0.125, "loss": 1.1879546642303467, "actor_parameter_delta": 0.010891488753259182}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 13, "lagrange": 1.3499999999999994, "failure": 0.0, "loss": 0.8148337602615356, "actor_parameter_delta": 0.012011446058750153}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 14, "lagrange": 1.4249999999999994, "failure": 0.25, "loss": 1.593280553817749, "actor_parameter_delta": 0.012294125743210316}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 15, "lagrange": 1.4374999999999993, "failure": 0.125, "loss": 0.9566640257835388, "actor_parameter_delta": 0.01095795352011919}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 16, "lagrange": 1.3874999999999993, "failure": 0.0, "loss": 0.45374152064323425, "actor_parameter_delta": 0.01232430711388588}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 17, "lagrange": 1.3374999999999992, "failure": 0.0, "loss": 1.2879109382629395, "actor_parameter_delta": 0.01377209834754467}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 18, "lagrange": 1.3499999999999992, "failure": 0.125, "loss": 0.8353056907653809, "actor_parameter_delta": 0.012567359022796154}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 19, "lagrange": 1.2999999999999992, "failure": 0.0, "loss": 0.7324166893959045, "actor_parameter_delta": 0.013916857540607452}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 20, "lagrange": 1.2499999999999991, "failure": 0.0, "loss": 0.6679827570915222, "actor_parameter_delta": 0.0173284150660038}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 21, "lagrange": 1.324999999999999, "failure": 0.25, "loss": 1.0281295776367188, "actor_parameter_delta": 0.017281560227274895}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 22, "lagrange": 1.337499999999999, "failure": 0.125, "loss": 1.0044878721237183, "actor_parameter_delta": 0.014418873935937881}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 23, "lagrange": 1.349999999999999, "failure": 0.125, "loss": 1.2940311431884766, "actor_parameter_delta": 0.0120964040979743}
+{"stage": "ppo", "seed": 883, "actions": 15, "feedback": true, "batch": 24, "lagrange": 1.424999999999999, "failure": 0.25, "loss": 1.7730257511138916, "actor_parameter_delta": 0.010984384454786777}
+LOCKED: creating final test worlds now
+test 4/64
+test 8/64
+test 12/64
+test 16/64
+test 20/64
+test 24/64
+test 28/64
+test 32/64
+test 36/64
+test 40/64
+test 44/64
+test 48/64
+test 52/64
+test 56/64
+test 60/64
+test 64/64
+Complete 899.9s
+{'test_rollouts': 4800, 'ppo_episodes': 2304, 'ppo_optimizer_steps': 1152, 'source_and_models_verified': True, 'history_splits_disjoint': True}
+{
+  "branch_queries": 16020,
+  "branch_updates": 1084145,
+  "branch_work": 368298514.6521681,
+  "dev_rollouts": 4032,
+  "dev_updates": 206977,
+  "dev_work": 73095244.6521739,
+  "ppo_episodes": 2304,
+  "ppo_updates": 134831,
+  "ppo_work": 47335400.57971014,
+  "scorer_optimizer_steps": 5400,
+  "distillation_optimizer_steps": 2400,
+  "ppo_optimizer_steps": 1152,
+  "extra_action_queries": 10680,
+  "old5_equivalent_queries": 5340,
+  "baseline_dev_rollouts": 4848,
+  "baseline_dev_updates": 272330,
+  "baseline_dev_work": 95755076.56521547,
+  "old5_branch_updates": 359690,
+  "extra10_branch_updates": 724455,
+  "shared_pretraining_updates": 76000,
+  "collection_behavior_updates": 7309,
+  "collection_behavior_work": 2569291.898550727,
+  "additional_collection_audit_updates": 39059
+}
+Results: /Users/jianyuan/.codex/worktrees/11c2/moe-plasticity-control/runs/v8-main

@@ -1,0 +1,23 @@
+[
+  {
+    "batch": 1,
+    "lagrange": 1.075,
+    "failure": 0.25,
+    "loss": 0.8233099579811096,
+    "actor_parameter_delta": 0.026629401370882988
+  },
+  {
+    "batch": 2,
+    "lagrange": 1.15,
+    "failure": 0.25,
+    "loss": 0.9621034264564514,
+    "actor_parameter_delta": 0.019801268354058266
+  },
+  {
+    "batch": 3,
+    "lagrange": 1.1624999999999999,
+    "failure": 0.125,
+    "loss": 0.955905556678772,
+    "actor_parameter_delta": 0.017167387530207634
+  }
+]

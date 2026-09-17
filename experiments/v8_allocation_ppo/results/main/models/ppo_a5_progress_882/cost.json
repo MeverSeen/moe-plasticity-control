@@ -1,0 +1,10 @@
+{
+  "dev_rollouts": 120,
+  "dev_updates": 5866,
+  "dev_work": 2076360.8550724639,
+  "train_episodes": 192,
+  "train_updates": 11160,
+  "train_work": 3918768.8695652173,
+  "distillation_epochs": 200,
+  "ppo_gradient_steps": 96
+}

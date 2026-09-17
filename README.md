@@ -2,7 +2,7 @@
 
 研究持续学习中的专家更新控制：在固定 MoE 容量、记忆与在线计算预算下，利用路由共享结构和学习反馈分配更新强度，降低达到同一新任务目标时的旧知识退化。
 
-**当前状态：已完成七轮合成实验，v7 连续三段学习出现段内旧知识反馈的初步正信号，但尚未完成同等可行性下的稳定验证。** v6 定位到模型筛选瓶颈；v7 保留参数和 Adam 状态连续学习三个新输入域。段内 Feedback 在共同达标历史上的 A 遗忘降低约 13.8%，但平均达标率略低，多重比较敏感性区间跨零。段间 Feedback 则提高达标率、同时增加遗忘。本仓库保留正负结果、原始数据与冻结协议，不代表真实 learned-router MoE 或语言模型上的验证。
+**当前状态：已完成八轮合成实验。v8 的15动作扩展有局部分支价值，但闭环遗忘增加，未验证旧知识反馈或PPO的稳定额外收益。** v8完成64个新测试历史、三个初始化及监督/真实PPO匹配对照；四组15动作控制器在共同成功历史上均比5动作遗忘更多，校正敏感性区间支持该方向。固定 `(0.25,1.5)` 是更强的保留基线，测试达标率84.38%；预设90%概率目标未达到。v7的初步正信号仍保留，不能视为已稳定复现。详见[v8结果解读](experiments/v8_allocation_ppo/结果解读.md)。
 
 ## 快速开始
 
@@ -16,7 +16,7 @@ python scripts/verify_artifacts.py
 python scripts/test_all.py
 ```
 
-共 73 项实验机制与统计检查，各版本在独立进程中测试，避免同名模块串用。已有记录在 `experiments/*/results/`，首次查看结果无需重新训练。
+共 90 项实验机制与统计检查，各版本在独立进程中测试，避免同名模块串用。已有记录在 `experiments/*/results/`，首次查看结果无需重新训练。
 
 ## 实验索引
 
@@ -29,14 +29,17 @@ python scripts/test_all.py
 | [v5](experiments/v5_calibration/) | 不限定冲突形态时，固定选择和时序安排是否有可复测收益 | 固定选择参考有局部收益；加入切换计划未稳定胜过时间基线，全可行子集未胜过直接冻结 | [报告](experiments/v5_calibration/results/main/analysis/实验报告.md)、[解读](experiments/v5_calibration/结果解读.md) |
 | [v6](experiments/v6_learning_diagnostics/) | 负结果是否来自学习能力、监督目标或模型筛选问题 | 基本学习检查通过；闭环筛选改善结果，但尚未验证实时反馈增益 | [报告](experiments/v6_learning_diagnostics/results/main/analysis/实验报告.md)、[解读](experiments/v6_learning_diagnostics/结果解读.md) |
 | [v7](experiments/v7_sequence_feedback/) | 连续多段学习是否让段间或段内旧知识反馈更有价值 | 段内遗忘约 −13.8%，但可行性略低、校正敏感性跨零；段间呈达标/遗忘取舍 | [报告](experiments/v7_sequence_feedback/results/main/analysis/实验报告.md)、[解读](experiments/v7_sequence_feedback/结果解读.md) |
+| [v8](experiments/v8_allocation_ppo/) | 双组更新倍率、动态控制与真正PPO是否提供额外收益 | 新动作局部分支有效，但四组闭环遗忘增加；固定组合更强，未验证反馈/RL稳定收益 | [报告](experiments/v8_allocation_ppo/results/main/analysis/实验报告.md)、[解读](experiments/v8_allocation_ppo/结果解读.md) |
 
-七轮实验源码与记录完整保留，版本之间有意保留冻结的模型副本。`docs/import_manifest.json` 校验前三轮导入文件；原有 `locked_protocol.json` 和各版本校验清单也保留。v3 阈值文字错误见 [勘误](docs/v3-erratum.md)，v4 的机制解释见 [结果解读](experiments/v4_state_aggregation/结果解读.md)。真实 MoE 当前路由反馈暂缓，见 [后续待办](docs/future-real-moe-routing.md)。
+八轮实验源码与记录完整保留，版本之间有意保留冻结的模型副本。`docs/import_manifest.json` 校验前三轮导入文件；原有 `locked_protocol.json` 和各版本校验清单也保留。v3 阈值文字错误见 [勘误](docs/v3-erratum.md)，v4 的机制解释见 [结果解读](experiments/v4_state_aggregation/结果解读.md)。真实 MoE 当前路由反馈暂缓，见 [后续待办](docs/future-real-moe-routing.md)。
 
 ## 复现入口
 
 从仓库根目录运行；每次使用新的输出目录，已有结果不会被覆盖：
 
 ```bash
+python scripts/run_experiment.py v8 --out runs/v8-reproduction
+python scripts/run_experiment.py v8 --pilot --out runs/v8-pilot
 python scripts/run_experiment.py v7 --out runs/v7-reproduction
 python scripts/run_experiment.py v7 --pilot --out runs/v7-pilot
 python scripts/run_experiment.py v6 --out runs/v6-reproduction
@@ -57,9 +60,9 @@ python scripts/run_experiment.py v1 --out runs/v1-reproduction
 
 - 首先报告新任务达标率，再在共同达标历史上作配对遗忘比较；失败不丢弃。
 - 当前遗忘指标是独立旧任务评估 MSE 的正增量，不是百分比遗忘率。
-- v7 三个 B 分别达标不等于最后仍全部保留；A 记忆固定，B 最终保留另报。
+- v7/v8 三个 B 分别达标不等于最后仍全部保留；A 记忆固定，B 最终保留另报。
 - 达到统一 loss 阈值不等于端点 loss 数字严格相同，具体报告保留敏感性分析。
-- v2–v7 动作作用于 Adam 的实际参数位移；路由和初始保护组固定。
+- v2–v8 动作作用于 Adam 的实际参数位移；路由和初始保护组固定。
 - 预算使用明确的工作量代理，并非精确 FLOPs 或相同墙钟时间。
 - 已查看的最终测试历史不可用于下一轮调参；新设计应使用新的测试历史。
 

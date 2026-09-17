@@ -1,0 +1,12 @@
+{
+  "feedback": true,
+  "seed": 882,
+  "actions": 5,
+  "checkpoint": "ppo16",
+  "dev": {
+    "reach": 0.9166666666666666,
+    "forgetting": 0.005394864093625184,
+    "work": 16592.19323671497,
+    "steps": 46.75
+  }
+}

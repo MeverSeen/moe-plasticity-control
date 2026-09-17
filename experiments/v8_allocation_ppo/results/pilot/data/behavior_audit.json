@@ -1,0 +1,105 @@
+{
+  "verified_states": 75,
+  "rollouts": 16,
+  "updates": 1125,
+  "work": 391930.36231884063,
+  "rows": [
+    {
+      "root": 850000,
+      "behavior": "middle",
+      "steps": 63,
+      "work": 22081.855072463764
+    },
+    {
+      "root": 850000,
+      "behavior": "random",
+      "steps": 63,
+      "work": 22081.855072463764
+    },
+    {
+      "root": 850001,
+      "behavior": "middle",
+      "steps": 1,
+      "work": 1286.2753623188405
+    },
+    {
+      "root": 850001,
+      "behavior": "random",
+      "steps": 1,
+      "work": 1286.2753623188405
+    },
+    {
+      "root": 850002,
+      "behavior": "middle",
+      "steps": 55,
+      "work": 19448.579710144924
+    },
+    {
+      "root": 850002,
+      "behavior": "random",
+      "steps": 55,
+      "work": 19448.579710144924
+    },
+    {
+      "root": 850003,
+      "behavior": "middle",
+      "steps": 21,
+      "work": 7982.376811594204
+    },
+    {
+      "root": 850003,
+      "behavior": "random",
+      "steps": 18,
+      "work": 7022.376811594204
+    },
+    {
+      "root": 850004,
+      "behavior": "middle",
+      "steps": 0,
+      "work": 894.0
+    },
+    {
+      "root": 850004,
+      "behavior": "random",
+      "steps": 0,
+      "work": 894.0
+    },
+    {
+      "root": 850005,
+      "behavior": "middle",
+      "steps": 65,
+      "work": 22721.855072463764
+    },
+    {
+      "root": 850005,
+      "behavior": "random",
+      "steps": 64,
+      "work": 22401.855072463764
+    },
+    {
+      "root": 850006,
+      "behavior": "middle",
+      "steps": 236,
+      "work": 79933.21739130438
+    },
+    {
+      "root": 850006,
+      "behavior": "random",
+      "steps": 237,
+      "work": 80253.21739130438
+    },
+    {
+      "root": 850007,
+      "behavior": "middle",
+      "steps": 123,
+      "work": 42133.15942028984
+    },
+    {
+      "root": 850007,
+      "behavior": "random",
+      "steps": 123,
+      "work": 42060.884057971
+    }
+  ],
+  "note": "Exact deterministic reconstruction of original collection behaviors, without counterfactual branches. Audit re-execution adds this same behavior work plus repeated train-root pretraining; reported separately from main runtime."
+}

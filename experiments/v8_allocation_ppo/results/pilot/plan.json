@@ -1,0 +1,166 @@
+{
+  "config": {
+    "experts": 6,
+    "dim": 10,
+    "hidden": 12,
+    "tasks": 6,
+    "top_k": 2,
+    "train_n": 384,
+    "monitor_n": 128,
+    "test_n": 512,
+    "replay_memory": 64,
+    "monitor_memory": 64,
+    "batch": 32,
+    "old_batch": 32,
+    "lr": 0.015,
+    "replay_weight": 0.1,
+    "max_steps": 300,
+    "interval": 5,
+    "base_steps": 250,
+    "target": 0.08,
+    "levels": [
+      0.16,
+      0.1,
+      0.06,
+      0.04
+    ],
+    "lambda_max": 0.15,
+    "noise": 0.05,
+    "segments": 3,
+    "segment_steps": 100,
+    "mask_old_threshold": 0.3333333333333333
+  },
+  "splits": {
+    "train": [
+      850000,
+      850001,
+      850002,
+      850003,
+      850004,
+      850005,
+      850006,
+      850007
+    ],
+    "dev": [
+      860000,
+      860001,
+      860002,
+      860003
+    ],
+    "test": [
+      870000,
+      870001,
+      870002,
+      870003,
+      870004,
+      870005,
+      870006,
+      870007
+    ]
+  },
+  "seeds": [
+    881
+  ],
+  "actions": [
+    [
+      0.0,
+      1.0
+    ],
+    [
+      0.25,
+      1.0
+    ],
+    [
+      0.5,
+      1.0
+    ],
+    [
+      0.75,
+      1.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.5
+    ],
+    [
+      0.25,
+      0.5
+    ],
+    [
+      0.5,
+      0.5
+    ],
+    [
+      0.75,
+      0.5
+    ],
+    [
+      1.0,
+      0.5
+    ],
+    [
+      0.0,
+      1.5
+    ],
+    [
+      0.25,
+      1.5
+    ],
+    [
+      0.5,
+      1.5
+    ],
+    [
+      0.75,
+      1.5
+    ],
+    [
+      1.0,
+      1.5
+    ]
+  ],
+  "features": [
+    "protected_B_gate_mass",
+    "old_usage_protected",
+    "old_usage_other",
+    "protected_fraction",
+    "B_route_entropy",
+    "global_initial_A_loss",
+    "segment_initial_B_loss",
+    "current_B_loss",
+    "recent_B_progress",
+    "remaining_segment_steps",
+    "segment_progress",
+    "last_multiplier",
+    "segment_index",
+    "global_updates",
+    "previous_segment_B_loss",
+    "previous_segment_hit",
+    "cumulative_A_forgetting",
+    "recent_A_loss_change"
+  ],
+  "source_hashes": {
+    "test_sequence.py": "09cb4099531e8b09967524df387776e32bfbaecbe18052c65df4bc0afa3b022c",
+    "model_core.py": "5ca0a78687cb37237832f09dc136b1b176601a1049c9a92301786bff24d94b8f",
+    "control.py": "45e4af90f5dfea3476b2f8c1326ca0362a42a1d6090f78f849207e381c9a4a05",
+    "test_allocation.py": "99c3d687374742c14ecc9fb410fba713355d83b41fc80eb8d33821ac120593ca",
+    "sequence_env.py": "0b934c188f9707e4f4889607030559a37a8971df7f285d0e0839196863c25ca8",
+    "ppo.py": "affd0a049cecda4f151586ab931465fe491001b7fd28bd88ffab1524b7528a1e",
+    "run_allocation.py": "0d627f108d42c0ec4ba72a7f8c84a4445740982eb88225f7a05581287456088b",
+    "analyze.py": "b63488cba0f726a75c1c6b222ccc2ed97446482a0219271461439d92adab37fe"
+  },
+  "protocol_text": "# v8 更新分配与离散 PPO\n\n执行前协议（2026-09-17）。v1–v7 冻结；环境及生成器复制 v7，仅扩展动作。正式 train/dev/test 根历史为 810000–810063 / 820000–820023 / 830000–830063；pilot 为 850000–850007 / 860000–860003 / 870000–870007。控制器种子 881/882/883（pilot 881）。不得根据最终测试修改选择。\n\n动作依次为 m_U=1、0.5、1.5，各含 m_P=0/.25/.5/.75/1；前五个精确包含旧动作。倍率作用于 Adam 位移，不作用于矩。固定原始 A 保护组；18维输入、每5步决策、每段100步、连续三段、A replay/monitor各64，沿用v7。上次动作用单个编号/4编码：旧五档仍为原有m_P，新增档为1.25–3.5；不增加观测维度。所有方法按最大15动作双头评分器共同预留在线工作量；PPO部署只用actor，critic仅训练使用。\n\n1. 配对分支诊断：相同训练状态、Adam与未来流，15动作干预≤5步，后续均(0,1)。两条行为轨迹（旧中档与旧五档随机）、段起点/10/30步采样，正式2个未来流。旧五档直接取同一数据前五列。分析新增动作经验收益、最佳动作分布及最佳固定动作解释比例；不称oracle。\n2. 5/15动作 × Progress/Feedback监督评分器，18→32→32，epoch 0/150/450，slack 0/.1/1，开发真实闭环先达标率再成功遗忘再工作量。保留epoch0。Progress在标准化后屏蔽最后2维。\n3. 同四组训练离散PPO，监督动作蒸馏200轮warm start（pilot50）；完整自访问三段轨迹，后续动作始终由当前actor选择。双critic分别预测保留回报与终端失败cost。γ=1，Monte Carlo return（无GAE），reward=−Δ正部逐A平均monitor遗忘/.01；任意段失败的终端cost=1。PPO clip=.2、4轮更新、lr=.0003、entropy=.01、梯度范数上限1；每批8个训练episode，正式24批/pilot3批；每8批评估候选（pilot每批），保留warm与随机epoch0。λ初始1，每批按 .5*(失败率−.1) 更新并截断[0,20]。p_min=.90，预设非劣效容忍5个百分点；开发可行性独立报告，未达不作满足约束主张。按开发真实闭环选择；同时报告最末训练actor以排除warm选择掩盖RL失败。\n\n固定基线：全部15组合；全局学习率尺度 .25/.5/.75/1/1.25/1.5/2（全参数等比例，独立于动作网格）；两组动作的低/中/高候选间切换，按局部时间 .3/.6、段1/2、当前B相对起始loss .5/.8 切换；仅开发集选择。有限网格不等于全局最优。保存所有候选和额外离线成本。\n\n主要配对：监督15−5、PPO15−5（各信息组），PPO−监督（各动作/信息组），Feedback−Progress（各动作/算法），共12项。先每根历史平均3初始化，再根历史配对bootstrap；遗忘集合要求双方所有初始化共同成功；报告95%及12项Bonferroni敏感性区间，达标率差单侧95%下界对−.05。其余比较探索性。不以低达标换低遗忘宣称获胜。另报逐段达标、最终全部B monitor/test达标、所有历史描述性遗忘。A记忆不含B，本轮不修复全部历史记忆缺口。\n\n运行先写plan；最终测试历史生成前锁定源码、模型及基线哈希。奖励只使用训练monitor，开发选择用开发独立评估；测试独立评估不作为输入、奖励或停止条件。pilot仅检查机制与成本；若机制有修订，正式结果解释注明。保存原始分支、PPO训练轨迹、开发候选、所有测试轨迹、模型、图表和SHA256。在线工作量为代理而非FLOPs。\n",
+  "p_min": 0.9,
+  "noninferiority_margin": 0.05,
+  "supervised_checkpoints": [
+    0,
+    50,
+    100
+  ],
+  "ppo_batches": 3,
+  "pilot": true
+}

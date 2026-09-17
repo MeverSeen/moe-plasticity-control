@@ -1,0 +1,170 @@
+[
+  {
+    "batch": 1,
+    "lagrange": 1.075,
+    "failure": 0.25,
+    "loss": 1.698936939239502,
+    "actor_parameter_delta": 0.026644377037882805
+  },
+  {
+    "batch": 2,
+    "lagrange": 1.15,
+    "failure": 0.25,
+    "loss": 1.2147605419158936,
+    "actor_parameter_delta": 0.018643571063876152
+  },
+  {
+    "batch": 3,
+    "lagrange": 1.1624999999999999,
+    "failure": 0.125,
+    "loss": 0.48557373881340027,
+    "actor_parameter_delta": 0.017685819417238235
+  },
+  {
+    "batch": 4,
+    "lagrange": 1.2374999999999998,
+    "failure": 0.25,
+    "loss": 1.942936897277832,
+    "actor_parameter_delta": 0.014776084572076797
+  },
+  {
+    "batch": 5,
+    "lagrange": 1.3124999999999998,
+    "failure": 0.25,
+    "loss": 0.6499808430671692,
+    "actor_parameter_delta": 0.012934811413288116
+  },
+  {
+    "batch": 6,
+    "lagrange": 1.4499999999999997,
+    "failure": 0.375,
+    "loss": 2.5446929931640625,
+    "actor_parameter_delta": 0.011844509281218052
+  },
+  {
+    "batch": 7,
+    "lagrange": 1.4624999999999997,
+    "failure": 0.125,
+    "loss": 0.3882512152194977,
+    "actor_parameter_delta": 0.013176224194467068
+  },
+  {
+    "batch": 8,
+    "lagrange": 1.5374999999999996,
+    "failure": 0.25,
+    "loss": 1.1032648086547852,
+    "actor_parameter_delta": 0.013848771341145039
+  },
+  {
+    "batch": 9,
+    "lagrange": 1.5499999999999996,
+    "failure": 0.125,
+    "loss": 1.8183140754699707,
+    "actor_parameter_delta": 0.011985610239207745
+  },
+  {
+    "batch": 10,
+    "lagrange": 1.4999999999999996,
+    "failure": 0.0,
+    "loss": 4.561460494995117,
+    "actor_parameter_delta": 0.009270363487303257
+  },
+  {
+    "batch": 11,
+    "lagrange": 1.5124999999999995,
+    "failure": 0.125,
+    "loss": 1.380280613899231,
+    "actor_parameter_delta": 0.008703242987394333
+  },
+  {
+    "batch": 12,
+    "lagrange": 1.5874999999999995,
+    "failure": 0.25,
+    "loss": 1.4792121648788452,
+    "actor_parameter_delta": 0.01167247537523508
+  },
+  {
+    "batch": 13,
+    "lagrange": 1.5374999999999994,
+    "failure": 0.0,
+    "loss": 0.928058385848999,
+    "actor_parameter_delta": 0.015315038152039051
+  },
+  {
+    "batch": 14,
+    "lagrange": 1.6124999999999994,
+    "failure": 0.25,
+    "loss": 0.8661388158798218,
+    "actor_parameter_delta": 0.017483308911323547
+  },
+  {
+    "batch": 15,
+    "lagrange": 1.6249999999999993,
+    "failure": 0.125,
+    "loss": 0.8869892358779907,
+    "actor_parameter_delta": 0.016804371029138565
+  },
+  {
+    "batch": 16,
+    "lagrange": 1.5749999999999993,
+    "failure": 0.0,
+    "loss": 0.4696924090385437,
+    "actor_parameter_delta": 0.017259109765291214
+  },
+  {
+    "batch": 17,
+    "lagrange": 1.5249999999999992,
+    "failure": 0.0,
+    "loss": 0.7392125725746155,
+    "actor_parameter_delta": 0.0161900594830513
+  },
+  {
+    "batch": 18,
+    "lagrange": 1.6624999999999992,
+    "failure": 0.375,
+    "loss": 1.291939377784729,
+    "actor_parameter_delta": 0.014314242638647556
+  },
+  {
+    "batch": 19,
+    "lagrange": 1.6124999999999992,
+    "failure": 0.0,
+    "loss": 1.3643064498901367,
+    "actor_parameter_delta": 0.011565005406737328
+  },
+  {
+    "batch": 20,
+    "lagrange": 1.5624999999999991,
+    "failure": 0.0,
+    "loss": 0.7853237986564636,
+    "actor_parameter_delta": 0.01224168948829174
+  },
+  {
+    "batch": 21,
+    "lagrange": 1.637499999999999,
+    "failure": 0.25,
+    "loss": 1.3766576051712036,
+    "actor_parameter_delta": 0.012265842407941818
+  },
+  {
+    "batch": 22,
+    "lagrange": 1.649999999999999,
+    "failure": 0.125,
+    "loss": 1.3131500482559204,
+    "actor_parameter_delta": 0.015399586409330368
+  },
+  {
+    "batch": 23,
+    "lagrange": 1.662499999999999,
+    "failure": 0.125,
+    "loss": 1.0095971822738647,
+    "actor_parameter_delta": 0.016875913366675377
+  },
+  {
+    "batch": 24,
+    "lagrange": 1.799999999999999,
+    "failure": 0.375,
+    "loss": 1.3378517627716064,
+    "actor_parameter_delta": 0.014231594279408455
+  }
+]

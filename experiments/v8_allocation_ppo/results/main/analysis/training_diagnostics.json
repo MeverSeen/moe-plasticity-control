@@ -1,0 +1,2744 @@
+{
+  "selections": {
+    "ppo_a15_feedback_881": {
+      "selected": {
+        "feedback": true,
+        "seed": 881,
+        "actions": 15,
+        "checkpoint": "ppo24",
+        "dev": {
+          "reach": 0.9583333333333334,
+          "forgetting": 0.008296099423930264,
+          "work": 15569.180555555553,
+          "steps": 43.666666666666664
+        }
+      },
+      "dev_candidates": 5,
+      "dev_feasible_candidates": 5,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "batch": 1,
+          "lagrange": 1.0125,
+          "failure": 0.125,
+          "loss": 0.77845299243927,
+          "actor_parameter_delta": 0.026530390605330467
+        },
+        {
+          "batch": 2,
+          "lagrange": 0.9624999999999999,
+          "failure": 0.0,
+          "loss": 0.7017085552215576,
+          "actor_parameter_delta": 0.02085016667842865
+        },
+        {
+          "batch": 3,
+          "lagrange": 0.9749999999999999,
+          "failure": 0.125,
+          "loss": 0.9117250442504883,
+          "actor_parameter_delta": 0.018080024048686028
+        },
+        {
+          "batch": 4,
+          "lagrange": 0.9874999999999998,
+          "failure": 0.125,
+          "loss": 1.9016342163085938,
+          "actor_parameter_delta": 0.014796548523008823
+        },
+        {
+          "batch": 5,
+          "lagrange": 1.0624999999999998,
+          "failure": 0.25,
+          "loss": 0.9037666916847229,
+          "actor_parameter_delta": 0.014033093117177486
+        },
+        {
+          "batch": 6,
+          "lagrange": 1.1374999999999997,
+          "failure": 0.25,
+          "loss": 1.8683758974075317,
+          "actor_parameter_delta": 0.014583942480385303
+        },
+        {
+          "batch": 7,
+          "lagrange": 1.1499999999999997,
+          "failure": 0.125,
+          "loss": 1.4207546710968018,
+          "actor_parameter_delta": 0.013167528435587883
+        },
+        {
+          "batch": 8,
+          "lagrange": 1.0999999999999996,
+          "failure": 0.0,
+          "loss": 0.18363815546035767,
+          "actor_parameter_delta": 0.013983480632305145
+        },
+        {
+          "batch": 9,
+          "lagrange": 1.0499999999999996,
+          "failure": 0.0,
+          "loss": 0.9495508670806885,
+          "actor_parameter_delta": 0.014348740689456463
+        },
+        {
+          "batch": 10,
+          "lagrange": 0.9999999999999996,
+          "failure": 0.0,
+          "loss": 0.7894670963287354,
+          "actor_parameter_delta": 0.013351541943848133
+        },
+        {
+          "batch": 11,
+          "lagrange": 1.0749999999999995,
+          "failure": 0.25,
+          "loss": 1.9770846366882324,
+          "actor_parameter_delta": 0.012030977755784988
+        },
+        {
+          "batch": 12,
+          "lagrange": 1.0249999999999995,
+          "failure": 0.0,
+          "loss": 0.7208400964736938,
+          "actor_parameter_delta": 0.012135431170463562
+        },
+        {
+          "batch": 13,
+          "lagrange": 0.9749999999999994,
+          "failure": 0.0,
+          "loss": 0.7251918315887451,
+          "actor_parameter_delta": 0.01375114731490612
+        },
+        {
+          "batch": 14,
+          "lagrange": 0.9249999999999994,
+          "failure": 0.0,
+          "loss": 2.0565185546875,
+          "actor_parameter_delta": 0.012675073929131031
+        },
+        {
+          "batch": 15,
+          "lagrange": 0.8749999999999993,
+          "failure": 0.0,
+          "loss": 0.16558779776096344,
+          "actor_parameter_delta": 0.015228907577693462
+        },
+        {
+          "batch": 16,
+          "lagrange": 0.8874999999999993,
+          "failure": 0.125,
+          "loss": 4.4972052574157715,
+          "actor_parameter_delta": 0.01593783311545849
+        },
+        {
+          "batch": 17,
+          "lagrange": 0.8374999999999992,
+          "failure": 0.0,
+          "loss": 0.2273675501346588,
+          "actor_parameter_delta": 0.013776380568742752
+        },
+        {
+          "batch": 18,
+          "lagrange": 0.8499999999999992,
+          "failure": 0.125,
+          "loss": 0.6751517057418823,
+          "actor_parameter_delta": 0.01295682042837143
+        },
+        {
+          "batch": 19,
+          "lagrange": 0.9249999999999992,
+          "failure": 0.25,
+          "loss": 1.648297667503357,
+          "actor_parameter_delta": 0.01125066913664341
+        },
+        {
+          "batch": 20,
+          "lagrange": 0.8749999999999991,
+          "failure": 0.0,
+          "loss": 0.814994215965271,
+          "actor_parameter_delta": 0.012254282832145691
+        },
+        {
+          "batch": 21,
+          "lagrange": 0.9499999999999991,
+          "failure": 0.25,
+          "loss": 2.738497734069824,
+          "actor_parameter_delta": 0.011600472033023834
+        },
+        {
+          "batch": 22,
+          "lagrange": 0.962499999999999,
+          "failure": 0.125,
+          "loss": 1.6523098945617676,
+          "actor_parameter_delta": 0.009643605910241604
+        },
+        {
+          "batch": 23,
+          "lagrange": 0.974999999999999,
+          "failure": 0.125,
+          "loss": 1.3779633045196533,
+          "actor_parameter_delta": 0.009331990033388138
+        },
+        {
+          "batch": 24,
+          "lagrange": 0.9249999999999989,
+          "failure": 0.0,
+          "loss": 1.2839964628219604,
+          "actor_parameter_delta": 0.010226650163531303
+        }
+      ]
+    },
+    "ppo_a15_feedback_882": {
+      "selected": {
+        "feedback": true,
+        "seed": 882,
+        "actions": 15,
+        "checkpoint": "warm0",
+        "dev": {
+          "reach": 0.9166666666666666,
+          "forgetting": 0.012376665617480421,
+          "work": 18318.51026570048,
+          "steps": 51.916666666666664
+        }
+      },
+      "dev_candidates": 5,
+      "dev_feasible_candidates": 4,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "batch": 1,
+          "lagrange": 0.95,
+          "failure": 0.0,
+          "loss": 1.0388764142990112,
+          "actor_parameter_delta": 0.02658548392355442
+        },
+        {
+          "batch": 2,
+          "lagrange": 0.9624999999999999,
+          "failure": 0.125,
+          "loss": 9.35440444946289,
+          "actor_parameter_delta": 0.020047683268785477
+        },
+        {
+          "batch": 3,
+          "lagrange": 0.9124999999999999,
+          "failure": 0.0,
+          "loss": 1.9795705080032349,
+          "actor_parameter_delta": 0.017373546957969666
+        },
+        {
+          "batch": 4,
+          "lagrange": 0.9249999999999998,
+          "failure": 0.125,
+          "loss": 1.655013918876648,
+          "actor_parameter_delta": 0.016245583072304726
+        },
+        {
+          "batch": 5,
+          "lagrange": 0.9374999999999998,
+          "failure": 0.125,
+          "loss": 3.336738109588623,
+          "actor_parameter_delta": 0.013445314019918442
+        },
+        {
+          "batch": 6,
+          "lagrange": 0.9499999999999997,
+          "failure": 0.125,
+          "loss": 1.6339844465255737,
+          "actor_parameter_delta": 0.013577387668192387
+        },
+        {
+          "batch": 7,
+          "lagrange": 0.9624999999999997,
+          "failure": 0.125,
+          "loss": 2.0948596000671387,
+          "actor_parameter_delta": 0.011856761761009693
+        },
+        {
+          "batch": 8,
+          "lagrange": 0.9124999999999996,
+          "failure": 0.0,
+          "loss": 1.150854229927063,
+          "actor_parameter_delta": 0.01203529816120863
+        },
+        {
+          "batch": 9,
+          "lagrange": 0.9249999999999996,
+          "failure": 0.125,
+          "loss": 1.4639033079147339,
+          "actor_parameter_delta": 0.012842845171689987
+        },
+        {
+          "batch": 10,
+          "lagrange": 0.9999999999999996,
+          "failure": 0.25,
+          "loss": 1.874730110168457,
+          "actor_parameter_delta": 0.014106683433055878
+        },
+        {
+          "batch": 11,
+          "lagrange": 0.9499999999999995,
+          "failure": 0.0,
+          "loss": 0.8685228228569031,
+          "actor_parameter_delta": 0.012682678177952766
+        },
+        {
+          "batch": 12,
+          "lagrange": 0.9624999999999995,
+          "failure": 0.125,
+          "loss": 1.6879745721817017,
+          "actor_parameter_delta": 0.012397119775414467
+        },
+        {
+          "batch": 13,
+          "lagrange": 1.0374999999999994,
+          "failure": 0.25,
+          "loss": 2.545398473739624,
+          "actor_parameter_delta": 0.010669662617146969
+        },
+        {
+          "batch": 14,
+          "lagrange": 1.0499999999999994,
+          "failure": 0.125,
+          "loss": 1.642632246017456,
+          "actor_parameter_delta": 0.010676806792616844
+        },
+        {
+          "batch": 15,
+          "lagrange": 1.0624999999999993,
+          "failure": 0.125,
+          "loss": 2.867859125137329,
+          "actor_parameter_delta": 0.011602431535720825
+        },
+        {
+          "batch": 16,
+          "lagrange": 1.0749999999999993,
+          "failure": 0.125,
+          "loss": 4.970376014709473,
+          "actor_parameter_delta": 0.01189042441546917
+        },
+        {
+          "batch": 17,
+          "lagrange": 1.0874999999999992,
+          "failure": 0.125,
+          "loss": 11.040176391601562,
+          "actor_parameter_delta": 0.011094680987298489
+        },
+        {
+          "batch": 18,
+          "lagrange": 1.1624999999999992,
+          "failure": 0.25,
+          "loss": 3.816702127456665,
+          "actor_parameter_delta": 0.010309486649930477
+        },
+        {
+          "batch": 19,
+          "lagrange": 1.1124999999999992,
+          "failure": 0.0,
+          "loss": 0.7089097499847412,
+          "actor_parameter_delta": 0.013979390263557434
+        },
+        {
+          "batch": 20,
+          "lagrange": 1.1249999999999991,
+          "failure": 0.125,
+          "loss": 0.871982753276825,
+          "actor_parameter_delta": 0.015115376561880112
+        },
+        {
+          "batch": 21,
+          "lagrange": 1.074999999999999,
+          "failure": 0.0,
+          "loss": 0.5694708228111267,
+          "actor_parameter_delta": 0.014447633177042007
+        },
+        {
+          "batch": 22,
+          "lagrange": 1.087499999999999,
+          "failure": 0.125,
+          "loss": 3.8253564834594727,
+          "actor_parameter_delta": 0.014067452400922775
+        },
+        {
+          "batch": 23,
+          "lagrange": 1.099999999999999,
+          "failure": 0.125,
+          "loss": 0.9543391466140747,
+          "actor_parameter_delta": 0.011362209916114807
+        },
+        {
+          "batch": 24,
+          "lagrange": 1.237499999999999,
+          "failure": 0.375,
+          "loss": 8.992677688598633,
+          "actor_parameter_delta": 0.009089288301765919
+        }
+      ]
+    },
+    "ppo_a15_feedback_883": {
+      "selected": {
+        "feedback": true,
+        "seed": 883,
+        "actions": 15,
+        "checkpoint": "ppo16",
+        "dev": {
+          "reach": 0.9583333333333334,
+          "forgetting": 0.011329938563099806,
+          "work": 17196.349637681156,
+          "steps": 48.541666666666664
+        }
+      },
+      "dev_candidates": 5,
+      "dev_feasible_candidates": 5,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "batch": 1,
+          "lagrange": 1.075,
+          "failure": 0.25,
+          "loss": 1.3975515365600586,
+          "actor_parameter_delta": 0.026668382808566093
+        },
+        {
+          "batch": 2,
+          "lagrange": 1.15,
+          "failure": 0.25,
+          "loss": 1.0621644258499146,
+          "actor_parameter_delta": 0.020061513409018517
+        },
+        {
+          "batch": 3,
+          "lagrange": 1.1624999999999999,
+          "failure": 0.125,
+          "loss": 1.0435270071029663,
+          "actor_parameter_delta": 0.018158433958888054
+        },
+        {
+          "batch": 4,
+          "lagrange": 1.2374999999999998,
+          "failure": 0.25,
+          "loss": 1.0461369752883911,
+          "actor_parameter_delta": 0.015516395680606365
+        },
+        {
+          "batch": 5,
+          "lagrange": 1.3124999999999998,
+          "failure": 0.25,
+          "loss": 0.9939329028129578,
+          "actor_parameter_delta": 0.013334928080439568
+        },
+        {
+          "batch": 6,
+          "lagrange": 1.4499999999999997,
+          "failure": 0.375,
+          "loss": 1.66395103931427,
+          "actor_parameter_delta": 0.012228770181536674
+        },
+        {
+          "batch": 7,
+          "lagrange": 1.3999999999999997,
+          "failure": 0.0,
+          "loss": 0.5053118467330933,
+          "actor_parameter_delta": 0.012000925838947296
+        },
+        {
+          "batch": 8,
+          "lagrange": 1.4124999999999996,
+          "failure": 0.125,
+          "loss": 1.0461560487747192,
+          "actor_parameter_delta": 0.013618668541312218
+        },
+        {
+          "batch": 9,
+          "lagrange": 1.4249999999999996,
+          "failure": 0.125,
+          "loss": 1.9912126064300537,
+          "actor_parameter_delta": 0.013879382982850075
+        },
+        {
+          "batch": 10,
+          "lagrange": 1.3749999999999996,
+          "failure": 0.0,
+          "loss": 1.863004207611084,
+          "actor_parameter_delta": 0.012652980163693428
+        },
+        {
+          "batch": 11,
+          "lagrange": 1.3874999999999995,
+          "failure": 0.125,
+          "loss": 2.2216832637786865,
+          "actor_parameter_delta": 0.011354915797710419
+        },
+        {
+          "batch": 12,
+          "lagrange": 1.3999999999999995,
+          "failure": 0.125,
+          "loss": 1.1879546642303467,
+          "actor_parameter_delta": 0.010891488753259182
+        },
+        {
+          "batch": 13,
+          "lagrange": 1.3499999999999994,
+          "failure": 0.0,
+          "loss": 0.8148337602615356,
+          "actor_parameter_delta": 0.012011446058750153
+        },
+        {
+          "batch": 14,
+          "lagrange": 1.4249999999999994,
+          "failure": 0.25,
+          "loss": 1.593280553817749,
+          "actor_parameter_delta": 0.012294125743210316
+        },
+        {
+          "batch": 15,
+          "lagrange": 1.4374999999999993,
+          "failure": 0.125,
+          "loss": 0.9566640257835388,
+          "actor_parameter_delta": 0.01095795352011919
+        },
+        {
+          "batch": 16,
+          "lagrange": 1.3874999999999993,
+          "failure": 0.0,
+          "loss": 0.45374152064323425,
+          "actor_parameter_delta": 0.01232430711388588
+        },
+        {
+          "batch": 17,
+          "lagrange": 1.3374999999999992,
+          "failure": 0.0,
+          "loss": 1.2879109382629395,
+          "actor_parameter_delta": 0.01377209834754467
+        },
+        {
+          "batch": 18,
+          "lagrange": 1.3499999999999992,
+          "failure": 0.125,
+          "loss": 0.8353056907653809,
+          "actor_parameter_delta": 0.012567359022796154
+        },
+        {
+          "batch": 19,
+          "lagrange": 1.2999999999999992,
+          "failure": 0.0,
+          "loss": 0.7324166893959045,
+          "actor_parameter_delta": 0.013916857540607452
+        },
+        {
+          "batch": 20,
+          "lagrange": 1.2499999999999991,
+          "failure": 0.0,
+          "loss": 0.6679827570915222,
+          "actor_parameter_delta": 0.0173284150660038
+        },
+        {
+          "batch": 21,
+          "lagrange": 1.324999999999999,
+          "failure": 0.25,
+          "loss": 1.0281295776367188,
+          "actor_parameter_delta": 0.017281560227274895
+        },
+        {
+          "batch": 22,
+          "lagrange": 1.337499999999999,
+          "failure": 0.125,
+          "loss": 1.0044878721237183,
+          "actor_parameter_delta": 0.014418873935937881
+        },
+        {
+          "batch": 23,
+          "lagrange": 1.349999999999999,
+          "failure": 0.125,
+          "loss": 1.2940311431884766,
+          "actor_parameter_delta": 0.0120964040979743
+        },
+        {
+          "batch": 24,
+          "lagrange": 1.424999999999999,
+          "failure": 0.25,
+          "loss": 1.7730257511138916,
+          "actor_parameter_delta": 0.010984384454786777
+        }
+      ]
+    },
+    "ppo_a15_progress_881": {
+      "selected": {
+        "feedback": false,
+        "seed": 881,
+        "actions": 15,
+        "checkpoint": "ppo16",
+        "dev": {
+          "reach": 0.9166666666666666,
+          "forgetting": 0.01104097610170191,
+          "work": 18065.468599033815,
+          "steps": 51.125
+        }
+      },
+      "dev_candidates": 5,
+      "dev_feasible_candidates": 5,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "batch": 1,
+          "lagrange": 1.0125,
+          "failure": 0.125,
+          "loss": 0.9461826682090759,
+          "actor_parameter_delta": 0.02665437012910843
+        },
+        {
+          "batch": 2,
+          "lagrange": 0.9624999999999999,
+          "failure": 0.0,
+          "loss": 0.5485517978668213,
+          "actor_parameter_delta": 0.01927107386291027
+        },
+        {
+          "batch": 3,
+          "lagrange": 1.0374999999999999,
+          "failure": 0.25,
+          "loss": 0.9491878151893616,
+          "actor_parameter_delta": 0.016542108729481697
+        },
+        {
+          "batch": 4,
+          "lagrange": 1.1124999999999998,
+          "failure": 0.25,
+          "loss": 1.1160671710968018,
+          "actor_parameter_delta": 0.015494738705456257
+        },
+        {
+          "batch": 5,
+          "lagrange": 1.1874999999999998,
+          "failure": 0.25,
+          "loss": 1.372377872467041,
+          "actor_parameter_delta": 0.014259414747357368
+        },
+        {
+          "batch": 6,
+          "lagrange": 1.1999999999999997,
+          "failure": 0.125,
+          "loss": 3.404813766479492,
+          "actor_parameter_delta": 0.010779300704598427
+        },
+        {
+          "batch": 7,
+          "lagrange": 1.2749999999999997,
+          "failure": 0.25,
+          "loss": 1.8881844282150269,
+          "actor_parameter_delta": 0.010419536381959915
+        },
+        {
+          "batch": 8,
+          "lagrange": 1.2249999999999996,
+          "failure": 0.0,
+          "loss": 0.7551203370094299,
+          "actor_parameter_delta": 0.010337818413972855
+        },
+        {
+          "batch": 9,
+          "lagrange": 1.2374999999999996,
+          "failure": 0.125,
+          "loss": 0.5081877708435059,
+          "actor_parameter_delta": 0.01146657019853592
+        },
+        {
+          "batch": 10,
+          "lagrange": 1.1874999999999996,
+          "failure": 0.0,
+          "loss": 1.5242081880569458,
+          "actor_parameter_delta": 0.011454811319708824
+        },
+        {
+          "batch": 11,
+          "lagrange": 1.1999999999999995,
+          "failure": 0.125,
+          "loss": 1.8997472524642944,
+          "actor_parameter_delta": 0.009518247097730637
+        },
+        {
+          "batch": 12,
+          "lagrange": 1.1499999999999995,
+          "failure": 0.0,
+          "loss": 0.6246526837348938,
+          "actor_parameter_delta": 0.011444758623838425
+        },
+        {
+          "batch": 13,
+          "lagrange": 1.0999999999999994,
+          "failure": 0.0,
+          "loss": 1.6326014995574951,
+          "actor_parameter_delta": 0.01318549457937479
+        },
+        {
+          "batch": 14,
+          "lagrange": 1.0499999999999994,
+          "failure": 0.0,
+          "loss": 1.5419741868972778,
+          "actor_parameter_delta": 0.010863673873245716
+        },
+        {
+          "batch": 15,
+          "lagrange": 0.9999999999999993,
+          "failure": 0.0,
+          "loss": 0.4423331022262573,
+          "actor_parameter_delta": 0.010612252168357372
+        },
+        {
+          "batch": 16,
+          "lagrange": 1.0124999999999993,
+          "failure": 0.125,
+          "loss": 3.7759461402893066,
+          "actor_parameter_delta": 0.010788852348923683
+        },
+        {
+          "batch": 17,
+          "lagrange": 1.0249999999999992,
+          "failure": 0.125,
+          "loss": 0.610913097858429,
+          "actor_parameter_delta": 0.010417066514492035
+        },
+        {
+          "batch": 18,
+          "lagrange": 1.0374999999999992,
+          "failure": 0.125,
+          "loss": 0.5779086351394653,
+          "actor_parameter_delta": 0.01161972340196371
+        },
+        {
+          "batch": 19,
+          "lagrange": 1.1124999999999992,
+          "failure": 0.25,
+          "loss": 2.8945508003234863,
+          "actor_parameter_delta": 0.012625214643776417
+        },
+        {
+          "batch": 20,
+          "lagrange": 1.1249999999999991,
+          "failure": 0.125,
+          "loss": 0.8541115522384644,
+          "actor_parameter_delta": 0.010726184584200382
+        },
+        {
+          "batch": 21,
+          "lagrange": 1.262499999999999,
+          "failure": 0.375,
+          "loss": 1.852952480316162,
+          "actor_parameter_delta": 0.010292348451912403
+        },
+        {
+          "batch": 22,
+          "lagrange": 1.274999999999999,
+          "failure": 0.125,
+          "loss": 1.2073198556900024,
+          "actor_parameter_delta": 0.012247534468770027
+        },
+        {
+          "batch": 23,
+          "lagrange": 1.349999999999999,
+          "failure": 0.25,
+          "loss": 1.0698857307434082,
+          "actor_parameter_delta": 0.012815949507057667
+        },
+        {
+          "batch": 24,
+          "lagrange": 1.299999999999999,
+          "failure": 0.0,
+          "loss": 1.512300968170166,
+          "actor_parameter_delta": 0.012566410936415195
+        }
+      ]
+    },
+    "ppo_a15_progress_882": {
+      "selected": {
+        "feedback": false,
+        "seed": 882,
+        "actions": 15,
+        "checkpoint": "ppo16",
+        "dev": {
+          "reach": 0.9166666666666666,
+          "forgetting": 0.002602450041608377,
+          "work": 18024.88526570048,
+          "steps": 51.0
+        }
+      },
+      "dev_candidates": 5,
+      "dev_feasible_candidates": 4,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "batch": 1,
+          "lagrange": 0.95,
+          "failure": 0.0,
+          "loss": 0.29520219564437866,
+          "actor_parameter_delta": 0.026607312262058258
+        },
+        {
+          "batch": 2,
+          "lagrange": 0.9624999999999999,
+          "failure": 0.125,
+          "loss": 1.792749047279358,
+          "actor_parameter_delta": 0.01968948356807232
+        },
+        {
+          "batch": 3,
+          "lagrange": 0.9124999999999999,
+          "failure": 0.0,
+          "loss": 0.5054721236228943,
+          "actor_parameter_delta": 0.016323531046509743
+        },
+        {
+          "batch": 4,
+          "lagrange": 0.9249999999999998,
+          "failure": 0.125,
+          "loss": 0.6920121908187866,
+          "actor_parameter_delta": 0.01399222668260336
+        },
+        {
+          "batch": 5,
+          "lagrange": 0.9374999999999998,
+          "failure": 0.125,
+          "loss": 1.8054757118225098,
+          "actor_parameter_delta": 0.010028354823589325
+        },
+        {
+          "batch": 6,
+          "lagrange": 0.9499999999999997,
+          "failure": 0.125,
+          "loss": 0.6141920685768127,
+          "actor_parameter_delta": 0.008907006122171879
+        },
+        {
+          "batch": 7,
+          "lagrange": 0.9624999999999997,
+          "failure": 0.125,
+          "loss": 1.4048380851745605,
+          "actor_parameter_delta": 0.008313926868140697
+        },
+        {
+          "batch": 8,
+          "lagrange": 0.9124999999999996,
+          "failure": 0.0,
+          "loss": 0.739116907119751,
+          "actor_parameter_delta": 0.009569232352077961
+        },
+        {
+          "batch": 9,
+          "lagrange": 0.9249999999999996,
+          "failure": 0.125,
+          "loss": 1.06105375289917,
+          "actor_parameter_delta": 0.009413203224539757
+        },
+        {
+          "batch": 10,
+          "lagrange": 0.9999999999999996,
+          "failure": 0.25,
+          "loss": 2.887981653213501,
+          "actor_parameter_delta": 0.008599472232162952
+        },
+        {
+          "batch": 11,
+          "lagrange": 0.9499999999999995,
+          "failure": 0.0,
+          "loss": 0.39103519916534424,
+          "actor_parameter_delta": 0.010481661185622215
+        },
+        {
+          "batch": 12,
+          "lagrange": 0.9624999999999995,
+          "failure": 0.125,
+          "loss": 1.2892179489135742,
+          "actor_parameter_delta": 0.010686218738555908
+        },
+        {
+          "batch": 13,
+          "lagrange": 0.9749999999999994,
+          "failure": 0.125,
+          "loss": 1.2189327478408813,
+          "actor_parameter_delta": 0.007977891713380814
+        },
+        {
+          "batch": 14,
+          "lagrange": 0.9874999999999994,
+          "failure": 0.125,
+          "loss": 0.8048707842826843,
+          "actor_parameter_delta": 0.009192358702421188
+        },
+        {
+          "batch": 15,
+          "lagrange": 0.9999999999999993,
+          "failure": 0.125,
+          "loss": 1.4118123054504395,
+          "actor_parameter_delta": 0.012685447931289673
+        },
+        {
+          "batch": 16,
+          "lagrange": 1.0124999999999993,
+          "failure": 0.125,
+          "loss": 1.2202869653701782,
+          "actor_parameter_delta": 0.011539495550096035
+        },
+        {
+          "batch": 17,
+          "lagrange": 1.0249999999999992,
+          "failure": 0.125,
+          "loss": 0.9729135036468506,
+          "actor_parameter_delta": 0.009798871353268623
+        },
+        {
+          "batch": 18,
+          "lagrange": 1.0374999999999992,
+          "failure": 0.125,
+          "loss": 1.2697442770004272,
+          "actor_parameter_delta": 0.009520568884909153
+        },
+        {
+          "batch": 19,
+          "lagrange": 0.9874999999999992,
+          "failure": 0.0,
+          "loss": 0.29674217104911804,
+          "actor_parameter_delta": 0.010731199756264687
+        },
+        {
+          "batch": 20,
+          "lagrange": 0.9999999999999991,
+          "failure": 0.125,
+          "loss": 1.7628273963928223,
+          "actor_parameter_delta": 0.011961846612393856
+        },
+        {
+          "batch": 21,
+          "lagrange": 0.9499999999999991,
+          "failure": 0.0,
+          "loss": 0.21643447875976562,
+          "actor_parameter_delta": 0.013257251121103764
+        },
+        {
+          "batch": 22,
+          "lagrange": 0.899999999999999,
+          "failure": 0.0,
+          "loss": 0.8561766743659973,
+          "actor_parameter_delta": 0.013534232042729855
+        },
+        {
+          "batch": 23,
+          "lagrange": 0.974999999999999,
+          "failure": 0.25,
+          "loss": 0.5795155763626099,
+          "actor_parameter_delta": 0.013541084714233875
+        },
+        {
+          "batch": 24,
+          "lagrange": 1.112499999999999,
+          "failure": 0.375,
+          "loss": 1.9013328552246094,
+          "actor_parameter_delta": 0.011667762883007526
+        }
+      ]
+    },
+    "ppo_a15_progress_883": {
+      "selected": {
+        "feedback": false,
+        "seed": 883,
+        "actions": 15,
+        "checkpoint": "warm0",
+        "dev": {
+          "reach": 0.9166666666666666,
+          "forgetting": 0.009541058884651373,
+          "work": 18899.84057971014,
+          "steps": 53.666666666666664
+        }
+      },
+      "dev_candidates": 5,
+      "dev_feasible_candidates": 5,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "batch": 1,
+          "lagrange": 1.075,
+          "failure": 0.25,
+          "loss": 1.698936939239502,
+          "actor_parameter_delta": 0.026644377037882805
+        },
+        {
+          "batch": 2,
+          "lagrange": 1.15,
+          "failure": 0.25,
+          "loss": 1.2147605419158936,
+          "actor_parameter_delta": 0.018643571063876152
+        },
+        {
+          "batch": 3,
+          "lagrange": 1.1624999999999999,
+          "failure": 0.125,
+          "loss": 0.48557373881340027,
+          "actor_parameter_delta": 0.017685819417238235
+        },
+        {
+          "batch": 4,
+          "lagrange": 1.2374999999999998,
+          "failure": 0.25,
+          "loss": 1.942936897277832,
+          "actor_parameter_delta": 0.014776084572076797
+        },
+        {
+          "batch": 5,
+          "lagrange": 1.3124999999999998,
+          "failure": 0.25,
+          "loss": 0.6499808430671692,
+          "actor_parameter_delta": 0.012934811413288116
+        },
+        {
+          "batch": 6,
+          "lagrange": 1.4499999999999997,
+          "failure": 0.375,
+          "loss": 2.5446929931640625,
+          "actor_parameter_delta": 0.011844509281218052
+        },
+        {
+          "batch": 7,
+          "lagrange": 1.4624999999999997,
+          "failure": 0.125,
+          "loss": 0.3882512152194977,
+          "actor_parameter_delta": 0.013176224194467068
+        },
+        {
+          "batch": 8,
+          "lagrange": 1.5374999999999996,
+          "failure": 0.25,
+          "loss": 1.1032648086547852,
+          "actor_parameter_delta": 0.013848771341145039
+        },
+        {
+          "batch": 9,
+          "lagrange": 1.5499999999999996,
+          "failure": 0.125,
+          "loss": 1.8183140754699707,
+          "actor_parameter_delta": 0.011985610239207745
+        },
+        {
+          "batch": 10,
+          "lagrange": 1.4999999999999996,
+          "failure": 0.0,
+          "loss": 4.561460494995117,
+          "actor_parameter_delta": 0.009270363487303257
+        },
+        {
+          "batch": 11,
+          "lagrange": 1.5124999999999995,
+          "failure": 0.125,
+          "loss": 1.380280613899231,
+          "actor_parameter_delta": 0.008703242987394333
+        },
+        {
+          "batch": 12,
+          "lagrange": 1.5874999999999995,
+          "failure": 0.25,
+          "loss": 1.4792121648788452,
+          "actor_parameter_delta": 0.01167247537523508
+        },
+        {
+          "batch": 13,
+          "lagrange": 1.5374999999999994,
+          "failure": 0.0,
+          "loss": 0.928058385848999,
+          "actor_parameter_delta": 0.015315038152039051
+        },
+        {
+          "batch": 14,
+          "lagrange": 1.6124999999999994,
+          "failure": 0.25,
+          "loss": 0.8661388158798218,
+          "actor_parameter_delta": 0.017483308911323547
+        },
+        {
+          "batch": 15,
+          "lagrange": 1.6249999999999993,
+          "failure": 0.125,
+          "loss": 0.8869892358779907,
+          "actor_parameter_delta": 0.016804371029138565
+        },
+        {
+          "batch": 16,
+          "lagrange": 1.5749999999999993,
+          "failure": 0.0,
+          "loss": 0.4696924090385437,
+          "actor_parameter_delta": 0.017259109765291214
+        },
+        {
+          "batch": 17,
+          "lagrange": 1.5249999999999992,
+          "failure": 0.0,
+          "loss": 0.7392125725746155,
+          "actor_parameter_delta": 0.0161900594830513
+        },
+        {
+          "batch": 18,
+          "lagrange": 1.6624999999999992,
+          "failure": 0.375,
+          "loss": 1.291939377784729,
+          "actor_parameter_delta": 0.014314242638647556
+        },
+        {
+          "batch": 19,
+          "lagrange": 1.6124999999999992,
+          "failure": 0.0,
+          "loss": 1.3643064498901367,
+          "actor_parameter_delta": 0.011565005406737328
+        },
+        {
+          "batch": 20,
+          "lagrange": 1.5624999999999991,
+          "failure": 0.0,
+          "loss": 0.7853237986564636,
+          "actor_parameter_delta": 0.01224168948829174
+        },
+        {
+          "batch": 21,
+          "lagrange": 1.637499999999999,
+          "failure": 0.25,
+          "loss": 1.3766576051712036,
+          "actor_parameter_delta": 0.012265842407941818
+        },
+        {
+          "batch": 22,
+          "lagrange": 1.649999999999999,
+          "failure": 0.125,
+          "loss": 1.3131500482559204,
+          "actor_parameter_delta": 0.015399586409330368
+        },
+        {
+          "batch": 23,
+          "lagrange": 1.662499999999999,
+          "failure": 0.125,
+          "loss": 1.0095971822738647,
+          "actor_parameter_delta": 0.016875913366675377
+        },
+        {
+          "batch": 24,
+          "lagrange": 1.799999999999999,
+          "failure": 0.375,
+          "loss": 1.3378517627716064,
+          "actor_parameter_delta": 0.014231594279408455
+        }
+      ]
+    },
+    "ppo_a5_feedback_881": {
+      "selected": {
+        "feedback": true,
+        "seed": 881,
+        "actions": 5,
+        "checkpoint": "ppo8",
+        "dev": {
+          "reach": 0.9166666666666666,
+          "forgetting": 0.00530879899407878,
+          "work": 17219.796497584535,
+          "steps": 48.625
+        }
+      },
+      "dev_candidates": 5,
+      "dev_feasible_candidates": 5,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "batch": 1,
+          "lagrange": 1.0125,
+          "failure": 0.125,
+          "loss": 0.38445207476615906,
+          "actor_parameter_delta": 0.015432446263730526
+        },
+        {
+          "batch": 2,
+          "lagrange": 0.9624999999999999,
+          "failure": 0.0,
+          "loss": 0.3798104226589203,
+          "actor_parameter_delta": 0.013567150570452213
+        },
+        {
+          "batch": 3,
+          "lagrange": 0.9749999999999999,
+          "failure": 0.125,
+          "loss": 0.46654370427131653,
+          "actor_parameter_delta": 0.012103459797799587
+        },
+        {
+          "batch": 4,
+          "lagrange": 0.9874999999999998,
+          "failure": 0.125,
+          "loss": 0.5796031951904297,
+          "actor_parameter_delta": 0.009464574046432972
+        },
+        {
+          "batch": 5,
+          "lagrange": 1.0624999999999998,
+          "failure": 0.25,
+          "loss": 0.4447426497936249,
+          "actor_parameter_delta": 0.00808663573116064
+        },
+        {
+          "batch": 6,
+          "lagrange": 1.1374999999999997,
+          "failure": 0.25,
+          "loss": 1.8630690574645996,
+          "actor_parameter_delta": 0.0073878285475075245
+        },
+        {
+          "batch": 7,
+          "lagrange": 1.1499999999999997,
+          "failure": 0.125,
+          "loss": 0.7899748086929321,
+          "actor_parameter_delta": 0.0064180269837379456
+        },
+        {
+          "batch": 8,
+          "lagrange": 1.0999999999999996,
+          "failure": 0.0,
+          "loss": 0.4308885335922241,
+          "actor_parameter_delta": 0.006530412007123232
+        },
+        {
+          "batch": 9,
+          "lagrange": 1.0499999999999996,
+          "failure": 0.0,
+          "loss": 0.27015504240989685,
+          "actor_parameter_delta": 0.006625564768910408
+        },
+        {
+          "batch": 10,
+          "lagrange": 0.9999999999999996,
+          "failure": 0.0,
+          "loss": 0.23226451873779297,
+          "actor_parameter_delta": 0.005943995900452137
+        },
+        {
+          "batch": 11,
+          "lagrange": 1.0749999999999995,
+          "failure": 0.25,
+          "loss": 1.4002976417541504,
+          "actor_parameter_delta": 0.006254894193261862
+        },
+        {
+          "batch": 12,
+          "lagrange": 1.0249999999999995,
+          "failure": 0.0,
+          "loss": 0.35096076130867004,
+          "actor_parameter_delta": 0.007678013760596514
+        },
+        {
+          "batch": 13,
+          "lagrange": 0.9749999999999994,
+          "failure": 0.0,
+          "loss": 0.34657981991767883,
+          "actor_parameter_delta": 0.007828544825315475
+        },
+        {
+          "batch": 14,
+          "lagrange": 0.9249999999999994,
+          "failure": 0.0,
+          "loss": 0.8160756230354309,
+          "actor_parameter_delta": 0.00761483795940876
+        },
+        {
+          "batch": 15,
+          "lagrange": 0.8749999999999993,
+          "failure": 0.0,
+          "loss": 0.18880903720855713,
+          "actor_parameter_delta": 0.0066149793565273285
+        },
+        {
+          "batch": 16,
+          "lagrange": 0.8874999999999993,
+          "failure": 0.125,
+          "loss": 1.3593231439590454,
+          "actor_parameter_delta": 0.005643340293318033
+        },
+        {
+          "batch": 17,
+          "lagrange": 0.8374999999999992,
+          "failure": 0.0,
+          "loss": 0.13582468032836914,
+          "actor_parameter_delta": 0.009090171195566654
+        },
+        {
+          "batch": 18,
+          "lagrange": 0.8499999999999992,
+          "failure": 0.125,
+          "loss": 0.36345145106315613,
+          "actor_parameter_delta": 0.008303423412144184
+        },
+        {
+          "batch": 19,
+          "lagrange": 0.9249999999999992,
+          "failure": 0.25,
+          "loss": 1.759670615196228,
+          "actor_parameter_delta": 0.0059446003288030624
+        },
+        {
+          "batch": 20,
+          "lagrange": 0.8749999999999991,
+          "failure": 0.0,
+          "loss": 0.13875988125801086,
+          "actor_parameter_delta": 0.005707149859517813
+        },
+        {
+          "batch": 21,
+          "lagrange": 0.9499999999999991,
+          "failure": 0.25,
+          "loss": 0.7708211541175842,
+          "actor_parameter_delta": 0.005485943052917719
+        },
+        {
+          "batch": 22,
+          "lagrange": 0.962499999999999,
+          "failure": 0.125,
+          "loss": 1.0067166090011597,
+          "actor_parameter_delta": 0.006870699115097523
+        },
+        {
+          "batch": 23,
+          "lagrange": 0.974999999999999,
+          "failure": 0.125,
+          "loss": 1.5071182250976562,
+          "actor_parameter_delta": 0.00951186753809452
+        },
+        {
+          "batch": 24,
+          "lagrange": 0.9249999999999989,
+          "failure": 0.0,
+          "loss": 0.9608606100082397,
+          "actor_parameter_delta": 0.009675526060163975
+        }
+      ]
+    },
+    "ppo_a5_feedback_882": {
+      "selected": {
+        "feedback": true,
+        "seed": 882,
+        "actions": 5,
+        "checkpoint": "ppo16",
+        "dev": {
+          "reach": 0.9166666666666666,
+          "forgetting": 0.005394864093625184,
+          "work": 16592.19323671497,
+          "steps": 46.75
+        }
+      },
+      "dev_candidates": 5,
+      "dev_feasible_candidates": 4,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "batch": 1,
+          "lagrange": 0.95,
+          "failure": 0.0,
+          "loss": 0.0829450860619545,
+          "actor_parameter_delta": 0.015363666228950024
+        },
+        {
+          "batch": 2,
+          "lagrange": 0.9624999999999999,
+          "failure": 0.125,
+          "loss": 3.411851167678833,
+          "actor_parameter_delta": 0.012793819420039654
+        },
+        {
+          "batch": 3,
+          "lagrange": 0.9124999999999999,
+          "failure": 0.0,
+          "loss": 0.2546917498111725,
+          "actor_parameter_delta": 0.008743278682231903
+        },
+        {
+          "batch": 4,
+          "lagrange": 0.9249999999999998,
+          "failure": 0.125,
+          "loss": 0.47210147976875305,
+          "actor_parameter_delta": 0.008026699535548687
+        },
+        {
+          "batch": 5,
+          "lagrange": 0.9374999999999998,
+          "failure": 0.125,
+          "loss": 1.2147836685180664,
+          "actor_parameter_delta": 0.007556450087577105
+        },
+        {
+          "batch": 6,
+          "lagrange": 0.9499999999999997,
+          "failure": 0.125,
+          "loss": 0.4753039479255676,
+          "actor_parameter_delta": 0.007019697222858667
+        },
+        {
+          "batch": 7,
+          "lagrange": 0.9624999999999997,
+          "failure": 0.125,
+          "loss": 3.0152242183685303,
+          "actor_parameter_delta": 0.008001575246453285
+        },
+        {
+          "batch": 8,
+          "lagrange": 0.9124999999999996,
+          "failure": 0.0,
+          "loss": 0.3923843801021576,
+          "actor_parameter_delta": 0.007743269670754671
+        },
+        {
+          "batch": 9,
+          "lagrange": 0.9249999999999996,
+          "failure": 0.125,
+          "loss": 0.5656235218048096,
+          "actor_parameter_delta": 0.007542862091213465
+        },
+        {
+          "batch": 10,
+          "lagrange": 0.9999999999999996,
+          "failure": 0.25,
+          "loss": 0.7512152791023254,
+          "actor_parameter_delta": 0.006485413294285536
+        },
+        {
+          "batch": 11,
+          "lagrange": 0.9499999999999995,
+          "failure": 0.0,
+          "loss": 0.5015894174575806,
+          "actor_parameter_delta": 0.009227581322193146
+        },
+        {
+          "batch": 12,
+          "lagrange": 0.9624999999999995,
+          "failure": 0.125,
+          "loss": 0.676325261592865,
+          "actor_parameter_delta": 0.008443912491202354
+        },
+        {
+          "batch": 13,
+          "lagrange": 0.9749999999999994,
+          "failure": 0.125,
+          "loss": 2.7780699729919434,
+          "actor_parameter_delta": 0.005813357885926962
+        },
+        {
+          "batch": 14,
+          "lagrange": 0.9874999999999994,
+          "failure": 0.125,
+          "loss": 0.435984343290329,
+          "actor_parameter_delta": 0.004618505947291851
+        },
+        {
+          "batch": 15,
+          "lagrange": 0.9999999999999993,
+          "failure": 0.125,
+          "loss": 2.3636348247528076,
+          "actor_parameter_delta": 0.005535508506000042
+        },
+        {
+          "batch": 16,
+          "lagrange": 1.0124999999999993,
+          "failure": 0.125,
+          "loss": 3.857654333114624,
+          "actor_parameter_delta": 0.005470657721161842
+        },
+        {
+          "batch": 17,
+          "lagrange": 1.0249999999999992,
+          "failure": 0.125,
+          "loss": 2.9067625999450684,
+          "actor_parameter_delta": 0.005119822919368744
+        },
+        {
+          "batch": 18,
+          "lagrange": 1.0374999999999992,
+          "failure": 0.125,
+          "loss": 2.5388543605804443,
+          "actor_parameter_delta": 0.0043406616896390915
+        },
+        {
+          "batch": 19,
+          "lagrange": 0.9874999999999992,
+          "failure": 0.0,
+          "loss": 0.2620041072368622,
+          "actor_parameter_delta": 0.007888175547122955
+        },
+        {
+          "batch": 20,
+          "lagrange": 0.9999999999999991,
+          "failure": 0.125,
+          "loss": 0.5759601593017578,
+          "actor_parameter_delta": 0.007936517708003521
+        },
+        {
+          "batch": 21,
+          "lagrange": 0.9499999999999991,
+          "failure": 0.0,
+          "loss": 0.14027146995067596,
+          "actor_parameter_delta": 0.00705913919955492
+        },
+        {
+          "batch": 22,
+          "lagrange": 0.899999999999999,
+          "failure": 0.0,
+          "loss": 0.27236270904541016,
+          "actor_parameter_delta": 0.007818793877959251
+        },
+        {
+          "batch": 23,
+          "lagrange": 0.974999999999999,
+          "failure": 0.25,
+          "loss": 0.8164989352226257,
+          "actor_parameter_delta": 0.006601148284971714
+        },
+        {
+          "batch": 24,
+          "lagrange": 1.112499999999999,
+          "failure": 0.375,
+          "loss": 3.225531816482544,
+          "actor_parameter_delta": 0.00520566338673234
+        }
+      ]
+    },
+    "ppo_a5_feedback_883": {
+      "selected": {
+        "feedback": true,
+        "seed": 883,
+        "actions": 5,
+        "checkpoint": "ppo16",
+        "dev": {
+          "reach": 0.9166666666666666,
+          "forgetting": 0.008341278090621485,
+          "work": 17163.24335748792,
+          "steps": 48.458333333333336
+        }
+      },
+      "dev_candidates": 5,
+      "dev_feasible_candidates": 5,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "batch": 1,
+          "lagrange": 1.075,
+          "failure": 0.25,
+          "loss": 2.5234830379486084,
+          "actor_parameter_delta": 0.01526596024632454
+        },
+        {
+          "batch": 2,
+          "lagrange": 1.15,
+          "failure": 0.25,
+          "loss": 1.678851842880249,
+          "actor_parameter_delta": 0.010989684611558914
+        },
+        {
+          "batch": 3,
+          "lagrange": 1.1624999999999999,
+          "failure": 0.125,
+          "loss": 0.9333627820014954,
+          "actor_parameter_delta": 0.010917083360254765
+        },
+        {
+          "batch": 4,
+          "lagrange": 1.2374999999999998,
+          "failure": 0.25,
+          "loss": 1.8709970712661743,
+          "actor_parameter_delta": 0.009382596239447594
+        },
+        {
+          "batch": 5,
+          "lagrange": 1.3124999999999998,
+          "failure": 0.25,
+          "loss": 1.3381129503250122,
+          "actor_parameter_delta": 0.0073200068436563015
+        },
+        {
+          "batch": 6,
+          "lagrange": 1.4499999999999997,
+          "failure": 0.375,
+          "loss": 3.5484349727630615,
+          "actor_parameter_delta": 0.006717854645103216
+        },
+        {
+          "batch": 7,
+          "lagrange": 1.3999999999999997,
+          "failure": 0.0,
+          "loss": 0.8985369801521301,
+          "actor_parameter_delta": 0.006341893691569567
+        },
+        {
+          "batch": 8,
+          "lagrange": 1.4124999999999996,
+          "failure": 0.125,
+          "loss": 1.203985571861267,
+          "actor_parameter_delta": 0.0072350697591900826
+        },
+        {
+          "batch": 9,
+          "lagrange": 1.4249999999999996,
+          "failure": 0.125,
+          "loss": 1.6934776306152344,
+          "actor_parameter_delta": 0.005819806829094887
+        },
+        {
+          "batch": 10,
+          "lagrange": 1.3749999999999996,
+          "failure": 0.0,
+          "loss": 1.542615294456482,
+          "actor_parameter_delta": 0.005768917966634035
+        },
+        {
+          "batch": 11,
+          "lagrange": 1.3874999999999995,
+          "failure": 0.125,
+          "loss": 2.8460865020751953,
+          "actor_parameter_delta": 0.006327416747808456
+        },
+        {
+          "batch": 12,
+          "lagrange": 1.3999999999999995,
+          "failure": 0.125,
+          "loss": 1.340074896812439,
+          "actor_parameter_delta": 0.006776765920221806
+        },
+        {
+          "batch": 13,
+          "lagrange": 1.3499999999999994,
+          "failure": 0.0,
+          "loss": 0.7556806206703186,
+          "actor_parameter_delta": 0.006827928591519594
+        },
+        {
+          "batch": 14,
+          "lagrange": 1.4249999999999994,
+          "failure": 0.25,
+          "loss": 0.9117000699043274,
+          "actor_parameter_delta": 0.007349393796175718
+        },
+        {
+          "batch": 15,
+          "lagrange": 1.4374999999999993,
+          "failure": 0.125,
+          "loss": 0.8790736794471741,
+          "actor_parameter_delta": 0.007359576411545277
+        },
+        {
+          "batch": 16,
+          "lagrange": 1.3874999999999993,
+          "failure": 0.0,
+          "loss": 0.7261908650398254,
+          "actor_parameter_delta": 0.00904839951545
+        },
+        {
+          "batch": 17,
+          "lagrange": 1.3374999999999992,
+          "failure": 0.0,
+          "loss": 0.4503658413887024,
+          "actor_parameter_delta": 0.00900553073734045
+        },
+        {
+          "batch": 18,
+          "lagrange": 1.4124999999999992,
+          "failure": 0.25,
+          "loss": 1.845613956451416,
+          "actor_parameter_delta": 0.007996805012226105
+        },
+        {
+          "batch": 19,
+          "lagrange": 1.3624999999999992,
+          "failure": 0.0,
+          "loss": 0.9208048582077026,
+          "actor_parameter_delta": 0.008049152791500092
+        },
+        {
+          "batch": 20,
+          "lagrange": 1.3124999999999991,
+          "failure": 0.0,
+          "loss": 0.4301539659500122,
+          "actor_parameter_delta": 0.010054369457066059
+        },
+        {
+          "batch": 21,
+          "lagrange": 1.387499999999999,
+          "failure": 0.25,
+          "loss": 1.464916467666626,
+          "actor_parameter_delta": 0.01019616425037384
+        },
+        {
+          "batch": 22,
+          "lagrange": 1.399999999999999,
+          "failure": 0.125,
+          "loss": 0.7873449921607971,
+          "actor_parameter_delta": 0.009723570197820663
+        },
+        {
+          "batch": 23,
+          "lagrange": 1.412499999999999,
+          "failure": 0.125,
+          "loss": 0.9725847244262695,
+          "actor_parameter_delta": 0.010057450272142887
+        },
+        {
+          "batch": 24,
+          "lagrange": 1.487499999999999,
+          "failure": 0.25,
+          "loss": 1.0019495487213135,
+          "actor_parameter_delta": 0.007544885389506817
+        }
+      ]
+    },
+    "ppo_a5_progress_881": {
+      "selected": {
+        "feedback": false,
+        "seed": 881,
+        "actions": 5,
+        "checkpoint": "ppo8",
+        "dev": {
+          "reach": 0.875,
+          "forgetting": 0.002704167797688454,
+          "work": 18468.396739130432,
+          "steps": 52.375
+        }
+      },
+      "dev_candidates": 5,
+      "dev_feasible_candidates": 1,
+      "selected_dev_feasible": false,
+      "train_curve": [
+        {
+          "batch": 1,
+          "lagrange": 1.0125,
+          "failure": 0.125,
+          "loss": 0.5364601016044617,
+          "actor_parameter_delta": 0.01537839975208044
+        },
+        {
+          "batch": 2,
+          "lagrange": 0.9624999999999999,
+          "failure": 0.0,
+          "loss": 0.33451783657073975,
+          "actor_parameter_delta": 0.009563599713146687
+        },
+        {
+          "batch": 3,
+          "lagrange": 0.9749999999999999,
+          "failure": 0.125,
+          "loss": 0.8421801328659058,
+          "actor_parameter_delta": 0.006506143603473902
+        },
+        {
+          "batch": 4,
+          "lagrange": 0.9874999999999998,
+          "failure": 0.125,
+          "loss": 0.7453786134719849,
+          "actor_parameter_delta": 0.0068621085956692696
+        },
+        {
+          "batch": 5,
+          "lagrange": 1.0624999999999998,
+          "failure": 0.25,
+          "loss": 0.611721932888031,
+          "actor_parameter_delta": 0.006841986905783415
+        },
+        {
+          "batch": 6,
+          "lagrange": 1.1374999999999997,
+          "failure": 0.25,
+          "loss": 1.2914947271347046,
+          "actor_parameter_delta": 0.006503731943666935
+        },
+        {
+          "batch": 7,
+          "lagrange": 1.1499999999999997,
+          "failure": 0.125,
+          "loss": 0.653246283531189,
+          "actor_parameter_delta": 0.0068527450785040855
+        },
+        {
+          "batch": 8,
+          "lagrange": 1.0999999999999996,
+          "failure": 0.0,
+          "loss": 0.24849213659763336,
+          "actor_parameter_delta": 0.006738812662661076
+        },
+        {
+          "batch": 9,
+          "lagrange": 1.0499999999999996,
+          "failure": 0.0,
+          "loss": 0.1946835070848465,
+          "actor_parameter_delta": 0.008948616683483124
+        },
+        {
+          "batch": 10,
+          "lagrange": 0.9999999999999996,
+          "failure": 0.0,
+          "loss": 0.2316320538520813,
+          "actor_parameter_delta": 0.008879098109900951
+        },
+        {
+          "batch": 11,
+          "lagrange": 1.0749999999999995,
+          "failure": 0.25,
+          "loss": 0.8538277745246887,
+          "actor_parameter_delta": 0.007083647884428501
+        },
+        {
+          "batch": 12,
+          "lagrange": 1.0249999999999995,
+          "failure": 0.0,
+          "loss": 0.14618323743343353,
+          "actor_parameter_delta": 0.007414913736283779
+        },
+        {
+          "batch": 13,
+          "lagrange": 0.9749999999999994,
+          "failure": 0.0,
+          "loss": 0.35165169835090637,
+          "actor_parameter_delta": 0.0069819604977965355
+        },
+        {
+          "batch": 14,
+          "lagrange": 0.9249999999999994,
+          "failure": 0.0,
+          "loss": 0.5989753603935242,
+          "actor_parameter_delta": 0.006394832395017147
+        },
+        {
+          "batch": 15,
+          "lagrange": 0.8749999999999993,
+          "failure": 0.0,
+          "loss": 0.18382734060287476,
+          "actor_parameter_delta": 0.007888363674283028
+        },
+        {
+          "batch": 16,
+          "lagrange": 0.8874999999999993,
+          "failure": 0.125,
+          "loss": 0.8504951596260071,
+          "actor_parameter_delta": 0.007922178134322166
+        },
+        {
+          "batch": 17,
+          "lagrange": 0.8374999999999992,
+          "failure": 0.0,
+          "loss": 0.21330277621746063,
+          "actor_parameter_delta": 0.007162746973335743
+        },
+        {
+          "batch": 18,
+          "lagrange": 0.8499999999999992,
+          "failure": 0.125,
+          "loss": 0.7670022249221802,
+          "actor_parameter_delta": 0.006545979529619217
+        },
+        {
+          "batch": 19,
+          "lagrange": 0.9249999999999992,
+          "failure": 0.25,
+          "loss": 1.2209008932113647,
+          "actor_parameter_delta": 0.0048751854337751865
+        },
+        {
+          "batch": 20,
+          "lagrange": 0.8749999999999991,
+          "failure": 0.0,
+          "loss": 0.057087719440460205,
+          "actor_parameter_delta": 0.005541753955185413
+        },
+        {
+          "batch": 21,
+          "lagrange": 0.9499999999999991,
+          "failure": 0.25,
+          "loss": 0.7359758615493774,
+          "actor_parameter_delta": 0.00547832390293479
+        },
+        {
+          "batch": 22,
+          "lagrange": 0.962499999999999,
+          "failure": 0.125,
+          "loss": 1.7239516973495483,
+          "actor_parameter_delta": 0.004127399064600468
+        },
+        {
+          "batch": 23,
+          "lagrange": 0.974999999999999,
+          "failure": 0.125,
+          "loss": 0.8699254393577576,
+          "actor_parameter_delta": 0.003137331921607256
+        },
+        {
+          "batch": 24,
+          "lagrange": 0.9249999999999989,
+          "failure": 0.0,
+          "loss": 0.6003901958465576,
+          "actor_parameter_delta": 0.005454033613204956
+        }
+      ]
+    },
+    "ppo_a5_progress_882": {
+      "selected": {
+        "feedback": false,
+        "seed": 882,
+        "actions": 5,
+        "checkpoint": "ppo16",
+        "dev": {
+          "reach": 0.9166666666666666,
+          "forgetting": 0.005951394411650571,
+          "work": 16964.48913043478,
+          "steps": 47.875
+        }
+      },
+      "dev_candidates": 5,
+      "dev_feasible_candidates": 4,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "batch": 1,
+          "lagrange": 0.95,
+          "failure": 0.0,
+          "loss": 0.09746720641851425,
+          "actor_parameter_delta": 0.01534359436482191
+        },
+        {
+          "batch": 2,
+          "lagrange": 0.9624999999999999,
+          "failure": 0.125,
+          "loss": 3.2111291885375977,
+          "actor_parameter_delta": 0.010475513525307178
+        },
+        {
+          "batch": 3,
+          "lagrange": 0.9124999999999999,
+          "failure": 0.0,
+          "loss": 0.24941211938858032,
+          "actor_parameter_delta": 0.007834672927856445
+        },
+        {
+          "batch": 4,
+          "lagrange": 0.9249999999999998,
+          "failure": 0.125,
+          "loss": 0.47695469856262207,
+          "actor_parameter_delta": 0.008117848075926304
+        },
+        {
+          "batch": 5,
+          "lagrange": 0.9374999999999998,
+          "failure": 0.125,
+          "loss": 1.1772615909576416,
+          "actor_parameter_delta": 0.00816082488745451
+        },
+        {
+          "batch": 6,
+          "lagrange": 0.9499999999999997,
+          "failure": 0.125,
+          "loss": 0.46994656324386597,
+          "actor_parameter_delta": 0.0070817917585372925
+        },
+        {
+          "batch": 7,
+          "lagrange": 0.9624999999999997,
+          "failure": 0.125,
+          "loss": 5.651945114135742,
+          "actor_parameter_delta": 0.006212894339114428
+        },
+        {
+          "batch": 8,
+          "lagrange": 0.9124999999999996,
+          "failure": 0.0,
+          "loss": 0.47933435440063477,
+          "actor_parameter_delta": 0.00549666304141283
+        },
+        {
+          "batch": 9,
+          "lagrange": 0.9249999999999996,
+          "failure": 0.125,
+          "loss": 0.45070943236351013,
+          "actor_parameter_delta": 0.004635450895875692
+        },
+        {
+          "batch": 10,
+          "lagrange": 0.9999999999999996,
+          "failure": 0.25,
+          "loss": 1.0246702432632446,
+          "actor_parameter_delta": 0.0040739066898822784
+        },
+        {
+          "batch": 11,
+          "lagrange": 0.9499999999999995,
+          "failure": 0.0,
+          "loss": 0.285452663898468,
+          "actor_parameter_delta": 0.006200443021953106
+        },
+        {
+          "batch": 12,
+          "lagrange": 0.9624999999999995,
+          "failure": 0.125,
+          "loss": 1.0102475881576538,
+          "actor_parameter_delta": 0.007500816136598587
+        },
+        {
+          "batch": 13,
+          "lagrange": 0.9749999999999994,
+          "failure": 0.125,
+          "loss": 3.96561861038208,
+          "actor_parameter_delta": 0.006336381193250418
+        },
+        {
+          "batch": 14,
+          "lagrange": 0.9874999999999994,
+          "failure": 0.125,
+          "loss": 0.4368979036808014,
+          "actor_parameter_delta": 0.005570085719227791
+        },
+        {
+          "batch": 15,
+          "lagrange": 0.9999999999999993,
+          "failure": 0.125,
+          "loss": 2.30265474319458,
+          "actor_parameter_delta": 0.004816742613911629
+        },
+        {
+          "batch": 16,
+          "lagrange": 1.0124999999999993,
+          "failure": 0.125,
+          "loss": 3.9799673557281494,
+          "actor_parameter_delta": 0.0030975474510341883
+        },
+        {
+          "batch": 17,
+          "lagrange": 1.0249999999999992,
+          "failure": 0.125,
+          "loss": 2.2469065189361572,
+          "actor_parameter_delta": 0.0040352120995521545
+        },
+        {
+          "batch": 18,
+          "lagrange": 1.0374999999999992,
+          "failure": 0.125,
+          "loss": 2.900074005126953,
+          "actor_parameter_delta": 0.006795723922550678
+        },
+        {
+          "batch": 19,
+          "lagrange": 0.9874999999999992,
+          "failure": 0.0,
+          "loss": 0.21378588676452637,
+          "actor_parameter_delta": 0.006418202072381973
+        },
+        {
+          "batch": 20,
+          "lagrange": 0.9999999999999991,
+          "failure": 0.125,
+          "loss": 0.32507187128067017,
+          "actor_parameter_delta": 0.005932030733674765
+        },
+        {
+          "batch": 21,
+          "lagrange": 0.9499999999999991,
+          "failure": 0.0,
+          "loss": 0.15843337774276733,
+          "actor_parameter_delta": 0.004547016229480505
+        },
+        {
+          "batch": 22,
+          "lagrange": 0.899999999999999,
+          "failure": 0.0,
+          "loss": 0.17401935160160065,
+          "actor_parameter_delta": 0.005353621207177639
+        },
+        {
+          "batch": 23,
+          "lagrange": 0.974999999999999,
+          "failure": 0.25,
+          "loss": 0.5936147570610046,
+          "actor_parameter_delta": 0.007752322591841221
+        },
+        {
+          "batch": 24,
+          "lagrange": 1.112499999999999,
+          "failure": 0.375,
+          "loss": 2.7095000743865967,
+          "actor_parameter_delta": 0.006398343946784735
+        }
+      ]
+    },
+    "ppo_a5_progress_883": {
+      "selected": {
+        "feedback": false,
+        "seed": 883,
+        "actions": 5,
+        "checkpoint": "ppo24",
+        "dev": {
+          "reach": 0.9166666666666666,
+          "forgetting": 0.008947796583401434,
+          "work": 17192.963164251203,
+          "steps": 48.541666666666664
+        }
+      },
+      "dev_candidates": 5,
+      "dev_feasible_candidates": 4,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "batch": 1,
+          "lagrange": 1.075,
+          "failure": 0.25,
+          "loss": 2.114135980606079,
+          "actor_parameter_delta": 0.015216464176774025
+        },
+        {
+          "batch": 2,
+          "lagrange": 1.15,
+          "failure": 0.25,
+          "loss": 1.287935495376587,
+          "actor_parameter_delta": 0.010985747911036015
+        },
+        {
+          "batch": 3,
+          "lagrange": 1.1624999999999999,
+          "failure": 0.125,
+          "loss": 0.7614574432373047,
+          "actor_parameter_delta": 0.00992201454937458
+        },
+        {
+          "batch": 4,
+          "lagrange": 1.2374999999999998,
+          "failure": 0.25,
+          "loss": 1.951826572418213,
+          "actor_parameter_delta": 0.009027117863297462
+        },
+        {
+          "batch": 5,
+          "lagrange": 1.3124999999999998,
+          "failure": 0.25,
+          "loss": 0.8823612332344055,
+          "actor_parameter_delta": 0.009300884790718555
+        },
+        {
+          "batch": 6,
+          "lagrange": 1.4499999999999997,
+          "failure": 0.375,
+          "loss": 1.2710150480270386,
+          "actor_parameter_delta": 0.00967828743159771
+        },
+        {
+          "batch": 7,
+          "lagrange": 1.3999999999999997,
+          "failure": 0.0,
+          "loss": 2.053468942642212,
+          "actor_parameter_delta": 0.007584224920719862
+        },
+        {
+          "batch": 8,
+          "lagrange": 1.4124999999999996,
+          "failure": 0.125,
+          "loss": 1.2412440776824951,
+          "actor_parameter_delta": 0.00788515992462635
+        },
+        {
+          "batch": 9,
+          "lagrange": 1.4249999999999996,
+          "failure": 0.125,
+          "loss": 1.9118584394454956,
+          "actor_parameter_delta": 0.008573835715651512
+        },
+        {
+          "batch": 10,
+          "lagrange": 1.3749999999999996,
+          "failure": 0.0,
+          "loss": 2.820518970489502,
+          "actor_parameter_delta": 0.00879676453769207
+        },
+        {
+          "batch": 11,
+          "lagrange": 1.3874999999999995,
+          "failure": 0.125,
+          "loss": 1.4491517543792725,
+          "actor_parameter_delta": 0.007987282238900661
+        },
+        {
+          "batch": 12,
+          "lagrange": 1.3999999999999995,
+          "failure": 0.125,
+          "loss": 1.533008337020874,
+          "actor_parameter_delta": 0.008819248527288437
+        },
+        {
+          "batch": 13,
+          "lagrange": 1.3499999999999994,
+          "failure": 0.0,
+          "loss": 0.4694632887840271,
+          "actor_parameter_delta": 0.009013469330966473
+        },
+        {
+          "batch": 14,
+          "lagrange": 1.4249999999999994,
+          "failure": 0.25,
+          "loss": 0.876971960067749,
+          "actor_parameter_delta": 0.006631758995354176
+        },
+        {
+          "batch": 15,
+          "lagrange": 1.4374999999999993,
+          "failure": 0.125,
+          "loss": 0.678851306438446,
+          "actor_parameter_delta": 0.005543165374547243
+        },
+        {
+          "batch": 16,
+          "lagrange": 1.3874999999999993,
+          "failure": 0.0,
+          "loss": 0.6214126944541931,
+          "actor_parameter_delta": 0.006529800593852997
+        },
+        {
+          "batch": 17,
+          "lagrange": 1.3374999999999992,
+          "failure": 0.0,
+          "loss": 1.2866393327713013,
+          "actor_parameter_delta": 0.0072174821980297565
+        },
+        {
+          "batch": 18,
+          "lagrange": 1.4124999999999992,
+          "failure": 0.25,
+          "loss": 1.7224154472351074,
+          "actor_parameter_delta": 0.006836066488176584
+        },
+        {
+          "batch": 19,
+          "lagrange": 1.3624999999999992,
+          "failure": 0.0,
+          "loss": 1.2760459184646606,
+          "actor_parameter_delta": 0.006234709173440933
+        },
+        {
+          "batch": 20,
+          "lagrange": 1.3124999999999991,
+          "failure": 0.0,
+          "loss": 0.811367928981781,
+          "actor_parameter_delta": 0.010107822716236115
+        },
+        {
+          "batch": 21,
+          "lagrange": 1.387499999999999,
+          "failure": 0.25,
+          "loss": 1.4046543836593628,
+          "actor_parameter_delta": 0.009075555019080639
+        },
+        {
+          "batch": 22,
+          "lagrange": 1.399999999999999,
+          "failure": 0.125,
+          "loss": 1.2026199102401733,
+          "actor_parameter_delta": 0.00731686083599925
+        },
+        {
+          "batch": 23,
+          "lagrange": 1.412499999999999,
+          "failure": 0.125,
+          "loss": 1.1420574188232422,
+          "actor_parameter_delta": 0.007838593795895576
+        },
+        {
+          "batch": 24,
+          "lagrange": 1.487499999999999,
+          "failure": 0.25,
+          "loss": 1.3363897800445557,
+          "actor_parameter_delta": 0.007043279241770506
+        }
+      ]
+    },
+    "sup_a15_feedback_881": {
+      "selected": {
+        "feedback": true,
+        "seed": 881,
+        "epoch": 150,
+        "frequency": "within",
+        "actions": 15,
+        "slack": 0.0,
+        "dev": {
+          "reach": 0.9583333333333334,
+          "forgetting": 0.010326665569690691,
+          "work": 16534.769323671495,
+          "steps": 46.541666666666664
+        }
+      },
+      "dev_candidates": 9,
+      "dev_feasible_candidates": 4,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "epoch": 0,
+          "training_loss": 2.1523244380950928
+        },
+        {
+          "epoch": 150,
+          "training_loss": 0.5909597873687744
+        },
+        {
+          "epoch": 450,
+          "training_loss": 0.19571368396282196
+        }
+      ]
+    },
+    "sup_a15_feedback_882": {
+      "selected": {
+        "feedback": true,
+        "seed": 882,
+        "epoch": 0,
+        "frequency": "within",
+        "actions": 15,
+        "slack": 1.0,
+        "dev": {
+          "reach": 0.9583333333333334,
+          "forgetting": 0.01184946241910043,
+          "work": 16493.04528985507,
+          "steps": 46.458333333333336
+        }
+      },
+      "dev_candidates": 9,
+      "dev_feasible_candidates": 4,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "epoch": 0,
+          "training_loss": 2.0346555709838867
+        },
+        {
+          "epoch": 150,
+          "training_loss": 0.598417341709137
+        },
+        {
+          "epoch": 450,
+          "training_loss": 0.17329072952270508
+        }
+      ]
+    },
+    "sup_a15_feedback_883": {
+      "selected": {
+        "feedback": true,
+        "seed": 883,
+        "epoch": 150,
+        "frequency": "within",
+        "actions": 15,
+        "slack": 0.0,
+        "dev": {
+          "reach": 0.9583333333333334,
+          "forgetting": 0.011114325941256855,
+          "work": 16373.045289855067,
+          "steps": 46.083333333333336
+        }
+      },
+      "dev_candidates": 9,
+      "dev_feasible_candidates": 4,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "epoch": 0,
+          "training_loss": 2.0366883277893066
+        },
+        {
+          "epoch": 150,
+          "training_loss": 0.6063695549964905
+        },
+        {
+          "epoch": 450,
+          "training_loss": 0.19201573729515076
+        }
+      ]
+    },
+    "sup_a15_progress_881": {
+      "selected": {
+        "feedback": false,
+        "seed": 881,
+        "epoch": 0,
+        "frequency": "within",
+        "actions": 15,
+        "slack": 0.0,
+        "dev": {
+          "reach": 0.9583333333333334,
+          "forgetting": 0.011822420617808466,
+          "work": 18235.290458937194,
+          "steps": 51.666666666666664
+        }
+      },
+      "dev_candidates": 9,
+      "dev_feasible_candidates": 4,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "epoch": 0,
+          "training_loss": 2.1558148860931396
+        },
+        {
+          "epoch": 150,
+          "training_loss": 0.70975661277771
+        },
+        {
+          "epoch": 450,
+          "training_loss": 0.20753245055675507
+        }
+      ]
+    },
+    "sup_a15_progress_882": {
+      "selected": {
+        "feedback": false,
+        "seed": 882,
+        "epoch": 150,
+        "frequency": "within",
+        "actions": 15,
+        "slack": 0.1,
+        "dev": {
+          "reach": 0.9166666666666666,
+          "forgetting": 0.002793761139566248,
+          "work": 18327.419685990335,
+          "steps": 51.916666666666664
+        }
+      },
+      "dev_candidates": 9,
+      "dev_feasible_candidates": 5,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "epoch": 0,
+          "training_loss": 2.0349230766296387
+        },
+        {
+          "epoch": 150,
+          "training_loss": 0.7108054757118225
+        },
+        {
+          "epoch": 450,
+          "training_loss": 0.20302638411521912
+        }
+      ]
+    },
+    "sup_a15_progress_883": {
+      "selected": {
+        "feedback": false,
+        "seed": 883,
+        "epoch": 0,
+        "frequency": "within",
+        "actions": 15,
+        "slack": 0.0,
+        "dev": {
+          "reach": 0.9166666666666666,
+          "forgetting": 0.011446210837951214,
+          "work": 19326.94384057971,
+          "steps": 54.916666666666664
+        }
+      },
+      "dev_candidates": 9,
+      "dev_feasible_candidates": 1,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "epoch": 0,
+          "training_loss": 2.0264430046081543
+        },
+        {
+          "epoch": 150,
+          "training_loss": 0.709428608417511
+        },
+        {
+          "epoch": 450,
+          "training_loss": 0.205478698015213
+        }
+      ]
+    },
+    "sup_a5_feedback_881": {
+      "selected": {
+        "feedback": true,
+        "seed": 881,
+        "epoch": 0,
+        "frequency": "within",
+        "actions": 5,
+        "slack": 0.0,
+        "dev": {
+          "reach": 0.9166666666666666,
+          "forgetting": 0.005704922855577685,
+          "work": 17153.12983091787,
+          "steps": 48.416666666666664
+        }
+      },
+      "dev_candidates": 9,
+      "dev_feasible_candidates": 2,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "epoch": 0,
+          "training_loss": 1.9823085069656372
+        },
+        {
+          "epoch": 150,
+          "training_loss": 0.5659830570220947
+        },
+        {
+          "epoch": 450,
+          "training_loss": 0.18589277565479279
+        }
+      ]
+    },
+    "sup_a5_feedback_882": {
+      "selected": {
+        "feedback": true,
+        "seed": 882,
+        "epoch": 0,
+        "frequency": "within",
+        "actions": 5,
+        "slack": 0.1,
+        "dev": {
+          "reach": 0.9166666666666666,
+          "forgetting": 0.005991771901873025,
+          "work": 17398.94444444444,
+          "steps": 49.166666666666664
+        }
+      },
+      "dev_candidates": 9,
+      "dev_feasible_candidates": 2,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "epoch": 0,
+          "training_loss": 1.8943828344345093
+        },
+        {
+          "epoch": 150,
+          "training_loss": 0.5502780675888062
+        },
+        {
+          "epoch": 450,
+          "training_loss": 0.1465739905834198
+        }
+      ]
+    },
+    "sup_a5_feedback_883": {
+      "selected": {
+        "feedback": true,
+        "seed": 883,
+        "epoch": 450,
+        "frequency": "within",
+        "actions": 5,
+        "slack": 0.0,
+        "dev": {
+          "reach": 0.9166666666666666,
+          "forgetting": 0.009177615866065024,
+          "work": 17309.910024154586,
+          "steps": 48.916666666666664
+        }
+      },
+      "dev_candidates": 9,
+      "dev_feasible_candidates": 5,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "epoch": 0,
+          "training_loss": 2.1559436321258545
+        },
+        {
+          "epoch": 150,
+          "training_loss": 0.5720279216766357
+        },
+        {
+          "epoch": 450,
+          "training_loss": 0.18386249244213104
+        }
+      ]
+    },
+    "sup_a5_progress_881": {
+      "selected": {
+        "feedback": false,
+        "seed": 881,
+        "epoch": 150,
+        "frequency": "within",
+        "actions": 5,
+        "slack": 0.1,
+        "dev": {
+          "reach": 0.9166666666666666,
+          "forgetting": 0.0045325319480263825,
+          "work": 17495.414251207727,
+          "steps": 49.458333333333336
+        }
+      },
+      "dev_candidates": 9,
+      "dev_feasible_candidates": 3,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "epoch": 0,
+          "training_loss": 1.9817763566970825
+        },
+        {
+          "epoch": 150,
+          "training_loss": 0.674531102180481
+        },
+        {
+          "epoch": 450,
+          "training_loss": 0.19513104856014252
+        }
+      ]
+    },
+    "sup_a5_progress_882": {
+      "selected": {
+        "feedback": false,
+        "seed": 882,
+        "epoch": 0,
+        "frequency": "within",
+        "actions": 5,
+        "slack": 1.0,
+        "dev": {
+          "reach": 0.9166666666666666,
+          "forgetting": 0.005868096553692311,
+          "work": 16974.81099033816,
+          "steps": 47.916666666666664
+        }
+      },
+      "dev_candidates": 9,
+      "dev_feasible_candidates": 3,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "epoch": 0,
+          "training_loss": 1.8981177806854248
+        },
+        {
+          "epoch": 150,
+          "training_loss": 0.6634994745254517
+        },
+        {
+          "epoch": 450,
+          "training_loss": 0.17792648077011108
+        }
+      ]
+    },
+    "sup_a5_progress_883": {
+      "selected": {
+        "feedback": false,
+        "seed": 883,
+        "epoch": 450,
+        "frequency": "within",
+        "actions": 5,
+        "slack": 0.0,
+        "dev": {
+          "reach": 0.9166666666666666,
+          "forgetting": 0.009290295455491905,
+          "work": 17209.307971014492,
+          "steps": 48.583333333333336
+        }
+      },
+      "dev_candidates": 9,
+      "dev_feasible_candidates": 1,
+      "selected_dev_feasible": true,
+      "train_curve": [
+        {
+          "epoch": 0,
+          "training_loss": 2.1478805541992188
+        },
+        {
+          "epoch": 150,
+          "training_loss": 0.6778193116188049
+        },
+        {
+          "epoch": 450,
+          "training_loss": 0.2234123945236206
+        }
+      ]
+    }
+  },
+  "offline_cost": {
+    "branch_queries": 16020,
+    "branch_updates": 1084145,
+    "branch_work": 368298514.6521681,
+    "dev_rollouts": 4032,
+    "dev_updates": 206977,
+    "dev_work": 73095244.6521739,
+    "ppo_episodes": 2304,
+    "ppo_updates": 134831,
+    "ppo_work": 47335400.57971014,
+    "scorer_optimizer_steps": 5400,
+    "distillation_optimizer_steps": 2400,
+    "ppo_optimizer_steps": 1152,
+    "extra_action_queries": 10680,
+    "old5_equivalent_queries": 5340,
+    "baseline_dev_rollouts": 4848,
+    "baseline_dev_updates": 272330,
+    "baseline_dev_work": 95755076.56521547,
+    "old5_branch_updates": 359690,
+    "extra10_branch_updates": 724455,
+    "shared_pretraining_updates": 76000,
+    "collection_behavior_updates": 7309,
+    "collection_behavior_work": 2569291.898550727,
+    "additional_collection_audit_updates": 39059
+  },
+  "action_diagnosis_by_stage": {
+    "0": {
+      "states": 220,
+      "new_action_improvements": 79,
+      "best_action_counts": [
+        134,
+        4,
+        1,
+        2,
+        0,
+        34,
+        3,
+        3,
+        2,
+        4,
+        23,
+        3,
+        3,
+        2,
+        2
+      ],
+      "all_actions_fail": 70,
+      "best_fixed_matches_improved_state_best": 5,
+      "reach_improvements": 7
+    },
+    "1": {
+      "states": 169,
+      "new_action_improvements": 68,
+      "best_action_counts": [
+        91,
+        8,
+        1,
+        0,
+        1,
+        15,
+        11,
+        4,
+        2,
+        3,
+        7,
+        10,
+        6,
+        7,
+        3
+      ],
+      "all_actions_fail": 52,
+      "best_fixed_matches_improved_state_best": 10,
+      "reach_improvements": 1
+    },
+    "2": {
+      "states": 145,
+      "new_action_improvements": 80,
+      "best_action_counts": [
+        51,
+        8,
+        4,
+        1,
+        1,
+        19,
+        16,
+        11,
+        6,
+        5,
+        3,
+        6,
+        7,
+        2,
+        5
+      ],
+      "all_actions_fail": 26,
+      "best_fixed_matches_improved_state_best": 6,
+      "reach_improvements": 0
+    }
+  },
+  "interpretation": "Descriptive only; p_min=.9 is development point feasibility, not a certified population probability. Branch labels condition on fixed continuation; best-action counts are not online gains."
+}

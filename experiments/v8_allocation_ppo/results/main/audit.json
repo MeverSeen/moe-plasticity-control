@@ -1,0 +1,7 @@
+{
+  "test_rollouts": 4800,
+  "ppo_episodes": 2304,
+  "ppo_optimizer_steps": 1152,
+  "source_and_models_verified": true,
+  "history_splits_disjoint": true
+}

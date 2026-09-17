@@ -1,0 +1,1070 @@
+{
+  "fixed": {
+    "plan": {
+      "name": "fixed_0",
+      "kind": "fixed",
+      "action": 0
+    },
+    "metrics": {
+      "reach": 1.0,
+      "forgetting": 0.001143424461285273,
+      "work": 15012.047101449272,
+      "steps": 42.0
+    },
+    "rows": [
+      {
+        "root": 860000,
+        "success": true,
+        "segment_hits": [
+          true,
+          true,
+          true
+        ],
+        "forgetting": 0.002123864988485972,
+        "old_eval_loss": 0.04139061520497004,
+        "old_eval_references": [
+          0.04411213845014572,
+          0.043424613773822784,
+          0.03545881807804108
+        ],
+        "steps": 13,
+        "work": 5270.826086956522,
+        "budget": 101292.52173913043,
+        "mask": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          true
+        ],
+        "segments": [
+          {
+            "stage": 0,
+            "success": true,
+            "initial_B_loss": 0.12214445322751999,
+            "B_loss": 0.07984413951635361,
+            "steps": 10,
+            "global_steps": 10,
+            "cumulative_monitor_forgetting": 0.003351151943206787,
+            "monitor_A_losses": [
+              0.041887156665325165,
+              0.05114907771348953,
+              0.0266819279640913
+            ],
+            "work": 3726.550724637681
+          },
+          {
+            "stage": 1,
+            "success": true,
+            "initial_B_loss": 0.05004104599356651,
+            "B_loss": 0.05004104599356651,
+            "steps": 0,
+            "global_steps": 10,
+            "cumulative_monitor_forgetting": 0.003351151943206787,
+            "monitor_A_losses": [
+              0.041887156665325165,
+              0.05114907771348953,
+              0.0266819279640913
+            ],
+            "work": 3982.550724637681
+          },
+          {
+            "stage": 2,
+            "success": true,
+            "initial_B_loss": 0.1158091127872467,
+            "B_loss": 0.07179292291402817,
+            "steps": 3,
+            "global_steps": 13,
+            "cumulative_monitor_forgetting": 0.004718213031689326,
+            "monitor_A_losses": [
+              0.04598833993077278,
+              0.050933293998241425,
+              0.0266819279640913
+            ],
+            "work": 5270.826086956522
+          }
+        ],
+        "final_B_test": [
+          0.05024392530322075,
+          0.04261590540409088,
+          0.05992300435900688
+        ],
+        "final_B_monitor": [
+          0.07148109376430511,
+          0.046578165143728256,
+          0.07179292291402817
+        ],
+        "final_all_B_monitor_hit": true,
+        "initially_solved": 1,
+        "decisions": [],
+        "events": []
+      },
+      {
+        "root": 860001,
+        "success": true,
+        "segment_hits": [
+          true,
+          true,
+          true
+        ],
+        "forgetting": 0.0005658939480781555,
+        "old_eval_loss": 0.05734279751777649,
+        "old_eval_references": [
+          0.056776903569698334
+        ],
+        "steps": 97,
+        "work": 33474.78260869565,
+        "budget": 101292.52173913043,
+        "mask": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false
+        ],
+        "segments": [
+          {
+            "stage": 0,
+            "success": true,
+            "initial_B_loss": 0.7440171241760254,
+            "B_loss": 0.07885420322418213,
+            "steps": 81,
+            "global_steps": 81,
+            "cumulative_monitor_forgetting": 0.00325566902756691,
+            "monitor_A_losses": [
+              0.05417804419994354
+            ],
+            "work": 27549.681159420285
+          },
+          {
+            "stage": 1,
+            "success": true,
+            "initial_B_loss": 0.09689030051231384,
+            "B_loss": 0.07989127933979034,
+            "steps": 12,
+            "global_steps": 93,
+            "cumulative_monitor_forgetting": 0.002798762172460556,
+            "monitor_A_losses": [
+              0.05372113734483719
+            ],
+            "work": 31865.507246376805
+          },
+          {
+            "stage": 2,
+            "success": true,
+            "initial_B_loss": 0.12509317696094513,
+            "B_loss": 0.06819157302379608,
+            "steps": 4,
+            "global_steps": 97,
+            "cumulative_monitor_forgetting": 0.0038814954459667206,
+            "monitor_A_losses": [
+              0.05480387061834335
+            ],
+            "work": 33474.78260869565
+          }
+        ],
+        "final_B_test": [
+          0.09527914226055145,
+          0.08938435465097427,
+          0.07547137141227722
+        ],
+        "final_B_monitor": [
+          0.07161183655261993,
+          0.08594591170549393,
+          0.06819157302379608
+        ],
+        "final_all_B_monitor_hit": false,
+        "initially_solved": 0,
+        "decisions": [],
+        "events": []
+      },
+      {
+        "root": 860002,
+        "success": true,
+        "segment_hits": [
+          true,
+          true,
+          true
+        ],
+        "forgetting": 0.0018839389085769653,
+        "old_eval_loss": 0.059800272807478905,
+        "old_eval_references": [
+          0.06977210193872452,
+          0.053027864545583725
+        ],
+        "steps": 58,
+        "work": 20408.579710144924,
+        "budget": 101292.52173913043,
+        "mask": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "segments": [
+          {
+            "stage": 0,
+            "success": true,
+            "initial_B_loss": 0.07138122618198395,
+            "B_loss": 0.07138122618198395,
+            "steps": 0,
+            "global_steps": 0,
+            "cumulative_monitor_forgetting": 0.0,
+            "monitor_A_losses": [
+              0.06582672148942947,
+              0.06655286252498627
+            ],
+            "work": 384.0
+          },
+          {
+            "stage": 1,
+            "success": true,
+            "initial_B_loss": 0.18247106671333313,
+            "B_loss": 0.07992558926343918,
+            "steps": 42,
+            "global_steps": 42,
+            "cumulative_monitor_forgetting": 0.0,
+            "monitor_A_losses": [
+              0.06341258436441422,
+              0.04267466440796852
+            ],
+            "work": 14739.478260869564
+          },
+          {
+            "stage": 2,
+            "success": true,
+            "initial_B_loss": 0.2113041877746582,
+            "B_loss": 0.0796460509300232,
+            "steps": 16,
+            "global_steps": 58,
+            "cumulative_monitor_forgetting": 0.0,
+            "monitor_A_losses": [
+              0.05798470228910446,
+              0.04670596867799759
+            ],
+            "work": 20408.579710144924
+          }
+        ],
+        "final_B_test": [
+          0.06362428516149521,
+          0.06686878949403763,
+          0.08454301953315735
+        ],
+        "final_B_monitor": [
+          0.07501848042011261,
+          0.07616022229194641,
+          0.0796460509300232
+        ],
+        "final_all_B_monitor_hit": true,
+        "initially_solved": 1,
+        "decisions": [],
+        "events": []
+      },
+      {
+        "root": 860003,
+        "success": true,
+        "segment_hits": [
+          true,
+          true,
+          true
+        ],
+        "forgetting": 0.0,
+        "old_eval_loss": 0.04105160509546598,
+        "old_eval_references": [
+          0.043143510818481445,
+          0.03583075851202011,
+          0.04418054595589638
+        ],
+        "steps": 0,
+        "work": 894.0,
+        "budget": 101292.52173913043,
+        "mask": [
+          false,
+          false,
+          true,
+          false,
+          true,
+          true
+        ],
+        "segments": [
+          {
+            "stage": 0,
+            "success": true,
+            "initial_B_loss": 0.05645066499710083,
+            "B_loss": 0.05645066499710083,
+            "steps": 0,
+            "global_steps": 0,
+            "cumulative_monitor_forgetting": 0.0,
+            "monitor_A_losses": [
+              0.040458958595991135,
+              0.028721680864691734,
+              0.03863544389605522
+            ],
+            "work": 382.0
+          },
+          {
+            "stage": 1,
+            "success": true,
+            "initial_B_loss": 0.034310463815927505,
+            "B_loss": 0.034310463815927505,
+            "steps": 0,
+            "global_steps": 0,
+            "cumulative_monitor_forgetting": 0.0,
+            "monitor_A_losses": [
+              0.040458958595991135,
+              0.028721680864691734,
+              0.03863544389605522
+            ],
+            "work": 638.0
+          },
+          {
+            "stage": 2,
+            "success": true,
+            "initial_B_loss": 0.04193151369690895,
+            "B_loss": 0.04193151369690895,
+            "steps": 0,
+            "global_steps": 0,
+            "cumulative_monitor_forgetting": 0.0,
+            "monitor_A_losses": [
+              0.040458958595991135,
+              0.028721680864691734,
+              0.03863544389605522
+            ],
+            "work": 894.0
+          }
+        ],
+        "final_B_test": [
+          0.04929245263338089,
+          0.03969120979309082,
+          0.03887621685862541
+        ],
+        "final_B_monitor": [
+          0.05645066499710083,
+          0.034310463815927505,
+          0.04193151369690895
+        ],
+        "final_all_B_monitor_hit": true,
+        "initially_solved": 3,
+        "decisions": [],
+        "events": []
+      }
+    ]
+  },
+  "global_lr": {
+    "plan": {
+      "name": "lr_0.75",
+      "kind": "lr",
+      "scale": 0.75,
+      "action": 4
+    },
+    "metrics": {
+      "reach": 1.0,
+      "forgetting": 0.01376195236419638,
+      "work": 15473.72826086956,
+      "steps": 43.5
+    },
+    "rows": [
+      {
+        "root": 860000,
+        "success": true,
+        "segment_hits": [
+          true,
+          true,
+          true
+        ],
+        "forgetting": 0.012534802158673605,
+        "old_eval_loss": 0.053533325592676796,
+        "old_eval_references": [
+          0.04411213845014572,
+          0.043424613773822784,
+          0.03545881807804108
+        ],
+        "steps": 12,
+        "work": 4950.826086956522,
+        "budget": 101292.52173913043,
+        "mask": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          true
+        ],
+        "segments": [
+          {
+            "stage": 0,
+            "success": true,
+            "initial_B_loss": 0.12214445322751999,
+            "B_loss": 0.07933966815471649,
+            "steps": 10,
+            "global_steps": 10,
+            "cumulative_monitor_forgetting": 0.021763906503717106,
+            "monitor_A_losses": [
+              0.08339006453752518,
+              0.05505780875682831,
+              0.04041728377342224
+            ],
+            "work": 3726.550724637681
+          },
+          {
+            "stage": 1,
+            "success": true,
+            "initial_B_loss": 0.06294932961463928,
+            "B_loss": 0.06294932961463928,
+            "steps": 0,
+            "global_steps": 10,
+            "cumulative_monitor_forgetting": 0.021763906503717106,
+            "monitor_A_losses": [
+              0.08339006453752518,
+              0.05505780875682831,
+              0.04041728377342224
+            ],
+            "work": 3982.550724637681
+          },
+          {
+            "stage": 2,
+            "success": true,
+            "initial_B_loss": 0.09661278128623962,
+            "B_loss": 0.07710995525121689,
+            "steps": 2,
+            "global_steps": 12,
+            "cumulative_monitor_forgetting": 0.018979817007978756,
+            "monitor_A_losses": [
+              0.07616601884365082,
+              0.05404489487409592,
+              0.03928906098008156
+            ],
+            "work": 4950.826086956522
+          }
+        ],
+        "final_B_test": [
+          0.05298316478729248,
+          0.057051677256822586,
+          0.06549660861492157
+        ],
+        "final_B_monitor": [
+          0.07239854335784912,
+          0.05715443193912506,
+          0.07710995525121689
+        ],
+        "final_all_B_monitor_hit": true,
+        "initially_solved": 1,
+        "decisions": [],
+        "events": []
+      },
+      {
+        "root": 860001,
+        "success": true,
+        "segment_hits": [
+          true,
+          true,
+          true
+        ],
+        "forgetting": 0.03523077815771103,
+        "old_eval_loss": 0.09200768172740936,
+        "old_eval_references": [
+          0.056776903569698334
+        ],
+        "steps": 104,
+        "work": 35714.78260869564,
+        "budget": 101292.52173913043,
+        "mask": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false
+        ],
+        "segments": [
+          {
+            "stage": 0,
+            "success": true,
+            "initial_B_loss": 0.7440171241760254,
+            "B_loss": 0.07962679862976074,
+            "steps": 85,
+            "global_steps": 85,
+            "cumulative_monitor_forgetting": 0.018934335559606552,
+            "monitor_A_losses": [
+              0.06985671073198318
+            ],
+            "work": 28829.681159420285
+          },
+          {
+            "stage": 1,
+            "success": true,
+            "initial_B_loss": 0.10456909984350204,
+            "B_loss": 0.07950883358716965,
+            "steps": 15,
+            "global_steps": 100,
+            "cumulative_monitor_forgetting": 0.032836612313985825,
+            "monitor_A_losses": [
+              0.08375898748636246
+            ],
+            "work": 34105.5072463768
+          },
+          {
+            "stage": 2,
+            "success": true,
+            "initial_B_loss": 0.11310897022485733,
+            "B_loss": 0.07279149442911148,
+            "steps": 4,
+            "global_steps": 104,
+            "cumulative_monitor_forgetting": 0.02615560218691826,
+            "monitor_A_losses": [
+              0.07707797735929489
+            ],
+            "work": 35714.78260869564
+          }
+        ],
+        "final_B_test": [
+          0.09743492305278778,
+          0.08628836274147034,
+          0.07795281708240509
+        ],
+        "final_B_monitor": [
+          0.08480563759803772,
+          0.08045665919780731,
+          0.07279149442911148
+        ],
+        "final_all_B_monitor_hit": false,
+        "initially_solved": 0,
+        "decisions": [],
+        "events": []
+      },
+      {
+        "root": 860002,
+        "success": true,
+        "segment_hits": [
+          true,
+          true,
+          true
+        ],
+        "forgetting": 0.0072822291404008865,
+        "old_eval_loss": 0.0631096214056015,
+        "old_eval_references": [
+          0.06977210193872452,
+          0.053027864545583725
+        ],
+        "steps": 58,
+        "work": 20335.304347826084,
+        "budget": 101292.52173913043,
+        "mask": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "segments": [
+          {
+            "stage": 0,
+            "success": true,
+            "initial_B_loss": 0.07138122618198395,
+            "B_loss": 0.07138122618198395,
+            "steps": 0,
+            "global_steps": 0,
+            "cumulative_monitor_forgetting": 0.0,
+            "monitor_A_losses": [
+              0.06582672148942947,
+              0.06655286252498627
+            ],
+            "work": 384.0
+          },
+          {
+            "stage": 1,
+            "success": true,
+            "initial_B_loss": 0.18247106671333313,
+            "B_loss": 0.07840195298194885,
+            "steps": 40,
+            "global_steps": 40,
+            "cumulative_monitor_forgetting": 0.0,
+            "monitor_A_losses": [
+              0.057231709361076355,
+              0.05747092515230179
+            ],
+            "work": 14026.202898550724
+          },
+          {
+            "stage": 2,
+            "success": true,
+            "initial_B_loss": 0.20934222638607025,
+            "B_loss": 0.07778514176607132,
+            "steps": 18,
+            "global_steps": 58,
+            "cumulative_monitor_forgetting": 0.0,
+            "monitor_A_losses": [
+              0.06262274086475372,
+              0.060318723320961
+            ],
+            "work": 20335.304347826084
+          }
+        ],
+        "final_B_test": [
+          0.06550504267215729,
+          0.07719175517559052,
+          0.08195199072360992
+        ],
+        "final_B_monitor": [
+          0.07573340088129044,
+          0.0765591710805893,
+          0.07778514176607132
+        ],
+        "final_all_B_monitor_hit": true,
+        "initially_solved": 1,
+        "decisions": [],
+        "events": []
+      },
+      {
+        "root": 860003,
+        "success": true,
+        "segment_hits": [
+          true,
+          true,
+          true
+        ],
+        "forgetting": 0.0,
+        "old_eval_loss": 0.04105160509546598,
+        "old_eval_references": [
+          0.043143510818481445,
+          0.03583075851202011,
+          0.04418054595589638
+        ],
+        "steps": 0,
+        "work": 894.0,
+        "budget": 101292.52173913043,
+        "mask": [
+          false,
+          false,
+          true,
+          false,
+          true,
+          true
+        ],
+        "segments": [
+          {
+            "stage": 0,
+            "success": true,
+            "initial_B_loss": 0.05645066499710083,
+            "B_loss": 0.05645066499710083,
+            "steps": 0,
+            "global_steps": 0,
+            "cumulative_monitor_forgetting": 0.0,
+            "monitor_A_losses": [
+              0.040458958595991135,
+              0.028721680864691734,
+              0.03863544389605522
+            ],
+            "work": 382.0
+          },
+          {
+            "stage": 1,
+            "success": true,
+            "initial_B_loss": 0.034310463815927505,
+            "B_loss": 0.034310463815927505,
+            "steps": 0,
+            "global_steps": 0,
+            "cumulative_monitor_forgetting": 0.0,
+            "monitor_A_losses": [
+              0.040458958595991135,
+              0.028721680864691734,
+              0.03863544389605522
+            ],
+            "work": 638.0
+          },
+          {
+            "stage": 2,
+            "success": true,
+            "initial_B_loss": 0.04193151369690895,
+            "B_loss": 0.04193151369690895,
+            "steps": 0,
+            "global_steps": 0,
+            "cumulative_monitor_forgetting": 0.0,
+            "monitor_A_losses": [
+              0.040458958595991135,
+              0.028721680864691734,
+              0.03863544389605522
+            ],
+            "work": 894.0
+          }
+        ],
+        "final_B_test": [
+          0.04929245263338089,
+          0.03969120979309082,
+          0.03887621685862541
+        ],
+        "final_B_monitor": [
+          0.05645066499710083,
+          0.034310463815927505,
+          0.04193151369690895
+        ],
+        "final_all_B_monitor_hit": true,
+        "initially_solved": 3,
+        "decisions": [],
+        "events": []
+      }
+    ]
+  },
+  "schedule": {
+    "plan": {
+      "name": "block_0_5_2",
+      "kind": "block",
+      "early": 0,
+      "late": 5,
+      "threshold": 2
+    },
+    "metrics": {
+      "reach": 1.0,
+      "forgetting": 0.0008715013973414898,
+      "work": 15492.047101449272,
+      "steps": 43.5
+    },
+    "rows": [
+      {
+        "root": 860000,
+        "success": true,
+        "segment_hits": [
+          true,
+          true,
+          true
+        ],
+        "forgetting": 0.0029736608266830444,
+        "old_eval_loss": 0.04218915477395058,
+        "old_eval_references": [
+          0.04411213845014572,
+          0.043424613773822784,
+          0.03545881807804108
+        ],
+        "steps": 14,
+        "work": 5590.826086956522,
+        "budget": 101292.52173913043,
+        "mask": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          true
+        ],
+        "segments": [
+          {
+            "stage": 0,
+            "success": true,
+            "initial_B_loss": 0.12214445322751999,
+            "B_loss": 0.07984413951635361,
+            "steps": 10,
+            "global_steps": 10,
+            "cumulative_monitor_forgetting": 0.003351151943206787,
+            "monitor_A_losses": [
+              0.041887156665325165,
+              0.05114907771348953,
+              0.0266819279640913
+            ],
+            "work": 3726.550724637681
+          },
+          {
+            "stage": 1,
+            "success": true,
+            "initial_B_loss": 0.05004104599356651,
+            "B_loss": 0.05004104599356651,
+            "steps": 0,
+            "global_steps": 10,
+            "cumulative_monitor_forgetting": 0.003351151943206787,
+            "monitor_A_losses": [
+              0.041887156665325165,
+              0.05114907771348953,
+              0.0266819279640913
+            ],
+            "work": 3982.550724637681
+          },
+          {
+            "stage": 2,
+            "success": true,
+            "initial_B_loss": 0.1158091127872467,
+            "B_loss": 0.0770491287112236,
+            "steps": 4,
+            "global_steps": 14,
+            "cumulative_monitor_forgetting": 0.0038983685274918876,
+            "monitor_A_losses": [
+              0.043528806418180466,
+              0.050584156066179276,
+              0.0266819279640913
+            ],
+            "work": 5590.826086956522
+          }
+        ],
+        "final_B_test": [
+          0.05134229734539986,
+          0.042912594974040985,
+          0.06577134877443314
+        ],
+        "final_B_monitor": [
+          0.07082433998584747,
+          0.04728994518518448,
+          0.0770491287112236
+        ],
+        "final_all_B_monitor_hit": true,
+        "initially_solved": 1,
+        "decisions": [],
+        "events": []
+      },
+      {
+        "root": 860001,
+        "success": true,
+        "segment_hits": [
+          true,
+          true,
+          true
+        ],
+        "forgetting": 0.0,
+        "old_eval_loss": 0.0561772957444191,
+        "old_eval_references": [
+          0.056776903569698334
+        ],
+        "steps": 98,
+        "work": 33794.78260869565,
+        "budget": 101292.52173913043,
+        "mask": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false
+        ],
+        "segments": [
+          {
+            "stage": 0,
+            "success": true,
+            "initial_B_loss": 0.7440171241760254,
+            "B_loss": 0.07885420322418213,
+            "steps": 81,
+            "global_steps": 81,
+            "cumulative_monitor_forgetting": 0.00325566902756691,
+            "monitor_A_losses": [
+              0.05417804419994354
+            ],
+            "work": 27549.681159420285
+          },
+          {
+            "stage": 1,
+            "success": true,
+            "initial_B_loss": 0.09689030051231384,
+            "B_loss": 0.07989127933979034,
+            "steps": 12,
+            "global_steps": 93,
+            "cumulative_monitor_forgetting": 0.002798762172460556,
+            "monitor_A_losses": [
+              0.05372113734483719
+            ],
+            "work": 31865.507246376805
+          },
+          {
+            "stage": 2,
+            "success": true,
+            "initial_B_loss": 0.12509317696094513,
+            "B_loss": 0.07586509734392166,
+            "steps": 5,
+            "global_steps": 98,
+            "cumulative_monitor_forgetting": 0.00216728076338768,
+            "monitor_A_losses": [
+              0.05308965593576431
+            ],
+            "work": 33794.78260869565
+          }
+        ],
+        "final_B_test": [
+          0.09338629245758057,
+          0.08489421010017395,
+          0.07481102645397186
+        ],
+        "final_B_monitor": [
+          0.06838680058717728,
+          0.08186082541942596,
+          0.07586509734392166
+        ],
+        "final_all_B_monitor_hit": false,
+        "initially_solved": 0,
+        "decisions": [],
+        "events": []
+      },
+      {
+        "root": 860002,
+        "success": true,
+        "segment_hits": [
+          true,
+          true,
+          true
+        ],
+        "forgetting": 0.0005123447626829147,
+        "old_eval_loss": 0.05833052471280098,
+        "old_eval_references": [
+          0.06977210193872452,
+          0.053027864545583725
+        ],
+        "steps": 62,
+        "work": 21688.579710144924,
+        "budget": 101292.52173913043,
+        "mask": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "segments": [
+          {
+            "stage": 0,
+            "success": true,
+            "initial_B_loss": 0.07138122618198395,
+            "B_loss": 0.07138122618198395,
+            "steps": 0,
+            "global_steps": 0,
+            "cumulative_monitor_forgetting": 0.0,
+            "monitor_A_losses": [
+              0.06582672148942947,
+              0.06655286252498627
+            ],
+            "work": 384.0
+          },
+          {
+            "stage": 1,
+            "success": true,
+            "initial_B_loss": 0.18247106671333313,
+            "B_loss": 0.07992558926343918,
+            "steps": 42,
+            "global_steps": 42,
+            "cumulative_monitor_forgetting": 0.0,
+            "monitor_A_losses": [
+              0.06341258436441422,
+              0.04267466440796852
+            ],
+            "work": 14739.478260869564
+          },
+          {
+            "stage": 2,
+            "success": true,
+            "initial_B_loss": 0.2113041877746582,
+            "B_loss": 0.07868759334087372,
+            "steps": 20,
+            "global_steps": 62,
+            "cumulative_monitor_forgetting": 0.0,
+            "monitor_A_losses": [
+              0.058742716908454895,
+              0.043257035315036774
+            ],
+            "work": 21688.579710144924
+          }
+        ],
+        "final_B_test": [
+          0.06355208158493042,
+          0.06456270813941956,
+          0.08375350385904312
+        ],
+        "final_B_monitor": [
+          0.07256568223237991,
+          0.07255266606807709,
+          0.07868759334087372
+        ],
+        "final_all_B_monitor_hit": true,
+        "initially_solved": 1,
+        "decisions": [],
+        "events": []
+      },
+      {
+        "root": 860003,
+        "success": true,
+        "segment_hits": [
+          true,
+          true,
+          true
+        ],
+        "forgetting": 0.0,
+        "old_eval_loss": 0.04105160509546598,
+        "old_eval_references": [
+          0.043143510818481445,
+          0.03583075851202011,
+          0.04418054595589638
+        ],
+        "steps": 0,
+        "work": 894.0,
+        "budget": 101292.52173913043,
+        "mask": [
+          false,
+          false,
+          true,
+          false,
+          true,
+          true
+        ],
+        "segments": [
+          {
+            "stage": 0,
+            "success": true,
+            "initial_B_loss": 0.05645066499710083,
+            "B_loss": 0.05645066499710083,
+            "steps": 0,
+            "global_steps": 0,
+            "cumulative_monitor_forgetting": 0.0,
+            "monitor_A_losses": [
+              0.040458958595991135,
+              0.028721680864691734,
+              0.03863544389605522
+            ],
+            "work": 382.0
+          },
+          {
+            "stage": 1,
+            "success": true,
+            "initial_B_loss": 0.034310463815927505,
+            "B_loss": 0.034310463815927505,
+            "steps": 0,
+            "global_steps": 0,
+            "cumulative_monitor_forgetting": 0.0,
+            "monitor_A_losses": [
+              0.040458958595991135,
+              0.028721680864691734,
+              0.03863544389605522
+            ],
+            "work": 638.0
+          },
+          {
+            "stage": 2,
+            "success": true,
+            "initial_B_loss": 0.04193151369690895,
+            "B_loss": 0.04193151369690895,
+            "steps": 0,
+            "global_steps": 0,
+            "cumulative_monitor_forgetting": 0.0,
+            "monitor_A_losses": [
+              0.040458958595991135,
+              0.028721680864691734,
+              0.03863544389605522
+            ],
+            "work": 894.0
+          }
+        ],
+        "final_B_test": [
+          0.04929245263338089,
+          0.03969120979309082,
+          0.03887621685862541
+        ],
+        "final_B_monitor": [
+          0.05645066499710083,
+          0.034310463815927505,
+          0.04193151369690895
+        ],
+        "final_all_B_monitor_hit": true,
+        "initially_solved": 3,
+        "decisions": [],
+        "events": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "batch": 1,
+    "lagrange": 1.0125,
+    "failure": 0.125,
+    "loss": 0.38445207476615906,
+    "actor_parameter_delta": 0.015432446263730526
+  },
+  {
+    "batch": 2,
+    "lagrange": 0.9624999999999999,
+    "failure": 0.0,
+    "loss": 0.3798104226589203,
+    "actor_parameter_delta": 0.013567150570452213
+  },
+  {
+    "batch": 3,
+    "lagrange": 0.9749999999999999,
+    "failure": 0.125,
+    "loss": 0.46654370427131653,
+    "actor_parameter_delta": 0.012103459797799587
+  },
+  {
+    "batch": 4,
+    "lagrange": 0.9874999999999998,
+    "failure": 0.125,
+    "loss": 0.5796031951904297,
+    "actor_parameter_delta": 0.009464574046432972
+  },
+  {
+    "batch": 5,
+    "lagrange": 1.0624999999999998,
+    "failure": 0.25,
+    "loss": 0.4447426497936249,
+    "actor_parameter_delta": 0.00808663573116064
+  },
+  {
+    "batch": 6,
+    "lagrange": 1.1374999999999997,
+    "failure": 0.25,
+    "loss": 1.8630690574645996,
+    "actor_parameter_delta": 0.0073878285475075245
+  },
+  {
+    "batch": 7,
+    "lagrange": 1.1499999999999997,
+    "failure": 0.125,
+    "loss": 0.7899748086929321,
+    "actor_parameter_delta": 0.0064180269837379456
+  },
+  {
+    "batch": 8,
+    "lagrange": 1.0999999999999996,
+    "failure": 0.0,
+    "loss": 0.4308885335922241,
+    "actor_parameter_delta": 0.006530412007123232
+  },
+  {
+    "batch": 9,
+    "lagrange": 1.0499999999999996,
+    "failure": 0.0,
+    "loss": 0.27015504240989685,
+    "actor_parameter_delta": 0.006625564768910408
+  },
+  {
+    "batch": 10,
+    "lagrange": 0.9999999999999996,
+    "failure": 0.0,
+    "loss": 0.23226451873779297,
+    "actor_parameter_delta": 0.005943995900452137
+  },
+  {
+    "batch": 11,
+    "lagrange": 1.0749999999999995,
+    "failure": 0.25,
+    "loss": 1.4002976417541504,
+    "actor_parameter_delta": 0.006254894193261862
+  },
+  {
+    "batch": 12,
+    "lagrange": 1.0249999999999995,
+    "failure": 0.0,
+    "loss": 0.35096076130867004,
+    "actor_parameter_delta": 0.007678013760596514
+  },
+  {
+    "batch": 13,
+    "lagrange": 0.9749999999999994,
+    "failure": 0.0,
+    "loss": 0.34657981991767883,
+    "actor_parameter_delta": 0.007828544825315475
+  },
+  {
+    "batch": 14,
+    "lagrange": 0.9249999999999994,
+    "failure": 0.0,
+    "loss": 0.8160756230354309,
+    "actor_parameter_delta": 0.00761483795940876
+  },
+  {
+    "batch": 15,
+    "lagrange": 0.8749999999999993,
+    "failure": 0.0,
+    "loss": 0.18880903720855713,
+    "actor_parameter_delta": 0.0066149793565273285
+  },
+  {
+    "batch": 16,
+    "lagrange": 0.8874999999999993,
+    "failure": 0.125,
+    "loss": 1.3593231439590454,
+    "actor_parameter_delta": 0.005643340293318033
+  },
+  {
+    "batch": 17,
+    "lagrange": 0.8374999999999992,
+    "failure": 0.0,
+    "loss": 0.13582468032836914,
+    "actor_parameter_delta": 0.009090171195566654
+  },
+  {
+    "batch": 18,
+    "lagrange": 0.8499999999999992,
+    "failure": 0.125,
+    "loss": 0.36345145106315613,
+    "actor_parameter_delta": 0.008303423412144184
+  },
+  {
+    "batch": 19,
+    "lagrange": 0.9249999999999992,
+    "failure": 0.25,
+    "loss": 1.759670615196228,
+    "actor_parameter_delta": 0.0059446003288030624
+  },
+  {
+    "batch": 20,
+    "lagrange": 0.8749999999999991,
+    "failure": 0.0,
+    "loss": 0.13875988125801086,
+    "actor_parameter_delta": 0.005707149859517813
+  },
+  {
+    "batch": 21,
+    "lagrange": 0.9499999999999991,
+    "failure": 0.25,
+    "loss": 0.7708211541175842,
+    "actor_parameter_delta": 0.005485943052917719
+  },
+  {
+    "batch": 22,
+    "lagrange": 0.962499999999999,
+    "failure": 0.125,
+    "loss": 1.0067166090011597,
+    "actor_parameter_delta": 0.006870699115097523
+  },
+  {
+    "batch": 23,
+    "lagrange": 0.974999999999999,
+    "failure": 0.125,
+    "loss": 1.5071182250976562,
+    "actor_parameter_delta": 0.00951186753809452
+  },
+  {
+    "batch": 24,
+    "lagrange": 0.9249999999999989,
+    "failure": 0.0,
+    "loss": 0.9608606100082397,
+    "actor_parameter_delta": 0.009675526060163975
+  }
+]
