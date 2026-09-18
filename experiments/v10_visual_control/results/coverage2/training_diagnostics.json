@@ -1,0 +1,22 @@
+{
+  "grpo_feedback_1002": {
+    "epoch_pair": [
+      0,
+      12
+    ],
+    "visited_state_sample": 128,
+    "greedy_expert_action_change_fraction": 0.71484375,
+    "mean_abs_joint_logp_change": 0.10734210163354874,
+    "scope": "behavior distribution diagnostics only; no heldout evaluation used"
+  },
+  "grpo_feedback_1001": {
+    "epoch_pair": [
+      0,
+      12
+    ],
+    "visited_state_sample": 128,
+    "greedy_expert_action_change_fraction": 1.0,
+    "mean_abs_joint_logp_change": 0.2029416710138321,
+    "scope": "behavior distribution diagnostics only; no heldout evaluation used"
+  }
+}

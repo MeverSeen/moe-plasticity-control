@@ -1,0 +1,33 @@
+{
+  "protocol_sha256": "564f148720abfc4b9c1bcf0c0e4dfa6309c276180efc8e7dcdbdc177e2a13dc6",
+  "source_hashes": {
+    "analyze.py": "55fc7fc78eea5ce0c0413ce443fac8e1a71b8f97eb78b21d4d21512f8bac2480",
+    "control.py": "11bf152a391457ce16aa7e3d2b10d7de2397f94609e0c3834ff18884cd1e5826",
+    "core.py": "1b14c7ce87ca6ecc451c58d45be6e9cf969cab403ef1935207fc391059bafa27",
+    "run.py": "563612e94160836067e575ba198258f3909160bc7b7fb60fe0c3598e2d17f52a",
+    "test_mechanisms.py": "84e1e189a43d8d4a363dadc780785c90738401b51762a0fc9019c6010c814469"
+  },
+  "selected_models": {
+    "grpo_feedback_1001_epoch0.pt": "71b8b28aef14116cad8da7cd2486169fe7d8c22d3c8e1bda997e2842ec542208",
+    "grpo_feedback_1002_epoch18.pt": "1c90238299f7583a9a29f93fc205c048eb7b303a00b211744b00db479609ea5d"
+  },
+  "selection": {
+    "best_fixed": "fixed:.25",
+    "schedule": "schedule",
+    "local": "local",
+    "coordinated": "coordinated",
+    "grpo_feedback_1001": {
+      "variant": "grpo_feedback",
+      "seed": 1001,
+      "epoch": 0,
+      "path": "grpo_feedback_1001_epoch0.pt"
+    },
+    "grpo_feedback_1002": {
+      "variant": "grpo_feedback",
+      "seed": 1002,
+      "epoch": 18,
+      "path": "grpo_feedback_1002_epoch18.pt"
+    }
+  },
+  "time_unix": 1789707344.737175
+}

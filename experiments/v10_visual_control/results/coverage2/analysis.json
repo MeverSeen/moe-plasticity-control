@@ -1,0 +1,177 @@
+{
+  "methods": {
+    "best_fixed": {
+      "sequence_success": 0.875,
+      "task_success": 0.96875,
+      "forgetting": 0.06489850580692291,
+      "signed_forgetting": 0.053006475170453385,
+      "final_loss": 1.2110430654138327,
+      "final_accuracy": 0.514875,
+      "wall_seconds": 3.4689614481250004,
+      "learner_updates": 1500,
+      "initial_successes": 0,
+      "failures": 1
+    },
+    "schedule": {
+      "sequence_success": 0.875,
+      "task_success": 0.96875,
+      "forgetting": 0.09555137157440186,
+      "signed_forgetting": 0.09265277534723282,
+      "final_loss": 1.2499374076724052,
+      "final_accuracy": 0.498,
+      "wall_seconds": 3.0889108592499994,
+      "learner_updates": 1300,
+      "initial_successes": 0,
+      "failures": 1
+    },
+    "local": {
+      "sequence_success": 0.875,
+      "task_success": 0.96875,
+      "forgetting": 0.0638175755739212,
+      "signed_forgetting": 0.05010395745436351,
+      "final_loss": 1.2177217546850443,
+      "final_accuracy": 0.5135624999999999,
+      "wall_seconds": 3.44979497925,
+      "learner_updates": 1460,
+      "initial_successes": 0,
+      "failures": 1
+    },
+    "coordinated": {
+      "sequence_success": 0.875,
+      "task_success": 0.96875,
+      "forgetting": 0.07098850607872009,
+      "signed_forgetting": 0.06314977010091147,
+      "final_loss": 1.2246127296239138,
+      "final_accuracy": 0.5147499999999999,
+      "wall_seconds": 3.428770838624999,
+      "learner_updates": 1440,
+      "initial_successes": 0,
+      "failures": 1
+    },
+    "grpo_feedback": {
+      "sequence_success": 0.875,
+      "task_success": 0.96875,
+      "forgetting": 0.060793258249759674,
+      "signed_forgetting": 0.05338361238439878,
+      "final_loss": 1.2173952599987388,
+      "final_accuracy": 0.513625,
+      "wall_seconds": 3.5572542161874967,
+      "learner_updates": 3000,
+      "initial_successes": 0,
+      "failures": 2
+    }
+  },
+  "paired": {
+    "grpo_feedback - coordinated": {
+      "all_root_delta": -0.010195247828960415,
+      "all_root_bootstrap95": [
+        -0.025392579721907768,
+        0.002294577658176436
+      ],
+      "common_success_roots": 7,
+      "common_delta": -0.01230913400650024,
+      "common_bootstrap95": [
+        -0.027321869418734594,
+        0.0011941847347077955
+      ],
+      "success_difference": 0.0,
+      "loss_matched_roots": 6,
+      "loss_matched_delta": -0.01398454109827677,
+      "confirmatory_claim": false
+    },
+    "grpo_feedback - best_fixed": {
+      "all_root_delta": -0.004105247557163235,
+      "all_root_bootstrap95": [
+        -0.019155527154604585,
+        0.009752546561261009
+      ],
+      "common_success_roots": 7,
+      "common_delta": -0.005183398723602291,
+      "common_bootstrap95": [
+        -0.022608543222858785,
+        0.01084835188729423
+      ],
+      "success_difference": 0.0,
+      "loss_matched_roots": 5,
+      "loss_matched_delta": -0.005749591191609696,
+      "confirmatory_claim": false
+    }
+  },
+  "scope": "Exploratory pilot; roots are sampling units, controller seeds averaged within root. Class identities overlap across roots within a split; inference conditional on heldout class pool.",
+  "training": [
+    {
+      "name": "train_grpo_feedback_1002",
+      "rounds": 12,
+      "distinct_roots": 2,
+      "parameter_changes": [
+        0.04249622223026041,
+        0.03189981182843196,
+        0.018027132062746934,
+        0.012848145067032172,
+        0.012480515286543824,
+        0.012179873019215644,
+        0.010198050070290695,
+        0.0096174227175046,
+        0.010513960421735786,
+        0.01551108003958529,
+        0.011273327732891221,
+        0.016395013381153616
+      ],
+      "reward_std": [
+        0.3033298556671844,
+        0.24330457895207108,
+        1.2686429762817377,
+        0.06403507033630172,
+        0.26094611731523626,
+        0.021791889025050477,
+        0.3503647123937196,
+        0.01820559197261792,
+        0.32332588083532554,
+        0.1949266251396945,
+        0.9033033390953963,
+        0.20155154153300048
+      ],
+      "learner_updates": 11830,
+      "wall_seconds": 202.362505834,
+      "zero_std_groups": 0
+    },
+    {
+      "name": "train_grpo_feedback_1001",
+      "rounds": 12,
+      "distinct_roots": 2,
+      "parameter_changes": [
+        0.04254013830853463,
+        0.03273686574589711,
+        0.027720481409541788,
+        0.021951212708650546,
+        0.014552322465357698,
+        0.011525776196262388,
+        0.015433622568305062,
+        0.01997899769493457,
+        0.022822892572286504,
+        0.022467003434028403,
+        0.025272720881560205,
+        0.02123384696350546
+      ],
+      "reward_std": [
+        1.0786150182808163,
+        0.12223793111682786,
+        0.4732077660790294,
+        0.06112905485762905,
+        0.30400263660859833,
+        0.07183170227213355,
+        1.518292251046028,
+        0.15643688317411872,
+        1.0465948941635888,
+        0.10804846173839566,
+        1.3477504546055357,
+        0.12040212199036081
+      ],
+      "learner_updates": 11910,
+      "wall_seconds": 194.776573624,
+      "zero_std_groups": 0
+    }
+  ],
+  "training_total_seconds": 397.13907945799997,
+  "training_total_updates": 23740
+}

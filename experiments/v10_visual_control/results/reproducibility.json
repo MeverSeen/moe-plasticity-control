@@ -1,0 +1,10 @@
+{
+  "1001": {
+    "compared_outer_rounds": 12,
+    "identical_prefix_actions_rewards_observations_matrices": true
+  },
+  "1002": {
+    "compared_outer_rounds": 12,
+    "identical_prefix_actions_rewards_observations_matrices": true
+  }
+}

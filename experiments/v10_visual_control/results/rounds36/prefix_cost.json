@@ -1,0 +1,66 @@
+[
+  {
+    "updates": 80,
+    "train_examples": 2560,
+    "observation_examples": 2350,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0
+  },
+  {
+    "updates": 20,
+    "train_examples": 640,
+    "observation_examples": 850,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0
+  },
+  {
+    "updates": 60,
+    "train_examples": 1920,
+    "observation_examples": 1850,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0
+  },
+  {
+    "updates": 20,
+    "train_examples": 640,
+    "observation_examples": 850,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0
+  },
+  {
+    "updates": 150,
+    "train_examples": 4800,
+    "observation_examples": 4100,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0
+  },
+  {
+    "updates": 50,
+    "train_examples": 1600,
+    "observation_examples": 1600,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0
+  },
+  {
+    "updates": 90,
+    "train_examples": 2880,
+    "observation_examples": 2600,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0
+  },
+  {
+    "updates": 50,
+    "train_examples": 1600,
+    "observation_examples": 1600,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0
+  }
+]

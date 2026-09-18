@@ -1,0 +1,18 @@
+{
+  "best_fixed": "fixed:.25",
+  "schedule": "schedule",
+  "local": "local",
+  "coordinated": "coordinated",
+  "grpo_feedback_1001": {
+    "variant": "grpo_feedback",
+    "seed": 1001,
+    "epoch": 0,
+    "path": "grpo_feedback_1001_epoch0.pt"
+  },
+  "grpo_feedback_1002": {
+    "variant": "grpo_feedback",
+    "seed": 1002,
+    "epoch": 18,
+    "path": "grpo_feedback_1002_epoch18.pt"
+  }
+}

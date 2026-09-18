@@ -1,0 +1,73 @@
+{
+  "reason": "Development checkpoint grids 0/6/12 and 0/18/36 are non-nested. Evaluate fixed terminal actors to separate training duration from selection timing. This supplementary diagnostic was added after coverage2 evaluation, based on development selection design, not heldout performance; not confirmatory.",
+  "cases": [
+    {
+      "name": "grpo12_1001",
+      "path": "runs/v10-main/grpo_feedback_1001_epoch12.pt",
+      "sha256": "e5d80eea4c0d535006d5ecc90e8cf025cc863e2b0d1e050a7773b5d5a471ee3c"
+    },
+    {
+      "name": "grpo12_1002",
+      "path": "runs/v10-main/grpo_feedback_1002_epoch12.pt",
+      "sha256": "f375c2d7d518e33dc30ddfaab1a360cdae6fe6d1246ccad7d35a521232ed2db9"
+    },
+    {
+      "name": "grpo36_1001",
+      "path": "runs/v10-rounds36/grpo_feedback_1001_epoch36.pt",
+      "sha256": "685eed948fce71877fe324c1eeaffda8fa90601362b0d57e5a3671f2e53da2e0"
+    },
+    {
+      "name": "grpo36_1002",
+      "path": "runs/v10-rounds36/grpo_feedback_1002_epoch36.pt",
+      "sha256": "6597c4abc1b56d11afc7f123f434921ccb0439d98150cc07ff49a918716cdc7f"
+    },
+    {
+      "name": "ppo12_1001",
+      "path": "runs/v10-main/ppo_feedback_1001_epoch12.pt",
+      "sha256": "eff8f7e028f0449d9aedd412e1b1ff5fe144cda211bb7f4940b44b58878ecb3d"
+    },
+    {
+      "name": "ppo12_1002",
+      "path": "runs/v10-main/ppo_feedback_1002_epoch12.pt",
+      "sha256": "510e45e0cdc9ae2fd27eb9a152bfab9b0c971e1503f22d123b086cdcd9e10ff8"
+    }
+  ],
+  "source_hashes": {
+    "analyze.py": "55fc7fc78eea5ce0c0413ce443fac8e1a71b8f97eb78b21d4d21512f8bac2480",
+    "control.py": "11bf152a391457ce16aa7e3d2b10d7de2397f94609e0c3834ff18884cd1e5826",
+    "core.py": "1b14c7ce87ca6ecc451c58d45be6e9cf969cab403ef1935207fc391059bafa27",
+    "run.py": "563612e94160836067e575ba198258f3909160bc7b7fb60fe0c3598e2d17f52a",
+    "test_mechanisms.py": "84e1e189a43d8d4a363dadc780785c90738401b51762a0fc9019c6010c814469"
+  },
+  "seeds": [
+    1001,
+    1002
+  ],
+  "roots": [
+    1030000,
+    1030001,
+    1030002,
+    1030003,
+    1030004,
+    1030005,
+    1030006,
+    1030007
+  ],
+  "config": {
+    "width": 48,
+    "experts": 4,
+    "layers": 2,
+    "topk": 2,
+    "tasks": 4,
+    "batch": 32,
+    "steps": 200,
+    "interval": 10,
+    "lr": 0.001,
+    "decay": 0.01,
+    "memory": 200,
+    "target": 1.25,
+    "routing": "dynamic",
+    "threads": 1
+  },
+  "script_sha256": "f3b05ac353e23d89816ae01bda7accdddafada91d2ded63a7280ee8199e53c46"
+}

@@ -1,0 +1,38 @@
+{
+  "grpo12": {
+    "sequence_success": 0.875,
+    "task_success": 0.96875,
+    "forgetting": 0.06796870132287344,
+    "signed_forgetting": 0.05522898212075234,
+    "final_loss": 1.2171855447813869,
+    "final_accuracy": 0.51190625,
+    "wall_seconds": 3.6056861016875006,
+    "learner_updates": 2840,
+    "initial_successes": 0,
+    "failures": 2
+  },
+  "grpo36": {
+    "sequence_success": 0.875,
+    "task_success": 0.96875,
+    "forgetting": 0.07516729583342871,
+    "signed_forgetting": 0.06616758679350217,
+    "final_loss": 1.230905576609075,
+    "final_accuracy": 0.50715625,
+    "wall_seconds": 2.9481650105,
+    "learner_updates": 2670,
+    "initial_successes": 0,
+    "failures": 2
+  },
+  "ppo12": {
+    "sequence_success": 0.875,
+    "task_success": 0.96875,
+    "forgetting": 0.07516729583342871,
+    "signed_forgetting": 0.06616758679350217,
+    "final_loss": 1.230905576609075,
+    "final_accuracy": 0.50715625,
+    "wall_seconds": 2.7450306640000024,
+    "learner_updates": 2670,
+    "initial_successes": 0,
+    "failures": 2
+  }
+}

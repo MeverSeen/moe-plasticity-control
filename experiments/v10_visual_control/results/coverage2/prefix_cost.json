@@ -1,0 +1,18 @@
+[
+  {
+    "updates": 80,
+    "train_examples": 2560,
+    "observation_examples": 2350,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0
+  },
+  {
+    "updates": 20,
+    "train_examples": 640,
+    "observation_examples": 850,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0
+  }
+]
