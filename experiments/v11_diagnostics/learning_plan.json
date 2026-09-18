@@ -1,0 +1,120 @@
+{
+  "version": "v11_diagnostics",
+  "config": {
+    "width": 48,
+    "experts": 4,
+    "layers": 2,
+    "topk": 2,
+    "tasks": 4,
+    "batch": 32,
+    "steps": 200,
+    "interval": 10,
+    "lr": 0.001,
+    "decay": 0.01,
+    "memory": 200,
+    "target": 1.25,
+    "routing": "dynamic",
+    "threads": 1,
+    "monitor_mode": "random",
+    "reward_mode": "positive"
+  },
+  "base": 0,
+  "arms": [
+    "scratch_grpo",
+    "warm_grpo",
+    "repair_grpo",
+    "repair_ppo",
+    "repair_balanced",
+    "repair_trunk"
+  ],
+  "controller_seeds": [
+    1101,
+    1102,
+    1103,
+    1104
+  ],
+  "train_roots": [
+    1130000,
+    1130001,
+    1130002,
+    1130003,
+    1130004,
+    1130005,
+    1130006,
+    1130007,
+    1130008,
+    1130009,
+    1130010,
+    1130011
+  ],
+  "selection_roots": [
+    1140000,
+    1140001,
+    1140002,
+    1140003,
+    1140004,
+    1140005,
+    1140006,
+    1140007
+  ],
+  "audit_roots": [
+    1150000,
+    1150001,
+    1150002,
+    1150003,
+    1150004,
+    1150005,
+    1150006,
+    1150007,
+    1150008,
+    1150009,
+    1150010,
+    1150011
+  ],
+  "selection_action_seed": 1160000,
+  "audit_action_seed": 1170000,
+  "rounds": 12,
+  "group": 4,
+  "checkpoints": [
+    0,
+    6,
+    12
+  ],
+  "policy_lr": 0.0003,
+  "fixed_baselines": [
+    {
+      "expert": 0,
+      "trunk": 1
+    },
+    {
+      "expert": 0,
+      "trunk": 0.5
+    },
+    {
+      "expert": 0.25,
+      "trunk": 1
+    }
+  ],
+  "selection": "Per execution mode lexicographic sequence success, forgetting, final absolute loss; ascending epoch breaks exact ties.",
+  "audit": "Paired roots and action streams. Development classes 60-79 only: no new-class final claim. Audit epochs 0,12 and selected checkpoints; never used for selection.",
+  "budget": {
+    "models": 24,
+    "train_branches": 1152,
+    "dev_episodes": 1152,
+    "audit_episodes_max": 1728,
+    "prefix_tasks": 288,
+    "fixed_episodes": 60,
+    "workers": 3,
+    "seconds_per_calibration_episode": 1.9688365346666667,
+    "estimated_serial_episode_hours": 2.2379108610711116,
+    "caveat": "Measured rollout cost excludes controller optimization and CPU contention; allow up to 2x wall estimate. No adaptive budget extension."
+  },
+  "rationale": "Finite-monitor balanced estimate improved paired selection diagnostic; signed estimate did not. Nonexpert scope affects multi-step progress; fixed trunk .5 feasible, .25 not. Base expert0 selected on 8 separate calibration roots. Keep raw reward for scope arm. Warm full-interface p=.98; sparse repair magnitude p=.9; optional trunk p= .98 at1. All checkpoints, seed outcomes and failures retained.",
+  "source_sha256": {
+    "core.py": "bd02e228338819604b6f9e61d9ab3954031237eb03ed38e0616799b079453d9b",
+    "control.py": "bbada1c2665ea9dcca879dd55abf9975e351e027196ec6fa7bb360fad08a8586",
+    "policies.py": "d6ea8a84db6b1f5706229bc98ed8abbaa073892ae85922012ee071aa47edb1b6",
+    "learn.py": "cf3cdf512beb6b6fbfaada5619db9a829b31cabe0f9256767f1a5446c845d028",
+    "diagnose.py": "26fb499f1b8b4dc07411262ee517bfd7cd894dfb222bfcbaf8d3593dc263e889"
+  }
+}

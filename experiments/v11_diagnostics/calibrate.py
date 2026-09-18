@@ -1,0 +1,34 @@
+"""Select a feasible fixed warm-start and isolate monitor retention on dev roots."""
+import argparse,json,time
+from dataclasses import asdict
+from pathlib import Path
+import numpy as np
+import torch
+from core import Config,Data,Environment
+from control import rollout
+from policies import FixedPolicy
+from diagnose import save,hashes
+
+def score(rows):return (-np.mean([r['success'] for r in rows]),np.mean([r['forgetting'] for r in rows]),np.mean([r['final_loss'] for r in rows]))
+def evaluate(data,cfg,seeds,policy):
+ rows=[]
+ for seed in seeds:
+  e=Environment(data,cfg,seed,'dev');r,_=rollout(e,policy);rows.append(r)
+ return rows
+
+def main(args):
+ torch.set_num_threads(1);out=args.out;out.mkdir(parents=True,exist_ok=False);data=Data(args.data);seeds=list(range(1120100,1120108));start=time.perf_counter();allrows={}
+ save(out/'protocol.json',{'dev_roots':seeds,'expert_candidates':[0,.25,.5,.75,1,1.5],'trunk_candidates':[.25,.5,1],'budget_candidates':[200,400],'budget_rule':'Use 200 if any fixed expert candidate has sequence success >=.9; otherwise compare all six candidates at 400, preserving every 200-step result. If still infeasible report and select lexicographic best available, never label feasible.','monitor_compare':'same selected fixed policy with stratified monitor only; replay unchanged','sources':hashes()})
+ for steps in [200,400]:
+  cfg=Config(steps=steps);grid={}
+  for m in [0,.25,.5,.75,1,1.5]:
+   key=f'budget{steps}_expert{m}';rows=evaluate(data,cfg,seeds,FixedPolicy(m));allrows[key]=rows;grid[m]=rows;save(out/'results.json',allrows);print(key,score(rows),flush=True)
+  if max(np.mean([r['success'] for r in rows]) for rows in grid.values())>=.9:break
+ base=min(grid,key=lambda m:score(grid[m]));selected=grid[base];shared={1.:selected}
+ for t in [.25,.5]:
+  key=f'budget{steps}_expert{base}_trunk{t}';shared[t]=evaluate(data,cfg,seeds,FixedPolicy(base,t));allrows[key]=shared[t];save(out/'results.json',allrows);print(key,score(shared[t]),flush=True)
+ strat=Config(**asdict(cfg));strat.monitor_mode='stratified';allrows['stratified_monitor_only']=evaluate(data,strat,seeds,FixedPolicy(base));save(out/'results.json',allrows)
+ equality=all(a['matrix']==b['matrix'] and a['actions']==b['actions'] for a,b in zip(selected,allrows['stratified_monitor_only']))
+ save(out/'selection.json',{'config':asdict(cfg),'base':base,'base_score':score(selected),'base_feasible':bool(np.mean([r['success'] for r in selected])>=.9),'trunk_scores':{k:score(v) for k,v in shared.items()},'best_trunk':min(shared,key=lambda k:score(shared[k])),'monitor_only_identical_matrices_actions':equality,'seconds':time.perf_counter()-start});print('selected',base,'budget',steps,'monitor invariant',equality,flush=True)
+if __name__=='__main__':
+ p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);p.add_argument('--data',default='.cache/datasets/cifar-complete.tar.gz');main(p.parse_args())
