@@ -1,0 +1,12 @@
+{
+  "stage": "visual resource-sized exploratory pilot",
+  "frozen_before_any_final_test": true,
+  "main": {"rounds": 12, "roots": 8, "group": 4, "seeds": [1001, 1002], "variants": ["grpo_feedback", "grpo_progress", "ppo_feedback", "grpo_local", "grpo_factorized", "grpo_groups", "grpo_global"]},
+  "coverage": {"variant": "grpo_feedback", "rounds": 12, "roots": 2, "group": 4, "seeds": [1001, 1002]},
+  "rounds": {"variant": "grpo_feedback", "rounds": 36, "roots": 8, "group": 4, "seeds": [1001, 1002]},
+  "root_sampling": "cycle the fixed root pool; report draw counts separately from independent roots",
+  "heldout_roots": [1030000, 1030001, 1030002, 1030003, 1030004, 1030005, 1030006, 1030007],
+  "test_use": "evaluate all predeclared selected candidates; no choosing family or hyperparameters using heldout results",
+  "final_inference": "descriptive paired-root estimates only; two controller seeds and eight roots insufficient for stable superiority or noninferiority claims",
+  "next_stage": "language/real native-MoE blocked pending suitable compute and checkpoint access; no purchase authorized"
+}

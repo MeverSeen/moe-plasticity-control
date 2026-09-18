@@ -1,0 +1,13 @@
+{
+  "seconds": 19.975616958,
+  "max_rss_bytes": 779124736,
+  "source_hashes": {
+    "analyze.py": "55fc7fc78eea5ce0c0413ce443fac8e1a71b8f97eb78b21d4d21512f8bac2480",
+    "control.py": "11bf152a391457ce16aa7e3d2b10d7de2397f94609e0c3834ff18884cd1e5826",
+    "core.py": "1b14c7ce87ca6ecc451c58d45be6e9cf969cab403ef1935207fc391059bafa27",
+    "run.py": "563612e94160836067e575ba198258f3909160bc7b7fb60fe0c3598e2d17f52a",
+    "test_mechanisms.py": "84e1e189a43d8d4a363dadc780785c90738401b51762a0fc9019c6010c814469"
+  },
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "torch": "2.8.0"
+}

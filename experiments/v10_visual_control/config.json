@@ -1,0 +1,16 @@
+{
+  "width": 48,
+  "experts": 4,
+  "layers": 2,
+  "topk": 2,
+  "tasks": 4,
+  "batch": 32,
+  "steps": 200,
+  "interval": 10,
+  "lr": 0.001,
+  "decay": 0.01,
+  "memory": 200,
+  "target": 1.25,
+  "routing": "dynamic",
+  "threads": 1
+}

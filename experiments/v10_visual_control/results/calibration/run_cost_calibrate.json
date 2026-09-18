@@ -1,0 +1,7 @@
+{
+  "wall_seconds": 20.9014435,
+  "max_rss_bytes": 779124736,
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "torch": "2.8.0",
+  "cpu_threads": 1
+}
