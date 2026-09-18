@@ -1,0 +1,130 @@
+{
+  "config": {
+    "width": 48,
+    "experts": 4,
+    "layers": 2,
+    "topk": 2,
+    "tasks": 4,
+    "batch": 32,
+    "steps": 200,
+    "interval": 10,
+    "lr": 0.001,
+    "decay": 0.01,
+    "memory": 200,
+    "target": 1.25,
+    "routing": "dynamic",
+    "threads": 1
+  },
+  "source_hashes": {
+    "analyze.py": "55fc7fc78eea5ce0c0413ce443fac8e1a71b8f97eb78b21d4d21512f8bac2480",
+    "control.py": "11bf152a391457ce16aa7e3d2b10d7de2397f94609e0c3834ff18884cd1e5826",
+    "core.py": "1b14c7ce87ca6ecc451c58d45be6e9cf969cab403ef1935207fc391059bafa27",
+    "run.py": "563612e94160836067e575ba198258f3909160bc7b7fb60fe0c3598e2d17f52a",
+    "test_mechanisms.py": "84e1e189a43d8d4a363dadc780785c90738401b51762a0fc9019c6010c814469"
+  },
+  "data_md5": "eb9058c3a382ffc7106e4002c42a8d85",
+  "variants": {
+    "grpo_feedback": [
+      "grpo",
+      false,
+      false,
+      "structured"
+    ],
+    "grpo_progress": [
+      "grpo",
+      false,
+      true,
+      "structured"
+    ],
+    "ppo_feedback": [
+      "ppo",
+      false,
+      false,
+      "structured"
+    ],
+    "grpo_local": [
+      "grpo",
+      true,
+      false,
+      "factorized"
+    ],
+    "grpo_factorized": [
+      "grpo",
+      false,
+      false,
+      "factorized"
+    ],
+    "grpo_groups": [
+      "grpo",
+      false,
+      false,
+      "groups"
+    ],
+    "grpo_global": [
+      "grpo",
+      false,
+      false,
+      "global"
+    ]
+  },
+  "rounds": 12,
+  "group": 4,
+  "root_pool": 8,
+  "controller_seeds": [
+    1001,
+    1002
+  ],
+  "train_roots": [
+    1010000,
+    1010001,
+    1010002,
+    1010003,
+    1010004,
+    1010005,
+    1010006,
+    1010007
+  ],
+  "dev_roots": [
+    1020000,
+    1020001
+  ],
+  "heldout_roots": [
+    1030000,
+    1030001,
+    1030002,
+    1030003,
+    1030004,
+    1030005,
+    1030006,
+    1030007
+  ],
+  "classes": {
+    "train": [
+      0,
+      59
+    ],
+    "dev": [
+      60,
+      79
+    ],
+    "test": [
+      80,
+      99
+    ]
+  },
+  "noninferiority_margin": 0.05,
+  "minimum_sequence_success": 0.9,
+  "formal_power_claim": false,
+  "selection": "lexicographic sequence success, all-root forgetting, final absolute loss; epochs 0, half, final; no final test selection",
+  "reward": "-retained old-monitor positive mean loss increase / .1 - 3 per failed task",
+  "comparisons": [
+    "Q1: expert/group/global matched alphabet",
+    "Q2: feedback/progress",
+    "Q3: GRPO/PPO",
+    "coordination: local/factorized/structured/rules"
+  ],
+  "interaction_matching": "same root/trajectory/update caps, actual early-stop updates separately reported; not exact consumed-update equality",
+  "stopping": "initial and every 10 updates; one check <= target; preserve all failures and initial successes",
+  "memory": "total 200: equal per-task replay and monitor quota; old prefixes only; no reacquisition; stored per-example completion losses",
+  "scope": "resource-sized visual pilot, four five-class tasks; class-disjoint heldout tasks; no 20x5 claim"
+}

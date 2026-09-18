@@ -2,7 +2,7 @@
 
 更新于 2026-09-17。本页是当前研究主线与实施规划入口；算法细节见 [控制器设计](controller-design.md)，已经取得的证据见 [研究记录](research.md)。
 
-**状态：已确定研究方向，尚未锁定新实验配置。** 本 checkout 的已归档结果仍为 v1–v7。下面的真实数据、多层逐 expert 控制和 GRPO 是待实现、待校准的方案；本次文档更新不表示已经运行或排定全部算力任务。
+**实施更新（2026-09-18）：v10视觉pilot已完成真实数据环境、逐expert GRPO/PPO、闭环选模和独立评价。** 见[结果解读](../experiments/v10_visual_control/结果解读.md)、[实际协议](../experiments/v10_visual_control/README.md)及[资源缺口](../experiments/v10_visual_control/RESOURCE_NOTES.md)。没有验证反馈或超越固定/全局倍率的稳定收益；语言与原生MoE尚未运行。以下保留总体路线与候选规模，不能把候选数字当作v10实际配置。v1–v7不变。
 
 ## 1. 研究主题
 

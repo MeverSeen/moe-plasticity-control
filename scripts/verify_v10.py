@@ -20,6 +20,7 @@ def main():
   else:
    protocol=read(folder/'protocol.json');lock=read(folder/'locked.json')
    assert hashlib.sha256((folder/'protocol.json').read_bytes()).hexdigest()==lock['protocol_sha256']
+   assert protocol['source_hashes']==lock['source_hashes'],'Source changed during training'
    test=read(folder/'test.json')
   for method,rows in test.items():
    assert [r['seed'] for r in rows]==protocol['heldout_roots']

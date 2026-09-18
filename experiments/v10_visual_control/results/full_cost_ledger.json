@@ -1,0 +1,149 @@
+{
+  "phases": {
+    "main_prefix": {
+      "updates": 520,
+      "train_examples": 16640,
+      "observation_examples": 15800,
+      "evaluation_examples": 16000,
+      "copies": 0,
+      "copy_seconds": 0.0
+    },
+    "main_training": {
+      "updates": 147390,
+      "train_examples": 7074720,
+      "observation_examples": 5982778,
+      "evaluation_examples": 4032000,
+      "copies": 672,
+      "copy_seconds": 2.3128877159969576
+    },
+    "main_baseline_dev": {
+      "updates": 3820,
+      "train_examples": 176160,
+      "observation_examples": 157631,
+      "evaluation_examples": 144000,
+      "copies": 0,
+      "copy_seconds": 0.0
+    },
+    "main_learned_dev": {
+      "updates": 17390,
+      "train_examples": 801120,
+      "observation_examples": 720336,
+      "evaluation_examples": 672000,
+      "copies": 0,
+      "copy_seconds": 0.0
+    },
+    "main_test": {
+      "updates": 25100,
+      "train_examples": 1115520,
+      "observation_examples": 1050090,
+      "evaluation_examples": 1152000,
+      "copies": 0,
+      "copy_seconds": 0.0
+    },
+    "coverage2_prefix": {
+      "updates": 100,
+      "train_examples": 3200,
+      "observation_examples": 3200,
+      "evaluation_examples": 4000,
+      "copies": 0,
+      "copy_seconds": 0.0
+    },
+    "coverage2_training": {
+      "updates": 23740,
+      "train_examples": 1139520,
+      "observation_examples": 948863,
+      "evaluation_examples": 576000,
+      "copies": 96,
+      "copy_seconds": 0.3871647869998043
+    },
+    "coverage2_baseline_dev": {
+      "updates": 3820,
+      "train_examples": 176160,
+      "observation_examples": 157631,
+      "evaluation_examples": 144000,
+      "copies": 0,
+      "copy_seconds": 0.0
+    },
+    "coverage2_learned_dev": {
+      "updates": 2620,
+      "train_examples": 120960,
+      "observation_examples": 107651,
+      "evaluation_examples": 96000,
+      "copies": 0,
+      "copy_seconds": 0.0
+    },
+    "coverage2_test": {
+      "updates": 8700,
+      "train_examples": 387840,
+      "observation_examples": 361692,
+      "evaluation_examples": 384000,
+      "copies": 0,
+      "copy_seconds": 0.0
+    },
+    "rounds36_prefix": {
+      "updates": 520,
+      "train_examples": 16640,
+      "observation_examples": 15800,
+      "evaluation_examples": 16000,
+      "copies": 0,
+      "copy_seconds": 0.0
+    },
+    "rounds36_training": {
+      "updates": 59790,
+      "train_examples": 2869920,
+      "observation_examples": 2445940,
+      "evaluation_examples": 1728000,
+      "copies": 288,
+      "copy_seconds": 1.1688035010013351
+    },
+    "rounds36_baseline_dev": {
+      "updates": 3820,
+      "train_examples": 176160,
+      "observation_examples": 157631,
+      "evaluation_examples": 144000,
+      "copies": 0,
+      "copy_seconds": 0.0
+    },
+    "rounds36_learned_dev": {
+      "updates": 2460,
+      "train_examples": 113280,
+      "observation_examples": 102056,
+      "evaluation_examples": 96000,
+      "copies": 0,
+      "copy_seconds": 0.0
+    },
+    "rounds36_test": {
+      "updates": 8430,
+      "train_examples": 374880,
+      "observation_examples": 352248,
+      "evaluation_examples": 384000,
+      "copies": 0,
+      "copy_seconds": 0.0
+    },
+    "terminal_test": {
+      "updates": 8180,
+      "train_examples": 362880,
+      "observation_examples": 343498,
+      "evaluation_examples": 384000,
+      "copies": 0,
+      "copy_seconds": 0.0
+    },
+    "calibration": {
+      "updates": 1850,
+      "train_examples": 79040,
+      "observation_examples": 68063,
+      "evaluation_examples": 48000,
+      "copies": 0,
+      "copy_seconds": 0.0
+    }
+  },
+  "sum": {
+    "updates": 318250,
+    "train_examples": 15004640,
+    "observation_examples": 12990908,
+    "evaluation_examples": 10020000,
+    "copies": 1056,
+    "copy_seconds": 3.868856003998097
+  },
+  "scope": "Experiment learner work including prefixes, training branches, baseline/development selection and all evaluations. Microbenchmarks, unit tests and separate mechanism probes are reported separately. Repeated baseline computations are charged; they are not independent evidence."
+}

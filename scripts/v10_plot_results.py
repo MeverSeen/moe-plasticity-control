@@ -23,7 +23,7 @@ def main(out):
   epochs=sorted(map(int,checkpoints));rows=[checkpoints[str(e)] for e in epochs]
   axes[0].plot(epochs,[np.mean([r['success'] for r in rr]) for rr in rows],'.-',label=key)
   axes[1].plot(epochs,[np.mean([r['forgetting'] for r in rr]) for rr in rows],'.-',label=key)
- axes[0].set_ylabel('Development sequence success');axes[1].set_ylabel('Development forgetting');axes[1].legend(fontsize=7)
+ axes[0].set_ylim(0,1.05);axes[0].set_yticks([0,.25,.5,.75,1]);axes[0].set_ylabel('Development sequence success');axes[1].set_ylabel('Development forgetting');axes[1].legend(fontsize=7)
  for ax in axes:ax.set_xlabel('Outer training rounds');ax.grid(alpha=.2)
  fig.savefig(out/'learning.png',dpi=170);plt.close(fig)
 if __name__=='__main__':

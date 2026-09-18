@@ -1,0 +1,90 @@
+{
+  "best_fixed": "fixed:.25",
+  "schedule": "schedule",
+  "local": "local",
+  "coordinated": "coordinated",
+  "grpo_feedback_1001": {
+    "variant": "grpo_feedback",
+    "seed": 1001,
+    "epoch": 0,
+    "path": "grpo_feedback_1001_epoch0.pt"
+  },
+  "grpo_feedback_1002": {
+    "variant": "grpo_feedback",
+    "seed": 1002,
+    "epoch": 6,
+    "path": "grpo_feedback_1002_epoch6.pt"
+  },
+  "grpo_progress_1001": {
+    "variant": "grpo_progress",
+    "seed": 1001,
+    "epoch": 0,
+    "path": "grpo_progress_1001_epoch0.pt"
+  },
+  "grpo_progress_1002": {
+    "variant": "grpo_progress",
+    "seed": 1002,
+    "epoch": 6,
+    "path": "grpo_progress_1002_epoch6.pt"
+  },
+  "ppo_feedback_1001": {
+    "variant": "ppo_feedback",
+    "seed": 1001,
+    "epoch": 0,
+    "path": "ppo_feedback_1001_epoch0.pt"
+  },
+  "ppo_feedback_1002": {
+    "variant": "ppo_feedback",
+    "seed": 1002,
+    "epoch": 12,
+    "path": "ppo_feedback_1002_epoch12.pt"
+  },
+  "grpo_local_1001": {
+    "variant": "grpo_local",
+    "seed": 1001,
+    "epoch": 0,
+    "path": "grpo_local_1001_epoch0.pt"
+  },
+  "grpo_local_1002": {
+    "variant": "grpo_local",
+    "seed": 1002,
+    "epoch": 12,
+    "path": "grpo_local_1002_epoch12.pt"
+  },
+  "grpo_factorized_1001": {
+    "variant": "grpo_factorized",
+    "seed": 1001,
+    "epoch": 0,
+    "path": "grpo_factorized_1001_epoch0.pt"
+  },
+  "grpo_factorized_1002": {
+    "variant": "grpo_factorized",
+    "seed": 1002,
+    "epoch": 6,
+    "path": "grpo_factorized_1002_epoch6.pt"
+  },
+  "grpo_groups_1001": {
+    "variant": "grpo_groups",
+    "seed": 1001,
+    "epoch": 0,
+    "path": "grpo_groups_1001_epoch0.pt"
+  },
+  "grpo_groups_1002": {
+    "variant": "grpo_groups",
+    "seed": 1002,
+    "epoch": 0,
+    "path": "grpo_groups_1002_epoch0.pt"
+  },
+  "grpo_global_1001": {
+    "variant": "grpo_global",
+    "seed": 1001,
+    "epoch": 12,
+    "path": "grpo_global_1001_epoch12.pt"
+  },
+  "grpo_global_1002": {
+    "variant": "grpo_global",
+    "seed": 1002,
+    "epoch": 6,
+    "path": "grpo_global_1002_epoch6.pt"
+  }
+}

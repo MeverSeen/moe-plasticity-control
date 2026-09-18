@@ -1,0 +1,38 @@
+{
+  "main": {
+    "updates": 147390,
+    "rollouts": 672,
+    "branch_training_seconds": 2143.503711004997,
+    "full_train_cost": {
+      "wall_seconds": 2460.9187026249997,
+      "max_rss_bytes": 858734592,
+      "platform": "macOS-27.0-arm64-arm-64bit",
+      "torch": "2.8.0",
+      "cpu_threads": 1
+    }
+  },
+  "coverage2": {
+    "updates": 23740,
+    "rollouts": 96,
+    "branch_training_seconds": 397.13907945799997,
+    "full_train_cost": {
+      "wall_seconds": 505.734791167,
+      "max_rss_bytes": 799162368,
+      "platform": "macOS-27.0-arm64-arm-64bit",
+      "torch": "2.8.0",
+      "cpu_threads": 1
+    }
+  },
+  "rounds36": {
+    "updates": 59790,
+    "rollouts": 288,
+    "branch_training_seconds": 998.118980291,
+    "full_train_cost": {
+      "wall_seconds": 1119.0624085,
+      "max_rss_bytes": 862093312,
+      "platform": "macOS-27.0-arm64-arm-64bit",
+      "torch": "2.8.0",
+      "cpu_threads": 1
+    }
+  }
+}

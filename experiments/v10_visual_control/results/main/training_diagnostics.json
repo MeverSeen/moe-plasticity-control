@@ -1,0 +1,142 @@
+{
+  "grpo_factorized_1002": {
+    "epoch_pair": [
+      0,
+      12
+    ],
+    "visited_state_sample": 128,
+    "greedy_expert_action_change_fraction": 0.9853515625,
+    "mean_abs_joint_logp_change": 0.1720413714647293,
+    "scope": "behavior distribution diagnostics only; no heldout evaluation used"
+  },
+  "ppo_feedback_1001": {
+    "epoch_pair": [
+      0,
+      12
+    ],
+    "visited_state_sample": 128,
+    "greedy_expert_action_change_fraction": 0.0,
+    "mean_abs_joint_logp_change": 0.10802023112773895,
+    "scope": "behavior distribution diagnostics only; no heldout evaluation used"
+  },
+  "grpo_feedback_1002": {
+    "epoch_pair": [
+      0,
+      12
+    ],
+    "visited_state_sample": 128,
+    "greedy_expert_action_change_fraction": 0.958984375,
+    "mean_abs_joint_logp_change": 0.1876281276345253,
+    "scope": "behavior distribution diagnostics only; no heldout evaluation used"
+  },
+  "grpo_groups_1001": {
+    "epoch_pair": [
+      0,
+      12
+    ],
+    "visited_state_sample": 128,
+    "greedy_expert_action_change_fraction": 0.0,
+    "mean_abs_joint_logp_change": 0.13256880454719067,
+    "scope": "behavior distribution diagnostics only; no heldout evaluation used"
+  },
+  "grpo_progress_1001": {
+    "epoch_pair": [
+      0,
+      12
+    ],
+    "visited_state_sample": 128,
+    "greedy_expert_action_change_fraction": 0.0,
+    "mean_abs_joint_logp_change": 0.1063862219452858,
+    "scope": "behavior distribution diagnostics only; no heldout evaluation used"
+  },
+  "grpo_global_1001": {
+    "epoch_pair": [
+      0,
+      12
+    ],
+    "visited_state_sample": 128,
+    "greedy_expert_action_change_fraction": 1.0,
+    "mean_abs_joint_logp_change": 0.04313236754387617,
+    "scope": "behavior distribution diagnostics only; no heldout evaluation used"
+  },
+  "grpo_local_1001": {
+    "epoch_pair": [
+      0,
+      12
+    ],
+    "visited_state_sample": 128,
+    "greedy_expert_action_change_fraction": 0.6015625,
+    "mean_abs_joint_logp_change": 0.08330188691616058,
+    "scope": "behavior distribution diagnostics only; no heldout evaluation used"
+  },
+  "grpo_local_1002": {
+    "epoch_pair": [
+      0,
+      12
+    ],
+    "visited_state_sample": 128,
+    "greedy_expert_action_change_fraction": 0.3232421875,
+    "mean_abs_joint_logp_change": 0.10883280634880066,
+    "scope": "behavior distribution diagnostics only; no heldout evaluation used"
+  },
+  "grpo_feedback_1001": {
+    "epoch_pair": [
+      0,
+      12
+    ],
+    "visited_state_sample": 128,
+    "greedy_expert_action_change_fraction": 0.0,
+    "mean_abs_joint_logp_change": 0.07327061891555786,
+    "scope": "behavior distribution diagnostics only; no heldout evaluation used"
+  },
+  "grpo_groups_1002": {
+    "epoch_pair": [
+      0,
+      12
+    ],
+    "visited_state_sample": 128,
+    "greedy_expert_action_change_fraction": 0.0068359375,
+    "mean_abs_joint_logp_change": 0.04731939174234867,
+    "scope": "behavior distribution diagnostics only; no heldout evaluation used"
+  },
+  "grpo_progress_1002": {
+    "epoch_pair": [
+      0,
+      12
+    ],
+    "visited_state_sample": 128,
+    "greedy_expert_action_change_fraction": 0.708984375,
+    "mean_abs_joint_logp_change": 0.15996954590082169,
+    "scope": "behavior distribution diagnostics only; no heldout evaluation used"
+  },
+  "grpo_global_1002": {
+    "epoch_pair": [
+      0,
+      12
+    ],
+    "visited_state_sample": 128,
+    "greedy_expert_action_change_fraction": 1.0,
+    "mean_abs_joint_logp_change": 0.07362196128815413,
+    "scope": "behavior distribution diagnostics only; no heldout evaluation used"
+  },
+  "ppo_feedback_1002": {
+    "epoch_pair": [
+      0,
+      12
+    ],
+    "visited_state_sample": 128,
+    "greedy_expert_action_change_fraction": 0.203125,
+    "mean_abs_joint_logp_change": 0.1370435729622841,
+    "scope": "behavior distribution diagnostics only; no heldout evaluation used"
+  },
+  "grpo_factorized_1001": {
+    "epoch_pair": [
+      0,
+      12
+    ],
+    "visited_state_sample": 128,
+    "greedy_expert_action_change_fraction": 0.0,
+    "mean_abs_joint_logp_change": 0.12984128296375275,
+    "scope": "behavior distribution diagnostics only; no heldout evaluation used"
+  }
+}
