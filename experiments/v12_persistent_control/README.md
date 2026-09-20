@@ -2,7 +2,7 @@
 
 2026-09-20。v10、v11及更早版本冻结；当前分支codex/v10-visual-control上的独立新版本。本轮只训练GRPO，不运行PPO。不是GRPO最优、算法无关或动态控制有效的预设证明。
 
-## 单因素对照
+## 轮内对照
 
 | 组 | 动作范围 | 保持长度 |
 |---|---|---:|
@@ -32,4 +32,19 @@
 
 开发类别池60–79已多轮使用，新增根仅是顺序/初始化开发复测，不是新类别最终确认。训练仍限0–59；不查询80–99任务或官方test成员。完整研究eval矩阵不进入策略观测或GRPO reward。
 
+A不是逐字复跑v11：三组共同使用新的结构化探索先验、.001策略学习率、20,000实际更新预算和新校准的expert=.25基础。A→B在本轮内检验保持长度；不能把v11→A的差异只归因于保持或联合控制。B→C还改变探索支持及扰动幅度。
+
 轻量核验：实际位移、Adam矩、10/50步相同停止、每保持区间只采样一次、持有中途完整恢复、联合动作支持及联合log概率逐数一致。另做真实数据1000次采样覆盖及各组4分支GRPO短测，完成后才冻结完整运行预算和源码hash。
+
+## 复现与核查
+
+从仓库根运行，完整训练使用新的输出目录；下列归档核验不重新训练：
+
+```bash
+python3 scripts/verify_v12.py
+python3 scripts/test_all.py
+```
+
+主运行入口为 `launch.py --plan experiments/v12_persistent_control/plan.json --out <新目录>`；独立模型入口为 `run.py --plan <协议> --arm A --seed 1201 --out <新目录>`。校准、短测和基线的默认输出目录分别为 `runs/v12-calibration`、`runs/v12-smoke`、`runs/v12-baselines`，拒绝覆盖已有目录。完整数据集须已缓存到 `.cache/datasets/cifar-complete.tar.gz`，启动时核对官方MD5。
+
+`analyze.py`、`verify_probabilities.py`、`ledger.py`、`plot.py`读取本轮 `runs/v12-*` 原始运行目录；`archive.py`将JSON/日志归档并生成SHA256清单，大文件确定性gzip。36个模型权重仅保存在本地 `runs/v12-learning/*/{initial,mid,terminal}.pt`，其hash及尺寸单列；数据集和权重不提交Git。归档包含全部任务矩阵、动作、潜变量、实际保持长度、完整观测及成本，足以复核已报告统计；精确策略概率回放还需要本地权重。

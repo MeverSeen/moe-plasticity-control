@@ -1,4 +1,4 @@
-import copy,sys,unittest
+import copy,io,sys,unittest
 from pathlib import Path
 import torch
 from core import Config,Environment,Learner,GatedAdam
@@ -31,7 +31,8 @@ class Tests(unittest.TestCase):
  def test_restore_mid_hold(self):
   e=Environment(Data(),Config(tasks=2,steps=70,target=0),22)
   while e.k==0:advance(e,Baseline(),50)
-  advance(e,Baseline(),50);advance(e,Baseline(),50);f=e.clone()
+  advance(e,Baseline(),50);advance(e,Baseline(),50)
+  buffer=io.BytesIO();torch.save(e.clone(),buffer);buffer.seek(0);f=torch.load(buffer,weights_only=False)
   a,_=rollout(e,Baseline(),50);b,_=rollout(f,Baseline(),50)
   self.assertEqual(a['matrix'],b['matrix']);self.assertEqual(a['policy_trace'],b['policy_trace'])
   for n,v in e.model.state_dict().items():self.assertTrue(torch.equal(v,f.model.state_dict()[n]))
@@ -43,7 +44,7 @@ class Tests(unittest.TestCase):
    p=Policy(joint=joint);changed=[];trunks=[];base=[]
    for _ in range(400):
     m,z,lp,_,_=p.act(obs);_,_,again,_,_=p.act(obs,z);self.assertTrue(torch.equal(lp,again));changed.append(int((m[0]!=0).sum()));trunks.append(m[1]);base.append(int(z[0])==0)
-    if int(z[0])==0:self.assertAlmostEqual(float(lp),-0.69314718,places=5)
+    if int(z[0])==0:self.assertAlmostEqual(float(lp.detach()),-0.69314718,places=5)
     else:
      expected=torch.log(torch.tensor(.5))+prior(3,torch.tensor(1),.5)[z[1]]+prior(6,torch.tensor(0),.5)[z[2]]+prior(6,z[2].expand(2),.8)[torch.arange(2),z[3]].sum()
      if joint:expected+=prior(6,z[3][:,None].expand(2,4),.8).gather(-1,z[4][...,None]).sum()
