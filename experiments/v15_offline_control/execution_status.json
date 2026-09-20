@@ -1,6 +1,6 @@
 {
-  "status": "running",
-  "status_as_of_utc": "2026-09-20T14:16:01Z",
+  "status": "collecting_then_shutdown_per_user",
+  "status_as_of_utc": "2026-09-20T15:27:00Z",
   "branch": "codex/v15-offline-control",
   "source_commit": "825cbe0",
   "remote_root": "/root/autodl-tmp/moe-v15-offline-20260920/r2",
@@ -19,7 +19,7 @@
     "previously_failing_five_update_fixture": "exact repeat passed with deterministic CUDA; new collection still has independent gates",
     "first_new_training_root": "Post-A 20 updates completed; paired five-update restore check equal."
   },
-  "reported_progress": "First fresh reference complete: 90 updates. Preparing first post-A prefix; no formal training histories completed yet.",
+  "reported_progress": "Four reference roots and four window checks completed; first complete training branch running. No offline fitting or held-out evaluation will run under the revised instruction.",
   "remote_outputs": [
     "data/results/train",
     "data/offline",
@@ -30,5 +30,15 @@
   ],
   "export_status": "Authorized by user on 2026-09-20. Six source data/evaluation files backed up and SHA256 verified. Full run/checkpoint copy in progress; bounded incremental backup follows it through the existing deadline.",
   "scope": "Execution status, not an efficacy result. No observed controller improvement is claimed.",
-  "backup_local_directory": "/Users/jianyuan/Documents/Codex/2026-09-16/zai/moe-offline-control/runs/v15"
+  "backup_local_directory": "/Users/jianyuan/Documents/Codex/2026-09-16/zai/moe-offline-control/runs/v15",
+  "post_collection": {
+    "offline_training": "cancelled_by_user",
+    "closed_loop_evaluation": "cancelled_by_user",
+    "original_pipeline_exit_code": -15,
+    "original_finalizer_exit_code": -15,
+    "collection_only_finalizer_pid": 6533,
+    "local_backup_acknowledgement_pid": 72955,
+    "shutdown": "Platform /usr/bin/shutdown after collection and local manifest verification; backup grace at most 30 minutes, capped by existing hard deadline. No instance release or data deletion.",
+    "heartbeat_automation_id": "moe"
+  }
 }
