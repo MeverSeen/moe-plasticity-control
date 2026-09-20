@@ -1,5 +1,7 @@
 # 参考文献与设计对应
 
+2026-09-20新增离线路线：Kostrikov et al., [Offline Reinforcement Learning with Implicit Q-Learning](https://arxiv.org/abs/2110.06169)，在固定数据上学习expectile V与Q并做优势加权策略提取；用于v15，不代表可绕过行为覆盖与闭环验证。Peng et al., [Advantage-Weighted Regression](https://arxiv.org/abs/1910.00177)作为相关方法记录，本轮不额外实现比较。参数距离代理参考Kirkpatrick et al., [EWC](https://arxiv.org/abs/1612.00796)与Aljundi et al., [MAS](https://arxiv.org/abs/1711.09601)：保护重要方向，而不是把裸欧氏距离等同遗忘。LoRA有效权重BA与因子距离的区别按原参数化推导。
+
 整理/核对日期：2026-09-17。保存项目讨论实际用到的研究线索，不是穷尽式综述，也不支持“首次提出”的优先权声明。
 
 核实等级分别为原文相关章节、原始摘要/官方条目、待核实。核实链接和关键方法不等于独立复现结果；只有摘要的资料不推断其完整实现。以下“对本项目的启发”均是我们的设计判断。

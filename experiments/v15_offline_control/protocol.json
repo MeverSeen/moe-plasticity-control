@@ -1,0 +1,243 @@
+{
+  "version": "v15_offline_control",
+  "locked_utc": "2026-09-20T13:33:05.721578+00:00",
+  "authorization": "User explicitly authorized up to eight additional hours after resource clarification on 2026-09-20. Stop earlier at 21:15 UTC. No purchase or expansion.",
+  "hard_deadline_utc": "2026-09-20T21:15:00+00:00",
+  "hard_deadline_epoch": 1789938900.0,
+  "collection_cap_seconds": 14400,
+  "evaluation_archive_reserve_seconds": 7200,
+  "base_revision": "6d84c48581ece794365f2b8e9cfb043c68ade9c5",
+  "environment": {
+    "tasks": 3,
+    "max_updates": 60,
+    "reference_updates": 30,
+    "hold": 5,
+    "microbatch": 2,
+    "accumulation": 1,
+    "replay_microbatch": 1,
+    "stop_examples": 8,
+    "old_observation_examples": 2,
+    "evaluation_batch": 8,
+    "memory_tokens": 256000,
+    "reward_scale": 0.1,
+    "failure_kappa": 3.0
+  },
+  "roots": {
+    "train": [
+      {
+        "id": "train_1411000",
+        "split": "train",
+        "seed": 1411000,
+        "tasks": [
+          "task363_sst2_polarity_classification",
+          "task196_sentiment140_answer_generation",
+          "task280_stereoset_classification_stereotype_type"
+        ],
+        "targets": null,
+        "target_source": "v14_methods_20260920_0814/targets/train_1411000.json"
+      },
+      {
+        "id": "train_1411001",
+        "split": "train",
+        "seed": 1411001,
+        "tasks": [
+          "task339_record_answer_generation",
+          "task1532_daily_dialog_emotion_classification",
+          "task1293_kilt_tasks_hotpotqa_question_answering"
+        ],
+        "targets": null,
+        "target_source": "v14_methods_20260920_0814/targets/train_1411001.json"
+      },
+      {
+        "id": "train_1411002",
+        "split": "train",
+        "seed": 1411002,
+        "tasks": [
+          "task1555_scitail_answer_generation",
+          "task875_emotion_classification",
+          "task344_hybridqa_answer_generation"
+        ],
+        "targets": null,
+        "target_source": "v14_methods_20260920_0814/targets/train_1411002.json"
+      },
+      {
+        "id": "train_1511003",
+        "split": "train",
+        "seed": 1511003,
+        "tasks": [
+          "task1295_adversarial_qa_question_answering",
+          "task033_winogrande_answer_generation",
+          "task676_ollie_relationship_answer_generation"
+        ],
+        "targets": null
+      }
+    ],
+    "development": [
+      {
+        "id": "development_1401000",
+        "seed": 1401000,
+        "split": "development",
+        "tasks": [
+          "task247_dream_answer_generation",
+          "task190_snli_classification",
+          "task843_financial_phrasebank_classification"
+        ],
+        "targets": null,
+        "target_source": "v14_methods_20260920_0814/targets/development_1401000.json"
+      },
+      {
+        "id": "development_1511001",
+        "split": "development",
+        "seed": 1511001,
+        "tasks": [
+          "task041_qasc_answer_generation",
+          "task1712_poki_classification",
+          "task164_mcscript_question_answering_text"
+        ],
+        "targets": null
+      }
+    ],
+    "confirmation": [
+      {
+        "id": "confirmation_1512000",
+        "split": "confirmation",
+        "seed": 1512000,
+        "tasks": [
+          "task494_review_polarity_answer_generation",
+          "task456_matres_intention_classification",
+          "task274_overruling_legal_classification"
+        ],
+        "targets": null
+      },
+      {
+        "id": "confirmation_1512001",
+        "split": "confirmation",
+        "seed": 1512001,
+        "tasks": [
+          "task178_quartz_question_answering",
+          "task198_mnli_domain_classification",
+          "task582_naturalquestion_answer_generation"
+        ],
+        "targets": null
+      }
+    ]
+  },
+  "behaviors": [
+    {
+      "name": "fixed1",
+      "base": 4,
+      "mode": "fixed",
+      "stochastic": false,
+      "epsilon": 0.0
+    },
+    {
+      "name": "fixed050",
+      "base": 2,
+      "mode": "fixed",
+      "stochastic": false,
+      "epsilon": 0.0
+    },
+    {
+      "name": "rule",
+      "base": 4,
+      "mode": "rule",
+      "stochastic": false,
+      "epsilon": 0.0
+    },
+    {
+      "name": "explore_fixed050_0",
+      "base": 2,
+      "mode": "fixed",
+      "stochastic": true,
+      "epsilon": 0.15
+    },
+    {
+      "name": "explore_fixed050_1",
+      "base": 2,
+      "mode": "fixed",
+      "stochastic": true,
+      "epsilon": 0.15
+    },
+    {
+      "name": "explore_fixed050_2",
+      "base": 2,
+      "mode": "fixed",
+      "stochastic": true,
+      "epsilon": 0.15
+    },
+    {
+      "name": "explore_rule_0",
+      "base": 4,
+      "mode": "rule",
+      "stochastic": true,
+      "epsilon": 0.15
+    },
+    {
+      "name": "explore_rule_1",
+      "base": 4,
+      "mode": "rule",
+      "stochastic": true,
+      "epsilon": 0.15
+    }
+  ],
+  "observation": {
+    "local10": [
+      "old_usage*8",
+      "current_usage*8",
+      "old_mass*64",
+      "current_mass*64",
+      "relative_adam_displacement*100",
+      "previous_multiplier",
+      "old_token_coverage",
+      "current_token_coverage",
+      "current_cache_age/H",
+      "8*(shortEMA(old_usage-current_usage)-longEMA(old_usage-current_usage))"
+    ],
+    "global10": [
+      "current_CE/5",
+      "shortEMA(current_CE_improvement)/5",
+      "current_target_gap/5",
+      "longEMA(current_CE_improvement)/5",
+      "shortEMA(cached_potential_improvement)/.1",
+      "cached_potential/.1",
+      "task_position/2",
+      "remaining_update_fraction",
+      "failure_fraction",
+      "longEMA(cached_potential_improvement)/.1"
+    ],
+    "ema": "short alpha=.5, long alpha=.1; once per uncached decision boundary only. First observation initializes EMA to signal. Learning EMA reset at task boundary; route-risk and potential recovery EMA persist across history. Potential recovery uses previous observed potential minus current. Exact state copied in checkpoints.",
+    "rule": "same full observation and action interface; original potential/gap/short-learning base rule, correction risk=old-current usage + positive(short-long risk EMA); thresholds and tie rule unchanged. No feature or rule search."
+  },
+  "action_interface": "Unchanged 16 layer bases plus at most 2 corrections each, alphabet 0/.25/.5/.75/1; same exact ordered latent distribution. Deterministic behavior has actual logp=0; stochastic behavior logs exact joint logp.",
+  "rewards": {
+    "positive_forgetting": "negative full retained old-monitor mean positive CE rise /.1 -3 failed tasks",
+    "old_ce": "negative full retained old-monitor macro mean absolute CE /.1 -3 failed tasks",
+    "effective_distance": "negative effective LoRA BA squared Frobenius displacement from post-A prefix /distance_scale -3 failed tasks",
+    "distance_scale": "Set once after collection to median positive endpoint distance of fixed050 training histories divided by 10; no dev/confirmation use. If no positive distance exists disable that fit.",
+    "timing": "Terminal-only offline labels, gamma=1. Task boundaries are not episode terminals. No reward from isolated eval or general datasets."
+  },
+  "offline": {
+    "method": "IQL",
+    "baseline": "BC",
+    "seed": 1515,
+    "steps": 1200,
+    "batch_size": 16,
+    "actor_every": 4,
+    "bc_warmup_steps": 200,
+    "expectile": 0.7,
+    "advantage_temperature": 3.0,
+    "max_weight": 20.0,
+    "gamma": 1.0,
+    "lr": 0.0003,
+    "target_tau": 0.005,
+    "actor_selection": "Final fixed training step, no hyperparameter/seed/checkpoint search."
+  },
+  "evaluation": {
+    "development": "Fixed1, fixed050, rule, BC and three reward-specific IQL policies on two dev roots. Select ONE IQL reward by failures, cumulative positive eval forgetting, absolute final CE, path updates.",
+    "confirmation": "Fixed1, fixed050, rule, BC and selected IQL on two locked roots. Task CE/EM and adapter-on cached general subset.",
+    "limits": "Confirmation task pool was exposed in previous reports; new seeds are not new unseen task families. This is a repeated held-out pool evaluation, not fresh final confirmation. Training uses only source-disjoint train roots.",
+    "input_restrictions": "No confirmation outcomes or raw isolated eval metrics in offline fitting or reward. All sibling branches stay with their complete root."
+  },
+  "collection": "32 complete fresh behavior histories maximum (8 behaviors x 4 roots), balanced round robin plus four two-window restore checks and one complete repeated all-one history excluded from learning. Stop by time only. Shared post-A checkpoints are actual paired initial states, not oracle optimal-action labels. Save endpoint adapters, raw monitored CE, actual factor displacement, effective endpoint distance, action distributions and sources.",
+  "engineering": "Unmodified v14 archive reused as dependency. Defensive copied optimizer restore; same arithmetic instrumented Adam. Require full weights/Adam restore and freshly measured CE equality. Repeated full history must match."
+}
