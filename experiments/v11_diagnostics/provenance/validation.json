@@ -1,0 +1,36 @@
+{
+  "verified_on": "2026-09-20",
+  "tests": {
+    "historical": 73,
+    "v10": 11,
+    "v11": 6,
+    "total": 90,
+    "latest_v11_rerun": "6 passed including full Adam moments/step invariance"
+  },
+  "v11_manifest_files": 278,
+  "v11_full_history_rows": 3780,
+  "v11_scope_paths": 96,
+  "local_checkpoints": 72,
+  "historical_archive_files": 790,
+  "v10_heldout_rows": 288,
+  "default_v10_v11_parity": {
+    "passed": true,
+    "data": "deterministic FakeData, 150 examples per role",
+    "tasks": 3,
+    "steps_per_task": 10,
+    "target": 0,
+    "learner_seed": 122,
+    "policy_seed": 912,
+    "execution": "stochastic",
+    "equal_fields": [
+      "matrix",
+      "actions",
+      "reward",
+      "proxy_forgetting",
+      "tasks",
+      "policy_trace"
+    ]
+  },
+  "frozen_v10_base_commit": "1616503",
+  "v10_tree_diff": "empty"
+}

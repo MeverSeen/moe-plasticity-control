@@ -1,0 +1,71 @@
+{
+  "seconds": 270.31635224999997,
+  "prefix_cost": [
+    {
+      "updates": 70,
+      "train_examples": 2720,
+      "observation_examples": 2800,
+      "evaluation_examples": 5500,
+      "copies": 1,
+      "copy_seconds": 0.003696624999999898
+    },
+    {
+      "updates": 250,
+      "train_examples": 8800,
+      "observation_examples": 7500,
+      "evaluation_examples": 5500,
+      "copies": 1,
+      "copy_seconds": 0.003533208000000343
+    },
+    {
+      "updates": 120,
+      "train_examples": 5440,
+      "observation_examples": 4750,
+      "evaluation_examples": 5500,
+      "copies": 1,
+      "copy_seconds": 0.0035588750000101754
+    },
+    {
+      "updates": 150,
+      "train_examples": 6880,
+      "observation_examples": 5800,
+      "evaluation_examples": 5500,
+      "copies": 1,
+      "copy_seconds": 0.0034746660000024576
+    },
+    {
+      "updates": 80,
+      "train_examples": 2880,
+      "observation_examples": 2950,
+      "evaluation_examples": 5500,
+      "copies": 1,
+      "copy_seconds": 0.0035018330000013975
+    },
+    {
+      "updates": 40,
+      "train_examples": 1600,
+      "observation_examples": 1950,
+      "evaluation_examples": 5500,
+      "copies": 1,
+      "copy_seconds": 0.003401749999994763
+    },
+    {
+      "updates": 60,
+      "train_examples": 2560,
+      "observation_examples": 2650,
+      "evaluation_examples": 5500,
+      "copies": 1,
+      "copy_seconds": 0.0038063340000178414
+    },
+    {
+      "updates": 220,
+      "train_examples": 7360,
+      "observation_examples": 6450,
+      "evaluation_examples": 5500,
+      "copies": 1,
+      "copy_seconds": 0.0035424160000161464
+    }
+  ],
+  "reward_branch_updates": 9410,
+  "scope_updates": 9750
+}

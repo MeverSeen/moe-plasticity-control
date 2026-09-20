@@ -1,0 +1,30 @@
+{
+  "trunk_counts": {},
+  "draws": 1000,
+  "expert_draws": 8000,
+  "multiplier_counts": {
+    "0.0": 7823,
+    "0.25": 41,
+    "0.5": 18,
+    "0.75": 35,
+    "1.0": 45,
+    "1.5": 38
+  },
+  "whole_allocation_base_fraction": 0.915,
+  "base_expert_fraction": 0.977875,
+  "mean_multiplier": 0.0184375,
+  "greedy": [
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+repair_ppo 1102 dev 0 (-1.0, 0.03973514835039774, 1.1775886118412018) (-1.0, 0.04197885592778523, 1.187340710312128)
+repair_ppo 1102 round 0 seconds 16.47
+repair_ppo 1102 round 1 seconds 12.9
+repair_ppo 1102 round 2 seconds 28.83
+repair_ppo 1102 round 3 seconds 14.12
+repair_ppo 1102 round 4 seconds 20.79
+repair_ppo 1102 round 5 seconds 23.8
+repair_ppo 1102 dev 6 (-1.0, 0.03973514835039774, 1.1775886118412018) (-1.0, 0.04746808111667633, 1.187195934355259)
+repair_ppo 1102 round 6 seconds 15.89
+repair_ppo 1102 round 7 seconds 33.05
+repair_ppo 1102 round 8 seconds 27.08
+repair_ppo 1102 round 9 seconds 26.71
+repair_ppo 1102 round 10 seconds 20.05
+repair_ppo 1102 round 11 seconds 12.94
+repair_ppo 1102 dev 12 (-1.0, 0.03973514835039774, 1.1775886118412018) (-1.0, 0.04746808111667633, 1.187195934355259)
+complete repair_ppo 1102

@@ -1,0 +1,16 @@
+repair_balanced 1104 dev 0 (-1.0, 0.03973514835039774, 1.1775886118412018) (-1.0, 0.042022426923116044, 1.1872137635946274)
+repair_balanced 1104 round 0 seconds 13.18
+repair_balanced 1104 round 1 seconds 10.45
+repair_balanced 1104 round 2 seconds 23.39
+repair_balanced 1104 round 3 seconds 12.57
+repair_balanced 1104 round 4 seconds 19.93
+repair_balanced 1104 round 5 seconds 19.54
+repair_balanced 1104 dev 6 (-1.0, 0.03973514835039774, 1.1775886118412018) (-1.0, 0.04753230015436808, 1.1868166364729404)
+repair_balanced 1104 round 6 seconds 11.97
+repair_balanced 1104 round 7 seconds 24.95
+repair_balanced 1104 round 8 seconds 20.83
+repair_balanced 1104 round 9 seconds 19.43
+repair_balanced 1104 round 10 seconds 13.98
+repair_balanced 1104 round 11 seconds 9.41
+repair_balanced 1104 dev 12 (-1.0, 0.03973514835039774, 1.1775886118412018) (-1.0, 0.04751137892405192, 1.186649952083826)
+complete repair_balanced 1104

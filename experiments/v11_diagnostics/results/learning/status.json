@@ -1,0 +1,122 @@
+[
+  {
+    "job": "scratch_grpo_1101",
+    "exit_code": 0,
+    "wall_seconds": 492.5216541290283
+  },
+  {
+    "job": "repair_grpo_1101",
+    "exit_code": 0,
+    "wall_seconds": 542.905121088028
+  },
+  {
+    "job": "warm_grpo_1101",
+    "exit_code": 0,
+    "wall_seconds": 545.2312800884247
+  },
+  {
+    "job": "repair_ppo_1101",
+    "exit_code": 0,
+    "wall_seconds": 553.2860448360443
+  },
+  {
+    "job": "repair_balanced_1101",
+    "exit_code": 0,
+    "wall_seconds": 555.0065290927887
+  },
+  {
+    "job": "repair_trunk_1101",
+    "exit_code": 0,
+    "wall_seconds": 655.2604291439056
+  },
+  {
+    "job": "scratch_grpo_1102",
+    "exit_code": 0,
+    "wall_seconds": 661.6537911891937
+  },
+  {
+    "job": "warm_grpo_1102",
+    "exit_code": 0,
+    "wall_seconds": 640.0203900337219
+  },
+  {
+    "job": "repair_grpo_1102",
+    "exit_code": 0,
+    "wall_seconds": 653.2959349155426
+  },
+  {
+    "job": "repair_ppo_1102",
+    "exit_code": 0,
+    "wall_seconds": 707.1179039478302
+  },
+  {
+    "job": "repair_balanced_1102",
+    "exit_code": 0,
+    "wall_seconds": 708.2412810325623
+  },
+  {
+    "job": "repair_trunk_1102",
+    "exit_code": 0,
+    "wall_seconds": 700.4729399681091
+  },
+  {
+    "job": "warm_grpo_1103",
+    "exit_code": 0,
+    "wall_seconds": 602.9862902164459
+  },
+  {
+    "job": "scratch_grpo_1103",
+    "exit_code": 0,
+    "wall_seconds": 640.1131346225739
+  },
+  {
+    "job": "repair_grpo_1103",
+    "exit_code": 0,
+    "wall_seconds": 588.7096960544586
+  },
+  {
+    "job": "repair_ppo_1103",
+    "exit_code": 0,
+    "wall_seconds": 557.364599943161
+  },
+  {
+    "job": "repair_balanced_1103",
+    "exit_code": 0,
+    "wall_seconds": 556.7045302391052
+  },
+  {
+    "job": "repair_trunk_1103",
+    "exit_code": 0,
+    "wall_seconds": 661.5782148838043
+  },
+  {
+    "job": "scratch_grpo_1104",
+    "exit_code": 0,
+    "wall_seconds": 508.0181550979614
+  },
+  {
+    "job": "warm_grpo_1104",
+    "exit_code": 0,
+    "wall_seconds": 568.8016171455383
+  },
+  {
+    "job": "repair_grpo_1104",
+    "exit_code": 0,
+    "wall_seconds": 561.0306596755981
+  },
+  {
+    "job": "repair_ppo_1104",
+    "exit_code": 0,
+    "wall_seconds": 552.322417974472
+  },
+  {
+    "job": "repair_balanced_1104",
+    "exit_code": 0,
+    "wall_seconds": 539.3525450229645
+  },
+  {
+    "job": "repair_trunk_1104",
+    "exit_code": 0,
+    "wall_seconds": 465.01311588287354
+  }
+]

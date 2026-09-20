@@ -1,0 +1,7 @@
+# 阶段源码与序列化修复
+
+diagnose.before_serialization_fix.py.txt与calibrate.before_serialization_fix.py.txt逐字恢复执行时的两个源码文件，其SHA256与对应runs阶段protocol中的hash相同。修复仅涉及保存摘要的numpy标量序列化，不改实验轨迹；原始执行文件同时归档以支持核验。
+
+core.py/control.py/policies.py在各自实验启动后的动力学实现未更改；学习作业逐次校验learning_plan.json中的五个源码hash。calibration协议还记录了未被该实验导入的analyze_diagnostics.py，当时文件随后扩充了失败口径及根聚类配对分析；这是后处理变化，不是学习实现变化。
+
+已有v10源码、协议、结果及模型保持不变。新的概率KL诊断是训练后的分析，只读取已保存的初始复测观测和模型，不运行新learner轨迹，也不影响选择或预算。

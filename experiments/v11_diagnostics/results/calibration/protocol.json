@@ -1,0 +1,41 @@
+{
+  "dev_roots": [
+    1120100,
+    1120101,
+    1120102,
+    1120103,
+    1120104,
+    1120105,
+    1120106,
+    1120107
+  ],
+  "expert_candidates": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1,
+    1.5
+  ],
+  "trunk_candidates": [
+    0.25,
+    0.5,
+    1
+  ],
+  "budget_candidates": [
+    200,
+    400
+  ],
+  "budget_rule": "Use 200 if any fixed expert candidate has sequence success >=.9; otherwise compare all six candidates at 400, preserving every 200-step result. If still infeasible report and select lexicographic best available, never label feasible.",
+  "monitor_compare": "same selected fixed policy with stratified monitor only; replay unchanged",
+  "sources": {
+    "test_diagnostics.py": "d2de29efd1d9a31d6ca052b6a5a7559ddf1655f6a6fe6f33deaa21b48f3184c1",
+    "control.py": "bbada1c2665ea9dcca879dd55abf9975e351e027196ec6fa7bb360fad08a8586",
+    "core.py": "bd02e228338819604b6f9e61d9ab3954031237eb03ed38e0616799b079453d9b",
+    "diagnose.py": "0ef2d01635cf68f857dc3a825c262876e31080dee58b24db7d7abfd0f78f3839",
+    "analyze_diagnostics.py": "5f673b9ef3f8c34d55c31dc6fcdee0ae6d00d21af5ccfd007a8aa120db913375",
+    "audit_v10.py": "715a411d8982ee903d371742842fc36ce81a6133315277b1660c6b7005c99989",
+    "calibrate.py": "38a663ffd1e5b092245e0b909967d570cc5012b94623f7dabb3ac65d4b5d25bf",
+    "policies.py": "d6ea8a84db6b1f5706229bc98ed8abbaa073892ae85922012ee071aa47edb1b6"
+  }
+}

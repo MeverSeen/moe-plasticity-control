@@ -1,0 +1,16 @@
+repair_trunk 1104 dev 0 (-1.0, 0.03973514835039774, 1.1775886118412018) (-1.0, 0.04013035694758098, 1.1808329448103905)
+repair_trunk 1104 round 0 seconds 13.33
+repair_trunk 1104 round 1 seconds 10.45
+repair_trunk 1104 round 2 seconds 23.31
+repair_trunk 1104 round 3 seconds 11.94
+repair_trunk 1104 round 4 seconds 16.89
+repair_trunk 1104 round 5 seconds 18.85
+repair_trunk 1104 dev 6 (-1.0, 0.03973514835039774, 1.1775886118412018) (-1.0, 0.04013035694758098, 1.1808329448103905)
+repair_trunk 1104 round 6 seconds 11.9
+repair_trunk 1104 round 7 seconds 25.11
+repair_trunk 1104 round 8 seconds 20.78
+repair_trunk 1104 round 9 seconds 19.72
+repair_trunk 1104 round 10 seconds 14.75
+repair_trunk 1104 round 11 seconds 7.64
+repair_trunk 1104 dev 12 (-1.0, 0.03973514835039774, 1.1775886118412018) (-1.0, 0.04013035694758098, 1.1808329448103905)
+complete repair_trunk 1104

@@ -1,0 +1,16 @@
+repair_grpo 1102 dev 0 (-1.0, 0.03973514835039774, 1.1775886118412018) (-1.0, 0.04197885592778523, 1.187340710312128)
+repair_grpo 1102 round 0 seconds 16.18
+repair_grpo 1102 round 1 seconds 12.24
+repair_grpo 1102 round 2 seconds 28.85
+repair_grpo 1102 round 3 seconds 14.63
+repair_grpo 1102 round 4 seconds 20.4
+repair_grpo 1102 round 5 seconds 22.47
+repair_grpo 1102 dev 6 (-1.0, 0.03973514835039774, 1.1775886118412018) (-1.0, 0.04570019245147705, 1.1855638846755028)
+repair_grpo 1102 round 6 seconds 13.46
+repair_grpo 1102 round 7 seconds 28.62
+repair_grpo 1102 round 8 seconds 23.62
+repair_grpo 1102 round 9 seconds 22.19
+repair_grpo 1102 round 10 seconds 16.22
+repair_grpo 1102 round 11 seconds 10.9
+repair_grpo 1102 dev 12 (-1.0, 0.03973514835039774, 1.1775886118412018) (-1.0, 0.04570019245147705, 1.1855638846755028)
+complete repair_grpo 1102

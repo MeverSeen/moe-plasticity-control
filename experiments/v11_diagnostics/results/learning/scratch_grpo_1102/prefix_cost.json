@@ -1,0 +1,98 @@
+[
+  {
+    "updates": 30,
+    "train_examples": 960,
+    "observation_examples": 1100,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0
+  },
+  {
+    "updates": 60,
+    "train_examples": 1920,
+    "observation_examples": 1850,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0
+  },
+  {
+    "updates": 30,
+    "train_examples": 960,
+    "observation_examples": 1100,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0
+  },
+  {
+    "updates": 40,
+    "train_examples": 1280,
+    "observation_examples": 1350,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0
+  },
+  {
+    "updates": 30,
+    "train_examples": 960,
+    "observation_examples": 1100,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0
+  },
+  {
+    "updates": 80,
+    "train_examples": 2560,
+    "observation_examples": 2350,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0
+  },
+  {
+    "updates": 60,
+    "train_examples": 1920,
+    "observation_examples": 1850,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0
+  },
+  {
+    "updates": 30,
+    "train_examples": 960,
+    "observation_examples": 1100,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0
+  },
+  {
+    "updates": 40,
+    "train_examples": 1280,
+    "observation_examples": 1350,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0
+  },
+  {
+    "updates": 60,
+    "train_examples": 1920,
+    "observation_examples": 1850,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0
+  },
+  {
+    "updates": 30,
+    "train_examples": 960,
+    "observation_examples": 1100,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0
+  },
+  {
+    "updates": 30,
+    "train_examples": 960,
+    "observation_examples": 1100,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0
+  }
+]

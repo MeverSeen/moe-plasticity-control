@@ -1,0 +1,89 @@
+"""Paired training/development diagnostics; no official CIFAR test is loaded."""
+import argparse,copy,hashlib,json,time
+from dataclasses import asdict
+from pathlib import Path
+import numpy as np
+import torch
+from core import Config,Data,Environment
+from control import Policy,rollout
+
+def save(p,x):Path(p).write_text(json.dumps(x,indent=2))
+def hashes():return {p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in Path(__file__).parent.glob('*.py')}
+
+class AuditEnvironment(Environment):
+    """Evaluator-owned extra pools. Only diagnostics instantiate this subclass."""
+    def __init__(self,*args,**kw):
+        super().__init__(*args,**kw);self.audit_completion={}
+    def finish(self,loss):
+        records={}
+        for role in ['monitor','eval']:
+            d=self.dataset(self.k,role);ll,_,_=self.measure(self.k,d,'evaluation_examples')
+            records[role]={'loss':ll.tolist(),'labels':d[1].tolist(),'ids':d[2].tolist()}
+        self.audit_completion[self.k]=records
+        super().finish(loss)
+    def audit_end(self):
+        records=[]
+        for j in range(self.k-1):
+            row={'task':j}
+            for role in ['monitor','eval']:
+                # Privileged researcher-only read, never passed to policy/reward.
+                d=self.data.task(self.classes[j],role);ll,_,_=self.measure(j,d,'evaluation_examples')
+                old=self.audit_completion[j][role]
+                assert old['ids']==d[2].tolist()
+                row[role]={'completion':old['loss'],'final':ll.tolist(),'labels':old['labels'],'ids':old['ids']}
+            m=self.memory[j];ll,_,_=self.measure(j,m['monitor'],'evaluation_examples')
+            row['retained']={'completion':m['baseline'].tolist(),'final':ll.tolist(),'labels':m['monitor'][1].tolist(),'ids':m['monitor'][2].tolist()}
+            records.append(row)
+        return records
+
+def prefix(data,cfg,seed,split):
+    env=AuditEnvironment(data,cfg,seed,split);snapshots=[]
+    while env.k<2:
+        obs=env.observation();loss=float(obs[1][0])
+        if loss<=cfg.target or env.t>=cfg.steps:
+            env.finish(loss);snapshots.append(env.clone())
+        else:env.update(torch.ones(cfg.layers,cfg.experts) if env.k==0 else torch.full((cfg.layers,cfg.experts),.25))
+    return snapshots
+
+@torch.no_grad()
+def metrics(e):
+    new,_,g=e.measure(e.k,e.dataset(e.k,'monitor'));losses=[];signed=[];routes=[]
+    for j in range(e.k):
+        ll,_,gg=e.measure(j,e.dataset(j,'eval'),'evaluation_examples');losses.append(float(ll.mean()));signed.append(float(ll.mean())-e.matrix[j][j]);routes.append(gg)
+    return {'new_loss':float(new.mean()),'old_loss':float(np.mean(losses)),'cumulative_forgetting':float(np.maximum(signed,0).mean()),'signed_changes':signed,'route':torch.cat(routes),'new_route':g}
+
+def record_metrics(m,start):
+    return {k:v for k,v in m.items() if k not in ['route','new_route']}|{'topk_drift':float(((m['route']>0)!=(start['route']>0)).any(-1).float().mean()),'gate_l1':float((m['route']-start['route']).abs().mean())}
+
+def main(args):
+    torch.set_num_threads(1);out=args.out;out.mkdir(parents=True,exist_ok=False);data=Data(args.data);cfg=Config();start=time.perf_counter()
+    roots=[('train',1110000+i) for i in range(4)]+[('dev',1120000+i) for i in range(4)]
+    save(out/'protocol.json',{'roots':roots,'config':asdict(cfg),'stages':[1,2],'branches':['random0','random1','random2','random3','fixed:.25','fixed:1'],'sources':hashes(),'data_md5':data.md5,'scope':'train/dev diagnostics only; privileged evaluator is separate from policy/reward; no test data loaded','scope_modes':{'none':[0,0,0],'expert_only':[1,0,0],'nonexpert_only':[0,1,1],'joint':[1,1,1],'trunk_only':[0,1,0],'heads_only':[0,0,1]}})
+    rewards=[];scope=[];prefix_cost=[]
+    torch.manual_seed(1101);behavior=Policy()
+    for split,seed in roots:
+        snapshots=prefix(data,cfg,seed,split);prefix_cost.append(snapshots[-1].cost.copy())
+        for root in snapshots:
+            key=f'{seed}_{root.k}';group=[]
+            for b in range(6):
+                e=root.clone();torch.manual_seed(seed*10+b);policy=behavior if b<4 else ['fixed:.25','fixed:1'][b-4]
+                r,_=rollout(e,policy,stochastic=b<4);r['privileged_task_data']=e.audit_end();r['cost']=e.cost;r['branch_cost']={k:e.cost[k]-root.cost[k] for k in e.cost};r['branch']=b;group.append(r)
+            rewards.append({'root':seed,'stage':root.k,'split':split,'branches':group});save(out/'reward_diagnostic.json',rewards)
+            initial=metrics(root)
+            for mode,(expert,trunk,heads) in {'none':(0,0,0),'expert_only':(1,0,0),'nonexpert_only':(0,1,1),'joint':(1,1,1),'trunk_only':(0,1,0),'heads_only':(0,0,1)}.items():
+                e=root.clone();e.cfg.interval=1;e.optim.trunk_multiplier=trunk;e.optim.head_multiplier=heads;e.update(torch.full((cfg.layers,cfg.experts),float(expert)))
+                one=metrics(e);moment_hash=hashlib.sha256(b''.join(v['exp_avg'].numpy().tobytes() for v in e.optim.optimizer.state.values() if 'exp_avg' in v)).hexdigest()
+                e.cfg.interval=10
+                at20=None
+                while True:
+                    ob=e.observation();loss=float(ob[1][0])
+                    if loss<=cfg.target or e.t>=cfg.steps:break
+                    # First update was 1: align the scheduled check to 10 rather than 11.
+                    e.cfg.interval=min(10-e.t%10,cfg.steps-e.t);e.update(torch.full((cfg.layers,cfg.experts),float(expert)))
+                    if e.t==20:at20=record_metrics(metrics(e),initial)
+                end=metrics(e)
+                scope.append({'root':seed,'split':split,'stage':root.k,'mode':mode,'initial':record_metrics(initial,initial),'one_step':record_metrics(one,initial),'one_step_moment_hash':moment_hash,'at20':at20,'end':record_metrics(end,initial),'steps':e.t,'success':loss<=cfg.target,'cost':{k:e.cost[k]-root.cost[k] for k in e.cost}});save(out/'scope_diagnostic.json',scope)
+            print('completed root/stage',key,'elapsed',round(time.perf_counter()-start,1),flush=True)
+    save(out/'cost.json',{'seconds':time.perf_counter()-start,'prefix_cost':prefix_cost,'reward_branch_updates':sum(r['branch_cost']['updates'] for g in rewards for r in g['branches']),'scope_updates':sum(r['cost']['updates'] for r in scope)})
+if __name__=='__main__':
+    p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);p.add_argument('--data',default='.cache/datasets/cifar-complete.tar.gz');main(p.parse_args())

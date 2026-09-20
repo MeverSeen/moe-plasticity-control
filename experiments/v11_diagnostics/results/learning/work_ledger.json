@@ -1,0 +1,36 @@
+{
+  "learning": {
+    "training_updates": 229050,
+    "prefix_updates": 12480,
+    "dev_updates": 175140,
+    "audit_updates": 246960,
+    "wall_seconds": 14192.050789418,
+    "training_seconds": 4955.092636584999,
+    "training_branches": 1152,
+    "dev_episodes": 1152,
+    "audit_episodes": 1248,
+    "prefix_tasks": 288,
+    "posthoc_policy_forwards": 16008,
+    "posthoc_policy_audit_seconds": 4.2565675,
+    "fixed_episodes": 60,
+    "fixed_updates": 11560,
+    "all_learning_stage_updates": 675190
+  },
+  "diagnostics": {
+    "reward_branches": 96,
+    "scope_paths": 96,
+    "prefix_tasks": 16,
+    "learner_updates": 20150,
+    "wall_seconds": 270.31635224999997
+  },
+  "calibration": {
+    "episodes": 72,
+    "learner_updates": 11850,
+    "rollout_seconds": 141.756230496
+  },
+  "recorded_total_learner_updates": 707190,
+  "completed_full_history_executions": 3780,
+  "learning_launcher_wall_seconds": 4830.5944747924805,
+  "max_single_job_rss_bytes": 920797184,
+  "scope": "Training branches resume shared first-task prefixes. Prefix updates counted once per actual prefix execution; no double counting branch cost. Scope paths are current-task interventions, not full histories. Job wall times overlap across three CPU processes. Failed integer-action debug attempt produced no complete trajectory and has unmetered partial work; not included in recorded update total. Mechanism tests and posthoc analysis are separate. Diagnostic initial metrics additionally read 4000 current-monitor and 12000 old-eval examples beyond saved per-path counters; rollout wall time includes them."
+}

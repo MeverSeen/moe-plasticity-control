@@ -1,0 +1,9 @@
+{
+  "wall_seconds": 555.745728417,
+  "max_rss_bytes": 903135232,
+  "training_updates": 9690,
+  "training_seconds": 195.395516418,
+  "prefix_updates": 520,
+  "dev_updates": 7410,
+  "audit_updates": 9700
+}

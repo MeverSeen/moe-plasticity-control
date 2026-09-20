@@ -1,0 +1,16 @@
+repair_balanced 1102 dev 0 (-1.0, 0.03973514835039774, 1.1775886118412018) (-1.0, 0.04197885592778523, 1.187340710312128)
+repair_balanced 1102 round 0 seconds 16.08
+repair_balanced 1102 round 1 seconds 12.84
+repair_balanced 1102 round 2 seconds 28.68
+repair_balanced 1102 round 3 seconds 14.81
+repair_balanced 1102 round 4 seconds 21.33
+repair_balanced 1102 round 5 seconds 23.76
+repair_balanced 1102 dev 6 (-1.0, 0.03973514835039774, 1.1775886118412018) (-1.0, 0.04746808111667633, 1.187195934355259)
+repair_balanced 1102 round 6 seconds 15.65
+repair_balanced 1102 round 7 seconds 32.46
+repair_balanced 1102 round 8 seconds 28.58
+repair_balanced 1102 round 9 seconds 27.34
+repair_balanced 1102 round 10 seconds 19.57
+repair_balanced 1102 round 11 seconds 12.92
+repair_balanced 1102 dev 12 (-1.0, 0.03973514835039774, 1.1775886118412018) (-1.0, 0.04746808111667633, 1.187195934355259)
+complete repair_balanced 1102

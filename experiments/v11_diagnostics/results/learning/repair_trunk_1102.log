@@ -1,0 +1,16 @@
+repair_trunk 1102 dev 0 (-1.0, 0.03973514835039774, 1.1775886118412018) (-1.0, 0.04013035694758098, 1.1808329448103905)
+repair_trunk 1102 round 0 seconds 16.96
+repair_trunk 1102 round 1 seconds 13.42
+repair_trunk 1102 round 2 seconds 31.76
+repair_trunk 1102 round 3 seconds 15.87
+repair_trunk 1102 round 4 seconds 22.4
+repair_trunk 1102 round 5 seconds 25.34
+repair_trunk 1102 dev 6 (-1.0, 0.03973514835039774, 1.1775886118412018) (-1.0, 0.04013035694758098, 1.1808329448103905)
+repair_trunk 1102 round 6 seconds 17.45
+repair_trunk 1102 round 7 seconds 37.89
+repair_trunk 1102 round 8 seconds 28.23
+repair_trunk 1102 round 9 seconds 24.46
+repair_trunk 1102 round 10 seconds 18.0
+repair_trunk 1102 round 11 seconds 12.07
+repair_trunk 1102 dev 12 (-1.0, 0.03973514835039774, 1.1775886118412018) (-1.0, 0.039954617619514465, 1.1805294528603554)
+complete repair_trunk 1102

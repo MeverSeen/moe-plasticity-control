@@ -1,0 +1,15 @@
+{
+  "selected": {
+    "greedy": 0,
+    "stochastic": 0
+  },
+  "checkpoints": [
+    0,
+    12
+  ],
+  "model_sha256": {
+    "0": "3f06c0aab9a7990bbea4293cc68d88ecb202ce0425e0fa7349a2116121dffe91",
+    "12": "e17de91c02b40ef1ec779e60e65939d3724f7309db56e7ab7d6aba0dd07f4b5b"
+  },
+  "scope": "new histories within already used development class pool, not new-class final confirmation"
+}

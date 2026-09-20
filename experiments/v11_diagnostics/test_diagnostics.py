@@ -21,14 +21,18 @@ class Tests(unittest.TestCase):
    q=dict(b.named_parameters())[name]
    if name.startswith(('front.','norms.')):self.assertTrue(torch.equal(p,old[name]+.5*(q-old[name])))
    if name.startswith(('heads.','blocks.')):self.assertTrue(torch.equal(p,old[name]))
-   if p.requires_grad:self.assertTrue(torch.equal(oa.optimizer.state[p]['exp_avg'],ob.optimizer.state[q]['exp_avg']))
+   if p.requires_grad:
+    for key in ['step','exp_avg','exp_avg_sq']:self.assertTrue(torch.equal(oa.optimizer.state[p][key],ob.optimizer.state[q][key]))
  def test_monitor_stratification_no_dynamics_change(self):
-  rows=[];states=[];memories=[]
+  rows=[];states=[];memories=[];moments=[]
   for mode in ['random','stratified']:
    e=Environment(FakeData(),Config(tasks=3,steps=10,memory=200,monitor_mode=mode,target=0),123)
-   r,_=rollout(e,FixedPolicy());rows.append(r);states.append(e.model.state_dict());memories.append(e.memory)
+   r,_=rollout(e,FixedPolicy());rows.append(r);states.append(e.model.state_dict());memories.append(e.memory);moments.append(e.optim.optimizer.state_dict()['state'])
   self.assertEqual(rows[0]['matrix'],rows[1]['matrix'])
   for name,p in states[0].items():self.assertTrue(torch.equal(p,states[1][name]))
+  self.assertEqual(moments[0].keys(),moments[1].keys())
+  for k,state in moments[0].items():
+   for name,value in state.items():self.assertTrue(torch.equal(value,moments[1][k][name]))
   for j in memories[0]:
    self.assertTrue(torch.equal(memories[0][j]['replay'][2],memories[1][j]['replay'][2]))
    counts=torch.bincount(memories[1][j]['monitor'][1],minlength=5);self.assertLessEqual(int(counts.max()-counts.min()),1)

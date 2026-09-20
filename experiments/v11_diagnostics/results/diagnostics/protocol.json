@@ -1,0 +1,106 @@
+{
+  "roots": [
+    [
+      "train",
+      1110000
+    ],
+    [
+      "train",
+      1110001
+    ],
+    [
+      "train",
+      1110002
+    ],
+    [
+      "train",
+      1110003
+    ],
+    [
+      "dev",
+      1120000
+    ],
+    [
+      "dev",
+      1120001
+    ],
+    [
+      "dev",
+      1120002
+    ],
+    [
+      "dev",
+      1120003
+    ]
+  ],
+  "config": {
+    "width": 48,
+    "experts": 4,
+    "layers": 2,
+    "topk": 2,
+    "tasks": 4,
+    "batch": 32,
+    "steps": 200,
+    "interval": 10,
+    "lr": 0.001,
+    "decay": 0.01,
+    "memory": 200,
+    "target": 1.25,
+    "routing": "dynamic",
+    "threads": 1,
+    "monitor_mode": "random",
+    "reward_mode": "positive"
+  },
+  "stages": [
+    1,
+    2
+  ],
+  "branches": [
+    "random0",
+    "random1",
+    "random2",
+    "random3",
+    "fixed:.25",
+    "fixed:1"
+  ],
+  "sources": {
+    "control.py": "bbada1c2665ea9dcca879dd55abf9975e351e027196ec6fa7bb360fad08a8586",
+    "core.py": "bd02e228338819604b6f9e61d9ab3954031237eb03ed38e0616799b079453d9b",
+    "diagnose.py": "0ef2d01635cf68f857dc3a825c262876e31080dee58b24db7d7abfd0f78f3839",
+    "audit_v10.py": "715a411d8982ee903d371742842fc36ce81a6133315277b1660c6b7005c99989"
+  },
+  "data_md5": "eb9058c3a382ffc7106e4002c42a8d85",
+  "scope": "train/dev diagnostics only; privileged evaluator is separate from policy/reward; no test data loaded",
+  "scope_modes": {
+    "none": [
+      0,
+      0,
+      0
+    ],
+    "expert_only": [
+      1,
+      0,
+      0
+    ],
+    "nonexpert_only": [
+      0,
+      1,
+      1
+    ],
+    "joint": [
+      1,
+      1,
+      1
+    ],
+    "trunk_only": [
+      0,
+      1,
+      0
+    ],
+    "heads_only": [
+      0,
+      0,
+      1
+    ]
+  }
+}

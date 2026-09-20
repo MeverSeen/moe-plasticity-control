@@ -1,0 +1,16 @@
+{
+  "scope": "post hoc, saved initial stochastic audit observations; no new learner rollout; exact latent KL, not marginal allocation KL; all-base includes trunk1 when controlled",
+  "observations": 171,
+  "policy_forward_calls": 684,
+  "summary": {
+    "latent_kl_initial_to_final": 3.0873158343452195e-05,
+    "initial_all_base_probability": 0.8099999511451051,
+    "final_all_base_probability": 0.8128875915767156,
+    "initial_magnitude_base_margin": 3.8066625595092773,
+    "final_magnitude_base_margin": 3.818851565756993,
+    "greedy_changed": 0.0,
+    "latent_kl_max": 3.488070797175169e-05,
+    "final_base_margin_min": 3.817983865737915
+  },
+  "seconds": 0.21899354199999999
+}

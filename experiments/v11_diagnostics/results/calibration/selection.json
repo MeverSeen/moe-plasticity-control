@@ -1,0 +1,48 @@
+{
+  "config": {
+    "width": 48,
+    "experts": 4,
+    "layers": 2,
+    "topk": 2,
+    "tasks": 4,
+    "batch": 32,
+    "steps": 200,
+    "interval": 10,
+    "lr": 0.001,
+    "decay": 0.01,
+    "memory": 200,
+    "target": 1.25,
+    "routing": "dynamic",
+    "threads": 1,
+    "monitor_mode": "random",
+    "reward_mode": "positive"
+  },
+  "base": 0,
+  "base_score": [
+    -1.0,
+    0.046304459373156234,
+    1.1896088849753141
+  ],
+  "base_feasible": true,
+  "trunk_scores": {
+    "1": [
+      -1.0,
+      0.046304459373156234,
+      1.1896088849753141
+    ],
+    "0.25": [
+      -0.875,
+      0.03930623332659404,
+      1.205677181482315
+    ],
+    "0.5": [
+      -1.0,
+      0.04333391785621643,
+      1.1998805403709412
+    ]
+  },
+  "best_trunk": 0.5,
+  "monitor_only_identical_matrices_actions": true,
+  "rollout_seconds": 141.756230496,
+  "recovery": "All 72 trajectories completed; final numpy-bool JSON serialization failed. Summary reconstructed from saved results after serializer fix; no trajectories rerun or dropped."
+}

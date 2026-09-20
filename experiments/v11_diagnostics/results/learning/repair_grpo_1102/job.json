@@ -1,0 +1,24 @@
+{
+  "plan_sha256": "59f0e85b3b33cb86ca409d256e793c2b7891b0a2df29617faf5e585afdc59245",
+  "arm": "repair_grpo",
+  "seed": 1102,
+  "config": {
+    "width": 48,
+    "experts": 4,
+    "layers": 2,
+    "topk": 2,
+    "tasks": 4,
+    "batch": 32,
+    "steps": 200,
+    "interval": 10,
+    "lr": 0.001,
+    "decay": 0.01,
+    "memory": 200,
+    "target": 1.25,
+    "routing": "dynamic",
+    "threads": 1,
+    "monitor_mode": "random",
+    "reward_mode": "positive"
+  },
+  "base": 0
+}
