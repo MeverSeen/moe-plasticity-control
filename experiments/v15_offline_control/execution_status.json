@@ -16,7 +16,8 @@
   "completed_checks": {
     "local_tests": 155,
     "server_v15_tests": 9,
-    "previously_failing_five_update_fixture": "exact repeat passed with deterministic CUDA; new collection still has independent gates"
+    "previously_failing_five_update_fixture": "exact repeat passed with deterministic CUDA; new collection still has independent gates",
+    "first_new_training_root": "Post-A 20 updates completed; paired five-update restore check equal."
   },
   "reported_progress": "First fresh reference complete: 90 updates. Preparing first post-A prefix; no formal training histories completed yet.",
   "remote_outputs": [
@@ -27,6 +28,7 @@
     "结果解读.md",
     "artifact_manifest.json"
   ],
-  "export_status": "Local dataset/checkpoint backup was rejected by automatic review; explicit export permission is pending. Experiment continues on the server.",
-  "scope": "Execution status, not an efficacy result. No observed controller improvement is claimed."
+  "export_status": "Authorized by user on 2026-09-20. Six source data/evaluation files backed up and SHA256 verified. Full run/checkpoint copy in progress; bounded incremental backup follows it through the existing deadline.",
+  "scope": "Execution status, not an efficacy result. No observed controller improvement is claimed.",
+  "backup_local_directory": "/Users/jianyuan/Documents/Codex/2026-09-16/zai/moe-offline-control/runs/v15"
 }
