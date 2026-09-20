@@ -1,0 +1,32 @@
+{
+  "status": "running",
+  "status_as_of_utc": "2026-09-20T14:16:01Z",
+  "branch": "codex/v15-offline-control",
+  "source_commit": "825cbe0",
+  "remote_root": "/root/autodl-tmp/moe-v15-offline-20260920/r2",
+  "hard_deadline_utc": "2026-09-20T21:15:00Z",
+  "hard_deadline_beijing": "2026-09-21T05:15:00+08:00",
+  "earlier_collection_cap_utc": "2026-09-20T17:11:29Z",
+  "supervisors": {
+    "collection": 3377,
+    "pipeline": 3379,
+    "report": 4110,
+    "collection_reserve": 4004
+  },
+  "completed_checks": {
+    "local_tests": 155,
+    "server_v15_tests": 9,
+    "previously_failing_five_update_fixture": "exact repeat passed with deterministic CUDA; new collection still has independent gates"
+  },
+  "reported_progress": "First fresh reference complete: 90 updates. Preparing first post-A prefix; no formal training histories completed yet.",
+  "remote_outputs": [
+    "data/results/train",
+    "data/offline",
+    "data/results/confirmation",
+    "data/analysis",
+    "结果解读.md",
+    "artifact_manifest.json"
+  ],
+  "export_status": "Local dataset/checkpoint backup was rejected by automatic review; explicit export permission is pending. Experiment continues on the server.",
+  "scope": "Execution status, not an efficacy result. No observed controller improvement is claimed."
+}
