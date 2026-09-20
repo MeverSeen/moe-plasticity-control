@@ -4,7 +4,17 @@
 
 **既有合成实验：已完成七轮，v7 连续三段学习出现段内旧知识反馈的初步正信号，但尚未完成同等可行性下的稳定验证。** v6 定位到模型筛选瓶颈；v7 保留参数和 Adam 状态连续学习三个新输入域。段内 Feedback 在共同达标历史上的 A 遗忘降低约 13.8%，但平均达标率略低，多重比较敏感性区间跨零。段间 Feedback 则提高达标率、同时增加遗忘。本仓库保留正负结果、原始数据与冻结协议，不代表真实 learned-router MoE 或语言模型上的验证。
 
-## 最新执行：v12 持续动作与联合控制
+## 当前平台：v14 全层原生 expert LoRA
+
+2026-09-20将下一阶段固定为原生OLMoE的全16层×64 expert低秩适配控制。rank4 LoRA覆盖每个expert三个投影，共37,748,736训练参数，原始基座与router冻结；一条历史持续使用同一套适配器。全层插入、零初始化等价、真实位移及checkpoint恢复已经过A800实测，限额固定/规则比较另存新目录。
+
+- [v14平台、实测成本与当前范围](experiments/v14_full_layer_lora/README.md)
+- [三类主表与独立通用评价协议](experiments/v14_full_layer_lora/EVALUATION_PROTOCOL.md)
+- [v13两层原生权重有限证据](experiments/v13_native_ppo/结果解读.md)：171实际更新、单根三候选；因平台调整提前结束，正式PPO收益未检验。
+
+今日不重新训练PPO，不把v14短测当作全层优于两层的因果对照。预算沿用原分配，13:25 UTC硬截止不变；未执行方法明确标记。
+
+## 已归档：v12 持续动作与联合控制
 
 2026-09-20完成GRPO三组×四种子：A稀疏控制保持10步，B稀疏控制保持50步，C全部8个expert＋trunk联合控制保持50步。1,112条训练分支、244,420次主训练learner更新；本轮全部新增计算共530,410次更新，36个本地模型保留。
 
@@ -33,11 +43,11 @@
 - [验证与归档审计](docs/v10-validation.md)
 - [后续7B平台的资源缺口](experiments/v10_visual_control/RESOURCE_NOTES.md)
 
-本机视觉pilot已完成；语言LoRA及原生MoE尚待GPU环境与模型访问。两组15动作v8已在独立分支 `codex/v8-allocation-ppo` / `9e54f99` 完成，本checkout未复制其归档；原v1–v7保持冻结。
+本机视觉pilot已完成；语言原生MoE与全层expert LoRA已在v13/v14接入GPU，证据范围见各自新归档，不追溯改变视觉结果。两组15动作v8已在独立分支 `codex/v8-allocation-ppo` / `9e54f99` 完成，本checkout未复制其归档；原v1–v7保持冻结。
 
 ## 研究设计与讨论记录
 
-2026-09-17 更新：主线明确为小型多层 MoE 上的共享逐 expert 控制，采用层/全局协调和结构化探索，比较 GRPO、PPO 与强协调规则。后续按成本推进语言 LoRA expert 和原生 MoE 两层验证。目标 loss、累计遗忘、有限记忆与泛化协议先在开发阶段锁定；以下方案不代表新增已完成实验。
+2026-09-20更新：固定原生OLMoE全层低秩适配控制平台，采用共享编码、层/组结构化接口，三类主表为固定分配、同信息规则、学习控制器（PPO候选）；克隆放诊断表。新任务表现、累计任务遗忘与独立通用能力变化分列。早期视觉/GRPO候选保留历史语境，不代表现在同时推进多个平台。
 
 - [总体方案与实施主线](docs/mainline-plan.md)：研究主题、三层证据路线、评价/数据协议和 pilot 成本。
 - [研究范围与已有证据](docs/research.md)：核心问题、v1–v7 结论与边界。
@@ -58,12 +68,14 @@ python scripts/verify_artifacts.py
 python scripts/test_all.py
 ```
 
-共 95 项实验机制与统计检查（原有73项＋v10新增11项＋v11新增6项＋v12新增5项），各版本在独立进程中测试，避免同名模块串用。已有记录在 `experiments/*/results/`，首次查看结果无需重新训练。
+旧v1–v12共95项检查；v13新增27项、v14新增15项CPU机制/评价检查。各版本在独立进程中测试，避免同名模块串用；本轮只重跑相应新增检查，旧结果保持冻结。已有记录在各版本的results或archive目录，首次查看无需重新训练。
 
 ## 实验索引
 
 | 版本 | 研究问题 | 本轮结论 | 报告 |
 |---|---|---|---|
+| v14 | 全层原生expert LoRA平台、结构化控制与独立评价 | 接入/真实机制与成本已验证；今日不训练PPO | [范围](experiments/v14_full_layer_lora/README.md) |
+| v13 | 两层原生权重结构化接口 | 单根工程比较；因平台调整提前结束，PPO收益未检验 | [解读](experiments/v13_native_ppo/结果解读.md) |
 | v12 | 10/50步保持、全部expert与trunk联合控制 | 决策减少约75%；未验证稳定学习收益或超越强静态参考 | [解读](experiments/v12_persistent_control/结果解读.md) |
 | v11 | 奖励排序、模块范围、概率温启动 | 共享静态倍率有效；奖励修正/温启动尚未带来稳定学习收益 | [解读](experiments/v11_diagnostics/结果解读.md) |
 | [v1](experiments/v1_expert_control/) | PPO 控制专家更新与保护强度 | 未超过重要性规则基线 | [报告](experiments/v1_expert_control/实验报告.md) |

@@ -18,6 +18,7 @@ SUITES = (
     ("v12_persistent_control", "test_*.py"),
     ("v13_native_ppo", "test_*.py"),
     ("v13_native_ppo/diagnostics", "test_*.py"),
+    ("v14_full_layer_lora", "test_*.py"),
 )
 
 
