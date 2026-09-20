@@ -1,0 +1,2 @@
+{"host": "huggingface.co", "ok": false, "error_type": "URLError", "seconds": 0.2183131380006671}
+{"host": "api.github.com", "ok": true, "bytes": 6056, "seconds": 0.6116088358685374}

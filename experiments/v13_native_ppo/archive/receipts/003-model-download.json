@@ -1,0 +1,9 @@
+{
+  "job": "003-model-download.json",
+  "exit_code": 0,
+  "started": 1789883262.0741045,
+  "ended": 1789883475.1624687,
+  "soft_stop": false,
+  "terminated": false,
+  "killed": false
+}

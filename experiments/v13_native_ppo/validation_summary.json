@@ -1,0 +1,22 @@
+{
+  "verified_utc": "2026-09-20T07:02:47.938943+00:00",
+  "cpu_tests": {
+    "mechanisms_and_environment": 11,
+    "offline_diagnostics": 16,
+    "status": "passed"
+  },
+  "archive_replay": {
+    "histories": 4,
+    "paired_candidates": 3,
+    "decisions": 25,
+    "actual_updates_with_smoke": 171,
+    "status": "passed"
+  },
+  "scope": "CPU restore and exact latent probability replay; GPU short-smoke weights restored and FP32 moments. No real deadline-interrupted GPU history recovery executed.",
+  "cancelled_without_execution": [
+    "formal fixed calibration",
+    "clone",
+    "PPO",
+    "confirmation"
+  ]
+}

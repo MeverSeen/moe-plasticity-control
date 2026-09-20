@@ -1,0 +1,11 @@
+{
+  "recorded_utc": "2026-09-20T06:11:04.805142+00:00",
+  "revision": "protocol_v1_sparse_clone_shaping",
+  "old_formal_histories": 0,
+  "old_formal_policy_updates": 0,
+  "old_hardware_learner_updates": 4,
+  "preserved_source_hashes": {
+    "mechanisms_v0.py": "bf8d77405b6161ef25d4055ad08fd0c63fe7509343f675f2fe216943b9c8c22d",
+    "test_mechanisms_v0.py": "0315c8ccefdfc15a0d76ef00c483af7a72790ed7376e0ab8cb1195abcde694cd"
+  }
+}

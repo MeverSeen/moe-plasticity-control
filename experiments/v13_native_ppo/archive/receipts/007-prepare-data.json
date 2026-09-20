@@ -1,0 +1,9 @@
+{
+  "job": "007-prepare-data.json",
+  "exit_code": 0,
+  "started": 1789884743.3992403,
+  "ended": 1789884826.4359558,
+  "soft_stop": false,
+  "terminated": false,
+  "killed": false
+}

@@ -1,0 +1,84 @@
+{
+  "config": {
+    "tasks": 3,
+    "max_updates": 60,
+    "reference_updates": 40,
+    "hold": 5,
+    "microbatch": 2,
+    "accumulation": 2,
+    "replay_microbatch": 1,
+    "stop_examples": 8,
+    "old_observation_examples": 2,
+    "evaluation_batch": 8,
+    "memory_tokens": 256000,
+    "reward_scale": 0.1,
+    "failure_kappa": 3.0
+  },
+  "profiles": [
+    {
+      "candidate": "fixed1",
+      "success": true,
+      "updates": 24,
+      "decisions": 3,
+      "steps": [
+        13,
+        6,
+        5
+      ],
+      "F": 0.3110538854925835,
+      "monitor_F": 0.28900024514508443,
+      "seconds": 84.04754093755037
+    },
+    {
+      "candidate": "fixed075",
+      "success": true,
+      "updates": 25,
+      "decisions": 3,
+      "steps": [
+        13,
+        7,
+        5
+      ],
+      "F": 0.24332472932474047,
+      "monitor_F": 0.22653629294939864,
+      "seconds": 87.03583627473563
+    },
+    {
+      "candidate": "provisional_rule1",
+      "success": true,
+      "updates": 24,
+      "decisions": 3,
+      "steps": [
+        13,
+        6,
+        5
+      ],
+      "F": 0.23455093924530956,
+      "monitor_F": 0.2176515577532694,
+      "seconds": 83.04078814480454
+    }
+  ],
+  "native_cost": {
+    "updates": 167,
+    "train_input_tokens": 85963,
+    "train_target_tokens": 2873,
+    "train_padded_tokens": 98118,
+    "replay_input_tokens": 38240,
+    "replay_target_tokens": 1695,
+    "replay_padded_tokens": 38240,
+    "monitor_input_tokens": 968303,
+    "monitor_target_tokens": 31297,
+    "monitor_padded_tokens": 1299030,
+    "eval_input_tokens": 315446,
+    "eval_target_tokens": 10332,
+    "eval_padded_tokens": 421760,
+    "copies": 4,
+    "resets": 2,
+    "copy_seconds": 6.496696734800935,
+    "reset_seconds": 1.2883960166946054
+  },
+  "wall_seconds": 589.0601398944855,
+  "reference_updates": 120,
+  "deadline_utc": "2026-09-20T13:25:00Z",
+  "scope": "Engineering/development only; provisional rule and H=5 are not formal PPO or confirmation."
+}

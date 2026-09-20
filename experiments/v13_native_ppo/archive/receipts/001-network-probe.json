@@ -1,0 +1,9 @@
+{
+  "job": "001-network-probe.json",
+  "exit_code": 0,
+  "started": 1789882878.8801882,
+  "ended": 1789882879.8809166,
+  "soft_stop": false,
+  "terminated": false,
+  "killed": false
+}

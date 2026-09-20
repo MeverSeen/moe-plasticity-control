@@ -1,0 +1,15 @@
+{
+  "decision_utc": "2026-09-20T06:48:00Z",
+  "reason": "User-directed platform change to all-layer native expert LoRA",
+  "permitted_completion": "Only already-running010-abc-pilot reference/fixed1/fixed075/provisional_rule1, bounded by original deadline",
+  "not_started": [
+    "workflow calibration",
+    "clone",
+    "train/PPO",
+    "evaluate/confirmation"
+  ],
+  "interpretation": "Ended early because of main-platform change; formal PPO benefit untested. Not PPO failure and not formal confirmation.",
+  "allocation_start_utc": "2026-09-20T05:25:00Z",
+  "hard_deadline_utc": "2026-09-20T13:25:00Z",
+  "retained_infrastructure": "Same model/data/environment/supervisor/watchdog; no budget reset"
+}

@@ -1,0 +1,59 @@
+{
+  "sha256": "7314e53cc82d414fbb58594cd373bd6624fb993bba51072b9ce1452cefc2955a",
+  "root": {
+    "id": "dev_1301000",
+    "seed": 1301000,
+    "split": "development",
+    "tasks": [
+      "task247_dream_answer_generation",
+      "task190_snli_classification",
+      "task843_financial_phrasebank_classification"
+    ],
+    "targets": [
+      0.11921864235773683,
+      0.3091810178011656,
+      1.0513281961902976
+    ]
+  },
+  "cost": {
+    "updates": 13,
+    "train_input_tokens": 10065,
+    "train_target_tokens": 483,
+    "train_padded_tokens": 12434,
+    "replay_input_tokens": 0,
+    "replay_target_tokens": 0,
+    "replay_padded_tokens": 0,
+    "monitor_input_tokens": 97413,
+    "monitor_target_tokens": 4749,
+    "monitor_padded_tokens": 153664,
+    "eval_input_tokens": 26713,
+    "eval_target_tokens": 1210,
+    "eval_padded_tokens": 40384,
+    "copies": 0,
+    "resets": 1,
+    "copy_seconds": 0.0,
+    "reset_seconds": 0.9544450948014855
+  },
+  "snapshot_cost": {
+    "updates": 0,
+    "train_input_tokens": 0,
+    "train_target_tokens": 0,
+    "train_padded_tokens": 0,
+    "replay_input_tokens": 0,
+    "replay_target_tokens": 0,
+    "replay_padded_tokens": 0,
+    "monitor_input_tokens": 0,
+    "monitor_target_tokens": 0,
+    "monitor_padded_tokens": 0,
+    "eval_input_tokens": 0,
+    "eval_target_tokens": 0,
+    "eval_padded_tokens": 0,
+    "copies": 1,
+    "resets": 0,
+    "copy_seconds": 1.5455357609316707,
+    "reset_seconds": 0.0
+  },
+  "fingerprint_seconds": 8.51708316244185,
+  "execution_wall_seconds": 33.214331093244255,
+  "wall_seconds": 43.38052115868777
+}

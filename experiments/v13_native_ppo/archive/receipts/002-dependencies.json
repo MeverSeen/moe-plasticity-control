@@ -1,0 +1,9 @@
+{
+  "job": "002-dependencies.json",
+  "exit_code": 0,
+  "started": 1789882879.8813536,
+  "ended": 1789882925.8987527,
+  "soft_stop": false,
+  "terminated": false,
+  "killed": false
+}

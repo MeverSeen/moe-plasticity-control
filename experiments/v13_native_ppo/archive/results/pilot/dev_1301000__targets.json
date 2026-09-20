@@ -1,0 +1,23 @@
+{
+  "root": {
+    "id": "dev_1301000",
+    "seed": 1301000,
+    "split": "development",
+    "tasks": [
+      "task247_dream_answer_generation",
+      "task190_snli_classification",
+      "task843_financial_phrasebank_classification"
+    ],
+    "targets": [
+      0.11921864235773683,
+      0.3091810178011656,
+      1.0513281961902976
+    ]
+  },
+  "rule": "median fixed-reference monitor CE at learner updates30,35,40; no policy-dependent initial-loss target",
+  "reference_improvements": [
+    0.9223826504312456,
+    3.2082485128194094,
+    1.1418802672997117
+  ]
+}

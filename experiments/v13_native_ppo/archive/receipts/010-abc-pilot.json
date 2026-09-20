@@ -1,0 +1,9 @@
+{
+  "job": "010-abc-pilot.json",
+  "exit_code": 0,
+  "started": 1789886559.3740435,
+  "ended": 1789887151.5902524,
+  "soft_stop": false,
+  "terminated": false,
+  "killed": false
+}

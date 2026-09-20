@@ -1,0 +1,96 @@
+{
+  "version": "v13_sparse_execution_1",
+  "status": "CANCELLED BEFORE EXECUTION by user platform change on2026-09-20; design draft only, no formal calibration/clone/PPO/confirmation ran",
+  "hard_deadline_utc": "2026-09-20T13:25:00Z",
+  "environment": {
+    "tasks": 3,
+    "max_updates": 60,
+    "reference_updates": 40,
+    "hold": 5,
+    "microbatch": 2,
+    "accumulation": 2,
+    "replay_microbatch": 1,
+    "stop_examples": 8,
+    "old_observation_examples": 2,
+    "evaluation_batch": 8,
+    "memory_tokens": 256000,
+    "reward_scale": 0.1,
+    "failure_kappa": 3.0
+  },
+  "root_pool": {
+    "train": 8,
+    "development": 2,
+    "confirmation": 2,
+    "construction": "Three consecutive tasks in deterministic manifest split order; seed bases1310000,1301000,1320000 respectively. No performance-based root screening or replacement."
+  },
+  "target_rule": "Per root/task fixed all-one 40-update reference; target is median current-stop-monitor CE at updates30,35,40. Same eight fixed monitor examples for that root/task across every comparator. Targets locked before policy runs; final evaluation never supplies training reward. All selected roots retained regardless of reference improvement.",
+  "fixed_candidates": {
+    "fixed025": [
+      1,
+      1
+    ],
+    "fixed050": [
+      2,
+      2
+    ],
+    "fixed075": [
+      3,
+      3
+    ],
+    "fixed100": [
+      4,
+      4
+    ],
+    "fixed050_100": [
+      2,
+      4
+    ],
+    "fixed100_050": [
+      4,
+      2
+    ]
+  },
+  "fixed_selection": "Lexicographic: most successful complete histories, fewest total failed tasks, lowest mean evaluation positive forgetting, lowest mean final absolute evaluation CE, fewest path updates. Candidate order breaks exact ties. Fixed and rule must each complete both development roots successfully before clone/PPO.",
+  "teacher": "Same sparse interface: calibrated per-layer base index; lower by1 if observed potential>.10; otherwise raise by1 if current-target gap>.50 and previous decision improvement<.02. Correct up to2 experts whose old-minus-current top8 usage fraction>.02, ranked descending, exact ties lowest expert index; correction one alphabet step below chosen base. No corrections if base zero.",
+  "clone_gate": {
+    "initial_teacher_roots": 2,
+    "fit_updates_per_attempt": 400,
+    "batch_observations": 16,
+    "learning_rate": 0.002,
+    "maximum_repairs": 2,
+    "repair": "Aggregate teacher labels on actual clone states from the same two training roots; never fit development states.",
+    "criteria": "Both independent development histories succeed, rule succeeds, per-root evaluation forgetting <= rule+.02, final absolute CE <= rule+.05, path updates <=1.25*rule. First accepted attempt locked. Action match/NLL diagnostic only.",
+    "stage_cap_seconds": 2700
+  },
+  "ppo": {
+    "seed": 1301,
+    "maximum_histories": 24,
+    "root_order": "Eight train roots round-robin, at most three visits each; every visit executes a fresh current-policy learner trajectory.",
+    "histories_per_update": 2,
+    "wall_cap_seconds": 9000,
+    "learning_rate": 0.0001,
+    "epochs": 3,
+    "clip": 0.2,
+    "target_kl": 0.03,
+    "gradient_clip": 0.5,
+    "gamma": 1.0,
+    "gae_lambda": 0.95,
+    "epsilon": 0.02,
+    "epsilon_definition": "Each legal factor distribution is .98 softmax(masked logits)+.02 uniform over valid factors; ordered expert selections without replacement, magnitude excludes base. Zero/one correction emits no unused factors.",
+    "reference_kl_beta": 0.0,
+    "entropy_coefficient": 0.0,
+    "value_coefficient": 0.5,
+    "critic_loss": ".5 squared error; same unscaled shaped returns; advantage standardized per collected batch with standard deviation floor .1",
+    "collector": "Two complete histories; no collection truncation in this execution. Generic GAE truncation bootstrap separately tested. Zero-decision history logs environment terminal reward but creates no policy transition; all-empty collection skips PPO.",
+    "shaping": "Cached boundary potentials; final full retained old-monitor correction exactly once. Assert telescoping on every history. gamma1, constant scale. Critic sees current potential.",
+    "recovery": "Full editable master parameters, FP32 Adam, all RNG, memory/baselines, held action/remain, monitor cache/cursor, history trace plus controller/optimizer/collector buffer. Interrupted histories retained and never counted completed."
+  },
+  "checkpoint_selection": "After fixed training budget, evaluate initialized/middle/final saved PPO checkpoint, each greedy and stochastic, on two development roots. Same lexicographic ordering as fixed. Ties prefer earliest checkpoint then greedy. Lock exact controller hash and execution mode before any confirmation reference or policy run.",
+  "confirmation": "Two untouched confirmation roots; four methods: locked fixed greedy, rule greedy, accepted clone greedy, selected checkpoint+execution. If selected mode stochastic, its comparison with greedy clone is explicitly combined training-and-execution selection, not isolated PPO effect. No confirmation-based retuning.",
+  "confirmation_archive_reserve_seconds": 7200,
+  "phase_caps_seconds": {
+    "calibration": 4500,
+    "clone": 2700
+  },
+  "no_candidate_expansion": "Offline headroom diagnostic cannot add candidates, roots, or independent streams. No fourth task history planned."
+}

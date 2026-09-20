@@ -1,0 +1,9 @@
+{
+  "job": "005-native-smoke.json",
+  "exit_code": 0,
+  "started": 1789883984.429443,
+  "ended": 1789884010.8253374,
+  "soft_stop": false,
+  "terminated": false,
+  "killed": false
+}
