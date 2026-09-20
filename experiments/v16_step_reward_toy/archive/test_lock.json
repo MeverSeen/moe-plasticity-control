@@ -1,0 +1,248 @@
+{
+  "protocol_sha256": "fb4fe1f4936a0411c66b278de41c75ffd0b2b47a0df804ee820a7d8063da98b2",
+  "scale_sha256": "f99fe36152aec433c935e550e1f3a90db02df9fe4be5fe71faebda9665a39b33",
+  "fixed": 1,
+  "fits": [
+    {
+      "name": "h1_forgetting_16171",
+      "hold": 1,
+      "reward": "forgetting",
+      "seed": 16171,
+      "selected_round": 32,
+      "selected_key": [
+        -16,
+        0.007854017739494642,
+        54.5
+      ],
+      "episodes": 256,
+      "learner_updates": 7367,
+      "decisions": 7367,
+      "ppo_optimizer_updates": 128,
+      "seconds": 5.751323699951172,
+      "parameter_change_l2": 1.8209473105919594,
+      "selected_sha256": "e3fac785ee16f6b73aecb148829bec4ca115b69dbefb10b38b1243adedbfa029",
+      "last_sha256": "6ee5f742cbf63321e187fd0ed914c4e2c01a104198a7aafccdaf7078a3a5ab95"
+    },
+    {
+      "name": "h1_forgetting_16172",
+      "hold": 1,
+      "reward": "forgetting",
+      "seed": 16172,
+      "selected_round": 16,
+      "selected_key": [
+        -16,
+        0.010642055189236999,
+        46.0
+      ],
+      "episodes": 256,
+      "learner_updates": 6065,
+      "decisions": 6065,
+      "ppo_optimizer_updates": 128,
+      "seconds": 4.860611915588379,
+      "parameter_change_l2": 1.9174756495027496,
+      "selected_sha256": "69afe4f8dc3e20b40ca5473f1d9c20680bbe41ed401c42a724c36eef299bab8e",
+      "last_sha256": "0e3eab7f0734889e1e5eae8cebf36fcd5d81e768d6c2c1f3a5efbcbdc220717c"
+    },
+    {
+      "name": "h1_forgetting_16173",
+      "hold": 1,
+      "reward": "forgetting",
+      "seed": 16173,
+      "selected_round": 0,
+      "selected_key": [
+        -15,
+        0.006593472965889507,
+        64.25
+      ],
+      "episodes": 256,
+      "learner_updates": 5842,
+      "decisions": 5842,
+      "ppo_optimizer_updates": 128,
+      "seconds": 5.021265029907227,
+      "parameter_change_l2": 1.9871105071399318,
+      "selected_sha256": "7f1bd7e0702972864f5c3d158b10f67ba647f21e13dacd0db70544d560eb2a8a",
+      "last_sha256": "6a75e7e055aa0795595d04ae17ea332ab6d832b04977bf9a924c0ee54f2d3f15"
+    },
+    {
+      "name": "h1_movement_16171",
+      "hold": 1,
+      "reward": "movement",
+      "seed": 16171,
+      "selected_round": 32,
+      "selected_key": [
+        -16,
+        0.00904105285493036,
+        48.4375
+      ],
+      "episodes": 256,
+      "learner_updates": 7395,
+      "decisions": 7395,
+      "ppo_optimizer_updates": 128,
+      "seconds": 5.588604211807251,
+      "parameter_change_l2": 1.2609117655760378,
+      "selected_sha256": "0df59996718172153335d0b554f19e5b1bf76ffc24e72fa3f0c80d608eca846e",
+      "last_sha256": "3ebabe10db99f9d4f0cae1dad91e2a48be95e329eb93c3ed17956e3877059488"
+    },
+    {
+      "name": "h1_movement_16172",
+      "hold": 1,
+      "reward": "movement",
+      "seed": 16172,
+      "selected_round": 16,
+      "selected_key": [
+        -16,
+        0.010598629130981863,
+        46.8125
+      ],
+      "episodes": 256,
+      "learner_updates": 6137,
+      "decisions": 6137,
+      "ppo_optimizer_updates": 128,
+      "seconds": 4.879271030426025,
+      "parameter_change_l2": 1.3202977742090416,
+      "selected_sha256": "a7e4725d5ad39836c17d8025147d1ffe7568015f48b862284126da83f9f75a53",
+      "last_sha256": "58ee0c30dedd5fe16bc19c9301efd9103630048c30fe618be7e2427c0c068b70"
+    },
+    {
+      "name": "h1_movement_16173",
+      "hold": 1,
+      "reward": "movement",
+      "seed": 16173,
+      "selected_round": 32,
+      "selected_key": [
+        -16,
+        0.011361443903297186,
+        45.75
+      ],
+      "episodes": 256,
+      "learner_updates": 5892,
+      "decisions": 5892,
+      "ppo_optimizer_updates": 128,
+      "seconds": 4.892242193222046,
+      "parameter_change_l2": 1.1817548191736846,
+      "selected_sha256": "c9601a581ebbb461d471951ad36ee85e3d4cb72ed7fdd588c9be24ad61e22e12",
+      "last_sha256": "2915821f83513cebe7ae6a608f14bcb6a920d6436b19dfa8ada5a8b52ffd91e9"
+    },
+    {
+      "name": "h5_forgetting_16171",
+      "hold": 5,
+      "reward": "forgetting",
+      "seed": 16171,
+      "selected_round": 0,
+      "selected_key": [
+        -15,
+        0.006593472965889507,
+        64.25
+      ],
+      "episodes": 256,
+      "learner_updates": 7606,
+      "decisions": 1609,
+      "ppo_optimizer_updates": 128,
+      "seconds": 5.414977788925171,
+      "parameter_change_l2": 1.7719887912803494,
+      "selected_sha256": "96292dcc752cdb3a686807b063f53c5d7350c00981c5205d7385fa0e9fcfeab8",
+      "last_sha256": "526baf04d92502767fb0b4097a6599f2aca92333dd8f463203ec5335ea270865"
+    },
+    {
+      "name": "h5_forgetting_16172",
+      "hold": 5,
+      "reward": "forgetting",
+      "seed": 16172,
+      "selected_round": 32,
+      "selected_key": [
+        -16,
+        0.007804357640755673,
+        60.375
+      ],
+      "episodes": 256,
+      "learner_updates": 6150,
+      "decisions": 1318,
+      "ppo_optimizer_updates": 128,
+      "seconds": 4.495374917984009,
+      "parameter_change_l2": 1.916227945866584,
+      "selected_sha256": "f7e7247edfa114756bf20ed4636fd48d1a3e075149faaec93c35b8854038eae3",
+      "last_sha256": "26a0dd06668c5ad81f2df876ed6b1682867052600cda0f357b16bafcf1cd9172"
+    },
+    {
+      "name": "h5_forgetting_16173",
+      "hold": 5,
+      "reward": "forgetting",
+      "seed": 16173,
+      "selected_round": 16,
+      "selected_key": [
+        -16,
+        0.008935078241241474,
+        48.25
+      ],
+      "episodes": 256,
+      "learner_updates": 6085,
+      "decisions": 1310,
+      "ppo_optimizer_updates": 128,
+      "seconds": 4.301729917526245,
+      "parameter_change_l2": 2.0506152571614638,
+      "selected_sha256": "8c5aacc02b02e328f62770252572cc0f6a6c9197c67d666a0675d240712449c6",
+      "last_sha256": "78b1150a70ad158a330b94fbd1a8bf4b5eb4ba756f9d3bc00d03939ffb7437c7"
+    },
+    {
+      "name": "h5_movement_16171",
+      "hold": 5,
+      "reward": "movement",
+      "seed": 16171,
+      "selected_round": 32,
+      "selected_key": [
+        -16,
+        0.009060211091612775,
+        48.4375
+      ],
+      "episodes": 256,
+      "learner_updates": 7530,
+      "decisions": 1595,
+      "ppo_optimizer_updates": 128,
+      "seconds": 5.1348371505737305,
+      "parameter_change_l2": 1.3299548183104322,
+      "selected_sha256": "f32825b54623c5f7a0e83f6a67fea874f68f8b85745a90665c44ab81aeec3958",
+      "last_sha256": "1c24a9da986e91d7ab9bd5bb97d35cb61bfaf3f940543aad2aa30d65420e5c45"
+    },
+    {
+      "name": "h5_movement_16172",
+      "hold": 5,
+      "reward": "movement",
+      "seed": 16172,
+      "selected_round": 32,
+      "selected_key": [
+        -16,
+        0.009068019300078351,
+        48.4375
+      ],
+      "episodes": 256,
+      "learner_updates": 6211,
+      "decisions": 1335,
+      "ppo_optimizer_updates": 128,
+      "seconds": 4.4026780128479,
+      "parameter_change_l2": 1.2326274985584407,
+      "selected_sha256": "d2dd50500708cdad268ec202a910b253e919f5fd7a8f7e50caf2624368d5e5d8",
+      "last_sha256": "aebaafe0d65e6030c4e39e8a331d60728e589112e9b0e4a2aca0c4fc85bdc35e"
+    },
+    {
+      "name": "h5_movement_16173",
+      "hold": 5,
+      "reward": "movement",
+      "seed": 16173,
+      "selected_round": 0,
+      "selected_key": [
+        -15,
+        0.006593472965889507,
+        64.25
+      ],
+      "episodes": 256,
+      "learner_updates": 6126,
+      "decisions": 1316,
+      "ppo_optimizer_updates": 128,
+      "seconds": 4.603860139846802,
+      "parameter_change_l2": 1.4316870358404397,
+      "selected_sha256": "449e24fd5adb758ca8ce47de636a12e6612b4dc213f484140332ce5381e5a2d6",
+      "last_sha256": "ba59aebb16575fca1365f309bf77f2bb9c2817339339745099ab81cfd3d9f91e"
+    }
+  ],
+  "epoch": 1789918203.238683
+}
