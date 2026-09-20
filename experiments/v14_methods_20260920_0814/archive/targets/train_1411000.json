@@ -1,0 +1,18 @@
+{
+  "root": {
+    "id": "train_1411000",
+    "split": "train",
+    "seed": 1411000,
+    "tasks": [
+      "task363_sst2_polarity_classification",
+      "task196_sentiment140_answer_generation",
+      "task280_stereoset_classification_stereotype_type"
+    ],
+    "targets": [
+      0.19496517349034548,
+      0.3802196178585291,
+      0.3094277718337253
+    ]
+  },
+  "target_rule": "One all-one LoRA30-update reference per task, same root and stop examples; median stop CE at updates20/25/30. No policy-dependent target; no retuning if short or failed."
+}

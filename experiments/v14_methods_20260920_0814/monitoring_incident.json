@@ -1,0 +1,10 @@
+{
+  "kind": "local_monitor_dns_resolution_failure",
+  "first_observed_error_epoch": 1789898538.1638882,
+  "last_observed_error_epoch": 1789902319.92243,
+  "recovered_observation_epoch": 1789902380.791353,
+  "message": "ssh: Could not resolve hostname connect.nma1.seetacloud.com",
+  "evidence": "Local monitoring tool output; remote supervisor receipts and workflow logs independently preserve continued execution and the predeclared budget stop.",
+  "remote_workflow_restarted": false,
+  "budget_reset": false
+}

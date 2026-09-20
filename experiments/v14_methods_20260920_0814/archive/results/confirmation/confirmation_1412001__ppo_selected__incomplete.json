@@ -1,0 +1,73 @@
+{
+  "history_completed": false,
+  "root": {
+    "id": "confirmation_1412001",
+    "split": "confirmation",
+    "seed": 1412001,
+    "tasks": [
+      "task178_quartz_question_answering",
+      "task198_mnli_domain_classification",
+      "task582_naturalquestion_answer_generation"
+    ],
+    "targets": [
+      0.628567767329514,
+      0.9727652221918106,
+      1.8269309103488922
+    ]
+  },
+  "phase": "confirmation",
+  "candidate": "ppo_selected",
+  "tasks": [
+    {
+      "task": "task178_quartz_question_answering",
+      "position": 0,
+      "steps": 13,
+      "target": 0.628567767329514,
+      "initial_loss": 5.878878623247147,
+      "monitor_loss": 0.5949453208595514,
+      "success": true,
+      "initial_success": false,
+      "memory_tokens": {
+        "replay": 52379,
+        "monitor": 52215
+      }
+    }
+  ],
+  "trace": [],
+  "cost_actual": {
+    "updates": 0,
+    "train_input_tokens": 0,
+    "train_target_tokens": 0,
+    "train_padded_tokens": 0,
+    "replay_input_tokens": 0,
+    "replay_target_tokens": 0,
+    "replay_padded_tokens": 0,
+    "monitor_input_tokens": 0,
+    "monitor_target_tokens": 0,
+    "monitor_padded_tokens": 0,
+    "eval_input_tokens": 0,
+    "eval_target_tokens": 0,
+    "eval_padded_tokens": 0,
+    "copies": 2,
+    "resets": 0,
+    "copy_seconds": 1.707595112733543,
+    "reset_seconds": 0.0,
+    "train_forward_seconds": 0.0,
+    "replay_forward_seconds": 0.0,
+    "monitor_forward_seconds": 0.0,
+    "eval_forward_seconds": 0.0,
+    "train_backward_seconds": 0.0,
+    "replay_backward_seconds": 0.0,
+    "optimizer_seconds": 0.0,
+    "generation_input_tokens": 0,
+    "generation_padded_prompt_tokens": 0,
+    "generation_output_tokens": 0,
+    "generation_decode_step_tokens": 0,
+    "generation_seconds": 0.0,
+    "general_eval_input_tokens": 0,
+    "general_eval_padded_tokens": 0,
+    "general_eval_target_tokens": 0,
+    "general_eval_seconds": 0.0
+  },
+  "reason": "predeclared stage or allocation reserve; not fabricated task failure"
+}

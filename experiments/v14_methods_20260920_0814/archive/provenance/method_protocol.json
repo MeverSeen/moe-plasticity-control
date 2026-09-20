@@ -1,0 +1,164 @@
+{
+  "version": "v14_methods_20260920_0814",
+  "locked_utc": "2026-09-20T08:17:16.185486+00:00",
+  "authorization": "Latest user-authorized parent instruction supersedes no-PPO-today; same original allocation only",
+  "allocation_start_utc": "2026-09-20T05:25:00Z",
+  "hard_deadline_utc": "2026-09-20T13:25:00Z",
+  "experiment_stop_utc": "2026-09-20T12:40:00Z",
+  "archive_reserve_seconds": 2700,
+  "stage_caps_seconds": {
+    "train": 5100,
+    "development": 1800,
+    "confirmation": 4500
+  },
+  "base_revision": "6d84c48581ece794365f2b8e9cfb043c68ade9c5",
+  "frozen_base_hash": "71f39c6d02599589b6b05da3f18bdfdf5574efa94d2a16b5fe2569f2569868a0",
+  "environment": {
+    "tasks": 3,
+    "max_updates": 60,
+    "reference_updates": 30,
+    "hold": 5,
+    "microbatch": 2,
+    "accumulation": 1,
+    "replay_microbatch": 1,
+    "stop_examples": 8,
+    "old_observation_examples": 2,
+    "evaluation_batch": 8,
+    "memory_tokens": 256000,
+    "reward_scale": 0.1,
+    "failure_kappa": 3.0
+  },
+  "target_rule": "One all-one LoRA30-update reference per task, same root and stop examples; median stop CE at updates20/25/30. No policy-dependent target; no retuning if short or failed.",
+  "roots": {
+    "train": [
+      {
+        "id": "train_1411000",
+        "split": "train",
+        "seed": 1411000,
+        "tasks": [
+          "task363_sst2_polarity_classification",
+          "task196_sentiment140_answer_generation",
+          "task280_stereoset_classification_stereotype_type"
+        ],
+        "targets": null
+      },
+      {
+        "id": "train_1411001",
+        "split": "train",
+        "seed": 1411001,
+        "tasks": [
+          "task339_record_answer_generation",
+          "task1532_daily_dialog_emotion_classification",
+          "task1293_kilt_tasks_hotpotqa_question_answering"
+        ],
+        "targets": null
+      },
+      {
+        "id": "train_1411002",
+        "split": "train",
+        "seed": 1411002,
+        "tasks": [
+          "task1555_scitail_answer_generation",
+          "task875_emotion_classification",
+          "task344_hybridqa_answer_generation"
+        ],
+        "targets": null
+      }
+    ],
+    "confirmation": [
+      {
+        "id": "confirmation_1412000",
+        "split": "confirmation",
+        "seed": 1412000,
+        "tasks": [
+          "task494_review_polarity_answer_generation",
+          "task456_matres_intention_classification",
+          "task274_overruling_legal_classification"
+        ],
+        "targets": null
+      },
+      {
+        "id": "confirmation_1412001",
+        "split": "confirmation",
+        "seed": 1412001,
+        "tasks": [
+          "task178_quartz_question_answering",
+          "task198_mnli_domain_classification",
+          "task582_naturalquestion_answer_generation"
+        ],
+        "targets": null
+      }
+    ],
+    "development": [
+      {
+        "id": "development_1401000",
+        "seed": 1401000,
+        "split": "development",
+        "tasks": [
+          "task247_dream_answer_generation",
+          "task190_snli_classification",
+          "task843_financial_phrasebank_classification"
+        ],
+        "targets": null
+      }
+    ]
+  },
+  "data_manifest_sha256": "981e676555afe61ad387aa73a3d0397f7b38d82479f51a279b1d2b25d6329c28",
+  "data_boundaries": "Reuse preprocessed source-component splits and normalized exact/near-duplicate exclusions. Three train roots use first nine train tasks, two confirmation roots first six held-out confirmation tasks. No task overlap across these sets; source grouping relies on recorded preprocessing and cannot exclude unknown common web origins. Development root was already queried in pilot. Confirmation tasks were not used in controller training/selection; task inputs were included only in pre-score general decontamination audit. New order alone would not imply unseen tasks.",
+  "observation": {
+    "local10": [
+      "old_usage*8",
+      "current_usage*8",
+      "old_mass*64",
+      "current_mass*64",
+      "relative_adam_displacement*100",
+      "previous_multiplier",
+      "old_token_coverage",
+      "current_token_coverage",
+      "current_cache_age/H",
+      "8*(shortEMA(old_usage-current_usage)-longEMA(old_usage-current_usage))"
+    ],
+    "global10": [
+      "current_CE/5",
+      "shortEMA(current_CE_improvement)/5",
+      "current_target_gap/5",
+      "longEMA(current_CE_improvement)/5",
+      "shortEMA(cached_potential_improvement)/.1",
+      "cached_potential/.1",
+      "task_position/2",
+      "remaining_update_fraction",
+      "failure_fraction",
+      "longEMA(cached_potential_improvement)/.1"
+    ],
+    "ema": "short alpha=.5, long alpha=.1; once per uncached decision boundary only. First observation initializes EMA to signal. Learning EMA reset at task boundary; route-risk and potential recovery EMA persist across history. Potential recovery uses previous observed potential minus current. Exact state copied in checkpoints.",
+    "rule": "same full observation and action interface; original potential/gap/short-learning base rule, correction risk=old-current usage + positive(short-long risk EMA); thresholds and tie rule unchanged. No feature or rule search."
+  },
+  "ppo": {
+    "seed": 1414,
+    "action_seed": 14140000,
+    "lr": 0.0001,
+    "maximum_histories": 12,
+    "minimum_target_histories": 6,
+    "root_order": "balanced cyclic three roots, four maximum visits each; each visit restarts exact same root prefix and generates new actions/current-policy trajectory; learner outcomes after divergence never cached",
+    "batch_histories": 2,
+    "epochs": 3,
+    "clip": 0.2,
+    "gamma": 1.0,
+    "gae_lambda": 0.95,
+    "entropy_coef": 0.0,
+    "target_kl": 0.03,
+    "minimum_pair_reserve_seconds": 600,
+    "admission": "Only admit full pairs with remaining time > max(600,2*max(last3 completed rollout seconds)*1.25+30). Stop by time/count, never score. Stage end bounds active rollout via existing update-boundary checkpoint guard.",
+    "initialization": "single seed, no clone. Shared base output zero weights and .90 prior on multiplier1/.025 each other; count output zero weights, probabilities .90/.05/.05 for 0/1/2 corrections; epsilon .02 valid-factor uniform mixture; other layers seeded initialization.",
+    "deployment": "last completely optimized policy; frozen weights, greedy ordered latent choices; no checkpoint/seed/decoder search",
+    "optimization_accounting": "Report complete per-root new rollout count, decisions, two-history batches, actual optimizer epochs/gradient steps separately"
+  },
+  "fixed_selection": "Lexicographic failure_count, cumulative positive old-task CE forgetting, final mean CE, path updates on reused pilot development root; menu uniform1/static050 only. Best in menu, no global best claim.",
+  "development": "Reuse existing pilot uniform1/static050 outcomes and reference target; EMA does not change deterministic fixed actions, learner batches or stopping. Rebuild shared prefix; new rule and final frozen PPO paths with task generation, no general scoring. No checkpoint selection beyond registered last policy.",
+  "confirmation": "Two held-out roots, shared A prefix per root, same targets/stream; uniform1 plus selected static if distinct, same-information rule base1, selected frozen PPO. All task CE/EM/F1 triangular matrices and endpoint general scores. Preserve incomplete/failing paths, no reruns by result.",
+  "reward": "Original endpoint-corrected potential shaping: -full retained old-monitor positive CE forgetting/.1 -3*failed_tasks, with cached initial potential offset. No isolated task eval/generation/confirmation/general metric in controller observations or reward.",
+  "general": "Reuse fixed audited612 items and adapter-on initial score from pilot (already exposed engineering subsets, not fresh test). Independently score each confirmation endpoint, never selection. Raw NLL/accuracy/per-item paired changes.",
+  "cost": "Training includes all monitor/replay/task-CE cost, omits generation scores not used by PPO. Development/confirmation include all task scores. General initial and development fixed/reference pilot costs explicitly reused, not billed again. Shared prefix actual execution counted once; logical path includes prefix per method. Include reset/copy, target generation, controller optimization, selection, confirmation, artifacts and wall time.",
+  "budget_estimate": "Pilot target90 updates ~502s; common A20 ~158s including ~69s generation; branch fixed/rule ~389-427s includes ~40s general and ~180s generation. Training suppresses generation/general and reuses root prefixes, estimate ~200-250s per fresh branch plus 3 references/~300s prefixes. 12 is bounded upper target, actual admitted pairs depend only elapsed durations. 85/30/75min caps, 12:40 UTC ceiling take precedence.",
+  "historical_pilot_commit": "4e863b1"
+}

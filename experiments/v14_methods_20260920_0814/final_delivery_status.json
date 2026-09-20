@@ -1,0 +1,15 @@
+{
+  "observed_epoch": 1789905978.7320218,
+  "supervisor": {
+    "utc": "2026-09-20T12:06:18.330114+00:00",
+    "remaining_seconds": 4721.670194149017,
+    "active_job": null,
+    "active_pid": null,
+    "stopping": false,
+    "supervisor_pid": 1887
+  },
+  "pending_jobs": [],
+  "gpu_snapshot": "0 MiB, 0 %",
+  "original_hard_deadline_utc": "2026-09-20T13:25:00Z",
+  "instance_shutdown": false
+}

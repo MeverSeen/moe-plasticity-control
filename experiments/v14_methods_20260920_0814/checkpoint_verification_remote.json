@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "format": "adapter-only; optimizer state absent; not exact training resume",
+  "files": [
+    {
+      "root": "confirmation_1412000",
+      "method": "ppo_selected",
+      "local_path": "/root/autodl-tmp/moe-plasticity-v13-20260920/v14_methods_20260920_0814/adapters/confirmation_1412000__ppo_selected.pt",
+      "sha256": "b375851102ee939ad458a1a8eef68685b10a0d3152cae33fbba9cbac1c6d4046",
+      "factor_content_sha256": "fb1be290e34f572fb71e8eec8d97eb80b07e609e45d8b154871087c7e6cca4c5",
+      "bytes": 152821817,
+      "factors": 6144,
+      "parameters": 37748736
+    },
+    {
+      "root": "confirmation_1412000",
+      "method": "rule",
+      "local_path": "/root/autodl-tmp/moe-plasticity-v13-20260920/v14_methods_20260920_0814/adapters/confirmation_1412000__rule.pt",
+      "sha256": "61f5af4e894d06867d02fa5171635e67f9a11132f4dfe440a26f8eda895944c4",
+      "factor_content_sha256": "fd5b0f773559d0966f0d325f9856085d991ec13ef794222760bfc0c59aef0c7f",
+      "bytes": 152772553,
+      "factors": 6144,
+      "parameters": 37748736
+    },
+    {
+      "root": "confirmation_1412000",
+      "method": "static050",
+      "local_path": "/root/autodl-tmp/moe-plasticity-v13-20260920/v14_methods_20260920_0814/adapters/confirmation_1412000__static050.pt",
+      "sha256": "7170f1df2a8a3dbbb1b77baede1dc6e68946d2d4626d7b503aec50ab60ebaf6c",
+      "factor_content_sha256": "fe930c29bad894d89ab192e86f4623e745fcc5aa3b245e99b6009a93b33c7c86",
+      "bytes": 152803303,
+      "factors": 6144,
+      "parameters": 37748736
+    },
+    {
+      "root": "confirmation_1412000",
+      "method": "uniform1",
+      "local_path": "/root/autodl-tmp/moe-plasticity-v13-20260920/v14_methods_20260920_0814/adapters/confirmation_1412000__uniform1.pt",
+      "sha256": "513c712e30d95c49300e8c98ad7a01e0a5f669600ee8a769e00759fe636cca9d",
+      "factor_content_sha256": "d09a19d0c07b9d1dd11088e2881b9f30838a8b04d57e34f628464fb18e778b5c",
+      "bytes": 152797153,
+      "factors": 6144,
+      "parameters": 37748736
+    },
+    {
+      "root": "confirmation_1412001",
+      "method": "rule",
+      "local_path": "/root/autodl-tmp/moe-plasticity-v13-20260920/v14_methods_20260920_0814/adapters/confirmation_1412001__rule.pt",
+      "sha256": "6e5225b16952ac68b63e7d99494e886aa282438504c183953ff943bfb14d2cc2",
+      "factor_content_sha256": "324f16747a5ee28c56192ef7ba5755fe93a25d5eba354835b0d839ce0dc75c03",
+      "bytes": 152772553,
+      "factors": 6144,
+      "parameters": 37748736
+    },
+    {
+      "root": "confirmation_1412001",
+      "method": "static050",
+      "local_path": "/root/autodl-tmp/moe-plasticity-v13-20260920/v14_methods_20260920_0814/adapters/confirmation_1412001__static050.pt",
+      "sha256": "afb3d12cc3283d287086a5e0fc72e952b8fcabc7ee23188709b28bba9d76fac6",
+      "factor_content_sha256": "a6d404b05d5dc7c12c98e94ab6c14af3994473c469adcf7ae6216a8a73ce61bf",
+      "bytes": 152803303,
+      "factors": 6144,
+      "parameters": 37748736
+    },
+    {
+      "root": "confirmation_1412001",
+      "method": "uniform1",
+      "local_path": "/root/autodl-tmp/moe-plasticity-v13-20260920/v14_methods_20260920_0814/adapters/confirmation_1412001__uniform1.pt",
+      "sha256": "ebac7a0010b43949ff7289b41b2248c3e24d2c3f2d862d9ad0f1b00bc8bdc7ea",
+      "factor_content_sha256": "a57e9c93184f58091cd7a8307fbd1614c4c1d9047fe1e8636121635e76c4c456",
+      "bytes": 152797153,
+      "factors": 6144,
+      "parameters": 37748736
+    }
+  ]
+}

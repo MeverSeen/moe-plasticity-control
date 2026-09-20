@@ -6,6 +6,7 @@ import torch
 from environment import Environment,Config,BudgetStop,training_trajectory,cost_difference
 from lora_native import NativeLearner
 from lora import frozen_hash
+from integrity import verify_frozen_hash
 from structured_policy import ActorCritic,Rule
 from ppo import ppo_update
 from evaluation import GeneralEvaluator,compare_general
@@ -95,5 +96,5 @@ class Workflow:
   self.controller('ppo_final');save(self.root/'training_status_final.json',{'visits':self.visits,'complete_histories':sum(self.visits.values()),'rollout_batches':len(self.learning),'optimizer_steps':sum(x['optimizer_steps'] for x in self.learning),'decisions':sum(x['statistics']['decisions'] for x in self.learning)})
   self.phase('development',self.plan['stage_caps_seconds']['development'],self.development)
   self.phase('confirmation',self.plan['stage_caps_seconds']['confirmation'],self.confirmation)
-  self.learner.check_frozen();base=frozen_hash(self.learner.model);assert base==self.plan['frozen_base_hash'];save(self.root/'summary.json',{'status':'completed' if all(v['status']=='completed' for v in self.costs.values()) else 'bounded_incomplete','rows':self.rows,'stage_costs':self.costs,'native_cost':self.learner.cost,'wall_seconds':time.time()-self.started,'frozen_base_hash':base,'ended_epoch':time.time(),'learning_batches':len(self.learning),'training_visits':self.visits});self.progress('complete')
+  self.learner.check_frozen();base=frozen_hash(self.learner.model);verify_frozen_hash(base,self.plan['frozen_base_hash']);save(self.root/'summary.json',{'status':'completed' if all(v['status']=='completed' for v in self.costs.values()) else 'bounded_incomplete','rows':self.rows,'stage_costs':self.costs,'native_cost':self.learner.cost,'wall_seconds':time.time()-self.started,'frozen_base_hash':base,'ended_epoch':time.time(),'learning_batches':len(self.learning),'training_visits':self.visits});self.progress('complete')
 if __name__=='__main__':Workflow().main()

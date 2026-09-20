@@ -1,0 +1,4 @@
+root,candidate,F_difference_vs_uniform1,updates_difference_vs_uniform1
+confirmation_1412000,static050,-0.04591367465491203,20
+confirmation_1412000,rule,-0.002692407822905807,7
+confirmation_1412000,ppo_selected,-0.03696575060803298,-1

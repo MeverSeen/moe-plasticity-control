@@ -1,0 +1,22 @@
+{
+  "visits": {
+    "train_1411000": 3,
+    "train_1411001": 3,
+    "train_1411002": 2
+  },
+  "complete_histories": 8,
+  "rollout_batches": 4,
+  "optimizer_steps": 12,
+  "unused_complete_rollouts": 0,
+  "stop_reason": "predeclared_pair_admission_reserve",
+  "durations": [
+    404.4487986564636,
+    411.6472222805023,
+    226.14267110824585,
+    431.5876154899597,
+    287.92889499664307,
+    232.55530881881714,
+    402.55873107910156,
+    402.36383605003357
+  ]
+}

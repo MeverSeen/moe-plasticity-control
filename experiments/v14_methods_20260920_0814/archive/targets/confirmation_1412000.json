@@ -1,0 +1,18 @@
+{
+  "root": {
+    "id": "confirmation_1412000",
+    "split": "confirmation",
+    "seed": 1412000,
+    "tasks": [
+      "task494_review_polarity_answer_generation",
+      "task456_matres_intention_classification",
+      "task274_overruling_legal_classification"
+    ],
+    "targets": [
+      0.14148620050400496,
+      0.42748771235346794,
+      0.10254688386339694
+    ]
+  },
+  "target_rule": "One all-one LoRA30-update reference per task, same root and stop examples; median stop CE at updates20/25/30. No policy-dependent target; no retuning if short or failed."
+}

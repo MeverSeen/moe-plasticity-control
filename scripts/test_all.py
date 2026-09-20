@@ -19,6 +19,7 @@ SUITES = (
     ("v13_native_ppo", "test_*.py"),
     ("v13_native_ppo/diagnostics", "test_*.py"),
     ("v14_full_layer_lora", "test_*.py"),
+    ("v14_methods_20260920_0814", "test_*.py"),
 )
 
 

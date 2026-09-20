@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "histories": 6,
+  "decisions": 56,
+  "max_logp_error": 1.9073486328125e-06,
+  "rows": [
+    {
+      "root": "train_1411000",
+      "candidate": "ppo_rollout_000",
+      "behavior_checkpoint": "ppo_initial.pt",
+      "decisions": 13,
+      "terminal_objective": -0.0,
+      "monitor_F": 0.0,
+      "eval_F": 0.013443787048956324
+    },
+    {
+      "root": "train_1411000",
+      "candidate": "ppo_rollout_003",
+      "behavior_checkpoint": "ppo_batch_001.pt",
+      "decisions": 13,
+      "terminal_objective": -0.0,
+      "monitor_F": 0.0,
+      "eval_F": 0.01733143517299851
+    },
+    {
+      "root": "train_1411001",
+      "candidate": "ppo_rollout_001",
+      "behavior_checkpoint": "ppo_initial.pt",
+      "decisions": 14,
+      "terminal_objective": -0.0,
+      "monitor_F": 0.0,
+      "eval_F": 0.0
+    },
+    {
+      "root": "train_1411001",
+      "candidate": "ppo_rollout_004",
+      "behavior_checkpoint": "ppo_batch_002.pt",
+      "decisions": 8,
+      "terminal_objective": -0.0,
+      "monitor_F": 0.0,
+      "eval_F": 0.0
+    },
+    {
+      "root": "train_1411002",
+      "candidate": "ppo_rollout_002",
+      "behavior_checkpoint": "ppo_batch_001.pt",
+      "decisions": 4,
+      "terminal_objective": -0.0,
+      "monitor_F": 0.0,
+      "eval_F": 0.004766249854583293
+    },
+    {
+      "root": "train_1411002",
+      "candidate": "ppo_rollout_005",
+      "behavior_checkpoint": "ppo_batch_002.pt",
+      "decisions": 4,
+      "terminal_objective": -0.0,
+      "monitor_F": 0.0,
+      "eval_F": 0.0
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "source": "/root/autodl-tmp/moe-plasticity-v13-20260920/v14_methods_20260920_0814/completed-methods-archive.tar.gz",
+  "bytes": 14916455,
+  "sha256": "ca1fc59730e06b75a75126f7764f15f1efa17e11604a3b1ec550fb1b4e543c5f",
+  "extracted_directory": "archive",
+  "original_archive_unchanged": true,
+  "note": "Original run archive collected after exit; recovered_summary and local fixes are outside the extracted original archive.",
+  "extracted_files_byte_verified": 87
+}

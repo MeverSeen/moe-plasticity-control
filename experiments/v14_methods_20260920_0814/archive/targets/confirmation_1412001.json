@@ -1,0 +1,18 @@
+{
+  "root": {
+    "id": "confirmation_1412001",
+    "split": "confirmation",
+    "seed": 1412001,
+    "tasks": [
+      "task178_quartz_question_answering",
+      "task198_mnli_domain_classification",
+      "task582_naturalquestion_answer_generation"
+    ],
+    "targets": [
+      0.628567767329514,
+      0.9727652221918106,
+      1.8269309103488922
+    ]
+  },
+  "target_rule": "One all-one LoRA30-update reference per task, same root and stop examples; median stop CE at updates20/25/30. No policy-dependent target; no retuning if short or failed."
+}

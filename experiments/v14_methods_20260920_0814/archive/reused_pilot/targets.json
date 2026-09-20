@@ -1,0 +1,19 @@
+{
+  "root": {
+    "id": "development_1401000",
+    "seed": 1401000,
+    "split": "development",
+    "tasks": [
+      "task247_dream_answer_generation",
+      "task190_snli_classification",
+      "task843_financial_phrasebank_classification"
+    ],
+    "targets": [
+      0.10794632928445935,
+      0.5347160776145756,
+      0.5799922440201044
+    ]
+  },
+  "definition": "One all-one LoRA30-update reference per task, same root and stop examples; median stop CE at updates20/25/30. No policy-dependent target; no retuning if short or failed.",
+  "plan_sha256": "18b52b6546155c922062fa37c98e2136e3c9e0c62754d8c288efb8e349115d0e"
+}

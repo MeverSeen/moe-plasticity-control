@@ -1,0 +1,19 @@
+{
+  "root": {
+    "id": "development_1401000",
+    "seed": 1401000,
+    "split": "development",
+    "tasks": [
+      "task247_dream_answer_generation",
+      "task190_snli_classification",
+      "task843_financial_phrasebank_classification"
+    ],
+    "targets": [
+      0.10794632928445935,
+      0.5347160776145756,
+      0.5799922440201044
+    ]
+  },
+  "reused_from_pilot": true,
+  "source_sha256": "10a3b92939d6994ae897c5b41022d95d9e08692b53372827cdbc5a44e4ca9a43"
+}

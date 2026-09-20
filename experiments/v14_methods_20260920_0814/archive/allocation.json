@@ -1,0 +1,10 @@
+{
+  "start_utc": "2026-09-20T05:25:00Z",
+  "deadline_utc": "2026-09-20T13:25:00Z",
+  "deadline_epoch": 1789910700.0,
+  "supervisor_pid": 1887,
+  "scope": "/root/autodl-tmp/moe-plasticity-v13-20260920",
+  "soft_stop_seconds_before_deadline": 180,
+  "terminate_seconds_before_deadline": 60,
+  "kill_seconds_before_deadline": 30
+}

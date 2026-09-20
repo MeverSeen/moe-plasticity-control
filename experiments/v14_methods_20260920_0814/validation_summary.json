@@ -1,0 +1,31 @@
+{
+  "status": "recorded_evidence_checks_passed_with_unresolved_execution_anomaly",
+  "pre_run_cpu_tests": 7,
+  "post_fix_cpu_tests_total": 8,
+  "executed_source_hashes_checked": 14,
+  "completed_histories_checked": 17,
+  "decisions_replayed": 157,
+  "general_items_recomputed": 4284,
+  "method_updates_reconciled": 1272,
+  "separate_debug_updates": 4,
+  "native_cost_all_fields_reconciled": true,
+  "original_endpoint_full_sha_verified": false,
+  "original_endpoint_parameter_version_checks_passed": true,
+  "original_same_action_path_divergence_resolved": false,
+  "debug_fixture_four_replays_bitwise_equal": true,
+  "debug_new_base_before_after_sha_equal": true,
+  "confirmed_paths": 7,
+  "planned_confirmation_paths": 8,
+  "common_physically_completed_roots": 1,
+  "plots_visually_checked": true,
+  "original_pilot_manifest_files_verified": 93,
+  "v13_manifest_files_verified": 63,
+  "limits": [
+    "New debug SHA does not substitute original endpoint SHA",
+    "Frozen greedy certificate does not substitute the missing actual PPO path",
+    "Passed trace/cost checks do not establish causal attribution for numeric method differences"
+  ],
+  "remote_adapter_files_verified": 7,
+  "local_adapter_files_verified": 7,
+  "local_and_remote_factor_content_hashes_match": true
+}

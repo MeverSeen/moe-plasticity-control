@@ -1,0 +1,5703 @@
+{
+  "status": "passed",
+  "usage": "independent_evaluation_only",
+  "created_epoch": 1789889052.5409396,
+  "source_family_disjoint": true,
+  "source_family_scope": "Declared benchmark dataset identities versus all40 selected NI source identities; shared web origins and pretraining contamination are not ruled out.",
+  "ni_source_families": [
+    "adversarialqa",
+    "agnews",
+    "amazonpolarity",
+    "curiositydialogs",
+    "dailydialog",
+    "dream",
+    "emotion",
+    "financialphrasebank",
+    "gap",
+    "generatedreviewsenth",
+    "haspartkb",
+    "hotpotqa",
+    "hybridqa",
+    "imdb",
+    "liar",
+    "matres",
+    "mcscript",
+    "mrqa",
+    "multinli",
+    "naturalquestions",
+    "ollie",
+    "openbookqa",
+    "overruling",
+    "poki",
+    "qanta",
+    "qasc",
+    "quartz",
+    "record",
+    "ropes",
+    "rte",
+    "scitail",
+    "scitailv11",
+    "sentiment140",
+    "sick",
+    "snli",
+    "spolin",
+    "sst2",
+    "stereoset",
+    "wikimovies",
+    "winogrande"
+  ],
+  "general_source_families": [
+    "bbh",
+    "boolq",
+    "mmlu",
+    "piqa"
+  ],
+  "ni_examples_audited": 35840,
+  "ni_role_counts": {
+    "train": 15360,
+    "monitor": 15360,
+    "eval": 5120
+  },
+  "ni_manifest_dataset_sha256": "0a30041869dbc3eba142e1d0e5ff87144196f69005ab10ec77029b373e2e1c12",
+  "selection": "Before any model score: SHA256(1414/id) order within group, first4 eligible per MMLU subject and first128 per other benchmark; prompt<=512 and no declared text overlap. No answer/performance screening.",
+  "text_check": "Normalized exact text plus exhaustive inverted-index5-word-shingle Jaccard>=.90 over declared question/full-input/passage fields vs selected NI raw inputs. Fields<5 words excluded from short-fragment check. Does not establish semantic independence or unknown-source absence.",
+  "audit_queries": 1096,
+  "excluded": [
+    {
+      "id": "mmlu/high_school_world_history/22",
+      "reason": "prompt_exceeds512",
+      "tokens": 748
+    },
+    {
+      "id": "mmlu/professional_law/193",
+      "reason": "prompt_exceeds512",
+      "tokens": 533
+    }
+  ],
+  "selected_counts": {
+    "abstract_algebra": 4,
+    "anatomy": 4,
+    "astronomy": 4,
+    "bbh_logical5": 128,
+    "boolq": 128,
+    "business_ethics": 4,
+    "clinical_knowledge": 4,
+    "college_biology": 4,
+    "college_chemistry": 4,
+    "college_computer_science": 4,
+    "college_mathematics": 4,
+    "college_medicine": 4,
+    "college_physics": 4,
+    "computer_security": 4,
+    "conceptual_physics": 4,
+    "econometrics": 4,
+    "electrical_engineering": 4,
+    "elementary_mathematics": 4,
+    "formal_logic": 4,
+    "global_facts": 4,
+    "high_school_biology": 4,
+    "high_school_chemistry": 4,
+    "high_school_computer_science": 4,
+    "high_school_european_history": 4,
+    "high_school_geography": 4,
+    "high_school_government_and_politics": 4,
+    "high_school_macroeconomics": 4,
+    "high_school_mathematics": 4,
+    "high_school_microeconomics": 4,
+    "high_school_physics": 4,
+    "high_school_psychology": 4,
+    "high_school_statistics": 4,
+    "high_school_us_history": 4,
+    "high_school_world_history": 4,
+    "human_aging": 4,
+    "human_sexuality": 4,
+    "international_law": 4,
+    "jurisprudence": 4,
+    "logical_fallacies": 4,
+    "machine_learning": 4,
+    "management": 4,
+    "marketing": 4,
+    "medical_genetics": 4,
+    "miscellaneous": 4,
+    "moral_disputes": 4,
+    "moral_scenarios": 4,
+    "nutrition": 4,
+    "philosophy": 4,
+    "piqa": 128,
+    "prehistory": 4,
+    "professional_accounting": 4,
+    "professional_law": 4,
+    "professional_medicine": 4,
+    "professional_psychology": 4,
+    "public_relations": 4,
+    "security_studies": 4,
+    "sociology": 4,
+    "us_foreign_policy": 4,
+    "virology": 4,
+    "world_religions": 4
+  },
+  "ability_counts": {
+    "knowledge_mmlu_subset": 228,
+    "reasoning_bbh_logical5_subset": 128,
+    "reading_boolq_subset": 128,
+    "commonsense_piqa_subset": 128
+  },
+  "encoded_examples_sha256": "290844d1f384afff55f58ed0f43cc3d8ed6db3bab6419a04b5afde7a9f78c249",
+  "items": [
+    {
+      "id": "mmlu/abstract_algebra/83",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "abstract_algebra",
+      "answer_index": 2,
+      "prompt_sha256": "d22b0a035572245540a96e4ff332adce41fed9285572b45ed1f9c45daf4c8c66",
+      "input_tokens": 92
+    },
+    {
+      "id": "mmlu/abstract_algebra/79",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "abstract_algebra",
+      "answer_index": 2,
+      "prompt_sha256": "e121b99a282211981f48fe8657bd8806fabbcc879ea2a3d9ac6529de5f6e5d50",
+      "input_tokens": 86
+    },
+    {
+      "id": "mmlu/abstract_algebra/94",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "abstract_algebra",
+      "answer_index": 3,
+      "prompt_sha256": "ffd4f6e6c0a3e07473a5151a02cf4885531074567c69fba72c4dfa27a419033b",
+      "input_tokens": 70
+    },
+    {
+      "id": "mmlu/abstract_algebra/81",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "abstract_algebra",
+      "answer_index": 3,
+      "prompt_sha256": "389e6e629eff3fe913119a1809d3da78953429055a3f40dd029024d0964ec363",
+      "input_tokens": 72
+    },
+    {
+      "id": "mmlu/anatomy/18",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "anatomy",
+      "answer_index": 3,
+      "prompt_sha256": "3d2f0767c2493c8ec2027f29ad953d233edcace88962a447430c6f81e77ea787",
+      "input_tokens": 58
+    },
+    {
+      "id": "mmlu/anatomy/63",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "anatomy",
+      "answer_index": 2,
+      "prompt_sha256": "433dfce0f4da280aaf893c611dc223e48af451de9c53df2d85b9c9e105a90040",
+      "input_tokens": 57
+    },
+    {
+      "id": "mmlu/anatomy/86",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "anatomy",
+      "answer_index": 2,
+      "prompt_sha256": "8df933855b33999fdce4a324293ce54e0365a56de5d78b3d19d836c58ecef204",
+      "input_tokens": 114
+    },
+    {
+      "id": "mmlu/anatomy/11",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "anatomy",
+      "answer_index": 3,
+      "prompt_sha256": "17a628ea32a9279513ef9dcd1540e24754bf89996a31c8f7582f14e037c7a2a8",
+      "input_tokens": 100
+    },
+    {
+      "id": "mmlu/astronomy/59",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "astronomy",
+      "answer_index": 3,
+      "prompt_sha256": "bf8d8035fb50c8668a6d2d611f312f65054bd8d6fda8fe8267d0840a3137c545",
+      "input_tokens": 94
+    },
+    {
+      "id": "mmlu/astronomy/121",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "astronomy",
+      "answer_index": 1,
+      "prompt_sha256": "81a183ad09c6829a3aa036dc3bd450b0a9b34ceeaa8ad927fc07f4d0976745a9",
+      "input_tokens": 59
+    },
+    {
+      "id": "mmlu/astronomy/22",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "astronomy",
+      "answer_index": 3,
+      "prompt_sha256": "d90db9c35b809e8ebeb7474d8b0f0352f181c679a0b179852bd61c946de3e9c8",
+      "input_tokens": 106
+    },
+    {
+      "id": "mmlu/astronomy/104",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "astronomy",
+      "answer_index": 2,
+      "prompt_sha256": "7a9ada1d8fcbf63c7643ee735afd628fe02490fb89dbfca3361e5df9ea11d48e",
+      "input_tokens": 104
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/49",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "d7450c793984efdabb731a18aee78ddcedc0a8cdbae7b76b225b3fe054ba4ab2",
+      "input_tokens": 169
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/10",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "d2197f3832c03a8960e22a4bf9153fba1edd49c3a9a90b4ad163a1f0d0a11cc4",
+      "input_tokens": 177
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/23",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "9c7a2c059b5898d6ae8fbc6c0d0a7b73bafcdbe777e696b9110c2ae454365204",
+      "input_tokens": 159
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/161",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "4c7aeb5fc8a1546882d38fab97cbed39e0081f1fbedf7b550543cdd418fca4e8",
+      "input_tokens": 143
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/62",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 4,
+      "prompt_sha256": "1aad234c124879513adc890003680c66b2fd69fbb1159bb35d8fd1e5a99a678c",
+      "input_tokens": 181
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/160",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "ea4fe91a561843810582c16748aa64f79ec495a8967ae4c856a2be55a29e51d2",
+      "input_tokens": 171
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/114",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "c432bf1b227192c773feeffa18079c30656d752f8dcba4cb42e13bacfcaf9942",
+      "input_tokens": 174
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/74",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "e9204593076454105290c950c3615bbb158db43d0a8ea99c47998696c8beb023",
+      "input_tokens": 184
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/122",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 4,
+      "prompt_sha256": "37e2b95c5a90808d8e84961015126ef8b8b56f8886a732430520eb30215584b7",
+      "input_tokens": 165
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/244",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "62df2d65d71c054d66d22eee69f45f42cda7d90944ffe9fdb252aa039dbc05f0",
+      "input_tokens": 120
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/83",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "4572e54689fc88fdbae0df38ea417e4a10660817b9f6851787b5a0d18eae4cd7",
+      "input_tokens": 120
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/61",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 4,
+      "prompt_sha256": "23069ef1801207d0508fb9cab7a779af2b5c520994d0e67663d08b50270916ac",
+      "input_tokens": 157
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/87",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 4,
+      "prompt_sha256": "b2e2133b0eeda11d61630579f6a971d4d4d0ca1d1dfdbad5659fbacdd19c6ad9",
+      "input_tokens": 169
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/78",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "8210aea9865df3996bbe646b1166ce668f36fbd69df6d0fe5150677582fdb090",
+      "input_tokens": 137
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/98",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "cd7f1185695154f94abbd03084173bdc3c93387987e13b8c0937b6845d6b8901",
+      "input_tokens": 160
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/141",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "de8c30a1cb694e0694303e574a562c11154e38c79dd5ff077a5bbf43b0d81fda",
+      "input_tokens": 161
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/89",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "623cb07c44e6a53fbea31cee6c88a2ca1addfd38d91746efc667071c30d190cb",
+      "input_tokens": 179
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/58",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "f3358feeccdb064464e99e43003ebd9771573fa6af70ad288426fb91a129c2ed",
+      "input_tokens": 169
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/110",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "baa3614eb6102305984ceea64cc46d21ba4526f9a2e12f8554fe0db5617bbe4a",
+      "input_tokens": 181
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/139",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "f91b87969342a441cfc6d61a4f2ddb5cffb8b5a2e85e7b989f09196b06dc234b",
+      "input_tokens": 172
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/82",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "036673d20e693fb871b452d00a50bcd12dd98753917d32ed30aaeee167a4fc46",
+      "input_tokens": 180
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/3",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "c606501156b3fcf1ad309079fee0298bddb2f7dacec261ce1a80e01197bc71f8",
+      "input_tokens": 180
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/134",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "238c6372c60a4eae463b7ff8fb1594613bdc596cf21326585af71f0729369f62",
+      "input_tokens": 141
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/229",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 4,
+      "prompt_sha256": "6b2805faa9bbccdfa277b9626fbec7d23ecc7da8b902fb3e2643bd5398aeb483",
+      "input_tokens": 157
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/144",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "8b2653186b24d900ccb7d7923cb42f93f6242225f5cc0668352f7e82d9d2ee72",
+      "input_tokens": 181
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/90",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 4,
+      "prompt_sha256": "6686e1798a73a7f5807fcb44f9d57e4d078e3aab44be626d1e7756aba062e665",
+      "input_tokens": 181
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/150",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "602dd32a0b180826678894829bcd3de817e71d6d3e6fc84a1e72e1c39d16babc",
+      "input_tokens": 138
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/247",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 4,
+      "prompt_sha256": "63dd65fad5f23d3658ce88610c174c280a5b038206635c62811129686b71416d",
+      "input_tokens": 181
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/40",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "fc4091e521196529860d8f6126a50ab3f52b413fa9b90ec4f8f2ef0a2122db03",
+      "input_tokens": 161
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/36",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "b09166ec45e5ae1528359af14db15585fe708b53e737da3b1108f68749c09f3d",
+      "input_tokens": 159
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/46",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 4,
+      "prompt_sha256": "5806b72ee615c7055e958c6786d2043714533501d0d941898f9ccad6e75b7161",
+      "input_tokens": 185
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/54",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "ccf940bf44bcaff3a5015d2ba796f2c758a044a1e8d6f96c21ea2d423492728e",
+      "input_tokens": 171
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/156",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "6cc89893626df924ce8ae2fdfb3add1f31288b550f923952342353d312472b48",
+      "input_tokens": 166
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/148",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 4,
+      "prompt_sha256": "4931550a6dc54e420fa25e923b2be4708c63ecc187b770c4b698d2463465d2ef",
+      "input_tokens": 122
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/193",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "9235429b3d3d43adf72f56d56a941c2ece8932ff36bd2aba0a3e53ecc62d3d59",
+      "input_tokens": 184
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/138",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "9a6fa3f73f309c70d036a7dabf75e080c5c2643744e09e9b201eb3ba8256d091",
+      "input_tokens": 185
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/64",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "488134e8287c18113d3edaa2f270ecfc188b9c09a782018b8f7f569a408682fd",
+      "input_tokens": 173
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/235",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "f71436abd2567de2bdf1fd536aa9230385f71d0e9bd38a050c27d9917da9c53c",
+      "input_tokens": 172
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/154",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "f83a2383db2f08cc83b87eeae531aff58c9062004acc822d57beaf6c983c82e9",
+      "input_tokens": 173
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/19",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "dab42f525a1e2072a3876c6b674e649d8a91ddb82d8499df830da54b6f90c221",
+      "input_tokens": 118
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/207",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "1126e67b2de111adfa6ff0e3453f9f0f59e626bdd605993bf1fdeff56af4aa34",
+      "input_tokens": 173
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/223",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "03871dc409150b6c0f7e6cc1342bae9d0302747fdeb39e41263d0a39d3b7d5de",
+      "input_tokens": 184
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/200",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "d5a79b4fd552af183b518de7025d2351dbcf56e0438dbeadf13b30284867d2a1",
+      "input_tokens": 122
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/241",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "038864b70044876b0705a5ea5a9a775abdd6ea9b30d39a216127857be1f6c52e",
+      "input_tokens": 181
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/159",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 4,
+      "prompt_sha256": "092a580e3d17166e487b4eef2bdf9307314cd6699ec8327ee5c0f4ec241b489d",
+      "input_tokens": 171
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/112",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "7be2e6db5f791c0da5980bc89433d6452f1ed1b6905e5ecdcd4534be49f5c749",
+      "input_tokens": 169
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/190",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "c0f4239851b7ef10b43cd914f4d8429f8cecb29475a1a7763ccd4dbcab4b1182",
+      "input_tokens": 161
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/99",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "d92ededab57b73d51f4efffe41aded629e38c339f513e6bea497cce7e15aa638",
+      "input_tokens": 170
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/113",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "08da8b2850f8ef38a09c8407c0d3547371a34e515948423026c33e2eaf5de01c",
+      "input_tokens": 179
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/246",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "11e2a6adab35975cfe97874d282bcea304449f95c3333dce8976731851bc2bd7",
+      "input_tokens": 185
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/53",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 4,
+      "prompt_sha256": "40e30a6ce2238673b4aa283548def7092c09b37ea09f847abaec574d282ac4bc",
+      "input_tokens": 173
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/21",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "c9cd9bfa48ab0c700af00e0374dc98c4334ed823a31ba3ebb2ddbe0e0c40e22d",
+      "input_tokens": 163
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/219",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "42ac1ccf887e8628ce077b1f770d1873bbf9acdf71d669e1ae05e4959a0be416",
+      "input_tokens": 179
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/26",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 4,
+      "prompt_sha256": "e8a7f7612c41149e98fbbc76ad1eb19df747b4d4efeeef053c43a21fce2ab9a9",
+      "input_tokens": 120
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/86",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "18e506541d73cfbb8347713c93b060f7f4b34f445218fa76872214446a297874",
+      "input_tokens": 159
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/166",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "a45bc9fba05c572d0fef07e3190d2e0ddf371f599fb45f97ffe2b8f53ce72104",
+      "input_tokens": 164
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/35",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "07d3f6682c74489b755b83bd94671bba87b42254ebd851fc6840294bbe7719f4",
+      "input_tokens": 181
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/30",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "88dd8284c378a7ea61b7e343f9a05aa75685df7b52053f77546d6e25795c6046",
+      "input_tokens": 173
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/237",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "8f53b1f796886245d3fc11707d37e4140997b2a20870c82f45a8c783b6ebcf92",
+      "input_tokens": 167
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/221",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 4,
+      "prompt_sha256": "21221f5a51ed9744e437bce20ed6f1a4bd4b222833fb74cb749d1600cf81228a",
+      "input_tokens": 162
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/171",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "175943a88833e7b8eb929574c7cbaba5fe45f9c1cad48ce054b4f95df98b8b90",
+      "input_tokens": 126
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/75",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 4,
+      "prompt_sha256": "65dbcd83dc32abd7941b63650292595d630302f79537ba674209543f1ea8b01c",
+      "input_tokens": 184
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/157",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "83dfe9a8163b539328888e2811cca140614f92ae368c1f7d1d94c031c3464e10",
+      "input_tokens": 183
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/16",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "b462f03c291b46c4246aace3b55bd0c11cbb18502c8c2f42f02f401530f70df6",
+      "input_tokens": 176
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/206",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "113460ddb1448c357a05fff0c819e38c2a26b7940cc6cbc666c2712185adcafe",
+      "input_tokens": 183
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/132",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 4,
+      "prompt_sha256": "36d16d26d4b2a1a0268a72bde6e9ff613e8fd749f2b8a961643db1142823680d",
+      "input_tokens": 183
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/185",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "cabd6543967aadf6dc4acba61737892a6a1f4d273d297186f0b601604dd12a3e",
+      "input_tokens": 179
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/186",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "2c8670b74f7845dcdc9630945aa5876ac2a31e181ac611c960bdb82de0550e36",
+      "input_tokens": 173
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/239",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "c96e6adc28ced317525e5eecc8980e140c366f7a18192f30a4cdd10141df39c8",
+      "input_tokens": 121
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/201",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "123fccda532f63b124b1ab85d175979c393d4f2277d0cb1ab4c11b4e7ae562e0",
+      "input_tokens": 118
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/146",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "5895ffc73aee48f834d88c4cc98857aa137ba2d4daae17591d21c1c23f329a1b",
+      "input_tokens": 184
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/50",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "3073aa196bcbbaabf163b4c868cb79a9169d162d878975620571788a24548938",
+      "input_tokens": 179
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/31",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "e978ddd98617b3e97bd4938dbbadaae071a1664276b385d6c981324a39e0ba8f",
+      "input_tokens": 175
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/249",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "d9cbdcc33f8e13fa08a4489e0dc268fccb28b9a7c2b8e022b22c2630b8d4c5e5",
+      "input_tokens": 174
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/191",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "e14d939ddc6fb590217de5796d821f90a26d09b7e04f81e3939acd6750b51874",
+      "input_tokens": 139
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/76",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "c39654243ebb1bd00da010ee533578acf67d4d4b3bba0e9f312941bf6c17da7b",
+      "input_tokens": 187
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/15",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "3f3fe3d489834df70e556372f3a9023bb5a91e8426864e6c72c45295d824b0dd",
+      "input_tokens": 175
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/93",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 4,
+      "prompt_sha256": "3a71c025a27f77a1de25dd68e81cbce7c07b283226ba8a9e68eb3268acb350a2",
+      "input_tokens": 118
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/103",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "75c6836bef96db3f2785768f41f51c8d49f7c5fec816419696e3892fb957f5fa",
+      "input_tokens": 185
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/183",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "a52ad7ec81e057774f6094d419ef042f65376d7911ecbdedbe2ee1efcf5a7a97",
+      "input_tokens": 172
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/179",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "a1fd3e877c6865da7a7de4503917eda4cf38822f350c0bf6493492ccde5839a4",
+      "input_tokens": 163
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/9",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "41611ecde2967f114d9c04e937c486b09434cb6963858101b07344d12f9cb3b2",
+      "input_tokens": 175
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/101",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "d1c4e07586e6068aa2b84758c42bbd831e850764fd92c16babaa6d3e39a435dc",
+      "input_tokens": 184
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/125",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "ef86fa9170362d157755ca999e19aba180ddc8a698c84915db48a1e7099999f7",
+      "input_tokens": 177
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/172",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "38542936cddb3990978a9925015b7c31c7eda43bc938ac62370c283a21cf3469",
+      "input_tokens": 184
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/88",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "efd708ff0f2651c2065503409c36996294f1f265d2aa65e4deec51206542d18b",
+      "input_tokens": 172
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/177",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "376ffd6f3486603100025bae5bc5e572dbc65f59e4e49d987d7548877fb7d439",
+      "input_tokens": 171
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/41",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "03eae28bef0363eb87df96a298ddfeb41b80c8649ca9ef278c49c7736300a474",
+      "input_tokens": 118
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/174",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 4,
+      "prompt_sha256": "2ca4a7111f3ada5a2643cafcd5d9c4dcf024a7dbcf52795ebb93aab08103551f",
+      "input_tokens": 175
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/188",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "9dd39870cef1a8ea5cc07b6f0089b45fc61c4d5d865d141d0f2db831b0fbbffb",
+      "input_tokens": 183
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/167",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "c25f969ebec0c1a73a918f0222ed44cc90785c4732e04bfa7a13c44062f3188c",
+      "input_tokens": 146
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/129",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "7aa3c4ae025f5715df6311f7a9fefdc0bbc9ceba12f1ea6339b90918a4dc59c8",
+      "input_tokens": 163
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/224",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "6ef3c16fd20330954e95cccde8b1327d5aeea10847ad5fb8a58b52be68ee3bed",
+      "input_tokens": 171
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/115",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "05d70e767b21ba2e2909e761cd0295bbd3c7a5dda6a70c510ec992c9c0f0b971",
+      "input_tokens": 160
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/6",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "97da01a18605902e25afafc400feac40a442672e4f5d1845b70ddeaa547e5a70",
+      "input_tokens": 151
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/102",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 4,
+      "prompt_sha256": "b5bf42b95e0ce48e73411dad108ef184986f8ce0e1aa8a278ba6a23b8554095b",
+      "input_tokens": 123
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/195",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "129806637a07d0692faa55e9de403c9a0d7e0c19796aba9a5bb9c7d524fa5345",
+      "input_tokens": 121
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/169",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "d1bd2aa14af8d388125ed5694b334a403ea6adccc4ddfe2cd8845540a09b28ef",
+      "input_tokens": 173
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/158",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "6db4aa44078d2f37ea8758f6461e9d8c3b6f960642daf1653b224ab87402244d",
+      "input_tokens": 176
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/176",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "27b832a85b3c36f3d27ab9f2f42888ac662ca7d9407c1c5db0c2f910f843ff8b",
+      "input_tokens": 118
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/79",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "d3197b0998eeb54e8e0a80b47c3ebe25554c252d59cdd33afe82870de978e3f2",
+      "input_tokens": 183
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/116",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "aeb7b56cb952b2f64fe9c65b1d550ef0ff0ccfd7822ea77078ec04aa9d1e51de",
+      "input_tokens": 172
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/227",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "7405b6bbc160e8d5223028046430f01dd30acee2797fcb6f596d7962a112c737",
+      "input_tokens": 176
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/236",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "132c05f606c8596cadc75096908672505d34f55ea0ca4266d9387037bbe0b5de",
+      "input_tokens": 171
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/164",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "ac30df257f54104b1a678e532cf408f5394234d93370c602cb63716cc166205d",
+      "input_tokens": 176
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/33",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "410610306a754d2fb9862029b01ea3ada61c6d43151d12cafbfd11bd3e3c9256",
+      "input_tokens": 181
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/145",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "d597934c4012941e7422b835b02a474aa468f697204c3d16ed0a96a2160dd106",
+      "input_tokens": 175
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/120",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 4,
+      "prompt_sha256": "9afedcd9102589a803bd385d00ebe6d323e26ee509241bb2bfe5db36a6d5b476",
+      "input_tokens": 179
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/170",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "c61fbcb772f9c1638bcda1ca26d35bf65d28ed8ea09ef7774fc6053a746c077c",
+      "input_tokens": 171
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/14",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "d47148e1fb462e11d407ba5cbe4050b6140a7460a65bee3e6293b6a5a1faf4bd",
+      "input_tokens": 166
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/47",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "e21b0c6372e56319a74b804907aac2fa378e0b9c399d7df857dd7d3509fd860d",
+      "input_tokens": 171
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/1",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "0912614396447a3b874de289f094ccf66b646256e862456afaaf440ed83fa2bb",
+      "input_tokens": 172
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/70",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "224c3692da5fa1b18153eff08ddde31e38462c7b6e86a89b9c68946ea61655b1",
+      "input_tokens": 171
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/131",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "639384d01533943f16a4e8320ff0a8d2d069fb2fe2bb143b6ac0c0b6599795e3",
+      "input_tokens": 183
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/20",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "23058eac1f1b19f0aa914a5de8e4846335238a62af22aaa85b04f38b63f05f97",
+      "input_tokens": 180
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/140",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "297dc8a6977079811e58f57f5437172be9c7a96a82516aa068a998b3f7846b25",
+      "input_tokens": 185
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/205",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "1ffc84e1ef2c1c3b4b5b6c10bce55e07100b5ccbe844b9657577e67552be01bd",
+      "input_tokens": 172
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/105",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "cd05d85baabdca5704e4dc45aeb4c4934d99a5f3f6fee7c6ed4f3c55ee8a4971",
+      "input_tokens": 178
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/194",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "f9fecd7f0bf9a39328dcbf49554e486510c3e5e7ab60f35110988531215ad89c",
+      "input_tokens": 169
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/210",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 4,
+      "prompt_sha256": "9323417c531c87ad21dc96f0c84dfe3c3f47cae51048f681457f1ce259ca0e72",
+      "input_tokens": 169
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/189",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "3d6cf58fbf6049aa64e68d984a0fa3fd6670779a443980bbab955b5fe93c4dc0",
+      "input_tokens": 179
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/245",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "be4b8393e2d6942cfea62f44542fa1a7e11b3a8868560a72601d78d04d372baf",
+      "input_tokens": 126
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/175",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "974fc6bf5a4afdbc9ab9edc7535029aa230d4b2f97129cea188f437c26ee8ef2",
+      "input_tokens": 171
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/56",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "3e280fc411d2572d621f01543c3b6705f3761e73696ff9902de451f86d1ebba8",
+      "input_tokens": 120
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/233",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 2,
+      "prompt_sha256": "72757b726b3ceec2e79e2ebc2e3738a6eda63ffdad23b72b8895a4eb45839c75",
+      "input_tokens": 184
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/128",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 3,
+      "prompt_sha256": "9a592dc00685480fe2b233f0639f075ca02ce47fb7b708ada89bc62d4bbefa1c",
+      "input_tokens": 181
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/95",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 0,
+      "prompt_sha256": "2c6936f65fed40f6784ba8c6d4265bfd53ba2e5a0dc11d6334d1dcf179ba8750",
+      "input_tokens": 173
+    },
+    {
+      "id": "bbh/logical_deduction_five_objects/63",
+      "source": "bbh",
+      "ability": "reasoning_bbh_logical5_subset",
+      "group": "bbh_logical5",
+      "answer_index": 1,
+      "prompt_sha256": "9bb6b75b70211a40211fdcef313c3600f3483431cb139c4360fd4a80978f976a",
+      "input_tokens": 165
+    },
+    {
+      "id": "boolq/validation/1875",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "928fdfbfdcaf1f12eccf2d4aa2967fb803bb6215b1c34b4a4ab5294d1c1c643d",
+      "input_tokens": 122
+    },
+    {
+      "id": "boolq/validation/1076",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "1d4c90f7937466854ec187971cdaac80b536970714facf4a2f92bdd24a51a803",
+      "input_tokens": 100
+    },
+    {
+      "id": "boolq/validation/2933",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "59d8c8023fece08040ec7896323144497c6a8de9eb9712e488153a5fb9bd5f8c",
+      "input_tokens": 70
+    },
+    {
+      "id": "boolq/validation/193",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "f50ea0d535e15078afbb416411c76e3dcca089ed060cf01859f80f3a58ce8576",
+      "input_tokens": 185
+    },
+    {
+      "id": "boolq/validation/1784",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "1ba5ced31577886c42b46445c51e18789a872d5238259bc5128706eee9e3848c",
+      "input_tokens": 65
+    },
+    {
+      "id": "boolq/validation/1049",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "2bd706081b0bcc38803922c3ff19666c8f41003f4375886d0a7dc71a3cf62ad3",
+      "input_tokens": 145
+    },
+    {
+      "id": "boolq/validation/3058",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "46299605dcb04667b5c12f2de629202664dbbefda411f7b0e912f3c7c9190965",
+      "input_tokens": 151
+    },
+    {
+      "id": "boolq/validation/1471",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "f53e9cf0794be1e0c259d499c7967e57335fea5ec02095a00a58b6f871a6b300",
+      "input_tokens": 204
+    },
+    {
+      "id": "boolq/validation/2694",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "4c1fb458d04546e797850c922fc75c58ef8c01cb88d76389872e86bf137d1b2d",
+      "input_tokens": 96
+    },
+    {
+      "id": "boolq/validation/2135",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "6886d35c1bc048b27a65b497c226c04ff5248b835dd489dd216259e22235c4a4",
+      "input_tokens": 141
+    },
+    {
+      "id": "boolq/validation/1197",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "cb9fa552c4692b05c298b4a1b848459fe446af12321e3c675c326776e2129f3b",
+      "input_tokens": 112
+    },
+    {
+      "id": "boolq/validation/1478",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "bdfb001be544ca7ea96baa6f8c4b684dd06b25072446ae88f35b4becc2ffba29",
+      "input_tokens": 165
+    },
+    {
+      "id": "boolq/validation/2401",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "175ef4866ad3ffa5e8c9dedbb59f49ffd8b2cd6196bd2b208158a0aad7f94916",
+      "input_tokens": 375
+    },
+    {
+      "id": "boolq/validation/1087",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "49d24bc4e21c4e50c91a01fc6f49d59554c1a6c90b8919b59fa4e4a9e64205d8",
+      "input_tokens": 98
+    },
+    {
+      "id": "boolq/validation/443",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "2fea4c87ee7b0e1f10dc51db6834787b374b90f86cc82274535fdc37a929f29c",
+      "input_tokens": 104
+    },
+    {
+      "id": "boolq/validation/2837",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "c23ade75db83c877107bbedf710346ad159e90b389727059e69bb5d3484c153c",
+      "input_tokens": 287
+    },
+    {
+      "id": "boolq/validation/2321",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "bab0ebcaf33e81b0a65e4084cefd67d26387be441b55386010578559543157d9",
+      "input_tokens": 238
+    },
+    {
+      "id": "boolq/validation/346",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "9e462904ca15f436f3dcea0dbecc03e425438a29e27a4428ee2afe21395b5230",
+      "input_tokens": 224
+    },
+    {
+      "id": "boolq/validation/1806",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "f9ff1221225c2b7908cbedc159839b0d67e3a8ae7d23bc8c8475434f7695a40d",
+      "input_tokens": 149
+    },
+    {
+      "id": "boolq/validation/2988",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "974c80ae9ca11011f5bceada1bdbc3ff6346f53d6846fccaa978478562e2cfe4",
+      "input_tokens": 112
+    },
+    {
+      "id": "boolq/validation/2727",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "8adff430bcc29a188aa715b067860a949d5a6071344721c572e7e204f5c923cd",
+      "input_tokens": 95
+    },
+    {
+      "id": "boolq/validation/1168",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "3dec6c330881c1c0b52bff7713f94f7d11eaeb76a37820ed41716e6a287b0015",
+      "input_tokens": 97
+    },
+    {
+      "id": "boolq/validation/1424",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "9c661ca2eb147f27f4a5c544142f310f9647dea014aac64b541e9aea2641f6fd",
+      "input_tokens": 364
+    },
+    {
+      "id": "boolq/validation/932",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "bd6db959b0e0b8fef20b315c727cccbeceae25341d83e219bf725c6c77ab3c1c",
+      "input_tokens": 55
+    },
+    {
+      "id": "boolq/validation/3245",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "c9a3f8c314fe7e3617b7f059159b617e4aab66d647ba48e166dc2be066a2f052",
+      "input_tokens": 152
+    },
+    {
+      "id": "boolq/validation/2409",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "3cc4a5f93d9a200fb1e14ebf76bfb799106447ce63a80182ec762f91bf59fff8",
+      "input_tokens": 110
+    },
+    {
+      "id": "boolq/validation/1442",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "ede3e6298000526df18dcf58ac8dafd620cf2b8097e0b32e9014962630b1d26f",
+      "input_tokens": 99
+    },
+    {
+      "id": "boolq/validation/175",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "0ac7f614bf89c163ae36d9ea7a832aad390e6384d2ab81fb06f2e6e7f639f503",
+      "input_tokens": 85
+    },
+    {
+      "id": "boolq/validation/2301",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "122adfd87b160a0e0232043331ceb62f804564a68bd8d5a6df09bca45b985b11",
+      "input_tokens": 220
+    },
+    {
+      "id": "boolq/validation/3247",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "dbe9a23772f96b68eb3b6df68cb2e1d26c9686cb6ad1e6915cabf9085a39dbfa",
+      "input_tokens": 107
+    },
+    {
+      "id": "boolq/validation/1480",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "2fc01be49c8428e1e9f95136b394a7dd684a1cd315b98d0068a9ec5e69466bd3",
+      "input_tokens": 101
+    },
+    {
+      "id": "boolq/validation/857",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "f8b7cff84676ba060fdcd3e2e3e0b94b4035f94651d260b709ac6a05460f3ad3",
+      "input_tokens": 85
+    },
+    {
+      "id": "boolq/validation/1923",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "c005e71a0ae5a69d3ae41977b3b172769fb2e17eeec57152faf7491db1250ad1",
+      "input_tokens": 91
+    },
+    {
+      "id": "boolq/validation/144",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "0e6552e80f39b4815fa559ec5383c5220723dce29455acf627f3b8409733a040",
+      "input_tokens": 125
+    },
+    {
+      "id": "boolq/validation/2185",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "2da8d16dbfd5126027610fb7c0fa974fe51f0942fb213a8048b00104a0eeecbd",
+      "input_tokens": 252
+    },
+    {
+      "id": "boolq/validation/1969",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "9b972c784247f6a81d17e96ab785a548470b2929666d32bfeec4bffe2bb5e299",
+      "input_tokens": 135
+    },
+    {
+      "id": "boolq/validation/2942",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "ae911fcf8760a6d8bf466436d893929251385be75e354155b3234602ed07d05d",
+      "input_tokens": 124
+    },
+    {
+      "id": "boolq/validation/1328",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "c39c3cbe2052743550ad742d5238a349b724d35bb699fbfc057b5111d8debc3a",
+      "input_tokens": 158
+    },
+    {
+      "id": "boolq/validation/2481",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "78a5fdb030a7aeea5a73e73532f8ee4d0fd2f6987ae876219608b7a5f9bf43a5",
+      "input_tokens": 158
+    },
+    {
+      "id": "boolq/validation/2350",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "f18d9acce0dacc7fd7cd6d36f63c989e3a8e5c17520aae6a95dddbd2e31f04f1",
+      "input_tokens": 132
+    },
+    {
+      "id": "boolq/validation/712",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "4382d2ccf90138e70ad8d1934107b4b97c0a1da755d1a243867ba1d192ac6cfb",
+      "input_tokens": 216
+    },
+    {
+      "id": "boolq/validation/1481",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "c55f28248fa6fd83c4d280fd928b41149eb3afaa397481f263ba1b4288fe0fae",
+      "input_tokens": 300
+    },
+    {
+      "id": "boolq/validation/602",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "bb67f1470b541488ed31bd0fab9636a44c6dd536afc95603ee8637dac7d3c0d4",
+      "input_tokens": 145
+    },
+    {
+      "id": "boolq/validation/3236",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "3b1320266ea4a6aedb867bc2a17babc7475f8a76b6334d017964648c1b3000a3",
+      "input_tokens": 108
+    },
+    {
+      "id": "boolq/validation/1975",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "619bcc47f07d05111547e1728a2c1a48f2f161976322c1f563e79826a8f5ba8e",
+      "input_tokens": 65
+    },
+    {
+      "id": "boolq/validation/649",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "f45a881f71fc445db411b017de286a6e43e774fdfdba961ff3d25b57728b3421",
+      "input_tokens": 136
+    },
+    {
+      "id": "boolq/validation/2839",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "3376d8a811b809c863444bc104237a5173f9fca1cc28352457b6f3ef629d883a",
+      "input_tokens": 90
+    },
+    {
+      "id": "boolq/validation/1514",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "1b4d47c0abf130902e98a9a719b32aeeb6ff43b22467278e216b37cb451fccb2",
+      "input_tokens": 111
+    },
+    {
+      "id": "boolq/validation/49",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "c60e432b6f845d1a1180b29f45f7847eb79a0978b2c78f6529369988bc30ee63",
+      "input_tokens": 138
+    },
+    {
+      "id": "boolq/validation/1259",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "07f19de0e5f0c63f3f535fb2ab2c00e55ec4327b55c87a8d91ec592d38e0a8e7",
+      "input_tokens": 82
+    },
+    {
+      "id": "boolq/validation/2940",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "b328b46cf9ee22b8d4c1bedfef9ca9675b620ebb5db4e9bbfddf19e3ecafc05b",
+      "input_tokens": 148
+    },
+    {
+      "id": "boolq/validation/2629",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "4a93341e32551f617de28542660c20e701e9101da5b8f637948be6de38a07b56",
+      "input_tokens": 144
+    },
+    {
+      "id": "boolq/validation/2146",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "e70e88d32dbb380ca596aa87bde40389a69dc6b62943e022d56ebaca04be9bc5",
+      "input_tokens": 215
+    },
+    {
+      "id": "boolq/validation/1507",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "903923ffaa575fbac4cf44d463a2f95868b12657f512b941024f6c55be1f0f73",
+      "input_tokens": 58
+    },
+    {
+      "id": "boolq/validation/3066",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "ff86c8ac7759fb249958215bf1527094019628a5ca96a11f5da6e82a00e7be5e",
+      "input_tokens": 99
+    },
+    {
+      "id": "boolq/validation/1272",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "e4c029a17fe82b5482c8a2d261ecd61519e49819ec1cd7e0008d23e34b16a6a3",
+      "input_tokens": 152
+    },
+    {
+      "id": "boolq/validation/1269",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "0cb558669526ab2fcfab2b4032be61ae95b2a29e67153b4def4d4b282bb4bb1f",
+      "input_tokens": 188
+    },
+    {
+      "id": "boolq/validation/2777",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "926c1a10409be13b787c2d9af3357249d09429868c42cb17400bc80472ff181f",
+      "input_tokens": 91
+    },
+    {
+      "id": "boolq/validation/1987",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "f77d1993964b95f0f2dc2724851b740a1347d51ca69269ad1114e8218ed1cb83",
+      "input_tokens": 172
+    },
+    {
+      "id": "boolq/validation/1802",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "6e930af5d35e88b535869dbfef034d5434e924656b25b830c5e309873bb07cba",
+      "input_tokens": 73
+    },
+    {
+      "id": "boolq/validation/259",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "f09085a39721676826aaeaa48ce535b85d56c1591e13057dcc08c510d0030f4b",
+      "input_tokens": 238
+    },
+    {
+      "id": "boolq/validation/3087",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "180b80cd34aaf503a0ac568075d4b93e191fca22305d8c5e6569fd2e32d37ede",
+      "input_tokens": 104
+    },
+    {
+      "id": "boolq/validation/2122",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "bbdb1fdc2431a1b7b449ecddd7a7b9b266df48ac0a3a9ae3c05afbf6ef87a0d0",
+      "input_tokens": 95
+    },
+    {
+      "id": "boolq/validation/2593",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "65b0e357bcdc8d2f89662b4a67df83924ed5167ea49327862e9b637edfd9d62d",
+      "input_tokens": 131
+    },
+    {
+      "id": "boolq/validation/1769",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "79044b7f58ae265246782d2678de023881e98f36026f4f87d2594577436f372c",
+      "input_tokens": 258
+    },
+    {
+      "id": "boolq/validation/476",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "d257d64bd9a94e457c95aadbd36e7dc7e013a6ed1e6f5f1fd491a9edfedd495d",
+      "input_tokens": 108
+    },
+    {
+      "id": "boolq/validation/43",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "5ce0d5163b73c0f899df19ad1ada3b57a79f4aca665734f8b492af3f4aec5080",
+      "input_tokens": 83
+    },
+    {
+      "id": "boolq/validation/3249",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "b9467df93e228dbc981dd8354a04af5149d1b11c8714debf8fe3b0c5fcb9215a",
+      "input_tokens": 218
+    },
+    {
+      "id": "boolq/validation/1505",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "ec45deb7897f7c9e9a2b81a37924dcdd94299020ef5f99bd3c9fd949d402824c",
+      "input_tokens": 176
+    },
+    {
+      "id": "boolq/validation/1071",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "2d3a54afb806964e70c3dabac26dac2d438a39cd1a4802f1a2b9f37dddfcf1f8",
+      "input_tokens": 78
+    },
+    {
+      "id": "boolq/validation/50",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "635002b455924f471c24c100d76205e0fced66d444760e7ada2c1aac464e8a23",
+      "input_tokens": 80
+    },
+    {
+      "id": "boolq/validation/647",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "3482d62f4d1e7f44fa5c1ff80bbca1b4779fa08fbb6a863fbb6ce0080b6d45e4",
+      "input_tokens": 114
+    },
+    {
+      "id": "boolq/validation/3140",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "ef249a0b0cd9fd7fcf9d3ada1db09b9889eb40d65a54c20c06623636dd8b0254",
+      "input_tokens": 144
+    },
+    {
+      "id": "boolq/validation/2686",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "cc287acd237bf967f851b5090abd0b0c91edad2ef3adbe78f17dff63ffe8590a",
+      "input_tokens": 203
+    },
+    {
+      "id": "boolq/validation/248",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "8ba53dcb354ea0045d22294c5b61a14fbce6230be7ed653651903322b6afc935",
+      "input_tokens": 250
+    },
+    {
+      "id": "boolq/validation/1104",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "23e2909a99133f65ce8e88b56f095cafc79bdecf036ff290cd83192aa11c23a9",
+      "input_tokens": 175
+    },
+    {
+      "id": "boolq/validation/406",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "f1a820632d922f5ee8bd036aff159d1dd598d0b31515758d80bfa02dde5cac95",
+      "input_tokens": 85
+    },
+    {
+      "id": "boolq/validation/2980",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "aba72d154394f60a218d4c424eeb17c8f6957b4e96c66c367e2448259055d4b9",
+      "input_tokens": 107
+    },
+    {
+      "id": "boolq/validation/1482",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "46f6de7cd86f037e60a9cab08948fe96eeedaa0390ad318793b0cd7417f8b5c0",
+      "input_tokens": 102
+    },
+    {
+      "id": "boolq/validation/1336",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "c128c0454fe96f0090d06fc733367d25b984e225559db07f39f4e96d8a8abc26",
+      "input_tokens": 112
+    },
+    {
+      "id": "boolq/validation/2457",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "02ca54c77cfe9947b52a27e3feb6da5aee76a1d07dd66a3c61c66b4a4f3e5538",
+      "input_tokens": 54
+    },
+    {
+      "id": "boolq/validation/3144",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "591d95d90de6cc1ed0be941e133ced30d5d7125824d19cca26c9b2a37c53f430",
+      "input_tokens": 76
+    },
+    {
+      "id": "boolq/validation/1705",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "bdd562f94ff5d10cd11e9a30068bd3ea396423811e7829a069d07df5b4f1dcb8",
+      "input_tokens": 187
+    },
+    {
+      "id": "boolq/validation/837",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "e733ca328815767dc25fc7f8a93398e2a33228c5465b72652ca0a92dc85c5212",
+      "input_tokens": 166
+    },
+    {
+      "id": "boolq/validation/1676",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "4ee85d021ad15ff3052bad64efff0cdf3137378810014e8eaae203740dcb5814",
+      "input_tokens": 128
+    },
+    {
+      "id": "boolq/validation/816",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "1a2a1ea99b9c35347e070e5331598d2d47c5e4a00fe931f715c17a2eba3635fa",
+      "input_tokens": 274
+    },
+    {
+      "id": "boolq/validation/3152",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "816716b74f887a850faab8d61ccd5ed03808bff343a500fd83c579491dd6111e",
+      "input_tokens": 244
+    },
+    {
+      "id": "boolq/validation/290",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "e30b6ae3cd57ace5a742a5d84fce4ff13a48ec7bd07ada5d3169170dd3c30b21",
+      "input_tokens": 110
+    },
+    {
+      "id": "boolq/validation/138",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "82b3460b1ebaf8ffb20333ef03139eacfbce5455a49f3099802883081da25fec",
+      "input_tokens": 138
+    },
+    {
+      "id": "boolq/validation/2169",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "07cdc16b5d7742cec797e6d2a040cc3b89805fe7445ee3c919ea4af1c5d5c7da",
+      "input_tokens": 154
+    },
+    {
+      "id": "boolq/validation/333",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "9819a1501f6ea9a99f7b9277b6f165ed45cebfdd806280cdfc4d30dd11b15232",
+      "input_tokens": 204
+    },
+    {
+      "id": "boolq/validation/1710",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "20aa282e1c64cac86520a4c6108e9bc4b038a22ca0a5efa5419400b1751bc332",
+      "input_tokens": 140
+    },
+    {
+      "id": "boolq/validation/2880",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "2146d108d7cf317afc77a9b4b61bbe4615fc9c4c118504166d490a112056289c",
+      "input_tokens": 242
+    },
+    {
+      "id": "boolq/validation/3162",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "eca59192ced89eccd052e2cedb41702b41a826cb9c312ef61303b2dfa9cb829d",
+      "input_tokens": 263
+    },
+    {
+      "id": "boolq/validation/1115",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "88bfbcdd242f42ca251f418f1c2c5c626b652dee1160746df4293aa7b3d7b787",
+      "input_tokens": 107
+    },
+    {
+      "id": "boolq/validation/629",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "662f6bfef9ec3373f3a8b1a3f1fd6c64eb382a23a454d0a06a90ef4c251692b3",
+      "input_tokens": 86
+    },
+    {
+      "id": "boolq/validation/1830",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "f3e4d2c99791af2bb4de66d5b37433a3bdc37186012e03a41c06eed6edc12b65",
+      "input_tokens": 96
+    },
+    {
+      "id": "boolq/validation/633",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "074e3489061ae784a742f501817914dd3d93b087bfaef34f332d0397ec0354f6",
+      "input_tokens": 287
+    },
+    {
+      "id": "boolq/validation/2587",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "1b0fcd60ec50d7481b502d0f05dfbb2a22db572978971954f92c05b152271d0f",
+      "input_tokens": 129
+    },
+    {
+      "id": "boolq/validation/2073",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "f217c3a46ce8a358915eace9863ac0d031a25a25e73350ea918390f231f6ee19",
+      "input_tokens": 145
+    },
+    {
+      "id": "boolq/validation/765",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "137023b451b394c18a7a0cfd80244e681a86fd282104627b5c769fbf04cbf84e",
+      "input_tokens": 145
+    },
+    {
+      "id": "boolq/validation/2213",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "2c53b0e283c0cb8acb9129151d8166c0156c58825c7f8bc4118fede04e6ca9bb",
+      "input_tokens": 134
+    },
+    {
+      "id": "boolq/validation/2435",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "d4b804df7b5b2f27e8e83b65d6e111f0569bfc85cd937acad8aacf69b7103340",
+      "input_tokens": 208
+    },
+    {
+      "id": "boolq/validation/2003",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "e3cee36726793e08c44a53d12264ad58847e873e96b221cb7fcbea573b947999",
+      "input_tokens": 75
+    },
+    {
+      "id": "boolq/validation/350",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "4ad0dbdbb82d212e4ff41c18667981c3119ce4a31786d633830de6f6c5dfb39d",
+      "input_tokens": 56
+    },
+    {
+      "id": "boolq/validation/727",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "e2a0af05c088eb6716ff01558d475c6b3f831f9e892ddf4b2e26ee9885d6a4da",
+      "input_tokens": 150
+    },
+    {
+      "id": "boolq/validation/1443",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "9c441cbb9d78fde76834780eeaea8cecf30589f0da79229779f26ba79b1a5f83",
+      "input_tokens": 153
+    },
+    {
+      "id": "boolq/validation/3174",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "fc577084115b80fa3f69ebc52dd54e4c8cd03ca25eebc3da48ca9d798503967e",
+      "input_tokens": 136
+    },
+    {
+      "id": "boolq/validation/1890",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "41bae269004d113be0162988a7e5bdfa5dfbb0c02e544580f3fec357c4b0a70c",
+      "input_tokens": 142
+    },
+    {
+      "id": "boolq/validation/2062",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "98b98cc23ff5e8c6170caef204c25ef27612236abcabac0409b515b39970aaa1",
+      "input_tokens": 224
+    },
+    {
+      "id": "boolq/validation/272",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "b092d43b3e3eb3f1076614175f07cb049c1c029b2a773021aeba85134a2791d9",
+      "input_tokens": 274
+    },
+    {
+      "id": "boolq/validation/3256",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "fa1d67cd902bb8ea0d9d2cbb1684d52e5f338a7893737cb3be067e7323a609aa",
+      "input_tokens": 171
+    },
+    {
+      "id": "boolq/validation/2776",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "d2aec07196beefb58126141a1259aed224c2cf7f1089126601b37e49ade95ae5",
+      "input_tokens": 261
+    },
+    {
+      "id": "boolq/validation/1910",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "8f067a64d743b3bbd58035cce7338d66b869eefdf3dc8fa49f6c323e74b0c5d4",
+      "input_tokens": 213
+    },
+    {
+      "id": "boolq/validation/3257",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "2e781e7cd5b37fef0a05e0eabe54615a738b79c3435d3c4487ce1ac01da3984c",
+      "input_tokens": 184
+    },
+    {
+      "id": "boolq/validation/453",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "1d7099476479a8c733d4b63b6c3f37569d38afac98c6c501e41354aa15054a60",
+      "input_tokens": 303
+    },
+    {
+      "id": "boolq/validation/446",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "e0ba9dc0635761866bb50c71be873867864d76cd307f06f991ebe585f630abeb",
+      "input_tokens": 95
+    },
+    {
+      "id": "boolq/validation/3160",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "e0a5110a3c928d057f77b8fa66f78c13572b109ab513f090584ebc2cc04472a1",
+      "input_tokens": 143
+    },
+    {
+      "id": "boolq/validation/2181",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "77a423fc36b6e4847d152999174e0de2272f6218c9354c189884a94f5010c7c1",
+      "input_tokens": 103
+    },
+    {
+      "id": "boolq/validation/1223",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "d6a7ba0f8d1e6897d07ed6b8cbb1923d9aeeab235a535218c865b80eea8d9fa1",
+      "input_tokens": 217
+    },
+    {
+      "id": "boolq/validation/1324",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "2b829d4e2a4fadeec73d3e15cc2131574008555b00532a89fd1620d71fde1ab3",
+      "input_tokens": 117
+    },
+    {
+      "id": "boolq/validation/123",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "7f31928508e113eda4a066246fcdf3d29b482c733cf20e2a1d5278a83eb42553",
+      "input_tokens": 119
+    },
+    {
+      "id": "boolq/validation/1797",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "749847d268aacb03b4f5db62c9bbb94506b17338f56a1b2743f491051c042769",
+      "input_tokens": 139
+    },
+    {
+      "id": "boolq/validation/2271",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "8030190a8056a5e79d9b6b5848da16138087d64dbef5cd2faafb6c00106c70b1",
+      "input_tokens": 188
+    },
+    {
+      "id": "boolq/validation/2459",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "a598af377a89b24c31ff282f0f660ff1e3bc2e4787af9cb51f09cb0ebeae6cb3",
+      "input_tokens": 146
+    },
+    {
+      "id": "boolq/validation/1721",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "d5a5f1f39eb922e5ae4927d7427de30490bcf6dbcf2275fabb4054efa4ee6604",
+      "input_tokens": 305
+    },
+    {
+      "id": "boolq/validation/230",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 0,
+      "prompt_sha256": "77e73337abcb07752f2feca566ee4c66cdcb10cc1244608ba43a197120909bd9",
+      "input_tokens": 120
+    },
+    {
+      "id": "boolq/validation/80",
+      "source": "boolq",
+      "ability": "reading_boolq_subset",
+      "group": "boolq",
+      "answer_index": 1,
+      "prompt_sha256": "adabc1ad4920b1af038f81d731a3773970f25fc1d67dcd5cb1d0cccefdf51cdc",
+      "input_tokens": 90
+    },
+    {
+      "id": "mmlu/business_ethics/60",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "business_ethics",
+      "answer_index": 3,
+      "prompt_sha256": "49b1a5df8421da1464390173e053df1c7e893a36bd9adfae957c6989dd5c92a8",
+      "input_tokens": 91
+    },
+    {
+      "id": "mmlu/business_ethics/25",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "business_ethics",
+      "answer_index": 1,
+      "prompt_sha256": "2a5776721ad215d00f95af2fb5cbb7a8655f22a17960f0c1dc60f07df4743c47",
+      "input_tokens": 69
+    },
+    {
+      "id": "mmlu/business_ethics/38",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "business_ethics",
+      "answer_index": 2,
+      "prompt_sha256": "1d73d39c1bfb16a1def19db88880d6820d951938a2c798322fdc8b8b0ece5ce5",
+      "input_tokens": 119
+    },
+    {
+      "id": "mmlu/business_ethics/76",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "business_ethics",
+      "answer_index": 0,
+      "prompt_sha256": "9bb6a2cfb7c701572706c750dcf6f60e40f669bee3356322ffb7d8202caac571",
+      "input_tokens": 87
+    },
+    {
+      "id": "mmlu/clinical_knowledge/47",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "clinical_knowledge",
+      "answer_index": 0,
+      "prompt_sha256": "e6ae547a44bf86f618409744f12a67f5d6383355f7d230cad20bd96a96866ea9",
+      "input_tokens": 48
+    },
+    {
+      "id": "mmlu/clinical_knowledge/219",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "clinical_knowledge",
+      "answer_index": 1,
+      "prompt_sha256": "e0e6c6e368edd9b79c156a1787a43ec095b5177cf52ed8ca8c1a48f8b867338f",
+      "input_tokens": 83
+    },
+    {
+      "id": "mmlu/clinical_knowledge/225",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "clinical_knowledge",
+      "answer_index": 0,
+      "prompt_sha256": "ee74d3719bbced07524643829eca83ceeea0bc792ffe7076f6bf548daa5a7b21",
+      "input_tokens": 77
+    },
+    {
+      "id": "mmlu/clinical_knowledge/43",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "clinical_knowledge",
+      "answer_index": 1,
+      "prompt_sha256": "79ff0df0488c8388782609c4469ac6a275d125984492c89435749d495b73f260",
+      "input_tokens": 57
+    },
+    {
+      "id": "mmlu/college_biology/64",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_biology",
+      "answer_index": 3,
+      "prompt_sha256": "4e7bc1b36411748f17c6565ef8236e15a9a113374ff8ad70ba5e2bbda509ab8c",
+      "input_tokens": 119
+    },
+    {
+      "id": "mmlu/college_biology/104",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_biology",
+      "answer_index": 3,
+      "prompt_sha256": "6ba397673abfc4afd7e52568c894e051d8e56004061b664cdaf663971ee060a4",
+      "input_tokens": 78
+    },
+    {
+      "id": "mmlu/college_biology/71",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_biology",
+      "answer_index": 2,
+      "prompt_sha256": "c8ffed05357121537fb016bbabba81643d172022ba4500e8b6420c59f15788b5",
+      "input_tokens": 63
+    },
+    {
+      "id": "mmlu/college_biology/37",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_biology",
+      "answer_index": 0,
+      "prompt_sha256": "8ee2b613f842b3b3fcc5de76d7ea1a5e3019a52d7e69a4a10acd303bf370693b",
+      "input_tokens": 125
+    },
+    {
+      "id": "mmlu/college_chemistry/12",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_chemistry",
+      "answer_index": 0,
+      "prompt_sha256": "cd2471c7bbfd2d3a8d0f42040a34b221dfec674bf2500ff55e572f2dafd80a0c",
+      "input_tokens": 79
+    },
+    {
+      "id": "mmlu/college_chemistry/68",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_chemistry",
+      "answer_index": 3,
+      "prompt_sha256": "7239ca79dde91f514cc3578267e9e970f8e9e51702b51ac5f565f6c00ea645b9",
+      "input_tokens": 53
+    },
+    {
+      "id": "mmlu/college_chemistry/63",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_chemistry",
+      "answer_index": 3,
+      "prompt_sha256": "d801b79ad6631ac15e79704513fb9056ad2399acaf4567c63e4952f3fbc4b501",
+      "input_tokens": 109
+    },
+    {
+      "id": "mmlu/college_chemistry/65",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_chemistry",
+      "answer_index": 3,
+      "prompt_sha256": "b6d55919bff51a3e1e0e714e458fae7d4d8c53f522d0f491457f4b6a79e8505c",
+      "input_tokens": 106
+    },
+    {
+      "id": "mmlu/college_computer_science/75",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_computer_science",
+      "answer_index": 2,
+      "prompt_sha256": "1ab5d681ef506d5a1820ea9c221b3b4731b7808f513b7724c0892a844ab7b690",
+      "input_tokens": 123
+    },
+    {
+      "id": "mmlu/college_computer_science/73",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_computer_science",
+      "answer_index": 2,
+      "prompt_sha256": "486a597a1bfd70e6e9c323767bf362a43d3bf8fc49f62e9a2cc456699af00195",
+      "input_tokens": 122
+    },
+    {
+      "id": "mmlu/college_computer_science/6",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_computer_science",
+      "answer_index": 2,
+      "prompt_sha256": "85be2f4f5172de491c00f118158bfd78c19f7d021607980fca963440558d38e5",
+      "input_tokens": 174
+    },
+    {
+      "id": "mmlu/college_computer_science/18",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_computer_science",
+      "answer_index": 0,
+      "prompt_sha256": "e45c573189759182a8d868b37e0915b068ca8b235671353b1590b147d190a569",
+      "input_tokens": 86
+    },
+    {
+      "id": "mmlu/college_mathematics/40",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_mathematics",
+      "answer_index": 1,
+      "prompt_sha256": "ddeb91af18b61620dfd65147a23105925d5b00320f33d7bf92ba3832b7b15be2",
+      "input_tokens": 67
+    },
+    {
+      "id": "mmlu/college_mathematics/53",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_mathematics",
+      "answer_index": 2,
+      "prompt_sha256": "5bc0dbed3f7a1088b01f1b65825bc6ccbc4154f4befa84a7fff92026d41ea43a",
+      "input_tokens": 57
+    },
+    {
+      "id": "mmlu/college_mathematics/94",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_mathematics",
+      "answer_index": 3,
+      "prompt_sha256": "d683e2574d4ec5133c06e34be4f64db83c2e1e547ead45cb925264e9ca79d468",
+      "input_tokens": 38
+    },
+    {
+      "id": "mmlu/college_mathematics/51",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_mathematics",
+      "answer_index": 1,
+      "prompt_sha256": "2bc6a537a9db64207b1b050c33f936811c288464c11f7517a49e46748974ede3",
+      "input_tokens": 50
+    },
+    {
+      "id": "mmlu/college_medicine/140",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_medicine",
+      "answer_index": 0,
+      "prompt_sha256": "0239cf99d0857400ee8b81549946491a443cf378eb6601c8de0faa0c90f5e411",
+      "input_tokens": 113
+    },
+    {
+      "id": "mmlu/college_medicine/38",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_medicine",
+      "answer_index": 3,
+      "prompt_sha256": "f9b7b3b15016d217b88cb73907e99e961a5de089991de946a36a37feedfcb4cf",
+      "input_tokens": 86
+    },
+    {
+      "id": "mmlu/college_medicine/43",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_medicine",
+      "answer_index": 2,
+      "prompt_sha256": "e046f2dfc193560b3fd695fe71683ba06288ab566e9e3f04f6bf06923c367745",
+      "input_tokens": 144
+    },
+    {
+      "id": "mmlu/college_medicine/139",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_medicine",
+      "answer_index": 2,
+      "prompt_sha256": "6d37a6141a854d99b4f11380273bbce5c811817f7cbb5a5926fe1d05851bdafe",
+      "input_tokens": 62
+    },
+    {
+      "id": "mmlu/college_physics/66",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_physics",
+      "answer_index": 1,
+      "prompt_sha256": "829158f3e15122071e35c3e4c9c7893bdea000ab7fc811a8eded27027d1b70b5",
+      "input_tokens": 75
+    },
+    {
+      "id": "mmlu/college_physics/45",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_physics",
+      "answer_index": 1,
+      "prompt_sha256": "02a984b419033399dbea653b1d1b11f7906f5933d56bcdceea2a3cf7f2f96995",
+      "input_tokens": 91
+    },
+    {
+      "id": "mmlu/college_physics/47",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_physics",
+      "answer_index": 3,
+      "prompt_sha256": "379cb09392f169400df3ebbfe0755e7a826c06aa817abcca0129f5efa5d04425",
+      "input_tokens": 75
+    },
+    {
+      "id": "mmlu/college_physics/25",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "college_physics",
+      "answer_index": 3,
+      "prompt_sha256": "fb341f533a104580a9749deeb2ce3f49ca5b69ff7a759bc58d08c07e6b0b447e",
+      "input_tokens": 56
+    },
+    {
+      "id": "mmlu/computer_security/40",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "computer_security",
+      "answer_index": 1,
+      "prompt_sha256": "639d1c2099e27df9205d397b30a16dfd26ef44bb3ea16ff23524af04b19ab9d8",
+      "input_tokens": 52
+    },
+    {
+      "id": "mmlu/computer_security/95",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "computer_security",
+      "answer_index": 0,
+      "prompt_sha256": "ecf715b3556e559d2af0e86edc5ed5830d3a5745db09c3a11b568203c361c48f",
+      "input_tokens": 50
+    },
+    {
+      "id": "mmlu/computer_security/88",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "computer_security",
+      "answer_index": 3,
+      "prompt_sha256": "86ea6355976532f6bc95bef5864ea0d86a4e6e4f4b2f5e90a2689fc70ccf7762",
+      "input_tokens": 73
+    },
+    {
+      "id": "mmlu/computer_security/51",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "computer_security",
+      "answer_index": 1,
+      "prompt_sha256": "36ee18a77b6f4e3325e7ec369a313b92e3a1786461a3ab0018776b413b25142b",
+      "input_tokens": 50
+    },
+    {
+      "id": "mmlu/conceptual_physics/219",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "conceptual_physics",
+      "answer_index": 3,
+      "prompt_sha256": "9d23a1e1bb5a5e15c9c6bdff82ea6f85e2850ebc3f619142687083d20748e7ad",
+      "input_tokens": 48
+    },
+    {
+      "id": "mmlu/conceptual_physics/56",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "conceptual_physics",
+      "answer_index": 2,
+      "prompt_sha256": "d70b39c800511ea6e7c56356a84a8675e93e80b782bea3b7013e7f4abc31e011",
+      "input_tokens": 54
+    },
+    {
+      "id": "mmlu/conceptual_physics/83",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "conceptual_physics",
+      "answer_index": 0,
+      "prompt_sha256": "5277780cd94acdebbb72153e4e07599fb6cd80bb632c2db0b75cb24f37f6aef3",
+      "input_tokens": 64
+    },
+    {
+      "id": "mmlu/conceptual_physics/119",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "conceptual_physics",
+      "answer_index": 2,
+      "prompt_sha256": "8b7bb08370c66cbaffd6734c32baeb0b3db651e7585a5e7e76f02bf2727d2d18",
+      "input_tokens": 53
+    },
+    {
+      "id": "mmlu/econometrics/4",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "econometrics",
+      "answer_index": 2,
+      "prompt_sha256": "7d5cffa15dcbb9631e6bc62f9547ccf75a5145a69410e678e8b1f299d7096e36",
+      "input_tokens": 86
+    },
+    {
+      "id": "mmlu/econometrics/45",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "econometrics",
+      "answer_index": 2,
+      "prompt_sha256": "ef2851abbd0490cb84cbf6f6a87e0a00d94f06b615bbf56049dda2048247988b",
+      "input_tokens": 116
+    },
+    {
+      "id": "mmlu/econometrics/10",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "econometrics",
+      "answer_index": 1,
+      "prompt_sha256": "8e5712a33b7be9358d6bf5a18dcc80612834f2fd476379d25bfeaaac274b57bd",
+      "input_tokens": 165
+    },
+    {
+      "id": "mmlu/econometrics/18",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "econometrics",
+      "answer_index": 3,
+      "prompt_sha256": "9585819584b68e522404c747ea1a55e2cc704651080943d6a2575dcd1678eda0",
+      "input_tokens": 54
+    },
+    {
+      "id": "mmlu/electrical_engineering/115",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "electrical_engineering",
+      "answer_index": 2,
+      "prompt_sha256": "dd17d935e6b293a51853cc621e17153fea7bffb5b504e245a236dc479f3c08ad",
+      "input_tokens": 48
+    },
+    {
+      "id": "mmlu/electrical_engineering/24",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "electrical_engineering",
+      "answer_index": 3,
+      "prompt_sha256": "26ea02f060a3ac447a501ee52177331921e730abf3192bec52e9cc460b469740",
+      "input_tokens": 54
+    },
+    {
+      "id": "mmlu/electrical_engineering/45",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "electrical_engineering",
+      "answer_index": 1,
+      "prompt_sha256": "86125e33fcbdc48087aefa4d7e0f08e020691cd0f8d6411e5b8a395ceeb3c35a",
+      "input_tokens": 41
+    },
+    {
+      "id": "mmlu/electrical_engineering/10",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "electrical_engineering",
+      "answer_index": 1,
+      "prompt_sha256": "35caa4dd0e0ace172c074b48f631415ebc7a54d340b9d435cd0d16643e149e1a",
+      "input_tokens": 69
+    },
+    {
+      "id": "mmlu/elementary_mathematics/79",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "elementary_mathematics",
+      "answer_index": 0,
+      "prompt_sha256": "098525daf118e3c458b292bf145aa765ed699d6f8a723013cb604400687788ea",
+      "input_tokens": 89
+    },
+    {
+      "id": "mmlu/elementary_mathematics/9",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "elementary_mathematics",
+      "answer_index": 3,
+      "prompt_sha256": "2419e0e88283a4070390f3cbd0892e904021532dc258d3f332cfe159b4de61ec",
+      "input_tokens": 50
+    },
+    {
+      "id": "mmlu/elementary_mathematics/241",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "elementary_mathematics",
+      "answer_index": 1,
+      "prompt_sha256": "ff2d60ff1a4bbf75f9528abfee296a0c298c8a8b20910cbbe0fba8b6240af5f8",
+      "input_tokens": 41
+    },
+    {
+      "id": "mmlu/elementary_mathematics/35",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "elementary_mathematics",
+      "answer_index": 0,
+      "prompt_sha256": "b834f476eef30d16d20eea02e923a335716587a9362838bdd252aeb263a85a4d",
+      "input_tokens": 75
+    },
+    {
+      "id": "mmlu/formal_logic/114",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "formal_logic",
+      "answer_index": 3,
+      "prompt_sha256": "7da41a9e7161bec62214ddbdc42caaf662e082f18d45a22782653d802921401f",
+      "input_tokens": 139
+    },
+    {
+      "id": "mmlu/formal_logic/84",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "formal_logic",
+      "answer_index": 3,
+      "prompt_sha256": "67a57703fee798bb1058ba6bd7cb22272270d36ee730f4456d846bd035b35201",
+      "input_tokens": 225
+    },
+    {
+      "id": "mmlu/formal_logic/55",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "formal_logic",
+      "answer_index": 1,
+      "prompt_sha256": "e9a7952b1ce9782183eec636a9785ad7ced9820cf2fc2a60b013e7b3cf91c7a6",
+      "input_tokens": 70
+    },
+    {
+      "id": "mmlu/formal_logic/104",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "formal_logic",
+      "answer_index": 3,
+      "prompt_sha256": "dc21515f1382b70ad59af64693cecd4da71e6800f742b31cd1ce373cd4744103",
+      "input_tokens": 135
+    },
+    {
+      "id": "mmlu/global_facts/48",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "global_facts",
+      "answer_index": 2,
+      "prompt_sha256": "250b7704af77949e2421220b393acea11c4701c5f347240b6cb4e4a999d660aa",
+      "input_tokens": 64
+    },
+    {
+      "id": "mmlu/global_facts/67",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "global_facts",
+      "answer_index": 1,
+      "prompt_sha256": "1e0fceaec680d4a25ffb69610cdd544353bc9fd3b3ca688898ee6f8f61f4911d",
+      "input_tokens": 45
+    },
+    {
+      "id": "mmlu/global_facts/40",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "global_facts",
+      "answer_index": 1,
+      "prompt_sha256": "6b908f213491b1dace04cf710acc1819168e50c1dfdd89dec3897b0c83dfa384",
+      "input_tokens": 52
+    },
+    {
+      "id": "mmlu/global_facts/3",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "global_facts",
+      "answer_index": 0,
+      "prompt_sha256": "7c5c090af4b65a933907753ce680b32c0a6a57bd4ce9f9719a8c6d921298a0e7",
+      "input_tokens": 47
+    },
+    {
+      "id": "mmlu/high_school_biology/134",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_biology",
+      "answer_index": 1,
+      "prompt_sha256": "74af70bfcd821fcc62571524c4536368ed63d91b138e8582935eaebf084e0dcc",
+      "input_tokens": 111
+    },
+    {
+      "id": "mmlu/high_school_biology/12",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_biology",
+      "answer_index": 3,
+      "prompt_sha256": "5873523281df2775a93f873dc171d2d9bd098fcfb8c5408c4567cf885d170089",
+      "input_tokens": 87
+    },
+    {
+      "id": "mmlu/high_school_biology/28",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_biology",
+      "answer_index": 2,
+      "prompt_sha256": "ed2cc82d5c1aadb8dd06de1a122d21f379f06651cc9b2e40431b79cefcf06d3c",
+      "input_tokens": 111
+    },
+    {
+      "id": "mmlu/high_school_biology/101",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_biology",
+      "answer_index": 3,
+      "prompt_sha256": "036aceac8dcb0ed24ee4846eda9eb23a19c9ad43dc8e793d029dccbb15900cdd",
+      "input_tokens": 167
+    },
+    {
+      "id": "mmlu/high_school_chemistry/159",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_chemistry",
+      "answer_index": 2,
+      "prompt_sha256": "d70c77482bcaed60b952a6a7c6cca7a87e607d02e951c3be4998981acc096bd1",
+      "input_tokens": 123
+    },
+    {
+      "id": "mmlu/high_school_chemistry/176",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_chemistry",
+      "answer_index": 3,
+      "prompt_sha256": "8ebad51b75f8f35ee9ed4e0b83dcbb82f2ae64f35d91682b83b447ad5966d8bb",
+      "input_tokens": 61
+    },
+    {
+      "id": "mmlu/high_school_chemistry/83",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_chemistry",
+      "answer_index": 1,
+      "prompt_sha256": "7c7065d68ed8da6e8e46a4e19f2a5665005439dc2d4bf4530ffcc4e784ed0b83",
+      "input_tokens": 45
+    },
+    {
+      "id": "mmlu/high_school_chemistry/192",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_chemistry",
+      "answer_index": 3,
+      "prompt_sha256": "11c186de9ec37a0183a53e7abdb3541a5a66bda425701aa69a9ca64e7a5f67dc",
+      "input_tokens": 66
+    },
+    {
+      "id": "mmlu/high_school_computer_science/40",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_computer_science",
+      "answer_index": 1,
+      "prompt_sha256": "6f6b6d3ddef5ddcbe143ceacb0fd8d8f584324422c62cdf1d16a6c926e971563",
+      "input_tokens": 189
+    },
+    {
+      "id": "mmlu/high_school_computer_science/68",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_computer_science",
+      "answer_index": 3,
+      "prompt_sha256": "9adad0c302343783af9a123f59c7853b1f0de63b7e5cb4e8c06932a806a1bc38",
+      "input_tokens": 45
+    },
+    {
+      "id": "mmlu/high_school_computer_science/34",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_computer_science",
+      "answer_index": 2,
+      "prompt_sha256": "743d675537d39cbc8beabd013ebe9d9f189cbc472f38b6b826b3c980ceddb6f4",
+      "input_tokens": 86
+    },
+    {
+      "id": "mmlu/high_school_computer_science/67",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_computer_science",
+      "answer_index": 2,
+      "prompt_sha256": "c9b9fcd90fe51544137fc85258193cc40c6ce7bd8f3a2bf53f79f1a77aa7f379",
+      "input_tokens": 186
+    },
+    {
+      "id": "mmlu/high_school_european_history/108",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_european_history",
+      "answer_index": 1,
+      "prompt_sha256": "4e863ec3b46229026e9b26afdcd1a76f855716866e04155e31c858fc98064a2c",
+      "input_tokens": 349
+    },
+    {
+      "id": "mmlu/high_school_european_history/97",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_european_history",
+      "answer_index": 3,
+      "prompt_sha256": "4edd8d157161cce227e19d0bfb801b75d7c2a4cf69aa8ccd984fcd39844ac87b",
+      "input_tokens": 401
+    },
+    {
+      "id": "mmlu/high_school_european_history/55",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_european_history",
+      "answer_index": 1,
+      "prompt_sha256": "06a3dce996e6215b13768d9f26ccce7dcc4e8ea292536342a5123e123322da6a",
+      "input_tokens": 274
+    },
+    {
+      "id": "mmlu/high_school_european_history/31",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_european_history",
+      "answer_index": 3,
+      "prompt_sha256": "11f96339529e6e9e50fc892749b14a64b80f4800c87b4e6dcbd02293f1053ab5",
+      "input_tokens": 496
+    },
+    {
+      "id": "mmlu/high_school_geography/37",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_geography",
+      "answer_index": 2,
+      "prompt_sha256": "b204017776128842a56039161091a2763ca42b0d88ee1a4b327cafd37494ffc5",
+      "input_tokens": 51
+    },
+    {
+      "id": "mmlu/high_school_geography/51",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_geography",
+      "answer_index": 3,
+      "prompt_sha256": "32a73dbbc53bc221336179e10b72389682ae35b2474baa7070d04bd17415cbc5",
+      "input_tokens": 46
+    },
+    {
+      "id": "mmlu/high_school_geography/120",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_geography",
+      "answer_index": 3,
+      "prompt_sha256": "ca4b9ba8ac2864a56ee2d1cdc9d446461f6a83fbd98b2cbfd6c352a985083017",
+      "input_tokens": 48
+    },
+    {
+      "id": "mmlu/high_school_geography/22",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_geography",
+      "answer_index": 3,
+      "prompt_sha256": "621017faf314af17b67c064fb64202bed7e7b39086f7e582ecd5e0152c15d881",
+      "input_tokens": 49
+    },
+    {
+      "id": "mmlu/high_school_government_and_politics/48",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_government_and_politics",
+      "answer_index": 2,
+      "prompt_sha256": "a0d17430ded5076b744a1ef6cd3e625527b6d60a069dcf76b00064ee51dbac31",
+      "input_tokens": 59
+    },
+    {
+      "id": "mmlu/high_school_government_and_politics/172",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_government_and_politics",
+      "answer_index": 1,
+      "prompt_sha256": "6fa3e63ffbd2a82ffce31f27610d7ea53ea6824846231e2666fbee358aae9bc8",
+      "input_tokens": 61
+    },
+    {
+      "id": "mmlu/high_school_government_and_politics/174",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_government_and_politics",
+      "answer_index": 3,
+      "prompt_sha256": "e3197dd5bb8fb6893379acc30daf6ff98ca138cc2f38b334de1813d79ba43b0c",
+      "input_tokens": 50
+    },
+    {
+      "id": "mmlu/high_school_government_and_politics/151",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_government_and_politics",
+      "answer_index": 2,
+      "prompt_sha256": "3dc08d5b67a1989442064f2ecbaddfeb7181522f1866ac34a379314b0a7eea3d",
+      "input_tokens": 105
+    },
+    {
+      "id": "mmlu/high_school_macroeconomics/157",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_macroeconomics",
+      "answer_index": 3,
+      "prompt_sha256": "e5164b86381ffb826d02371e11d48a87fca049f090b426c30de2d1d974504ec1",
+      "input_tokens": 77
+    },
+    {
+      "id": "mmlu/high_school_macroeconomics/56",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_macroeconomics",
+      "answer_index": 3,
+      "prompt_sha256": "caeba033d147d505f7c4bc2000fb58581a3cbc4d0b22531c5fe5b8d8d70aaa72",
+      "input_tokens": 90
+    },
+    {
+      "id": "mmlu/high_school_macroeconomics/246",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_macroeconomics",
+      "answer_index": 3,
+      "prompt_sha256": "6357f5dfbe97d8a40d80cdb3020e358b768e127d3e5060d7afc788a6f41cc2dc",
+      "input_tokens": 129
+    },
+    {
+      "id": "mmlu/high_school_macroeconomics/295",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_macroeconomics",
+      "answer_index": 0,
+      "prompt_sha256": "31043fdb0fadb3dc81d1086799c715d85db583392d45e074dc23089b7e4c54e8",
+      "input_tokens": 94
+    },
+    {
+      "id": "mmlu/high_school_mathematics/218",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_mathematics",
+      "answer_index": 0,
+      "prompt_sha256": "540c5837f10621a2c9c09ed55af8f92f2554ef75f3238346c74131f545f4c6b3",
+      "input_tokens": 95
+    },
+    {
+      "id": "mmlu/high_school_mathematics/178",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_mathematics",
+      "answer_index": 0,
+      "prompt_sha256": "5ae3843fc5b404a7ddc146c4ef403eafd1552d39b7490d2ad2f10897cf627fd4",
+      "input_tokens": 89
+    },
+    {
+      "id": "mmlu/high_school_mathematics/232",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_mathematics",
+      "answer_index": 0,
+      "prompt_sha256": "b94cc17808f12a47f61b203d5232a384c8b7a48d20603afd097653e70891b850",
+      "input_tokens": 78
+    },
+    {
+      "id": "mmlu/high_school_mathematics/247",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_mathematics",
+      "answer_index": 2,
+      "prompt_sha256": "7934dbab207c1661844642165337ca918adf966e34e8ce392dc41a79c3df1ce4",
+      "input_tokens": 71
+    },
+    {
+      "id": "mmlu/high_school_microeconomics/26",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_microeconomics",
+      "answer_index": 1,
+      "prompt_sha256": "62da623c6e7a24e664db8b413522d7b16ff308cd8aa4175bb9b2b38d7446af71",
+      "input_tokens": 72
+    },
+    {
+      "id": "mmlu/high_school_microeconomics/114",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_microeconomics",
+      "answer_index": 3,
+      "prompt_sha256": "36e583f02038f463cd18630514639dea885476e026e4b5e8ee1ada31e4bd83e9",
+      "input_tokens": 60
+    },
+    {
+      "id": "mmlu/high_school_microeconomics/60",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_microeconomics",
+      "answer_index": 1,
+      "prompt_sha256": "7e9a2c3a511867e95f01c47ff4535422261ae94031b80936a6c8f09306db32c1",
+      "input_tokens": 81
+    },
+    {
+      "id": "mmlu/high_school_microeconomics/192",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_microeconomics",
+      "answer_index": 0,
+      "prompt_sha256": "9ee431d4ffd3dc772d31a577608061e81a2ef504126c2e9f17f783840752b4a7",
+      "input_tokens": 75
+    },
+    {
+      "id": "mmlu/high_school_physics/25",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_physics",
+      "answer_index": 3,
+      "prompt_sha256": "ac062ff8d86eedfe535ca369d620164608117e08c4337e0a3a10519261b76543",
+      "input_tokens": 161
+    },
+    {
+      "id": "mmlu/high_school_physics/123",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_physics",
+      "answer_index": 0,
+      "prompt_sha256": "4d5054c49de7efac5e7ab57f06c5e9757ed815ce2f61dd7e833c71507f702ea2",
+      "input_tokens": 76
+    },
+    {
+      "id": "mmlu/high_school_physics/49",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_physics",
+      "answer_index": 3,
+      "prompt_sha256": "6e79c95616e170610560e9384f831f641777ae71eeb3f1dbcf3967d22141a991",
+      "input_tokens": 173
+    },
+    {
+      "id": "mmlu/high_school_physics/145",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_physics",
+      "answer_index": 2,
+      "prompt_sha256": "4bd78b97644d23eff4f9ec5b9dd2359d56e558e56f777fca6ec9eafd82533395",
+      "input_tokens": 87
+    },
+    {
+      "id": "mmlu/high_school_psychology/430",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_psychology",
+      "answer_index": 3,
+      "prompt_sha256": "8262f0a9a198ac05f5850308474bd69523e616db69d2932577d5bb114b38dbfd",
+      "input_tokens": 53
+    },
+    {
+      "id": "mmlu/high_school_psychology/421",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_psychology",
+      "answer_index": 2,
+      "prompt_sha256": "9d32b2bc516e5664ce2e7840ee76f7995b8549251d0aca44a25f384c59a4f7a6",
+      "input_tokens": 59
+    },
+    {
+      "id": "mmlu/high_school_psychology/143",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_psychology",
+      "answer_index": 2,
+      "prompt_sha256": "43a8c1754648e7cc4508961d4eb3fd4f47bae8c85c775e8c75ae786b62726263",
+      "input_tokens": 57
+    },
+    {
+      "id": "mmlu/high_school_psychology/356",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_psychology",
+      "answer_index": 3,
+      "prompt_sha256": "94c6823036b773faf2fb6c671a29c673c339889b8b0fcc23242ad7e54ce1a956",
+      "input_tokens": 63
+    },
+    {
+      "id": "mmlu/high_school_statistics/206",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_statistics",
+      "answer_index": 3,
+      "prompt_sha256": "22c68295bac25c51e66f0f2b15c19812975c858ebb0b72887761a4fbdf6b6ee9",
+      "input_tokens": 110
+    },
+    {
+      "id": "mmlu/high_school_statistics/139",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_statistics",
+      "answer_index": 2,
+      "prompt_sha256": "09d23a2283a7b6de49d5f0ed91f2c70aa1c6e24e2683f49e7010c767ac05cae3",
+      "input_tokens": 121
+    },
+    {
+      "id": "mmlu/high_school_statistics/127",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_statistics",
+      "answer_index": 3,
+      "prompt_sha256": "bc8daa919a6741ce4f542aa2c7e1a581fc631580f7be752fca726673f20d20e9",
+      "input_tokens": 113
+    },
+    {
+      "id": "mmlu/high_school_statistics/138",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_statistics",
+      "answer_index": 3,
+      "prompt_sha256": "e4411d0d3f460870125fdbf8c93982294c729555f8c77e66b1f7bd687e3ca49f",
+      "input_tokens": 142
+    },
+    {
+      "id": "mmlu/high_school_us_history/16",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_us_history",
+      "answer_index": 1,
+      "prompt_sha256": "74742253602de781c85b34149d62d2ab5babfb53a4075253c91e9ed6b78b1288",
+      "input_tokens": 353
+    },
+    {
+      "id": "mmlu/high_school_us_history/124",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_us_history",
+      "answer_index": 2,
+      "prompt_sha256": "1d357e180b9a9974e567961e67448c7b65c5e5fdebd84054d245b1d7f3b9d76d",
+      "input_tokens": 244
+    },
+    {
+      "id": "mmlu/high_school_us_history/3",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_us_history",
+      "answer_index": 1,
+      "prompt_sha256": "83f6b03d236fe784995f2c982e21b582cdced79f9265453ce34ea8df92f6f48a",
+      "input_tokens": 376
+    },
+    {
+      "id": "mmlu/high_school_us_history/200",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_us_history",
+      "answer_index": 3,
+      "prompt_sha256": "0089f6dc67f1b2491c1968ee498c0184a7eb5cb1c907ffb9d3f3c2aa0c6f7ca5",
+      "input_tokens": 243
+    },
+    {
+      "id": "mmlu/high_school_world_history/0",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_world_history",
+      "answer_index": 0,
+      "prompt_sha256": "e3bd97bfed58ad045e9799eb25c9be04f9b4ca5824565774c52210138d503c8a",
+      "input_tokens": 209
+    },
+    {
+      "id": "mmlu/high_school_world_history/115",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_world_history",
+      "answer_index": 0,
+      "prompt_sha256": "1f71f227295b80f08d0ff4ea3b125ee81bc09249a6f1214e030409a8a38ee977",
+      "input_tokens": 139
+    },
+    {
+      "id": "mmlu/high_school_world_history/20",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_world_history",
+      "answer_index": 0,
+      "prompt_sha256": "dd6441d70e2ea968b36ebc3c453b4380f1446dd7db402941208b4e5423692857",
+      "input_tokens": 227
+    },
+    {
+      "id": "mmlu/high_school_world_history/167",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "high_school_world_history",
+      "answer_index": 3,
+      "prompt_sha256": "acda99c756525f1f4aa2db8e38a2641d629cefdd6637bd35aa6c75c0d0ad26f8",
+      "input_tokens": 364
+    },
+    {
+      "id": "mmlu/human_aging/221",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "human_aging",
+      "answer_index": 1,
+      "prompt_sha256": "970fc1224f9ad98f5ccab4b0f36ec03f4cc7144383509fc019e7a6fe87c42fb2",
+      "input_tokens": 67
+    },
+    {
+      "id": "mmlu/human_aging/165",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "human_aging",
+      "answer_index": 1,
+      "prompt_sha256": "daaffe8bdecbbf8771fc2614a6bc41348ad25e910f4d4ae4704bd89d93fef488",
+      "input_tokens": 54
+    },
+    {
+      "id": "mmlu/human_aging/181",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "human_aging",
+      "answer_index": 1,
+      "prompt_sha256": "bda66f025d78123292ceef0f85984ab70ac83f5dfdd08d4cbe925a4756ec5097",
+      "input_tokens": 44
+    },
+    {
+      "id": "mmlu/human_aging/215",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "human_aging",
+      "answer_index": 2,
+      "prompt_sha256": "690251a12c44017998199056eb34f025f7446ad3c9b61fc6ccf1a73c2709a450",
+      "input_tokens": 61
+    },
+    {
+      "id": "mmlu/human_sexuality/81",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "human_sexuality",
+      "answer_index": 1,
+      "prompt_sha256": "a43a969e715561fb2976e399349cb38ecfdbc94a703ce87cbb885c8661adf23a",
+      "input_tokens": 50
+    },
+    {
+      "id": "mmlu/human_sexuality/51",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "human_sexuality",
+      "answer_index": 2,
+      "prompt_sha256": "c3dfc80fc3357e0abe7e2458efa78cb85760877e1de40a8a30dcad8963d950a4",
+      "input_tokens": 58
+    },
+    {
+      "id": "mmlu/human_sexuality/17",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "human_sexuality",
+      "answer_index": 0,
+      "prompt_sha256": "fe8fb11b5e3cfa3900809743bfea2f348767bc6c47624fbefa3750cc143fa3fd",
+      "input_tokens": 77
+    },
+    {
+      "id": "mmlu/human_sexuality/129",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "human_sexuality",
+      "answer_index": 3,
+      "prompt_sha256": "5407bb55d7ed890cb3c6cb1a80813c05babfe8d6a3a010c303d2bb26f2cc803f",
+      "input_tokens": 60
+    },
+    {
+      "id": "mmlu/international_law/1",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "international_law",
+      "answer_index": 0,
+      "prompt_sha256": "9040ebe56ebb47c16366e071c7e0a88d92d8d150add0f634cb2e40256dbf4599",
+      "input_tokens": 108
+    },
+    {
+      "id": "mmlu/international_law/22",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "international_law",
+      "answer_index": 2,
+      "prompt_sha256": "35381d2d02ff91dbfa17222a052dff6cbf2695ecddbbf4e4cf5331a34734e330",
+      "input_tokens": 67
+    },
+    {
+      "id": "mmlu/international_law/67",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "international_law",
+      "answer_index": 0,
+      "prompt_sha256": "d079be07da609907a566a764b7015ddb988b3aa9a0dcd3844f4694f8b198bcd2",
+      "input_tokens": 132
+    },
+    {
+      "id": "mmlu/international_law/100",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "international_law",
+      "answer_index": 0,
+      "prompt_sha256": "5536a6731087729b809eeeaf3ab341acc9582b1831c800917b982b6ad4273f76",
+      "input_tokens": 138
+    },
+    {
+      "id": "mmlu/jurisprudence/92",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "jurisprudence",
+      "answer_index": 1,
+      "prompt_sha256": "ec61f9e202c920ae9007f4aa01f134f7a66ccd00d9b94906a5c7646297f01245",
+      "input_tokens": 67
+    },
+    {
+      "id": "mmlu/jurisprudence/15",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "jurisprudence",
+      "answer_index": 0,
+      "prompt_sha256": "15a81617b3c1b39e5b16e31cae19103987838fae355d33f1570fd2b155e4a8d6",
+      "input_tokens": 182
+    },
+    {
+      "id": "mmlu/jurisprudence/12",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "jurisprudence",
+      "answer_index": 3,
+      "prompt_sha256": "b72349ad00bb6a31117219701e43435fcc98df04c4a0fde7c268423f8736d1ae",
+      "input_tokens": 57
+    },
+    {
+      "id": "mmlu/jurisprudence/93",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "jurisprudence",
+      "answer_index": 1,
+      "prompt_sha256": "4accf0ab1730660846abf375451600c3003bf96c5b57bcb688cb168aab81014a",
+      "input_tokens": 64
+    },
+    {
+      "id": "mmlu/logical_fallacies/63",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "logical_fallacies",
+      "answer_index": 2,
+      "prompt_sha256": "69cba754f5bba94494d315aa313ad349713b1aa642768bad0866e8816c9f20dc",
+      "input_tokens": 60
+    },
+    {
+      "id": "mmlu/logical_fallacies/104",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "logical_fallacies",
+      "answer_index": 2,
+      "prompt_sha256": "4498056912d48e7ad2a3fc5abae695af8c44097d1df045bd66687d5cbd74476e",
+      "input_tokens": 61
+    },
+    {
+      "id": "mmlu/logical_fallacies/89",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "logical_fallacies",
+      "answer_index": 2,
+      "prompt_sha256": "572d89ab8e2e97ef5ed0085fdc45b5fe81811f527eea6353e0d61bd6bd7fbed6",
+      "input_tokens": 54
+    },
+    {
+      "id": "mmlu/logical_fallacies/153",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "logical_fallacies",
+      "answer_index": 3,
+      "prompt_sha256": "4e8b5a7fa5ebfb43cf1cdcd1c43b378be45b7b3fa88f041228c2d0080c646215",
+      "input_tokens": 83
+    },
+    {
+      "id": "mmlu/machine_learning/49",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "machine_learning",
+      "answer_index": 3,
+      "prompt_sha256": "2787077ba3c1688b1f77f101ad11b15e2f88c1b0be5ee6f6ece26e50d874e7b2",
+      "input_tokens": 77
+    },
+    {
+      "id": "mmlu/machine_learning/41",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "machine_learning",
+      "answer_index": 2,
+      "prompt_sha256": "b66f4134e192164e71d532afba4fa049689d9b27b80676f33bc4a7da4611c524",
+      "input_tokens": 174
+    },
+    {
+      "id": "mmlu/machine_learning/15",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "machine_learning",
+      "answer_index": 1,
+      "prompt_sha256": "a97ea6e451f9bef2ebc0af7b455d1c90db5954739cb0b8dc4cbe6791d703e6bd",
+      "input_tokens": 73
+    },
+    {
+      "id": "mmlu/machine_learning/66",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "machine_learning",
+      "answer_index": 2,
+      "prompt_sha256": "0099db721cc58ec634cb480ac5037f31913a8276dd294269f912adfd5278cb35",
+      "input_tokens": 161
+    },
+    {
+      "id": "mmlu/management/68",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "management",
+      "answer_index": 1,
+      "prompt_sha256": "515ff0a887fff1141d96b2e7cb7dbc4a9addb47ba66ef64ef86791995ef59c39",
+      "input_tokens": 52
+    },
+    {
+      "id": "mmlu/management/17",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "management",
+      "answer_index": 2,
+      "prompt_sha256": "96c2cfeb502f57329f2a10d42974078f27a4e5579b79492d4a7c22636a24747b",
+      "input_tokens": 52
+    },
+    {
+      "id": "mmlu/management/26",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "management",
+      "answer_index": 0,
+      "prompt_sha256": "45c13a7c485ed1f11374621723e56d93f20a3681d6f0b7f7d06d2c53726887e3",
+      "input_tokens": 46
+    },
+    {
+      "id": "mmlu/management/101",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "management",
+      "answer_index": 1,
+      "prompt_sha256": "468817a800e79ff3c9d24ada7351f210b3d221b7e687f4a87dda9714e65878b0",
+      "input_tokens": 54
+    },
+    {
+      "id": "mmlu/marketing/106",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "marketing",
+      "answer_index": 1,
+      "prompt_sha256": "6666bec3b86010fcf39b9fc9af60c5408f2066a1819257715b3595978fd83903",
+      "input_tokens": 65
+    },
+    {
+      "id": "mmlu/marketing/206",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "marketing",
+      "answer_index": 0,
+      "prompt_sha256": "65d26e43124d25e3582686dd665a0650f9d77b24414daa85737fe8c35c152b15",
+      "input_tokens": 89
+    },
+    {
+      "id": "mmlu/marketing/167",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "marketing",
+      "answer_index": 0,
+      "prompt_sha256": "539d71a84660d919e8bc1dfb938938bccc68b0c6f126324cfd3caa8f464cffea",
+      "input_tokens": 85
+    },
+    {
+      "id": "mmlu/marketing/169",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "marketing",
+      "answer_index": 2,
+      "prompt_sha256": "b5e3b48d381989cff9fa309810d67157a8a237cd49d19dbddf96757dbaa86eec",
+      "input_tokens": 67
+    },
+    {
+      "id": "mmlu/medical_genetics/41",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "medical_genetics",
+      "answer_index": 2,
+      "prompt_sha256": "3a429dd68c26e7353e6142bd5d7153f1141ac0e93fdb7b60948d9e9bf9ed8d0b",
+      "input_tokens": 77
+    },
+    {
+      "id": "mmlu/medical_genetics/59",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "medical_genetics",
+      "answer_index": 1,
+      "prompt_sha256": "c19042359293000acb4f15350e01c067f60630fd6105f1d4a77306c01286698a",
+      "input_tokens": 46
+    },
+    {
+      "id": "mmlu/medical_genetics/9",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "medical_genetics",
+      "answer_index": 2,
+      "prompt_sha256": "6080fa6581e1aace30df1f4639897107284023d1548f5333eed05546b2d872fa",
+      "input_tokens": 46
+    },
+    {
+      "id": "mmlu/medical_genetics/7",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "medical_genetics",
+      "answer_index": 2,
+      "prompt_sha256": "5fe4087b5febae525415c34b938b463ee36ad3d95aaecb9482ccfb86d3b14dbe",
+      "input_tokens": 77
+    },
+    {
+      "id": "mmlu/miscellaneous/260",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "miscellaneous",
+      "answer_index": 2,
+      "prompt_sha256": "98e21e82a0035e8f7e88f6de4969a89265f03a707e9eb5bb674c44f8b7cb284d",
+      "input_tokens": 43
+    },
+    {
+      "id": "mmlu/miscellaneous/619",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "miscellaneous",
+      "answer_index": 1,
+      "prompt_sha256": "c56705c77eee4360457cda85547a7013cb9238a0eb91ba930a378cda3c2c483c",
+      "input_tokens": 85
+    },
+    {
+      "id": "mmlu/miscellaneous/8",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "miscellaneous",
+      "answer_index": 0,
+      "prompt_sha256": "fea3601847bf80a3af2608839061618005276592024c56386b11420ac77e6566",
+      "input_tokens": 42
+    },
+    {
+      "id": "mmlu/miscellaneous/744",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "miscellaneous",
+      "answer_index": 0,
+      "prompt_sha256": "5b9d97f694d746d842f128380baba74694be3aed8d9e7b529bb8e3a3917f6ede",
+      "input_tokens": 45
+    },
+    {
+      "id": "mmlu/moral_disputes/316",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "moral_disputes",
+      "answer_index": 2,
+      "prompt_sha256": "419b32c0fb23bdd0e3f99903f2f24e26c6735ae0f91527e9a876bbf198f21a3a",
+      "input_tokens": 76
+    },
+    {
+      "id": "mmlu/moral_disputes/16",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "moral_disputes",
+      "answer_index": 0,
+      "prompt_sha256": "1d35e2b56aff349443b2f5fc331d437980af6ede2eb32bdae5fa4c964eb41783",
+      "input_tokens": 109
+    },
+    {
+      "id": "mmlu/moral_disputes/131",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "moral_disputes",
+      "answer_index": 1,
+      "prompt_sha256": "ee58be21152d6da4677be01019b5f2f185f62a853c2452f3545f6937651fb15d",
+      "input_tokens": 69
+    },
+    {
+      "id": "mmlu/moral_disputes/161",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "moral_disputes",
+      "answer_index": 1,
+      "prompt_sha256": "4900861dfae22cd3080620f0c24a951b78b6cee14be7d57a2f1bafa5b0ed0615",
+      "input_tokens": 90
+    },
+    {
+      "id": "mmlu/moral_scenarios/203",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "moral_scenarios",
+      "answer_index": 2,
+      "prompt_sha256": "117d2b4b9a4cd9fc19ed77db161629b5d3c60aa2febb43cbf5674a4cacb7988a",
+      "input_tokens": 113
+    },
+    {
+      "id": "mmlu/moral_scenarios/596",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "moral_scenarios",
+      "answer_index": 2,
+      "prompt_sha256": "3b32d0996c75548841d33bd2515764822b136a954ba264da6cec44a95f9fb497",
+      "input_tokens": 118
+    },
+    {
+      "id": "mmlu/moral_scenarios/763",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "moral_scenarios",
+      "answer_index": 1,
+      "prompt_sha256": "2798b2fc4125e2e9a53c16ab0d748d4646fe42b0b974f8572411c35ac003b460",
+      "input_tokens": 110
+    },
+    {
+      "id": "mmlu/moral_scenarios/398",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "moral_scenarios",
+      "answer_index": 2,
+      "prompt_sha256": "aeb544ef2ad2db3e38bb2c77c8851aa9abd228b063635656f925970bdc8d9d10",
+      "input_tokens": 115
+    },
+    {
+      "id": "mmlu/nutrition/270",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "nutrition",
+      "answer_index": 0,
+      "prompt_sha256": "063dec2b634b958a496e5b1d439b3e8b814edaa117bf342254a82b8e92c6f88b",
+      "input_tokens": 73
+    },
+    {
+      "id": "mmlu/nutrition/245",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "nutrition",
+      "answer_index": 3,
+      "prompt_sha256": "640a243c333ca685bebda9916868ed1279fd6cc6c3b223e942e4f2ad7331953c",
+      "input_tokens": 85
+    },
+    {
+      "id": "mmlu/nutrition/12",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "nutrition",
+      "answer_index": 1,
+      "prompt_sha256": "83632f36eb1ec3b195f41953f37e5dba99ddb28abf93bcde4360769361d9fc5f",
+      "input_tokens": 111
+    },
+    {
+      "id": "mmlu/nutrition/108",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "nutrition",
+      "answer_index": 3,
+      "prompt_sha256": "05f2fb88353cbe9b131ea7127bc6c785e4373803e78eb9c69ecb6dea65b57382",
+      "input_tokens": 75
+    },
+    {
+      "id": "mmlu/philosophy/150",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "philosophy",
+      "answer_index": 3,
+      "prompt_sha256": "9ca30a3aa68309f29e4db3dcff01b43e0452a310bdfed7975b456612cb3aa15e",
+      "input_tokens": 63
+    },
+    {
+      "id": "mmlu/philosophy/79",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "philosophy",
+      "answer_index": 1,
+      "prompt_sha256": "4568d0f69de676ef873a3edc5f2c362d87099d786ad1a82b7253df244e1c55ea",
+      "input_tokens": 113
+    },
+    {
+      "id": "mmlu/philosophy/42",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "philosophy",
+      "answer_index": 2,
+      "prompt_sha256": "ac5be9c49b101f554d077b90748412146651d55a23398c9b1a24114c58a68ead",
+      "input_tokens": 94
+    },
+    {
+      "id": "mmlu/philosophy/202",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "philosophy",
+      "answer_index": 1,
+      "prompt_sha256": "2c66093d5f415466d2ca5c01c84f6d44a23de2cfeeca72f4d31be870e64f4c52",
+      "input_tokens": 58
+    },
+    {
+      "id": "piqa/validation/177",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "0515b7944c9d09078b0892103215566f47106da2103a7c7f9d6d81e6eba3595d",
+      "input_tokens": 84
+    },
+    {
+      "id": "piqa/validation/1523",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "4b334b23c56f80edbee8b96c4f5ceb30940b7171539ae62c7b998f2ff6c36503",
+      "input_tokens": 57
+    },
+    {
+      "id": "piqa/validation/29",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "154eb048784587b79540ecf7a03f06a2ab9ce7c0338cc43777033f60f50f2e87",
+      "input_tokens": 237
+    },
+    {
+      "id": "piqa/validation/439",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "a2482b4724bcdc13f4fa2e8ad361c5943b58609b6a2fbec15687397293872555",
+      "input_tokens": 29
+    },
+    {
+      "id": "piqa/validation/12",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "d1c6de902271e865323f4a83f55d2a0e6eaac3a085d64e899b6b9852457378a4",
+      "input_tokens": 58
+    },
+    {
+      "id": "piqa/validation/891",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "4984e05ca9ab04992f393ccd40e45bb775cd9f6e749f42992a43fe5fef2a023d",
+      "input_tokens": 89
+    },
+    {
+      "id": "piqa/validation/1816",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "95e1a4c2dd6a35b1a212d96775cd1f1ed7bd9cc8f34a4c56c83ae9ad95d2e642",
+      "input_tokens": 77
+    },
+    {
+      "id": "piqa/validation/1507",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "fee1509d90918bc1bc22c9d67b82976f29676ac7d3b59cf068b6a8db7a4fa9cb",
+      "input_tokens": 38
+    },
+    {
+      "id": "piqa/validation/181",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "8c38a5bbe3576ed532295734a1344e2d0e4e7bcdaaa7b6280c952a05360a35ef",
+      "input_tokens": 43
+    },
+    {
+      "id": "piqa/validation/1183",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "8ff297f450596ce801ceaf8a7d014e6e12629e124288024b8745f91a767e0a73",
+      "input_tokens": 62
+    },
+    {
+      "id": "piqa/validation/288",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "34b1cc50892d28b455f19ce5cbec812e9da88da7adc3a4edfd47d7b53d064061",
+      "input_tokens": 33
+    },
+    {
+      "id": "piqa/validation/635",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "8728e8a42dacabb54a71fad4aaddf3f1c50aac6c95284f249905ff6ce977d978",
+      "input_tokens": 63
+    },
+    {
+      "id": "piqa/validation/1343",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "9d2b08505353e50adfa2100cd0d35d205012e80d937e63a0a9c0492e66672741",
+      "input_tokens": 56
+    },
+    {
+      "id": "piqa/validation/686",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "58902966527ac073358880b815438cfa28ac006309a2320c5a3b3b2df4ec14a4",
+      "input_tokens": 44
+    },
+    {
+      "id": "piqa/validation/1208",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "d7e80a30a7945f2862476b98dc297d7406a58741c92b48b09ac1690544be904a",
+      "input_tokens": 80
+    },
+    {
+      "id": "piqa/validation/881",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "43090f6b1a9c85269b52c5c757adeab9eefc6cd316a1e3f0c01e397b744e481b",
+      "input_tokens": 51
+    },
+    {
+      "id": "piqa/validation/1125",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "9caf8f8d624105c8250f75199d6ca689f3eebe59efb5a7f8298dd79414161439",
+      "input_tokens": 51
+    },
+    {
+      "id": "piqa/validation/1162",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "f88b8067b37b634ba6d1074fddfb95af67dbb1e09a16924d35ea4f18cdad1b4b",
+      "input_tokens": 154
+    },
+    {
+      "id": "piqa/validation/180",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "9409a3a8145898df1d8df5cee0c36a6cce39fff001f083bdd28a3eb687d91519",
+      "input_tokens": 70
+    },
+    {
+      "id": "piqa/validation/1810",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "5cc1c256f1ecb7da5833e123bccceae9297836f4fcdcd83d1d85d2e913889ada",
+      "input_tokens": 47
+    },
+    {
+      "id": "piqa/validation/1732",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "b339fb61b8459b2b1674188e4d1d85ea3b4253addc855075833913b58c186543",
+      "input_tokens": 83
+    },
+    {
+      "id": "piqa/validation/1719",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "ce8fe30dc85baf5afd601350dc6c9d3404f9b548a1cef223d89d6a6ca3e6402a",
+      "input_tokens": 83
+    },
+    {
+      "id": "piqa/validation/590",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "4ee36f99e9ca714b451ae455feedfb053c30347630466141458de077bff606e8",
+      "input_tokens": 71
+    },
+    {
+      "id": "piqa/validation/258",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "54f27e6551aee8fc3cf1d370f3dd7db27bba50aa4f7079d9f567ca255d45780a",
+      "input_tokens": 37
+    },
+    {
+      "id": "piqa/validation/67",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "4dbf0532d73fd07ec5686f2a8ba021eaab011a5df90efc374e80ede7a1a52cd8",
+      "input_tokens": 45
+    },
+    {
+      "id": "piqa/validation/49",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "4407e268c165cfda80c57da809d3543f52140927e1fd71645c1e793f0e901a5d",
+      "input_tokens": 47
+    },
+    {
+      "id": "piqa/validation/1338",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "049127acc92ba490eeb5e066df002d199abe047f3619428a4c2112bf6bafca5c",
+      "input_tokens": 60
+    },
+    {
+      "id": "piqa/validation/1348",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "56d4383a578566b084c0a8d4682b3a0f63bdf441c2d756c11a3dad21ab2adb19",
+      "input_tokens": 52
+    },
+    {
+      "id": "piqa/validation/800",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "0e0891d7a1a00b151b3b3e3ff9b9f057f7915316347e6a543ec7bc5a4212a604",
+      "input_tokens": 92
+    },
+    {
+      "id": "piqa/validation/1316",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "81da0897ace5bead7ae23c783213bc6bfc846dd61fc6135ec37345374f47d332",
+      "input_tokens": 47
+    },
+    {
+      "id": "piqa/validation/1072",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "446b75820e35728b2aa394ec336c26fe1d6e303118d4445795df1d1e1b00fd55",
+      "input_tokens": 72
+    },
+    {
+      "id": "piqa/validation/743",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "6354e4a16601803e24afd630b2c23769744d3532d43d616937ba6d5e43c4c34e",
+      "input_tokens": 110
+    },
+    {
+      "id": "piqa/validation/1570",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "9fb26fd81b6b7f7aa98af68906e474ea42eb1964eb8d229ddce88268cb983fc3",
+      "input_tokens": 65
+    },
+    {
+      "id": "piqa/validation/331",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "414deff8e1e016e1b72aaf8579189ae91ddf24dd5301eab22b606d271cbb4991",
+      "input_tokens": 69
+    },
+    {
+      "id": "piqa/validation/1723",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "064bbf0c8f23b190d92bbe7804743bf583da2b04bb737c8ab847151485bd6998",
+      "input_tokens": 42
+    },
+    {
+      "id": "piqa/validation/120",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "b93dc7eec582ab22b1ccb46bff1d7267a431da63063379632fd76bb917271da1",
+      "input_tokens": 53
+    },
+    {
+      "id": "piqa/validation/217",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "88f42dae251760de1574029978e995e4787460443b5a2e3e8f9651d3d3c2f4e5",
+      "input_tokens": 31
+    },
+    {
+      "id": "piqa/validation/1080",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "1234da47b6bb40ac5d852bfae317659fa509fb5cddbaaf77e66c22d697f6e737",
+      "input_tokens": 49
+    },
+    {
+      "id": "piqa/validation/1099",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "11368f4af2670f309c972beba48dde732b0d71d41f58e4cdbc6974b0a28e5ca9",
+      "input_tokens": 108
+    },
+    {
+      "id": "piqa/validation/460",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "206b5c36bff92ba93f12b4bac8a139f01fa1a6b2b7696484ad9aefb309d115fd",
+      "input_tokens": 64
+    },
+    {
+      "id": "piqa/validation/1798",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "bdc2287e6d07d1d4621ce7c1ad6fc6bd34fb92487cc4db142a783e2f857ca138",
+      "input_tokens": 66
+    },
+    {
+      "id": "piqa/validation/742",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "5b98e8e97495ed1fa96c608c67df52890d4d396c82f668697b106cc3bd3b74f0",
+      "input_tokens": 44
+    },
+    {
+      "id": "piqa/validation/702",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "9fefc604a2519549e682e6f2027116d0b913b57f2f84edcc0408f8d694bc4bc1",
+      "input_tokens": 288
+    },
+    {
+      "id": "piqa/validation/682",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "59ebe072c1565131c2e8a1e525c7bc155e8e1827e9532c23b29b5e9749c570c9",
+      "input_tokens": 70
+    },
+    {
+      "id": "piqa/validation/1313",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "18770e0a27a89a5486251d65b6a172f4b41c8e8b32a6a116cb923ce506993a07",
+      "input_tokens": 78
+    },
+    {
+      "id": "piqa/validation/1202",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "f5d6b90866aaa83b6c47c4aadc6edb358b82f836d573866c744281ad4e5bc9b7",
+      "input_tokens": 137
+    },
+    {
+      "id": "piqa/validation/804",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "e51bf45697369769a251b76ae2cb74eed4a3f03992b30212f7be6b2af814e340",
+      "input_tokens": 42
+    },
+    {
+      "id": "piqa/validation/0",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "54528085566b9f9404392a81b0118197489554543c077976db9a41d478566e4f",
+      "input_tokens": 110
+    },
+    {
+      "id": "piqa/validation/1622",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "2e644423e90176840958cb458a76c8b878e4caff611b2285aae852d466d7b588",
+      "input_tokens": 72
+    },
+    {
+      "id": "piqa/validation/782",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "44c88130d36fbab54a4e2dc2cbb06161e20222ce8cb5e5e2a0abb4cb231cc1b3",
+      "input_tokens": 71
+    },
+    {
+      "id": "piqa/validation/1666",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "64769d39de01119da84dfdef4576fa7e8fa11734ee4d93832780945f80fa4837",
+      "input_tokens": 196
+    },
+    {
+      "id": "piqa/validation/1434",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "22f23ee53b80fbc702015a645dca0b3022b1db92c7fbec4e886865b436abd868",
+      "input_tokens": 38
+    },
+    {
+      "id": "piqa/validation/1044",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "6795c4f5edd506e9dc6549adfbe1371e17870880800ee7c32d2746c1d4bd1d3e",
+      "input_tokens": 83
+    },
+    {
+      "id": "piqa/validation/1418",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "0726a8c1f3bb08d944e3796a523e1fa6b3c4a2c101c6c643945e1048e71b8257",
+      "input_tokens": 59
+    },
+    {
+      "id": "piqa/validation/531",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "fdad46e01ed8068c207019983994b72948abf15417839cab9fe29c34405e8302",
+      "input_tokens": 49
+    },
+    {
+      "id": "piqa/validation/528",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "d64149661db689c9d66f848c59f8490688fef26b66bbb97ab0dc28b4038be266",
+      "input_tokens": 52
+    },
+    {
+      "id": "piqa/validation/455",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "48497adc745842eb016e37fc0979ad21091771c5c3c99084d2c065340ba8299f",
+      "input_tokens": 163
+    },
+    {
+      "id": "piqa/validation/1323",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "301a17273b6d4b001e018a0196d30f2ce5bf744ca0f86a044b09bec80c125c2e",
+      "input_tokens": 85
+    },
+    {
+      "id": "piqa/validation/685",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "47bf5aab4ee190279b5fff6d7a986d8423fd4d24bc3950b133e98719c9617897",
+      "input_tokens": 52
+    },
+    {
+      "id": "piqa/validation/1325",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "5be6e1ba959a54bc5511192e7a2211715f0ec2e03c194ee57fd53742c26bca30",
+      "input_tokens": 33
+    },
+    {
+      "id": "piqa/validation/1282",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "e1ad9e380d9e344daad984888e0701f846878ce7f61f60cffa82e5342b519875",
+      "input_tokens": 157
+    },
+    {
+      "id": "piqa/validation/945",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "dc0f9afc533354d673f00cc32dcaf8a54c8ee1d898b875b4d1f8abeb06038736",
+      "input_tokens": 57
+    },
+    {
+      "id": "piqa/validation/1363",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "8837aa58b6d43fb9bd4a85dca9cad7c69e573b14b847222357f63591c2c5e0e2",
+      "input_tokens": 83
+    },
+    {
+      "id": "piqa/validation/171",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "271effde685e090fab32db5ba6c8ae9522ff8a0ff06283b98bd0fef802fc7bb9",
+      "input_tokens": 49
+    },
+    {
+      "id": "piqa/validation/1243",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "75880cbf0cd841be8abb0ce20c8a7d8f218477f1b44133551a246edbecf63b51",
+      "input_tokens": 61
+    },
+    {
+      "id": "piqa/validation/740",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "6080ea965436a4f7e68fb4db670f6c766d1dc7279a68af24541c52b285f4051e",
+      "input_tokens": 48
+    },
+    {
+      "id": "piqa/validation/865",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "8261e044792f58f45be3e4e422fb08309e6589b607b1bf544e42739a1295bd88",
+      "input_tokens": 36
+    },
+    {
+      "id": "piqa/validation/1544",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "f58969a9d86c2dc32165cb053193120aa1a071900efc6ba6ea857894bb0e9656",
+      "input_tokens": 69
+    },
+    {
+      "id": "piqa/validation/76",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "9ed3fd78e2706a0fec50e4de40c2fe89292a2c8410aaa1c9904cc25e51ef8d8c",
+      "input_tokens": 48
+    },
+    {
+      "id": "piqa/validation/1442",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "bd32615d381fcd2ad15b56c58f7bf120d6c7db360718a4e1849c18882a4aeb2d",
+      "input_tokens": 33
+    },
+    {
+      "id": "piqa/validation/766",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "4338af3cc84fe6c9ac244417e1b9264679d8a91242cace72452c3b6c722c4a21",
+      "input_tokens": 150
+    },
+    {
+      "id": "piqa/validation/1120",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "0dcd6456840e8ad70834c847d68d9b863e3740c87729533bf119dbacec149dc2",
+      "input_tokens": 86
+    },
+    {
+      "id": "piqa/validation/1832",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "cb5923c6053dbf50e9e8644935db9f2b1ce44fc75f5213eba1848e3df1b10d08",
+      "input_tokens": 91
+    },
+    {
+      "id": "piqa/validation/368",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "8a8f0069fbaae0e9e7c84ded0a9011c146140ca5e042c8c0757a77f865597b3e",
+      "input_tokens": 59
+    },
+    {
+      "id": "piqa/validation/1541",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "80f04d1e79dc211bd7c522aa3fc5e20fe7bba7d9dfe3b47ccba929a8817e9a42",
+      "input_tokens": 37
+    },
+    {
+      "id": "piqa/validation/1423",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "91cc7c303e1f8654ac7380c9a1dc56c47bd04186c8899b99588257476bcd264c",
+      "input_tokens": 77
+    },
+    {
+      "id": "piqa/validation/1153",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "f2ef477986573ba32260bfe86ffbb687d593a74bde979ea4fb44e436fc3c22ce",
+      "input_tokens": 53
+    },
+    {
+      "id": "piqa/validation/677",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "b24378dd48e8433b167a58b8c1b814fabff4e5329662ef76100a1fff5115ba46",
+      "input_tokens": 71
+    },
+    {
+      "id": "piqa/validation/302",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "a1c032ac17f87453f03b68fe880ee8ba2e93998028e5c69483cf95cab234c7e4",
+      "input_tokens": 53
+    },
+    {
+      "id": "piqa/validation/659",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "5a41b4935a0dc1187cbbf49579a9dd8c6b0e832426e77dd0213052718ea9ee9a",
+      "input_tokens": 93
+    },
+    {
+      "id": "piqa/validation/1121",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "d5027825ce75ab4d9df68d7fc9941f09e6005928ed32d563266c4d40e5b35f3a",
+      "input_tokens": 29
+    },
+    {
+      "id": "piqa/validation/679",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "8893a30197031a226a1309dbd97de54d39d2a4151ddcfb204e26dd65aca53889",
+      "input_tokens": 194
+    },
+    {
+      "id": "piqa/validation/66",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "ba0876ee945d88d5ea7f84a3780fae398fdb80cb83b35b16c7704b092f45c441",
+      "input_tokens": 66
+    },
+    {
+      "id": "piqa/validation/37",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "a03486d932dc9b485e59f8761155ab414bb50513bd3f161473e258d3c8b10325",
+      "input_tokens": 44
+    },
+    {
+      "id": "piqa/validation/1600",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "388a01b5cca3b3b4e4886b14c92a3f3600be2c5d4fb5175c156ca62e8ad82023",
+      "input_tokens": 39
+    },
+    {
+      "id": "piqa/validation/500",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "cd007ec13deee8c474f5520f2eb886bca3ce040fe7a15f4deef1a5c20452306e",
+      "input_tokens": 95
+    },
+    {
+      "id": "piqa/validation/1107",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "0e1ed0d25a0b9f37151161be960ab7c11dfc94bad9760692489c60330bfe3323",
+      "input_tokens": 38
+    },
+    {
+      "id": "piqa/validation/763",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "4a7c379aa86a5c24d4321fe701f7ff6fb0fd83bc1a2a9498ada7392d1d84e39f",
+      "input_tokens": 61
+    },
+    {
+      "id": "piqa/validation/221",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "17aef18bb741b1beded1f1ef7dd66e30743e8dfcb32d99ced8260929177f3435",
+      "input_tokens": 34
+    },
+    {
+      "id": "piqa/validation/1505",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "b379d71cdb9a099eb926cca196ed40ce78a19e5822416720d8a619f3d9cc755c",
+      "input_tokens": 42
+    },
+    {
+      "id": "piqa/validation/1696",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "d0b89c1edc55600002f2fb25f27a7d541207d288e5cfdf9324c26fa6ef53d170",
+      "input_tokens": 96
+    },
+    {
+      "id": "piqa/validation/434",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "b8ffce5570205be4f3d283155c39aed63da1e563595f038d0ccee68f4a590e74",
+      "input_tokens": 182
+    },
+    {
+      "id": "piqa/validation/805",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "23303127615b04bc86ebb0b5f66ca018dc360fa2eb3afe765ead1e57437be3ab",
+      "input_tokens": 83
+    },
+    {
+      "id": "piqa/validation/721",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "abc50135873ed6f99bb1f4c7573b2794a96318c9e2ffb8026617bda626095427",
+      "input_tokens": 44
+    },
+    {
+      "id": "piqa/validation/1293",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "c18d4e12181a7b58e15f2f6cd8eec87d3ed969ca33918a509873718bb64bdef4",
+      "input_tokens": 234
+    },
+    {
+      "id": "piqa/validation/198",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "eba073ba9c1379fa2953d368cc74514f4bf273deac06321d01fdae486f05cd09",
+      "input_tokens": 48
+    },
+    {
+      "id": "piqa/validation/8",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "b1b26bffa713fca9685f6b324e8b208df62879b9a38b1828b5c2773a5a98bf56",
+      "input_tokens": 94
+    },
+    {
+      "id": "piqa/validation/421",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "fe71720d48973163ee91a656f9ba960a02840cc7b2b43c707619ffc7f7ef3dfd",
+      "input_tokens": 29
+    },
+    {
+      "id": "piqa/validation/1092",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "0bd663b690655e61e9c8603bf8ed28c1b0743dc135a83001500e31c586a54ea1",
+      "input_tokens": 56
+    },
+    {
+      "id": "piqa/validation/813",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "c88b0299899cd5e9e4a6c95cb99a8c5707f3744afc63ca8e3bfab52efc87a0cb",
+      "input_tokens": 81
+    },
+    {
+      "id": "piqa/validation/170",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "ec683e86ab586c2892e0b4fe0c0e4c26e379ca3a4cd0e1824321247dd917e2ef",
+      "input_tokens": 55
+    },
+    {
+      "id": "piqa/validation/892",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "f4d642b968158236ce6ec1003dbd412da65c0beb8442d3e49d70d1b9ac7c9e47",
+      "input_tokens": 78
+    },
+    {
+      "id": "piqa/validation/259",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "45505df62167ad4813931f7809b737a8bb989a617f089c9e3c272d09cf17ea78",
+      "input_tokens": 113
+    },
+    {
+      "id": "piqa/validation/1402",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "7821813c10318ea0f706332c9a013b3b2c282d3a71df00cb6b6aae0c524d2c9a",
+      "input_tokens": 43
+    },
+    {
+      "id": "piqa/validation/929",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "a3d19112c583eae20b4c97be9b7b5274cd38569c960465b834784085301d9fd6",
+      "input_tokens": 89
+    },
+    {
+      "id": "piqa/validation/802",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "780b2b627f996101bfd50501a456ab927acaa586086aa358c6fd68d01b27d4a4",
+      "input_tokens": 57
+    },
+    {
+      "id": "piqa/validation/931",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "fa34e1b5c7d4bb4435eced0c2cb0a86b7b65fec72811fc2f30a11a1d27b670e1",
+      "input_tokens": 38
+    },
+    {
+      "id": "piqa/validation/857",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "1355c066d21543ccab49be8c348cc51a1071ed295bc0bce8de23af536f04f59a",
+      "input_tokens": 33
+    },
+    {
+      "id": "piqa/validation/142",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "d8dbe782170375e41a9183a9fc647dc552a38798333276613859c74c31cf0388",
+      "input_tokens": 308
+    },
+    {
+      "id": "piqa/validation/974",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "828035fcb87b271491d2958b7630f08521feaa87761ac9cb826cd0918a8cbda5",
+      "input_tokens": 163
+    },
+    {
+      "id": "piqa/validation/1230",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "e99718cd7df27cb3fa61bebbc2d748ffd8b0fe23ee007c1f2c157661ec3ffb1f",
+      "input_tokens": 50
+    },
+    {
+      "id": "piqa/validation/1601",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "335417b65a013556fc4f0c315dd29cf874977a1e321e8796488d36313e6ef938",
+      "input_tokens": 97
+    },
+    {
+      "id": "piqa/validation/632",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "43eeaa3f3cf7a24d050f6e4eb2a96a4b92ab81f49b2a3d24fa8e5c28f6869b8b",
+      "input_tokens": 61
+    },
+    {
+      "id": "piqa/validation/1805",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "4529a60199f057b6971fc19380fb90083c4badc938d296ac31ea33988a5e8c39",
+      "input_tokens": 148
+    },
+    {
+      "id": "piqa/validation/222",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "fea96fdb9964504edca7c91d90aa4dcbfc93a3f3dca635490f16108c983f928f",
+      "input_tokens": 46
+    },
+    {
+      "id": "piqa/validation/903",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "12af227537200c807f331dadd00634443ea0c77b50ea9782ca31b4281aeac7bf",
+      "input_tokens": 197
+    },
+    {
+      "id": "piqa/validation/854",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "30866cd4ec479558860d7aca69eb6a628eaf4205265a7291f8d4337b30d8ea4d",
+      "input_tokens": 91
+    },
+    {
+      "id": "piqa/validation/938",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "7e5ce26fa7ed82c8f145b557a31c047429390840f2d6b6ab7c1b5cc349b0120e",
+      "input_tokens": 236
+    },
+    {
+      "id": "piqa/validation/1729",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "95d856346e68204733f26d90c788d103a7119d6cd49bd07dbdb9113341f7f732",
+      "input_tokens": 60
+    },
+    {
+      "id": "piqa/validation/1038",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "9cafc434cf9bb40c24337cbe8d3cb6deaeb5aeea6c829cd29e316998d593af05",
+      "input_tokens": 73
+    },
+    {
+      "id": "piqa/validation/1807",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "b417b08bafc055865e41c21c56bf97c6d4aabb4f9172fe751f68210281364507",
+      "input_tokens": 40
+    },
+    {
+      "id": "piqa/validation/1085",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "1d54163c715ba5cf95f02ac34993a74e6ea4e7da99eb02c584e7b2380a9e811a",
+      "input_tokens": 65
+    },
+    {
+      "id": "piqa/validation/1203",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "64fd6c0ababa3a18a4d1b97ef168f3ca9206074ca4ebd440d2911a24978284d0",
+      "input_tokens": 52
+    },
+    {
+      "id": "piqa/validation/505",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "a6830ee2ad210634bf31150638eae1db3e4b0e366be905a9029d7d18451986e3",
+      "input_tokens": 50
+    },
+    {
+      "id": "piqa/validation/697",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "d04732b1d7468e2292ed85715951c8b0df634174adfdeccc08a0798b4437e8f6",
+      "input_tokens": 29
+    },
+    {
+      "id": "piqa/validation/1154",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 0,
+      "prompt_sha256": "7a0a4c48673b956ca81cfc98b683088272079b585c7fd54dcd7667cba78d6f0e",
+      "input_tokens": 66
+    },
+    {
+      "id": "piqa/validation/1440",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "708ba0e75c066178d65407636c8be921371f430a17aa840463a6847adee59a03",
+      "input_tokens": 53
+    },
+    {
+      "id": "piqa/validation/1015",
+      "source": "piqa",
+      "ability": "commonsense_piqa_subset",
+      "group": "piqa",
+      "answer_index": 1,
+      "prompt_sha256": "c79942286b76ea2cc913f10c7fc6aebf92bc06bde32dec7d007dd58987e3f5b2",
+      "input_tokens": 45
+    },
+    {
+      "id": "mmlu/prehistory/112",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "prehistory",
+      "answer_index": 1,
+      "prompt_sha256": "20ef136b6eaa7ddf0887309fb2b7c7a39a26fd1e3efa6fb2151ea115d186a716",
+      "input_tokens": 62
+    },
+    {
+      "id": "mmlu/prehistory/66",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "prehistory",
+      "answer_index": 1,
+      "prompt_sha256": "7274841c86bb77ced7c5edea9b890273ea7c16cbc5a94f68d70def5ba5d06749",
+      "input_tokens": 68
+    },
+    {
+      "id": "mmlu/prehistory/70",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "prehistory",
+      "answer_index": 0,
+      "prompt_sha256": "e52ddfc8969273ec5f3cb01bd01179b0e864b52e008109aa74cd566a5f66eff2",
+      "input_tokens": 65
+    },
+    {
+      "id": "mmlu/prehistory/96",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "prehistory",
+      "answer_index": 0,
+      "prompt_sha256": "27c9019a5febd0712565798fdd07a65863c4b84d5fcc40c2746df652e971d778",
+      "input_tokens": 85
+    },
+    {
+      "id": "mmlu/professional_accounting/277",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "professional_accounting",
+      "answer_index": 2,
+      "prompt_sha256": "7780838a6ed9469e915300397b35761337f4b79a574aaca7d1309e050265a490",
+      "input_tokens": 122
+    },
+    {
+      "id": "mmlu/professional_accounting/146",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "professional_accounting",
+      "answer_index": 3,
+      "prompt_sha256": "1ca1267a998b5f14a5bd49bcd8acaab2e3503ca6237ff661c9368d44ed87d1e8",
+      "input_tokens": 173
+    },
+    {
+      "id": "mmlu/professional_accounting/251",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "professional_accounting",
+      "answer_index": 0,
+      "prompt_sha256": "768a3af0349004b828bc60e5c6072e1a22b89341f82743046ca52e2a4d8d029a",
+      "input_tokens": 62
+    },
+    {
+      "id": "mmlu/professional_accounting/154",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "professional_accounting",
+      "answer_index": 1,
+      "prompt_sha256": "802db3b5cd7d6a9146dea361d18c23f58160d0a7f0b8c02d98fc3020abc54738",
+      "input_tokens": 107
+    },
+    {
+      "id": "mmlu/professional_law/539",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "professional_law",
+      "answer_index": 1,
+      "prompt_sha256": "094a9ffdb4e56d21ef1e5f54d8ee0584edf4b27347ac3b1a79a3884bfb8e12ac",
+      "input_tokens": 309
+    },
+    {
+      "id": "mmlu/professional_law/1263",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "professional_law",
+      "answer_index": 2,
+      "prompt_sha256": "66fd05e5a26ed1faf68996e0fb8f09d0e2ac8fa7bfbfff0062f0558311c0ee8f",
+      "input_tokens": 118
+    },
+    {
+      "id": "mmlu/professional_law/1281",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "professional_law",
+      "answer_index": 2,
+      "prompt_sha256": "b4d7f5b08522b5fe93238347a94db6210e5ebe587e410944f032674ece383385",
+      "input_tokens": 172
+    },
+    {
+      "id": "mmlu/professional_law/840",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "professional_law",
+      "answer_index": 1,
+      "prompt_sha256": "c1a5abf9c3e3ea26594f3e268c02a75a14df2559fd37dc0b1398f3f482edbc58",
+      "input_tokens": 214
+    },
+    {
+      "id": "mmlu/professional_medicine/170",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "professional_medicine",
+      "answer_index": 1,
+      "prompt_sha256": "a11736b10276d8626835ecb62976bf6b9f18c1098f19aebdb73c95bdecda4064",
+      "input_tokens": 211
+    },
+    {
+      "id": "mmlu/professional_medicine/165",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "professional_medicine",
+      "answer_index": 3,
+      "prompt_sha256": "92f2c729a2ce262f6bc614b3184e77a2b3b9395f131f3b18f1d303ccef45ebd9",
+      "input_tokens": 141
+    },
+    {
+      "id": "mmlu/professional_medicine/217",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "professional_medicine",
+      "answer_index": 3,
+      "prompt_sha256": "5e906f6a5f15a5bd1bc894d62551dcbfdc62e782326d5d0313fd15ba3bd9ff2d",
+      "input_tokens": 109
+    },
+    {
+      "id": "mmlu/professional_medicine/219",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "professional_medicine",
+      "answer_index": 3,
+      "prompt_sha256": "447627afc932466d0de8d30a7fcb6348bfbef321ea1dc83e950337014628be50",
+      "input_tokens": 213
+    },
+    {
+      "id": "mmlu/professional_psychology/536",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "professional_psychology",
+      "answer_index": 1,
+      "prompt_sha256": "89fcafedbe162cb6f2a4675779650fbbd165612b2207863448fc57dac20ebe54",
+      "input_tokens": 95
+    },
+    {
+      "id": "mmlu/professional_psychology/88",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "professional_psychology",
+      "answer_index": 1,
+      "prompt_sha256": "6118772aebc8f549b110e792d8da6d77c2b93adf623820170fc77a79d571a6da",
+      "input_tokens": 94
+    },
+    {
+      "id": "mmlu/professional_psychology/197",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "professional_psychology",
+      "answer_index": 1,
+      "prompt_sha256": "6b0889e823c84de68c2dfabf19f03cf6ccdc7df4e55eee14868f1ebd0f946622",
+      "input_tokens": 87
+    },
+    {
+      "id": "mmlu/professional_psychology/294",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "professional_psychology",
+      "answer_index": 1,
+      "prompt_sha256": "4e825acb57b7613fac4ee3b3ed2d916904303d45551432727f9b0d746b22fc56",
+      "input_tokens": 79
+    },
+    {
+      "id": "mmlu/public_relations/37",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "public_relations",
+      "answer_index": 1,
+      "prompt_sha256": "e2ebfd88de5cf1e7dcedc3f62d35dc1c4b8c8651d675711800026bb66545f54e",
+      "input_tokens": 48
+    },
+    {
+      "id": "mmlu/public_relations/96",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "public_relations",
+      "answer_index": 0,
+      "prompt_sha256": "3c0f189604dd821f4250f7e3423bf38612a0e2663b5814174edf0e46238b34f3",
+      "input_tokens": 48
+    },
+    {
+      "id": "mmlu/public_relations/91",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "public_relations",
+      "answer_index": 0,
+      "prompt_sha256": "392423367ad690befe1b7a9d64ec72eb424137429305c91d99340a137a9225d0",
+      "input_tokens": 53
+    },
+    {
+      "id": "mmlu/public_relations/20",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "public_relations",
+      "answer_index": 2,
+      "prompt_sha256": "2b5de9dd7df279a6715b0e77f6603153e35a9fd469298564be689fa55f28db00",
+      "input_tokens": 46
+    },
+    {
+      "id": "mmlu/security_studies/60",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "security_studies",
+      "answer_index": 3,
+      "prompt_sha256": "8d68d2765e86bbb99c12f17a15a20aaa525ec68403be6f0cdafc9d977dc61d6f",
+      "input_tokens": 122
+    },
+    {
+      "id": "mmlu/security_studies/111",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "security_studies",
+      "answer_index": 2,
+      "prompt_sha256": "8303d13138043ea744249c924955bc0d2ce00bd4b402fea40c328b1ed3b60558",
+      "input_tokens": 112
+    },
+    {
+      "id": "mmlu/security_studies/155",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "security_studies",
+      "answer_index": 3,
+      "prompt_sha256": "aeb49821222fde319a934561713d4a9377ef047304a26b56dfb0d4a2d8855f4e",
+      "input_tokens": 158
+    },
+    {
+      "id": "mmlu/security_studies/59",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "security_studies",
+      "answer_index": 2,
+      "prompt_sha256": "068bc663f18e356c04f25bc21cce8ba64e081470185e35c7666feee09c143136",
+      "input_tokens": 122
+    },
+    {
+      "id": "mmlu/sociology/35",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "sociology",
+      "answer_index": 0,
+      "prompt_sha256": "634c55fa2781f51afba7208f41b347811137598b43b65729cb41db75f7bd1b3e",
+      "input_tokens": 77
+    },
+    {
+      "id": "mmlu/sociology/54",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "sociology",
+      "answer_index": 0,
+      "prompt_sha256": "6fa912b614f5d3eccface0fa5697d9e8010c471e61059b3ed451e6319e078303",
+      "input_tokens": 147
+    },
+    {
+      "id": "mmlu/sociology/77",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "sociology",
+      "answer_index": 3,
+      "prompt_sha256": "fe0aa52d0e8e77b437a3f3a5308a0e85f54adc21840c3d7a14ff380dd4e0261b",
+      "input_tokens": 110
+    },
+    {
+      "id": "mmlu/sociology/87",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "sociology",
+      "answer_index": 3,
+      "prompt_sha256": "1fe47cd9d7062c53723e5dc16beef6a66ae2e2b98d2d0b1a2624d0d43443c2a9",
+      "input_tokens": 72
+    },
+    {
+      "id": "mmlu/us_foreign_policy/21",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "us_foreign_policy",
+      "answer_index": 2,
+      "prompt_sha256": "45d22f2650f7a0343002c505e4f6182e1179ccd2f1f8c3e698f1e9a862d2c64e",
+      "input_tokens": 66
+    },
+    {
+      "id": "mmlu/us_foreign_policy/68",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "us_foreign_policy",
+      "answer_index": 1,
+      "prompt_sha256": "91b1335afd6bc831d764aa39f8ffd992bc363773e4f6fe7bce117a04b8eb34be",
+      "input_tokens": 80
+    },
+    {
+      "id": "mmlu/us_foreign_policy/22",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "us_foreign_policy",
+      "answer_index": 2,
+      "prompt_sha256": "0a83dc73d5aafbe2394a99bd0168f99c7a113e96e7b8ca3532a2da77a9bf845e",
+      "input_tokens": 55
+    },
+    {
+      "id": "mmlu/us_foreign_policy/11",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "us_foreign_policy",
+      "answer_index": 2,
+      "prompt_sha256": "855782aced2c3925cbf026b87bb1a8170050e6973467d270f02a71ede27306bf",
+      "input_tokens": 79
+    },
+    {
+      "id": "mmlu/virology/58",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "virology",
+      "answer_index": 2,
+      "prompt_sha256": "6d9c07e4ee25e30f7bbf309ff1c8597e9c1c0196a693188a1551aec1f05c6238",
+      "input_tokens": 68
+    },
+    {
+      "id": "mmlu/virology/106",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "virology",
+      "answer_index": 0,
+      "prompt_sha256": "879c51c74526730de3b16d25e6b6e0c87fc6ded12886e6420c12e8788b81762f",
+      "input_tokens": 70
+    },
+    {
+      "id": "mmlu/virology/120",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "virology",
+      "answer_index": 2,
+      "prompt_sha256": "2123004db9804178d72ed0da7e31a6b84b1631824d3ed5e8b1c9dfeff91d97dc",
+      "input_tokens": 66
+    },
+    {
+      "id": "mmlu/virology/119",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "virology",
+      "answer_index": 3,
+      "prompt_sha256": "df79b47e9ed366c2dfb7b282f9cac208f1f364377663100621c4a2e16e35b612",
+      "input_tokens": 47
+    },
+    {
+      "id": "mmlu/world_religions/130",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "world_religions",
+      "answer_index": 2,
+      "prompt_sha256": "ff3f7f323c5a27d13d0ccb2ea8ef92683f7283cd89993385209cf860764305af",
+      "input_tokens": 50
+    },
+    {
+      "id": "mmlu/world_religions/124",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "world_religions",
+      "answer_index": 2,
+      "prompt_sha256": "1d4da8c62286829b99104514b291c992a8cc7a4eef1b6263b678410412f6f271",
+      "input_tokens": 62
+    },
+    {
+      "id": "mmlu/world_religions/12",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "world_religions",
+      "answer_index": 1,
+      "prompt_sha256": "a06cda08b387e9fcd957ce9f3299135a889ea428bd4f509997f0bb883d7849a3",
+      "input_tokens": 53
+    },
+    {
+      "id": "mmlu/world_religions/7",
+      "source": "mmlu",
+      "ability": "knowledge_mmlu_subset",
+      "group": "world_religions",
+      "answer_index": 0,
+      "prompt_sha256": "78dab1c8bb6d7f1161c4f223120a02fa8b6bde637912a09e05fcfb6a5f5d1037",
+      "input_tokens": 61
+    }
+  ],
+  "source_download_manifest": {
+    "fetched_epoch": 1789888489.5664499,
+    "bbh_revision": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+    "sources": [
+      {
+        "path": "boolq-dev.jsonl",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/bbh/logical_deduction_five_objects.json",
+        "path": "bbh-logical-five.json",
+        "bytes": 155477,
+        "sha256": "d2df31394b903b7f0e085d42a69572a092987856eac076799017d70ef266fa8f"
+      },
+      {
+        "url": "https://yonatanbisk.com/piqa/data/valid-labels.lst",
+        "path": "piqa-labels.lst",
+        "bytes": 3676,
+        "sha256": "b4192dc3a2a0363d9d60ccf79800cbbe2f32ebb17726efdde6970e0b8131bceb"
+      },
+      {
+        "url": "https://yonatanbisk.com/piqa/data/valid.jsonl",
+        "path": "piqa-valid.jsonl",
+        "bytes": 495929,
+        "sha256": "93503cc97c679e459b065c3d13e848282e44b2a25213985bed3e5d458abef72d"
+      },
+      {
+        "url": "https://people.eecs.berkeley.edu/~hendrycks/data.tar",
+        "path": "mmlu.tar",
+        "bytes": 166184960,
+        "sha256": "bec563ba4bac1d6aaf04141cd7d1605d7a5ca833e38f994051e818489592989b"
+      },
+      {
+        "url": "https://huggingface.co/datasets/google/boolq/resolve/35b264d03638db9f4ce671b711558bf7ff0f80d5/data/validation-00000-of-00001.parquet",
+        "revision": "35b264d03638db9f4ce671b711558bf7ff0f80d5",
+        "path": "boolq-validation.parquet",
+        "bytes": 1257630,
+        "sha256": "52355d11524b4b874a9b9dcc278feb10f672d52c4f4eff9872e695ede59820f8",
+        "replaces_failed": "boolq-dev.jsonl"
+      }
+    ],
+    "purpose": "Independent general evaluation candidates only; not training, rewards or selection; selection/audit pending"
+  },
+  "wall_seconds": 8.068327903747559,
+  "pretraining_contamination": "unknown; no claim of unseen pretraining data",
+  "scoring": "Fixed zero-shot option-letter conditional likelihood; no CoT; limited subsets, not full benchmark or TRACE replication",
+  "model_scores_queried_during_audit": false
+}

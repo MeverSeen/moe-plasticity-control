@@ -1,0 +1,18 @@
+{
+  "root": {
+    "id": "train_1411002",
+    "split": "train",
+    "seed": 1411002,
+    "tasks": [
+      "task1555_scitail_answer_generation",
+      "task875_emotion_classification",
+      "task344_hybridqa_answer_generation"
+    ],
+    "targets": [
+      0.5419350914889947,
+      1.0414150566793978,
+      2.7951566576957703
+    ]
+  },
+  "target_rule": "One all-one LoRA30-update reference per task, same root and stop examples; median stop CE at updates20/25/30. No policy-dependent target; no retuning if short or failed."
+}

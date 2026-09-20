@@ -1,0 +1,70 @@
+{
+  "status": "unresolved_original_path_divergence",
+  "same_cached_prefix_label": true,
+  "all_multiplier_values_uniform": [
+    1.0
+  ],
+  "all_multiplier_values_ppo": [
+    1.0
+  ],
+  "B_curves_first3": {
+    "uniform1": [
+      {
+        "step": 0,
+        "loss": 0.4874562509357929
+      },
+      {
+        "step": 1,
+        "loss": 0.44533525593578815
+      },
+      {
+        "step": 2,
+        "loss": 0.4419837035238743
+      }
+    ],
+    "ppo": [
+      {
+        "step": 0,
+        "loss": 0.4874562509357929
+      },
+      {
+        "step": 1,
+        "loss": 0.43123213574290276
+      },
+      {
+        "step": 2,
+        "loss": 0.43052321299910545
+      }
+    ]
+  },
+  "task_steps": {
+    "uniform1": [
+      20,
+      3,
+      27
+    ],
+    "ppo": [
+      20,
+      3,
+      26
+    ]
+  },
+  "limits": [
+    "Cached prefix fingerprint is not a new hash at every restore. The identical recorded initial B loss was copied from the prefix, not independently recomputed after each restore.",
+    "Original root1 complete prefix object was not persisted; bounded debug uses available root2 checkpoint and does not retroactively verify original root1 state.",
+    "Attention dropout is0; installed MoE forward has no jitter injection; identical action seeds/batch schedule are specified. Exact cause is not established.",
+    "Four root2 checkpoint replays have identical before/after weights, Adam moments/steps, RNG and batches, and immutable input. This does not explain the original root1 mismatch.",
+    "No causal PPO benefit or robust fixed/rule effect is inferred from these single observed path differences."
+  ],
+  "bounded_debug": {
+    "updates": 4,
+    "seconds": 106.36727809906006,
+    "input_root": "confirmation_1412001",
+    "all_compared_tensors_equal": true
+  },
+  "endpoint_factor_content_hashes": {
+    "ppo_selected": "fb1be290e34f572fb71e8eec8d97eb80b07e609e45d8b154871087c7e6cca4c5",
+    "uniform1": "d09a19d0c07b9d1dd11088e2881b9f30838a8b04d57e34f628464fb18e778b5c"
+  },
+  "saved_endpoint_weights_differ": true
+}

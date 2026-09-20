@@ -1,0 +1,5 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:01,  1.72it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:01<00:00,  1.62it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:01<00:00,  1.97it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:01<00:00,  1.87it/s]
+{"case": 0, "policy": "fixed", "monitor_loss_after": 1.996362254023552, "input_immutable": true, "elapsed": 41.508219718933105}
+{"case": 1, "policy": "fixed", "monitor_loss_after": 1.996362254023552, "input_immutable": true, "elapsed": 58.04574966430664}
+{"case": 2, "policy": "ppo", "monitor_loss_after": 1.996362254023552, "input_immutable": true, "elapsed": 73.67604041099548}
+{"case": 3, "policy": "ppo", "monitor_loss_after": 1.996362254023552, "input_immutable": true, "elapsed": 89.10948085784912}

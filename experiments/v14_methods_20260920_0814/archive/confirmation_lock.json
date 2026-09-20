@@ -1,0 +1,12 @@
+{
+  "controller": {
+    "path": "ppo_selected.pt",
+    "sha256": "2114660247ec335be81726c2dcefe0e4abdf14dcdccaf29d97f9c6eab06ef9ee",
+    "parameters": 8458
+  },
+  "selection": "last fully completed PPO batch; greedy frozen deployment, independent of confirmation/general scores",
+  "fixed_name": "static050",
+  "fixed_base": 2,
+  "rule_base": 4,
+  "locked_epoch": 1789897822.0680006
+}

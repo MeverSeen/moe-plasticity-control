@@ -1,0 +1,11 @@
+{
+  "visits": {
+    "train_1411000": 3,
+    "train_1411001": 3,
+    "train_1411002": 2
+  },
+  "complete_histories": 8,
+  "rollout_batches": 4,
+  "optimizer_steps": 12,
+  "decisions": 83
+}

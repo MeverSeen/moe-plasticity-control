@@ -1,0 +1,29 @@
+{
+  "selected": "static050",
+  "base_index": 2,
+  "menu": [
+    "uniform1",
+    "static050"
+  ],
+  "selection_rule": "Lexicographic failure_count, cumulative positive old-task CE forgetting, final mean CE, path updates on reused pilot development root; menu uniform1/static050 only. Best in menu, no global best claim.",
+  "scores": {
+    "uniform1": [
+      0,
+      0.0022214542150322814,
+      0.38699412758433027,
+      26
+    ],
+    "static050": [
+      0,
+      0.00025945525158022065,
+      0.3581730510741181,
+      36
+    ]
+  },
+  "reused_pilot_paths": {
+    "uniform1": "41e56cf4e081b729f53c29764b7b443559ca44afecca5096fa3ba632dcf57f39",
+    "static050": "c769f99c0d9911182bcb67e67ae0bc5e3f593cb67435dcc5d705ca41d2b1c3c5"
+  },
+  "scope": "best in two-candidate development menu; not globally optimal strong-static",
+  "locked_epoch": 1789896967.1157188
+}

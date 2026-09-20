@@ -1,0 +1,341 @@
+{
+  "status": "passed_recorded_manifest_boundaries",
+  "pairs": [
+    {
+      "a": "train",
+      "b": "development",
+      "overlap": {
+        "tasks": [],
+        "sources": [],
+        "components": []
+      }
+    },
+    {
+      "a": "train",
+      "b": "confirmation",
+      "overlap": {
+        "tasks": [],
+        "sources": [],
+        "components": []
+      }
+    },
+    {
+      "a": "development",
+      "b": "confirmation",
+      "overlap": {
+        "tasks": [],
+        "sources": [],
+        "components": []
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "split": "train",
+      "root": "train_1411000",
+      "task": "task363_sst2_polarity_classification",
+      "sources": [
+        "sst2"
+      ],
+      "component": 2,
+      "roles": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "categories": [
+        "Sentiment Analysis"
+      ]
+    },
+    {
+      "split": "train",
+      "root": "train_1411000",
+      "task": "task196_sentiment140_answer_generation",
+      "sources": [
+        "sentiment140"
+      ],
+      "component": 4,
+      "roles": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "categories": [
+        "Sentiment Analysis"
+      ]
+    },
+    {
+      "split": "train",
+      "root": "train_1411000",
+      "task": "task280_stereoset_classification_stereotype_type",
+      "sources": [
+        "stereoset"
+      ],
+      "component": 23,
+      "roles": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "categories": [
+        "Text Categorization"
+      ]
+    },
+    {
+      "split": "train",
+      "root": "train_1411001",
+      "task": "task339_record_answer_generation",
+      "sources": [
+        "record"
+      ],
+      "component": 28,
+      "roles": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "categories": [
+        "Question Answering"
+      ]
+    },
+    {
+      "split": "train",
+      "root": "train_1411001",
+      "task": "task1532_daily_dialog_emotion_classification",
+      "sources": [
+        "dailydialog"
+      ],
+      "component": 24,
+      "roles": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "categories": [
+        "Sentiment Analysis"
+      ]
+    },
+    {
+      "split": "train",
+      "root": "train_1411001",
+      "task": "task1293_kilt_tasks_hotpotqa_question_answering",
+      "sources": [
+        "hotpotqa"
+      ],
+      "component": 13,
+      "roles": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "categories": [
+        "Question Answering"
+      ]
+    },
+    {
+      "split": "train",
+      "root": "train_1411002",
+      "task": "task1555_scitail_answer_generation",
+      "sources": [
+        "scitail"
+      ],
+      "component": 30,
+      "roles": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "categories": [
+        "Question Answering"
+      ]
+    },
+    {
+      "split": "train",
+      "root": "train_1411002",
+      "task": "task875_emotion_classification",
+      "sources": [
+        "emotion"
+      ],
+      "component": 54,
+      "roles": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "categories": [
+        "Sentiment Analysis"
+      ]
+    },
+    {
+      "split": "train",
+      "root": "train_1411002",
+      "task": "task344_hybridqa_answer_generation",
+      "sources": [
+        "hybridqa"
+      ],
+      "component": 18,
+      "roles": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "categories": [
+        "Question Answering"
+      ]
+    },
+    {
+      "split": "confirmation",
+      "root": "confirmation_1412000",
+      "task": "task494_review_polarity_answer_generation",
+      "sources": [
+        "amazonpolarity"
+      ],
+      "component": 29,
+      "roles": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "categories": [
+        "Sentiment Analysis"
+      ]
+    },
+    {
+      "split": "confirmation",
+      "root": "confirmation_1412000",
+      "task": "task456_matres_intention_classification",
+      "sources": [
+        "matres"
+      ],
+      "component": 3,
+      "roles": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "categories": [
+        "Information Extraction"
+      ]
+    },
+    {
+      "split": "confirmation",
+      "root": "confirmation_1412000",
+      "task": "task274_overruling_legal_classification",
+      "sources": [
+        "overruling"
+      ],
+      "component": 1,
+      "roles": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "categories": [
+        "Text Categorization"
+      ]
+    },
+    {
+      "split": "confirmation",
+      "root": "confirmation_1412001",
+      "task": "task178_quartz_question_answering",
+      "sources": [
+        "quartz"
+      ],
+      "component": 14,
+      "roles": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "categories": [
+        "Question Answering"
+      ]
+    },
+    {
+      "split": "confirmation",
+      "root": "confirmation_1412001",
+      "task": "task198_mnli_domain_classification",
+      "sources": [
+        "multinli"
+      ],
+      "component": 6,
+      "roles": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "categories": [
+        "Text Categorization"
+      ]
+    },
+    {
+      "split": "confirmation",
+      "root": "confirmation_1412001",
+      "task": "task582_naturalquestion_answer_generation",
+      "sources": [
+        "naturalquestions"
+      ],
+      "component": 11,
+      "roles": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "categories": [
+        "Question Answering"
+      ]
+    },
+    {
+      "split": "development",
+      "root": "development_1401000",
+      "task": "task247_dream_answer_generation",
+      "sources": [
+        "dream"
+      ],
+      "component": 44,
+      "roles": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "categories": [
+        "Question Answering"
+      ]
+    },
+    {
+      "split": "development",
+      "root": "development_1401000",
+      "task": "task190_snli_classification",
+      "sources": [
+        "snli"
+      ],
+      "component": 33,
+      "roles": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "categories": [
+        "Textual Entailment"
+      ]
+    },
+    {
+      "split": "development",
+      "root": "development_1401000",
+      "task": "task843_financial_phrasebank_classification",
+      "sources": [
+        "financialphrasebank"
+      ],
+      "component": 38,
+      "roles": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "categories": [
+        "Sentiment Analysis"
+      ]
+    }
+  ],
+  "limitation": "normalized exact inputs plus 32-hash, 8-band/4-row MinHash candidate search; verified 5-word-shingle Jaccard>=0.90; group roles together and choose one task per connected source/near-duplicate component. Approximate candidate search is not an exhaustive proof of no near duplicates. Unknown source provenance or semantic overlap remain possible."
+}
