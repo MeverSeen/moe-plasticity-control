@@ -1,0 +1,188 @@
+{
+  "protocol_sha256": "4946b78b91272a02046c5d35eff3bd51e107d2835c64945123047ec636722bab",
+  "scale_sha256": "b8dc4773fb7e002b9909cce37f21ee5af67542627848fb8c2d1b4512a2062901",
+  "fixed": 1,
+  "fits": [
+    {
+      "name": "h1_forgetting_16171",
+      "hold": 1,
+      "reward": "forgetting",
+      "seed": 16171,
+      "selected_round": 32,
+      "selected_key": [
+        -16,
+        0.007854017739494642,
+        54.5
+      ],
+      "episodes": 256,
+      "learner_updates": 7367,
+      "decisions": 7367,
+      "ppo_optimizer_updates": 128,
+      "seconds": 5.846212863922119,
+      "parameter_change_l2": 1.8209473105919594,
+      "selected_sha256": "e3fac785ee16f6b73aecb148829bec4ca115b69dbefb10b38b1243adedbfa029",
+      "last_sha256": "6ee5f742cbf63321e187fd0ed914c4e2c01a104198a7aafccdaf7078a3a5ab95"
+    },
+    {
+      "name": "h1_forgetting_16172",
+      "hold": 1,
+      "reward": "forgetting",
+      "seed": 16172,
+      "selected_round": 16,
+      "selected_key": [
+        -16,
+        0.010642055189236999,
+        46.0
+      ],
+      "episodes": 256,
+      "learner_updates": 6065,
+      "decisions": 6065,
+      "ppo_optimizer_updates": 128,
+      "seconds": 5.108881235122681,
+      "parameter_change_l2": 1.9174756495027496,
+      "selected_sha256": "69afe4f8dc3e20b40ca5473f1d9c20680bbe41ed401c42a724c36eef299bab8e",
+      "last_sha256": "0e3eab7f0734889e1e5eae8cebf36fcd5d81e768d6c2c1f3a5efbcbdc220717c"
+    },
+    {
+      "name": "h1_forgetting_16173",
+      "hold": 1,
+      "reward": "forgetting",
+      "seed": 16173,
+      "selected_round": 0,
+      "selected_key": [
+        -15,
+        0.006593472965889507,
+        64.25
+      ],
+      "episodes": 256,
+      "learner_updates": 5842,
+      "decisions": 5842,
+      "ppo_optimizer_updates": 128,
+      "seconds": 5.183207988739014,
+      "parameter_change_l2": 1.9871105071399318,
+      "selected_sha256": "7f1bd7e0702972864f5c3d158b10f67ba647f21e13dacd0db70544d560eb2a8a",
+      "last_sha256": "6a75e7e055aa0795595d04ae17ea332ab6d832b04977bf9a924c0ee54f2d3f15"
+    },
+    {
+      "name": "h1_movement_16171",
+      "hold": 1,
+      "reward": "movement",
+      "seed": 16171,
+      "selected_round": 32,
+      "selected_key": [
+        -16,
+        0.00904105285493036,
+        48.4375
+      ],
+      "episodes": 256,
+      "learner_updates": 7395,
+      "decisions": 7395,
+      "ppo_optimizer_updates": 128,
+      "seconds": 5.867837905883789,
+      "parameter_change_l2": 1.2609117655760378,
+      "selected_sha256": "0df59996718172153335d0b554f19e5b1bf76ffc24e72fa3f0c80d608eca846e",
+      "last_sha256": "3ebabe10db99f9d4f0cae1dad91e2a48be95e329eb93c3ed17956e3877059488"
+    },
+    {
+      "name": "h1_movement_16172",
+      "hold": 1,
+      "reward": "movement",
+      "seed": 16172,
+      "selected_round": 16,
+      "selected_key": [
+        -16,
+        0.010598629130981863,
+        46.8125
+      ],
+      "episodes": 256,
+      "learner_updates": 6137,
+      "decisions": 6137,
+      "ppo_optimizer_updates": 128,
+      "seconds": 5.059155225753784,
+      "parameter_change_l2": 1.3202977742090416,
+      "selected_sha256": "a7e4725d5ad39836c17d8025147d1ffe7568015f48b862284126da83f9f75a53",
+      "last_sha256": "58ee0c30dedd5fe16bc19c9301efd9103630048c30fe618be7e2427c0c068b70"
+    },
+    {
+      "name": "h1_movement_16173",
+      "hold": 1,
+      "reward": "movement",
+      "seed": 16173,
+      "selected_round": 32,
+      "selected_key": [
+        -16,
+        0.011361443903297186,
+        45.75
+      ],
+      "episodes": 256,
+      "learner_updates": 5892,
+      "decisions": 5892,
+      "ppo_optimizer_updates": 128,
+      "seconds": 5.16258692741394,
+      "parameter_change_l2": 1.1817548191736846,
+      "selected_sha256": "c9601a581ebbb461d471951ad36ee85e3d4cb72ed7fdd588c9be24ad61e22e12",
+      "last_sha256": "2915821f83513cebe7ae6a608f14bcb6a920d6436b19dfa8ada5a8b52ffd91e9"
+    },
+    {
+      "name": "h1_overlap_16171",
+      "hold": 1,
+      "reward": "overlap",
+      "seed": 16171,
+      "selected_round": 16,
+      "selected_key": [
+        -15,
+        0.006413737643096181,
+        64.0625
+      ],
+      "episodes": 256,
+      "learner_updates": 7460,
+      "decisions": 7460,
+      "ppo_optimizer_updates": 128,
+      "seconds": 6.126289129257202,
+      "parameter_change_l2": 2.8609863435081926,
+      "selected_sha256": "983b1429dab1769d1aa9527607926f1dcfe3c1728fbbc6afa68ad627ff821071",
+      "last_sha256": "0f6256014798029c6f08378dcc2c1cb6c63109c4f97a5c23a457785c4022cdcd"
+    },
+    {
+      "name": "h1_overlap_16172",
+      "hold": 1,
+      "reward": "overlap",
+      "seed": 16172,
+      "selected_round": 0,
+      "selected_key": [
+        -15,
+        0.006593472965889507,
+        64.25
+      ],
+      "episodes": 256,
+      "learner_updates": 6066,
+      "decisions": 6066,
+      "ppo_optimizer_updates": 128,
+      "seconds": 5.3255109786987305,
+      "parameter_change_l2": 2.7658909964838907,
+      "selected_sha256": "85f2be0feb59842a6c724fe922bd409bb9fdf93cbec5c7cb6c8dc632e1615fec",
+      "last_sha256": "f73c0702420ec1bf93f751b9e52577695bcc62cd12d7ef11b8dac26570425245"
+    },
+    {
+      "name": "h1_overlap_16173",
+      "hold": 1,
+      "reward": "overlap",
+      "seed": 16173,
+      "selected_round": 0,
+      "selected_key": [
+        -15,
+        0.006593472965889507,
+        64.25
+      ],
+      "episodes": 256,
+      "learner_updates": 5716,
+      "decisions": 5716,
+      "ppo_optimizer_updates": 128,
+      "seconds": 5.099858999252319,
+      "parameter_change_l2": 3.118432622041603,
+      "selected_sha256": "8048a0a806bd81e1f34bb686261e86862cd7abc4c8a124c6be5b44e295bd3e00",
+      "last_sha256": "836489bae6ade0b507178d261e885a3c4af19bd082cc76d116d0de5e68957f62"
+    }
+  ],
+  "epoch": 1789918996.732414
+}
