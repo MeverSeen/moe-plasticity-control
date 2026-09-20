@@ -1,6 +1,7 @@
 """Reuse the frozen v14 interface without modifying its archive."""
 import hashlib
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -23,3 +24,7 @@ def file_sha(path):
         for block in iter(lambda: stream.read(8 * 1024 * 1024), b""):
             h.update(block)
     return h.hexdigest()
+
+
+def run_root():
+    return Path(os.environ.get("V15_RUN_ROOT", "/root/autodl-tmp/moe-v15-offline-20260920/r2"))

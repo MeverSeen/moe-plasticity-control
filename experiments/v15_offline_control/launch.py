@@ -4,9 +4,9 @@ import os
 import subprocess
 import sys
 from pathlib import Path
-from common import HERE, V14, file_sha, save_json
+from common import run_root, HERE, V14, file_sha, save_json
 
-root = Path('/root/autodl-tmp/moe-v15-offline-20260920')
+root = run_root()
 allocation = Path('/root/autodl-tmp/moe-plasticity-v13-20260920')
 protocol = HERE / 'protocol.json'
 plan = json.loads(protocol.read_text())

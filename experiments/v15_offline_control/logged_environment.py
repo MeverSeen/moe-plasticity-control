@@ -1,5 +1,7 @@
 """Instrument the existing learner; keep observations and actions unchanged."""
 import copy
+import os
+os.environ.setdefault("CUBLAS_WORKSPACE_CONFIG", ":4096:8")
 import time
 import numpy as np
 import torch
@@ -43,6 +45,9 @@ class LoggedAdamW(GatedAdamW):
 
 class LoggedLearner(NativeLearner):
     def __init__(self, *args, **kwargs):
+        if os.environ.get("CUBLAS_WORKSPACE_CONFIG") != ":4096:8":
+            raise RuntimeError("Locked CUDA workspace configuration differs")
+        torch.use_deterministic_algorithms(True)
         super().__init__(*args, **kwargs)
         self.optim = LoggedAdamW(self.groups, self.lr)
         self.last_train_loss = None

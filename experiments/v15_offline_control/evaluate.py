@@ -40,7 +40,9 @@ class Evaluator(Collector):
         self.answers = torch.load(self.allocation / "v14/answer_lookup.pt", weights_only=False)
         self.general = GeneralEvaluator(json.loads((self.allocation / "v14/general_examples.json").read_text()),
                                         json.loads((self.allocation / "v14/general_manifest.json").read_text()))
-        self.initial_general = json.loads((self.allocation / "v14/results/short_comparison/initial_general.json").read_text())
+        self.learner.reset()
+        self.initial_general = self.general.run(self.learner)
+        save_json(self.root / "initial_general.json", self.initial_general)
         self.eval_rows = []
 
     def policy(self, name):

@@ -2,9 +2,9 @@ import json
 import subprocess
 import sys
 from pathlib import Path
-from common import HERE, save_json
+from common import run_root, HERE, save_json
 
-root = Path('/root/autodl-tmp/moe-v15-offline-20260920')
+root = run_root()
 if (root / 'pipeline_launch.json').exists():
     raise SystemExit('Pipeline already launched; inspect before retrying')
 plan = json.loads((HERE / 'protocol.json').read_text())

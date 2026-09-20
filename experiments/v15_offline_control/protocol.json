@@ -1,6 +1,6 @@
 {
-  "version": "v15_offline_control",
-  "locked_utc": "2026-09-20T13:33:05.721578+00:00",
+  "version": "v15_offline_control_r2",
+  "locked_utc": "2026-09-20T13:55:16.092968+00:00",
   "authorization": "User explicitly authorized up to eight additional hours after resource clarification on 2026-09-20. Stop earlier at 21:15 UTC. No purchase or expansion.",
   "hard_deadline_utc": "2026-09-20T21:15:00+00:00",
   "hard_deadline_epoch": 1789938900.0,
@@ -33,8 +33,7 @@
           "task196_sentiment140_answer_generation",
           "task280_stereoset_classification_stereotype_type"
         ],
-        "targets": null,
-        "target_source": "v14_methods_20260920_0814/targets/train_1411000.json"
+        "targets": null
       },
       {
         "id": "train_1411001",
@@ -45,8 +44,7 @@
           "task1532_daily_dialog_emotion_classification",
           "task1293_kilt_tasks_hotpotqa_question_answering"
         ],
-        "targets": null,
-        "target_source": "v14_methods_20260920_0814/targets/train_1411001.json"
+        "targets": null
       },
       {
         "id": "train_1411002",
@@ -57,8 +55,7 @@
           "task875_emotion_classification",
           "task344_hybridqa_answer_generation"
         ],
-        "targets": null,
-        "target_source": "v14_methods_20260920_0814/targets/train_1411002.json"
+        "targets": null
       },
       {
         "id": "train_1511003",
@@ -82,8 +79,7 @@
           "task190_snli_classification",
           "task843_financial_phrasebank_classification"
         ],
-        "targets": null,
-        "target_source": "v14_methods_20260920_0814/targets/development_1401000.json"
+        "targets": null
       },
       {
         "id": "development_1511001",
@@ -239,5 +235,11 @@
     "input_restrictions": "No confirmation outcomes or raw isolated eval metrics in offline fitting or reward. All sibling branches stay with their complete root."
   },
   "collection": "32 complete fresh behavior histories maximum (8 behaviors x 4 roots), balanced round robin plus four two-window restore checks and one complete repeated all-one history excluded from learning. Stop by time only. Shared post-A checkpoints are actual paired initial states, not oracle optimal-action labels. Save endpoint adapters, raw monitored CE, actual factor displacement, effective endpoint distance, action distributions and sources.",
-  "engineering": "Unmodified v14 archive reused as dependency. Defensive copied optimizer restore; same arithmetic instrumented Adam. Require full weights/Adam restore and freshly measured CE equality. Repeated full history must match."
+  "engineering": "Unmodified v14 archive reused as dependency. Defensive copied optimizer restore; same arithmetic instrumented Adam. Require full weights/Adam restore and freshly measured CE equality. Repeated full history must match.",
+  "numerics": {
+    "deterministic_algorithms": true,
+    "cublas_workspace_config": ":4096:8",
+    "targets": "Fresh reference calibration; no reuse from earlier numerical mode",
+    "reason": "First attempt stopped at paired five-update restore check; preserved separately. Deterministic full-window verification precedes r2 launch."
+  }
 }

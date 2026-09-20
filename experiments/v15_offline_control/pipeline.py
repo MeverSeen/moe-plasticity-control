@@ -5,7 +5,7 @@ import subprocess
 import sys
 import time
 from pathlib import Path
-from common import HERE, V14, save_json, file_sha
+from common import run_root, HERE, V14, save_json, file_sha
 
 # Keep the supervisor's direct child alive while the evaluator checkpoints.
 # The child evaluator also receives SIGUSR1 through the same process group.
@@ -13,7 +13,7 @@ signal.signal(signal.SIGUSR1, lambda *_: None)
 
 
 def main():
-    outer = Path('/root/autodl-tmp/moe-v15-offline-20260920')
+    outer = run_root()
     root = outer / 'data'
     allocation = Path('/root/autodl-tmp/moe-plasticity-v13-20260920')
     protocol = HERE / 'protocol.json'
@@ -62,6 +62,6 @@ if __name__ == '__main__':
     try:
         main()
     except Exception as error:
-        save_json('/root/autodl-tmp/moe-v15-offline-20260920/pipeline_error.json',
+        save_json(run_root() / 'pipeline_error.json',
                   {'error': repr(error), 'epoch': time.time()})
         raise
