@@ -1,0 +1,19 @@
+{
+  "locked_utc": "2026-09-20T08:17:16.185486+00:00",
+  "sha256": {
+    "data_manifest.json": "981e676555afe61ad387aa73a3d0397f7b38d82479f51a279b1d2b25d6329c28",
+    "environment.py": "3366104fb2253b1d1bfe2acd7154b83b80d54d1985eae95a0a4f9c2e1b17de6b",
+    "evaluation.py": "01df4c0613f1752d65fca97720b60b7b1711eb3d7054e9a841c53b7a4b3d78e8",
+    "lora.py": "2452e370f64d53675a40f7ea41ceb0dafc1cb714b6b2aede27cd9e708368594b",
+    "lora_native.py": "a0eee4b7fdc5c906f754fbe00e4987766fb160d71ad13a8d80e3072ab8c45c0e",
+    "method_protocol.json": "de9dfb0e1689b2415f71b7d6c479d99037634cc2679490c6d975d687fea5c389",
+    "optimizer.py": "811cfb07c48fb9a66c88daf5d2a789b4c675e214346c3ff38f401fddf973bc42",
+    "ppo.py": "a2f54a97c1d3b5a3f7e9514cf45c446bb4b49907ab6e8997c6aafef699097649",
+    "protocol.json": "052a0b5e087214d53c0f5d6afae11dfb065c792fef8bfb853446c49d0255b00b",
+    "structured_policy.py": "fb03b04315afe28436df4cf48c44c8ea7c1b183e3bef0d31469bee25f8ef9353",
+    "test_environment.py": "2f3a94404fa9aa5da07c1c04617869f41a7a73a85816a101341ae32d34fe2f59",
+    "test_policy.py": "777685c67d58215112f17e88a608b4efcfcf033f16826990ecc5a5279fc9163b",
+    "test_ppo.py": "930efdaac2feab7db870f0cd2037e42a19cfa377117e95168fa2b7c481fe28c1",
+    "workflow.py": "85ad75c2c930ea54943c267dc5ab1032f471b6f93a8139de5e18de1d283b8e32"
+  }
+}

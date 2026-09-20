@@ -1,0 +1,1568 @@
+{
+  "revision": "55a365637381ce7f3748fa2eac7aef1a113bbb82",
+  "seed": 130015,
+  "roles": {
+    "train": 384,
+    "monitor": 384,
+    "eval": 128
+  },
+  "max_sequence_length": 512,
+  "max_answer_tokens_including_eos": 33,
+  "near_duplicate_rule": "normalized exact inputs plus 32-hash, 8-band/4-row MinHash candidate search; verified 5-word-shingle Jaccard>=0.90; group roles together and choose one task per connected source/near-duplicate component. Approximate candidate search is not an exhaustive proof of no near duplicates.",
+  "near_pairs": 4295,
+  "eligible_components": 55,
+  "excluded": [
+    {
+      "task": "task1310_amazonreview_rating_classification.json",
+      "reason": "source or near-duplicate connected component already represented"
+    },
+    {
+      "task": "task028_drop_answer_generation.json",
+      "reason": "source or near-duplicate connected component already represented"
+    },
+    {
+      "task": "task388_torque_token_classification.json",
+      "reason": "source or near-duplicate connected component already represented"
+    },
+    {
+      "task": "task586_amazonfood_polarity_classification.json",
+      "reason": "source or near-duplicate connected component already represented"
+    },
+    {
+      "task": "task595_mocha_answer_generation.json",
+      "reason": "source or near-duplicate connected component already represented"
+    }
+  ],
+  "splits": {
+    "train": [
+      "task363_sst2_polarity_classification",
+      "task196_sentiment140_answer_generation",
+      "task280_stereoset_classification_stereotype_type",
+      "task339_record_answer_generation",
+      "task1532_daily_dialog_emotion_classification",
+      "task1293_kilt_tasks_hotpotqa_question_answering",
+      "task1555_scitail_answer_generation",
+      "task875_emotion_classification",
+      "task344_hybridqa_answer_generation",
+      "task1295_adversarial_qa_question_answering",
+      "task033_winogrande_answer_generation",
+      "task676_ollie_relationship_answer_generation",
+      "task1541_agnews_classification",
+      "task929_products_reviews_classification",
+      "task521_trivia_question_classification",
+      "task578_curiosity_dialogs_answer_generation",
+      "task1529_scitail1.1_classification",
+      "task1187_politifact_classification",
+      "task1399_obqa_answer_generation",
+      "task330_gap_answer_generation",
+      "task1612_sick_label_classification",
+      "task615_moviesqa_answer_generation",
+      "task285_imdb_answer_generation",
+      "task1344_glue_entailment_classification"
+    ],
+    "development": [
+      "task247_dream_answer_generation",
+      "task190_snli_classification",
+      "task843_financial_phrasebank_classification",
+      "task041_qasc_answer_generation",
+      "task1712_poki_classification",
+      "task164_mcscript_question_answering_text",
+      "task362_spolin_yesand_prompt_response_sub_classification",
+      "task061_ropes_answer_generation"
+    ],
+    "confirmation": [
+      "task494_review_polarity_answer_generation",
+      "task456_matres_intention_classification",
+      "task274_overruling_legal_classification",
+      "task178_quartz_question_answering",
+      "task198_mnli_domain_classification",
+      "task582_naturalquestion_answer_generation",
+      "task469_mrqa_answer_generation",
+      "task472_haspart_classification"
+    ]
+  },
+  "tasks": {
+    "task363_sst2_polarity_classification": {
+      "name": "task363_sst2_polarity_classification.json",
+      "sources": [
+        "sst2"
+      ],
+      "original_sources": [
+        "sst2"
+      ],
+      "categories": [
+        "Sentiment Analysis"
+      ],
+      "definition": "In this task, you are given sentences from movie reviews. The task is to classify a sentence as \"POS\" if the sentiment of the sentence is positive or as \"NEG\" if the sentiment of the sentence is negative",
+      "raw_instances": 6495,
+      "short_candidates": 6171,
+      "blob_sha1": "2827b562efc179893844f8c76eaea72762dd2957",
+      "sha256": "40cca30a9689c4117f0de0f59f224e9dbb962c84d44cc60ee84e6f46e4295cd1",
+      "license": [
+        "Unknown"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 30523,
+        "monitor": 30744,
+        "eval": 10231
+      },
+      "ids_sha256": {
+        "train": "cba18d29a80ddda185f95ae601049fe2ca821e876074a19a9af14c59db912dad",
+        "monitor": "af8a6cc55511aa30341a21ec7e5fb733d71be3a06173585850dfc1a79de5d018",
+        "eval": "973b43858a151da36fe6767f327a1e4545d9ce076371c1ce9fdb0db76ac85dfd"
+      },
+      "component": 2
+    },
+    "task196_sentiment140_answer_generation": {
+      "name": "task196_sentiment140_answer_generation.json",
+      "sources": [
+        "sentiment140"
+      ],
+      "original_sources": [
+        "sentiment140"
+      ],
+      "categories": [
+        "Sentiment Analysis"
+      ],
+      "definition": "In this task, you are given a text from tweets and a boolean question whether this tweet has positive sentiment or negative sentiment. Your task is to generate answer \"yes\" when the tweet has that particular sentiment, otherwise generate answer \"no\".",
+      "raw_instances": 6500,
+      "short_candidates": 6500,
+      "blob_sha1": "4167b5fbf9bee5306d9b766888f157a937f5d6ff",
+      "sha256": "33a1b8d8c3758bd2db8adb0cca85071e2522388805483a7f0bf4e82295021066",
+      "license": [
+        "Unknown"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 35300,
+        "monitor": 35091,
+        "eval": 11693
+      },
+      "ids_sha256": {
+        "train": "c5fc1b39889c572884938dc5fb8b05fa62d2c01f375067275616be04c9e00bbb",
+        "monitor": "5474e10a47edcf7ff423011a00d5609d54a235ab82c5507926800515d2b43d79",
+        "eval": "ea8c89289d8a7251ae6bb7f6cfb2811cc2788c3afecf9a69ecf52fff59bbac15"
+      },
+      "component": 4
+    },
+    "task280_stereoset_classification_stereotype_type": {
+      "name": "task280_stereoset_classification_stereotype_type.json",
+      "sources": [
+        "stereoset"
+      ],
+      "original_sources": [
+        "stereoset"
+      ],
+      "categories": [
+        "Text Categorization"
+      ],
+      "definition": "In this task, you are given a short passage that conveys stereotype or anti-stereotype about a specific target. A stereotype is an over-generalized belief about a particular group of people. An anti-stereotype is an idea that goes against a common stereotype. You are expected to classify the passage into four types of stereotype or anti-stereotype: gender, profession, race, and religion.",
+      "raw_instances": 3708,
+      "short_candidates": 3565,
+      "blob_sha1": "8ff4c23ffd832cadff1a35290c3f1528bf343d19",
+      "sha256": "4df4a97723519e3e6d907e2cb8827151ed3ae7a67d2a7883d8c77db586ab4ef4",
+      "license": [
+        "CC BY-SA 4.0"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 45236,
+        "monitor": 45482,
+        "eval": 15147
+      },
+      "ids_sha256": {
+        "train": "3cafee40665622a87cfb6987e6b4baeb82393013b2f5028626016cfea718dfbd",
+        "monitor": "f3fdf9b7fc38ea2894c1ab1fa725fd1e678e8752c04b1c4ec848aa9df457e738",
+        "eval": "e2ee5b413f78b7e56e85e1af62e84783fdcc979e9f27c148496c44bb4f7fdc80"
+      },
+      "component": 23
+    },
+    "task339_record_answer_generation": {
+      "name": "task339_record_answer_generation.json",
+      "sources": [
+        "record"
+      ],
+      "original_sources": [
+        "record"
+      ],
+      "categories": [
+        "Question Answering"
+      ],
+      "definition": "In this task, you will be presented with a passage and have to answer a question based on your understanding of the events inferred from the passage. Try to find the best answer that is most likely to fill in \"_\". Note that the URLs in the text have been replaced with [Link].",
+      "raw_instances": 6497,
+      "short_candidates": 5950,
+      "blob_sha1": "eb470221cbb7ca0a7f62756ebf17a364b028a66b",
+      "sha256": "5db5fa963f08ef82e4d9990d6b029a6254dc075257520553b0dc8482b8c0c223",
+      "license": [
+        "Apache 2.0",
+        "Dedicated Term of Use (https://archive.org/about/terms.php)"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 116796,
+        "monitor": 116012,
+        "eval": 39044
+      },
+      "ids_sha256": {
+        "train": "a1276f2f5fdb7fc7cbc4eb0db90f5a0412a5a308c6d0a29165f6a59344205a36",
+        "monitor": "e0d033278b939fa85d309356e9845f87e8d12a7332aa47aeab77495eaf6b959c",
+        "eval": "cc3c7d716b6f47c2556427457a1e4e97c342e63be1e3ca028d61d8f52cd64fa9"
+      },
+      "component": 28
+    },
+    "task1532_daily_dialog_emotion_classification": {
+      "name": "task1532_daily_dialog_emotion_classification.json",
+      "sources": [
+        "dailydialog"
+      ],
+      "original_sources": [
+        "dailydialog"
+      ],
+      "categories": [
+        "Sentiment Analysis"
+      ],
+      "definition": "You are given a conversation between two people. 'Person1:' and 'Person2:' are used to separate their respective dialogues. Your task is to label each of the continuous conversations done by one speaker with the emotion detected in that particular part. Your labels can be one among the following: 'No emotion', 'surprise', 'happiness', 'sadness', 'anger', 'disgust'.",
+      "raw_instances": 6162,
+      "short_candidates": 5137,
+      "blob_sha1": "94481cb0b108876f608bc8cba0d5ab5c841ac0f6",
+      "sha256": "613e78b49537aa6976ce46a6a3587f5001c7cb3882c286f7279dfa5eb9df5996",
+      "license": [
+        "CC BY-NC-SA 4.0"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 88417,
+        "monitor": 86894,
+        "eval": 29385
+      },
+      "ids_sha256": {
+        "train": "cb21ef0c3606810a55493ada43d4ed434133f2ae05805ee25a1920cb3c17e8f8",
+        "monitor": "f284086b8a0de7065fcf8143a003cbde0fd1c9cd139b71cdb6c0a19a4cfe9f35",
+        "eval": "6361e65ae2ff40110c0f5b6f97d1d01504791097780f69b6e8dc67d5d29170b3"
+      },
+      "component": 24
+    },
+    "task1293_kilt_tasks_hotpotqa_question_answering": {
+      "name": "task1293_kilt_tasks_hotpotqa_question_answering.json",
+      "sources": [
+        "hotpotqa"
+      ],
+      "original_sources": [
+        "hotpotqa"
+      ],
+      "categories": [
+        "Question Answering"
+      ],
+      "definition": "In this task, you are given a question. You have to answer the question based on your information.",
+      "raw_instances": 6241,
+      "short_candidates": 6205,
+      "blob_sha1": "035e9ebec4b44302f935eeff18045a6f4af9880d",
+      "sha256": "cfe0c5357d817de4ad0b29d0572d9c3c7f2ae1db1d8801b60eda203a9c364da3",
+      "license": [
+        "CC BY-SA 4.0"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 23061,
+        "monitor": 22074,
+        "eval": 7691
+      },
+      "ids_sha256": {
+        "train": "f5b533f2c0712351e0b8621f8f13679ad47e2d28a446fd6e8b743a51fd537f46",
+        "monitor": "7da381f8197f1515f3205067d2fc611daca37ff8f72c408da62e58473488b967",
+        "eval": "a5dc1080d3a4c7441825fd611aa4d56c5492e1d4acab0b4b4572f4bd0d6c466c"
+      },
+      "component": 13
+    },
+    "task1555_scitail_answer_generation": {
+      "name": "task1555_scitail_answer_generation.json",
+      "sources": [
+        "scitail"
+      ],
+      "original_sources": [
+        "scitail"
+      ],
+      "categories": [
+        "Question Answering"
+      ],
+      "definition": "In this task, you are given a sentence and a question, you would be asked to create the answer which is contained in the sentence provided.",
+      "raw_instances": 3104,
+      "short_candidates": 3092,
+      "blob_sha1": "4d5dad91c3cd1f810e46146c15c120967e9f623b",
+      "sha256": "37e91495294ddce18f2bc55adc210207a6be2cbd2dcd2a5e60fc6ae3b12e2a4d",
+      "license": [
+        "Apache 2.0"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 29399,
+        "monitor": 29413,
+        "eval": 9947
+      },
+      "ids_sha256": {
+        "train": "b0f46b895480f1331f163a4a1b55296360e414808d60c9b45836db0daca0d28d",
+        "monitor": "d709581ba243888436906f3662c326078726e8a585bd65b7493e3fec0fc7dd81",
+        "eval": "9e8cdf72946af9b4e4ff24e9a041c3aa02511e1299b0c6aa60dc9e9253c3d921"
+      },
+      "component": 30
+    },
+    "task875_emotion_classification": {
+      "name": "task875_emotion_classification.json",
+      "sources": [
+        "emotion"
+      ],
+      "original_sources": [
+        "emotion"
+      ],
+      "categories": [
+        "Sentiment Analysis"
+      ],
+      "definition": "In this task, you are given a sentence containing a particular emotion. You must classify the sentence into one of the six emotions: 'joy', 'love', 'anger', 'fear', or 'surprise'.",
+      "raw_instances": 3229,
+      "short_candidates": 3060,
+      "blob_sha1": "70efed73471914859b90f1c3e103a4b0f259b64d",
+      "sha256": "a70047d54a6c860fbfe9312b9aac7d40a9998864130a35f208acbff367514810",
+      "license": [
+        "Unknown"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 29486,
+        "monitor": 29203,
+        "eval": 9853
+      },
+      "ids_sha256": {
+        "train": "de9a51e9b8a7390e365401bfed5845ade7def7d470437d8f447c59a58ce8db36",
+        "monitor": "1c18e38bae2aff67cc455a53639f5ed16036b6f55439a4ee2fd76490a208f0a3",
+        "eval": "fd11519a3bafcb220ad916a7fbc12de8331e27663a542a0e88aef65acf420162"
+      },
+      "component": 54
+    },
+    "task344_hybridqa_answer_generation": {
+      "name": "task344_hybridqa_answer_generation.json",
+      "sources": [
+        "hybridqa"
+      ],
+      "original_sources": [
+        "hybridqa"
+      ],
+      "categories": [
+        "Question Answering"
+      ],
+      "definition": "In this task, you will be presented with a question and you have to answer the question based on your knowledge. Your answers should be as short as possible.",
+      "raw_instances": 6496,
+      "short_candidates": 6478,
+      "blob_sha1": "0842de4edcf720f4a2094a893f8105b421c026c6",
+      "sha256": "88ae52459b3998a4277287cf881792020a2774ffaf501a85a41301b0b9aed3d6",
+      "license": [
+        "MIT"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 25256,
+        "monitor": 25221,
+        "eval": 8383
+      },
+      "ids_sha256": {
+        "train": "d0cb0b836fa34e7fe275e9ec01c8d08bf66c6999db64bf757143b04331b5a8e5",
+        "monitor": "4e61b5fb4077a0e290208c53bc54161b9ac6dde456277e154e67cb779c0aba3d",
+        "eval": "769b2a4666f28f0bb8f488924411acf8a106dc505e48855651e2b3db3a173974"
+      },
+      "component": 18
+    },
+    "task1295_adversarial_qa_question_answering": {
+      "name": "task1295_adversarial_qa_question_answering.json",
+      "sources": [
+        "adversarialqa"
+      ],
+      "original_sources": [
+        "adversarial_qa"
+      ],
+      "categories": [
+        "Question Answering"
+      ],
+      "definition": "In this task, you are given a question and a context passage. You have to answer the question based on the given passage.",
+      "raw_instances": 6494,
+      "short_candidates": 5792,
+      "blob_sha1": "5c208ef707f9c96ae52ca290d754bd77ee43f76f",
+      "sha256": "8fa5576efee3871049fd0040e4a0a97ba222109812b7e2f7d038709ff16ccb41",
+      "license": [
+        "MIT"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 77554,
+        "monitor": 76423,
+        "eval": 26076
+      },
+      "ids_sha256": {
+        "train": "7a28b03551a6aa7c2358ab5cea8a39b74b9a3fbdb3476e607ad8eddfc812c3ff",
+        "monitor": "a0b4c6ac611f5e9631dd1817a38bb5bc95fbc1e8f28831a9c46e9c6cfff7ccb2",
+        "eval": "e83a55babf37a41d5e8be97117ab7a9e4822105523479861fb7671ea2b2fe706"
+      },
+      "component": 10
+    },
+    "task033_winogrande_answer_generation": {
+      "name": "task033_winogrande_answer_generation.json",
+      "sources": [
+        "winogrande"
+      ],
+      "original_sources": [
+        "winogrande"
+      ],
+      "categories": [
+        "Coreference Resolution"
+      ],
+      "definition": "You need to answer a given question containing a blank (_). Your answer must be one of the two objects mentioned in the question, for example \"trophy\" and \"suitcase\". Your answer must not contain a word that is not present in the question. Please don't use articles (e.g., the, a) before the answer.",
+      "raw_instances": 6500,
+      "short_candidates": 6500,
+      "blob_sha1": "b6644737ce52a8565efa3a20800c8cf8d24d0ff2",
+      "sha256": "bb432dfd2f0ba5eea10148f5178eedff5bf454ee71dbad2e97973096bf2bcbfd",
+      "license": [
+        "Apache 2.0"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 39865,
+        "monitor": 39939,
+        "eval": 13409
+      },
+      "ids_sha256": {
+        "train": "d6cf34682f38c95598ef42d321f2632328a04bfe01825382ad33f3708059562d",
+        "monitor": "d0ac3e533e321fb2565fcb02e2f214e7ab7d6839f75da9a3a6046c7afe1122c2",
+        "eval": "a19ca4f1467e6d68f561336473da8369e10b1626bf4c89e2f01446c8cf51def2"
+      },
+      "component": 22
+    },
+    "task676_ollie_relationship_answer_generation": {
+      "name": "task676_ollie_relationship_answer_generation.json",
+      "sources": [
+        "ollie"
+      ],
+      "original_sources": [
+        "ollie"
+      ],
+      "categories": [
+        "Information Extraction"
+      ],
+      "definition": "Given a sentence and two mentions from the text (arguments), indicate a phrase (a verb or noun phrase) that describes the relationship between the provided arguments.",
+      "raw_instances": 6497,
+      "short_candidates": 6497,
+      "blob_sha1": "088b25acca063e5b9acbb297a22ad0672fbf00db",
+      "sha256": "02534525547b64cc63b5cd9e46de89700db1823d9ff78bdb95106f96bea700fa",
+      "license": [
+        "University of Washington Academic License (https://raw.githubusercontent.com/knowitall/ollie/master/LICENSE)"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 36350,
+        "monitor": 35914,
+        "eval": 11663
+      },
+      "ids_sha256": {
+        "train": "73f11e46c2198fbd6975e1ad13cd6e25044eac7a065924e736630b12208ee681",
+        "monitor": "cd772f8118361212eae4116b0f6c7636ac6ccdae888f20954145c996a4dfafc5",
+        "eval": "46efeee8a5633e87bf7199aed8eac5b3763c4cfd9934d953b501036e57afdcc8"
+      },
+      "component": 25
+    },
+    "task1541_agnews_classification": {
+      "name": "task1541_agnews_classification.json",
+      "sources": [
+        "agnews"
+      ],
+      "original_sources": [
+        "ag_news"
+      ],
+      "categories": [
+        "Text Categorization"
+      ],
+      "definition": "In this task, you're given a short article. Your job is to classify the article based on its category. Use the following classification labels, 0. World, 1. Sports, 2. Business, 3. Science or Technical. Label the text \"0\" if it contains information related to world. Label the text \"1\" if it contains information related to sports. Label the text \"2\" if it contains information related business. Label the text \"3\" if it contains science or technical related information. ",
+      "raw_instances": 3999,
+      "short_candidates": 3999,
+      "blob_sha1": "a2324cf99f354b1c9949c45cd6353ad8a12f094f",
+      "sha256": "d074eb97f3f73b090ee1af8a01b64101862f25a34bbde737ee2731fae0f8dc3b",
+      "license": [
+        "Dedicated Statement (http://www.di.unipi.it/~gulli/AG_corpus_of_news_articles.html)"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 63785,
+        "monitor": 63837,
+        "eval": 21290
+      },
+      "ids_sha256": {
+        "train": "63439c835d1530510e96aacad30dad5c94f5db130f8f3846cfbc3b44691e086b",
+        "monitor": "883870fb1a56d6cf9f6132acd668fe5678c46aeb5b4b1b8ac0c979e95d7bb46f",
+        "eval": "98df2bb19c5675bfe8420d89134cdffe7adf456cfe33819782772a5a28f5da07"
+      },
+      "component": 50
+    },
+    "task929_products_reviews_classification": {
+      "name": "task929_products_reviews_classification.json",
+      "sources": [
+        "generatedreviewsenth"
+      ],
+      "original_sources": [
+        "generated_reviews_enth"
+      ],
+      "categories": [
+        "Sentiment Analysis"
+      ],
+      "definition": "Given an English language product review, determine if it is a Good Review or a Bad Review. A good review is one where the product's review has positive tone and Bad review is one where the tone of product's review is negative.",
+      "raw_instances": 6490,
+      "short_candidates": 6345,
+      "blob_sha1": "c04720eaf2428b90150d72f894f3a317808d4976",
+      "sha256": "64ffa61c18b0a7eede71c6f79fb9ba7cfc9e881a46dccbdb09cf080661924952",
+      "license": [
+        "CC BY-SA 4.0"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 47436,
+        "monitor": 47734,
+        "eval": 15652
+      },
+      "ids_sha256": {
+        "train": "17f95bfb2f52fcadcafdc77fcb8a4cb5d6f72d37428e7bc15050cebd13cb8804",
+        "monitor": "93429e970fbf39a688c0d4ed8bbed431755b83e749faeb9bc584ce036411d340",
+        "eval": "f8414066a6ccdb1cf29d6bef73eed8c7e243ffbe5da3436d7134a5fa4a0d038e"
+      },
+      "component": 39
+    },
+    "task521_trivia_question_classification": {
+      "name": "task521_trivia_question_classification.json",
+      "sources": [
+        "qanta"
+      ],
+      "original_sources": [
+        "qanta"
+      ],
+      "categories": [
+        "Text Categorization"
+      ],
+      "definition": "In this task you will be given a text passage from a trivia quiz. You should choose the category this question belongs to from these categories: History, Science, Social Science, Fine Arts, Literature. You can only choose one category, so if in doubt, please choose the closest match.",
+      "raw_instances": 6492,
+      "short_candidates": 6490,
+      "blob_sha1": "56840072f7c24aa6800446263cdeda2560a8ffc5",
+      "sha256": "9324f15a226b3cb5c2efd578f45a8ed388845351b331fc7c56bf848983c0f1eb",
+      "license": [
+        "Unknown"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 85163,
+        "monitor": 83611,
+        "eval": 28527
+      },
+      "ids_sha256": {
+        "train": "334400222afdc5370686c2052b7ddf41ef86739b2c746cc6ad66336b4a16f3d6",
+        "monitor": "926188f8db698372b12f9c8de2ebbe947e6a0c112e57442b95a7fd85bd6b0e82",
+        "eval": "e96007757363c5eb6f1efb7b130825b63822ff360373ea62493cb2f60fbb946d"
+      },
+      "component": 51
+    },
+    "task578_curiosity_dialogs_answer_generation": {
+      "name": "task578_curiosity_dialogs_answer_generation.json",
+      "sources": [
+        "curiositydialogs"
+      ],
+      "original_sources": [
+        "curiosity_dialogs"
+      ],
+      "categories": [
+        "Information Extraction"
+      ],
+      "definition": "In this task, you are given dialogue, and you have to find the most critical location in the given conversation.",
+      "raw_instances": 3497,
+      "short_candidates": 2248,
+      "blob_sha1": "b626ad0a1e1d10ea158ae7a60db83a1141e54faf",
+      "sha256": "5754dc35b8e9aea877fa8370d52916a7444cfea3e25f646902b51ed223671786",
+      "license": [
+        "CC BY-NC 4.0"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 101664,
+        "monitor": 102408,
+        "eval": 33830
+      },
+      "ids_sha256": {
+        "train": "e8bd8f4481fb440f94a1bea05c03a07d9554b0fa399276e3ff21aad403499be6",
+        "monitor": "ea3558dd70f7c152bcb562c9c0924f61222caef8185d3d65807151e5d5d66dbb",
+        "eval": "e8fae05b7dcade0bc0483e7560641a683bcbd6edcc3939234be2b4abeace3d06"
+      },
+      "component": 21
+    },
+    "task1529_scitail1.1_classification": {
+      "name": "task1529_scitail1.1_classification.json",
+      "sources": [
+        "scitailv11"
+      ],
+      "original_sources": [
+        "scitailv1.1"
+      ],
+      "categories": [
+        "Textual Entailment"
+      ],
+      "definition": "You are given two sentences. You have to find if there is entailment or agreement of the Hypothesis by the Premise. From the given pair of sentences, you should identify if there is enough information in the Premise to support the claim made in the Hypothesis. The Premise may not exactly be the same as Hypothesis. Your task is to return 'entails' if the premise supports hypothesis else return 'neutral'.",
+      "raw_instances": 5060,
+      "short_candidates": 5060,
+      "blob_sha1": "2695882f53d93bb7c3539f60ea8e57726aa79eba",
+      "sha256": "e6639ab981c1e3f08f6c279805b67d72d730dbb6234d856325ee9c5f1febfcc1",
+      "license": [
+        "Apache 2.0"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 55797,
+        "monitor": 55112,
+        "eval": 18514
+      },
+      "ids_sha256": {
+        "train": "25d0e086a5731e3886a1f5b13d5daaf2e49d3a3397964a19f69908635ce66a3d",
+        "monitor": "402903f181bb5c4a0faa9389d8cfa0dfc20c1dd81cbc635446d2411a52b480c2",
+        "eval": "0efd9511c12d077182883133cf027d4f970ec60999d44f86d3bccc45d78b66bb"
+      },
+      "component": 19
+    },
+    "task1187_politifact_classification": {
+      "name": "task1187_politifact_classification.json",
+      "sources": [
+        "liar"
+      ],
+      "original_sources": [
+        "liar"
+      ],
+      "categories": [
+        "Text Categorization"
+      ],
+      "definition": "In this task, you are given a statement spoken by a politician in natural language and the subject of the discussion for the given statement. Your task is to determine if the given subject of the discussion is correct for the given statement. The subject can be multiple words. Answer with \"True\" if it's the correct subject of discussion or return \"False\" if it's incorrect.",
+      "raw_instances": 6498,
+      "short_candidates": 6492,
+      "blob_sha1": "aa7e0172c9b343f9923d0b2c061ae72ae959cd44",
+      "sha256": "9b4d9ddc3609c9f083bb48a726ee58d7857232feacef5de2a2014439a0769980",
+      "license": [
+        "Unknown"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 46247,
+        "monitor": 46403,
+        "eval": 15433
+      },
+      "ids_sha256": {
+        "train": "a096b6384a5cad5e0a543ef4d835c408a1a94d725db24cd277782dc20cb73c83",
+        "monitor": "4eab29ca1e316c1003ff40218ebd6fe50ce53379b3a43c9bcd80e777215f66e9",
+        "eval": "32b5465f19afae31ae2e587dc4cee3316823e2e15de074c54048241c4feead1a"
+      },
+      "component": 52
+    },
+    "task1399_obqa_answer_generation": {
+      "name": "task1399_obqa_answer_generation.json",
+      "sources": [
+        "openbookqa"
+      ],
+      "original_sources": [
+        "openbookqa"
+      ],
+      "categories": [
+        "Question Answering"
+      ],
+      "definition": "In this task, you are given a fact statement and question based on the fact. Your task is to generate the correct answer for the question. The answer needs to be generated using the context fact statement.",
+      "raw_instances": 1768,
+      "short_candidates": 1760,
+      "blob_sha1": "7818576de130e09b6468883d8a061972adfa916d",
+      "sha256": "89b4791bc55bf72d225e0d5d5549da36f6cc95810cd2a72bda4e0e19117bf77b",
+      "license": [
+        "Unknown"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 31654,
+        "monitor": 31712,
+        "eval": 10581
+      },
+      "ids_sha256": {
+        "train": "31bdf9e7b4392b22f344eaadcec9a31e90d8670cb2fa5899c5db906af44df5fa",
+        "monitor": "2d481a2e3115886c85fdac0aa9f506e6a4f39d5a8379aeedcd0865d439352750",
+        "eval": "93f7def953ad4245ec50afbac9bf724e43a6ee542030fed577b419a0e1aebb96"
+      },
+      "component": 26
+    },
+    "task330_gap_answer_generation": {
+      "name": "task330_gap_answer_generation.json",
+      "sources": [
+        "gap"
+      ],
+      "original_sources": [
+        "gap"
+      ],
+      "categories": [
+        "Coreference Resolution"
+      ],
+      "definition": "In this task, you will be presented with a text and a pronoun. You should write the name that the pronoun refers to. Position of the pronoun in the text is showed within two \"_\"s.",
+      "raw_instances": 3959,
+      "short_candidates": 3958,
+      "blob_sha1": "5121cc324044ee3ae8f92b5ec89734fe22dbea92",
+      "sha256": "c2ba7ae155cdaca7ffad178fc2d8a6f6f61ba7056a37f29a7624e8fa8620f8f7",
+      "license": [
+        "Apache 2.0"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 61042,
+        "monitor": 61448,
+        "eval": 20398
+      },
+      "ids_sha256": {
+        "train": "e3eb053ed9c50a877ddc370347cb257fad38684a9e3e3fb90c516bcda1c1fee0",
+        "monitor": "cb29d9e9f48b66b111e8403d8ca5bd63d9f6849ff7ea3401ecd59d85011e5df3",
+        "eval": "1ac98986913a9710162c48d9067af75529dc0ddd267c08f6e54938b080c5f3af"
+      },
+      "component": 15
+    },
+    "task1612_sick_label_classification": {
+      "name": "task1612_sick_label_classification.json",
+      "sources": [
+        "sick"
+      ],
+      "original_sources": [
+        "sick"
+      ],
+      "categories": [
+        "Textual Entailment"
+      ],
+      "definition": "In this task, you're given a pair of sentences, sentence 1 and sentence 2. Your job is to choose whether the two sentences clearly agree (entailment)/disagree (contradiction) with each other, or if this cannot be determined (neutral). Your answer must be in the form of the numbers 0 (entailment), 1 (neutral), or 2(contradiction).",
+      "raw_instances": 1800,
+      "short_candidates": 1800,
+      "blob_sha1": "03d87d4bbf14d931ecbe08946c063bf3f4231389",
+      "sha256": "b52be5fe5e9374915a96823968959539500cb28c7fe2d26a26c01bcc14672014",
+      "license": [
+        "CC BY-NC-SA 3.0"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 46418,
+        "monitor": 46745,
+        "eval": 15578
+      },
+      "ids_sha256": {
+        "train": "e83933e87b6c446e2eeeb30b5684f5bfa24d2169f59d004f64e57bf5c3449484",
+        "monitor": "0b720401b3a09996ae2c194da8465e06117227f942f8501714ad17810983e9c1",
+        "eval": "67f54042e97ee8d6b5b5fcd0901ca92ebe58813c98c5142d3fd71853a03d9439"
+      },
+      "component": 48
+    },
+    "task615_moviesqa_answer_generation": {
+      "name": "task615_moviesqa_answer_generation.json",
+      "sources": [
+        "wikimovies"
+      ],
+      "original_sources": [
+        "wiki_movies"
+      ],
+      "categories": [
+        "Question Answering"
+      ],
+      "definition": "You are given an open-domain question from an open movie database. Your task is to provide an answer to that question. Try to only include the answer. Do not put it in a sentence.",
+      "raw_instances": 6500,
+      "short_candidates": 5431,
+      "blob_sha1": "35e85d3f8fe5ac4b3c766ce53ae3b9f396eab120",
+      "sha256": "48008a0720bd2f7b98ef1e00c3fc93acd67ae7e19848972e14d184b34d8d81cf",
+      "license": [
+        "CCPL"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 25384,
+        "monitor": 25201,
+        "eval": 8359
+      },
+      "ids_sha256": {
+        "train": "4616c122a1191de225aac38c34d71f7d19781bf7d3a1953d06676ec6b4152862",
+        "monitor": "187685390dcfbb6d93e340c7dbf0999b2609fee7222f0d1eec98960b4cc45719",
+        "eval": "b2dcf1dcdad2f8b7ba543013a01e24bf2c21c472c6364036bc834c0d9f5eb4bf"
+      },
+      "component": 49
+    },
+    "task285_imdb_answer_generation": {
+      "name": "task285_imdb_answer_generation.json",
+      "sources": [
+        "imdb"
+      ],
+      "original_sources": [
+        "imdb"
+      ],
+      "categories": [
+        "Sentiment Analysis"
+      ],
+      "definition": "In this task, you are given a review of a movie and a boolean question whether this review has positive sentiment or negative sentiment. Your task is to generate answer \"yes\" when the tweet has that particular sentiment, otherwise generate answer \"no\".",
+      "raw_instances": 6497,
+      "short_candidates": 4073,
+      "blob_sha1": "d180addd507c9f141d52f423e0383ba6f389f89e",
+      "sha256": "f696a47ea02be51987a711ed6ef9713e34b1f21f2c715b5ba7a20f259266739b",
+      "license": [
+        "Unknown"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 90670,
+        "monitor": 92445,
+        "eval": 30586
+      },
+      "ids_sha256": {
+        "train": "0854724232dde1ca30bb4f94071d58298b63fc30d4667f896fee3c00c5815056",
+        "monitor": "5fad1c375f3d59a92cf3df5e3df20c78c6ffa684468146418cc369e444eca6fd",
+        "eval": "a7f38ced4c47aeaf43203de1507479f7f20ad496d90e414a2ccaf5efd60af2b5"
+      },
+      "component": 9
+    },
+    "task1344_glue_entailment_classification": {
+      "name": "task1344_glue_entailment_classification.json",
+      "sources": [
+        "rte"
+      ],
+      "original_sources": [
+        "rte"
+      ],
+      "categories": [
+        "Textual Entailment"
+      ],
+      "definition": "In this task, you're given two sentences. Indicate if the first sentence clearly entails the second sentence (i.e., one can conclude the 2nd sentence by reading the 1st one). Indicate your answer with '1' if the first sentence entails the second sentence, otherwise answer with '0'.",
+      "raw_instances": 2480,
+      "short_candidates": 2479,
+      "blob_sha1": "e5d191af70a1ce1f8704232c6a6a7774c962965a",
+      "sha256": "2c7357fb287a32311113515e8e69919d521888be7884e78f85e89639d6356cda",
+      "license": [
+        "Unknown"
+      ],
+      "split": "train",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 56931,
+        "monitor": 57568,
+        "eval": 18299
+      },
+      "ids_sha256": {
+        "train": "83bcffc5913bdd022be20916acf0944433b99ae536d483c215ab1cc20cc50560",
+        "monitor": "de0d2c81888d9b6b78b3ba60445e7615ab33c870358e065bf62fb9db0ba2b117",
+        "eval": "4322f0531a87884a8c85b6f2c52993d08b5713a6d6a2814b9a8a4b96699fe775"
+      },
+      "component": 32
+    },
+    "task247_dream_answer_generation": {
+      "name": "task247_dream_answer_generation.json",
+      "sources": [
+        "dream"
+      ],
+      "original_sources": [
+        "dream"
+      ],
+      "categories": [
+        "Question Answering"
+      ],
+      "definition": "In this task, you will be shown a conversation and a question. You need to answer the question and choose the correct option based on the conversation. \"W\" and \"M\" in the conversations stand for \"woman\" and \"man\".",
+      "raw_instances": 6113,
+      "short_candidates": 4920,
+      "blob_sha1": "46f164e222517838e13183f67f6dc9d23d8457d6",
+      "sha256": "a864f6acb78abdd9c7b1724fed93d6d3e4245d83613d4e291aace44c6a6a737f",
+      "license": [
+        "Dedicated License (https://github.com/nlpdata/dream/blob/master/license.txt)"
+      ],
+      "split": "development",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 74880,
+        "monitor": 75345,
+        "eval": 26713
+      },
+      "ids_sha256": {
+        "train": "b9964d84a1aa0ef179ffaf44325a19ff31fdfd8164a90b808321d723fd21f5eb",
+        "monitor": "5df381dcabc4ed9ef1e191e6765d443dcf381f121e2eb200c9e3b1ae3b5cf4c1",
+        "eval": "05b6a7eb53e281aab170f5edb9d28f8934b1f1db8acb134724af7a81263f1a52"
+      },
+      "component": 44
+    },
+    "task190_snli_classification": {
+      "name": "task190_snli_classification.json",
+      "sources": [
+        "snli"
+      ],
+      "original_sources": [
+        "snli"
+      ],
+      "categories": [
+        "Textual Entailment"
+      ],
+      "definition": "In this task, you're given a pair of sentences, sentence 1 and sentence 2. Your job is to choose whether the two sentences clearly agree (entailment)/disagree (contradiction) with each other, or if this cannot be determined (neutral). Your answer must be in the form of the letters E, C, and N respectively.",
+      "raw_instances": 6500,
+      "short_candidates": 6500,
+      "blob_sha1": "8e712794b6faab133e60d213cd50a6dba22bc350",
+      "sha256": "d60ee5f053aba66796716a72cc5f05fe90b07325e06e1bb4bb9bb4ff8a418802",
+      "license": [
+        "CC BY-SA 4.0"
+      ],
+      "split": "development",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 43960,
+        "monitor": 43903,
+        "eval": 14538
+      },
+      "ids_sha256": {
+        "train": "bc62b22525316927061dcf4446d2b9b9f63e4addacc0cb39e796139f62e91187",
+        "monitor": "78bb74359c334cea6b6d810a47ad3789e030668e7f9902ee428fc9bf944fc785",
+        "eval": "4470c3ade0d8741953a10ede15c648c997ec9ebaef80be485e322a34eccfe519"
+      },
+      "component": 33
+    },
+    "task843_financial_phrasebank_classification": {
+      "name": "task843_financial_phrasebank_classification.json",
+      "sources": [
+        "financialphrasebank"
+      ],
+      "original_sources": [
+        "financial_phrasebank"
+      ],
+      "categories": [
+        "Sentiment Analysis"
+      ],
+      "definition": "Classify the given a piece of financial news into three classes: positive, negative, and neutral. Output must be 'positive', 'negative', or 'neutral'.",
+      "raw_instances": 1805,
+      "short_candidates": 1801,
+      "blob_sha1": "e164a6c9a44696ed1af66c12ba4bd711c7282c20",
+      "sha256": "75e3951fb82f4994338f48a15d3547b18384fa85420274c026e7d49c0e5ca753",
+      "license": [
+        "CC BY-NC-SA 3.0"
+      ],
+      "split": "development",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 28352,
+        "monitor": 28741,
+        "eval": 9716
+      },
+      "ids_sha256": {
+        "train": "e0fb2b6e8f5ae23602253af8c93d6bbbc046c0d7fffa4220c874027ff45654c6",
+        "monitor": "55345b4511ac342ab5e2fbc0f9d09ffbe603aa252c8e8ef92b5c0a13f0ccf893",
+        "eval": "d0eaf6dc971603e9ff95c45f60be522940920ce7a6921d491b90b376cf73e87f"
+      },
+      "component": 38
+    },
+    "task041_qasc_answer_generation": {
+      "name": "task041_qasc_answer_generation.json",
+      "sources": [
+        "qasc"
+      ],
+      "original_sources": [
+        "qasc"
+      ],
+      "categories": [
+        "Question Answering"
+      ],
+      "definition": "Write a correct answer to the given question based on its associated fact. Make sure that your answer is contained in the associated fact. Don't be creative and introduce any new word that is not mentioned in the associated fact! Remember that the associated fact has been rearranged to form the question. So, the correct answer words must lie within the associated fact. The correct answer can be a word, phrase, or even a sentence.",
+      "raw_instances": 6500,
+      "short_candidates": 6496,
+      "blob_sha1": "685b624578d7b00d919dbd3d3414b2904c00951a",
+      "sha256": "77e7e46c3c38fd0fcd60c2d4323025bdbe31a29c2e366d2bac1e6fe172ca574f",
+      "license": [
+        "CC BY 4.0"
+      ],
+      "split": "development",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 48181,
+        "monitor": 48368,
+        "eval": 16023
+      },
+      "ids_sha256": {
+        "train": "a1ce5bc5bd923d353724b222f01a539b6a433dc9b6d5b4d1295c1b1927726430",
+        "monitor": "16faa7fc2f429fdf128773dcb7060aaabe97b1d43caeb690ac04e4cd89709866",
+        "eval": "91646f65693ff70c7dfc259b404a6c866b83ac3680c191e331672570eddf77b0"
+      },
+      "component": 31
+    },
+    "task1712_poki_classification": {
+      "name": "task1712_poki_classification.json",
+      "sources": [
+        "poki"
+      ],
+      "original_sources": [
+        "poki"
+      ],
+      "categories": [
+        "Text Categorization"
+      ],
+      "definition": "You are given a short poem which is written by a kid. Your task is to predict if the kid is in elementary school or high school. Anyone who is from grade 1st to 6th-grade will be considered as in elementary school, and 7th to 12th-grade kids will be considered as in high school. There are only two possible outputs, i.e., elementary and high. All inputs have at least one output and it cannot have both categories at a time.",
+      "raw_instances": 6448,
+      "short_candidates": 6358,
+      "blob_sha1": "5f7284192cdebe61b829718e4659682067a3001f",
+      "sha256": "7737ab5780534bb16b78f69664ebb745618557591cc227353c10ebc4c23c0081",
+      "license": [
+        "Unknown"
+      ],
+      "split": "development",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 61768,
+        "monitor": 63395,
+        "eval": 20402
+      },
+      "ids_sha256": {
+        "train": "e056dd15083ea8bde82f4fe9fcdb09b5fb6eecf5b5e3b7a2727fed2289bc58b7",
+        "monitor": "50fe5d326af7ff40bf2973424e0e846705a3339f5271b2a885a9f0f430039aac",
+        "eval": "802939b4da37ec0394ef507680b7310d7d9ee208996668eb3679a5d4fd48725c"
+      },
+      "component": 45
+    },
+    "task164_mcscript_question_answering_text": {
+      "name": "task164_mcscript_question_answering_text.json",
+      "sources": [
+        "mcscript"
+      ],
+      "original_sources": [
+        "mcscript"
+      ],
+      "categories": [
+        "Question Answering"
+      ],
+      "definition": "You are given a paragraph (Passage), a question (Question) and two answer options (Option1 and Option2). Your task is to find the correct answer (and return the string of the correct option, not option1/2) for the given question from the given options and based on the given passage. Answer of the question can be found directly from the passage.",
+      "raw_instances": 6500,
+      "short_candidates": 5731,
+      "blob_sha1": "e2abe805bc1123ad4515e82c234037a7a673826d",
+      "sha256": "8c18e0a3f7c2a1b23ee438aa49f878071bb996e9b43e9be0a6edcfce56b45e24",
+      "license": [
+        "Unknown"
+      ],
+      "split": "development",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 106230,
+        "monitor": 106169,
+        "eval": 35509
+      },
+      "ids_sha256": {
+        "train": "f97132e4bd6ce3f3fe395d7b7af2808fd96977d425ea09168b3c5f74f928e1c3",
+        "monitor": "232e4bb42d296db4f7e6b36672386490ba29984d781a171afd68a9a37b491389",
+        "eval": "be6b9e3da6f58aecb5c029a903f7d0db685cc4ce3e0115eec86efb24a9384923"
+      },
+      "component": 35
+    },
+    "task362_spolin_yesand_prompt_response_sub_classification": {
+      "name": "task362_spolin_yesand_prompt_response_sub_classification.json",
+      "sources": [
+        "spolin"
+      ],
+      "original_sources": [
+        "spolin"
+      ],
+      "categories": [
+        "Dialogue Act Recognition"
+      ],
+      "definition": "\"Yes, and\" is a rule-of-thumb in improvisational comedy that suggests that a participant in a dialogue should accept what another participant has stated (\"Yes\") and then expand on that line of thought or context (\"and...\"). Given a prompt and two responses, identify which response is the type of \"yes, and\". Indicate your answer by 'Response 1' if the first response is correct, otherwise 'Response 2'.  Note that a \"Yes, and\" does not require someone explicitly saying 'yes, and...' as part of a dialogue exchange.",
+      "raw_instances": 6395,
+      "short_candidates": 6395,
+      "blob_sha1": "34b57c009e8ff1162b6581a7421af8889bddf2fe",
+      "sha256": "cf3eb8b4fe7e46891a506a364155ccd20e08ceb9d7bf1684728e76fdaab2078b",
+      "license": [
+        "CC BY-NC 4.0"
+      ],
+      "split": "development",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 75477,
+        "monitor": 75128,
+        "eval": 24975
+      },
+      "ids_sha256": {
+        "train": "6e616c1cb870a799efa2a6056248e0be1c5d7231eba88af161d065597b2691c3",
+        "monitor": "5c723143cb7e35cda34c01eeed3c850d623f70fea1876e3dde0accd7f537eb99",
+        "eval": "2c581abcd9d8ccad39c8f2c944186878c3e95e75ec2ddc7c5572bc54eb4767b6"
+      },
+      "component": 20
+    },
+    "task061_ropes_answer_generation": {
+      "name": "task061_ropes_answer_generation.json",
+      "sources": [
+        "ropes"
+      ],
+      "original_sources": [
+        "ropes"
+      ],
+      "categories": [
+        "Question Answering"
+      ],
+      "definition": "You are given a background paragraph that describes one or more causal or qualitative relationships such as a relationship in economics or a scientific law and a story that makes use of the concepts or the relationship described in the provided paragraph. You are also given a question about the story that requires an understanding of the relationship described in the background paragraph and the story. You need to come up with an answer to the given question; the answer will be a span from either the question or the story. In order to correctly answer the given question, you need to understand the relationship mentioned in the background paragraph and should be able to use it to understand that in the story. Your answer can not consist of any word that is not mentioned in any of these: the background paragraph, the story, or the question. You can directly copy and paste a span from the story or the question while answering the given question.",
+      "raw_instances": 6500,
+      "short_candidates": 5553,
+      "blob_sha1": "96909ff47c7b842e2878016bc6877b7b57bd4b31",
+      "sha256": "a65bc612bd492cb59872d92d498a92da0ccdab21816d0aa7d2147f649fe20c86",
+      "license": [
+        "CC BY 4.0"
+      ],
+      "split": "development",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 149423,
+        "monitor": 150368,
+        "eval": 50500
+      },
+      "ids_sha256": {
+        "train": "74e578036875c6427a7fd461e312a091386830b6a82222062e8b7866a939387a",
+        "monitor": "0d6b616895e5a78617d4fc3513de85f25b9cb426e41b2289648de3b34587aa98",
+        "eval": "8f75c98d265bf4fd1555d5ba5d43e5521fec155c33fa11e72d409357c6eac167"
+      },
+      "component": 17
+    },
+    "task494_review_polarity_answer_generation": {
+      "name": "task494_review_polarity_answer_generation.json",
+      "sources": [
+        "amazonpolarity"
+      ],
+      "original_sources": [
+        "amazon_polarity"
+      ],
+      "categories": [
+        "Sentiment Analysis"
+      ],
+      "definition": "Given a review text from amazon and its polarity (either positive or negative). Generate answer \"True\" if given sentence and its polarity match, otherwise generate answer \"False\". A review is considered positive if the reviewer is satisfied with the product. Otherwise, it is considered negative.",
+      "raw_instances": 5016,
+      "short_candidates": 5015,
+      "blob_sha1": "2c631c164ed215e8929d7cbbbce8869656926804",
+      "sha256": "8d70938a1b940042082cf86c75fd088efaa9900c2f10514c19ed964770d460cf",
+      "license": [
+        "Apache 2.0"
+      ],
+      "split": "confirmation",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 64281,
+        "monitor": 63112,
+        "eval": 21368
+      },
+      "ids_sha256": {
+        "train": "cc1089c37c5dc3c63f4a3a9587edcaaa82377747d3adbf5cf1d0ee661a79074a",
+        "monitor": "71f9f1680f2499043ef348eab8aa953ebfde721648101677d92b86206ebc1883",
+        "eval": "328bc9af2bd18fd13afc2b3e0904cf87882df199d44099043eeea9c1defd39c2"
+      },
+      "component": 29
+    },
+    "task456_matres_intention_classification": {
+      "name": "task456_matres_intention_classification.json",
+      "sources": [
+        "matres"
+      ],
+      "original_sources": [
+        "matres"
+      ],
+      "categories": [
+        "Information Extraction"
+      ],
+      "definition": "You will be given a context and a verb separated with a newline character. You have to identify if the given verb implies an opinion, an intention, a wish or not. Please note that a verb refers to an intention only if it refers to an event planned to happen in the future and is not conditional (or part of a condition). The output should be: 'Yes' if the verb refers to an opinion, an intention, or a wish; and 'No' otherwise.",
+      "raw_instances": 2656,
+      "short_candidates": 2656,
+      "blob_sha1": "ced1b5e07bf895b37f297e995e27c1b5025fcfac",
+      "sha256": "8b8616be7d38faec74812d959bf386f797d90d4c7ebf34ed15ccc4ece1f612b2",
+      "license": [
+        "Unknown"
+      ],
+      "split": "confirmation",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 69111,
+        "monitor": 69302,
+        "eval": 22862
+      },
+      "ids_sha256": {
+        "train": "23350dcddd1dea9ac6a55edff7709811d2c4112f58010322e6199b2c18f8627a",
+        "monitor": "9e98d44a9cded1b165a5879f34b66f865fa915323bb0233d50946b868f14a7e2",
+        "eval": "35069880abdd206f08c04431edfb6675818b9c5a9a9cdbc201bc44caf2af4066"
+      },
+      "component": 3
+    },
+    "task274_overruling_legal_classification": {
+      "name": "task274_overruling_legal_classification.json",
+      "sources": [
+        "overruling"
+      ],
+      "original_sources": [
+        "overruling"
+      ],
+      "categories": [
+        "Text Categorization"
+      ],
+      "definition": "In this task, you will be shown a sentence, and you should determine whether it is overruling or non-overruling. In law, an overruling sentence is a statement that nullifies a previous case decision as a precedent by a constitutionally valid statute or a decision by the same or higher ranking court which establishes a different rule on the point of law involved. Classify your answers into overruling or non-overruling",
+      "raw_instances": 2395,
+      "short_candidates": 2286,
+      "blob_sha1": "6afc367873f4c7888c27424e40fdfa7a3efcc039",
+      "sha256": "2b5427f1c3c27de4549dbd56111bfc2be93b27fb97c9da177b45d617f82b71d2",
+      "license": [
+        "Apache 2.0"
+      ],
+      "split": "confirmation",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 54071,
+        "monitor": 53390,
+        "eval": 17784
+      },
+      "ids_sha256": {
+        "train": "9b08f15ca46f4ca01c25716e1c185d4865bf47003bdaebbcf60091eb0a3e09cf",
+        "monitor": "c2095014de00375ca469adf9e3f7147803291dcbdb32b2546a6f207e4e65a66d",
+        "eval": "96109b8165d43f5056f8dd51b35f0983b8adb1b55d53ee7045659f8f6248ccb3"
+      },
+      "component": 1
+    },
+    "task178_quartz_question_answering": {
+      "name": "task178_quartz_question_answering.json",
+      "sources": [
+        "quartz"
+      ],
+      "original_sources": [
+        "quartz"
+      ],
+      "categories": [
+        "Question Answering"
+      ],
+      "definition": "You are given a question or fill-in-the-blank question, two answer options (Option1 and Option2) and an Explanation. Your task is to find the correct answer (return the string of the correct option, not option1/2) for the given question from the given options and using explanation.",
+      "raw_instances": 3846,
+      "short_candidates": 3844,
+      "blob_sha1": "56597f05c01428e2c57890eb12a199d314334327",
+      "sha256": "924ca726bd6e9910a102b31aa01f1bae5cba9668b0988100ed46fd73d64974c8",
+      "license": [
+        "CC BY 4.0"
+      ],
+      "split": "confirmation",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 52379,
+        "monitor": 52215,
+        "eval": 17188
+      },
+      "ids_sha256": {
+        "train": "917993bf433692a57aa9a28e23defed27fc38c1ce385d18aa20e52a75f6a099b",
+        "monitor": "81ae9d700ec71aca9b2edacafec563f697a25cf4372fe0c64beeaf740e266e7f",
+        "eval": "807167c1921868a08e38266c95bb22baf3926759908fbf83536d3ec3d9b92eb2"
+      },
+      "component": 14
+    },
+    "task198_mnli_domain_classification": {
+      "name": "task198_mnli_domain_classification.json",
+      "sources": [
+        "multinli"
+      ],
+      "original_sources": [
+        "multinli"
+      ],
+      "categories": [
+        "Text Categorization"
+      ],
+      "definition": "In this task, you're given a pair of sentences, sentence 1 and sentence 2. Your job is to classify the genre of the sentences from the 10 options displayed. Indicate your answer by entering the number of the choice as 1-10.",
+      "raw_instances": 6500,
+      "short_candidates": 6498,
+      "blob_sha1": "eaf0f6fba83ad5003d24a6f2ea4206d964855ce0",
+      "sha256": "622814d8c4e750529e2cba54f4de955bc95c281e659067ace045b7090fbb9ee7",
+      "license": [
+        "OANC"
+      ],
+      "split": "confirmation",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 65051,
+        "monitor": 65614,
+        "eval": 21856
+      },
+      "ids_sha256": {
+        "train": "4c5aae71c0cd8bcdfe29e7256ad7b1534aa1266ebad59f4e5df5db49dbf491cf",
+        "monitor": "e0f313eb43fa410617f5518b5bf5293eade6e880161d9bb6a0bf2e266672e06e",
+        "eval": "9ed0fac201ea0a178eefa7cdeb79ff0a924904151d8d793c9ed590e5e86c8e71"
+      },
+      "component": 6
+    },
+    "task582_naturalquestion_answer_generation": {
+      "name": "task582_naturalquestion_answer_generation.json",
+      "sources": [
+        "naturalquestions"
+      ],
+      "original_sources": [
+        "natural_questions"
+      ],
+      "categories": [
+        "Question Answering"
+      ],
+      "definition": "In this task, You are given an open-domain question that can be answered based on factual information. Your task is to provide \\*short\\* answer (in a few words only) for the given question. The short answer can be one or more entities or it can also be boolean \\*yes\\* or \\*no\\*.",
+      "raw_instances": 6500,
+      "short_candidates": 6500,
+      "blob_sha1": "8fbe9321af712e8c13260df8d3674ca0b0e5ead2",
+      "sha256": "d8b7e921cfcd92b5fe6ef88aaf4457d29b25038266f76712a7a9c63dcd0813f4",
+      "license": [
+        "CC BY-SA 3.0"
+      ],
+      "split": "confirmation",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 34166,
+        "monitor": 34026,
+        "eval": 11370
+      },
+      "ids_sha256": {
+        "train": "b4c5c1aac66492a3a804d37d824aef8cd71567ba6a2d65474338fc1c1d9419a5",
+        "monitor": "df148d374378204943311cbf57b70ec9979212b31ab2a1b56a399a0767ef1b2e",
+        "eval": "34709fd02ac22e6ecda3eea1eda70d9196d6e99ee0ad2fe8a3cd9e5d014d40bd"
+      },
+      "component": 11
+    },
+    "task469_mrqa_answer_generation": {
+      "name": "task469_mrqa_answer_generation.json",
+      "sources": [
+        "mrqa"
+      ],
+      "original_sources": [
+        "mrqa"
+      ],
+      "categories": [
+        "Question Answering"
+      ],
+      "definition": "Given a question and a context passage, generate the answer having the word or phrase from the context passage. Here, the answer should be a shortest continous span from the passage.",
+      "raw_instances": 4527,
+      "short_candidates": 2173,
+      "blob_sha1": "1e2cb2026ed33b2b6d76182be90aedee910f30b9",
+      "sha256": "8c48c8ecec68e8d824f7fade4fbead8a92a9426a66f70af1e8208a808e617028",
+      "license": [
+        "MIT"
+      ],
+      "split": "confirmation",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 65889,
+        "monitor": 67748,
+        "eval": 22532
+      },
+      "ids_sha256": {
+        "train": "81bc9d5c8df02321084f97451394f20ce29bae47aa9fca02703d8606fc8524e6",
+        "monitor": "9b875654ee1b27b103e0c368bedeae81c96938bb647072070b146ceec4e05c7f",
+        "eval": "d4da183e904c52f6a9e555bcaf5309598a81ab67d340fbc1c0ae788d9441da82"
+      },
+      "component": 16
+    },
+    "task472_haspart_classification": {
+      "name": "task472_haspart_classification.json",
+      "sources": [
+        "haspartkb"
+      ],
+      "original_sources": [
+        "haspart_kb"
+      ],
+      "categories": [
+        "Entity Relation Classification"
+      ],
+      "definition": "Given two entities as input, classify as \"yes\" if second entity is the part of the first entity. Otherwise classify them as \"no\". These are entities of meronym In linguistics, meronymy is a semantic relation between a meronym denoting a part and a holonym denoting a whole. In simpler terms, a meronym (i.e., second entity) is in a part-of relationship with its holonym (i.e., first entity).",
+      "raw_instances": 5903,
+      "short_candidates": 5903,
+      "blob_sha1": "65e3f47ea705bcc3ca86a32f2e995e46ea027c6d",
+      "sha256": "b94486e3817c74e41439cc7a6e651018e291c3ef837ded755438a92e49159532",
+      "license": [
+        "CC BY 4.0"
+      ],
+      "split": "confirmation",
+      "role_counts": {
+        "train": 384,
+        "monitor": 384,
+        "eval": 128
+      },
+      "role_token_counts": {
+        "train": 45535,
+        "monitor": 45568,
+        "eval": 15191
+      },
+      "ids_sha256": {
+        "train": "efba70d5d72bd48d65db75a66ee1bf9fdd97b51a89a733bbd4543a7c4dd0a629",
+        "monitor": "a4b42f35271da4af2e365017e71f68d04673862d1259343c059d3a1979dc3961",
+        "eval": "14e72b442da3066af5b970844a55cd32916390f5bb372573408c44a19fd537bd"
+      },
+      "component": 7
+    }
+  },
+  "dataset_sha256": "0a30041869dbc3eba142e1d0e5ff87144196f69005ab10ec77029b373e2e1c12"
+}
