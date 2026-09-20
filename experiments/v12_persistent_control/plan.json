@@ -1,0 +1,115 @@
+{
+  "version": "v12_persistent_control",
+  "algorithm": "GRPO only",
+  "config": {
+    "width": 48,
+    "experts": 4,
+    "layers": 2,
+    "topk": 2,
+    "tasks": 4,
+    "batch": 32,
+    "steps": 200,
+    "interval": 10,
+    "lr": 0.001,
+    "decay": 0.01,
+    "memory": 200,
+    "target": 1.25,
+    "routing": "dynamic",
+    "threads": 1,
+    "monitor_mode": "random",
+    "reward_mode": "positive"
+  },
+  "arms": {
+    "A": {
+      "hold": 10,
+      "joint": false
+    },
+    "B": {
+      "hold": 50,
+      "joint": false
+    },
+    "C": {
+      "hold": 50,
+      "joint": true
+    }
+  },
+  "base": {
+    "expert": 0.25,
+    "trunk": 0.5
+  },
+  "controller_seeds": [
+    1201,
+    1202,
+    1203,
+    1204
+  ],
+  "train_roots": [
+    1230000,
+    1230001,
+    1230002,
+    1230003,
+    1230004,
+    1230005,
+    1230006,
+    1230007,
+    1230008,
+    1230009,
+    1230010,
+    1230011
+  ],
+  "selection_roots": [
+    1240000,
+    1240001,
+    1240002,
+    1240003,
+    1240004,
+    1240005,
+    1240006,
+    1240007
+  ],
+  "audit_roots": [
+    1250000,
+    1250001,
+    1250002,
+    1250003,
+    1250004,
+    1250005,
+    1250006,
+    1250007,
+    1250008,
+    1250009,
+    1250010,
+    1250011
+  ],
+  "selection_action_seed": 1260000,
+  "audit_action_seed": 1270000,
+  "training_updates": 20000,
+  "mid_updates": 10000,
+  "max_groups": 64,
+  "group": 4,
+  "policy_lr": 0.001,
+  "workers": 3,
+  "budget_rule": "Stop after complete group first crosses learner-update target. At most 2400 overshoot; counts of branches, controller decisions and optimizer steps may differ and must be reported. Prefix, monitor/eval, copies and policy optimizer cost separate. No adaptive extension based on audit.",
+  "selection": "Per execution mode lexicographic success, F, final absolute eval loss; initial/mid/terminal order breaks exact ties. Audit initial/terminal/selected union.",
+  "data_scope": "Development replication in reused classes/images 60-79, not new-class confirmation. Training0-59. No new test member or80-99 queries.",
+  "baseline_rules": "fixed_best, fixed_v11 expert0/trunk.5, fixed_best_expert/trunk1; each arm progress and feedback as frozen Baseline implementation; no audit tuning.",
+  "smoke_updates_per_second": {
+    "A": 82.31274824340174,
+    "B": 82.16872573753854,
+    "C": 81.43115056266797
+  },
+  "scope_limits": [
+    "B-to-C also changes correlated exploration support/magnitude, not pure action dimension.",
+    "Root-level common action RNG does not align differing latent counts.",
+    "Single action stream per root; four controller seeds do not make reused roots independent."
+  ],
+  "sources": {
+    "core.py": "e3083de94d65b517e5b0512497c77d39e07c8cd0f29e6ead68e9a77fcca8eef4",
+    "encoder.py": "0646e9f8513221e1c08a630868882b12f48b93578954b0b2d9e6d1e5e495e282",
+    "policy.py": "796561c1c5d4f4484dacd782a45c9534db7bf8ab2f2f91df48b247bdfa7e13e0",
+    "control.py": "5ab7a6e00a54549470631b442d40b24253f8a4aba5367d492bf3264b879205fe",
+    "run.py": "ad81281c6d8584829c7f83e79bf7898d08bb28b55c34094391e7d660fadbf477",
+    "calibrate.py": "ad5991f7f37bac159e17e2b6eba6e4fdfc447f9ec30bfbfed3b55dfa011b16a5",
+    "baselines.py": "109afc1e8cc37a6fb689eaf0bfd76f9f343531b08960760afc8f3a9127ab1e80"
+  }
+}

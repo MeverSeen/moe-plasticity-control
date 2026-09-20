@@ -15,6 +15,7 @@ SUITES = (
     ("v7_sequence_feedback", "test_*.py"),
     ("v10_visual_control", "test_*.py"),
     ("v11_diagnostics", "test_*.py"),
+    ("v12_persistent_control", "test_*.py"),
 )
 
 
