@@ -1,0 +1,10 @@
+{
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "platform": "Linux-4.19.90-2107.6.0.0192.8.oe1.bclinux.x86_64-x86_64-with-glibc2.35",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA A800 80GB PCIe",
+  "gpu_memory_bytes": 85094825984,
+  "model_revision": "6d84c48581ece794365f2b8e9cfb043c68ade9c5",
+  "base_environment_reused_from_v13": true
+}

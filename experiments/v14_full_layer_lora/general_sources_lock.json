@@ -1,0 +1,45 @@
+{
+  "description": "Exact official public bytes fetched before any model evaluation; content hashes pin non-versioned author URLs",
+  "bbh_revision": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+  "boolq_revision": "35b264d03638db9f4ce671b711558bf7ff0f80d5",
+  "files": [
+    {
+      "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/bbh/logical_deduction_five_objects.json",
+      "path": "bbh-logical-five.json",
+      "bytes": 155477,
+      "sha256": "d2df31394b903b7f0e085d42a69572a092987856eac076799017d70ef266fa8f"
+    },
+    {
+      "url": "https://yonatanbisk.com/piqa/data/valid-labels.lst",
+      "path": "piqa-labels.lst",
+      "bytes": 3676,
+      "sha256": "b4192dc3a2a0363d9d60ccf79800cbbe2f32ebb17726efdde6970e0b8131bceb"
+    },
+    {
+      "url": "https://yonatanbisk.com/piqa/data/valid.jsonl",
+      "path": "piqa-valid.jsonl",
+      "bytes": 495929,
+      "sha256": "93503cc97c679e459b065c3d13e848282e44b2a25213985bed3e5d458abef72d"
+    },
+    {
+      "url": "https://people.eecs.berkeley.edu/~hendrycks/data.tar",
+      "path": "mmlu.tar",
+      "bytes": 166184960,
+      "sha256": "bec563ba4bac1d6aaf04141cd7d1605d7a5ca833e38f994051e818489592989b"
+    },
+    {
+      "url": "https://huggingface.co/datasets/google/boolq/resolve/35b264d03638db9f4ce671b711558bf7ff0f80d5/data/validation-00000-of-00001.parquet",
+      "revision": "35b264d03638db9f4ce671b711558bf7ff0f80d5",
+      "path": "boolq-validation.parquet",
+      "bytes": 1257630,
+      "sha256": "52355d11524b4b874a9b9dcc278feb10f672d52c4f4eff9872e695ede59820f8",
+      "replaces_failed": "boolq-dev.jsonl"
+    }
+  ],
+  "initial_transport_failures": [
+    {
+      "path": "boolq-dev.jsonl",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}

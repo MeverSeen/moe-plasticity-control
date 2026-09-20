@@ -1,0 +1,42 @@
+{
+  "status": "verified",
+  "format": "adapter-only; no Adam state; not training resume",
+  "files": [
+    {
+      "name": "initial",
+      "local_path": "runs/v14-checkpoints/initial.pt",
+      "sha256": "02f6feae25bd2f1303cea994170cea7fe9d3d7960b448cb76aeb2a35ab9d5a23",
+      "bytes": 152655063,
+      "factor_tensors": 6144,
+      "trainable_parameters": 37748736,
+      "nonzero_B_tensors": 0
+    },
+    {
+      "name": "uniform1",
+      "local_path": "runs/v14-checkpoints/uniform1.pt",
+      "sha256": "c29e468a59b3738fc27e47fb092b8bc5d51b49ce97fc84c2955c2fa3710f1580",
+      "bytes": 152661789,
+      "factor_tensors": 6144,
+      "trainable_parameters": 37748736,
+      "nonzero_B_tensors": 3072
+    },
+    {
+      "name": "static050",
+      "local_path": "runs/v14-checkpoints/static050.pt",
+      "sha256": "65798884d2c64458c70a7f7c905e0f12411780c256f8a47956f9758d7037a19c",
+      "bytes": 152667939,
+      "factor_tensors": 6144,
+      "trainable_parameters": 37748736,
+      "nonzero_B_tensors": 3072
+    },
+    {
+      "name": "rule",
+      "local_path": "runs/v14-checkpoints/rule.pt",
+      "sha256": "b6d70a30e63a41f3c8109cc74bf8396f31d9c360dc370862aba291fc9d891c81",
+      "bytes": 152243973,
+      "factor_tensors": 6144,
+      "trainable_parameters": 37748736,
+      "nonzero_B_tensors": 3072
+    }
+  ]
+}

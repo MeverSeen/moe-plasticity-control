@@ -1,0 +1,70 @@
+{
+  "version": "v14_full_layer_expert_lora_v1",
+  "locked_before_gpu_smoke_utc": "2026-09-20T07:08:12.702939+00:00",
+  "allocation_start_utc": "2026-09-20T05:25:00Z",
+  "hard_deadline_utc": "2026-09-20T13:25:00Z",
+  "platform": "allenai/OLMoE-1B-7B-0924",
+  "model_revision": "6d84c48581ece794365f2b8e9cfb043c68ade9c5",
+  "data_revision": "55a365637381ce7f3748fa2eac7aef1a113bbb82",
+  "layers": 16,
+  "experts_per_layer": 64,
+  "native_top_k": 8,
+  "projections": [
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ],
+  "rank": 4,
+  "alpha": 4,
+  "alpha_over_rank": 1,
+  "dropout": 0,
+  "trainable_parameters": 37748736,
+  "initialization": {
+    "seed": 1400,
+    "A": "Kaiming uniform with a=sqrt(5), standard nn.Linear initialization",
+    "B": "all zeros",
+    "fresh_history": "restore same A/B and empty Adam; one persistent adapter set through all tasks"
+  },
+  "frozen": "All original model weights including router, attention, norms and head. No new router, adapters follow each original expert activation.",
+  "precision": {
+    "base": "BF16",
+    "forward": "BF16 autocast",
+    "A_B_master_gradients_Adam_moments": "FP32"
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.0002,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "gating": "Actual factor displacement including decay; one multiplier for all six factors of an expert. m0 leaves learned adapter active and advances Adam only when gradients are present; gradNone skips standard AdamW state/decay. m1 leaves exact candidate unchanged. Effective BA change is bilinear, not strictly scaled by m."
+  },
+  "smoke": {
+    "stage_cap_seconds": 1800,
+    "microbatches": [
+      1,
+      2
+    ],
+    "sequence_length_padded": 512,
+    "replay_microbatch": 1,
+    "replay_coefficient": 0.5,
+    "warmup_per_profile": 1,
+    "measured_updates_per_profile": 3,
+    "monitors": 8,
+    "scope": "Integration and descriptive end-to-end costs, not a statistically stable throughput benchmark or full continual-learning result."
+  },
+  "main_comparators": [
+    "fixed allocation including standard uniform update and development-selected strong static reference",
+    "same-information same-interface rule",
+    "learned shared controller; PPO candidate, not executed today"
+  ],
+  "clone": "diagnostic only; not a fourth main method class",
+  "action_interface": "Shared expert encoder with layer/group base and sparse distinct-expert corrections; 1024 positions, no independent agents or full-dimensional independent random exploration.",
+  "general_ability": "Independent final evaluation only; adapter enabled on same deployment model at initial and later checkpoints. Per-ability initial/absolute/delta retained. No general evaluation data in reward or selection; future optimization requires separate budgeted online proxy.",
+  "future_comparison": "Only if real remaining time sufficient, lock a separate bounded fixed/rule short comparison before execution; no PPO training today.",
+  "archive_reserve_seconds": 2700
+}

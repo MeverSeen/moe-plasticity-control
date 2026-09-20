@@ -1,0 +1,2 @@
+INDEX 35840 NI examples 1608284 shingles
+GENERAL_READY {'knowledge_mmlu_subset': 228, 'reasoning_bbh_logical5_subset': 128, 'reading_boolq_subset': 128, 'commonsense_piqa_subset': 128} 2 8.068327903747559

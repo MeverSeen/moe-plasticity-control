@@ -1,0 +1,59 @@
+{
+  "version": "v14_short_comparison_v1",
+  "locked_utc": "2026-09-20T07:25:40.697785+00:00",
+  "purpose": "Bounded platform/development comparison; not confirmation, not trained controller benefit, not full-layer versus two-layer causality",
+  "wall_cap_seconds": 5400,
+  "maximum_actual_updates": 690,
+  "root": {
+    "id": "development_1401000",
+    "seed": 1401000,
+    "split": "development",
+    "tasks": [
+      "task247_dream_answer_generation",
+      "task190_snli_classification",
+      "task843_financial_phrasebank_classification"
+    ],
+    "targets": null
+  },
+  "environment": {
+    "tasks": 3,
+    "max_updates": 60,
+    "reference_updates": 30,
+    "hold": 5,
+    "microbatch": 2,
+    "accumulation": 1,
+    "replay_microbatch": 1,
+    "stop_examples": 8,
+    "old_observation_examples": 2,
+    "evaluation_batch": 8,
+    "memory_tokens": 256000,
+    "reward_scale": 0.1,
+    "failure_kappa": 3.0
+  },
+  "target_rule": "One all-one LoRA30-update reference per task, same root and stop examples; median stop CE at updates20/25/30. No policy-dependent target; no retuning if short or failed.",
+  "candidates": [
+    {
+      "name": "uniform1",
+      "base_index": 4,
+      "mode": "fixed"
+    },
+    {
+      "name": "static050",
+      "base_index": 2,
+      "mode": "fixed"
+    },
+    {
+      "name": "rule",
+      "base_index": 4,
+      "mode": "rule"
+    }
+  ],
+  "rule": "Same shared information/interface: lower each layer base index by1 if cached potential>.10; otherwise raise by1 if current-target gap>.50 and prior-decision improvement<.02. In each layer correct at most2 experts with old-current top8 usage fraction>.02, ranked descending with lowest-index ties, to base-minus-one alphabet level. Base0 has no corrections.",
+  "strong_static_reference": "Not calibrated in this short comparison; static050 is an a priori diagnostic candidate. Formal strong-static development selection remains unexecuted.",
+  "generation_score": "All128 isolated NI eval examples per task; greedy<=32 tokens; normalized EM/tokenF1 against all original outputs. Record triangular loss and score matrices at every task completion.",
+  "general_evaluation": "Before the history and at each candidate endpoint only, same always-enabled deployment adapters. Fixed unscored source/text-isolated612-example candidate target: four per each of57 MMLU subjects,128 PIQA validation,128 BoolQ validation,128 BBH logical-deduction-five-objects. Length<=512 and source/text exclusions predeclared; audit must pass. Single option-letter likelihood, no CoT; subset engineering readout, not full benchmark or TRACE reproduction. No metrics enter observations/reward/selection.",
+  "selection": "None: execute fixed ordered menu, retain all endpoints/failures, no post-hoc expansion or learned winner search.",
+  "cost": "Actual prefix executed once and restored for each candidate; report actual versus complete path separately. General initial evaluation reused once. All copies, scoring/generation, monitor, training/replay, control and wall time counted.",
+  "hard_deadline_utc": "2026-09-20T13:25:00Z",
+  "archive_reserve_seconds": 2700
+}

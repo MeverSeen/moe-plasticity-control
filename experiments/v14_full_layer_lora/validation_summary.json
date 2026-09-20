@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "cpu_tests": 16,
+  "rule_decisions_replayed": 8,
+  "general_scores_recomputed": 2448,
+  "matrix_cells": 18,
+  "verified_adapter_files": 4,
+  "comparison_updates": 138,
+  "smoke_updates": 12,
+  "plots_visually_checked": true,
+  "limits": [
+    "Offline aggregate verification does not rerun GPU generation",
+    "Full-state smoke recovery tested; hard-cutoff interruption not exercised",
+    "Deployment adapters omit Adam state"
+  ],
+  "v13_manifest_files_verified": 63
+}

@@ -1,0 +1,390 @@
+{
+  "status": "completed",
+  "protocol": "v14_full_layer_expert_lora_v1",
+  "profiles": [
+    {
+      "microbatch": 1,
+      "sequence_length_padded": 512,
+      "replay_microbatch": 1,
+      "replay_sequence_length_padded": 512,
+      "accumulation": 1,
+      "updates": 3,
+      "training_and_replay_seconds": 10.584384604357183,
+      "seconds_per_update": 3.5281282014523945,
+      "losses": [
+        1.5648211240768433,
+        1.0217541456222534,
+        0.5796261429786682
+      ],
+      "cost": {
+        "updates": 3,
+        "train_input_tokens": 252,
+        "train_target_tokens": 9,
+        "train_padded_tokens": 1536,
+        "replay_input_tokens": 249,
+        "replay_target_tokens": 6,
+        "replay_padded_tokens": 1536,
+        "monitor_input_tokens": 0,
+        "monitor_target_tokens": 0,
+        "monitor_padded_tokens": 0,
+        "eval_input_tokens": 0,
+        "eval_target_tokens": 0,
+        "eval_padded_tokens": 0,
+        "copies": 0,
+        "resets": 0,
+        "copy_seconds": 0.0,
+        "reset_seconds": 0.0,
+        "train_forward_seconds": 1.8013048386201262,
+        "replay_forward_seconds": 1.7919766558334231,
+        "monitor_forward_seconds": 0.0,
+        "eval_forward_seconds": 0.0,
+        "train_backward_seconds": 2.627049209550023,
+        "replay_backward_seconds": 2.7094296915456653,
+        "optimizer_seconds": 1.2290935758501291
+      },
+      "monitor8_profiles": [
+        {
+          "routes": false,
+          "seconds": 0.6693466128781438,
+          "mean_loss": 0.9398928284645081
+        },
+        {
+          "routes": true,
+          "seconds": 0.5958986952900887,
+          "mean_loss": 0.9398928284645081
+        },
+        {
+          "routes": false,
+          "seconds": 0.5938561884686351,
+          "mean_loss": 0.9398928284645081
+        },
+        {
+          "routes": true,
+          "seconds": 0.605608101002872,
+          "mean_loss": 0.9398928284645081
+        }
+      ],
+      "route_collection_incremental_seconds": -0.030848002526909113,
+      "incremental_timing_scope": "Alternating with/without routes; noisy descriptive difference, not isolated kernel benchmark",
+      "route_tokens_each_layer": [
+        673,
+        673,
+        673,
+        673,
+        673,
+        673,
+        673,
+        673,
+        673,
+        673,
+        673,
+        673,
+        673,
+        673,
+        673,
+        673
+      ],
+      "observed_experts_each_layer": [
+        64,
+        64,
+        63,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64
+      ],
+      "route_cache_age_updates": 0,
+      "peak_allocated_bytes": 16582227456,
+      "peak_reserved_bytes": 21590179840
+    },
+    {
+      "microbatch": 2,
+      "sequence_length_padded": 512,
+      "replay_microbatch": 1,
+      "replay_sequence_length_padded": 512,
+      "accumulation": 1,
+      "updates": 3,
+      "training_and_replay_seconds": 10.876010162755847,
+      "seconds_per_update": 3.625336720918616,
+      "losses": [
+        0.6634770631790161,
+        0.33655476570129395,
+        0.1263284534215927
+      ],
+      "cost": {
+        "updates": 3,
+        "train_input_tokens": 540,
+        "train_target_tokens": 15,
+        "train_padded_tokens": 3072,
+        "replay_input_tokens": 249,
+        "replay_target_tokens": 6,
+        "replay_padded_tokens": 1536,
+        "monitor_input_tokens": 0,
+        "monitor_target_tokens": 0,
+        "monitor_padded_tokens": 0,
+        "eval_input_tokens": 0,
+        "eval_target_tokens": 0,
+        "eval_padded_tokens": 0,
+        "copies": 0,
+        "resets": 0,
+        "copy_seconds": 0.0,
+        "reset_seconds": 0.0,
+        "train_forward_seconds": 1.8714623432606459,
+        "replay_forward_seconds": 1.8040190823376179,
+        "monitor_forward_seconds": 0.0,
+        "eval_forward_seconds": 0.0,
+        "train_backward_seconds": 2.731674431823194,
+        "replay_backward_seconds": 2.78248006477952,
+        "optimizer_seconds": 1.2513350117951632
+      },
+      "monitor8_profiles": [
+        {
+          "routes": false,
+          "seconds": 0.6668144669383764,
+          "mean_loss": 0.37251049280166626
+        },
+        {
+          "routes": true,
+          "seconds": 0.6615900145843625,
+          "mean_loss": 0.37251049280166626
+        },
+        {
+          "routes": false,
+          "seconds": 0.6308327652513981,
+          "mean_loss": 0.37251049280166626
+        },
+        {
+          "routes": true,
+          "seconds": 0.6252010157331824,
+          "mean_loss": 0.37251049280166626
+        }
+      ],
+      "route_collection_incremental_seconds": -0.005428100936114788,
+      "incremental_timing_scope": "Alternating with/without routes; noisy descriptive difference, not isolated kernel benchmark",
+      "route_tokens_each_layer": [
+        673,
+        673,
+        673,
+        673,
+        673,
+        673,
+        673,
+        673,
+        673,
+        673,
+        673,
+        673,
+        673,
+        673,
+        673,
+        673
+      ],
+      "observed_experts_each_layer": [
+        64,
+        64,
+        63,
+        64,
+        64,
+        64,
+        64,
+        64,
+        63,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64,
+        64
+      ],
+      "route_cache_age_updates": 0,
+      "peak_allocated_bytes": 18473251328,
+      "peak_reserved_bytes": 21590179840
+    }
+  ],
+  "phase": "complete",
+  "trainable_parameters": 37748736,
+  "groups": 1024,
+  "projections": 3072,
+  "model_load_seconds": 8.188341733068228,
+  "base_revision": "6d84c48581ece794365f2b8e9cfb043c68ade9c5",
+  "master_dtype": "float32",
+  "compute_dtype": "bfloat16",
+  "initialization_seed": 1400,
+  "base_hash": {
+    "sha256": "71f39c6d02599589b6b05da3f18bdfdf5574efa94d2a16b5fe2569f2569868a0",
+    "parameters": 6919161856
+  },
+  "hash_seconds": 14.025653433054686,
+  "initial_logits_bitwise_equal": true,
+  "initial_logits_max_abs_difference": 0.0,
+  "nonzero_update_norm": 0.791583776473999,
+  "zero_multiplier_exact": true,
+  "zero_keeps_learned_forward": true,
+  "zero_moments_match_full_update": true,
+  "mixed_multiplier_max_abs_error": 1.4551915228366852e-11,
+  "active_factor_tensors": 6144,
+  "last_profile": {
+    "microbatch": 2,
+    "sequence_length_padded": 512,
+    "replay_microbatch": 1,
+    "replay_sequence_length_padded": 512,
+    "accumulation": 1,
+    "updates": 3,
+    "training_and_replay_seconds": 10.876010162755847,
+    "seconds_per_update": 3.625336720918616,
+    "losses": [
+      0.6634770631790161,
+      0.33655476570129395,
+      0.1263284534215927
+    ],
+    "cost": {
+      "updates": 3,
+      "train_input_tokens": 540,
+      "train_target_tokens": 15,
+      "train_padded_tokens": 3072,
+      "replay_input_tokens": 249,
+      "replay_target_tokens": 6,
+      "replay_padded_tokens": 1536,
+      "monitor_input_tokens": 0,
+      "monitor_target_tokens": 0,
+      "monitor_padded_tokens": 0,
+      "eval_input_tokens": 0,
+      "eval_target_tokens": 0,
+      "eval_padded_tokens": 0,
+      "copies": 0,
+      "resets": 0,
+      "copy_seconds": 0.0,
+      "reset_seconds": 0.0,
+      "train_forward_seconds": 1.8714623432606459,
+      "replay_forward_seconds": 1.8040190823376179,
+      "monitor_forward_seconds": 0.0,
+      "eval_forward_seconds": 0.0,
+      "train_backward_seconds": 2.731674431823194,
+      "replay_backward_seconds": 2.78248006477952,
+      "optimizer_seconds": 1.2513350117951632
+    },
+    "monitor8_profiles": [
+      {
+        "routes": false,
+        "seconds": 0.6668144669383764,
+        "mean_loss": 0.37251049280166626
+      },
+      {
+        "routes": true,
+        "seconds": 0.6615900145843625,
+        "mean_loss": 0.37251049280166626
+      },
+      {
+        "routes": false,
+        "seconds": 0.6308327652513981,
+        "mean_loss": 0.37251049280166626
+      },
+      {
+        "routes": true,
+        "seconds": 0.6252010157331824,
+        "mean_loss": 0.37251049280166626
+      }
+    ],
+    "route_collection_incremental_seconds": -0.005428100936114788,
+    "incremental_timing_scope": "Alternating with/without routes; noisy descriptive difference, not isolated kernel benchmark",
+    "route_tokens_each_layer": [
+      673,
+      673,
+      673,
+      673,
+      673,
+      673,
+      673,
+      673,
+      673,
+      673,
+      673,
+      673,
+      673,
+      673,
+      673,
+      673
+    ],
+    "observed_experts_each_layer": [
+      64,
+      64,
+      63,
+      64,
+      64,
+      64,
+      64,
+      64,
+      63,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64
+    ],
+    "route_cache_age_updates": 0,
+    "peak_allocated_bytes": 18473251328,
+    "peak_reserved_bytes": 21590179840
+  },
+  "checkpoint": {
+    "bytes": 459902278,
+    "save_seconds": 1.3812413485720754,
+    "load_restore_seconds": 2.1985491197556257,
+    "weights_exact": true,
+    "optimizer_moments_exact": true,
+    "cpu_cuda_rng_exact": true,
+    "moment_dtypes": [
+      "torch.float32"
+    ]
+  },
+  "frozen_base_hash_after": {
+    "sha256": "71f39c6d02599589b6b05da3f18bdfdf5574efa94d2a16b5fe2569f2569868a0",
+    "parameters": 6919161856
+  },
+  "frozen_base_bitwise_unchanged": true,
+  "native_cost": {
+    "updates": 12,
+    "train_input_tokens": 1776,
+    "train_target_tokens": 52,
+    "train_padded_tokens": 10240,
+    "replay_input_tokens": 996,
+    "replay_target_tokens": 24,
+    "replay_padded_tokens": 6144,
+    "monitor_input_tokens": 6730,
+    "monitor_target_tokens": 200,
+    "monitor_padded_tokens": 34304,
+    "eval_input_tokens": 0,
+    "eval_target_tokens": 0,
+    "eval_padded_tokens": 0,
+    "copies": 5,
+    "resets": 0,
+    "copy_seconds": 4.317589890211821,
+    "reset_seconds": 0.0,
+    "train_forward_seconds": 7.548086785711348,
+    "replay_forward_seconds": 7.431372310034931,
+    "monitor_forward_seconds": 6.162131406366825,
+    "eval_forward_seconds": 0.0,
+    "train_backward_seconds": 10.83398344181478,
+    "replay_backward_seconds": 10.975624991580844,
+    "optimizer_seconds": 5.271907331421971
+  },
+  "route_profile": {
+    "calls": 6,
+    "seconds_including_forward": 3.601559992879629,
+    "tokens_per_layer": 4038,
+    "last_update": 12
+  },
+  "wall_seconds": 100.2057831287384,
+  "finished_epoch": 1789888241.717766
+}

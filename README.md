@@ -6,8 +6,9 @@
 
 ## 当前平台：v14 全层原生 expert LoRA
 
-2026-09-20将下一阶段固定为原生OLMoE的全16层×64 expert低秩适配控制。rank4 LoRA覆盖每个expert三个投影，共37,748,736训练参数，原始基座与router冻结；一条历史持续使用同一套适配器。全层插入、零初始化等价、真实位移及checkpoint恢复已经过A800实测，限额固定/规则比较另存新目录。
+2026-09-20将下一阶段固定为原生OLMoE的全16层×64 expert低秩适配控制。rank4 LoRA覆盖每个expert三个投影，共37,748,736训练参数，原始基座与router冻结；一条历史持续使用同一套适配器。全层插入、零初始化等价、真实位移及checkpoint恢复已经过A800实测，限额固定/规则比较已完成并归档。单根三路径均达标，规则未改善固定1的CE遗忘；固定.5遗忘更低但多用10次更新。
 
+- [v14结果与限制](experiments/v14_full_layer_lora/结果解读.md)
 - [v14平台、实测成本与当前范围](experiments/v14_full_layer_lora/README.md)
 - [三类主表与独立通用评价协议](experiments/v14_full_layer_lora/EVALUATION_PROTOCOL.md)
 - [v13两层原生权重有限证据](experiments/v13_native_ppo/结果解读.md)：171实际更新、单根三候选；因平台调整提前结束，正式PPO收益未检验。
@@ -68,7 +69,7 @@ python scripts/verify_artifacts.py
 python scripts/test_all.py
 ```
 
-旧v1–v12共95项检查；v13新增27项、v14新增15项CPU机制/评价检查。各版本在独立进程中测试，避免同名模块串用；本轮只重跑相应新增检查，旧结果保持冻结。已有记录在各版本的results或archive目录，首次查看无需重新训练。
+旧v1–v12共95项检查；v13新增27项、v14新增16项CPU机制/评价检查。各版本在独立进程中测试，避免同名模块串用；本轮只重跑相应新增检查，旧结果保持冻结。已有记录在各版本的results或archive目录，首次查看无需重新训练。
 
 ## 实验索引
 

@@ -1,0 +1,6 @@
+method,class,label,status,roots,complete_histories,successful_histories,failed_tasks,F,signed_F,final_answer_CE,final_mean_task_EM,positive_score_forgetting,actual_updates,path_updates,control_decisions,actual_seconds_with_general,path_seconds_with_general,reason
+uniform1,fixed,Standard uniform1,completed_development_short,1,1,1,0,0.0022214542150322814,-0.04214444088211167,0.38699412758433027,0.5989583333333334,0.01953125,6,26,2,389.3817606670782,587.7088128989562,Single predeclared development root; no cross-platform causal inference
+static050,fixed,Predeclared static0.5,completed_development_short,1,1,1,0,0.00025945525158022065,-0.04308011779903609,0.3581730510741181,0.5807291666666666,0.0078125,16,36,4,426.5016965428367,624.8287487747148,Single predeclared development root; no cross-platform causal inference
+rule,rule,Same-interface rule,completed_development_short,1,1,1,0,0.0026037648640340194,-0.04938138685247395,0.3862087625796751,0.6015625,0.01953125,6,26,2,389.81382355466485,588.1408757865429,Single predeclared development root; no cross-platform causal inference
+strong_static,fixed,Development-selected strong static,not_executed,0,0,,,,,,,,,,,,,Strong-static development calibration not run
+ppo,learned,Shared PPO controller,not_executed,0,0,,,,,,,,,,,,,PPO not trained in this platform/engineering allocation

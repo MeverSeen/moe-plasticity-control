@@ -44,7 +44,7 @@ def plot(result,out):
  plt.rcParams.update({'font.size':10});fig,axes=plt.subplots(1,3,figsize=(12,3.7));labels=[r['method'] for r in rows];colors=['#386cb0','#7fc97f','#fdc086'][:len(rows)]
  for ax,key,title in zip(axes,['F','final_mean_task_EM','path_updates'],['Cumulative old-task CE forgetting','Final mean generated exact match','Complete-path learner updates']):
   values=[r[key] for r in rows];ax.bar(labels,values,color=colors);ax.set_title(title,fontsize=10);ax.tick_params(axis='x',rotation=20);ax.spines[['top','right']].set_visible(False)
-  for i,v in enumerate(values):ax.text(i,v,f'{v:.3f}' if key!='path_updates' else str(v),ha='center',va='bottom',fontsize=9)
+  for i,v in enumerate(values):ax.text(i,v,(f'{v:.6f}' if key=='F' else f'{v:.3f}') if key!='path_updates' else str(v),ha='center',va='bottom',fontsize=9)
   ax.margins(y=.2)
  fig.suptitle('v14: one predeclared development history; no PPO or confirmation',fontsize=12);fig.tight_layout();fig.savefig(out/'short_comparison.png',dpi=180);plt.close(fig)
  general=result['general']
@@ -52,7 +52,7 @@ def plot(result,out):
   abilities=list(dict.fromkeys(r['ability'] for r in general));fig,ax=plt.subplots(figsize=(10,4));width=.23
   for k,name in enumerate(labels):
    values=[next(r['accuracy_delta']*100 for r in general if r['method']==name and r['ability']==a) for a in abilities];ax.bar([i+(k-1)*width for i in range(len(abilities))],values,width,label=name,color=colors[k])
-  ax.axhline(0,color='#333333',linewidth=.7);ax.set_xticks(range(len(abilities)),['MMLU subset (228)','BBH logical5 (128)','BoolQ subset (128)','PIQA subset (128)']);ax.set_ylabel('Accuracy change from shared initial model (percentage points)');ax.set_title('Independent option-letter evaluation; limited subsets, no score-based selection');ax.legend(frameon=False);ax.spines[['top','right']].set_visible(False);fig.tight_layout();fig.savefig(out/'general_changes.png',dpi=180);plt.close(fig)
+  ax.axhline(0,color='#333333',linewidth=.7);ax.set_xticks(range(len(abilities)),[{'knowledge_mmlu_subset':'MMLU subset (228)','reasoning_bbh_logical5_subset':'BBH logical5 (128)','reading_boolq_subset':'BoolQ subset (128)','commonsense_piqa_subset':'PIQA subset (128)'}[a] for a in abilities]);ax.set_ylabel('Accuracy change (percentage points)');ax.set_title('Independent option-letter evaluation; limited subsets, no score-based selection');ax.legend(frameon=False);ax.spines[['top','right']].set_visible(False);fig.tight_layout();fig.savefig(out/'general_changes.png',dpi=180);plt.close(fig)
 
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--results',type=Path,required=True);parser.add_argument('--output',type=Path,required=True);args=parser.parse_args();args.output.mkdir(parents=True,exist_ok=False);r=analyze(args.results)

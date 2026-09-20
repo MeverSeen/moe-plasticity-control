@@ -1,0 +1,9 @@
+{
+  "job": "021-general-audit.json",
+  "exit_code": 0,
+  "started": 1789889042.7993598,
+  "ended": 1789889053.8040857,
+  "soft_stop": false,
+  "terminated": false,
+  "killed": false
+}

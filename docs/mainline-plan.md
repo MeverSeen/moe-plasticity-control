@@ -1,5 +1,7 @@
 # 总体方案：共享控制器协调 MoE 专家更新
 
+2026-09-20完成v14接入及单根固定1/固定.5/规则短比较，三条均达标；F为.002221/.000259/.002604，完整路径更新26/36/26。含短测150次实际更新，未训练PPO。通用评价PIQA均下降，全部子集原始正确答案NLL升高，不作总体能力保持结论。见[完整结果与证据](../experiments/v14_full_layer_lora/结果解读.md)。GPU工作已结束，原13:25 UTC保护保留。
+
 更新于 2026-09-17。本页是当前研究主线与实施规划入口；算法细节见 [控制器设计](controller-design.md)，已经取得的证据见 [研究记录](research.md)。
 
 **实施更新（2026-09-18）：v10视觉pilot已完成真实数据环境、逐expert GRPO/PPO、闭环选模和独立评价。** 见[结果解读](../experiments/v10_visual_control/结果解读.md)、[实际协议](../experiments/v10_visual_control/README.md)及[资源缺口](../experiments/v10_visual_control/RESOURCE_NOTES.md)。没有验证反馈或超越固定/全局倍率的稳定收益；语言与原生MoE尚未运行。以下保留总体路线与候选规模，不能把候选数字当作v10实际配置。v1–v7不变。
@@ -45,7 +47,7 @@ $$
 
 最终动作可以是高维的，探索采用结构化变化：可行基础分配、层/组模式和稀疏局部修正。小规模的因子化逐 expert 策略保留为参照；不用为每个 expert 训练独立 agent，也不必对全部专家做两两注意力。
 
-GRPO 从同一完整 learner checkpoint 克隆若干闭环轨迹，用组内实际学习结果训练控制器；PPO 保留为匹配交互预算的算法对照。部署控制器冻结，单轨迹执行。概率、奖励、数据权限与计算记账细节见 [算法方案](controller-design.md)。
+当前全层平台后续以PPO为学习候选，按真实新轨迹训练共享控制器；今日不执行外层学习。GRPO从同完整checkpoint比较闭环轨迹的方案保留为历史及后续候选，不自动增加本轮运行。部署控制器冻结、单轨迹执行。概率、奖励、权限与记账细节见[算法方案](controller-design.md)。
 
 ## 3. 三层证据路线
 
@@ -81,7 +83,7 @@ GRPO 从同一完整 learner checkpoint 克隆若干闭环轨迹，用组内实�
 
 ### 3.3 原生 MoE 阶段
 
-[OLMoE 官方配置](https://huggingface.co/allenai/OLMoE-1B-7B-0924/blob/main/config.json) 为 16 层、每层 64 experts、每 token 选 8 个，共 1,024 个 expert 位置。先对选定层做显存、吞吐、监测与 checkpoint 复制测算，再决定可训练范围、学习率和 rollout 长度。不能直接沿用 LoRA 的更新尺度。
+[OLMoE 官方配置](https://huggingface.co/allenai/OLMoE-1B-7B-0924/blob/main/config.json) 为16层、每层64 experts、每token选8个，共1,024个位置。v13已完成第12/16层原生权重的有限短测；下一阶段固定为全部原生expert三个投影的rank4 LoRA，基座保持冻结。[v14](../experiments/v14_full_layer_lora/README.md)重新实测训练、回放、监测与保存成本，不能沿用两层原生权重的吞吐或把参数数目比例当训练速度。全层低秩适配与局部完整权重更新是不同平台，现有短测不隔离两者的因果优劣。
 
 DeepSeek-V4.1-Flash 的 40×384 路由 experts 仅用于说明规模动机，非当前实施平台；主干计 15,360 个路由专家，另有 40 个共享专家，不含附加模块。事实依据及范围见 [官方配置与实现记录](references.md#deepseek-v41)。
 

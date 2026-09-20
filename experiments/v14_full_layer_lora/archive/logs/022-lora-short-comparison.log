@@ -1,0 +1,10 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:01,  1.66it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:01<00:00,  1.57it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:01<00:00,  1.90it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:01<00:00,  1.81it/s]
+initial_general {}
+targets_locked {"targets": [0.10794632928445935, 0.5347160776145756, 0.5799922440201044]}
+history_running {"candidate": "uniform1"}
+history_complete {"candidate": "uniform1", "success": true, "path_updates": 26, "F": 0.0022214542150322814}
+history_running {"candidate": "static050"}
+history_complete {"candidate": "static050", "success": true, "path_updates": 36, "F": 0.00025945525158022065}
+history_running {"candidate": "rule"}
+history_complete {"candidate": "rule", "success": true, "path_updates": 26, "F": 0.0026037648640340194}
+complete {}

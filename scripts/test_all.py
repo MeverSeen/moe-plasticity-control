@@ -26,6 +26,7 @@ def main():
     env = dict(os.environ)
     env.setdefault("MPLCONFIGDIR", str(ROOT / ".cache" / "matplotlib"))
     env.setdefault("XDG_CACHE_HOME", str(ROOT / ".cache"))
+    env.setdefault("OMP_NUM_THREADS", "1")
     for directory, pattern in SUITES:
         print(f"\nTesting {directory}", flush=True)
         subprocess.run(

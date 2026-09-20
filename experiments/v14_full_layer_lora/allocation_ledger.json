@@ -1,0 +1,104 @@
+{
+  "allocation_start_utc": "2026-09-20T05:25:00Z",
+  "hard_deadline_utc": "2026-09-20T13:25:00Z",
+  "observed_utc": "2026-09-20T08:02:53.090991+00:00",
+  "allocation_elapsed_seconds": 9473.090991020203,
+  "remaining_authorized_seconds": 19326.909008979797,
+  "supervised_job_wall_union_seconds": 3012.552050113678,
+  "other_elapsed_allocation_seconds": 6460.538940906525,
+  "job_wall_is_gpu_busy_time": false,
+  "notes": "The full elapsed allocation includes deployment, downloads, CPU preprocessing, local work and idle intervals. Job intervals include CPU work and are not GPU utilization integrals. No budget reset at v14 start.",
+  "jobs": [
+    {
+      "job": "005-native-smoke.json",
+      "started_utc": "2026-09-20T05:59:44.429443+00:00",
+      "ended_utc": "2026-09-20T06:00:10.825337+00:00",
+      "wall_seconds": 26.395894527435303,
+      "exit_code": 0,
+      "terminated": false,
+      "killed": false
+    },
+    {
+      "job": "003-model-download.json",
+      "started_utc": "2026-09-20T05:47:42.074105+00:00",
+      "ended_utc": "2026-09-20T05:51:15.162469+00:00",
+      "wall_seconds": 213.0883641242981,
+      "exit_code": 0,
+      "terminated": false,
+      "killed": false
+    },
+    {
+      "job": "002-dependencies.json",
+      "started_utc": "2026-09-20T05:41:19.881354+00:00",
+      "ended_utc": "2026-09-20T05:42:05.898753+00:00",
+      "wall_seconds": 46.017399072647095,
+      "exit_code": 0,
+      "terminated": false,
+      "killed": false
+    },
+    {
+      "job": "001-network-probe.json",
+      "started_utc": "2026-09-20T05:41:18.880188+00:00",
+      "ended_utc": "2026-09-20T05:41:19.880917+00:00",
+      "wall_seconds": 1.0007283687591553,
+      "exit_code": 0,
+      "terminated": false,
+      "killed": false
+    },
+    {
+      "job": "010-abc-pilot.json",
+      "started_utc": "2026-09-20T06:42:39.374043+00:00",
+      "ended_utc": "2026-09-20T06:52:31.590252+00:00",
+      "wall_seconds": 592.2162089347839,
+      "exit_code": 0,
+      "terminated": false,
+      "killed": false
+    },
+    {
+      "job": "007-prepare-data.json",
+      "started_utc": "2026-09-20T06:12:23.399240+00:00",
+      "ended_utc": "2026-09-20T06:13:46.435956+00:00",
+      "wall_seconds": 83.03671550750732,
+      "exit_code": 0,
+      "terminated": false,
+      "killed": false
+    },
+    {
+      "job": "022-lora-short-comparison.json",
+      "started_utc": "2026-09-20T07:27:55.932550+00:00",
+      "ended_utc": "2026-09-20T08:00:12.682374+00:00",
+      "wall_seconds": 1936.7498242855072,
+      "exit_code": 0,
+      "terminated": false,
+      "killed": false
+    },
+    {
+      "job": "021-general-audit.json",
+      "started_utc": "2026-09-20T07:24:02.799360+00:00",
+      "ended_utc": "2026-09-20T07:24:13.804086+00:00",
+      "wall_seconds": 11.004725933074951,
+      "exit_code": 0,
+      "terminated": false,
+      "killed": false
+    },
+    {
+      "job": "020-lora-smoke.json",
+      "started_utc": "2026-09-20T07:09:00.314105+00:00",
+      "ended_utc": "2026-09-20T07:10:43.356295+00:00",
+      "wall_seconds": 103.04218935966492,
+      "exit_code": 0,
+      "terminated": false,
+      "killed": false
+    }
+  ],
+  "allocation_record": {
+    "start_utc": "2026-09-20T05:25:00Z",
+    "deadline_utc": "2026-09-20T13:25:00Z",
+    "deadline_epoch": 1789910700.0,
+    "supervisor_pid": 1887,
+    "scope": "/root/autodl-tmp/moe-plasticity-v13-20260920",
+    "soft_stop_seconds_before_deadline": 180,
+    "terminate_seconds_before_deadline": 60,
+    "kill_seconds_before_deadline": 30
+  }
+}

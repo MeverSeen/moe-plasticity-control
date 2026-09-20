@@ -1,0 +1,9 @@
+{
+  "job": "022-lora-short-comparison.json",
+  "exit_code": 0,
+  "started": 1789889275.9325502,
+  "ended": 1789891212.6823745,
+  "soft_stop": false,
+  "terminated": false,
+  "killed": false
+}

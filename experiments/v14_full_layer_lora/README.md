@@ -1,5 +1,7 @@
 # v14：全层原生 expert LoRA 控制
 
+2026-09-20完成v14接入及单根固定1/固定.5/规则短比较，三条均达标；F为.002221/.000259/.002604，完整路径更新26/36/26。含短测150次实际更新，未训练PPO。通用评价PIQA均下降，全部子集原始正确答案NLL升高，不作总体能力保持结论。见[完整结果与证据](结果解读.md)。GPU工作已结束，原13:25 UTC保护保留。
+
 固定平台为 OLMoE-1B-7B-0924 的全部16层、每层64个原生expert。每个expert的gate/up/down三个投影加rank4 LoRA，共37,748,736训练参数；原始6,919,161,856参数冻结。没有新router，LoRA随原expert激活；整个历史共用一套适配器，跨独立根恢复同一初始化。
 
 今日范围是平台接入、机制核验、真实成本、评价接口和预先限额的固定/规则短比较。**不训练PPO，不以本轮推断全层优于两层，也不把未执行方法填成输赢。** v13已独立归档，不再扩展。预算仍从2026-09-20 05:25 UTC计起，13:25 UTC硬截止；沿用同一A800、模型、数据、监督器与看门狗。
@@ -48,7 +50,10 @@
 - `lora.py / lora_native.py / optimizer.py`：原生expert插入、冻结范围及位移。
 - `structured_policy.py / environment.py`：共享结构化接口、全层观察、完整已学任务矩阵及恢复。
 - `evaluation.py`：同部署模型的任务生成与通用选择题只读评价。
+- `evaluate_checkpoint.py`：加载有协议hash的adapter部署文件，再执行独立评价；部署文件不含Adam，不能当训练恢复状态。
 - `fetch_general.py / pack_general_candidates.py / prepare_general.py`：官方来源下载、确定性抽样前候选与来源/文本隔离，不查询模型分数。
 - `smoke_lora.py / compare_short.py`：真实短测与限额比较。`protocol.json`固定平台，`comparison_plan.json`固定比较。
 
 使用`OMP_NUM_THREADS=1 python3 -m unittest discover -s experiments/v14_full_layer_lora -p 'test_*.py'`运行CPU机制检查。CPU测试不代替真实GPU证据；依赖、执行代码版本、预算回执和全部失败也须随结果归档。
+
+后续正式训练的测算原则和未锁定项见[资源记录](RESOURCE_NOTES.md)。本轮未申请额外算力。
