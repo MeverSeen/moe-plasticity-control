@@ -1,0 +1,52 @@
+{
+  "roots": [
+    1120100,
+    1120101,
+    1120102,
+    1120103,
+    1120104,
+    1120105,
+    1120106,
+    1120107
+  ],
+  "experts": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1,
+    1.5
+  ],
+  "trunk": [
+    0.25,
+    0.5,
+    1
+  ],
+  "config": {
+    "width": 48,
+    "experts": 4,
+    "layers": 2,
+    "topk": 2,
+    "tasks": 4,
+    "batch": 32,
+    "steps": 200,
+    "interval": 10,
+    "lr": 0.001,
+    "decay": 0.01,
+    "memory": 200,
+    "target": 1.25,
+    "routing": "dynamic",
+    "threads": 1,
+    "monitor_mode": "random",
+    "reward_mode": "positive"
+  },
+  "selection": "lexicographic success, F, absolute loss; report feasible only if success>=.9",
+  "sources": {
+    "control.py": "5ab7a6e00a54549470631b442d40b24253f8a4aba5367d492bf3264b879205fe",
+    "policy.py": "796561c1c5d4f4484dacd782a45c9534db7bf8ab2f2f91df48b247bdfa7e13e0",
+    "core.py": "e3083de94d65b517e5b0512497c77d39e07c8cd0f29e6ead68e9a77fcca8eef4",
+    "test_control.py": "e96ab89ca76ee3fd507ff779c7cc5147d1b25a09a57750ef72ba19e057001c28",
+    "encoder.py": "0646e9f8513221e1c08a630868882b12f48b93578954b0b2d9e6d1e5e495e282",
+    "calibrate.py": "ad5991f7f37bac159e17e2b6eba6e4fdfc447f9ec30bfbfed3b55dfa011b16a5"
+  }
+}

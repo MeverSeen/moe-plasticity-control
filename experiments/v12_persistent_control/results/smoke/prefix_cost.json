@@ -1,0 +1,9 @@
+{
+  "updates": 20,
+  "train_examples": 640,
+  "observation_examples": 850,
+  "evaluation_examples": 2000,
+  "copies": 0,
+  "copy_seconds": 0.0,
+  "control_decisions": 0
+}

@@ -1,0 +1,13 @@
+{
+  "seconds": 827.74760525,
+  "episodes": 180,
+  "cost": {
+    "updates": 32720,
+    "train_examples": 1387680,
+    "observation_examples": 1315098,
+    "evaluation_examples": 1440000,
+    "copies": 0,
+    "copy_seconds": 0.0,
+    "control_decisions": 1008
+  }
+}

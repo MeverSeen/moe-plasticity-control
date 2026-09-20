@@ -1,0 +1,149 @@
+{
+  "stages": {
+    "calibration_new": {
+      "histories": 80,
+      "cost": {
+        "updates": 13190,
+        "train_examples": 581920,
+        "observation_examples": 556017,
+        "evaluation_examples": 640000,
+        "copies": 0,
+        "copy_seconds": 0.0,
+        "control_decisions": 309
+      }
+    },
+    "reuse_parity": {
+      "histories": 1,
+      "cost": {
+        "updates": 180,
+        "train_examples": 8320,
+        "observation_examples": 7679,
+        "evaluation_examples": 8000,
+        "copies": 0,
+        "copy_seconds": 0.0,
+        "control_decisions": 4
+      }
+    },
+    "smoke_prefix": {
+      "prefixes": 1,
+      "cost": {
+        "updates": 20,
+        "train_examples": 640,
+        "observation_examples": 850,
+        "evaluation_examples": 2000,
+        "copies": 0,
+        "copy_seconds": 0.0,
+        "control_decisions": 0
+      }
+    },
+    "smoke_branches": {
+      "histories": 12,
+      "cost": {
+        "updates": 2120,
+        "train_examples": 101760,
+        "observation_examples": 88926,
+        "evaluation_examples": 72000,
+        "copies": 12,
+        "copy_seconds": 0.03134745800000349,
+        "control_decisions": 105
+      }
+    },
+    "training_prefixes": {
+      "prefixes": 144,
+      "cost": {
+        "updates": 6240,
+        "train_examples": 199680,
+        "observation_examples": 206400,
+        "evaluation_examples": 288000,
+        "copies": 0,
+        "copy_seconds": 0.0,
+        "control_decisions": 0
+      }
+    },
+    "training_branches": {
+      "histories": 1112,
+      "cost": {
+        "updates": 244420,
+        "train_examples": 11732160,
+        "observation_examples": 9917001,
+        "evaluation_examples": 6672000,
+        "copies": 1112,
+        "copy_seconds": 7.3527250479998685,
+        "control_decisions": 12218
+      }
+    },
+    "development": {
+      "histories": 576,
+      "cost": {
+        "updates": 118710,
+        "train_examples": 5145120,
+        "observation_examples": 4718068,
+        "evaluation_examples": 4608000,
+        "copies": 0,
+        "copy_seconds": 0.0,
+        "control_decisions": 4435
+      }
+    },
+    "audit": {
+      "histories": 600,
+      "cost": {
+        "updates": 112810,
+        "train_examples": 4782880,
+        "observation_examples": 4500974,
+        "evaluation_examples": 4800000,
+        "copies": 0,
+        "copy_seconds": 0.0,
+        "control_decisions": 3801
+      }
+    },
+    "baselines": {
+      "histories": 180,
+      "cost": {
+        "updates": 32720,
+        "train_examples": 1387680,
+        "observation_examples": 1315098,
+        "evaluation_examples": 1440000,
+        "copies": 0,
+        "copy_seconds": 0.0,
+        "control_decisions": 1008
+      }
+    }
+  },
+  "total_new_cost": {
+    "updates": 530410,
+    "train_examples": 23940160,
+    "observation_examples": 21316263,
+    "evaluation_examples": 18530000,
+    "copies": 1139,
+    "copy_seconds": 7.384072505999872,
+    "control_decisions": 21880
+  },
+  "total_new_full_histories": 2561,
+  "total_new_prefixes": 145,
+  "reused_v11": {
+    "histories": 64,
+    "updates_not_charged": 10510
+  },
+  "coverage_probe_extra": {
+    "copies": 15,
+    "observation_examples": 5250,
+    "updates": 0,
+    "scope": "Analytical count from one post-task-0 clone observation per job and smoke arm; copy duration not retained."
+  },
+  "coverage_policy_draws": 27000,
+  "policy_optimizer_steps_main": 556,
+  "policy_optimizer_steps_smoke": 6,
+  "training_job_wall_seconds_sum": 12590.970912001003,
+  "launcher_span_seconds": 4237.670525074005,
+  "max_single_process_rss_bytes": 776503296,
+  "model_files": 36,
+  "model_bytes": 1048788,
+  "limitations": [
+    "Work counters are examples/updates, not FLOPs. Training examples include replay examples.",
+    "Copy seconds cover recorded branch clones; 15 coverage-probe clone durations were not retained.",
+    "Training job wall times overlap across three workers; summed times are not elapsed runtime or process CPU time. Baselines initially overlapped as a fourth process.",
+    "Peak RSS is maximum single-process high-water mark, not measured aggregate peak.",
+    "Unit tests and posthoc probability replay are not included in the real-data learner-update ledger; replay has zero learner updates.",
+    "Reused v11 rows retain their original counter semantics and are not charged as newly executed work."
+  ]
+}

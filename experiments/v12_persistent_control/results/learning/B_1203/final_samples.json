@@ -1,0 +1,25 @@
+{
+  "draws": 1000,
+  "keep": 455,
+  "all_base": 553,
+  "multi_expert": 0,
+  "joint_trunk_and_experts": 166,
+  "trunk_counts": {
+    "0.5": 747,
+    "0.25": 179,
+    "1.0": 74
+  },
+  "expert_counts": {
+    "0.25": 7462,
+    "1.5": 98,
+    "1.0": 96,
+    "0.75": 164,
+    "0.0": 92,
+    "0.5": 88
+  },
+  "changed_expert_histogram": {
+    "2": 178,
+    "0": 640,
+    "1": 182
+  }
+}

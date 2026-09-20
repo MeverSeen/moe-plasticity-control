@@ -1,0 +1,15 @@
+{
+  "selected": {
+    "greedy": "initial",
+    "stochastic": "terminal"
+  },
+  "audit_checkpoints": [
+    "initial",
+    "terminal"
+  ],
+  "model_sha256": {
+    "initial": "b980d809abb2e5c9027122f37fac85f44e24ca2cd7f1e6be0100302e0dd8710c",
+    "mid": "8d6cff700d4401852e7deb4469980600f357c09a9e08ff449703c183a5af2865",
+    "terminal": "ca1611f3333e50f5dbe8df992cf1e4b63273a1e92ebfaef2636d39cfc8d8a45d"
+  }
+}

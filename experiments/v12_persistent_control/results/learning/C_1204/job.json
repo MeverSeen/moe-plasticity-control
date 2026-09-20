@@ -1,0 +1,7 @@
+{
+  "arm": "C",
+  "controller_seed": 1204,
+  "plan_sha256": "3469c48b24e3c8c85506a962507ecc9a99d29070ebf10833a920535075474460",
+  "hold": 50,
+  "joint": true
+}

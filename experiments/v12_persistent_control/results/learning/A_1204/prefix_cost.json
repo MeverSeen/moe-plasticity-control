@@ -1,0 +1,110 @@
+[
+  {
+    "updates": 30,
+    "train_examples": 960,
+    "observation_examples": 1100,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0,
+    "control_decisions": 0
+  },
+  {
+    "updates": 40,
+    "train_examples": 1280,
+    "observation_examples": 1350,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0,
+    "control_decisions": 0
+  },
+  {
+    "updates": 60,
+    "train_examples": 1920,
+    "observation_examples": 1850,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0,
+    "control_decisions": 0
+  },
+  {
+    "updates": 90,
+    "train_examples": 2880,
+    "observation_examples": 2600,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0,
+    "control_decisions": 0
+  },
+  {
+    "updates": 20,
+    "train_examples": 640,
+    "observation_examples": 850,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0,
+    "control_decisions": 0
+  },
+  {
+    "updates": 100,
+    "train_examples": 3200,
+    "observation_examples": 2850,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0,
+    "control_decisions": 0
+  },
+  {
+    "updates": 30,
+    "train_examples": 960,
+    "observation_examples": 1100,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0,
+    "control_decisions": 0
+  },
+  {
+    "updates": 30,
+    "train_examples": 960,
+    "observation_examples": 1100,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0,
+    "control_decisions": 0
+  },
+  {
+    "updates": 40,
+    "train_examples": 1280,
+    "observation_examples": 1350,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0,
+    "control_decisions": 0
+  },
+  {
+    "updates": 20,
+    "train_examples": 640,
+    "observation_examples": 850,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0,
+    "control_decisions": 0
+  },
+  {
+    "updates": 30,
+    "train_examples": 960,
+    "observation_examples": 1100,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0,
+    "control_decisions": 0
+  },
+  {
+    "updates": 30,
+    "train_examples": 960,
+    "observation_examples": 1100,
+    "evaluation_examples": 2000,
+    "copies": 0,
+    "copy_seconds": 0.0,
+    "control_decisions": 0
+  }
+]

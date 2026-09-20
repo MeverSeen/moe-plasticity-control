@@ -1,0 +1,6 @@
+{
+  "checked_decisions": 8236,
+  "max_logprob_error": 0.0,
+  "seconds": 1.4217447500000002,
+  "scope": "all development/audit saved latent decisions, including repeated holds only once per actual decision; exact matching action and model checkpoint"
+}

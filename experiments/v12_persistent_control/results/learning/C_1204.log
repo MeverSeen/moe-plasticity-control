@@ -1,0 +1,27 @@
+C 1204 initial 0 {'greedy': (-0.875, 0.05221183101336161, 1.193415379151702), 'stochastic': (-0.875, 0.05662950873374939, 1.2012636121362448)}
+C 1204 group 0 updates 750
+C 1204 group 1 updates 1550
+C 1204 group 2 updates 2900
+C 1204 group 3 updates 3790
+C 1204 group 4 updates 5270
+C 1204 group 5 updates 5750
+C 1204 group 6 updates 6810
+C 1204 group 7 updates 7480
+C 1204 group 8 updates 8400
+C 1204 group 9 updates 9070
+C 1204 group 10 updates 9730
+C 1204 group 11 updates 10390
+C 1204 mid 10390 {'greedy': (-0.875, 0.05221183101336161, 1.193415379151702), 'stochastic': (-0.875, 0.05702835818131765, 1.202261794358492)}
+C 1204 group 12 updates 11190
+C 1204 group 13 updates 11950
+C 1204 group 14 updates 13290
+C 1204 group 15 updates 14240
+C 1204 group 16 updates 15680
+C 1204 group 17 updates 16200
+C 1204 group 18 updates 17220
+C 1204 group 19 updates 17940
+C 1204 group 20 updates 18880
+C 1204 group 21 updates 19540
+C 1204 group 22 updates 20210
+C 1204 terminal 20210 {'greedy': (-0.875, 0.05221183101336161, 1.193415379151702), 'stochastic': (-0.875, 0.05606595675150553, 1.198051419109106)}
+complete C 1204

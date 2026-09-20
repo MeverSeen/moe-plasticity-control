@@ -1,0 +1,28 @@
+{
+  "wall_seconds": 1113.247348709,
+  "max_rss_bytes": 696385536,
+  "training_updates": 20450,
+  "training_groups": 24,
+  "training_branches": 96,
+  "training_decisions": 518,
+  "policy_optimizer_steps": 48,
+  "prefix_updates": 520,
+  "training_cost": {
+    "updates": 20450,
+    "train_examples": 981600,
+    "observation_examples": 833383,
+    "evaluation_examples": 576000,
+    "copies": 96,
+    "copy_seconds": 0.6445575799998124,
+    "control_decisions": 518
+  },
+  "evaluation_cost": {
+    "updates": 23310,
+    "train_examples": 996960,
+    "observation_examples": 929104,
+    "evaluation_examples": 960000,
+    "copies": 0,
+    "copy_seconds": 0.0,
+    "control_decisions": 466
+  }
+}

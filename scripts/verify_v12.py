@@ -34,11 +34,24 @@ def main():
   if sources[name].startswith('v11:'):assert rows==old[sources[name].split(':',1)[1]]
  score=lambda k:(-np.mean([r['success'] for r in calibration[k]]),np.mean([r['forgetting'] for r in calibration[k]]),np.mean([r['final_loss'] for r in calibration[k]]))
  best=min(calibration,key=score);assert list(map(float,best.split('/')))==[plan['base']['expert'],plan['base']['trunk']];assert selection['new_episodes']==sum(len(v) for k,v in calibration.items() if sources[k]=='new')==80
+ for name,rows in calibration.items():
+  if sources[name]=='new':count+=rows_check(rows,list(range(1120100,1120108)),range(60,80),50,True,plan['base']['expert']);updates+=sum(r['cost']['updates'] for r in rows)
+ parity=read(ROOT/'results/calibration/reuse_parity.json');assert parity['matrix']==old['budget200_expert0_trunk0.5'][0]['matrix'];count+=rows_check([parity],[1120100],range(60,80),50,True,0);updates+=parity['cost']['updates']
+ updates+=read(ROOT/'results/smoke/prefix_cost.json')['updates']
+ for arm,opts in plan['arms'].items():
+  batch=read(ROOT/'results/smoke'/f'{arm}.json')['batch'];count+=rows_check(batch['results'],[1230900]*4,range(60),opts['hold'],opts['joint'],plan['base']['expert']);updates+=sum(r['branch_cost']['updates'] for r in batch['results'])
  for arm,opts in plan['arms'].items():
   for seed in plan['controller_seeds']:
    p=ROOT/'results/learning'/f'{arm}_{seed}';job=read(p/'job.json');assert job['plan_sha256']==ph;cost=read(p/'cost.json');train=read(p/'training.json');lock=read(p/'locked_selection.json');dev=read(p/'development.json');audit=read(p/'audit.json');work=read(p/'checkpoint_work.json')
    assert set(dev)=={'initial','mid','terminal'} and set(audit)==set(lock['audit_checkpoints']);assert 20000<=cost['training_updates']<22400
    assert cost['training_updates']==sum(r['branch_cost']['updates'] for b in train for r in b['results']);assert cost['policy_optimizer_steps']==sum(b['optimizer_steps'] for b in train);assert cost['training_decisions']==sum(b['decisions'] for b in train)
+   cumulative=np.cumsum([sum(r['branch_cost']['updates'] for r in b['results']) for b in train]);assert cumulative[-2]<plan['training_updates'];assert work['mid']['groups']==int(np.flatnonzero(cumulative>=plan['mid_updates'])[0])+1
+   assert len(train)<=plan['max_groups'] and all(b['optimizer_steps']==2 and len(b['results'])==plan['group'] for b in train)
+   assert all(np.isfinite([b['parameter_change'],b['reward_std'],*b['ratio_range'],*b['losses']]).all() for b in train)
+   assert lock['model_sha256']['initial']!=lock['model_sha256']['terminal']
+   for key,value in cost['training_cost'].items():assert np.isclose(value,sum(r['branch_cost'][key] for b in train for r in b['results']))
+   for key,value in cost['evaluation_cost'].items():assert np.isclose(value,sum(r['cost'][key] for dataset in [dev,audit] for modes in dataset.values() for rows in modes.values() for r in rows))
+   assert cost['prefix_updates']==sum(r['updates'] for r in read(p/'prefix_cost.json'))
    assert work['terminal']['groups']==len(train) and work['terminal']['training_updates']==cost['training_updates'];assert 10000<=work['mid']['training_updates']<12400
    for i,b in enumerate(train):
     root=plan['train_roots'][i%len(plan['train_roots'])];assert b['root']==root;assert b['decisions']==sum(len(r['policy_trace']) for r in b['results']);count+=rows_check(b['results'],[root]*4,range(60),opts['hold'],opts['joint'],plan['base']['expert'])
@@ -55,10 +68,21 @@ def main():
   hold,joint=(50,True) if name.startswith('fixed') else (plan['arms'][name[0]]['hold'],plan['arms'][name[0]]['joint'])
   for stage,rows in stages.items():count+=rows_check(rows,plan[stage+'_roots'],range(60,80),hold,joint,plan['base']['expert']);updates+=sum(r['cost']['updates'] for r in rows)
  fixed=read(ROOT/'results/baselines/results.json')['fixed_best']['audit']
+ for seed in plan['controller_seeds']:
+  folders=[ROOT/'results/learning'/f'{arm}_{seed}' for arm in plan['arms']]
+  assert len({read(p/'locked_selection.json')['model_sha256']['initial'] for p in folders})==1
+  assert read(folders[0]/'initial_samples.json')==read(folders[1]/'initial_samples.json')
  for arm in plan['arms']:
   for seed in plan['controller_seeds']:
    initial=read(ROOT/'results/learning'/f'{arm}_{seed}'/'audit.json')['initial']['greedy']
    assert all(a['matrix']==b['matrix'] and a['tasks']==b['tasks'] for a,b in zip(initial,fixed))
  probability=read(ROOT/'results/learning/probability_validation.json');assert probability['max_logprob_error']<1e-5 and probability['checked_decisions']>0
- print(f'Verified {files} v12 archive files and {count} main training/evaluation histories; {updates} learner updates. Duration accounting, probability records, budgets, source/model hashes and data boundaries match.')
+ ledger=read(ROOT/'results/learning/work_ledger.json');assert ledger['total_new_cost']['updates']==updates and ledger['total_new_full_histories']==count
+ for key,value in ledger['total_new_cost'].items():
+  expected=sum(s['cost'][key] for s in ledger['stages'].values())+ledger['coverage_probe_extra'].get(key,0);assert np.isclose(value,expected)
+ models=read(ROOT/'results/learning/model_manifest.json');assert len(models)==ledger['model_files']==36
+ for path,info in models.items():
+  p=ROOT.parents[1]/path
+  if p.exists():assert p.stat().st_size==info['bytes'] and hashlib.sha256(p.read_bytes()).hexdigest()==info['sha256']
+ print(f'Verified {files} v12 archive files and {count} newly recorded full-history results; {updates} new learner updates. Duration accounting, probability records, budgets, source/model hashes, work ledger and data boundaries match. 64 reused v11 histories are checked separately and not charged again.')
 if __name__=='__main__':main()

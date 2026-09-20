@@ -1,0 +1,27 @@
+B 1201 initial 0 {'greedy': (-0.875, 0.05221183101336161, 1.193415379151702), 'stochastic': (-0.875, 0.058682034413019814, 1.2063884418457747)}
+B 1201 group 0 updates 780
+B 1201 group 1 updates 1540
+B 1201 group 2 updates 2910
+B 1201 group 3 updates 3800
+B 1201 group 4 updates 5250
+B 1201 group 5 updates 5750
+B 1201 group 6 updates 6790
+B 1201 group 7 updates 7470
+B 1201 group 8 updates 8430
+B 1201 group 9 updates 9070
+B 1201 group 10 updates 9760
+B 1201 group 11 updates 10410
+B 1201 mid 10410 {'greedy': (-0.875, 0.05221183101336161, 1.193415379151702), 'stochastic': (-0.875, 0.05279788374900818, 1.198542421683669)}
+B 1201 group 12 updates 11140
+B 1201 group 13 updates 11960
+B 1201 group 14 updates 13360
+B 1201 group 15 updates 14350
+B 1201 group 16 updates 15880
+B 1201 group 17 updates 16420
+B 1201 group 18 updates 17490
+B 1201 group 19 updates 18220
+B 1201 group 20 updates 19220
+B 1201 group 21 updates 19920
+B 1201 group 22 updates 20630
+B 1201 terminal 20630 {'greedy': (-0.875, 0.041308025519053146, 1.194642547518015), 'stochastic': (-0.875, 0.04580136636892955, 1.1917577274143696)}
+complete B 1201

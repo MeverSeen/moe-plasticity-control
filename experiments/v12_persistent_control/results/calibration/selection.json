@@ -1,0 +1,14 @@
+{
+  "expert": 0.25,
+  "trunk": 0.5,
+  "score": [
+    -1.0,
+    0.038345063726107284,
+    1.1895405780524015
+  ],
+  "feasible": true,
+  "seconds": 162.107009791,
+  "new_episodes": 80,
+  "new_updates": 13190,
+  "parity_updates": 180
+}

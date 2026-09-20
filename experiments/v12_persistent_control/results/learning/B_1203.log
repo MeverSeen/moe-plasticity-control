@@ -1,0 +1,27 @@
+B 1203 initial 0 {'greedy': (-0.875, 0.05221183101336161, 1.193415379151702), 'stochastic': (-0.875, 0.058682034413019814, 1.2063884418457747)}
+B 1203 group 0 updates 760
+B 1203 group 1 updates 1520
+B 1203 group 2 updates 2910
+B 1203 group 3 updates 3840
+B 1203 group 4 updates 5330
+B 1203 group 5 updates 5870
+B 1203 group 6 updates 6890
+B 1203 group 7 updates 7610
+B 1203 group 8 updates 8580
+B 1203 group 9 updates 9270
+B 1203 group 10 updates 9960
+B 1203 group 11 updates 10600
+B 1203 mid 10600 {'greedy': (-0.875, 0.05221183101336161, 1.193415379151702), 'stochastic': (-0.875, 0.055838003754615784, 1.2041489724069834)}
+B 1203 group 12 updates 11380
+B 1203 group 13 updates 12140
+B 1203 group 14 updates 13600
+B 1203 group 15 updates 14500
+B 1203 group 16 updates 15950
+B 1203 group 17 updates 16510
+B 1203 group 18 updates 17550
+B 1203 group 19 updates 18310
+B 1203 group 20 updates 19240
+B 1203 group 21 updates 19870
+B 1203 group 22 updates 20530
+B 1203 terminal 20530 {'greedy': (-0.875, 0.05221183101336161, 1.193415379151702), 'stochastic': (-0.875, 0.05555301407972972, 1.2082307673990726)}
+complete B 1203

@@ -1,0 +1,17 @@
+{
+  "initial": {
+    "training_updates": 0,
+    "groups": 0,
+    "optimizer_steps": 0
+  },
+  "mid": {
+    "training_updates": 10600,
+    "groups": 12,
+    "optimizer_steps": 24
+  },
+  "terminal": {
+    "training_updates": 20530,
+    "groups": 23,
+    "optimizer_steps": 46
+  }
+}

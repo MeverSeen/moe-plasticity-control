@@ -1,0 +1,168 @@
+
+Testing v1_expert_control
+test_importance_matches_exact_jacobian (test_moe_control.ProtocolTests) ... ok
+test_old_memory_and_reference_metadata_are_bounded (test_moe_control.ProtocolTests) ... ok
+test_policy_is_equivariant_under_expert_reindexing (test_moe_control.ProtocolTests) ... ok
+test_reward_shaping_preserves_terminal_objective (test_moe_control.ProtocolTests) ... ok
+test_routes_and_frozen_experts_do_not_move (test_moe_control.ProtocolTests) ... ok
+test_test_labels_cannot_change_controller_or_training (test_moe_control.ProtocolTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.938s
+
+OK
+
+Testing v2_feedback_control
+test_expert_permutation_preserves_scalar_observation_and_mask (test_experiment.ExperimentTests) ... ok
+test_grouping_and_routing_are_fixed_during_learning (test_experiment.ExperimentTests) ... ok
+test_old_memory_is_bounded (test_experiment.ExperimentTests) ... ok
+test_progress_policy_cannot_observe_current_old_feedback (test_experiment.ExperimentTests) ... ok
+test_shaping_telescopes_to_terminal_objective (test_experiment.ExperimentTests) ... ok
+test_test_labels_are_inaccessible_to_updates_rewards_and_state (test_experiment.ExperimentTests) ... ok
+test_work_budget_includes_policy_and_monitor_cost (test_experiment.ExperimentTests) ... ok
+test_zero_multiplier_freezes_even_with_momentum (test_experiment.ExperimentTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.074s
+
+OK
+
+Testing v3_branching
+test_branch_is_continued_to_endpoint_not_just_H_steps (test_branching.BranchingTests) ... ok
+test_evaluation_labels_do_not_affect_state_or_training (test_branching.BranchingTests) ... ok
+test_first_crossing_stops_inside_control_interval (test_branching.BranchingTests) ... ok
+test_full_clone_replays_identically_and_leaves_source_unchanged (test_branching.BranchingTests) ... ok
+test_future_replicates_preserve_past_and_pair_actions (test_branching.BranchingTests) ... ok
+test_history_splits_are_disjoint (test_branching.BranchingTests) ... ok
+test_no_protected_experts_is_an_exact_negative_control (test_branching.BranchingTests) ... ok
+test_progress_preprocessing_excludes_feedback (test_branching.BranchingTests) ... ok
+test_zero_displacement_freezes_protected_parameters_with_momentum (test_branching.BranchingTests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 1.057s
+
+OK
+
+Testing v4_state_aggregation
+test_branch_query_preserves_the_original_state (test_aggregation.AggregationTests) ... ok
+test_constant_action_means_entire_remaining_rollout (test_aggregation.AggregationTests) ... ok
+test_constant_callback_matches_fixed_continuation (test_aggregation.AggregationTests) ... ok
+test_eval_labels_cannot_change_collection_or_policy_inputs (test_aggregation.AggregationTests) ... ok
+test_fingerprint_distinguishes_momentum_and_observation_history (test_aggregation.AggregationTests) ... ok
+test_matched_collection_has_exact_query_count (test_aggregation.AggregationTests) ... ok
+test_sampling_uses_actual_learner_trajectory (test_aggregation.AggregationTests) ... ok
+test_splits_are_new_and_disjoint_including_pilot (test_aggregation.AggregationTests) ... ok
+test_union_deduplicates_same_complete_state (test_aggregation.AggregationTests) ... ok
+test_continuation_actions_are_scored_on_independent_shared_future (test_analysis.AnalysisTests) ... ok
+test_failures_remain_in_reach_and_cost (test_analysis.AnalysisTests) ... ok
+test_roots_not_checkpoints_are_statistical_units (test_analysis.AnalysisTests) ... ok
+test_branch_is_continued_to_endpoint_not_just_H_steps (test_branching.BranchingTests) ... ok
+test_evaluation_labels_do_not_affect_state_or_training (test_branching.BranchingTests) ... ok
+test_first_crossing_stops_inside_control_interval (test_branching.BranchingTests) ... ok
+test_full_clone_replays_identically_and_leaves_source_unchanged (test_branching.BranchingTests) ... ok
+test_future_replicates_preserve_past_and_pair_actions (test_branching.BranchingTests) ... ok
+test_history_splits_are_disjoint (test_branching.BranchingTests) ... ok
+test_no_protected_experts_is_an_exact_negative_control (test_branching.BranchingTests) ... ok
+test_progress_preprocessing_excludes_feedback (test_branching.BranchingTests) ... ok
+test_zero_displacement_freezes_protected_parameters_with_momentum (test_branching.BranchingTests) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 2.703s
+
+OK
+
+Testing v5_calibration
+test_budget_settings_share_new_and_replay_batch_prefixes (test_calibration.CalibrationTests) ... ok
+test_eval_labels_cannot_change_training_or_plan_actions (test_calibration.CalibrationTests) ... ok
+test_future_streams_are_paired_and_independent (test_calibration.CalibrationTests) ... ok
+test_new_roots_are_disjoint (test_calibration.CalibrationTests) ... ok
+test_oracle_prefers_feasible_plan_over_zero_forgetting_failure (test_calibration.CalibrationTests) ... ok
+test_plan_family_includes_fixed_time_and_progress (test_calibration.CalibrationTests) ... ok
+test_progress_switch_is_sticky_and_uses_loss_progress (test_calibration.CalibrationTests) ... ok
+test_setting_selection_does_not_require_low_multiplier_failure (test_calibration.CalibrationTests) ... ok
+test_time_switch_does_not_depend_on_old_feedback (test_calibration.CalibrationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 1.228s
+
+OK
+
+Testing v6_learning_diagnostics
+test_failure_only_targets_have_finite_gradient (test_learning.LearningTests) ... ok
+test_feedback_does_not_enter_progress_features (test_learning.LearningTests) ... ok
+test_legacy_objective_matches_frozen_recipe (test_learning.LearningTests) ... ok
+test_new_splits_are_disjoint (test_learning.LearningTests) ... ok
+test_positive_control_is_balanced_conditionally_on_progress (test_learning.LearningTests) ... ok
+test_raw_targets_are_conditional_arithmetic_mean (test_learning.LearningTests) ... ok
+test_selection_distinguishes_raw_and_saturated_metrics (test_learning.LearningTests) ... ok
+test_tiny_subset_uses_distinct_nontrivial_roots (test_learning.LearningTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.072s
+
+OK
+
+Testing v7_sequence_feedback
+test_actual_displacement_freezes_protected_group (test_sequence.SequenceChecks) ... ok
+test_adam_matches_torch_across_boundaries (test_sequence.SequenceChecks) ... ok
+test_boundaries_preserve_references_and_moments (test_sequence.SequenceChecks) ... ok
+test_clone_isolates_state_and_future_streams (test_sequence.SequenceChecks) ... ok
+test_failed_blocks_remain_in_sequence_success (test_sequence.SequenceChecks) ... ok
+test_fixed_mask_memory_cap_and_budget (test_sequence.SequenceChecks) ... ok
+test_hold_and_repeated_action_identical_state_and_charge (test_sequence.SequenceChecks) ... ok
+test_mask_after_normalization_and_feature_shape (test_sequence.SequenceChecks) ... ok
+test_no_refreshed_old_loss_in_progress (test_sequence.SequenceChecks) ... ok
+test_paired_future_resampling_and_stage_keying (test_sequence.SequenceChecks) ... ok
+test_selection_prioritizes_reach (test_sequence.SequenceChecks) ... ok
+test_test_labels_do_not_affect_online_trajectory (test_sequence.SequenceChecks) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.980s
+
+OK
+
+Testing v10_visual_control
+test_branch_cache_isolation (test_mechanisms.EnvironmentMechanisms) ... ok
+test_clone_carries_optimizer_memory_and_future_stream (test_mechanisms.EnvironmentMechanisms) ... ok
+test_initial_success_and_failure_retained (test_mechanisms.EnvironmentMechanisms) ... ok
+test_memory_budget_baseline_and_no_reacquisition (test_mechanisms.EnvironmentMechanisms) ... ok
+test_adam_displacement_and_moments (test_mechanisms.Mechanisms) ... ok
+test_expert_equivariance (test_mechanisms.Mechanisms) ... ok
+test_fractional_displacement (test_mechanisms.Mechanisms) ... ok
+test_inactive_expert_no_decay (test_mechanisms.Mechanisms) ... ok
+test_joint_probability (test_mechanisms.Mechanisms) ... ok
+test_progress_masks_only_feedback (test_mechanisms.Mechanisms) ... ok
+test_routing_semantics (test_mechanisms.Mechanisms) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 2.040s
+
+OK
+
+Testing v11_diagnostics
+test_integer_fixed_action_dtype (test_diagnostics.Tests) ... ok
+test_monitor_stratification_no_dynamics_change (test_diagnostics.Tests) ... ok
+test_repair_support_probability_and_trunk (test_diagnostics.Tests) ... ok
+test_reward_only_preserves_trajectories (test_diagnostics.Tests) ... ok
+test_shared_direction_and_moments (test_diagnostics.Tests) ... ok
+test_warm_random_distribution (test_diagnostics.Tests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 5.999s
+
+OK
+
+Testing v12_persistent_control
+test_actual_displacement (test_control.Tests) ... ok
+test_grpo_updates_and_one_transition_per_hold (test_control.Tests) ... ok
+test_hold_no_resampling_and_same_stop_checks (test_control.Tests) ... ok
+test_restore_mid_hold (test_control.Tests) ... ok
+test_sampling_probability_and_joint_support (test_control.Tests) ... /Users/jianyuan/.codex/worktrees/512e/moe-plasticity-control/experiments/v12_persistent_control/test_control.py:46: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  if int(z[0])==0:self.assertAlmostEqual(float(lp),-0.69314718,places=5)
+ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 19.195s
+
+OK

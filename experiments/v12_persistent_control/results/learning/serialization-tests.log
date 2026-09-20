@@ -1,0 +1,10 @@
+test_actual_displacement (test_control.Tests) ... ok
+test_grpo_updates_and_one_transition_per_hold (test_control.Tests) ... ok
+test_hold_no_resampling_and_same_stop_checks (test_control.Tests) ... ok
+test_restore_mid_hold (test_control.Tests) ... ok
+test_sampling_probability_and_joint_support (test_control.Tests) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 21.738s
+
+OK

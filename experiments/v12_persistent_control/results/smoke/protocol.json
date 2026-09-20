@@ -1,0 +1,30 @@
+{
+  "root": 1230900,
+  "controller_seed": 1200,
+  "base": {
+    "expert": 0.25,
+    "trunk": 0.5,
+    "score": [
+      -1.0,
+      0.038345063726107284,
+      1.1895405780524015
+    ],
+    "feasible": true,
+    "seconds": 162.107009791,
+    "new_episodes": 80,
+    "new_updates": 13190,
+    "parity_updates": 180
+  },
+  "sources": {
+    "baselines.py": "109afc1e8cc37a6fb689eaf0bfd76f9f343531b08960760afc8f3a9127ab1e80",
+    "run.py": "ad81281c6d8584829c7f83e79bf7898d08bb28b55c34094391e7d660fadbf477",
+    "control.py": "5ab7a6e00a54549470631b442d40b24253f8a4aba5367d492bf3264b879205fe",
+    "policy.py": "796561c1c5d4f4484dacd782a45c9534db7bf8ab2f2f91df48b247bdfa7e13e0",
+    "core.py": "e3083de94d65b517e5b0512497c77d39e07c8cd0f29e6ead68e9a77fcca8eef4",
+    "test_control.py": "e96ab89ca76ee3fd507ff779c7cc5147d1b25a09a57750ef72ba19e057001c28",
+    "encoder.py": "0646e9f8513221e1c08a630868882b12f48b93578954b0b2d9e6d1e5e495e282",
+    "launch.py": "64049638de7642e7f17f204ad574dd9e602f6a3beea0f62c33a9785a53103c26",
+    "calibrate.py": "ad5991f7f37bac159e17e2b6eba6e4fdfc447f9ec30bfbfed3b55dfa011b16a5",
+    "smoke.py": "cfc6db6144268c47a8546fc9620e28bb73f3710665bea51d038c7af5e09eb6e4"
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "job": "A_1201",
+    "exit_code": 0,
+    "wall_seconds": 1010.7143487930298
+  },
+  {
+    "job": "B_1201",
+    "exit_code": 0,
+    "wall_seconds": 1026.5186331272125
+  },
+  {
+    "job": "C_1201",
+    "exit_code": 0,
+    "wall_seconds": 1114.0324840545654
+  },
+  {
+    "job": "A_1202",
+    "exit_code": 0,
+    "wall_seconds": 988.8560137748718
+  },
+  {
+    "job": "B_1202",
+    "exit_code": 0,
+    "wall_seconds": 1005.9447658061981
+  },
+  {
+    "job": "C_1202",
+    "exit_code": 0,
+    "wall_seconds": 975.9601678848267
+  },
+  {
+    "job": "A_1203",
+    "exit_code": 0,
+    "wall_seconds": 1004.4330430030823
+  },
+  {
+    "job": "B_1203",
+    "exit_code": 0,
+    "wall_seconds": 1017.2436640262604
+  },
+  {
+    "job": "C_1203",
+    "exit_code": 0,
+    "wall_seconds": 1019.4449379444122
+  },
+  {
+    "job": "A_1204",
+    "exit_code": 0,
+    "wall_seconds": 1166.2690620422363
+  },
+  {
+    "job": "B_1204",
+    "exit_code": 0,
+    "wall_seconds": 1147.9450690746307
+  },
+  {
+    "job": "C_1204",
+    "exit_code": 0,
+    "wall_seconds": 1128.2302491664886
+  }
+]
