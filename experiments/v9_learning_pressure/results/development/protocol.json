@@ -1,0 +1,288 @@
+{
+  "status": "development_diagnostic",
+  "date": "2026-10-02",
+  "config": {
+    "tasks": 5,
+    "experts": 8,
+    "width": 32,
+    "expert_hidden": 64,
+    "top_k": 2,
+    "train_per_class": 48,
+    "monitor_per_class": 16,
+    "eval_per_class": 32,
+    "replay_capacity": 128,
+    "monitor_capacity": 128,
+    "batch": 32,
+    "max_steps": 80,
+    "interval": 5,
+    "lr": 0.003,
+    "replay_weight": 0.5,
+    "target_loss": 1.55
+  },
+  "roots": [
+    88410,
+    88411,
+    88412,
+    88413,
+    88414,
+    88415
+  ],
+  "expected_cells": [
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "global_0",
+      "target_loss": 1.55
+    },
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "global_0.5",
+      "target_loss": 1.55
+    },
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "global_1",
+      "target_loss": 1.55
+    },
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "group_rule",
+      "target_loss": 1.55
+    },
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "local_rule",
+      "target_loss": 1.55
+    },
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "coordinated_rule",
+      "target_loss": 1.55
+    },
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "global_0",
+      "target_loss": 1.45
+    },
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "global_0.5",
+      "target_loss": 1.45
+    },
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "global_1",
+      "target_loss": 1.45
+    },
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "group_rule",
+      "target_loss": 1.45
+    },
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "local_rule",
+      "target_loss": 1.45
+    },
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "coordinated_rule",
+      "target_loss": 1.45
+    },
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "global_0",
+      "target_loss": 1.35
+    },
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "global_0.5",
+      "target_loss": 1.35
+    },
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "global_1",
+      "target_loss": 1.35
+    },
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "group_rule",
+      "target_loss": 1.35
+    },
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "local_rule",
+      "target_loss": 1.35
+    },
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "coordinated_rule",
+      "target_loss": 1.35
+    },
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "global_0",
+      "target_loss": 1.25
+    },
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "global_0.5",
+      "target_loss": 1.25
+    },
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "global_1",
+      "target_loss": 1.25
+    },
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "group_rule",
+      "target_loss": 1.25
+    },
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "local_rule",
+      "target_loss": 1.25
+    },
+    {
+      "mode": "early_stop",
+      "scope": "full",
+      "method": "coordinated_rule",
+      "target_loss": 1.25
+    },
+    {
+      "mode": "early_stop",
+      "scope": "frozen_stem",
+      "method": "global_1",
+      "target_loss": 1.35
+    },
+    {
+      "mode": "early_stop",
+      "scope": "heads_only",
+      "method": "global_0",
+      "target_loss": 1.35
+    },
+    {
+      "mode": "fixed_budget",
+      "scope": "full",
+      "method": "global_0",
+      "target_loss": 1.35
+    },
+    {
+      "mode": "fixed_budget",
+      "scope": "full",
+      "method": "global_1",
+      "target_loss": 1.35
+    },
+    {
+      "mode": "fixed_budget",
+      "scope": "frozen_stem",
+      "method": "global_1",
+      "target_loss": 1.35
+    },
+    {
+      "mode": "fixed_budget",
+      "scope": "heads_only",
+      "method": "global_0",
+      "target_loss": 1.35
+    }
+  ],
+  "targets": [
+    1.55,
+    1.45,
+    1.35,
+    1.25
+  ],
+  "prefix_target": 1.55,
+  "class_pool": [
+    88,
+    5,
+    91,
+    44,
+    65,
+    87,
+    23,
+    70,
+    28,
+    94,
+    90,
+    73,
+    24,
+    79,
+    82,
+    55,
+    32,
+    6,
+    49,
+    12,
+    34,
+    57,
+    4,
+    96,
+    39
+  ],
+  "dataset": {
+    "name": "CIFAR-100",
+    "loaded_splits": [
+      "train"
+    ],
+    "archive_md5": "eb9058c3a382ffc7106e4002c42a8d85",
+    "official_test_loaded": false
+  },
+  "source_hashes": {
+    "experiments/v8_multilayer_retention/analyze.py": "f1e8b30702b13162a66dc9744ba17863b77ebb2f594502967639b01637d320e9",
+    "experiments/v8_multilayer_retention/control.py": "60ad2311234b412b0730cc943dd444c705f07d2ec2dbb8c38edd38575563351b",
+    "experiments/v8_multilayer_retention/data.py": "80bd35c90f300631a641025b0e0821c94836cecc2b425bd0a1604075183c9b9b",
+    "experiments/v8_multilayer_retention/environment.py": "4906a75c7d1b7efe66d8624f0462a4d82b47dfdef32c40e1d51c3d46ea84f898",
+    "experiments/v8_multilayer_retention/model.py": "d72d49a2157119c41d9cd3eb779581fca18ed6e3b6162d4e0ca6c66c2b195d06",
+    "experiments/v8_multilayer_retention/run_retention.py": "362a1042902b51d2c56efc83090c1a95edd15cb0c7e286755a21717df32dec0f",
+    "experiments/v8_multilayer_retention/test_analysis.py": "4158cc1f91584df8078f6e932a05fa90e6f11c4808a1f777266ff7a85aae1ff0",
+    "experiments/v8_multilayer_retention/test_control.py": "2288671e458626c59521830c5dc2cb4763d24f0252702036b6ac2234e5c4aa96",
+    "experiments/v8_multilayer_retention/test_data.py": "dc20795bb6ad02e008ed70906edb6e12f848f62204177ae8c26f39fecd499e73",
+    "experiments/v8_multilayer_retention/test_environment.py": "de5d5b81528bcaecb7a7da41d28c09b25edd21fdfad65416834f190316ca2434",
+    "experiments/v8_multilayer_retention/test_model.py": "feca5e31fbede141b2a36563350c4aa2248a4dfa8500c98c71788c657810debb",
+    "experiments/v9_learning_pressure/analyze_pressure.py": "984223d3fbc7cb330544c1b1f020c871525bb86ca8f3089cc0b47cae8f0ecdff",
+    "experiments/v9_learning_pressure/pressure_env.py": "c5087931c78d8e3e1aeb36ad5a8dd6f646405fd2dd6206ab41ecfe074af1bbc0",
+    "experiments/v9_learning_pressure/run_pressure.py": "67f36f3e0342f0691c69f1dd60c65aecb9acbe6ea39fa3eec489db50b4119a5e",
+    "experiments/v9_learning_pressure/test_analysis.py": "f5c0d8e6e367169b7ee908a12ec7d7c9141183268b29df32e58a84ea2bdfa986",
+    "experiments/v9_learning_pressure/test_pressure_env.py": "e2090d8e400a359850902d3988091a1c1e01b433252612643968b7b8d9468405"
+  },
+  "questions": [
+    "Do stricter targets make expert displacement valuable within this budget?",
+    "Does adaptation reside in the CNN stem, experts, or task heads?",
+    "Do fixed-budget train/monitor/heldout curves indicate generalization limits?"
+  ],
+  "prefix": "One common task-0 run per root: global_1, CE 1.55 or 80 updates, full model/Adam/memory/RNG cloned for every cell.",
+  "stopping": "Every target cell is an independent true suffix rollout. Early stop checks monitor every 5 updates. Fixed budget uses exactly 80 updates per suffix task and only runs at CE 1.35; it is not truncated to reconstruct early stopping.",
+  "scopes": {
+    "full": "stem and heads update normally; expert Adam displacement follows action",
+    "frozen_stem": "after task0 stem weights and Adam moments frozen; experts follow action and heads train",
+    "heads_only": "after task0 stem and expert weights/moments frozen; only heads train"
+  },
+  "diagnostics": "After each window measure current train and disjoint heldout dev CE; never feed heldout metrics to controller, reward or stopping. Full trajectories are for diagnosis, not heldout-min checkpoint selection.",
+  "data_limits": "6 roots reuse v8 dev 25-class pool. Official training file only; v8 audit-class/test outcomes never used here. All findings are development evidence, not confirmatory inference.",
+  "statistics": "Failure, prefix feasibility, monitor-ever/terminal and heldout-diagonal reach separate; mean positive old loss changes use each task own fixed diagonal. Pair roots descriptively; no non-inferiority claim.",
+  "costs": "Same learner-update cap, not equal FLOPs. Raw rows include logical prefix for fair per-policy cost; physical total counts common prefix once and every suffix/evaluation/clone separately. Diagnostic example passes/time are separate fields inside measured wall time."
+}

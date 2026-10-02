@@ -1,0 +1,44 @@
+{
+  "common_prefix": {
+    "audit_examples": 0,
+    "controller_calls": 23,
+    "diagnostic_eval_examples": 6560,
+    "diagnostic_seconds": 0.3875104930000859,
+    "diagnostic_train_examples": 9840,
+    "learner_updates": 115,
+    "monitor_examples": 3760,
+    "route_examples": 1440,
+    "seconds": 0.8128025829999967,
+    "train_examples": 3680
+  },
+  "suffixes_and_endpoint_evaluation": {
+    "audit_examples": 432000,
+    "audit_seconds": 11.17765895899994,
+    "controller_calls": 6324,
+    "diagnostic_eval_examples": 1213440,
+    "diagnostic_seconds": 72.91344715199884,
+    "diagnostic_train_examples": 1820160,
+    "learner_updates": 31620,
+    "monitor_examples": 1388688,
+    "route_examples": 112320,
+    "seconds": 277.7987488360001,
+    "train_examples": 2023680
+  },
+  "total_without_reused_prefix": {
+    "audit_examples": 432000,
+    "audit_seconds": 11.17765895899994,
+    "controller_calls": 6347,
+    "diagnostic_eval_examples": 1220000,
+    "diagnostic_seconds": 73.30095764499893,
+    "diagnostic_train_examples": 1830000,
+    "learner_updates": 31735,
+    "monitor_examples": 1392448,
+    "route_examples": 113760,
+    "seconds": 278.6115514190001,
+    "train_examples": 2027360
+  },
+  "clone_seconds": 1.2993437819998053,
+  "wall_seconds": 302.827082209,
+  "rows": 180,
+  "note": "diagnostic_seconds is already inside rollout seconds, do not add it again; endpoint evaluation seconds are separate"
+}

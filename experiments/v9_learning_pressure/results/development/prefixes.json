@@ -1,0 +1,446 @@
+[
+  {
+    "root": 88410,
+    "fingerprint": "ae5ef338d708d1df09a6c46a18d75183ca90b79739b78a0c3cd6055ff4a698f1",
+    "task": {
+      "task": 0,
+      "initial_loss": 1.631995439529419,
+      "terminal_loss": 1.4748560190200806,
+      "success": true,
+      "steps": 10,
+      "memory_forgetting": 0.0,
+      "initial_train_loss": 1.6242836713790894,
+      "initial_monitor_loss": 1.631995439529419,
+      "initial_eval_loss": 1.6237449645996094,
+      "min_monitor_loss": 1.4748560190200806,
+      "terminal_monitor_loss": 1.4748560190200806,
+      "min_train_loss": 1.4420841932296753,
+      "min_eval_loss": 1.5155338048934937,
+      "terminal_train_loss": 1.4420841932296753,
+      "terminal_eval_loss": 1.5155338048934937,
+      "first_hit_step": 10,
+      "ever_hit": true,
+      "first_hit_eval_loss": 1.5155338048934937,
+      "target_loss": 1.55
+    },
+    "cost": {
+      "learner_updates": 10,
+      "train_examples": 320,
+      "monitor_examples": 480,
+      "audit_examples": 0,
+      "controller_calls": 2,
+      "route_examples": 240,
+      "diagnostic_train_examples": 1200,
+      "diagnostic_eval_examples": 800,
+      "diagnostic_seconds": 0.04666954099999998,
+      "seconds": 0.09162254200000008
+    },
+    "classes": [
+      [
+        5,
+        12,
+        88,
+        82,
+        90
+      ],
+      [
+        28,
+        70,
+        96,
+        91,
+        23
+      ],
+      [
+        39,
+        87,
+        73,
+        65,
+        34
+      ],
+      [
+        55,
+        6,
+        4,
+        79,
+        49
+      ],
+      [
+        94,
+        24,
+        32,
+        57,
+        44
+      ]
+    ]
+  },
+  {
+    "root": 88411,
+    "fingerprint": "0345277e2d88f132491424bfbbbb8e667031c2d867f3f25dc08d41aaef896fa0",
+    "task": {
+      "task": 0,
+      "initial_loss": 1.6092125177383423,
+      "terminal_loss": 1.5066969394683838,
+      "success": true,
+      "steps": 10,
+      "memory_forgetting": 0.0,
+      "initial_train_loss": 1.6162035465240479,
+      "initial_monitor_loss": 1.6092125177383423,
+      "initial_eval_loss": 1.6093027591705322,
+      "min_monitor_loss": 1.5066969394683838,
+      "terminal_monitor_loss": 1.5066969394683838,
+      "min_train_loss": 1.4407085180282593,
+      "min_eval_loss": 1.4921743869781494,
+      "terminal_train_loss": 1.4407085180282593,
+      "terminal_eval_loss": 1.4921743869781494,
+      "first_hit_step": 10,
+      "ever_hit": true,
+      "first_hit_eval_loss": 1.4921743869781494,
+      "target_loss": 1.55
+    },
+    "cost": {
+      "learner_updates": 10,
+      "train_examples": 320,
+      "monitor_examples": 480,
+      "audit_examples": 0,
+      "controller_calls": 2,
+      "route_examples": 240,
+      "diagnostic_train_examples": 1200,
+      "diagnostic_eval_examples": 800,
+      "diagnostic_seconds": 0.0476040839999925,
+      "seconds": 0.08365254199999583
+    },
+    "classes": [
+      [
+        12,
+        5,
+        94,
+        39,
+        90
+      ],
+      [
+        79,
+        6,
+        55,
+        65,
+        23
+      ],
+      [
+        44,
+        73,
+        24,
+        32,
+        82
+      ],
+      [
+        88,
+        87,
+        91,
+        4,
+        70
+      ],
+      [
+        28,
+        49,
+        57,
+        34,
+        96
+      ]
+    ]
+  },
+  {
+    "root": 88412,
+    "fingerprint": "eaee791cfafba8f792f4d735e35e159e25a43169a7826aa7de15febbc1d8b092",
+    "task": {
+      "task": 0,
+      "initial_loss": 1.6273047924041748,
+      "terminal_loss": 1.5323152542114258,
+      "success": true,
+      "steps": 60,
+      "memory_forgetting": 0.0,
+      "initial_train_loss": 1.6237165927886963,
+      "initial_monitor_loss": 1.6273047924041748,
+      "initial_eval_loss": 1.625205397605896,
+      "min_monitor_loss": 1.5323152542114258,
+      "terminal_monitor_loss": 1.5323152542114258,
+      "min_train_loss": 1.2874610424041748,
+      "min_eval_loss": 1.584985375404358,
+      "terminal_train_loss": 1.2874610424041748,
+      "terminal_eval_loss": 1.584985375404358,
+      "first_hit_step": 60,
+      "ever_hit": true,
+      "first_hit_eval_loss": 1.584985375404358,
+      "target_loss": 1.55
+    },
+    "cost": {
+      "learner_updates": 60,
+      "train_examples": 1920,
+      "monitor_examples": 1280,
+      "audit_examples": 0,
+      "controller_calls": 12,
+      "route_examples": 240,
+      "diagnostic_train_examples": 3600,
+      "diagnostic_eval_examples": 2400,
+      "diagnostic_seconds": 0.13955808000000047,
+      "seconds": 0.35457391600000676
+    },
+    "classes": [
+      [
+        6,
+        79,
+        88,
+        44,
+        65
+      ],
+      [
+        91,
+        39,
+        28,
+        96,
+        32
+      ],
+      [
+        34,
+        87,
+        90,
+        82,
+        4
+      ],
+      [
+        94,
+        73,
+        57,
+        49,
+        24
+      ],
+      [
+        23,
+        5,
+        12,
+        55,
+        70
+      ]
+    ]
+  },
+  {
+    "root": 88413,
+    "fingerprint": "efc86d64a0d29c5503a7326e34ac014405624459b6abc1e53ebf4fc7b3d381fa",
+    "task": {
+      "task": 0,
+      "initial_loss": 1.6109224557876587,
+      "terminal_loss": 1.5186291933059692,
+      "success": true,
+      "steps": 10,
+      "memory_forgetting": 0.0,
+      "initial_train_loss": 1.6111187934875488,
+      "initial_monitor_loss": 1.6109224557876587,
+      "initial_eval_loss": 1.6142085790634155,
+      "min_monitor_loss": 1.5186291933059692,
+      "terminal_monitor_loss": 1.5186291933059692,
+      "min_train_loss": 1.5175330638885498,
+      "min_eval_loss": 1.5171362161636353,
+      "terminal_train_loss": 1.5175330638885498,
+      "terminal_eval_loss": 1.5171362161636353,
+      "first_hit_step": 10,
+      "ever_hit": true,
+      "first_hit_eval_loss": 1.5171362161636353,
+      "target_loss": 1.55
+    },
+    "cost": {
+      "learner_updates": 10,
+      "train_examples": 320,
+      "monitor_examples": 480,
+      "audit_examples": 0,
+      "controller_calls": 2,
+      "route_examples": 240,
+      "diagnostic_train_examples": 1200,
+      "diagnostic_eval_examples": 800,
+      "diagnostic_seconds": 0.04765066499999193,
+      "seconds": 0.0843209159999958
+    },
+    "classes": [
+      [
+        4,
+        44,
+        28,
+        90,
+        39
+      ],
+      [
+        6,
+        12,
+        55,
+        32,
+        94
+      ],
+      [
+        73,
+        88,
+        57,
+        87,
+        91
+      ],
+      [
+        82,
+        24,
+        34,
+        65,
+        49
+      ],
+      [
+        96,
+        23,
+        79,
+        70,
+        5
+      ]
+    ]
+  },
+  {
+    "root": 88414,
+    "fingerprint": "98cc1e3038dd4cc2dabed120a1e9747e14e43a8ca59c9826d8211c803009736c",
+    "task": {
+      "task": 0,
+      "initial_loss": 1.6175119876861572,
+      "terminal_loss": 1.4617865085601807,
+      "success": true,
+      "steps": 10,
+      "memory_forgetting": 0.0,
+      "initial_train_loss": 1.625409722328186,
+      "initial_monitor_loss": 1.6175119876861572,
+      "initial_eval_loss": 1.623434066772461,
+      "min_monitor_loss": 1.4617865085601807,
+      "terminal_monitor_loss": 1.4617865085601807,
+      "min_train_loss": 1.4237968921661377,
+      "min_eval_loss": 1.417024850845337,
+      "terminal_train_loss": 1.4237968921661377,
+      "terminal_eval_loss": 1.417024850845337,
+      "first_hit_step": 10,
+      "ever_hit": true,
+      "first_hit_eval_loss": 1.417024850845337,
+      "target_loss": 1.55
+    },
+    "cost": {
+      "learner_updates": 10,
+      "train_examples": 320,
+      "monitor_examples": 480,
+      "audit_examples": 0,
+      "controller_calls": 2,
+      "route_examples": 240,
+      "diagnostic_train_examples": 1200,
+      "diagnostic_eval_examples": 800,
+      "diagnostic_seconds": 0.0492549570000449,
+      "seconds": 0.0867453330000103
+    },
+    "classes": [
+      [
+        70,
+        79,
+        6,
+        44,
+        24
+      ],
+      [
+        34,
+        4,
+        87,
+        55,
+        96
+      ],
+      [
+        23,
+        5,
+        49,
+        88,
+        73
+      ],
+      [
+        82,
+        65,
+        39,
+        32,
+        90
+      ],
+      [
+        28,
+        94,
+        57,
+        91,
+        12
+      ]
+    ]
+  },
+  {
+    "root": 88415,
+    "fingerprint": "bc8909e25410b5614e169e2c81f83846aa96c0333ed53c302bee343b3067e217",
+    "task": {
+      "task": 0,
+      "initial_loss": 1.6195943355560303,
+      "terminal_loss": 1.5182944536209106,
+      "success": true,
+      "steps": 15,
+      "memory_forgetting": 0.0,
+      "initial_train_loss": 1.608591079711914,
+      "initial_monitor_loss": 1.6195943355560303,
+      "initial_eval_loss": 1.6129518747329712,
+      "min_monitor_loss": 1.5182944536209106,
+      "terminal_monitor_loss": 1.5182944536209106,
+      "min_train_loss": 1.3883229494094849,
+      "min_eval_loss": 1.473280668258667,
+      "terminal_train_loss": 1.3883229494094849,
+      "terminal_eval_loss": 1.473280668258667,
+      "first_hit_step": 15,
+      "ever_hit": true,
+      "first_hit_eval_loss": 1.473280668258667,
+      "target_loss": 1.55
+    },
+    "cost": {
+      "learner_updates": 15,
+      "train_examples": 480,
+      "monitor_examples": 560,
+      "audit_examples": 0,
+      "controller_calls": 3,
+      "route_examples": 240,
+      "diagnostic_train_examples": 1440,
+      "diagnostic_eval_examples": 960,
+      "diagnostic_seconds": 0.05677316600005611,
+      "seconds": 0.11188733399998796
+    },
+    "classes": [
+      [
+        94,
+        88,
+        90,
+        79,
+        39
+      ],
+      [
+        6,
+        96,
+        44,
+        12,
+        28
+      ],
+      [
+        34,
+        70,
+        57,
+        4,
+        82
+      ],
+      [
+        49,
+        24,
+        23,
+        55,
+        73
+      ],
+      [
+        87,
+        32,
+        65,
+        91,
+        5
+      ]
+    ]
+  }
+]

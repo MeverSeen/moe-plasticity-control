@@ -14,6 +14,7 @@ SUITES = (
     ("v6_learning_diagnostics", "test_*.py"),
     ("v7_sequence_feedback", "test_*.py"),
     ("v8_multilayer_retention", "test_*.py"),
+    ("v9_learning_pressure", "test_*.py"),
 )
 
 

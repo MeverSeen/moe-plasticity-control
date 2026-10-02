@@ -1,0 +1,6486 @@
+{
+  "protocol": {
+    "status": "development_diagnostic",
+    "roots": [
+      88410,
+      88411,
+      88412,
+      88413,
+      88414,
+      88415
+    ],
+    "expected_cells": [
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "global_0",
+        "target_loss": 1.55
+      },
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "global_0.5",
+        "target_loss": 1.55
+      },
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "global_1",
+        "target_loss": 1.55
+      },
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "group_rule",
+        "target_loss": 1.55
+      },
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "local_rule",
+        "target_loss": 1.55
+      },
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "coordinated_rule",
+        "target_loss": 1.55
+      },
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "global_0",
+        "target_loss": 1.45
+      },
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "global_0.5",
+        "target_loss": 1.45
+      },
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "global_1",
+        "target_loss": 1.45
+      },
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "group_rule",
+        "target_loss": 1.45
+      },
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "local_rule",
+        "target_loss": 1.45
+      },
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "coordinated_rule",
+        "target_loss": 1.45
+      },
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "global_0",
+        "target_loss": 1.35
+      },
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "global_0.5",
+        "target_loss": 1.35
+      },
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "global_1",
+        "target_loss": 1.35
+      },
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "group_rule",
+        "target_loss": 1.35
+      },
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "local_rule",
+        "target_loss": 1.35
+      },
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "coordinated_rule",
+        "target_loss": 1.35
+      },
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "global_0",
+        "target_loss": 1.25
+      },
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "global_0.5",
+        "target_loss": 1.25
+      },
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "global_1",
+        "target_loss": 1.25
+      },
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "group_rule",
+        "target_loss": 1.25
+      },
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "local_rule",
+        "target_loss": 1.25
+      },
+      {
+        "mode": "early_stop",
+        "scope": "full",
+        "method": "coordinated_rule",
+        "target_loss": 1.25
+      },
+      {
+        "mode": "early_stop",
+        "scope": "frozen_stem",
+        "method": "global_1",
+        "target_loss": 1.35
+      },
+      {
+        "mode": "early_stop",
+        "scope": "heads_only",
+        "method": "global_0",
+        "target_loss": 1.35
+      },
+      {
+        "mode": "fixed_budget",
+        "scope": "full",
+        "method": "global_0",
+        "target_loss": 1.35
+      },
+      {
+        "mode": "fixed_budget",
+        "scope": "full",
+        "method": "global_1",
+        "target_loss": 1.35
+      },
+      {
+        "mode": "fixed_budget",
+        "scope": "frozen_stem",
+        "method": "global_1",
+        "target_loss": 1.35
+      },
+      {
+        "mode": "fixed_budget",
+        "scope": "heads_only",
+        "method": "global_0",
+        "target_loss": 1.35
+      }
+    ],
+    "class_partition": null,
+    "config": {
+      "tasks": 5,
+      "experts": 8,
+      "width": 32,
+      "expert_hidden": 64,
+      "top_k": 2,
+      "train_per_class": 48,
+      "monitor_per_class": 16,
+      "eval_per_class": 32,
+      "replay_capacity": 128,
+      "monitor_capacity": 128,
+      "batch": 32,
+      "max_steps": 80,
+      "interval": 5,
+      "lr": 0.003,
+      "replay_weight": 0.5,
+      "target_loss": 1.55
+    }
+  },
+  "groups": {
+    "early_stop|frozen_stem|global_1|1.35": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.2916666666666667,
+          "ci95": [
+            0.16666666666666666,
+            0.4166666666666667
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.08333333333333333,
+            0.25
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.125,
+          "ci95": [
+            0.041666666666666664,
+            0.20833333333333334
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.08333333333333333,
+            0.25
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.42135416840513545,
+          "ci95": [
+            0.3994726565356056,
+            0.44479167213042575
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.6544332255919774,
+          "ci95": [
+            1.5630728640904028,
+            1.7472822020451229
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.40770833492279057,
+          "ci95": [
+            0.3777083357175191,
+            0.4341666678587595
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.70370002835989,
+          "ci95": [
+            0.5444041639566422,
+            0.8678786953290304
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 1.0151044130325317,
+          "ci95": [
+            0.8551498651504517,
+            1.1380397478739421
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 1.00799764196078,
+          "ci95": [
+            0.8487635652224222,
+            1.1380397478739421
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.3771388319999218,
+        "controller_calls": 308.0,
+        "diagnostic_eval_examples": 58880.0,
+        "diagnostic_seconds": 3.5298379600001013,
+        "diagnostic_train_examples": 88320.0,
+        "learner_updates": 1540.0,
+        "monitor_examples": 64672.0,
+        "route_examples": 5184.0,
+        "seconds": 11.637458706999986,
+        "train_examples": 94880.0
+      }
+    },
+    "early_stop|full|coordinated_rule|1.25": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.3333333333333333,
+          "ci95": [
+            0.25,
+            0.4166666666666667
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.20833333333333334,
+          "ci95": [
+            0.125,
+            0.25
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.125,
+          "ci95": [
+            0.041666666666666664,
+            0.20833333333333334
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.20833333333333334,
+          "ci95": [
+            0.125,
+            0.25
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4749999965230624,
+          "ci95": [
+            0.45937498783071834,
+            0.4906249965230624
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.7376579940319061,
+          "ci95": [
+            1.6269914557536442,
+            1.8525713616361221
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4389583319425583,
+          "ci95": [
+            0.42229166428248094,
+            0.45771354315181567
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.9913598038256168,
+          "ci95": [
+            0.8029632808330158,
+            1.1594121865928173
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 1.3164582947889965,
+          "ci95": [
+            0.9492069184780121,
+            1.5749572217464447
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 1.3055491894483566,
+          "ci95": [
+            0.9164796024560928,
+            1.5749572217464447
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.372945915999928,
+        "controller_calls": 311.0,
+        "diagnostic_eval_examples": 59360.0,
+        "diagnostic_seconds": 3.596141539999799,
+        "diagnostic_train_examples": 89040.0,
+        "learner_updates": 1555.0,
+        "monitor_examples": 65248.0,
+        "route_examples": 5184.0,
+        "seconds": 14.091889165999994,
+        "train_examples": 95840.0
+      }
+    },
+    "early_stop|full|coordinated_rule|1.35": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.4583333333333333,
+          "ci95": [
+            0.3333333333333333,
+            0.5833333333333334
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.2916666666666667,
+          "ci95": [
+            0.16666666666666666,
+            0.4166666666666667
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.08333333333333333,
+            0.25
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.2916666666666667,
+          "ci95": [
+            0.16666666666666666,
+            0.4166666666666667
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4632812440395355,
+          "ci95": [
+            0.4440104116996129,
+            0.48255207516873877
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.653742790222168,
+          "ci95": [
+            1.5037995874881744,
+            1.8081213235855103
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4395833303531011,
+          "ci95": [
+            0.4160416652758916,
+            0.46249999503294625
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.7624818993111452,
+          "ci95": [
+            0.5230963503321012,
+            1.0085378500322502
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 1.0037903040647507,
+          "ci95": [
+            0.5420182446638743,
+            1.4587483803431194
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 0.9761107861995697,
+          "ci95": [
+            0.47984522581100464,
+            1.4587483803431194
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.41683416699995846,
+        "controller_calls": 256.0,
+        "diagnostic_eval_examples": 50560.0,
+        "diagnostic_seconds": 3.2115294070003415,
+        "diagnostic_train_examples": 75840.0,
+        "learner_updates": 1280.0,
+        "monitor_examples": 53904.0,
+        "route_examples": 5184.0,
+        "seconds": 12.35701633299998,
+        "train_examples": 78240.0
+      }
+    },
+    "early_stop|full|coordinated_rule|1.45": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.5,
+          "ci95": [
+            0.16666666666666666,
+            0.8333333333333334
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.6666666666666666,
+            0.9583333333333334
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.5,
+          "ci95": [
+            0.16666666666666666,
+            0.8333333333333334
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.0,
+            0.5
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.5833333333333334,
+          "ci95": [
+            0.375,
+            0.7916666666666666
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.25,
+          "ci95": [
+            0.08333333333333333,
+            0.4166666666666667
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.0,
+            0.5
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.5833333333333334,
+          "ci95": [
+            0.375,
+            0.7916666666666666
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.429947916418314,
+          "ci95": [
+            0.40520833308498067,
+            0.45234374577800435
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.4997334629297256,
+          "ci95": [
+            1.3850365181763966,
+            1.6315683424472809
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.44020833174387614,
+          "ci95": [
+            0.42187499801317857,
+            0.46020833253860477
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.33079004287719727,
+          "ci95": [
+            0.12115433067083359,
+            0.5835896929105123
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 0.43918975194295246,
+          "ci95": [
+            0.07188494503498077,
+            0.8649784127871195
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 0.36003419508536655,
+          "ci95": [
+            -0.05620171378056208,
+            0.838175214951237
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.37379750100001097,
+        "controller_calls": 146.0,
+        "diagnostic_eval_examples": 32960.0,
+        "diagnostic_seconds": 1.9647374040000916,
+        "diagnostic_train_examples": 49440.0,
+        "learner_updates": 730.0,
+        "monitor_examples": 32896.0,
+        "route_examples": 5184.0,
+        "seconds": 6.733294875999906,
+        "train_examples": 43040.0
+      }
+    },
+    "early_stop|full|coordinated_rule|1.55": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.3333333333333333,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.9166666666666666,
+          "ci95": [
+            0.8333333333333334,
+            1.0
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.3333333333333333,
+            1.0
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.0,
+            0.5
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.7916666666666666,
+          "ci95": [
+            0.75,
+            0.875
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.125,
+          "ci95": [
+            0.041666666666666664,
+            0.20833333333333334
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.0,
+            0.5
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.7916666666666666,
+          "ci95": [
+            0.75,
+            0.875
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.3734375002483527,
+          "ci95": [
+            0.34453125049670535,
+            0.40520833308498067
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.5357043941815693,
+          "ci95": [
+            1.4729216943184535,
+            1.6048941264549892
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.41583333512147264,
+          "ci95": [
+            0.39666666984558113,
+            0.4362500011920929
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.1747579425573349,
+          "ci95": [
+            0.03788176675637563,
+            0.34055327375729877
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 0.2732483098904292,
+          "ci95": [
+            0.014931321144104004,
+            0.7144193202257156
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 0.1682964712381363,
+          "ci95": [
+            -0.10049317280451457,
+            0.6515354762474695
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.3719859589999892,
+        "controller_calls": 95.0,
+        "diagnostic_eval_examples": 24800.0,
+        "diagnostic_seconds": 1.4745463660001272,
+        "diagnostic_train_examples": 37200.0,
+        "learner_updates": 475.0,
+        "monitor_examples": 23056.0,
+        "route_examples": 5184.0,
+        "seconds": 4.573625251000014,
+        "train_examples": 26720.0
+      }
+    },
+    "early_stop|full|global_0|1.25": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.5416666666666666,
+          "ci95": [
+            0.5,
+            0.625
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.2916666666666667,
+          "ci95": [
+            0.125,
+            0.4583333333333333
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.25,
+          "ci95": [
+            0.08333333333333333,
+            0.4166666666666667
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.4166666666666667,
+          "ci95": [
+            0.2916666666666667,
+            0.5833333333333334
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.47369791691501933,
+          "ci95": [
+            0.4512955734195809,
+            0.49661458656191826
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.283076676229636,
+          "ci95": [
+            1.246248794098695,
+            1.3148739486932755
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.47479166785875954,
+          "ci95": [
+            0.4652083327372869,
+            0.4831250001986822
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.13051222761472067,
+          "ci95": [
+            0.11308253059784572,
+            0.15916357934474945
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 0.19433707992235819,
+          "ci95": [
+            0.1460418999195099,
+            0.25241538931926094
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 0.17709806064764658,
+          "ci95": [
+            0.1182831625143687,
+            0.22642894089221954
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.38352966600000826,
+        "controller_calls": 268.0,
+        "diagnostic_eval_examples": 52480.0,
+        "diagnostic_seconds": 3.227778118000071,
+        "diagnostic_train_examples": 78720.0,
+        "learner_updates": 1340.0,
+        "monitor_examples": 56208.0,
+        "route_examples": 5184.0,
+        "seconds": 12.455452125000061,
+        "train_examples": 82080.0
+      }
+    },
+    "early_stop|full|global_0|1.35": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.0,
+            0.5
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.75,
+          "ci95": [
+            0.625,
+            0.875
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.0,
+            0.5
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.4583333333333333,
+          "ci95": [
+            0.2916666666666667,
+            0.625
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.2916666666666667,
+          "ci95": [
+            0.125,
+            0.4583333333333333
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.5,
+          "ci95": [
+            0.3333333333333333,
+            0.6666666666666666
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4442708355685075,
+          "ci95": [
+            0.4328124945362409,
+            0.4570312512417634
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.3189857701460521,
+          "ci95": [
+            1.2913213074207306,
+            1.350259130820632
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4618750035762787,
+          "ci95": [
+            0.4495833377043407,
+            0.47437500655651094
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.08801407118638356,
+          "ci95": [
+            0.0768357515335083,
+            0.10126362244288127
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 0.09377713998158772,
+          "ci95": [
+            0.059877393394708635,
+            0.12373425563176473
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 0.0631849616765976,
+          "ci95": [
+            0.0005203733841578165,
+            0.10863519211610158
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.3647819180000198,
+        "controller_calls": 213.0,
+        "diagnostic_eval_examples": 43680.0,
+        "diagnostic_seconds": 2.587434158000736,
+        "diagnostic_train_examples": 65520.0,
+        "learner_updates": 1065.0,
+        "monitor_examples": 45152.0,
+        "route_examples": 5184.0,
+        "seconds": 9.511836623000072,
+        "train_examples": 64480.0
+      }
+    },
+    "early_stop|full|global_0|1.45": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.9583333333333334,
+          "ci95": [
+            0.875,
+            1.0
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.5,
+          "ci95": [
+            0.16666666666666666,
+            0.8333333333333334
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.7916666666666666,
+          "ci95": [
+            0.6239583333333337,
+            0.9583333333333334
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.041666666666666664,
+            0.3333333333333333
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.5,
+          "ci95": [
+            0.16666666666666666,
+            0.8333333333333334
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.7916666666666666,
+          "ci95": [
+            0.6239583333333337,
+            0.9583333333333334
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4156249997516473,
+          "ci95": [
+            0.40572916467984516,
+            0.426041666418314
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.3902901709079742,
+          "ci95": [
+            1.362280969818433,
+            1.4185561339060466
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.43541666964689885,
+          "ci95": [
+            0.4254166732231776,
+            0.44583333532015484
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.05095857878526052,
+          "ci95": [
+            0.032957856853803,
+            0.06869190434614818
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 0.030421540141105652,
+          "ci95": [
+            0.009432981411616007,
+            0.05633358657360077
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": -0.02389947573343913,
+          "ci95": [
+            -0.05996008217334747,
+            0.01699454089005788
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.37669462499997586,
+        "controller_calls": 137.0,
+        "diagnostic_eval_examples": 31520.0,
+        "diagnostic_seconds": 1.8684559129999077,
+        "diagnostic_train_examples": 47280.0,
+        "learner_updates": 685.0,
+        "monitor_examples": 30784.0,
+        "route_examples": 5184.0,
+        "seconds": 6.361747166999955,
+        "train_examples": 40160.0
+      }
+    },
+    "early_stop|full|global_0|1.55": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.9583333333333334,
+          "ci95": [
+            0.875,
+            1.0
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.5,
+          "ci95": [
+            0.16666666666666666,
+            0.8333333333333334
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.875,
+          "ci95": [
+            0.7916666666666666,
+            0.9583333333333334
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.08333333333333333,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.3333333333333333,
+            1.0
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.9166666666666666,
+          "ci95": [
+            0.8333333333333334,
+            1.0
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.3622395843267441,
+          "ci95": [
+            0.3414062497516473,
+            0.3802083345750968
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.4691076576709747,
+          "ci95": [
+            1.4486119449138641,
+            1.4885516911745071
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.40916666785875955,
+          "ci95": [
+            0.3977083295583725,
+            0.42020833690961207
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.029496426383654278,
+          "ci95": [
+            0.016369447112083435,
+            0.04141987363497416
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 0.026440918445587158,
+          "ci95": [
+            0.0034853418668111167,
+            0.052881836891174316
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": -0.05198840796947479,
+          "ci95": [
+            -0.1001523236433665,
+            -0.0038244922955830893
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.365762916999961,
+        "controller_calls": 96.0,
+        "diagnostic_eval_examples": 24960.0,
+        "diagnostic_seconds": 1.4769226180002626,
+        "diagnostic_train_examples": 37440.0,
+        "learner_updates": 480.0,
+        "monitor_examples": 23408.0,
+        "route_examples": 5184.0,
+        "seconds": 4.563138874999984,
+        "train_examples": 27040.0
+      }
+    },
+    "early_stop|full|global_0.5|1.25": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.3333333333333333,
+          "ci95": [
+            0.25,
+            0.4166666666666667
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.20833333333333334,
+          "ci95": [
+            0.125,
+            0.25
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.125,
+          "ci95": [
+            0.041666666666666664,
+            0.20833333333333334
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.20833333333333334,
+          "ci95": [
+            0.125,
+            0.25
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4833333318432172,
+          "ci95": [
+            0.4635416654249032,
+            0.5046874980131785
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.5757037947575252,
+          "ci95": [
+            1.4935678864518802,
+            1.6661770540600023
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4439583341280619,
+          "ci95": [
+            0.4275000005960465,
+            0.4608333349227905
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.7699643820524216,
+          "ci95": [
+            0.6237014622427524,
+            0.9057638657589754
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 1.1135339736938477,
+          "ci95": [
+            0.7815119102597237,
+            1.4047541543841362
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 1.1104414214690526,
+          "ci95": [
+            0.7722342535853386,
+            1.4047541543841362
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.37390929100002523,
+        "controller_calls": 310.0,
+        "diagnostic_eval_examples": 59200.0,
+        "diagnostic_seconds": 3.595448777999657,
+        "diagnostic_train_examples": 88800.0,
+        "learner_updates": 1550.0,
+        "monitor_examples": 65040.0,
+        "route_examples": 5184.0,
+        "seconds": 14.05449629100002,
+        "train_examples": 95520.0
+      }
+    },
+    "early_stop|full|global_0.5|1.35": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.0,
+            0.5
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.625,
+          "ci95": [
+            0.4166666666666667,
+            0.8333333333333334
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.0,
+            0.5
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.3333333333333333,
+          "ci95": [
+            0.16666666666666666,
+            0.5416666666666666
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.2916666666666667,
+          "ci95": [
+            0.125,
+            0.5
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.375,
+          "ci95": [
+            0.25,
+            0.5416666666666666
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4617187517384688,
+          "ci95": [
+            0.4421875054637591,
+            0.48125000049670535
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.5025078157583873,
+          "ci95": [
+            1.3954260696967442,
+            1.6155395259459813
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.44250000119209293,
+          "ci95": [
+            0.42541666825612384,
+            0.4629218706736962
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.4761459877093633,
+          "ci95": [
+            0.2881319349010785,
+            0.6560270388921102
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 0.4910198350747426,
+          "ci95": [
+            0.11647615333398183,
+            0.8864217499891917
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 0.40856344997882843,
+          "ci95": [
+            -0.00156187340617178,
+            0.8541719416777293
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.36555433299999507,
+        "controller_calls": 218.0,
+        "diagnostic_eval_examples": 44480.0,
+        "diagnostic_seconds": 2.6277468549998986,
+        "diagnostic_train_examples": 66720.0,
+        "learner_updates": 1090.0,
+        "monitor_examples": 46048.0,
+        "route_examples": 5184.0,
+        "seconds": 9.706830914999975,
+        "train_examples": 66080.0
+      }
+    },
+    "early_stop|full|global_0.5|1.45": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.5,
+          "ci95": [
+            0.16666666666666666,
+            0.8333333333333334
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.875,
+          "ci95": [
+            0.7916666666666666,
+            0.9583333333333334
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.5,
+          "ci95": [
+            0.16666666666666666,
+            0.8333333333333334
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.625,
+          "ci95": [
+            0.4583333333333333,
+            0.75
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.25,
+          "ci95": [
+            0.08333333333333333,
+            0.4583333333333333
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.625,
+          "ci95": [
+            0.4583333333333333,
+            0.75
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4309895808498065,
+          "ci95": [
+            0.40156249950329465,
+            0.454687496026357
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.4492700050274532,
+          "ci95": [
+            1.3964701195557911,
+            1.5089541872342427
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4450000007947286,
+          "ci95": [
+            0.43208333452542624,
+            0.45729166666666665
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.23366274933020273,
+          "ci95": [
+            0.10660584680736065,
+            0.37066062291463214
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 0.2590962549050649,
+          "ci95": [
+            0.034735649824142456,
+            0.6448735247055689
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 0.1809138904015223,
+          "ci95": [
+            -0.06223874352872371,
+            0.6030264059702556
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.3697891249999845,
+        "controller_calls": 140.0,
+        "diagnostic_eval_examples": 32000.0,
+        "diagnostic_seconds": 1.8874538380001349,
+        "diagnostic_train_examples": 48000.0,
+        "learner_updates": 700.0,
+        "monitor_examples": 31168.0,
+        "route_examples": 5184.0,
+        "seconds": 6.399178542000004,
+        "train_examples": 41120.0
+      }
+    },
+    "early_stop|full|global_0.5|1.55": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.9583333333333334,
+          "ci95": [
+            0.875,
+            1.0
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.3333333333333333,
+            1.0
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.9166666666666666,
+          "ci95": [
+            0.8333333333333334,
+            1.0
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.041666666666666664,
+          "ci95": [
+            0.0,
+            0.125
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.3333333333333333,
+            1.0
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.9166666666666666,
+          "ci95": [
+            0.8333333333333334,
+            1.0
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.3606770845750968,
+          "ci95": [
+            0.3398437512417634,
+            0.3815104179084301
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.4905364712079365,
+          "ci95": [
+            1.4492809275786083,
+            1.5386983901262283
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4068750023841858,
+          "ci95": [
+            0.39604167242844895,
+            0.4164635467529297
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.08808344602584839,
+          "ci95": [
+            0.034568043301502864,
+            0.16192751129468283
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 0.19566130141417185,
+          "ci95": [
+            0.01091847817103068,
+            0.5237425615390142
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 0.1268323411544164,
+          "ci95": [
+            -0.08657979965209961,
+            0.49045538405577344
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.36636666600001044,
+        "controller_calls": 86.0,
+        "diagnostic_eval_examples": 23360.0,
+        "diagnostic_seconds": 1.3803108249998748,
+        "diagnostic_train_examples": 35040.0,
+        "learner_updates": 430.0,
+        "monitor_examples": 21664.0,
+        "route_examples": 5184.0,
+        "seconds": 4.131099458999994,
+        "train_examples": 23840.0
+      }
+    },
+    "early_stop|full|global_1|1.25": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.25,
+          "ci95": [
+            0.125,
+            0.375
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.08333333333333333,
+            0.25
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.08333333333333333,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.08333333333333333,
+            0.25
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4864583338300387,
+          "ci95": [
+            0.4653645840783914,
+            0.5080729151765505
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.888334482908249,
+          "ci95": [
+            1.7583498112857343,
+            2.0099551479021707
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.44645833174387617,
+          "ci95": [
+            0.4239583303531011,
+            0.4687499990065893
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 1.2589575325449307,
+          "ci95": [
+            1.0243265194197495,
+            1.4558490999042988
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 1.265291189153989,
+          "ci95": [
+            0.8184118022521337,
+            1.58970412115256
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 1.2350764920314152,
+          "ci95": [
+            0.7277677108844122,
+            1.58970412115256
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.3832776260000301,
+        "controller_calls": 332.0,
+        "diagnostic_eval_examples": 62720.0,
+        "diagnostic_seconds": 3.852928527000188,
+        "diagnostic_train_examples": 94080.0,
+        "learner_updates": 1660.0,
+        "monitor_examples": 69616.0,
+        "route_examples": 5184.0,
+        "seconds": 15.294322001000069,
+        "train_examples": 102560.0
+      }
+    },
+    "early_stop|full|global_1|1.35": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.4166666666666667,
+          "ci95": [
+            0.2916666666666667,
+            0.5833333333333334
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.25,
+          "ci95": [
+            0.125,
+            0.375
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.08333333333333333,
+            0.25
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.25,
+          "ci95": [
+            0.125,
+            0.375
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.46796875074505806,
+          "ci95": [
+            0.44609374925494194,
+            0.4911458392937978
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.784884865085284,
+          "ci95": [
+            1.6213944615175326,
+            1.9340429653724034
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.44354166587193805,
+          "ci95": [
+            0.4195833335071802,
+            0.46624999940395356
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.9640258140861988,
+          "ci95": [
+            0.6789342053234577,
+            1.2273596078157425
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 1.2572167913119,
+          "ci95": [
+            0.7780024061600367,
+            1.6000295827786128
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 1.248198648293813,
+          "ci95": [
+            0.7509479771057764,
+            1.6000295827786128
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.3662247489999917,
+        "controller_calls": 269.0,
+        "diagnostic_eval_examples": 52640.0,
+        "diagnostic_seconds": 3.1176816139999577,
+        "diagnostic_train_examples": 78960.0,
+        "learner_updates": 1345.0,
+        "monitor_examples": 56608.0,
+        "route_examples": 5184.0,
+        "seconds": 11.895644250000023,
+        "train_examples": 82400.0
+      }
+    },
+    "early_stop|full|global_1|1.45": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.3333333333333333,
+          "ci95": [
+            0.0,
+            0.6666666666666666
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.7916666666666666,
+          "ci95": [
+            0.6666666666666666,
+            0.9166666666666666
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.3333333333333333,
+          "ci95": [
+            0.0,
+            0.6666666666666666
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.5416666666666666,
+          "ci95": [
+            0.4166666666666667,
+            0.6666666666666666
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.25,
+          "ci95": [
+            0.125,
+            0.375
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.5416666666666666,
+          "ci95": [
+            0.4166666666666667,
+            0.6666666666666666
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.42890625074505806,
+          "ci95": [
+            0.3994791656732559,
+            0.4559895855685075
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.5338018288215,
+          "ci95": [
+            1.4304554214080174,
+            1.6417168925205867
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4304166714350382,
+          "ci95": [
+            0.3997916688521703,
+            0.45958334406216933
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.39757590120037395,
+          "ci95": [
+            0.19180329764882723,
+            0.6123459612329801
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 0.5879201541344324,
+          "ci95": [
+            0.09312938650449117,
+            1.1580993086099625
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 0.4809112772345543,
+          "ci95": [
+            -0.07869335760672887,
+            1.1021554260825128
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.3633441660000116,
+        "controller_calls": 152.0,
+        "diagnostic_eval_examples": 33920.0,
+        "diagnostic_seconds": 2.01058269400016,
+        "diagnostic_train_examples": 50880.0,
+        "learner_updates": 760.0,
+        "monitor_examples": 33376.0,
+        "route_examples": 5184.0,
+        "seconds": 6.968614167000005,
+        "train_examples": 44960.0
+      }
+    },
+    "early_stop|full|global_1|1.55": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.3333333333333333,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.9166666666666666,
+          "ci95": [
+            0.8333333333333334,
+            1.0
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.3333333333333333,
+            1.0
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.3333333333333333,
+          "ci95": [
+            0.0,
+            0.6666666666666666
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.7916666666666666,
+          "ci95": [
+            0.6666666666666666,
+            0.9166666666666666
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.125,
+          "ci95": [
+            0.0,
+            0.2916666666666667
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.3333333333333333,
+          "ci95": [
+            0.0,
+            0.6666666666666666
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.7916666666666666,
+          "ci95": [
+            0.6666666666666666,
+            0.9166666666666666
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.37317708631356555,
+          "ci95": [
+            0.34817708656191826,
+            0.401041670391957
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.5549871921539307,
+          "ci95": [
+            1.4597957134246826,
+            1.6656474123398464
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.41187500258286797,
+          "ci95": [
+            0.3910416672627131,
+            0.43333333830038706
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.21882757544517517,
+          "ci95": [
+            0.04591205964485804,
+            0.4333704710006714
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 0.3335068126519521,
+          "ci95": [
+            0.02431351939837138,
+            0.8558852722247442
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 0.20827684799830118,
+          "ci95": [
+            -0.12238529324531555,
+            0.7850971321264902
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.3637975830000002,
+        "controller_calls": 95.0,
+        "diagnostic_eval_examples": 24800.0,
+        "diagnostic_seconds": 1.4571609529999319,
+        "diagnostic_train_examples": 37200.0,
+        "learner_updates": 475.0,
+        "monitor_examples": 23104.0,
+        "route_examples": 5184.0,
+        "seconds": 4.490524956999959,
+        "train_examples": 26720.0
+      }
+    },
+    "early_stop|full|group_rule|1.25": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.25,
+          "ci95": [
+            0.125,
+            0.375
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.08333333333333333,
+            0.25
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.08333333333333333,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.08333333333333333,
+            0.25
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.48046875,
+          "ci95": [
+            0.46692708631356555,
+            0.49505208681027096
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.8371460636456807,
+          "ci95": [
+            1.7264705499013264,
+            1.9394162942965825
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4527083327372869,
+          "ci95": [
+            0.43520833452542623,
+            0.471875
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 1.1413009663422902,
+          "ci95": [
+            0.9681282180051008,
+            1.2917892299592495
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 1.3125799298286438,
+          "ci95": [
+            0.8256403307120005,
+            1.6657620817422867
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 1.285476952791214,
+          "ci95": [
+            0.7443313995997111,
+            1.6657620817422867
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.37566758200000905,
+        "controller_calls": 329.0,
+        "diagnostic_eval_examples": 62240.0,
+        "diagnostic_seconds": 3.7097714260000565,
+        "diagnostic_train_examples": 93360.0,
+        "learner_updates": 1645.0,
+        "monitor_examples": 68992.0,
+        "route_examples": 5184.0,
+        "seconds": 14.561988456999945,
+        "train_examples": 101600.0
+      }
+    },
+    "early_stop|full|group_rule|1.35": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.4166666666666667,
+          "ci95": [
+            0.3333333333333333,
+            0.5
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.25,
+          "ci95": [
+            0.125,
+            0.375
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.08333333333333333,
+            0.25
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.25,
+          "ci95": [
+            0.125,
+            0.375
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4570312512417634,
+          "ci95": [
+            0.44296875099341076,
+            0.47083334131166343
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.73266497751077,
+          "ci95": [
+            1.6315483897924423,
+            1.8269411325454712
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4389583319425583,
+          "ci95": [
+            0.4156197896599769,
+            0.46145833333333336
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.8673197900255522,
+          "ci95": [
+            0.7271271993716558,
+            0.9977035795648893
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 1.0669841368993123,
+          "ci95": [
+            0.6099997808535894,
+            1.4939934543023508
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 0.9622752989331881,
+          "ci95": [
+            0.3666893115267158,
+            1.481401923795542
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.3656990000000313,
+        "controller_calls": 268.0,
+        "diagnostic_eval_examples": 52480.0,
+        "diagnostic_seconds": 3.0998936860002733,
+        "diagnostic_train_examples": 78720.0,
+        "learner_updates": 1340.0,
+        "monitor_examples": 56400.0,
+        "route_examples": 5184.0,
+        "seconds": 11.859335500000025,
+        "train_examples": 82080.0
+      }
+    },
+    "early_stop|full|group_rule|1.45": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.3333333333333333,
+          "ci95": [
+            0.0,
+            0.6666666666666666
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.75,
+          "ci95": [
+            0.5833333333333334,
+            0.9166666666666666
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.3333333333333333,
+          "ci95": [
+            0.0,
+            0.6666666666666666
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.5833333333333334,
+          "ci95": [
+            0.4166666666666667,
+            0.7083333333333334
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.08333333333333333,
+            0.25
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.5833333333333334,
+          "ci95": [
+            0.4166666666666667,
+            0.7083333333333334
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4341145840783914,
+          "ci95": [
+            0.4085937514901161,
+            0.45703125
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.5734023054440816,
+          "ci95": [
+            1.4036219368378322,
+            1.7520527094602585
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4322916666666667,
+          "ci95": [
+            0.4179114543149869,
+            0.4475000003973643
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.4671238288283348,
+          "ci95": [
+            0.173199862241745,
+            0.7704489961887402
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 0.5267658730347952,
+          "ci95": [
+            0.12498097618420918,
+            0.9370282898346601
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 0.4134272212783496,
+          "ci95": [
+            -0.03989991048971812,
+            0.8836526721715927
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.36563104199998975,
+        "controller_calls": 169.0,
+        "diagnostic_eval_examples": 36640.0,
+        "diagnostic_seconds": 2.163842028999847,
+        "diagnostic_train_examples": 54960.0,
+        "learner_updates": 845.0,
+        "monitor_examples": 37200.0,
+        "route_examples": 5184.0,
+        "seconds": 7.632792331999983,
+        "train_examples": 50400.0
+      }
+    },
+    "early_stop|full|group_rule|1.55": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.9583333333333334,
+          "ci95": [
+            0.875,
+            1.0
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.3333333333333333,
+            1.0
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.9166666666666666,
+          "ci95": [
+            0.8333333333333334,
+            1.0
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.041666666666666664,
+          "ci95": [
+            0.0,
+            0.125
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.3333333333333333,
+            1.0
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.9166666666666666,
+          "ci95": [
+            0.8333333333333334,
+            1.0
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.3710937475164731,
+          "ci95": [
+            0.3486848960630596,
+            0.395833329608043
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.494715655843417,
+          "ci95": [
+            1.441963826616605,
+            1.562850147485733
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4104166676600775,
+          "ci95": [
+            0.3968750019868215,
+            0.42395833333333327
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.11320385585228603,
+          "ci95": [
+            0.04254223903020223,
+            0.21073181182146072
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 0.2468115190664927,
+          "ci95": [
+            0.01842393974463145,
+            0.6498865634202957
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 0.19238004585107168,
+          "ci95": [
+            -0.061017309625943504,
+            0.6246209889650345
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.367906249999999,
+        "controller_calls": 85.0,
+        "diagnostic_eval_examples": 23200.0,
+        "diagnostic_seconds": 1.3625810760002803,
+        "diagnostic_train_examples": 34800.0,
+        "learner_updates": 425.0,
+        "monitor_examples": 21456.0,
+        "route_examples": 5184.0,
+        "seconds": 4.065895583000012,
+        "train_examples": 23520.0
+      }
+    },
+    "early_stop|full|local_rule|1.25": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.3333333333333333,
+          "ci95": [
+            0.25,
+            0.4166666666666667
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.25,
+          "ci95": [
+            0.25,
+            0.25
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.08333333333333333,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.25,
+          "ci95": [
+            0.25,
+            0.25
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4820312522351742,
+          "ci95": [
+            0.4687500037252903,
+            0.4989583368413151
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.5276776775717735,
+          "ci95": [
+            1.4533583422501881,
+            1.6020011006544035
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4547916680574417,
+          "ci95": [
+            0.43625000119209284,
+            0.47416667143503827
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.6746856172879537,
+          "ci95": [
+            0.5319328357776006,
+            0.8059677643080553
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 0.9505867585539818,
+          "ci95": [
+            0.6670455187559128,
+            1.2077560822168987
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 0.9376989876230558,
+          "ci95": [
+            0.6447298154234886,
+            1.2024887005488079
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.37864500100002374,
+        "controller_calls": 308.0,
+        "diagnostic_eval_examples": 58880.0,
+        "diagnostic_seconds": 3.554213248000199,
+        "diagnostic_train_examples": 88320.0,
+        "learner_updates": 1540.0,
+        "monitor_examples": 64528.0,
+        "route_examples": 5184.0,
+        "seconds": 13.961956709999942,
+        "train_examples": 94880.0
+      }
+    },
+    "early_stop|full|local_rule|1.35": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.0,
+            0.5
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.4583333333333333,
+            0.8333333333333334
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.0,
+            0.5
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.5416666666666666,
+          "ci95": [
+            0.375,
+            0.7083333333333334
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.125,
+          "ci95": [
+            0.0,
+            0.2916666666666667
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.5833333333333334,
+          "ci95": [
+            0.4166666666666667,
+            0.7083333333333334
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4648437524835269,
+          "ci95": [
+            0.44583333532015484,
+            0.4859374947845936
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.4153745373090107,
+          "ci95": [
+            1.3461561004320781,
+            1.4849891882389785
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4518750011920929,
+          "ci95": [
+            0.4337499996026357,
+            0.46937500437100727
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.356621449192365,
+          "ci95": [
+            0.21918441851933798,
+            0.49449991931517917
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 0.3921833485364914,
+          "ci95": [
+            0.08678031725188097,
+            0.7029469708601633
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 0.3318714275956154,
+          "ci95": [
+            -0.008765963216622671,
+            0.6808940043052044
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.37258741700004094,
+        "controller_calls": 208.0,
+        "diagnostic_eval_examples": 42880.0,
+        "diagnostic_seconds": 2.5423742869997596,
+        "diagnostic_train_examples": 64320.0,
+        "learner_updates": 1040.0,
+        "monitor_examples": 44016.0,
+        "route_examples": 5184.0,
+        "seconds": 9.323401332999975,
+        "train_examples": 62880.0
+      }
+    },
+    "early_stop|full|local_rule|1.45": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.3333333333333333,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.9166666666666666,
+          "ci95": [
+            0.8333333333333334,
+            1.0
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.3333333333333333,
+            1.0
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.0,
+            0.5
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.75,
+          "ci95": [
+            0.625,
+            0.875
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.041666666666666664,
+            0.3333333333333333
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.0,
+            0.5
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.75,
+          "ci95": [
+            0.625,
+            0.875
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4328124982615312,
+          "ci95": [
+            0.4010351549834013,
+            0.46380207935969037
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.4247326801220577,
+          "ci95": [
+            1.3689202566941578,
+            1.4785546511411667
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4385416646798452,
+          "ci95": [
+            0.4262500007947286,
+            0.4479166607062022
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.1891840696334839,
+          "ci95": [
+            0.07226398090521495,
+            0.3155677048489455
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 0.2445812076330185,
+          "ci95": [
+            0.037627761562665306,
+            0.594952126344045
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 0.17018960416316986,
+          "ci95": [
+            -0.054752662777900696,
+            0.5527220269044241
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.3628788330000088,
+        "controller_calls": 133.0,
+        "diagnostic_eval_examples": 30880.0,
+        "diagnostic_seconds": 1.8136701150000274,
+        "diagnostic_train_examples": 46320.0,
+        "learner_updates": 665.0,
+        "monitor_examples": 30000.0,
+        "route_examples": 5184.0,
+        "seconds": 6.081461791999979,
+        "train_examples": 38880.0
+      }
+    },
+    "early_stop|full|local_rule|1.55": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.9583333333333334,
+          "ci95": [
+            0.875,
+            1.0
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.5,
+          "ci95": [
+            0.16666666666666666,
+            0.8333333333333334
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.875,
+          "ci95": [
+            0.7916666666666666,
+            0.9583333333333334
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.08333333333333333,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.5,
+          "ci95": [
+            0.16666666666666666,
+            0.8333333333333334
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.875,
+          "ci95": [
+            0.7916666666666666,
+            0.9583333333333334
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.3619791666666667,
+          "ci95": [
+            0.32994792113701504,
+            0.3945312462747097
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.4756375551223755,
+          "ci95": [
+            1.4437953722973664,
+            1.5015328923861186
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4054166654745737,
+          "ci95": [
+            0.3914583325137695,
+            0.4193749984105428
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.07852265983819962,
+          "ci95": [
+            0.031797587871551514,
+            0.13858417918284735
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 0.1565342297156652,
+          "ci95": [
+            0.010905226071675619,
+            0.41010400156180066
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 0.08816058437029521,
+          "ci95": [
+            -0.0799263467391332,
+            0.37429121471941473
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.3639618769999702,
+        "controller_calls": 88.0,
+        "diagnostic_eval_examples": 23680.0,
+        "diagnostic_seconds": 1.3947269980001176,
+        "diagnostic_train_examples": 35520.0,
+        "learner_updates": 440.0,
+        "monitor_examples": 22032.0,
+        "route_examples": 5184.0,
+        "seconds": 4.210139083000006,
+        "train_examples": 24480.0
+      }
+    },
+    "early_stop|heads_only|global_0|1.35": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.08333333333333333,
+            0.25
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.08333333333333333,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.08333333333333333,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.20833333333333334,
+          "ci95": [
+            0.041666666666666664,
+            0.4177083333333371
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4067708340783914,
+          "ci95": [
+            0.3846354161699613,
+            0.4312499997516473
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.4317593971888225,
+          "ci95": [
+            1.3906495289256176,
+            1.4630347887674968
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.39604166845480604,
+          "ci95": [
+            0.38145833606521284,
+            0.412291669845581
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.034669384360313416,
+          "ci95": [
+            0.029338115081191066,
+            0.04104611277580261
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 0.010435079534848532,
+          "ci95": [
+            0.0031956185897191367,
+            0.02193800111611684
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": -0.01880110800266266,
+          "ci95": [
+            -0.040493852272629735,
+            0.004524335265159607
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.37947754200004624,
+        "controller_calls": 366.0,
+        "diagnostic_eval_examples": 68160.0,
+        "diagnostic_seconds": 4.122280786000076,
+        "diagnostic_train_examples": 102240.0,
+        "learner_updates": 1830.0,
+        "monitor_examples": 76160.0,
+        "route_examples": 5184.0,
+        "seconds": 11.413523416000068,
+        "train_examples": 113440.0
+      }
+    },
+    "fixed_budget|frozen_stem|global_1|1.35": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.25,
+          "ci95": [
+            0.125,
+            0.375
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.125,
+          "ci95": [
+            0.041666666666666664,
+            0.20833333333333334
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.125,
+          "ci95": [
+            0.0,
+            0.2916666666666667
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.08333333333333333,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4390625022351742,
+          "ci95": [
+            0.41901042064030963,
+            0.4611979176600774
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.7754918485879898,
+          "ci95": [
+            1.7496951520442963,
+            1.804155041774114
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.410833332935969,
+          "ci95": [
+            0.39687499900658924,
+            0.4208333313465118
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 1.0306507212420304,
+          "ci95": [
+            0.9563576678435007,
+            1.131541896611452
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 1.3455099960168202,
+          "ci95": [
+            1.1968767046928406,
+            1.489461397131284
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 1.3455099960168202,
+          "ci95": [
+            1.1968767046928406,
+            1.489461397131284
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.367198416999976,
+        "controller_calls": 407.0,
+        "diagnostic_eval_examples": 74720.0,
+        "diagnostic_seconds": 4.477438497999636,
+        "diagnostic_train_examples": 112080.0,
+        "learner_updates": 2035.0,
+        "monitor_examples": 84688.0,
+        "route_examples": 5184.0,
+        "seconds": 15.154273457999963,
+        "train_examples": 126560.0
+      }
+    },
+    "fixed_budget|full|global_0|1.35": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.0,
+            0.5
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.75,
+          "ci95": [
+            0.625,
+            0.875
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.4583333333333333,
+          "ci95": [
+            0.2916666666666667,
+            0.625
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.2916666666666667,
+          "ci95": [
+            0.125,
+            0.4583333333333333
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.0,
+            0.5
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.75,
+          "ci95": [
+            0.625,
+            0.875
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.5177083313465118,
+          "ci95": [
+            0.49817708258827526,
+            0.5349023402668536
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.2258260697126389,
+          "ci95": [
+            1.1775597060720127,
+            1.2699357594052951
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4956249982118606,
+          "ci95": [
+            0.4779166668653488,
+            0.5145937499155602
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.22106975813706717,
+          "ci95": [
+            0.1922116999824842,
+            0.2530232022205989
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 0.37262729307015735,
+          "ci95": [
+            0.2600465963284175,
+            0.48307739198207855
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 0.37246504177649814,
+          "ci95": [
+            0.2600465963284175,
+            0.4825906381011009
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.3824863330000028,
+        "controller_calls": 407.0,
+        "diagnostic_eval_examples": 74720.0,
+        "diagnostic_seconds": 4.467566956000212,
+        "diagnostic_train_examples": 112080.0,
+        "learner_updates": 2035.0,
+        "monitor_examples": 84688.0,
+        "route_examples": 5184.0,
+        "seconds": 18.110011582000062,
+        "train_examples": 126560.0
+      }
+    },
+    "fixed_budget|full|global_1|1.35": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.375,
+          "ci95": [
+            0.25,
+            0.5416666666666666
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.2916666666666667,
+          "ci95": [
+            0.125,
+            0.5
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.08333333333333333,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.08333333333333333,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.49036458507180214,
+          "ci95": [
+            0.4710937477648258,
+            0.5096354223787785
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 2.0934937546650567,
+          "ci95": [
+            1.969530463218689,
+            2.2009170999129615
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4466666668653489,
+          "ci95": [
+            0.42395833432674407,
+            0.47020832995573675
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 1.6159557439386845,
+          "ci95": [
+            1.5039881058968603,
+            1.7218746629854043
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 1.5253961235284805,
+          "ci95": [
+            1.2828051249186199,
+            1.7215364376703899
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": 1.5253961235284805,
+          "ci95": [
+            1.2828051249186199,
+            1.7215364376703899
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.36784083200000595,
+        "controller_calls": 407.0,
+        "diagnostic_eval_examples": 74720.0,
+        "diagnostic_seconds": 4.4947771619994725,
+        "diagnostic_train_examples": 112080.0,
+        "learner_updates": 2035.0,
+        "monitor_examples": 84688.0,
+        "route_examples": 5184.0,
+        "seconds": 18.13560687600002,
+        "train_examples": 126560.0
+      }
+    },
+    "fixed_budget|heads_only|global_0|1.35": {
+      "roots": 6,
+      "root_ids": [
+        88410,
+        88411,
+        88412,
+        88413,
+        88414,
+        88415
+      ],
+      "metrics": {
+        "prefix_monitor_ever_hit": {
+          "n": 6,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "prefix_heldout_eval_hit": {
+          "n": 6,
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "suffix_monitor_ever_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_monitor_ever_rate": {
+          "n": 6,
+          "mean": 0.16666666666666666,
+          "ci95": [
+            0.08333333333333333,
+            0.25
+          ]
+        },
+        "suffix_monitor_terminal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_first_hit_heldout_rate": {
+          "n": 6,
+          "mean": 0.08333333333333333,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ]
+        },
+        "monitor_hit_eval_miss_rate": {
+          "n": 6,
+          "mean": 0.08333333333333333,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ]
+        },
+        "suffix_heldout_eval_diagonal_all": {
+          "n": 6,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "suffix_heldout_eval_diagonal_rate": {
+          "n": 6,
+          "mean": 0.2916666666666667,
+          "ci95": [
+            0.125,
+            0.5
+          ]
+        },
+        "suffix_mean_accuracy": {
+          "n": 6,
+          "mean": 0.41614583507180214,
+          "ci95": [
+            0.3903645823399226,
+            0.44375000273187953
+          ]
+        },
+        "suffix_mean_eval_loss": {
+          "n": 6,
+          "mean": 1.409517725308736,
+          "ci95": [
+            1.3569393306970596,
+            1.4518922170003254
+          ]
+        },
+        "final_mean_accuracy": {
+          "n": 6,
+          "mean": 0.4029166688521703,
+          "ci95": [
+            0.3822916696468989,
+            0.425000003973643
+          ]
+        },
+        "suffix_terminal_train_eval_gap": {
+          "n": 6,
+          "mean": 0.03587410847345988,
+          "ci95": [
+            0.02973759671052297,
+            0.041747704769174256
+          ]
+        },
+        "final_positive_forgetting": {
+          "n": 6,
+          "mean": 0.015371193488438925,
+          "ci95": [
+            0.005268022418022156,
+            0.03152829905351003
+          ]
+        },
+        "final_signed_backward_change": {
+          "n": 6,
+          "mean": -0.009025290608406067,
+          "ci95": [
+            -0.03652964035669962,
+            0.023026779294013977
+          ]
+        }
+      },
+      "cost_sum": {
+        "audit_examples": 14400.0,
+        "audit_seconds": 0.371943793000014,
+        "controller_calls": 407.0,
+        "diagnostic_eval_examples": 74720.0,
+        "diagnostic_seconds": 4.468928107000224,
+        "diagnostic_train_examples": 112080.0,
+        "learner_updates": 2035.0,
+        "monitor_examples": 84688.0,
+        "route_examples": 5184.0,
+        "seconds": 12.446270498999937,
+        "train_examples": 126560.0
+      }
+    }
+  },
+  "paired_root_descriptive_differences": {
+    "early_stop:full:1.55:coordinated_rule_minus_global_0": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.246807391444842,
+        "ci95": [
+          0.0018398910760879517,
+          0.6813415388266245
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.011197915921608606,
+        "ci95": [
+          -0.02369791641831398,
+          0.04140624776482582
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": -0.5,
+        "ci95": [
+          -0.8333333333333334,
+          -0.16666666666666666
+        ]
+      }
+    },
+    "early_stop:full:1.55:coordinated_rule_minus_global_0.5": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.07758700847625732,
+        "ci95": [
+          0.004012842973073323,
+          0.19067675868670145
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.01276041567325592,
+        "ci95": [
+          -0.0010416681567827861,
+          0.02499999726812045
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": -0.5,
+        "ci95": [
+          -0.8333333333333334,
+          -0.16666666666666666
+        ]
+      }
+    },
+    "early_stop:full:1.55:coordinated_rule_minus_global_1": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.06025850276152293,
+        "ci95": [
+          -0.1409435123205185,
+          -0.009864477440714793
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.00026041393478711444,
+        "ci95": [
+          -0.007031251986821492,
+          0.007552082339922587
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": -0.16666666666666666,
+        "ci95": [
+          -0.5,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.55:coordinated_rule_minus_group_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.026436790823936462,
+        "ci95": [
+          -0.006563251962264378,
+          0.0677333523829778
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.0023437527318795523,
+        "ci95": [
+          -0.012499998013178507,
+          0.01718750347693761
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": -0.5,
+        "ci95": [
+          -0.8333333333333334,
+          -0.16666666666666666
+        ]
+      }
+    },
+    "early_stop:full:1.55:coordinated_rule_minus_local_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.11671408017476399,
+        "ci95": [
+          0.004026095072428386,
+          0.304315318663915
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.01145833358168602,
+        "ci95": [
+          -0.00026041269302368164,
+          0.02369791269302368
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": -0.3333333333333333,
+        "ci95": [
+          -0.8333333333333334,
+          0.3333333333333333
+        ]
+      }
+    },
+    "early_stop:full:1.55:global_0_minus_global_0.5": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.1692203829685847,
+        "ci95": [
+          -0.48854615204036234,
+          0.004345903793970744
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.0015624997516473134,
+        "ci95": [
+          -0.02135416865348816,
+          0.025000000993410747
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          -0.5,
+          0.5
+        ]
+      }
+    },
+    "early_stop:full:1.55:global_0_minus_global_1": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.30706589420636493,
+        "ci95": [
+          -0.8228074908256531,
+          -0.01186344027519226
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.010937501986821493,
+        "ci95": [
+          -0.040104168156782784,
+          0.02085286450261878
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.3333333333333333,
+        "ci95": [
+          -0.3333333333333333,
+          0.8333333333333334
+        ]
+      }
+    },
+    "early_stop:full:1.55:global_0_minus_group_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.22037060062090555,
+        "ci95": [
+          -0.6146517892678579,
+          -0.005505293607711792
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.008854163189729055,
+        "ci95": [
+          -0.03541666269302368,
+          0.0195312537252903
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          -0.6666666666666666,
+          0.6666666666666666
+        ]
+      }
+    },
+    "early_stop:full:1.55:global_0_minus_local_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.13009331127007803,
+        "ci95": [
+          -0.3748946712662776,
+          0.004372407992680867
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.0002604176600774129,
+        "ci95": [
+          -0.03385416169961294,
+          0.034895832339922585
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.16666666666666666,
+        "ci95": [
+          -0.3333333333333333,
+          0.6666666666666666
+        ]
+      }
+    },
+    "early_stop:full:1.55:global_0.5_minus_global_1": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.13784551123778024,
+        "ci95": [
+          -0.33214271068573,
+          -0.014308644210298831
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.012500001738468805,
+        "ci95": [
+          -0.021354167411724728,
+          -0.0023437514901161194
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.3333333333333333,
+        "ci95": [
+          0.0,
+          0.6666666666666666
+        ]
+      }
+    },
+    "early_stop:full:1.55:global_0.5_minus_group_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.05115021765232086,
+        "ci95": [
+          -0.12614400188128153,
+          -0.007334897915522258
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.010416662941376368,
+        "ci95": [
+          -0.017187494784593582,
+          -0.003906249937911828
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          -0.5,
+          0.5
+        ]
+      }
+    },
+    "early_stop:full:1.55:global_0.5_minus_local_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.039127071698506675,
+        "ci95": [
+          1.325209935506185e-05,
+          0.11363855997721355
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.0013020820915699005,
+        "ci95": [
+          -0.015624993791182836,
+          0.012239576627810797
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.16666666666666666,
+        "ci95": [
+          0.0,
+          0.5
+        ]
+      }
+    },
+    "early_stop:full:1.55:global_1_minus_group_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.0866952935854594,
+        "ci95": [
+          0.006358146667480469,
+          0.2081557015577952
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.0020833387970924377,
+        "ci95": [
+          -0.00703775370493531,
+          0.009635421137015024
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": -0.3333333333333333,
+        "ci95": [
+          -0.6666666666666666,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.55:global_1_minus_local_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.17697258293628693,
+        "ci95": [
+          0.014308975512782736,
+          0.44578127066294354
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.011197919646898905,
+        "ci95": [
+          -0.002083330104748408,
+          0.02239582935969035
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": -0.16666666666666666,
+        "ci95": [
+          -0.6666666666666666,
+          0.3333333333333333
+        ]
+      }
+    },
+    "early_stop:full:1.55:group_rule_minus_local_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.09027728935082753,
+        "ci95": [
+          0.007518713672955831,
+          0.23814699550469717
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.009114580849806467,
+        "ci95": [
+          -0.007291669646898906,
+          0.02135416368643443
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.16666666666666666,
+        "ci95": [
+          -0.3333333333333333,
+          0.6666666666666666
+        ]
+      }
+    },
+    "early_stop:full:1.45:coordinated_rule_minus_global_0": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.4087682118018468,
+        "ci95": [
+          0.06079245110352834,
+          0.8202995906273524
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.014322916666666666,
+        "ci95": [
+          -0.005729166169961293,
+          0.029947916666666668
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": -0.3333333333333333,
+        "ci95": [
+          -0.8333333333333334,
+          0.3333333333333333
+        ]
+      }
+    },
+    "early_stop:full:1.45:coordinated_rule_minus_global_0.5": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.18009349703788757,
+        "ci95": [
+          0.03246794641017914,
+          0.449637974301974
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.0010416644314924877,
+        "ci95": [
+          -0.007812497516473134,
+          0.005208333333333333
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.16666666666666666,
+        "ci95": [
+          0.0,
+          0.5
+        ]
+      }
+    },
+    "early_stop:full:1.45:coordinated_rule_minus_global_1": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.14873040219148,
+        "ci95": [
+          -0.2916165192921956,
+          -0.013420383135477701
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.0010416656732559204,
+        "ci95": [
+          -0.01770833507180214,
+          0.015624998820324738
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.16666666666666666,
+        "ci95": [
+          0.0,
+          0.5
+        ]
+      }
+    },
+    "early_stop:full:1.45:coordinated_rule_minus_group_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.08757612109184265,
+        "ci95": [
+          -0.18401834865411124,
+          -0.005865921949346846
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.004166667660077413,
+        "ci95": [
+          -0.02395833159486453,
+          0.009635416169961294
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.16666666666666666,
+        "ci95": [
+          0.0,
+          0.5
+        ]
+      }
+    },
+    "early_stop:full:1.45:coordinated_rule_minus_local_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.194608544309934,
+        "ci95": [
+          0.014354791988929114,
+          0.4802553753058116
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.002864581843217214,
+        "ci95": [
+          -0.013541666169961294,
+          0.007031253228584926
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.45:global_0_minus_global_0.5": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.22867471476395926,
+        "ci95": [
+          -0.6128014773130417,
+          -0.020179569721221924
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.015364581098159155,
+        "ci95": [
+          -0.03125,
+          0.009121092502027774
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.5,
+        "ci95": [
+          0.16666666666666666,
+          0.8333333333333334
+        ]
+      }
+    },
+    "early_stop:full:1.45:global_0_minus_global_1": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.5574986139933268,
+        "ci95": [
+          -1.1132381862650316,
+          -0.08022278547286987
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.013281250993410746,
+        "ci95": [
+          -0.03567708283662796,
+          0.010416664183139801
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.5,
+        "ci95": [
+          0.16666666666666666,
+          0.8333333333333334
+        ]
+      }
+    },
+    "early_stop:full:1.45:global_0_minus_group_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.49634433289368945,
+        "ci95": [
+          -0.8968852112690607,
+          -0.11246386170387268
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.01848958432674408,
+        "ci95": [
+          -0.0432291676911215,
+          0.005729161202907562
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.5,
+        "ci95": [
+          0.16666666666666666,
+          0.8333333333333334
+        ]
+      }
+    },
+    "early_stop:full:1.45:global_0_minus_local_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.21415966749191284,
+        "ci95": [
+          -0.5577877362569174,
+          -0.02033798893292745
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.01718749850988388,
+        "ci95": [
+          -0.03932291641831398,
+          0.010416662941376368
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.3333333333333333,
+        "ci95": [
+          -0.3333333333333333,
+          0.8333333333333334
+        ]
+      }
+    },
+    "early_stop:full:1.45:global_0.5_minus_global_1": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.32882389922936756,
+        "ci95": [
+          -0.704717501749595,
+          -0.050024589151143946
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.002083330104748408,
+        "ci95": [
+          -0.012506514601409434,
+          0.014062495281298956
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.45:global_0.5_minus_group_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.2676696181297302,
+        "ci95": [
+          -0.6190329194068909,
+          -0.05274153749148051
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.003125003228584925,
+        "ci95": [
+          -0.021354171137015026,
+          0.014583329359690348
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.45:global_0.5_minus_local_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.014515047272046408,
+        "ci95": [
+          -0.02213517501950264,
+          0.05778528340160852
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.0018229174117247264,
+        "ci95": [
+          -0.01015625149011612,
+          0.008854166915019354
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": -0.16666666666666666,
+        "ci95": [
+          -0.5,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.45:global_1_minus_group_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.06115428109963735,
+        "ci95": [
+          -0.06110124165813127,
+          0.22659912208716074
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.005208333333333333,
+        "ci95": [
+          -0.01848958556850751,
+          0.009114584575096766
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.45:global_1_minus_local_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.343338946501414,
+        "ci95": [
+          0.02750791609287262,
+          0.7400220582882563
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.0039062475164731345,
+        "ci95": [
+          -0.020572913189729054,
+          0.02057292064030965
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": -0.16666666666666666,
+        "ci95": [
+          -0.5,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.45:group_rule_minus_local_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.2821846654017766,
+        "ci95": [
+          0.05822369456291199,
+          0.6461452394723892
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.001302085816860199,
+        "ci95": [
+          -0.02265625198682149,
+          0.030468754470348358
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": -0.16666666666666666,
+        "ci95": [
+          -0.5,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.35:coordinated_rule_minus_global_0": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.9100131640831629,
+        "ci95": [
+          0.45733614762624103,
+          1.3484483361244202
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.01901040847102801,
+        "ci95": [
+          0.007031244536240895,
+          0.031249993791182835
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.35:coordinated_rule_minus_global_0.5": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.512770468990008,
+        "ci95": [
+          0.16019762555758157,
+          0.922744611899058
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.0015624923010667164,
+        "ci95": [
+          -0.015631517923126614,
+          0.023958322902520496
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.35:coordinated_rule_minus_global_1": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.25342648724714917,
+        "ci95": [
+          -0.8126120219628016,
+          0.07224236925443013
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.004687506705522537,
+        "ci95": [
+          -0.013541676104068756,
+          0.0036458310981591544
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.35:coordinated_rule_minus_group_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.06319383283456166,
+        "ci95": [
+          -0.7239609758059183,
+          0.5457815875609716
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.00624999279777209,
+        "ci95": [
+          -0.0020833450059096017,
+          0.014843744536240896
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.35:coordinated_rule_minus_local_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.6116069555282593,
+        "ci95": [
+          0.23936302463213602,
+          1.0284264259040357
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.0015625084439913433,
+        "ci95": [
+          -0.023958342770735424,
+          0.019791655242443085
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.35:global_0_minus_global_0.5": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.3972426950931549,
+        "ci95": [
+          -0.7751925885677338,
+          -0.041753763953844704
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.017447916169961292,
+        "ci95": [
+          -0.027864575386047363,
+          -0.005208342025677363
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.35:global_0_minus_global_1": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -1.163439651330312,
+        "ci95": [
+          -1.5254162301619847,
+          -0.6609265953302383
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.02369791517655055,
+        "ci95": [
+          -0.04036458830038706,
+          -0.0075520773728688555
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.35:global_0_minus_group_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.9732069969177246,
+        "ci95": [
+          -1.413674662510554,
+          -0.5196816970904669
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.01276041567325592,
+        "ci95": [
+          -0.027083343515793484,
+          -0.002604156732559204
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.35:global_0_minus_local_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.2984062085549037,
+        "ci95": [
+          -0.5927837193012238,
+          -0.014302815000216166
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.020572916915019352,
+        "ci95": [
+          -0.036197914431492485,
+          -0.007291668405135472
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.35:global_0.5_minus_global_1": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.7661969562371572,
+        "ci95": [
+          -1.2614575210958718,
+          -0.31173614660898846
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.0062499990065892535,
+        "ci95": [
+          -0.032812499751647316,
+          0.016406250496705372
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.35:global_0.5_minus_group_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.5759643018245697,
+        "ci95": [
+          -1.0861822565396626,
+          -0.2233638515075048
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.004687500496705373,
+        "ci95": [
+          -0.020052085320154827,
+          0.01979166517655055
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.35:global_0.5_minus_local_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.09883648653825124,
+        "ci95": [
+          0.024226342638333637,
+          0.1863754242658615
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.0031250007450580597,
+        "ci95": [
+          -0.016666666915019352,
+          0.010416665424903234
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.35:global_1_minus_group_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.1902326544125875,
+        "ci95": [
+          -0.1270029991865158,
+          0.5548249880472819
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.010937499503294626,
+        "ci95": [
+          0.002083332588275274,
+          0.02421875422199567
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.35:global_1_minus_local_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.8650334427754084,
+        "ci95": [
+          0.41416603326797485,
+          1.320136234164238
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.003124998261531194,
+        "ci95": [
+          -0.016927083333333332,
+          0.024479163189729054
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.35:group_rule_minus_local_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.674800788362821,
+        "ci95": [
+          0.34005110959211987,
+          1.1221792449553807
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.007812501241763433,
+        "ci95": [
+          -0.025520838797092438,
+          0.013541669895251593
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.25:coordinated_rule_minus_global_0": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 1.1221212148666382,
+        "ci95": [
+          0.7605171451965967,
+          1.3867592265208561
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.0013020796080430348,
+        "ci95": [
+          -0.016412758516768614,
+          0.020833324640989304
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.25:coordinated_rule_minus_global_0.5": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.2029243210951487,
+        "ci95": [
+          0.1170978993177414,
+          0.29853488008181256
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.008333335320154825,
+        "ci95": [
+          -0.01875000453243653,
+          0.00287110069766643
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.25:coordinated_rule_minus_global_1": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.051167105635007225,
+        "ci95": [
+          -0.1091798002521197,
+          0.20575624704360962
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.011458337306976318,
+        "ci95": [
+          -0.022916664679845173,
+          0.0015690026804805039
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.25:coordinated_rule_minus_group_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.0038783649603525796,
+        "ci95": [
+          -0.14033628503481546,
+          0.1611920247475306
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.005468753476937612,
+        "ci95": [
+          -0.010416670391956965,
+          -9.903063376744475e-09
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.25:coordinated_rule_minus_local_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.3658715362350146,
+        "ci95": [
+          0.21046253542105356,
+          0.5212805370489756
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.007031255712111791,
+        "ci95": [
+          -0.021354174862305324,
+          0.006249996523062388
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.25:global_0_minus_global_0.5": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.9191968937714895,
+        "ci95": [
+          -1.218625895678997,
+          -0.5985654443502426
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.00963541492819786,
+        "ci95": [
+          -0.023437495063990357,
+          0.005468748509883881
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.25:global_0_minus_global_1": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -1.070954109231631,
+        "ci95": [
+          -1.4237291067838669,
+          -0.6301189810037613
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.012760416915019354,
+        "ci95": [
+          -0.0390624962747097,
+          0.008333327869574228
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.25:global_0_minus_group_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -1.1182428499062855,
+        "ci95": [
+          -1.504846528172493,
+          -0.6424401601155599
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.006770833084980647,
+        "ci95": [
+          -0.0208333358168602,
+          0.005989586313565572
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.25:global_0_minus_local_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.7562496786316236,
+        "ci95": [
+          -1.0406867588559787,
+          -0.47547023246685666
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.008333335320154825,
+        "ci95": [
+          -0.02421874801317851,
+          0.00755208358168602
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.25:global_0.5_minus_global_1": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.1517572154601415,
+        "ci95": [
+          -0.31146428417414423,
+          0.021096693972746532
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.0031250019868214927,
+        "ci95": [
+          -0.019531252483526867,
+          0.010937497019767761
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.25:global_0.5_minus_group_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.19904595613479614,
+        "ci95": [
+          -0.329004945854346,
+          -0.03311318904161453
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.002864581843217214,
+        "ci95": [
+          -0.00677083432674408,
+          0.01223958410943548
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.25:global_0.5_minus_local_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.16294721513986588,
+        "ci95": [
+          0.052910460717976095,
+          0.2733447179198265
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.0013020796080430348,
+        "ci95": [
+          -0.007812506208817164,
+          0.015364581098159155
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.25:global_1_minus_group_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -0.04728874067465464,
+        "ci95": [
+          -0.14575350284576416,
+          0.02282470464706421
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.005989583830038707,
+        "ci95": [
+          -0.006770830601453781,
+          0.020052079111337662
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.25:global_1_minus_local_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.31470443060000736,
+        "ci95": [
+          0.1094360500574112,
+          0.4932069033384323
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.004427081594864528,
+        "ci95": [
+          -0.014843754470348358,
+          0.023710938356816817
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early_stop:full:1.25:group_rule_minus_local_rule": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": 0.361993171274662,
+        "ci95": [
+          0.12661919991175333,
+          0.5460812871654829
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": -0.001562502235174179,
+        "ci95": [
+          -0.012239584078391394,
+          0.009641925276567563
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "fixed_budget:full:1.35:global_0_minus_global_1": {
+      "paired_roots": 6,
+      "final_positive_forgetting": {
+        "n": 6,
+        "mean": -1.1527688304583232,
+        "ci95": [
+          -1.3994611501693726,
+          -0.8325664003690084
+        ]
+      },
+      "suffix_mean_accuracy": {
+        "n": 6,
+        "mean": 0.0273437462747097,
+        "ci95": [
+          0.00937499850988388,
+          0.047916664431492485
+        ]
+      },
+      "suffix_heldout_eval_diagonal_all": {
+        "n": 6,
+        "mean": 0.16666666666666666,
+        "ci95": [
+          0.0,
+          0.5
+        ]
+      }
+    }
+  },
+  "statistics": "Root-level exploratory bootstrap descriptions only; no formal win or non-inferiority conclusion."
+}
