@@ -21,6 +21,8 @@ SUITES = (
     ("v14_full_layer_lora", "test_*.py"),
     ("v14_methods_20260920_0814", "test_*.py"),
     ("v15_offline_control", "test_*.py"),
+    ("v16_step_reward_toy", "test_*.py"),
+    ("v17_overlap_reward_toy", "test_*.py"),
 )
 
 
