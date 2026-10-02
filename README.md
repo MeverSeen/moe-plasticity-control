@@ -2,11 +2,13 @@
 
 研究持续学习中的专家更新控制：在固定 MoE 容量、有限旧记忆与可核算的计算成本下，用共享控制器协调逐 expert 的实际更新，降低达到同一新任务目标时的累计旧知识退化。
 
-**当前状态：已完成七轮合成实验，v7 连续三段学习出现段内旧知识反馈的初步正信号，但尚未完成同等可行性下的稳定验证。** v6 定位到模型筛选瓶颈；v7 保留参数和 Adam 状态连续学习三个新输入域。段内 Feedback 在共同达标历史上的 A 遗忘降低约 13.8%，但平均达标率略低，多重比较敏感性区间跨零。段间 Feedback 则提高达标率、同时增加遗忘。本仓库保留正负结果、原始数据与冻结协议，不代表真实 learned-router MoE 或语言模型上的验证。
+**当前状态（2026-10-02）：七轮合成实验之外，已完成 v8 真实 CIFAR-100 多层 MoE pilot；尚未验证学习控制器的优势。** v8 实现两层逐 expert 更新、固定总记忆、全部历史表现矩阵，以及共享局部/协调 GRPO 对照。两个学习臂都选中初始化，确定性动作等同全量更新。冻结 experts 的遗忘较少，但实际更新数多 25%；仅 3 个 audit 根历史，不能作正式优越性结论。[结果解读](experiments/v8_multilayer_retention/结果解读.md) · [诊断图](experiments/v8_multilayer_retention/results/pilot/analysis/diagnostics.png)。
+
+此前 v7 段内 Feedback 在共同达标历史上的 A 遗忘降低约 13.8%，但达标率非劣和多重比较稳健性尚未验证。v1–v7 保持原样。v8 使用固定原始图像路由、任务 ID 可见的多头分类，不代表 learned-router 或语言模型验证。
 
 ## 研究设计与讨论记录
 
-2026-09-17 更新：主线明确为小型多层 MoE 上的共享逐 expert 控制，采用层/全局协调和结构化探索，比较 GRPO、PPO 与强协调规则。后续按成本推进语言 LoRA expert 和原生 MoE 两层验证。目标 loss、累计遗忘、有限记忆与泛化协议先在开发阶段锁定；以下方案不代表新增已完成实验。
+2026-09-17 确定多层逐 expert 主线，2026-10-02 在 v8 完成第一版小规模实现。层/全局池化与因子化 GRPO 已进入 pilot；结构化探索、PPO、充分调优的规则、主动监测和语言平台仍待开展。目标 loss、累计遗忘、有限记忆与泛化协议在开发阶段锁定。
 
 - [总体方案与实施主线](docs/mainline-plan.md)：研究主题、三层证据路线、评价/数据协议和 pilot 成本。
 - [研究范围与已有证据](docs/research.md)：核心问题、v1–v7 结论与边界。
@@ -14,6 +16,7 @@
 - [讨论决策与来源边界](docs/discussion-decisions-2026-09-17.md)：已确定原则、外部意见的采纳/修正、用户报告但未在仓库复现的早期结果。
 - [带注释的参考文献](docs/references.md)：20 条文献与平台线索、原始链接、用途与核实状态。
 - [真实 MoE 路由待办](docs/future-real-moe-routing.md)：当前路由与历史依赖的后续改进。
+- [v8 校验记录](docs/v8-validation.md)：真实数据 pilot、机制测试、完整成本与结果边界。
 
 ## 快速开始
 
@@ -27,7 +30,7 @@ python scripts/verify_artifacts.py
 python scripts/test_all.py
 ```
 
-共 73 项实验机制与统计检查，各版本在独立进程中测试，避免同名模块串用。已有记录在 `experiments/*/results/`，首次查看结果无需重新训练。
+共 100 项实验机制与统计检查，各版本在独立进程中测试，避免同名模块串用。已有记录在 `experiments/*/results/`，首次查看结果无需重新训练。v8 首次运行另需下载官方 CIFAR-100（约 161 MB），不需要新增 Python 依赖或 GPU。
 
 ## 实验索引
 
@@ -40,6 +43,7 @@ python scripts/test_all.py
 | [v5](experiments/v5_calibration/) | 不限定冲突形态时，固定选择和时序安排是否有可复测收益 | 固定选择参考有局部收益；加入切换计划未稳定胜过时间基线，全可行子集未胜过直接冻结 | [报告](experiments/v5_calibration/results/main/analysis/实验报告.md)、[解读](experiments/v5_calibration/结果解读.md) |
 | [v6](experiments/v6_learning_diagnostics/) | 负结果是否来自学习能力、监督目标或模型筛选问题 | 基本学习检查通过；闭环筛选改善结果，但尚未验证实时反馈增益 | [报告](experiments/v6_learning_diagnostics/results/main/analysis/实验报告.md)、[解读](experiments/v6_learning_diagnostics/结果解读.md) |
 | [v7](experiments/v7_sequence_feedback/) | 连续多段学习是否让段间或段内旧知识反馈更有价值 | 段内遗忘约 −13.8%，但可行性略低、校正敏感性跨零；段间呈达标/遗忘取舍 | [报告](experiments/v7_sequence_feedback/results/main/analysis/实验报告.md)、[解读](experiments/v7_sequence_feedback/结果解读.md) |
+| [v8](experiments/v8_multilayer_retention/) | 真实图像、多层逐 expert、固定总记忆下的全历史保留 | pilot 跑通；两个 GRPO 学习臂选中初始化并执行全 1，未验证协调优势 | [报告](experiments/v8_multilayer_retention/results/pilot/analysis/实验报告.md)、[解读](experiments/v8_multilayer_retention/结果解读.md) |
 
 七轮实验源码与记录完整保留，版本之间有意保留冻结的模型副本。`docs/import_manifest.json` 校验前三轮导入文件；原有 `locked_protocol.json` 和各版本校验清单也保留。v3 阈值文字错误见 [勘误](docs/v3-erratum.md)，v4 的机制解释见 [结果解读](experiments/v4_state_aggregation/结果解读.md)。新多层环境的当前路由要求见 [后续待办](docs/future-real-moe-routing.md)，不改动归档实验。
 
@@ -49,6 +53,7 @@ python scripts/test_all.py
 
 ```bash
 python scripts/run_experiment.py v7 --out runs/v7-reproduction
+python scripts/run_experiment.py v8 --pilot --download --out runs/v8-pilot
 python scripts/run_experiment.py v7 --pilot --out runs/v7-pilot
 python scripts/run_experiment.py v6 --out runs/v6-reproduction
 python scripts/run_experiment.py v6 --pilot --out runs/v6-pilot
@@ -71,6 +76,7 @@ python scripts/run_experiment.py v1 --out runs/v1-reproduction
 - v7 三个 B 分别达标不等于最后仍全部保留；A 记忆固定，B 最终保留另报。
 - 达到统一 loss 阈值不等于端点 loss 数字严格相同，具体报告保留敏感性分析。
 - v2–v7 动作作用于 Adam 的实际参数位移；路由和初始保护组固定。
+- v8 同样控制实际位移；任务 1 后控制两层各 8 个专家，CNN/分类头正常更新。在线监测达标与最终测试达标分开，完整矩阵区分初始泛化差距和后续遗忘。
 - 预算使用明确的工作量代理，并非精确 FLOPs 或相同墙钟时间。
 - 已查看的最终测试历史不可用于下一轮调参；新设计应使用新的测试历史。
 

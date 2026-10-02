@@ -1,0 +1,51 @@
+{
+  "controller_training": {
+    "learned_local_881": {
+      "learner_updates": 845,
+      "train_examples": 49440,
+      "monitor_examples": 53472,
+      "route_examples": 16416,
+      "controller_calls": 169,
+      "branches": 24,
+      "prefix_updates": 145,
+      "clone_seconds": 0.13780837699999804,
+      "controller_update_seconds": 0.0064756649999981875,
+      "seconds": 5.8101973330000005
+    },
+    "learned_coordinated_881": {
+      "learner_updates": 850,
+      "train_examples": 49760,
+      "monitor_examples": 53632,
+      "route_examples": 16416,
+      "controller_calls": 170,
+      "branches": 24,
+      "prefix_updates": 145,
+      "clone_seconds": 0.1365028339999963,
+      "controller_update_seconds": 0.0070367079999993365,
+      "seconds": 5.8420120409999985
+    }
+  },
+  "calibration": [
+    {
+      "learner_updates": 400,
+      "train_examples": 23040,
+      "monitor_examples": 15088,
+      "audit_examples": 0,
+      "controller_calls": 80,
+      "route_examples": 864,
+      "seconds": 2.2938778340000003
+    },
+    {
+      "learner_updates": 400,
+      "train_examples": 23040,
+      "monitor_examples": 15088,
+      "audit_examples": 0,
+      "controller_calls": 80,
+      "route_examples": 864,
+      "seconds": 2.300637084
+    }
+  ],
+  "model_selection": "all candidate rollout and dev endpoint-evaluation costs stored in models/*_selection.json; selected dev rows also appear in results, do not double-count",
+  "execution_rows": 40,
+  "wall_seconds": 39.358598583
+}

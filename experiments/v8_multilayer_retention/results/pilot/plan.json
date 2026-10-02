@@ -1,0 +1,226 @@
+{
+  "status": "pilot",
+  "confirmatory": false,
+  "config": {
+    "tasks": 5,
+    "experts": 8,
+    "width": 32,
+    "expert_hidden": 64,
+    "top_k": 2,
+    "train_per_class": 48,
+    "monitor_per_class": 16,
+    "eval_per_class": 32,
+    "replay_capacity": 128,
+    "monitor_capacity": 128,
+    "batch": 32,
+    "max_steps": 80,
+    "interval": 5,
+    "lr": 0.003,
+    "replay_weight": 0.5,
+    "target_loss": 1.35
+  },
+  "roots": {
+    "dev": [
+      88200,
+      88201
+    ],
+    "audit": [
+      88300,
+      88301,
+      88302
+    ]
+  },
+  "training_roots": [
+    88100,
+    88101,
+    88102,
+    88103
+  ],
+  "class_partition": {
+    "train": [
+      11,
+      43,
+      16,
+      54,
+      40,
+      99,
+      45,
+      31,
+      53,
+      95,
+      42,
+      8,
+      27,
+      1,
+      93,
+      33,
+      59,
+      21,
+      63,
+      66,
+      56,
+      69,
+      20,
+      9,
+      75,
+      76,
+      84,
+      80,
+      89,
+      60,
+      3,
+      36,
+      47,
+      68,
+      10,
+      83,
+      58,
+      74,
+      18,
+      64,
+      14,
+      29,
+      97,
+      62,
+      50,
+      13,
+      78,
+      71,
+      98,
+      51
+    ],
+    "dev": [
+      88,
+      5,
+      91,
+      44,
+      65,
+      87,
+      23,
+      70,
+      28,
+      94,
+      90,
+      73,
+      24,
+      79,
+      82,
+      55,
+      32,
+      6,
+      49,
+      12,
+      34,
+      57,
+      4,
+      96,
+      39
+    ],
+    "audit": [
+      17,
+      38,
+      46,
+      52,
+      41,
+      72,
+      19,
+      25,
+      30,
+      81,
+      22,
+      92,
+      26,
+      7,
+      0,
+      85,
+      37,
+      48,
+      35,
+      67,
+      86,
+      2,
+      15,
+      77,
+      61
+    ]
+  },
+  "policy_seeds": [
+    881
+  ],
+  "rounds": 6,
+  "group_size": 4,
+  "expected_policy_seeds": {
+    "global_0": [
+      null
+    ],
+    "global_0.5": [
+      null
+    ],
+    "global_1": [
+      null
+    ],
+    "group_rule": [
+      null
+    ],
+    "local_rule": [
+      null
+    ],
+    "coordinated_rule": [
+      null
+    ],
+    "learned_local": [
+      881
+    ],
+    "learned_coordinated": [
+      881
+    ]
+  },
+  "dataset": {
+    "name": "CIFAR-100",
+    "archive_md5": "eb9058c3a382ffc7106e4002c42a8d85",
+    "source": "https://www.cs.toronto.edu/~kriz/cifar.html"
+  },
+  "target_rule": "90th percentile of minimum observed development full-update monitor CE + .03, clipped to [.8,1.55]",
+  "target_calibration": "Full-budget global_1 on dev roots only, before controller training; no official test data.",
+  "optimizer": "Adam, no weight decay; actual expert displacements scaled; moments retained at zero multiplier",
+  "model_scope": "trainable CNN stem, two residual fixed-raw-image top2 MoE layers, task-ID-visible 5way heads; all shared modules update normally; all methods use global_1 for first task, control starts at task2",
+  "actions": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "observation_features": [
+    "old_usage",
+    "old_gate_mass",
+    "new_usage",
+    "new_gate_mass",
+    "log_old_coverage",
+    "has_old_observation",
+    "last_multiplier",
+    "new_loss_over_target",
+    "recent_new_progress",
+    "remaining_budget",
+    "task_fraction",
+    "cumulative_memory_forgetting",
+    "recent_old_change"
+  ],
+  "memory": "128 replay + 128 monitor total across all past tasks; task-balanced prefix shrink; fixed per-sample learn-time monitor references",
+  "evaluation": "task mean positive loss increase from its own learn-time diagonal; full lower triangular matrix; dev uses disjoint official-train eval subset; audit uses official test",
+  "selection_rule": "lexicographic dev sequence failure fraction, mean all-root dev endpoint forgetting, learner updates; init/mid/final same candidates for both learned arms",
+  "non_inferiority": "not tested: pilot only, no confirmatory claim or selected-success-only superiority",
+  "costs": "learner updates, train/monitor/endpoint-evaluation/route example passes, controller calls, clone/controller/training/selection seconds; audit_examples field means endpoint evaluation for either split; NOT equal FLOPs",
+  "data_scope": "finite old memory inside each learner and training reward; offline development evaluation has extra disjoint old examples, counted separately",
+  "source_hashes": {
+    "analyze.py": "f1e8b30702b13162a66dc9744ba17863b77ebb2f594502967639b01637d320e9",
+    "control.py": "60ad2311234b412b0730cc943dd444c705f07d2ec2dbb8c38edd38575563351b",
+    "data.py": "80bd35c90f300631a641025b0e0821c94836cecc2b425bd0a1604075183c9b9b",
+    "environment.py": "4906a75c7d1b7efe66d8624f0462a4d82b47dfdef32c40e1d51c3d46ea84f898",
+    "model.py": "d72d49a2157119c41d9cd3eb779581fca18ed6e3b6162d4e0ca6c66c2b195d06",
+    "run_retention.py": "362a1042902b51d2c56efc83090c1a95edd15cb0c7e286755a21717df32dec0f",
+    "test_analysis.py": "4158cc1f91584df8078f6e932a05fa90e6f11c4808a1f777266ff7a85aae1ff0",
+    "test_control.py": "2288671e458626c59521830c5dc2cb4763d24f0252702036b6ac2234e5c4aa96",
+    "test_data.py": "dc20795bb6ad02e008ed70906edb6e12f848f62204177ae8c26f39fecd499e73",
+    "test_environment.py": "de5d5b81528bcaecb7a7da41d28c09b25edd21fdfad65416834f190316ca2434",
+    "test_model.py": "feca5e31fbede141b2a36563350c4aa2248a4dfa8500c98c71788c657810debb"
+  }
+}
