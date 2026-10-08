@@ -1,0 +1,55 @@
+{
+  "status": "engineering_only",
+  "model": {
+    "id": "random-tiny-HuggingFace-OLMoE",
+    "revision": null,
+    "dtype": "float32",
+    "optimizer_master_dtype": "float32",
+    "attention": "sdpa",
+    "layers": [
+      0,
+      1
+    ],
+    "experts": [
+      0,
+      1
+    ],
+    "selection": "Fixed a priori indices; no outcome-based expert selection. Record token exposure, displacement and downstream routing changes.",
+    "frozen": "all parameters other than the named experts, including routers, attention, norms, embeddings and output head"
+  },
+  "runs": [
+    {
+      "root": 100201,
+      "baseline_trajectories": 6,
+      "branches": 20,
+      "cost": {
+        "learner_updates": 64,
+        "train_tokens": 960,
+        "evaluation_tokens": 3960,
+        "evaluation_calls": 132,
+        "restore_seconds": 0.011810543000000395,
+        "training_seconds": 0.09188191400000023,
+        "evaluation_seconds": 0.14694904700000144,
+        "checkpoint_seconds": 0.0019770830000001016
+      }
+    }
+  ],
+  "physical_cost": {
+    "learner_updates": 64,
+    "train_tokens": 960,
+    "evaluation_tokens": 3960,
+    "evaluation_calls": 132,
+    "restore_seconds": 0.011810543000000395,
+    "training_seconds": 0.09188191400000023,
+    "evaluation_seconds": 0.14694904700000144,
+    "checkpoint_seconds": 0.0019770830000001016
+  },
+  "wall_seconds": 1.300882959,
+  "overall_train_tokens_per_second": 737.9603163823134,
+  "training_tokens_per_second": 10448.193319089953,
+  "peak_cuda_allocated_bytes": 0,
+  "peak_cuda_reserved_bytes": 0,
+  "feedback_benefit_tested": false,
+  "final_test_evaluated": false,
+  "caveat": "Random tiny architecture smoke is not a pretrained language result."
+}

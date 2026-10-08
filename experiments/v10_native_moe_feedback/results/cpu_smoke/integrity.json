@@ -1,0 +1,12 @@
+{
+  "status": "engineering_only",
+  "roots": 1,
+  "branches": 20,
+  "validated_source_files": 8,
+  "physical_updates": 64,
+  "train_tokens": 960,
+  "evaluated_tokens": 3960,
+  "paired_batches_verified": true,
+  "final_test_evaluated": false,
+  "feedback_benefit_tested": false
+}

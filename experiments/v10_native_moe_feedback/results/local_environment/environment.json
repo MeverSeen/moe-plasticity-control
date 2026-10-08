@@ -1,0 +1,15 @@
+{
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "versions": {
+    "torch": "2.8.0",
+    "numpy": "2.0.2",
+    "transformers": "4.57.1",
+    "safetensors": "0.7.0",
+    "huggingface-hub": "0.36.2"
+  },
+  "cuda_available": false,
+  "cuda_devices": [],
+  "mps_available": false,
+  "threads": 4
+}

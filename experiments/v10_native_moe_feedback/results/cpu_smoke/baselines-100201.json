@@ -1,0 +1,1466 @@
+[
+  {
+    "root": 100201,
+    "method": "global_0",
+    "initial": {
+      "A_monitor": {
+        "loss": 4.568986256917317,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.01549283300000015
+      },
+      "A_selection": {
+        "loss": 4.571450551350911,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010562080000000584
+      },
+      "B_monitor": {
+        "loss": 4.565275065104166,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010414170000001555
+      },
+      "B_selection": {
+        "loss": 4.603772481282552,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010061249999999688
+      }
+    },
+    "endpoint": {
+      "A_monitor": {
+        "loss": 4.568986256917317,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010950419999999905
+      },
+      "A_selection": {
+        "loss": 4.571450551350911,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010066659999998784
+      },
+      "B_monitor": {
+        "loss": 4.565275065104166,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010064590000000706
+      },
+      "B_selection": {
+        "loss": 4.603772481282552,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0009961249999999033
+      }
+    },
+    "trajectory": [
+      {
+        "step": 1,
+        "action": 0.0,
+        "train_CE": 4.606129455566406,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.00918591395020485,
+        "displacement": {
+          "master_displacement_l2": 0.0,
+          "model_displacement_l2": 0.0,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.009185914110273018
+        },
+        "routing": {
+          "selected_expert_assignments": 34,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              9,
+              9,
+              7,
+              7
+            ],
+            "1": [
+              8,
+              8,
+              11,
+              5
+            ]
+          }
+        },
+        "batch_digest": "476f58e7faf2467cd7915f0c9d6468d87884157187c4f431e355e7befc4c9ce7",
+        "seconds": 0.010579082999999878,
+        "evaluation": null
+      },
+      {
+        "step": 2,
+        "action": 0.0,
+        "train_CE": 4.586668395996094,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.008900541812181473,
+        "displacement": {
+          "master_displacement_l2": 0.0,
+          "model_displacement_l2": 0.0,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.008900541207688562
+        },
+        "routing": {
+          "selected_expert_assignments": 30,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              7,
+              8,
+              8,
+              9
+            ],
+            "1": [
+              8,
+              7,
+              10,
+              7
+            ]
+          }
+        },
+        "batch_digest": "e3a58c18c271f59855502fe3d96d252ead5e75df0faf0489a010c94f746de606",
+        "seconds": 0.0012913750000000945,
+        "evaluation": {
+          "A_monitor": {
+            "loss": 4.568986256917317,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0010224999999999262
+          },
+          "A_selection": {
+            "loss": 4.571450551350911,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0010344169999998432
+          },
+          "B_monitor": {
+            "loss": 4.565275065104166,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0009988749999998436
+          },
+          "B_selection": {
+            "loss": 4.603772481282552,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0009926250000000802
+          }
+        }
+      },
+      {
+        "step": 3,
+        "action": 0.0,
+        "train_CE": 4.553047180175781,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.011539645493030548,
+        "displacement": {
+          "master_displacement_l2": 0.0,
+          "model_displacement_l2": 0.0,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.011539645804323458
+        },
+        "routing": {
+          "selected_expert_assignments": 35,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              8,
+              8,
+              7,
+              9
+            ],
+            "1": [
+              8,
+              11,
+              8,
+              5
+            ]
+          }
+        },
+        "batch_digest": "1c884546e9f763137cf5103fbde2743550f15eb98337f94a9c1facab11bffe5a",
+        "seconds": 0.0011898749999998959,
+        "evaluation": null
+      },
+      {
+        "step": 4,
+        "action": 0.0,
+        "train_CE": 4.588087972005209,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.009708957746624947,
+        "displacement": {
+          "master_displacement_l2": 0.0,
+          "model_displacement_l2": 0.0,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.009708957337865027
+        },
+        "routing": {
+          "selected_expert_assignments": 31,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              9,
+              5,
+              9,
+              9
+            ],
+            "1": [
+              10,
+              7,
+              7,
+              8
+            ]
+          }
+        },
+        "batch_digest": "0880ad825d15f557907f35866673e9829b395a080f85dafea26fb2958afc3fbf",
+        "seconds": 0.0012314589999999903,
+        "evaluation": {
+          "A_monitor": {
+            "loss": 4.568986256917317,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0010950419999999905
+          },
+          "A_selection": {
+            "loss": 4.571450551350911,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0010066659999998784
+          },
+          "B_monitor": {
+            "loss": 4.565275065104166,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0010064590000000706
+          },
+          "B_selection": {
+            "loss": 4.603772481282552,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0009961249999999033
+          }
+        }
+      }
+    ]
+  },
+  {
+    "root": 100201,
+    "method": "global_0.25",
+    "initial": {
+      "A_monitor": {
+        "loss": 4.568986256917317,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.01549283300000015
+      },
+      "A_selection": {
+        "loss": 4.571450551350911,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010562080000000584
+      },
+      "B_monitor": {
+        "loss": 4.565275065104166,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010414170000001555
+      },
+      "B_selection": {
+        "loss": 4.603772481282552,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010061249999999688
+      }
+    },
+    "endpoint": {
+      "A_monitor": {
+        "loss": 4.568995666503906,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010900000000000354
+      },
+      "A_selection": {
+        "loss": 4.571438598632812,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010103329999999744
+      },
+      "B_monitor": {
+        "loss": 4.565275573730469,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0009873750000000125
+      },
+      "B_selection": {
+        "loss": 4.6037854512532554,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010008750000001232
+      }
+    },
+    "trajectory": [
+      {
+        "step": 1,
+        "action": 0.25,
+        "train_CE": 4.606129455566406,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.00918591395020485,
+        "displacement": {
+          "master_displacement_l2": 0.016958414749791373,
+          "model_displacement_l2": 0.016958414428006094,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.009185914110273018
+        },
+        "routing": {
+          "selected_expert_assignments": 34,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              9,
+              9,
+              7,
+              7
+            ],
+            "1": [
+              8,
+              8,
+              11,
+              5
+            ]
+          }
+        },
+        "batch_digest": "476f58e7faf2467cd7915f0c9d6468d87884157187c4f431e355e7befc4c9ce7",
+        "seconds": 0.0014655829999998815,
+        "evaluation": null
+      },
+      {
+        "step": 2,
+        "action": 0.25,
+        "train_CE": 4.586666361490885,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.008928774856030941,
+        "displacement": {
+          "master_displacement_l2": 0.012095753928303053,
+          "model_displacement_l2": 0.012095754717811016,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.008928774297635167
+        },
+        "routing": {
+          "selected_expert_assignments": 30,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              7,
+              8,
+              8,
+              9
+            ],
+            "1": [
+              8,
+              7,
+              10,
+              7
+            ]
+          }
+        },
+        "batch_digest": "e3a58c18c271f59855502fe3d96d252ead5e75df0faf0489a010c94f746de606",
+        "seconds": 0.001320165999999956,
+        "evaluation": {
+          "A_monitor": {
+            "loss": 4.568989054361979,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.001060083000000045
+          },
+          "A_selection": {
+            "loss": 4.571443939208985,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0010322499999999568
+          },
+          "B_monitor": {
+            "loss": 4.565273284912109,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0010440419999999673
+          },
+          "B_selection": {
+            "loss": 4.6037742614746096,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.001012416000000016
+          }
+        }
+      },
+      {
+        "step": 3,
+        "action": 0.25,
+        "train_CE": 4.553056335449218,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.01154741644859314,
+        "displacement": {
+          "master_displacement_l2": 0.009925803251138416,
+          "model_displacement_l2": 0.009925802861713755,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.01154741726109284
+        },
+        "routing": {
+          "selected_expert_assignments": 35,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              8,
+              8,
+              7,
+              9
+            ],
+            "1": [
+              8,
+              11,
+              8,
+              5
+            ]
+          }
+        },
+        "batch_digest": "1c884546e9f763137cf5103fbde2743550f15eb98337f94a9c1facab11bffe5a",
+        "seconds": 0.001285707999999941,
+        "evaluation": null
+      },
+      {
+        "step": 4,
+        "action": 0.25,
+        "train_CE": 4.588099670410156,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.009708683006465435,
+        "displacement": {
+          "master_displacement_l2": 0.008506699527526291,
+          "model_displacement_l2": 0.008506700382847114,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.009708683097980089
+        },
+        "routing": {
+          "selected_expert_assignments": 31,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              9,
+              5,
+              9,
+              9
+            ],
+            "1": [
+              10,
+              7,
+              7,
+              8
+            ]
+          }
+        },
+        "batch_digest": "0880ad825d15f557907f35866673e9829b395a080f85dafea26fb2958afc3fbf",
+        "seconds": 0.001313375000000061,
+        "evaluation": {
+          "A_monitor": {
+            "loss": 4.568995666503906,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0010900000000000354
+          },
+          "A_selection": {
+            "loss": 4.571438598632812,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0010103329999999744
+          },
+          "B_monitor": {
+            "loss": 4.565275573730469,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0009873750000000125
+          },
+          "B_selection": {
+            "loss": 4.6037854512532554,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0010008750000001232
+          }
+        }
+      }
+    ]
+  },
+  {
+    "root": 100201,
+    "method": "global_0.5",
+    "initial": {
+      "A_monitor": {
+        "loss": 4.568986256917317,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.01549283300000015
+      },
+      "A_selection": {
+        "loss": 4.571450551350911,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010562080000000584
+      },
+      "B_monitor": {
+        "loss": 4.565275065104166,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010414170000001555
+      },
+      "B_selection": {
+        "loss": 4.603772481282552,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010061249999999688
+      }
+    },
+    "endpoint": {
+      "A_monitor": {
+        "loss": 4.5690050760904946,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010729579999999572
+      },
+      "A_selection": {
+        "loss": 4.5714266459147135,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010055830000001986
+      },
+      "B_monitor": {
+        "loss": 4.565276082356771,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0009743750000001938
+      },
+      "B_selection": {
+        "loss": 4.603798166910807,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0009895829999999606
+      }
+    },
+    "trajectory": [
+      {
+        "step": 1,
+        "action": 0.5,
+        "train_CE": 4.606129455566406,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.00918591395020485,
+        "displacement": {
+          "master_displacement_l2": 0.033916829499582746,
+          "model_displacement_l2": 0.03391683078672384,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.009185914110273018
+        },
+        "routing": {
+          "selected_expert_assignments": 34,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              9,
+              9,
+              7,
+              7
+            ],
+            "1": [
+              8,
+              8,
+              11,
+              5
+            ]
+          }
+        },
+        "batch_digest": "476f58e7faf2467cd7915f0c9d6468d87884157187c4f431e355e7befc4c9ce7",
+        "seconds": 0.0012765420000000471,
+        "evaluation": null
+      },
+      {
+        "step": 2,
+        "action": 0.5,
+        "train_CE": 4.586665344238281,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.008962254971265793,
+        "displacement": {
+          "master_displacement_l2": 0.02419181395819583,
+          "model_displacement_l2": 0.02419181440933754,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.008962255095768243
+        },
+        "routing": {
+          "selected_expert_assignments": 30,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              7,
+              8,
+              8,
+              9
+            ],
+            "1": [
+              8,
+              7,
+              10,
+              7
+            ]
+          }
+        },
+        "batch_digest": "e3a58c18c271f59855502fe3d96d252ead5e75df0faf0489a010c94f746de606",
+        "seconds": 0.0013119589999999182,
+        "evaluation": {
+          "A_monitor": {
+            "loss": 4.568991851806641,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0010389579999998677
+          },
+          "A_selection": {
+            "loss": 4.571437072753906,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0009908750000000577
+          },
+          "B_monitor": {
+            "loss": 4.5652717590332035,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.000986583999999846
+          },
+          "B_selection": {
+            "loss": 4.603776295979817,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0009737499999999955
+          }
+        }
+      },
+      {
+        "step": 3,
+        "action": 0.5,
+        "train_CE": 4.553065490722656,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.011573121882975101,
+        "displacement": {
+          "master_displacement_l2": 0.019872375612116647,
+          "model_displacement_l2": 0.019872376435918722,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.011573121551097609
+        },
+        "routing": {
+          "selected_expert_assignments": 35,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              8,
+              8,
+              7,
+              9
+            ],
+            "1": [
+              8,
+              11,
+              8,
+              5
+            ]
+          }
+        },
+        "batch_digest": "1c884546e9f763137cf5103fbde2743550f15eb98337f94a9c1facab11bffe5a",
+        "seconds": 0.0012738339999998072,
+        "evaluation": null
+      },
+      {
+        "step": 4,
+        "action": 0.5,
+        "train_CE": 4.5881103515625,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.009725338779389858,
+        "displacement": {
+          "master_displacement_l2": 0.01701093587339289,
+          "model_displacement_l2": 0.01701093640804583,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.009725339084029104
+        },
+        "routing": {
+          "selected_expert_assignments": 31,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              9,
+              5,
+              9,
+              9
+            ],
+            "1": [
+              10,
+              7,
+              7,
+              8
+            ]
+          }
+        },
+        "batch_digest": "0880ad825d15f557907f35866673e9829b395a080f85dafea26fb2958afc3fbf",
+        "seconds": 0.0012307910000000089,
+        "evaluation": {
+          "A_monitor": {
+            "loss": 4.5690050760904946,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0010729579999999572
+          },
+          "A_selection": {
+            "loss": 4.5714266459147135,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0010055830000001986
+          },
+          "B_monitor": {
+            "loss": 4.565276082356771,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0009743750000001938
+          },
+          "B_selection": {
+            "loss": 4.603798166910807,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0009895829999999606
+          }
+        }
+      }
+    ]
+  },
+  {
+    "root": 100201,
+    "method": "global_0.75",
+    "initial": {
+      "A_monitor": {
+        "loss": 4.568986256917317,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.01549283300000015
+      },
+      "A_selection": {
+        "loss": 4.571450551350911,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010562080000000584
+      },
+      "B_monitor": {
+        "loss": 4.565275065104166,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010414170000001555
+      },
+      "B_selection": {
+        "loss": 4.603772481282552,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010061249999999688
+      }
+    },
+    "endpoint": {
+      "A_monitor": {
+        "loss": 4.5690147399902346,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.000996333000000016
+      },
+      "A_selection": {
+        "loss": 4.57141342163086,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010125839999999275
+      },
+      "B_monitor": {
+        "loss": 4.565276336669922,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0009956250000000555
+      },
+      "B_selection": {
+        "loss": 4.603811645507813,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010427079999999478
+      }
+    },
+    "trajectory": [
+      {
+        "step": 1,
+        "action": 0.75,
+        "train_CE": 4.606129455566406,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.00918591395020485,
+        "displacement": {
+          "master_displacement_l2": 0.05087524464266724,
+          "model_displacement_l2": 0.050875244785682915,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.009185914110273018
+        },
+        "routing": {
+          "selected_expert_assignments": 34,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              9,
+              9,
+              7,
+              7
+            ],
+            "1": [
+              8,
+              8,
+              11,
+              5
+            ]
+          }
+        },
+        "batch_digest": "476f58e7faf2467cd7915f0c9d6468d87884157187c4f431e355e7befc4c9ce7",
+        "seconds": 0.001289625000000072,
+        "evaluation": null
+      },
+      {
+        "step": 2,
+        "action": 0.75,
+        "train_CE": 4.586662801106771,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.009000953286886215,
+        "displacement": {
+          "master_displacement_l2": 0.036296669282555524,
+          "model_displacement_l2": 0.036296668580952526,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.009000953132827477
+        },
+        "routing": {
+          "selected_expert_assignments": 30,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              7,
+              8,
+              8,
+              9
+            ],
+            "1": [
+              8,
+              7,
+              10,
+              7
+            ]
+          }
+        },
+        "batch_digest": "e3a58c18c271f59855502fe3d96d252ead5e75df0faf0489a010c94f746de606",
+        "seconds": 0.0012754589999999233,
+        "evaluation": {
+          "A_monitor": {
+            "loss": 4.568994394938151,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0009846250000000722
+          },
+          "A_selection": {
+            "loss": 4.571429697672526,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0009750830000001542
+          },
+          "B_monitor": {
+            "loss": 4.565269724527995,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0009721670000000238
+          },
+          "B_selection": {
+            "loss": 4.603778076171875,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0009685420000000722
+          }
+        }
+      },
+      {
+        "step": 3,
+        "action": 0.75,
+        "train_CE": 4.553074137369792,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.011616919189691544,
+        "displacement": {
+          "master_displacement_l2": 0.02983997420146724,
+          "model_displacement_l2": 0.029839973104220652,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.011616919134843617
+        },
+        "routing": {
+          "selected_expert_assignments": 35,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              8,
+              8,
+              7,
+              9
+            ],
+            "1": [
+              8,
+              11,
+              8,
+              5
+            ]
+          }
+        },
+        "batch_digest": "1c884546e9f763137cf5103fbde2743550f15eb98337f94a9c1facab11bffe5a",
+        "seconds": 0.0012363330000000339,
+        "evaluation": null
+      },
+      {
+        "step": 4,
+        "action": 0.75,
+        "train_CE": 4.588122049967448,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.009758816100656986,
+        "displacement": {
+          "master_displacement_l2": 0.025516429526883187,
+          "model_displacement_l2": 0.0255164294555962,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.00975881687071871
+        },
+        "routing": {
+          "selected_expert_assignments": 31,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              9,
+              5,
+              9,
+              9
+            ],
+            "1": [
+              10,
+              7,
+              7,
+              8
+            ]
+          }
+        },
+        "batch_digest": "0880ad825d15f557907f35866673e9829b395a080f85dafea26fb2958afc3fbf",
+        "seconds": 0.001243749999999988,
+        "evaluation": {
+          "A_monitor": {
+            "loss": 4.5690147399902346,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.000996333000000016
+          },
+          "A_selection": {
+            "loss": 4.57141342163086,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0010125839999999275
+          },
+          "B_monitor": {
+            "loss": 4.565276336669922,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0009956250000000555
+          },
+          "B_selection": {
+            "loss": 4.603811645507813,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0010427079999999478
+          }
+        }
+      }
+    ]
+  },
+  {
+    "root": 100201,
+    "method": "global_1",
+    "initial": {
+      "A_monitor": {
+        "loss": 4.568986256917317,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.01549283300000015
+      },
+      "A_selection": {
+        "loss": 4.571450551350911,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010562080000000584
+      },
+      "B_monitor": {
+        "loss": 4.565275065104166,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010414170000001555
+      },
+      "B_selection": {
+        "loss": 4.603772481282552,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010061249999999688
+      }
+    },
+    "endpoint": {
+      "A_monitor": {
+        "loss": 4.569024149576823,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010023749999998888
+      },
+      "A_selection": {
+        "loss": 4.571400451660156,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0009919579999999595
+      },
+      "B_monitor": {
+        "loss": 4.565275319417318,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010021249999998538
+      },
+      "B_selection": {
+        "loss": 4.603824869791667,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.00097983299999993
+      }
+    },
+    "trajectory": [
+      {
+        "step": 1,
+        "action": 1.0,
+        "train_CE": 4.606129455566406,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.00918591395020485,
+        "displacement": {
+          "master_displacement_l2": 0.06783365899916549,
+          "model_displacement_l2": 0.06783365899916549,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.009185914110273018
+        },
+        "routing": {
+          "selected_expert_assignments": 34,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              9,
+              9,
+              7,
+              7
+            ],
+            "1": [
+              8,
+              8,
+              11,
+              5
+            ]
+          }
+        },
+        "batch_digest": "476f58e7faf2467cd7915f0c9d6468d87884157187c4f431e355e7befc4c9ce7",
+        "seconds": 0.001232165999999868,
+        "evaluation": null
+      },
+      {
+        "step": 2,
+        "action": 1.0,
+        "train_CE": 4.586660766601563,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.009044837206602097,
+        "displacement": {
+          "master_displacement_l2": 0.048413978580213526,
+          "model_displacement_l2": 0.048413978580213526,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.009044836863665731
+        },
+        "routing": {
+          "selected_expert_assignments": 30,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              7,
+              8,
+              8,
+              9
+            ],
+            "1": [
+              8,
+              7,
+              10,
+              7
+            ]
+          }
+        },
+        "batch_digest": "e3a58c18c271f59855502fe3d96d252ead5e75df0faf0489a010c94f746de606",
+        "seconds": 0.0012704999999999522,
+        "evaluation": {
+          "A_monitor": {
+            "loss": 4.568997446695963,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.000993042000000166
+          },
+          "A_selection": {
+            "loss": 4.571422322591146,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0009824169999999022
+          },
+          "B_monitor": {
+            "loss": 4.565267690022787,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.000981542000000113
+          },
+          "B_selection": {
+            "loss": 4.603780364990234,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0009725420000001872
+          }
+        }
+      },
+      {
+        "step": 3,
+        "action": 1.0,
+        "train_CE": 4.553082784016927,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.011678153648972511,
+        "displacement": {
+          "master_displacement_l2": 0.03980405569569505,
+          "model_displacement_l2": 0.03980405569569505,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.011678153743782858
+        },
+        "routing": {
+          "selected_expert_assignments": 35,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              8,
+              8,
+              7,
+              9
+            ],
+            "1": [
+              8,
+              11,
+              8,
+              5
+            ]
+          }
+        },
+        "batch_digest": "1c884546e9f763137cf5103fbde2743550f15eb98337f94a9c1facab11bffe5a",
+        "seconds": 0.001268459000000055,
+        "evaluation": null
+      },
+      {
+        "step": 4,
+        "action": 1.0,
+        "train_CE": 4.588132731119791,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.009809012524783611,
+        "displacement": {
+          "master_displacement_l2": 0.03402602328749315,
+          "model_displacement_l2": 0.03402602328749315,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.009809012301991167
+        },
+        "routing": {
+          "selected_expert_assignments": 31,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              9,
+              5,
+              9,
+              9
+            ],
+            "1": [
+              10,
+              7,
+              7,
+              8
+            ]
+          }
+        },
+        "batch_digest": "0880ad825d15f557907f35866673e9829b395a080f85dafea26fb2958afc3fbf",
+        "seconds": 0.0012952919999997814,
+        "evaluation": {
+          "A_monitor": {
+            "loss": 4.569024149576823,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0010023749999998888
+          },
+          "A_selection": {
+            "loss": 4.571400451660156,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0009919579999999595
+          },
+          "B_monitor": {
+            "loss": 4.565275319417318,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0010021249999998538
+          },
+          "B_selection": {
+            "loss": 4.603824869791667,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.00097983299999993
+          }
+        }
+      }
+    ]
+  },
+  {
+    "root": 100201,
+    "method": "time_decay",
+    "initial": {
+      "A_monitor": {
+        "loss": 4.568986256917317,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.01549283300000015
+      },
+      "A_selection": {
+        "loss": 4.571450551350911,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010562080000000584
+      },
+      "B_monitor": {
+        "loss": 4.565275065104166,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010414170000001555
+      },
+      "B_selection": {
+        "loss": 4.603772481282552,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010061249999999688
+      }
+    },
+    "endpoint": {
+      "A_monitor": {
+        "loss": 4.5690050760904946,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0009939159999998726
+      },
+      "A_selection": {
+        "loss": 4.5714167277018225,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0009867089999999745
+      },
+      "B_monitor": {
+        "loss": 4.5652717590332035,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0010082919999998552
+      },
+      "B_selection": {
+        "loss": 4.603794860839844,
+        "tokens": 30,
+        "examples": 2,
+        "seconds": 0.0009824590000000466
+      }
+    },
+    "trajectory": [
+      {
+        "step": 1,
+        "action": 1.0,
+        "train_CE": 4.606129455566406,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.00918591395020485,
+        "displacement": {
+          "master_displacement_l2": 0.06783365899916549,
+          "model_displacement_l2": 0.06783365899916549,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.009185914110273018
+        },
+        "routing": {
+          "selected_expert_assignments": 34,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              9,
+              9,
+              7,
+              7
+            ],
+            "1": [
+              8,
+              8,
+              11,
+              5
+            ]
+          }
+        },
+        "batch_digest": "476f58e7faf2467cd7915f0c9d6468d87884157187c4f431e355e7befc4c9ce7",
+        "seconds": 0.0013760409999998835,
+        "evaluation": null
+      },
+      {
+        "step": 2,
+        "action": 0.75,
+        "train_CE": 4.586660766601563,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.009044837206602097,
+        "displacement": {
+          "master_displacement_l2": 0.03631048342168196,
+          "model_displacement_l2": 0.03631048352187282,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.009044836863665731
+        },
+        "routing": {
+          "selected_expert_assignments": 30,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              7,
+              8,
+              8,
+              9
+            ],
+            "1": [
+              8,
+              7,
+              10,
+              7
+            ]
+          }
+        },
+        "batch_digest": "e3a58c18c271f59855502fe3d96d252ead5e75df0faf0489a010c94f746de606",
+        "seconds": 0.0013323330000001299,
+        "evaluation": {
+          "A_monitor": {
+            "loss": 4.568994140625,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0010258340000000032
+          },
+          "A_selection": {
+            "loss": 4.571425374348959,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0009824579999999639
+          },
+          "B_monitor": {
+            "loss": 4.565267690022787,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0009827919999998436
+          },
+          "B_selection": {
+            "loss": 4.603777821858724,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0009660000000000224
+          }
+        }
+      },
+      {
+        "step": 3,
+        "action": 0.5,
+        "train_CE": 4.553080240885417,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.011655460111796856,
+        "displacement": {
+          "master_displacement_l2": 0.019906754349225318,
+          "model_displacement_l2": 0.019906753618221397,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.011655460435054051
+        },
+        "routing": {
+          "selected_expert_assignments": 35,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              8,
+              8,
+              7,
+              9
+            ],
+            "1": [
+              8,
+              11,
+              8,
+              5
+            ]
+          }
+        },
+        "batch_digest": "1c884546e9f763137cf5103fbde2743550f15eb98337f94a9c1facab11bffe5a",
+        "seconds": 0.0012499159999999065,
+        "evaluation": null
+      },
+      {
+        "step": 4,
+        "action": 0.25,
+        "train_CE": 4.588124593098958,
+        "tokens": 15,
+        "gradient_norm_before_clip": 0.009781931526958942,
+        "displacement": {
+          "master_displacement_l2": 0.00850577276361257,
+          "model_displacement_l2": 0.00850577276361257,
+          "parameters_with_grad": 12,
+          "gradient_l2": 0.009781931300874005
+        },
+        "routing": {
+          "selected_expert_assignments": 31,
+          "all_expert_assignments": 64,
+          "layer_expert_assignments": {
+            "0": [
+              9,
+              5,
+              9,
+              9
+            ],
+            "1": [
+              10,
+              7,
+              7,
+              8
+            ]
+          }
+        },
+        "batch_digest": "0880ad825d15f557907f35866673e9829b395a080f85dafea26fb2958afc3fbf",
+        "seconds": 0.0012707500000002092,
+        "evaluation": {
+          "A_monitor": {
+            "loss": 4.5690050760904946,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0009939159999998726
+          },
+          "A_selection": {
+            "loss": 4.5714167277018225,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0009867089999999745
+          },
+          "B_monitor": {
+            "loss": 4.5652717590332035,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0010082919999998552
+          },
+          "B_selection": {
+            "loss": 4.603794860839844,
+            "tokens": 30,
+            "examples": 2,
+            "seconds": 0.0009824590000000466
+          }
+        }
+      }
+    ]
+  }
+]

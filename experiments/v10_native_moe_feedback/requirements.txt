@@ -1,0 +1,9 @@
+# Use an isolated environment; original v1-v9 requirements remain unchanged.
+torch==2.8.0
+numpy==2.0.2
+transformers==4.57.1
+safetensors==0.7.0
+huggingface-hub==0.36.2
+tokenizers==0.22.2
+# Only the offline corpus preparation step needs Parquet support.
+pyarrow==18.1.0

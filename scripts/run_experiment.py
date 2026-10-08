@@ -9,7 +9,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 VERSIONS = {"v1": "v1_expert_control", "v2": "v2_feedback_control", "v3": "v3_branching",
             "v4": "v4_state_aggregation", "v5": "v5_calibration", "v6": "v6_learning_diagnostics", "v7": "v7_sequence_feedback",
-            "v8": "v8_multilayer_retention", "v9": "v9_learning_pressure"}
+            "v8": "v8_multilayer_retention", "v9": "v9_learning_pressure", "v10": "v10_native_moe_feedback"}
 
 
 def main():
@@ -17,12 +17,17 @@ def main():
     parser.add_argument("version", choices=VERSIONS)
     parser.add_argument("--out", type=Path)
     parser.add_argument("--pilot", action="store_true", help="Small v3–v9 preflight.")
-    parser.add_argument("--download", action="store_true", help="Allow v8/v9 to fetch official CIFAR-100.")
+    parser.add_argument("--download", action="store_true", help="Allow v8/v9 data or v10 pinned model download.")
+    parser.add_argument("--mode", choices=['inspect', 'smoke', 'preflight', 'baselines', 'branches'], help='v10 only; defaults to inspect.')
+    parser.add_argument("--data", type=Path, help='v10 prepared A/B JSONL corpus.')
+    parser.add_argument("--device", help='v10 CUDA device, such as cuda:0.')
     args = parser.parse_args()
     if args.pilot and args.version not in {"v3", "v4", "v5", "v6", "v7", "v8", "v9"}:
         parser.error("--pilot is available only for v3–v9")
-    if args.download and args.version not in {"v8", "v9"}:
-        parser.error("--download is available only for v8/v9")
+    if args.download and args.version not in {"v8", "v9", "v10"}:
+        parser.error("--download is available only for v8/v9/v10")
+    if args.version != "v10" and (args.mode or args.data or args.device):
+        parser.error('--mode/--data/--device are available only for v10')
     output = (args.out or ROOT / "runs" / f"{args.version}-{datetime.now():%Y%m%d-%H%M%S}").resolve()
     if output.exists():
         parser.error(f"Choose a new output directory: {output}")
@@ -32,7 +37,16 @@ def main():
     env = dict(os.environ)
     env.setdefault("MPLCONFIGDIR", str(ROOT / ".cache" / "matplotlib"))
     env.setdefault("XDG_CACHE_HOME", str(ROOT / ".cache"))
-    if args.version in {"v3", "v4", "v5", "v6", "v7", "v8", "v9"}:
+    if args.version == 'v10':
+        command = ['run_native.py', '--mode', args.mode or 'inspect', '--out', str(output)]
+        if args.data:
+            command += ['--data', str(args.data.resolve())]
+        if args.device:
+            command += ['--device', args.device]
+        if args.download:
+            command += ['--download']
+        commands = [command]
+    elif args.version in {"v3", "v4", "v5", "v6", "v7", "v8", "v9"}:
         entry = {"v3": "branching.py", "v4": "dagger.py", "v5": "calibrate.py", "v6": "diagnose.py", "v7": "run_sequence.py", "v8": "run_retention.py", "v9": "run_pressure.py"}[args.version]
         commands = [[entry, "--out", str(output)]]
         if args.pilot:

@@ -2,6 +2,8 @@
 
 研究持续学习中的专家更新控制：在固定 MoE 容量、有限旧记忆与可核算的计算成本下，用共享控制器协调逐 expert 的实际更新，降低达到同一新任务目标时的累计旧知识退化。
 
+**启动更新（2026-10-08）：v10 原生语言 MoE 的协议、数据准备和开发入口已实现。** CPU 随机小型 OLMoE 的机制检查通过；真实语料已准备。7B 预训练模型的 GPU 预检等待服务器连接，尚无新研究结论。[v10 说明](experiments/v10_native_moe_feedback/README.md) · [启动校验](docs/v10-preflight.md)。
+
 **当前状态（2026-10-02）：已完成 v8 真实图像多层 MoE pilot，以及 v9 的 180 条学习压力与模块干预开发轨迹；尚未验证学习控制器的优势。** v9 中更严的新任务目标没有使全量专家更新占优。固定 80 步时，全量更新训练/开发 CE 为 0.478/2.093，零专家位移且 stem/任务头可训练时为 1.005/1.226，提示当前配置的泛化与更新稳定性问题。仅开发数据、6 个共享类别池 roots，不能推广为专家无用。[v9 解读](experiments/v9_learning_pressure/结果解读.md) · [学习曲线](experiments/v9_learning_pressure/results/development/analysis/learning_curves.png)。
 
 v8 实现两层逐 expert 更新、固定总记忆、全部历史表现矩阵和局部/协调 GRPO。两个学习臂均选中初始化并执行全量更新；冻结 experts 遗忘较少，但实际更新数多 25%。仅 3 个 audit 根历史，不能作正式优越性结论。[v8 解读](experiments/v8_multilayer_retention/结果解读.md)。
@@ -48,6 +50,7 @@ python scripts/test_all.py
 | [v7](experiments/v7_sequence_feedback/) | 连续多段学习是否让段间或段内旧知识反馈更有价值 | 段内遗忘约 −13.8%，但可行性略低、校正敏感性跨零；段间呈达标/遗忘取舍 | [报告](experiments/v7_sequence_feedback/results/main/analysis/实验报告.md)、[解读](experiments/v7_sequence_feedback/结果解读.md) |
 | [v8](experiments/v8_multilayer_retention/) | 真实图像、多层逐 expert、固定总记忆下的全历史保留 | pilot 跑通；两个 GRPO 学习臂选中初始化并执行全 1，未验证协调优势 | [报告](experiments/v8_multilayer_retention/results/pilot/analysis/实验报告.md)、[解读](experiments/v8_multilayer_retention/结果解读.md) |
 | [v9](experiments/v9_learning_pressure/) | 更严目标与模块冻结能否揭示专家更新的必要性 | 180 条开发轨迹显示全量专家更新存在明显训练—开发差距；未验证其必要性 | [报告](experiments/v9_learning_pressure/results/development/analysis/实验报告.md)、[解读](experiments/v9_learning_pressure/结果解读.md) |
+| [v10](experiments/v10_native_moe_feedback/) | 原生语言 MoE 的指定旧域反馈是否改善专家组更新决策 | 开发入口和 CPU 机制检查完成；GPU 真实模型实验待开始 | [启动说明](experiments/v10_native_moe_feedback/README.md)、[校验](docs/v10-preflight.md) |
 
 七轮实验源码与记录完整保留，版本之间有意保留冻结的模型副本。`docs/import_manifest.json` 校验前三轮导入文件；原有 `locked_protocol.json` 和各版本校验清单也保留。v3 阈值文字错误见 [勘误](docs/v3-erratum.md)，v4 的机制解释见 [结果解读](experiments/v4_state_aggregation/结果解读.md)。新多层环境的当前路由要求见 [后续待办](docs/future-real-moe-routing.md)，不改动归档实验。
 

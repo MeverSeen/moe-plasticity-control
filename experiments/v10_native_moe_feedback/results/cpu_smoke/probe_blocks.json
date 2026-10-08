@@ -1,0 +1,62 @@
+{
+  "A": {
+    "monitor": [
+      {
+        "document_id": "A-monitor-11",
+        "source": "A-monitor-11",
+        "block_index": 0,
+        "predicted_tokens": 15
+      },
+      {
+        "document_id": "A-monitor-2",
+        "source": "A-monitor-2",
+        "block_index": 0,
+        "predicted_tokens": 15
+      }
+    ],
+    "selection": [
+      {
+        "document_id": "A-selection-3",
+        "source": "A-selection-3",
+        "block_index": 0,
+        "predicted_tokens": 15
+      },
+      {
+        "document_id": "A-selection-1",
+        "source": "A-selection-1",
+        "block_index": 0,
+        "predicted_tokens": 15
+      }
+    ]
+  },
+  "B": {
+    "monitor": [
+      {
+        "document_id": "B-monitor-0",
+        "source": "B-monitor-0",
+        "block_index": 0,
+        "predicted_tokens": 15
+      },
+      {
+        "document_id": "B-monitor-9",
+        "source": "B-monitor-9",
+        "block_index": 0,
+        "predicted_tokens": 15
+      }
+    ],
+    "selection": [
+      {
+        "document_id": "B-selection-7",
+        "source": "B-selection-7",
+        "block_index": 0,
+        "predicted_tokens": 15
+      },
+      {
+        "document_id": "B-selection-11",
+        "source": "B-selection-11",
+        "block_index": 0,
+        "predicted_tokens": 15
+      }
+    ]
+  }
+}

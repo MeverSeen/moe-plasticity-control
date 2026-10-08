@@ -1,0 +1,113 @@
+{
+  "version": "v10-preflight-1",
+  "status": "development_preflight; not a confirmatory experiment",
+  "created": "2026-10-08",
+  "question": "Does online anchor-domain loss change improve expert-group update decisions beyond a specified strong progress baseline?",
+  "scope": "Protect a designated pretrained anchor domain A while adapting to B. Scalar control of a fixed expert parameter group; not expert coordination or full-history continual retention.",
+  "model": {
+    "id": "random-tiny-HuggingFace-OLMoE",
+    "revision": null,
+    "dtype": "float32",
+    "optimizer_master_dtype": "float32",
+    "attention": "sdpa",
+    "layers": [
+      0,
+      1
+    ],
+    "experts": [
+      0,
+      1
+    ],
+    "selection": "Fixed a priori indices; no outcome-based expert selection. Record token exposure, displacement and downstream routing changes.",
+    "frozen": "all parameters other than the named experts, including routers, attention, norms, embeddings and output head"
+  },
+  "development": {
+    "roots": [
+      100201
+    ],
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "sequence_length": 16,
+    "micro_batch": 1,
+    "gradient_accumulation": 1,
+    "max_steps": 4,
+    "evaluation_interval": 2,
+    "monitor_blocks_per_domain": 2,
+    "selection_blocks_per_domain": 2,
+    "actions": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "checkpoint_steps": [
+      0,
+      2
+    ],
+    "branch_steps": 2,
+    "branch_futures": [
+      0,
+      1
+    ],
+    "behavior_multiplier": 0.5,
+    "replay_blocks": 0,
+    "gradient_clip_norm": 1.0,
+    "label_objective": "Report the two-dimensional (B selection improvement, A selection deterioration) outcome. No fabricated optimal-action labels until feasibility/objective is calibrated and locked."
+  },
+  "progress_features": [
+    "current_B_monitor_CE",
+    "B_monitor_CE_change",
+    "optimizer_steps",
+    "training_tokens",
+    "remaining_steps",
+    "last_multiplier",
+    "selected_expert_token_exposure"
+  ],
+  "feedback_features": [
+    "current_A_monitor_CE_minus_initial_A_monitor_CE"
+  ],
+  "data": {
+    "format": "JSONL documents with id, source, domain A/B, text; source identifies a document family, not an entire corpus",
+    "split": "Global source-group hash split before tokenization, fixed across roots: train/monitor/selection/test=70/10/10/10. Deduplicate normalized full documents before splitting; reject cross-domain duplicates.",
+    "test_access": "Preflight/development runner never tokenizes or evaluates test documents. Splitting may hash identifiers/text for integrity.",
+    "leakage_limits": "Exact dedup does not prove no near-duplicates or no overlap with model pretraining. Final corpus review is required before confirmatory lock.",
+    "candidate_A": "WikiText encyclopedia articles reconstructed from paragraph rows",
+    "candidate_B": "CPython standard-library source files grouped by package, pinned version; code adaptation rather than general coding benchmark",
+    "selection_limits": "Repeated development-selection queries are development evidence only. Roots sharing documents are not domain-generalization samples."
+  },
+  "branching": {
+    "restore": "All mutable parameters, FP32 master parameters, optimizer moments/steps, Python/numpy/torch/CUDA RNG, data stream state and training flag; frozen model shared immutably and checked",
+    "future_pairing": "Within a checkpoint/future all actions see identical B batches; future 1 is an independent resampling continuation, not another root",
+    "evaluation": "Pure token-weighted shifted language-model CE, excluding padding and auxiliary router loss",
+    "costs": "Count actual prefix, branches, train tokens, evaluated tokens, restoration time, wall time and peak GPU memory; branches are not free",
+    "unit": "Independent history/root. Keep all checkpoints and action branches from one root in the same outer split."
+  },
+  "later_lock_required": [
+    "Final corpus revisions, document/source manifests, contamination review and fixed token budgets",
+    "Learning-rate/calibration search budget and selected stable adaptation configuration",
+    "B monitor target and independent selection/final-test checks; first-hit rule and failure handling",
+    "Branch feasibility/objective, minimum meaningful effect, tie handling and ranking-regret definition",
+    "Independent training/development/confirmation history allocation and root-level uncertainty analysis",
+    "Strong fixed/time/progress baselines, matched query costs, model capacity and hyperparameter search budgets",
+    "A single preregistered confirmation analysis; no day-7 significance-based stopping"
+  ],
+  "decision": "Hardware/engineering gate first; then stable B held-out learning and measurement resolution. No requirement that forgetting be large or an intermediate multiplier win. An inconclusive pilot does not establish zero information.",
+  "smoke": "Tiny randomly initialized Hugging Face OLMoE with generated token sequences, CPU only. Engineering verification, never evidence about pretrained language MoE or feedback benefit.",
+  "execution": {
+    "mode": "smoke",
+    "pretrained_model_run": false,
+    "confirmatory": false,
+    "source_hashes": {
+      "experiments/v10_native_moe_feedback/lm_data.py": "24affbb56f1175e958e005437535ac80f800b51cbc353fa7bb803da43a980adb",
+      "experiments/v10_native_moe_feedback/model_runtime.py": "a3d24d629b9809793c32fcef4afc70f75a7342196ee5c6c1d5312704fc3c81ac",
+      "experiments/v10_native_moe_feedback/prepare_corpus.py": "4f2dab748da3fbbae29f5efcd3621221077b37768a55e11beea4187a60055922",
+      "experiments/v10_native_moe_feedback/run_native.py": "7906cf3a386109258894be170e5fe0c584fc5ec46e9b3e99b6c47b744737c9bd",
+      "experiments/v10_native_moe_feedback/test_lm_data.py": "824b3897e3a7ff3200fbebffdabde07055f79075169730c9de02ceff9c0264e5",
+      "experiments/v10_native_moe_feedback/test_model_runtime.py": "9bd1925e7afb5bf2c21aa307b61866d8c40d56dd3d18641e4b1b963bbac27e0b",
+      "experiments/v10_native_moe_feedback/test_prepare_corpus.py": "05d844ccca05ccd45c02594679ff0affab4ee8d85744403fe0d1ddaba76fcf87",
+      "experiments/v10_native_moe_feedback/test_runner.py": "4c5137fac15d7f773af46f38fb42866e53a22c52ad3cd1c7a830ed9044a2f6ec"
+    },
+    "official_test_evaluated": false
+  }
+}

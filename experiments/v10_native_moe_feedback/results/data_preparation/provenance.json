@@ -1,0 +1,42 @@
+{
+  "builder": "v10_native_moe_feedback.prepare_corpus",
+  "counts": {
+    "by_domain": {
+      "A": 995,
+      "B": 656
+    },
+    "documents": 1651
+  },
+  "inputs": {
+    "cpython_tar": {
+      "license_note": "CPython's original LICENSE remains in the supplied archive; this builder does not remove or rewrite it.",
+      "path": ".cache/v10-corpus/Python-3.11.9.tgz",
+      "sha256": "e7de3240a8bc2b1e1ba5c81bf943f06861ff494b69fda990ce2722a504c6153d",
+      "upstream_url": "https://www.python.org/ftp/python/3.11.9/Python-3.11.9.tgz",
+      "version": "3.11.9"
+    },
+    "wikitext_train": {
+      "authority": "the supplied input SHA-256 is the authority for this build",
+      "format": "parquet",
+      "license_note": "Preserve and consult the original WikiText distribution and its Wikipedia attribution/license notices.",
+      "path": ".cache/v10-corpus/wikitext-103-train-0.parquet",
+      "sha256": "74da360f23826045b3e6ac6375411fdb15f003030aa74f2596ed08b857cb9212",
+      "upstream_url": "https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-103-raw-v1/train-00000-of-00002.parquet"
+    }
+  },
+  "schema_version": 1,
+  "selection": {
+    "cpython_excluded_path_parts": [
+      "ensurepip",
+      "idlelib",
+      "site-packages",
+      "test",
+      "tests",
+      "tkinter"
+    ],
+    "cpython_prefix": "Python-3.11.9/Lib/",
+    "max_articles": 1000,
+    "wikitext_article_heading": "single-level '= Title =' only",
+    "wikitext_trailing_article": "dropped for parquet shards because an EOF article may be incomplete"
+  }
+}

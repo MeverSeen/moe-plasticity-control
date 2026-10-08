@@ -1,0 +1,360 @@
+{
+  "status": "real_corpus_tokenization_only",
+  "model_evaluation_performed": false,
+  "test_tokenized": false,
+  "data_sha256": "ccc05c3632c903f0b6a0384d1fb582337fc63ddccdbbf2327e54beb0a20e91e1",
+  "tokenizer_revision": "6d84c48581ece794365f2b8e9cfb043c68ade9c5",
+  "sequence_length": 256,
+  "split_counts": {
+    "A": {
+      "train": 697,
+      "monitor": 101,
+      "selection": 98,
+      "test": 99
+    },
+    "B": {
+      "train": 466,
+      "monitor": 46,
+      "selection": 48,
+      "test": 94
+    }
+  },
+  "token_counts": {
+    "A": {
+      "train": {
+        "blocks": 10380,
+        "predicted_tokens": 2557703
+      },
+      "monitor": {
+        "blocks": 1755,
+        "predicted_tokens": 434515
+      },
+      "selection": {
+        "blocks": 1438,
+        "predicted_tokens": 353618
+      }
+    },
+    "B": {
+      "train": {
+        "blocks": 9796,
+        "predicted_tokens": 2437532
+      },
+      "monitor": {
+        "blocks": 1088,
+        "predicted_tokens": 270898
+      },
+      "selection": {
+        "blocks": 936,
+        "predicted_tokens": 231823
+      }
+    }
+  },
+  "probes": {
+    "A": {
+      "monitor": [
+        {
+          "document_id": "wiki-553ca8edc639882405e355040789029495197205f1b9534a71e609b005a0d726",
+          "source": "article:1089 ( z",
+          "block_index": 0,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "wiki-272fd1092014e23282184ad6f059ce1f25e090237d601c77c700533bc53f574d",
+          "source": "article:2010 alabama crimson tide football team",
+          "block_index": 32,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "wiki-55a392b3a9aa41d940f8f7725cae915e6eda42a38e27df8166a6efd6af93e800",
+          "source": "article:grasshopper",
+          "block_index": 2,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "wiki-1d86187fbdba8fd45b2ece9e06ec49d68dc0b91cea542d897f24088f9bd249d5",
+          "source": "article:papal conclave , 1769",
+          "block_index": 4,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "wiki-a8dd04b0374c1764b478dae1f1324731f37f6f8bb834ddef04ed20e96c3f0646",
+          "source": "article:ohio state route 319",
+          "block_index": 1,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "wiki-cad13e43160d0d847d1b60eb6e53d1b4ca4850c8b3721886193608be2f13f041",
+          "source": "article:beatriz michelena",
+          "block_index": 7,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "wiki-66b62919509d90fdeb22abcbbce253902769d8e92797b804a900e407c4d62c85",
+          "source": "article:littorio @-@ class battleship",
+          "block_index": 16,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "wiki-ff25589e8b18758a942aa8b5c96f771f976ca959ba50f6874a1a190a0d2436e7",
+          "source": "article:politics of croatia",
+          "block_index": 13,
+          "predicted_tokens": 255
+        }
+      ],
+      "selection": [
+        {
+          "document_id": "wiki-5a09900ab0d0b1af65b182e862e29a44e0541e554788fda0f812c575395f2fd8",
+          "source": "article:johnny mcnichol",
+          "block_index": 6,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "wiki-da94b0dcbdf36db4b1aae1ded6b1b171385e313f98c83f313ca55d13af3b00cb",
+          "source": "article:newton house , llandeilo",
+          "block_index": 3,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "wiki-efcfdba05b4b44d28982e0837249634ba78dccc8dc4c5be2729e4b760c3b2ddd",
+          "source": "article:adjustments / penalties , pts",
+          "block_index": 2,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "wiki-aa78d83d22cb4fd5ec5ced40d1498c81e8afec5876545b838ccab4059c84e9f1",
+          "source": "article:i am unicorn",
+          "block_index": 2,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "wiki-cc31ea1c5918e6ebb5b23c18d61974b969385c51a88bed7a9d7fff31e91bf797",
+          "source": "article:1939 pacific hurricane season",
+          "block_index": 4,
+          "predicted_tokens": 146
+        },
+        {
+          "document_id": "wiki-d61fc7272c3dd7e975993f371815f5c06b8d8b487432f4de3b607f903594e221",
+          "source": "article:hms marlborough ( 1912 )",
+          "block_index": 1,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "wiki-461a28d81efa6cb8b10e43c6294f067310099b208bc4837dca32708f4c9b348c",
+          "source": "article:martin keamy",
+          "block_index": 0,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "wiki-25d3f79133b5fcb6ce564265121e4d7be276dff4284b707f7c64714b8d41766d",
+          "source": "article:quantum electrodynamics",
+          "block_index": 19,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "wiki-b714a6d2f975d3ab5b88e788ed5513774ccb08b5dfa703d7b36583d18902e0ec",
+          "source": "article:anow today and a",
+          "block_index": 4,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "wiki-ee6c08dca2e2de3ad7ed1029f860692e957f0024471edcd5c3e07443705e40e1",
+          "source": "article:ammiraglio di saint bon @-@ class battleship",
+          "block_index": 2,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "wiki-ac8d114a125698d30cf975ab9701d6f063b8b934470e3cef600b60268a1472d9",
+          "source": "article:4th armoured brigade ( australia )",
+          "block_index": 0,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "wiki-3d0f59183280d4364f174421ca41d7c2d22d00445dd81457e437cfebf77a8d95",
+          "source": "article:\u03c0 , the nonterminating decimal representation \u03c0",
+          "block_index": 2,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "wiki-c3d574452711a5ff1f5cb22f809d883465a962a15357eb8d6125631439cdcad7",
+          "source": "article:forbidden fruit ( j. cole song )",
+          "block_index": 3,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "wiki-00aaf60ecce89ba1f417dc4738ec217d37be5dd3eb5bd4c5e746c0719d994056",
+          "source": "article:arnhem oosterbeek war cemetery",
+          "block_index": 1,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "wiki-982787156392202acddab000f955d3553d5a1660e401077a2ca3002b071168f0",
+          "source": "article:loose ( nelly furtado album )",
+          "block_index": 23,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "wiki-dd65ca28641f1d6ec2ee45a4c3aa796bcafde772cb4c3e56a0b17ff152cad2f4",
+          "source": "article:etymology of wicca",
+          "block_index": 9,
+          "predicted_tokens": 255
+        }
+      ]
+    },
+    "B": {
+      "monitor": [
+        {
+          "document_id": "cpython-5899f62f08fd9159cc1d81b982fe7512febf38fbe2c17709e5743d6e271d0d75",
+          "source": "module:aifc",
+          "block_index": 20,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "cpython-bbf4d1f060cb1e8cf34f4179cdbca597d855406cc42b2bb11ba2f5923b92cde8",
+          "source": "module:zipapp",
+          "block_index": 4,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "cpython-d986a0b9e4012a6ff37b6687c0752003304ee05d152cef0110d711a38b335769",
+          "source": "module:copyreg",
+          "block_index": 3,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "cpython-870b92cdc478bd99e3bb74cf007f60851c46db6d7731ec454c8bd0aeef62636a",
+          "source": "module:random",
+          "block_index": 33,
+          "predicted_tokens": 184
+        },
+        {
+          "document_id": "cpython-29241f144de91e190a073b262f949bbe5d1a87485bc4c58dda5db4a7ea0944f8",
+          "source": "module:smtplib",
+          "block_index": 30,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "cpython-8342d6a7f266255aba9cc8af5ad354b08898cf388f3e73943ce056d2266eeae8",
+          "source": "module:timeit",
+          "block_index": 14,
+          "predicted_tokens": 9
+        },
+        {
+          "document_id": "cpython-2e56f676e12861019da4c6e58913db877cb75ec9ef2e80ac6056085dbcaef9f8",
+          "source": "module:pstats",
+          "block_index": 9,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "cpython-3128cfd962bbb6ce42596a3fec5ed85ceb674fa03f86c223431ac92479c71117",
+          "source": "module:plistlib",
+          "block_index": 13,
+          "predicted_tokens": 255
+        }
+      ],
+      "selection": [
+        {
+          "document_id": "cpython-59785400901896da595599a926beb3115dd34e2589631a618929c546edfcbe6a",
+          "source": "module:struct",
+          "block_index": 0,
+          "predicted_tokens": 88
+        },
+        {
+          "document_id": "cpython-4d8c161dd8c89297dab6477ea1d4900cfccd6f46925aa4a0a8d11fa3fc5d0a81",
+          "source": "module:mailbox",
+          "block_index": 73,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "cpython-18daea9ba3767753a0142b8097c94ef18ebd9c4981d5a57d733d3342202d1a8f",
+          "source": "module:pydoc",
+          "block_index": 72,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "cpython-fb6abd1ff97401a6d24f4b7c603ae177564164e5f959b98574d234095644c026",
+          "source": "module:lzma",
+          "block_index": 4,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "cpython-10db98084a48ad6d3b2239017ac00df85aa4735b37f0a86e095cdc01cf6948fa",
+          "source": "module:nturl2path",
+          "block_index": 0,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "cpython-85386b6a26d5de436e30642a3c58b4324e342b59ab4cbb27285da7fb7f9449ab",
+          "source": "module:selectors",
+          "block_index": 3,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "cpython-ff7aee315d72deb4ec3c61931c766ea1f3a864cca597bda41e04cc3a05a77f7d",
+          "source": "module:sndhdr",
+          "block_index": 5,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "cpython-892f1988bf96435463a2f743e19e12208505f6c632dda4c28798740380cb5da2",
+          "source": "package:multiprocessing",
+          "block_index": 9,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "cpython-a8559c1f9a63608bc701df055377c7915b9d3ed270e1a8483b35060ef1d3958e",
+          "source": "module:glob",
+          "block_index": 1,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "cpython-46ba0c4f4a61066da4565ceb71e897e1504aeb14a6fabe6a87e835f72fbde974",
+          "source": "module:_sitebuiltins",
+          "block_index": 2,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "cpython-8e4f37118b628714cc1832f3e34bba1c8fa4667150f7371a5eee4898779797bd",
+          "source": "module:ftplib",
+          "block_index": 1,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "cpython-0dc1ad0e21ded975f3d523a09cbb014c03078a9ab5945de9e1c4b7d414b807db",
+          "source": "module:_compat_pickle",
+          "block_index": 7,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "cpython-77312b4078acb7f2bbcd4a58a08506da6241f5bf01fcce32d2442a666776d5d1",
+          "source": "module:ntpath",
+          "block_index": 20,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "cpython-878395fd0120e2988e80c0a1b3928cfde62b28d0a73301af9c2426a99b5657a6",
+          "source": "module:netrc",
+          "block_index": 1,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "cpython-0ad6edc96bce0c38e70616764ab37b9c9a5a0721921076548f29acc83198bf8e",
+          "source": "module:dataclasses",
+          "block_index": 47,
+          "predicted_tokens": 255
+        },
+        {
+          "document_id": "cpython-429e909f7476a94a26e183c494a03b036525d8f20279be24813ba87ec79f02c5",
+          "source": "module:ipaddress",
+          "block_index": 33,
+          "predicted_tokens": 255
+        }
+      ]
+    }
+  },
+  "tokenizer_file_hashes": {
+    "config.json": "3643aa880d2f1c9b418156269ae791c73e5612d6b6b6fde0724d927cf89b6335",
+    "special_tokens_map.json": "b77491e270c6fcc5b2ecf22370f7318a6a18d3cabea09ba7bab92e9bf12656c2",
+    "tokenizer.json": "a094266ac6c4982efba277bc251349a5a6d6ad37efb39a2a90f53d8be2a40a40",
+    "tokenizer_config.json": "78a839c7851f14f9fb30e664c2b46166dc0628f2900679e5ec160656f702edff"
+  }
+}

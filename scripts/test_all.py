@@ -1,5 +1,6 @@
 """Run frozen experiment checks in separate processes."""
 from pathlib import Path
+import argparse
 import os
 import subprocess
 import sys
@@ -19,10 +20,14 @@ SUITES = (
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--include-v10', action='store_true', help='Also test native-MoE code; install its separate requirements first.')
+    args = parser.parse_args()
     env = dict(os.environ)
     env.setdefault("MPLCONFIGDIR", str(ROOT / ".cache" / "matplotlib"))
     env.setdefault("XDG_CACHE_HOME", str(ROOT / ".cache"))
-    for directory, pattern in SUITES:
+    suites = SUITES + (("v10_native_moe_feedback", "test_*.py"),) if args.include_v10 else SUITES
+    for directory, pattern in suites:
         print(f"\nTesting {directory}", flush=True)
         subprocess.run(
             [sys.executable, "-m", "unittest", "discover", "-s", ".", "-p", pattern, "-v"],

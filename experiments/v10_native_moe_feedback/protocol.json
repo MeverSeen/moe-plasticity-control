@@ -1,0 +1,67 @@
+{
+  "version": "v10-preflight-1",
+  "status": "development_preflight; not a confirmatory experiment",
+  "created": "2026-10-08",
+  "question": "Does online anchor-domain loss change improve expert-group update decisions beyond a specified strong progress baseline?",
+  "scope": "Protect a designated pretrained anchor domain A while adapting to B. Scalar control of a fixed expert parameter group; not expert coordination or full-history continual retention.",
+  "model": {
+    "id": "allenai/OLMoE-1B-7B-0924",
+    "revision": "6d84c48581ece794365f2b8e9cfb043c68ade9c5",
+    "dtype": "bfloat16",
+    "optimizer_master_dtype": "float32",
+    "attention": "sdpa",
+    "layers": [12, 13, 14, 15],
+    "experts": [0, 1, 2, 3],
+    "selection": "Fixed a priori indices; no outcome-based expert selection. Record token exposure, displacement and downstream routing changes.",
+    "frozen": "all parameters other than the named experts, including routers, attention, norms, embeddings and output head"
+  },
+  "development": {
+    "roots": [100201, 100202],
+    "learning_rate": 0.00001,
+    "weight_decay": 0.0,
+    "sequence_length": 256,
+    "micro_batch": 1,
+    "gradient_accumulation": 4,
+    "max_steps": 32,
+    "evaluation_interval": 8,
+    "monitor_blocks_per_domain": 8,
+    "selection_blocks_per_domain": 16,
+    "actions": [0.0, 0.25, 0.5, 0.75, 1.0],
+    "checkpoint_steps": [0, 8, 16],
+    "branch_steps": 4,
+    "branch_futures": [0, 1],
+    "behavior_multiplier": 0.5,
+    "replay_blocks": 0,
+    "gradient_clip_norm": 1.0,
+    "label_objective": "Report the two-dimensional (B selection improvement, A selection deterioration) outcome. No fabricated optimal-action labels until feasibility/objective is calibrated and locked."
+  },
+  "progress_features": ["current_B_monitor_CE", "B_monitor_CE_change", "optimizer_steps", "training_tokens", "remaining_steps", "last_multiplier", "selected_expert_token_exposure"],
+  "feedback_features": ["current_A_monitor_CE_minus_initial_A_monitor_CE"],
+  "data": {
+    "format": "JSONL documents with id, source, domain A/B, text; source identifies a document family, not an entire corpus",
+    "split": "Global source-group hash split before tokenization, fixed across roots: train/monitor/selection/test=70/10/10/10. Deduplicate normalized full documents before splitting; reject cross-domain duplicates.",
+    "test_access": "Preflight/development runner never tokenizes or evaluates test documents. Splitting may hash identifiers/text for integrity.",
+    "leakage_limits": "Exact dedup does not prove no near-duplicates or no overlap with model pretraining. Final corpus review is required before confirmatory lock.",
+    "candidate_A": "WikiText encyclopedia articles reconstructed from paragraph rows",
+    "candidate_B": "CPython standard-library source files grouped by package, pinned version; code adaptation rather than general coding benchmark",
+    "selection_limits": "Repeated development-selection queries are development evidence only. Roots sharing documents are not domain-generalization samples."
+  },
+  "branching": {
+    "restore": "All mutable parameters, FP32 master parameters, optimizer moments/steps, Python/numpy/torch/CUDA RNG, data stream state and training flag; frozen model shared immutably and checked",
+    "future_pairing": "Within a checkpoint/future all actions see identical B batches; future 1 is an independent resampling continuation, not another root",
+    "evaluation": "Pure token-weighted shifted language-model CE, excluding padding and auxiliary router loss",
+    "costs": "Count actual prefix, branches, train tokens, evaluated tokens, restoration time, wall time and peak GPU memory; branches are not free",
+    "unit": "Independent history/root. Keep all checkpoints and action branches from one root in the same outer split."
+  },
+  "later_lock_required": [
+    "Final corpus revisions, document/source manifests, contamination review and fixed token budgets",
+    "Learning-rate/calibration search budget and selected stable adaptation configuration",
+    "B monitor target and independent selection/final-test checks; first-hit rule and failure handling",
+    "Branch feasibility/objective, minimum meaningful effect, tie handling and ranking-regret definition",
+    "Independent training/development/confirmation history allocation and root-level uncertainty analysis",
+    "Strong fixed/time/progress baselines, matched query costs, model capacity and hyperparameter search budgets",
+    "A single preregistered confirmation analysis; no day-7 significance-based stopping"
+  ],
+  "decision": "Hardware/engineering gate first; then stable B held-out learning and measurement resolution. No requirement that forgetting be large or an intermediate multiplier win. An inconclusive pilot does not establish zero information.",
+  "smoke": "Tiny randomly initialized Hugging Face OLMoE with generated token sequences, CPU only. Engineering verification, never evidence about pretrained language MoE or feedback benefit."
+}
