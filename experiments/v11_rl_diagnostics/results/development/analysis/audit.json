@@ -1,0 +1,43 @@
+{
+  "status": "integrity audit; development-only diagnostic, no selection claim",
+  "evaluation_rows": 344,
+  "checkpoint_files": 20,
+  "probe_observations": 23,
+  "validated_sources": 14,
+  "physical_cost": {
+    "learner_updates": 55510,
+    "train_examples": 3281920,
+    "monitor_examples": 3174368,
+    "route_examples": 825984,
+    "controller_calls": 11102,
+    "audit_examples": 825600
+  },
+  "cost_groups": {
+    "controller_training": {
+      "learner_updates": 31675,
+      "train_examples": 1842880,
+      "monitor_examples": 1857776,
+      "route_examples": 525312,
+      "controller_calls": 6335,
+      "audit_examples": 0
+    },
+    "development_evaluation": {
+      "learner_updates": 23590,
+      "train_examples": 1427200,
+      "monitor_examples": 1304896,
+      "route_examples": 297216,
+      "controller_calls": 4718,
+      "audit_examples": 825600
+    },
+    "fixed_probe_collection": {
+      "learner_updates": 245,
+      "train_examples": 11840,
+      "monitor_examples": 11696,
+      "route_examples": 3456,
+      "controller_calls": 49,
+      "audit_examples": 0
+    }
+  },
+  "development_only": true,
+  "warning": "Rows share four development roots; policy draws and checkpoints are not independent histories."
+}

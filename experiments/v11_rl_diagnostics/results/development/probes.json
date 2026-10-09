@@ -1,0 +1,184 @@
+{
+  "provenance": [
+    {
+      "root": 88100,
+      "task": 1,
+      "step": 0,
+      "sha256": "8a02f6f8a6cd9773ffde1f36e61affe62eb75f4ba650dbe24080573d16ba6769"
+    },
+    {
+      "root": 88100,
+      "task": 2,
+      "step": 0,
+      "sha256": "64139311063afcabb6e76e5c73730390d5f68446ed4a613143393d30f19f31a8"
+    },
+    {
+      "root": 88100,
+      "task": 3,
+      "step": 0,
+      "sha256": "e4b803b44f507e6ca9205b08fa2b636204976c1c6a7369a3e20e6662c874a1bd"
+    },
+    {
+      "root": 88100,
+      "task": 3,
+      "step": 5,
+      "sha256": "46524adf111ef8ccfaffcd3d0c904cf63a08ec023c544d9039476da95d6ab7d8"
+    },
+    {
+      "root": 88101,
+      "task": 1,
+      "step": 0,
+      "sha256": "8e16b7fa5fc666f827227cf1cffd5909871ca0f3a5787a158b5a982ee98c7c66"
+    },
+    {
+      "root": 88101,
+      "task": 1,
+      "step": 5,
+      "sha256": "62473f776c70d454138d401ac576cde94b921731a157ee3ce333e0e8db991f8a"
+    },
+    {
+      "root": 88101,
+      "task": 2,
+      "step": 0,
+      "sha256": "7bb7b51ad8b7a133c395984bce7e34dee27ec83ce5fc2089bcc017ce3f27c8fa"
+    },
+    {
+      "root": 88101,
+      "task": 2,
+      "step": 5,
+      "sha256": "f868dac20da0e36daa199a9c70a16b5fba03d8f90a9960e0eb0c911a917d2422"
+    },
+    {
+      "root": 88101,
+      "task": 3,
+      "step": 0,
+      "sha256": "82b43e30f8a8b7fcdb4b360dc5a2723646a4ccd11da8d21d342356d6843d2aac"
+    },
+    {
+      "root": 88101,
+      "task": 3,
+      "step": 5,
+      "sha256": "083a5fa995cbf4cc89b653d4d0575160063b9b621930758e472ddd6dc2e78139"
+    },
+    {
+      "root": 88102,
+      "task": 1,
+      "step": 0,
+      "sha256": "e088b0a7a739b80be1505794c2eadb33386279d968140d2ff7e842bae3e7c916"
+    },
+    {
+      "root": 88102,
+      "task": 1,
+      "step": 5,
+      "sha256": "d33a432a504a1d236caa33f23a90df8d17d4fa2cfd0047634513bca2358d7452"
+    },
+    {
+      "root": 88102,
+      "task": 1,
+      "step": 10,
+      "sha256": "4d574976586c99aaed6afd70a8e005b6804d0c417077269ca3e1773e7c3b95a6"
+    },
+    {
+      "root": 88102,
+      "task": 1,
+      "step": 15,
+      "sha256": "f9e8f59c2ffc9e380e1ce9d39ca53544033ce64d395ec275dfa66f6d423bdf0c"
+    },
+    {
+      "root": 88102,
+      "task": 2,
+      "step": 0,
+      "sha256": "9a34cd1efb0c9307d32844f369217b08817d999059316a264fd528ce651e920b"
+    },
+    {
+      "root": 88102,
+      "task": 3,
+      "step": 0,
+      "sha256": "6250c6f1a137d34e2b986beb7cfba2df5f747f19d3794908835b8e2e5bb607d7"
+    },
+    {
+      "root": 88102,
+      "task": 3,
+      "step": 5,
+      "sha256": "b50d182deb375211d2811aa930b58425d11a399bb7684e8a169608ae28189d5c"
+    },
+    {
+      "root": 88102,
+      "task": 4,
+      "step": 0,
+      "sha256": "e96ef46ec6b5a90189799a08b343b1ca38c8174443c2068bad6ec8eff8ce50c8"
+    },
+    {
+      "root": 88102,
+      "task": 4,
+      "step": 5,
+      "sha256": "246f8ca326ad18437258450a2e8511c136f3afab1496011af798492a7d1ab4be"
+    },
+    {
+      "root": 88103,
+      "task": 1,
+      "step": 0,
+      "sha256": "6ad54ec0eef24093a84f735814e78c9f8c2b06a5f5cf7609aaf890a6f93a1af1"
+    },
+    {
+      "root": 88103,
+      "task": 2,
+      "step": 0,
+      "sha256": "41aa6dd8beb435dc61be076dfbf1f4be21992f17985c82ab178a52d2a83bf0ff"
+    },
+    {
+      "root": 88103,
+      "task": 3,
+      "step": 0,
+      "sha256": "ba2c4731e4d16213f12e273f1f7cad404aeaa70ca396338f483534997df53199"
+    },
+    {
+      "root": 88103,
+      "task": 4,
+      "step": 0,
+      "sha256": "066ff8a49ac8a54b3de8ae9b1319b8df67a9cf358a6d299ed75b92a95738c189"
+    }
+  ],
+  "cost": [
+    {
+      "root": 88100,
+      "learner_updates": 35,
+      "train_examples": 1760,
+      "monitor_examples": 2288,
+      "audit_examples": 0,
+      "controller_calls": 7,
+      "route_examples": 864,
+      "seconds": 0.23477879200000018
+    },
+    {
+      "root": 88101,
+      "learner_updates": 40,
+      "train_examples": 2240,
+      "monitor_examples": 2576,
+      "audit_examples": 0,
+      "controller_calls": 8,
+      "route_examples": 864,
+      "seconds": 0.2580445410000003
+    },
+    {
+      "root": 88102,
+      "learner_updates": 70,
+      "train_examples": 4000,
+      "monitor_examples": 3504,
+      "audit_examples": 0,
+      "controller_calls": 14,
+      "route_examples": 864,
+      "seconds": 0.42805529200000025
+    },
+    {
+      "root": 88103,
+      "learner_updates": 100,
+      "train_examples": 3840,
+      "monitor_examples": 3328,
+      "audit_examples": 0,
+      "controller_calls": 20,
+      "route_examples": 864,
+      "seconds": 0.43470645799999996
+    }
+  ]
+}

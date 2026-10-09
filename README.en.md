@@ -2,11 +2,13 @@
 
 [中文](README.md) · [Technical report](docs/technical-report.md) · [Experiment index](README.md#实验索引)
 
-Can online measurements of old-task degradation improve mixture-of-experts updates beyond what new-task learning progress already tells us?
+Can a neural controller learn to allocate updates across mixture-of-experts modules from the current learning state, acquiring new capabilities while preserving old ones? The incremental value of old-task feedback is one subquestion of that broader goal.
 
-This repository studies that question through nine archived experiments, from synthetic regression to a small multilayer MoE on CIFAR-100. Controllers scale expert optimizer steps; v1 additionally controls anchoring regularization. Experiments track new-task success, old-task retention, and the cost of training, branching, and evaluation.
+This repository preserves v1–v9 and the new v11 CPU learning diagnostic, from synthetic regression to a small multilayer MoE on CIFAR-100. Controllers scale expert optimizer steps; v1 additionally controls anchoring regularization. Experiments track new-task success, old-task retention, and the cost of training, branching, and evaluation.
 
 **The strongest feedback result is preliminary. The real-image pilots have not established an advantage for learned expert coordination.** The project preserves the negative results and the diagnostics that changed the research direction.
+
+**Latest result, 2026-10-09:** extending the unchanged v8 GRPO update to 48 rounds changes deployed actions. Both coordinated controllers match the existing zero-expert-displacement rule exactly on the four development histories at rounds 24 and 48. Local controllers differ by seed. This demonstrates policy movement and a development improvement over initialization, without establishing dynamic coordination beyond fixed rules. [v11 interpretation](experiments/v11_rl_diagnostics/结果解读.md).
 
 ## Main findings
 
@@ -26,7 +28,7 @@ The versions use different tasks, metrics, and budgets. Their scores should not 
 - Shared local and coordinated factorized GRPO controllers are implemented in v8. Their deployed behavior is checked separately from training rewards and parameter changes.
 - Frozen source and result hashes, independent integrity audits, and physical cost accounting preserve the evidence behind each conclusion.
 
-v1–v7 use synthetic regression with fixed geometric routing. v8/v9 use task-aware multihead classification with routing determined by fixed raw-image features. They do not validate a pretrained language MoE or a learned router.
+v1–v7 use synthetic regression with fixed geometric routing. v8/v9/v11 use task-aware multihead classification with routing determined by fixed raw-image features. They do not validate a pretrained language MoE or a learned router.
 
 ## Read and reproduce
 
@@ -42,7 +44,7 @@ python scripts/verify_artifacts.py
 python scripts/test_all.py
 ```
 
-The integrity check covers **839 archived files**. The default test command runs **112 mechanism and analysis checks** across v1–v9 in separate processes. These checks verify implementation properties; they do not establish the research hypothesis.
+The integrity check covers **885 archived files**. The default test command runs **129 mechanism and analysis checks** across v1–v9 and v11 in separate processes. These checks verify implementation properties; they do not establish the research hypothesis.
 
 To rerun selected experiments, use a fresh output directory for each run:
 
@@ -50,6 +52,7 @@ To rerun selected experiments, use a fresh output directory for each run:
 python scripts/run_experiment.py v7 --out runs/v7-reproduction
 python scripts/run_experiment.py v8 --pilot --download --out runs/v8-pilot
 python scripts/run_experiment.py v9 --download --out runs/v9-development
+python scripts/run_experiment.py v11 --out runs/v11-reproduction
 ```
 
 v1–v7 need no dataset download or GPU. v8/v9 need the official CIFAR-100 archive; `--download` permits fetching it. They also run on CPU. The runner preserves the frozen archives and refuses to overwrite an existing output directory. Version-specific protocols and results are indexed in the [Chinese README](README.md#实验索引).
@@ -60,7 +63,7 @@ As of 2026-10-09, [v10](experiments/v10_native_moe_feedback/README.md) contains 
 
 The extension is deferred while the decision objective, independent-history evaluation, measurement resolution, and resource limits are completed. The existing two-history configuration is a development probe, not a confirmatory experiment. The v1–v9 report is complete without this extension. See the [readiness review](docs/v10-preflight.md) for the remaining conditions.
 
-v10 has separate dependencies. With them installed, `python scripts/test_all.py --include-v10` runs **140 checks** in total. Its CPU smoke results are engineering evidence only.
+v10 has separate dependencies. With them installed, `python scripts/test_all.py --include-v10` runs **157 checks** in total. Its CPU smoke results are engineering evidence only.
 
 ## Research boundaries
 

@@ -1,0 +1,46 @@
+[
+  {
+    "arm": "local",
+    "seed": 881,
+    "applicable": true,
+    "passed": true,
+    "compared_rounds": 6,
+    "absolute_tolerance": 2e-06,
+    "maximum_absolute_deltas": {
+      "rewards": 0.0,
+      "reward_std": 0.0,
+      "loss": 0.0
+    },
+    "errors": [],
+    "source": "experiments/v8_multilayer_retention/results/pilot/models/learned_local_881_training.json",
+    "limitation": "The original archive has no per-action/logprob trace; those cannot be replay-compared."
+  },
+  {
+    "arm": "local",
+    "seed": 882,
+    "applicable": false,
+    "reason": "Only seed 881 was archived by the v8 pilot."
+  },
+  {
+    "arm": "coordinated",
+    "seed": 881,
+    "applicable": true,
+    "passed": true,
+    "compared_rounds": 6,
+    "absolute_tolerance": 2e-06,
+    "maximum_absolute_deltas": {
+      "rewards": 0.0,
+      "reward_std": 0.0,
+      "loss": 0.0
+    },
+    "errors": [],
+    "source": "experiments/v8_multilayer_retention/results/pilot/models/learned_coordinated_881_training.json",
+    "limitation": "The original archive has no per-action/logprob trace; those cannot be replay-compared."
+  },
+  {
+    "arm": "coordinated",
+    "seed": 882,
+    "applicable": false,
+    "reason": "Only seed 881 was archived by the v8 pilot."
+  }
+]

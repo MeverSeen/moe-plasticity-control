@@ -9,7 +9,8 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 VERSIONS = {"v1": "v1_expert_control", "v2": "v2_feedback_control", "v3": "v3_branching",
             "v4": "v4_state_aggregation", "v5": "v5_calibration", "v6": "v6_learning_diagnostics", "v7": "v7_sequence_feedback",
-            "v8": "v8_multilayer_retention", "v9": "v9_learning_pressure", "v10": "v10_native_moe_feedback"}
+            "v8": "v8_multilayer_retention", "v9": "v9_learning_pressure", "v10": "v10_native_moe_feedback",
+            "v11": "v11_rl_diagnostics"}
 
 
 def main():
@@ -37,7 +38,11 @@ def main():
     env = dict(os.environ)
     env.setdefault("MPLCONFIGDIR", str(ROOT / ".cache" / "matplotlib"))
     env.setdefault("XDG_CACHE_HOME", str(ROOT / ".cache"))
-    if args.version == 'v10':
+    if args.version == 'v11':
+        commands = [['run_diagnostics.py', '--out', str(output)],
+                    ['analyze.py', '--run', str(output), '--out', str(output/'analysis')],
+                    [str(ROOT/'scripts/audit_v11_run.py'), '--run', str(output)]]
+    elif args.version == 'v10':
         command = ['run_native.py', '--mode', args.mode or 'inspect', '--out', str(output)]
         if args.data:
             command += ['--data', str(args.data.resolve())]

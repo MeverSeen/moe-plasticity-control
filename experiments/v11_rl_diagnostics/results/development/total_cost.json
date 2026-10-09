@@ -1,0 +1,38 @@
+{
+  "controller_training": {
+    "learner_updates": 31675,
+    "train_examples": 1842880,
+    "monitor_examples": 1857776,
+    "route_examples": 525312,
+    "controller_calls": 6335,
+    "audit_examples": 0
+  },
+  "development_evaluation": {
+    "learner_updates": 23590,
+    "train_examples": 1427200,
+    "monitor_examples": 1304896,
+    "route_examples": 297216,
+    "controller_calls": 4718,
+    "audit_examples": 825600
+  },
+  "fixed_probe_collection": {
+    "learner_updates": 245,
+    "train_examples": 11840,
+    "monitor_examples": 11696,
+    "route_examples": 3456,
+    "controller_calls": 49,
+    "audit_examples": 0
+  },
+  "total": {
+    "learner_updates": 55510,
+    "train_examples": 3281920,
+    "monitor_examples": 3174368,
+    "route_examples": 825984,
+    "controller_calls": 11102,
+    "audit_examples": 825600
+  },
+  "note": "Physical learner work. Shared training prefixes are charged once per GRPO group; each dev rollout is run and charged independently. audit_examples is the inherited endpoint-evaluation counter and contains train-split dev images only. Not FLOPs matched.",
+  "wall_seconds": 409.20401029199996,
+  "controller_training_seconds": 220.566809084,
+  "diagnostic_seconds_within_training": 0.4600623739998313
+}
