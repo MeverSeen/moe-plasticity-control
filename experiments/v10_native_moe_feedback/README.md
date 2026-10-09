@@ -1,6 +1,6 @@
 # v10：原生语言 MoE 的旧域反馈与更新决策
 
-状态：2026-10-08 已完成协议草案、实现和 CPU 机制检查；**尚未运行 OLMoE 7B 预训练权重的 GPU 实验，也没有反馈收益结论**。当前主机没有 CUDA，等待 GPU 服务器连接。v1–v9 的 839 个归档文件保持不变。
+状态：2026-10-09 已完成协议草案、工程入口、真实语料准备和 CPU 机制检查；**尚未运行 OLMoE 7B 预训练权重的 GPU 实验，也没有反馈收益结论**。v10 暂缓是因为科学设计与预算门槛尚未闭合，不是单纯等待 GPU 或 SSH。v1–v9 的 839 个归档文件保持不变。
 
 本轮问题是：在保护指定旧域 A、适配新域 B 时，在线 A 损失变化是否能改善一个固定专家参数组的更新决策，超过已声明的进度信息基线？A 是预训练模型的百科评价域，本阶段不另做 A 适配；B 是 Python 标准库代码。主张范围是指定旧域保留与标量专家组更新控制，不包含逐专家协调、全部历史保留或通用代码能力。
 
@@ -12,12 +12,14 @@
 | 检查点、优化器 moments、随机状态、数据流恢复 | 已实现；已有 moments 的重复分支及冻结权重完整性测试通过 |
 | 文档/source 分组、去重、LM token 加权评价 | 已实现；真实语料已准备，测试角色不进入开发评价 |
 | 完整固定倍率、时间调度与配对分支入口 | 已实现；CPU 随机小模型完成 6 条基线和 20 条分支 |
-| 7B 真机显存、吞吐、更新稳定性与泛化检查 | 待 GPU 连接，尚未执行 |
+| 7B 真机显存、吞吐、更新稳定性与泛化检查 | 尚未执行；设计与预算门槛闭合后才决定是否启动 |
 | 反馈预测器、独立历史上的动作 regret、闭环确认 | 尚未执行；需要开发校准后的第二次协议锁定 |
 
 CPU smoke 使用随机初始化的小型 `OlmoeForCausalLM` 和生成 token，仅检验工程机制。它不是预训练模型实验，损失数值不能用于研究结论。所有结果带有 `engineering_only` 或 `development_only` 状态。
 
 当前共 140 项测试通过（原有 112 + v10 新增 28）。启动记录保存在 [CPU smoke](results/cpu_smoke/summary.json) 和[数据准备](results/data_preparation/tokenization_check.json)；后者使用了固定版本的真实分词器，未加载模型权重。
+
+v10 不是当前研究成果包的前置条件。v1–v9 的结论与归档可独立交付；整体叙事见 [技术报告](../../docs/technical-report.md)。
 
 ## 预检协议
 
@@ -34,11 +36,23 @@ CPU smoke 使用随机初始化的小型 `OlmoeForCausalLM` 和生成 token，�
 
 冻结 router 参数不意味着路由固定。每步记录各层实际 top-k 占用和选中专家 token 暴露量。当前记录占用，不声称已经测量逐 token 路由迁移。
 
+## 继续条件与验证顺序
+
+以下是继续 v10 的研究与预算条件，不是已经实现的自动门禁：
+
+- CPU 阶段明确决策目标、首次命中与失败规则，并用人工数据检查有效反馈、无效反馈和只改善数值预测却不改善动作排序的情况；开发校准后另锁定动作可行性、并列和 ranking-regret 规则。
+- CPU 阶段确定按整条 root/history 划分的训练、开发与确认方案，以及搜索和单次 GPU 试点的预算上限；共享语料的开发 roots 不能替代独立领域证据。
+- 最小 GPU 试点才检查真实 BF16 位移能否区分动作、A/B 专家路由覆盖和 B 训练梯度；现有日志只有 B 训练路由，A 覆盖诊断待补齐。
+- 最小 GPU 试点测量加载与运行峰值显存、host RAM、检查点传输/恢复与评价成本；扩大开发前另确认 B 独立评价上的学习和测量分辨率。
+- 长任务前补齐持久化续跑和失败记录；当前内存中的分支恢复不是进程中断后的完整恢复机制。
+
+现有 `--mode preflight` 是工程预检，固定为 0/.5/1 三条两步基线，并从有 moments 的共同状态运行五个单步分支，共 **11 次 learner update**；A/B monitor 与 selection 的评价合计 **576 次 block 前向**。它能发现加载、恢复和测量问题，却不足以验证学习效果或反馈价值。24GB 显存卡是单卡预检的可测试起点，非实测的可运行保证。
+
 ## 数据准备
 
 开发数据来自固定版本的 WikiText-103 raw 第一训练分片与 CPython 3.11.9 `Lib/*.py`。WikiText 从 paragraph rows 重建整篇文章，source 是规范化文章标题；CPython 按 package/module 分组，排除 tests、ensurepip、idlelib、tkinter 等目录。保留原始版权文本；语料原文、模型权重和分词器缓存在 `.cache/`，不纳入 Git。
 
-构建时最多读取前 1,000 个 WikiText article occurrences，去重后本次得到 A 995 篇、B 656 个文件。整个 source family 由固定 seed 1701 分配到 train/monitor/selection/test，比例 70/10/10/10；组大小不同导致文档比例并非恰好相等。词级规范化去重仅用于移除重复文档，不证明消除了近重复或模型预训练污染。此任务不能称为学习此前未见的知识。
+构建时最多读取前 1,000 个 WikiText article occurrences，得到 A 995 篇、B 656 个文件；加载阶段按规范化全文再移除 2 个重复 B 文档，最终划分包含 A 995、B 654 个文档。整个 source family 由固定 seed 1701 分配到 train/monitor/selection/test，比例 70/10/10/10；组大小不同导致文档比例并非恰好相等。词级规范化去重仅用于移除重复文档，不证明消除了近重复或模型预训练污染。此任务不能称为学习此前未见的知识。
 
 ```bash
 python3 -m venv .venv
@@ -63,14 +77,14 @@ python scripts/run_experiment.py v10 --mode smoke --out runs/v10-smoke-new
 python scripts/audit_v10_run.py --run runs/v10-smoke-new
 ```
 
-在具备硬件 BF16 支持的 CUDA 主机上，先运行预检。以下命令只有显式 `--download` 才允许下载固定版本模型：
+先完成上述 CPU 准备，再决定是否执行预算封顶的 GPU 试点。下列命令保留为后续预检入口；当前不启动，且只有显式 `--download` 才允许下载固定版本模型：
 
 ```bash
 python scripts/run_experiment.py v10 --mode preflight --download --data .cache/v10-corpus/prepared-new/documents.jsonl --device cuda:0 --out runs/v10-gpu-preflight
 python scripts/audit_v10_run.py --run runs/v10-gpu-preflight
 ```
 
-预检执行 0/.5/1 三条各两步基线，并从有 moments 的共同状态执行五个单步分支，共 11 次更新，测量实际恢复成本。默认是单卡执行；八张卡不会自动组成一个模型，也不会自动启动八份任务。确认单卡峰值显存、host RAM 和 checkpoint 传输成本后，才安排跨卡独立运行。
+预检执行 0/.5/1 三条各两步基线，并从有 moments 的共同状态执行五个单步分支，共 11 次更新，测量实际恢复成本；A/B monitor 与 selection 共 576 次 block 前向。默认是单卡执行；八张卡不会自动组成一个模型，也不会自动启动八份任务。确认单卡峰值显存、host RAM、checkpoint 传输成本和动作实际位移后，才考虑跨卡独立运行。
 
 完成资源及学习稳定性检查后，分别用 `--mode baselines` 和 `--mode branches` 执行预锁定开发配置。配置调整应另存 JSON，通过直接入口 `run_native.py --protocol <path>` 使用，并保留每次的 `locked_protocol.json`。不根据结果悄悄修改已有运行。
 

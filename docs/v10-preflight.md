@@ -1,6 +1,6 @@
 # v10 启动记录：原生语言 MoE
 
-2026-10-08。已实现开发入口，尚未执行 7B 预训练权重的 GPU 实验。当前 Mac 没有 CUDA；未取得 8×4090 服务器连接方式。真实模型显存、吞吐、学习效果和反馈收益均未验证。
+2026-10-09。工程入口、真实语料准备和 CPU 机制检查已经完成；尚未执行 OLMoE 7B 预训练权重的 GPU 实验。暂缓的原因是科学设计与预算门槛尚未闭合，不是单纯等待 SSH 或服务器连接。真实模型的显存、吞吐、学习稳定性、泛化和反馈收益均未验证。
 
 ## 已完成验证
 
@@ -15,7 +15,7 @@
 
 已取得固定版本 WikiText-103 raw 第一训练分片及官方 CPython 3.11.9 源码 archive，构建 1,651 个文档：A 995 篇百科文章、B 656 个代码文件。语料和输入 archive 位于仓库 `.cache/v10-corpus/`，不提交原文。
 
-固定 seed 1701 的文档数量：
+随后按规范化全文再移除 2 个重复 B 文档，进入划分的 B 文档为 654 个。固定 seed 1701 的文档数量：
 
 | 域 | train | monitor | selection | test |
 |---|---:|---:|---:|---:|
@@ -28,10 +28,16 @@
 
 工程记录见 [CPU smoke 审计](../experiments/v10_native_moe_feedback/results/cpu_smoke/integrity.json)、[语料来源](../experiments/v10_native_moe_feedback/results/data_preparation/provenance.json)与[分词检查](../experiments/v10_native_moe_feedback/results/data_preparation/tokenization_check.json)。
 
-## 接下来的必要条件
+## 继续条件与验证顺序
 
-取得 GPU 服务器 SSH 连接方式及工作目录后，运行已准备的 `--mode preflight`：真实 BF16 权重、选中约 100.7M 专家参数、六个基线更新与五个单步分支。测清单卡峰值显存、恢复耗时和学习曲线后再锁定资源配置。
+当前 [protocol.json](../experiments/v10_native_moe_feedback/protocol.json)只锁定开发入口和测量语义。以下事项仍是**未完成工作**，并没有被写成代码安全门禁：
 
-当前 [protocol.json](../experiments/v10_native_moe_feedback/protocol.json)只锁定开发起点。新任务达标目标、分支 regret/可行性目标、独立历史划分、最小有意义效应和闭环确认方案仍待开发校准。不会把两个开发 roots 或 CPU smoke 当作足以检验反馈增益的样本。
+- CPU 准备：定义 B 的学习目标与失败处理；用人工数据检查已知有效、无效，以及只改善数值预测却不改善动作排序的反馈。开发校准后，另锁定分支可行性、并列和 ranking-regret 规则。
+- CPU 准备：明确整条 root/history 的训练、开发与确认划分，以及校准搜索和单次 GPU 试点的成本上限。两个开发 roots 不能用于可靠确认，共享语料也不提供独立领域证据。
+- 最小 GPU 试点：确认 BF16 模型实际位移能区分动作，而非只有 FP32 master 改变；检查 A/B 的专家路由覆盖、B 训练梯度和实际更新。现有日志只有 B 训练路由，A 覆盖诊断仍待补齐。
+- 最小 GPU 试点：测量加载与运行峰值显存、host RAM、检查点捕获/恢复、评价和训练成本。它们只能在 GPU 上测量，不能冒充已经完成的 CPU 检查。
+- 扩大开发前：确认 B 独立评价上的学习与测量分辨率，补齐长任务中断恢复和失败记录，再按实测成本决定 root、分支与评价预算。当前仅有内存中的分支恢复，尚无完整持久化续跑入口。
 
-复现说明和范围见 [v10 README](../experiments/v10_native_moe_feedback/README.md)。
+当前 CLI 的 `--mode preflight` 是端到端工程预检：三条两步基线，加上有 moments 的共同状态上的五个单步分支，共 **11 次 learner update**；A/B 的 monitor 与 selection 评价合计 **576 次 block 前向**。11 次更新不足以验证学习效果或反馈价值。24GB 显存卡可作为单卡预检的起点，不是已经实测的可运行保证；八张卡也不会被该单进程入口自动聚合。
+
+因此 v10 目前是可选的后续方向，而不是 v1–v9 成果包的前置条件。不会把两个开发 roots、CPU smoke 或将来的短预检当作足以检验反馈增益的样本。整体研究脉络见 [技术报告](technical-report.md)，工程范围见 [v10 README](../experiments/v10_native_moe_feedback/README.md)。
