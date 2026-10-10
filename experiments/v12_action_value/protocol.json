@@ -1,0 +1,61 @@
+{
+  "version": "v12",
+  "status": "development_only_minimal_falsification",
+  "confirmatory": false,
+  "hypothesis": "Are state-dependent expert update actions usefully different from strong globally fixed or task-stage-only policies under matched learner updates and new-task progress?",
+  "objective": "Use paired one-window counterfactual branches to detect a reproducible action-value heterogeneity signal before training another RL controller.",
+  "dataset": "Official CIFAR-100 train only; reuse the v8 dev class pool, with no official test access or new-class generalization claim",
+  "class_partition_seed": 8800,
+  "class_pool": "dev",
+  "roots": [89120, 89121, 89122, 89123, 89124, 89125],
+  "config": {
+    "tasks": 5,
+    "experts": 8,
+    "width": 32,
+    "expert_hidden": 64,
+    "top_k": 2,
+    "train_per_class": 48,
+    "monitor_per_class": 16,
+    "eval_per_class": 32,
+    "replay_capacity": 128,
+    "monitor_capacity": 128,
+    "batch": 32,
+    "max_steps": 80,
+    "interval": 5,
+    "lr": 0.003,
+    "replay_weight": 0.5,
+    "target_loss": 1.55
+  },
+  "reference_trajectories": {
+    "global_0": [1, 2, 3, 4],
+    "global_1": [2, 3, 4]
+  },
+  "state_sampling": "Collect only the first active (monitor CE > target) decision state at the stated task stages on each reference trajectory; exclude duplicate task-1 prefixes. Report inactive and missing states, without replacing them after seeing outcomes.",
+  "candidate_actions": ["global_0", "global_0.5", "global_1", "static_top2", "route_new_top2", "route_old_top2"],
+  "state_blind_actions": ["global_0", "global_0.5", "global_1", "static_top2"],
+  "batch_streams": [0, 1],
+  "batch_stream_split": "Within each fixed learner state, stream 0 selects hindsight oracle actions; stream 1 evaluates that choice on an independently sampled paired training minibatch stream. All actions within a stream see identical indices and an equal 5-update window.",
+  "evaluation": "Separate train-split, within-root held-out current-task and every-old-task eval batches, not monitor and not the official CIFAR-100 test split. Same eval examples across actions and streams; stream split only changes training minibatches.",
+  "primary_utility": "new_eval_CE_reduction - mean_old_task_positive_eval_CE_increase, per state per 5 learner updates; report both components separately; never treat an unqualified preservation gain as success.",
+  "baseline_selection": "Select the best single state-blind action and the best stage-index-only action schedule using stream-0 records from OTHER roots (leave-one-root-out). Apply them on stream 1 of the held-out root. Hindsight oracle may select each state's best stream-0 action, but it reads privileged action outcomes and is not deployable.",
+  "screening_gate": {
+    "min_complete_roots": 4,
+    "min_active_states_per_root": 3,
+    "min_stage_only_new_gain_CE": 0.01,
+    "min_oracle_minus_stage_utility_CE": 0.01,
+    "max_allowed_oracle_new_gain_deficit_CE": 0.01,
+    "min_stage_minus_oracle_old_harm_CE": 0.005,
+    "min_roots_with_positive_utility_difference": 4,
+    "interpretation": "An exploratory screening gate only, not a significance/noninferiority test or proof a state-observable policy can achieve the hindsight oracle. Any negative or underpowered gate means that the necessity of dynamic coordination is not established in this diagnostic."
+  },
+  "cost": "Record physical learner steps for reference-trajectory state collection and each action branch separately; count held-out eval calls/examples; same update count does not imply identical FLOPs or wall-clock time.",
+  "limitations": [
+    "Task-ID-visible tiny two-layer fixed-raw-image-routing MoE, not a pretrained language MoE",
+    "Zero expert displacement still advances Adam moments and trains the stem and task heads",
+    "Root is the replication unit; stages, action branches and repeated streams are NOT independent experiments",
+    "Hindsight oracle is a potential-value upper-bound diagnostic, not an executable inference policy",
+    "Short-horizon first-window effects are not equivalent to end-of-sequence continual-learning improvement",
+    "Shared development class pool has been used in prior research; no held-out confirmatory result can be claimed",
+    "Do not change thresholds, action candidates, roots, or sampling after examining results"
+  ]
+}
