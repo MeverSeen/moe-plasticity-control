@@ -6,6 +6,14 @@ Can a neural controller learn to allocate updates across mixture-of-experts modu
 
 This repository preserves v1–v9 and the new v11 CPU learning diagnostic, from synthetic regression to a small multilayer MoE on CIFAR-100. Controllers scale expert optimizer steps; v1 additionally controls anchoring regularization. Experiments track new-task success, old-task retention, and the cost of training, branching, and evaluation.
 
+## Research highlights (60-second read)
+
+- **Question:** Under fixed MoE capacity, retained-data and compute budgets, can state-dependent expert-update control outperform well-tuned fixed multipliers and schedules?
+- **Implemented:** Exact paired learner-state interventions, controlled evaluation of retention and reachability, PPO/GRPO controllers, per-expert optimizer-displacement control, and archived integrity checks.
+- **Positive but narrow result:** [v6](experiments/v6_learning_diagnostics/结果解读.md) reduced forgetting by **24.4%** across 96 test histories at unchanged new-task reachability by selecting checkpoints with actual closed-loop development outcomes. This is a **model-selection** benefit, not a learned online-feedback advantage.
+- **Unresolved hypotheses:** The [v7](experiments/v7_sequence_feedback/结果解读.md) **13.8%** reduction is conditional on jointly successful histories, with noninferiority unproven and a multiple-comparison sensitivity interval crossing zero. In [v11](experiments/v11_rl_diagnostics/结果解读.md), GRPO changes deployed actions but coordinated policies match a fixed conservative rule.
+- **Reviewer route:** Read the [technical report](docs/technical-report.md) for evidence and limitations; then run the [integrity and mechanism checks](#read-and-reproduce). Archived results can be inspected without retraining.
+
 **The strongest feedback result is preliminary. The real-image pilots have not established an advantage for learned expert coordination.** The project preserves the negative results and the diagnostics that changed the research direction.
 
 **Latest result, 2026-10-09:** extending the unchanged v8 GRPO update to 48 rounds changes deployed actions. Both coordinated controllers match the existing zero-expert-displacement rule exactly on the four development histories at rounds 24 and 48. Local controllers differ by seed. This demonstrates policy movement and a development improvement over initialization, without establishing dynamic coordination beyond fixed rules. [v11 interpretation](experiments/v11_rl_diagnostics/结果解读.md).
